@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+  <variable name="Trailer" description="Trailer check">
+    <value condition="Container.Content(Movies) + !IsEmpty(ListItem.Trailer)">$LOCALIZE[20410]</value>
+  </variable>
+  
+  <variable name="QuitLabel" description="Label for skin settings Quit function item">
+    <value condition="StringCompare(Skin.String(shutdown),quit)">$LOCALIZE[13009]</value>
+    <value condition="StringCompare(Skin.String(shutdown),powerdown)">$LOCALIZE[13005]</value>
+    <value condition="StringCompare(Skin.String(shutdown),hibernate)">$LOCALIZE[13010]</value>
+    <value condition="StringCompare(Skin.String(shutdown),suspend)">$LOCALIZE[13011]</value>
+    <value condition="StringCompare(Skin.String(shutdown),reboot)">$LOCALIZE[13013]</value>
+  </variable>
+  
+  <variable name="locksettings">
+    <value condition="!Skin.HasSetting(locksettings)">$LOCALIZE[16039]</value>
+    <value>$LOCALIZE[16041]</value>
+  </variable>
+  
+  <variable name="FusionHelpStatus">
+    <value condition="Skin.HasSetting(FirstRun)">$LOCALIZE[16039]</value>
+    <value>$LOCALIZE[16041]</value>
+  </variable>
+  
+  <variable name="CustomImgStatus">
+    <value condition="Skin.HasSetting(CustomImage)">$LOCALIZE[16041]</value>
+    <value>$LOCALIZE[16039]</value>
+  </variable>
+  
+  <variable name="ShelfLogo">
+    <value condition="Skin.HasSetting(CustomImage)">$INFO[Skin.String(ShelfCustomImage)]</value>
+    <value>images/XBMCHomeLogo.png</value>
+  </variable>
+  
+  <variable name="colormenu" description="Colormenu">
+    <value condition="!Skin.HasSetting(colormenu)">$LOCALIZE[16041]</value>
+    <value>$LOCALIZE[16039]</value>
+  </variable>
+  
+  <variable name="Fanartdisplaystatus" description="Label2 for music playing FA">
+    <value condition="Skin.HasSetting(MusicPlayingFanart)">$LOCALIZE[449]</value>
+    <value>$LOCALIZE[13113]</value>
+  </variable>
+  
+  
+  
+  <variable name="WatchStatus" description="status">
+    <value condition="ListItem.IsResumable">$INFO[ListItem.Overlay,overlay/]</value>
+    <value>$INFO[ListItem.Overlay]</value>
+  </variable>
+  
+  
+  <variable name="RootLabel" description="Windows Name and Items details">
+    <value condition="Container.content(movies) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20342]</value>
+    <value condition="Container.content(tvshows) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20343]</value>
+    <value condition="Container.content(musicvideos) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20389]</value>
+	<value condition="Window.IsActive(56)">$LOCALIZE[5] - SiO2</value>
+    <value condition="Window.IsActive(Settings.xml)">$LOCALIZE[5]</value>
+    <value condition="Window.IsActive(AddonBrowser.xml) + IsEmpty(Container.FolderName)">$LOCALIZE[31037]</value>
+    <value condition="Window.IsActive(MyVideoPlaylist.xml)">$LOCALIZE[20012]</value>
+    <value condition="Window.IsActive(MyMusicPlaylist.xml)">$LOCALIZE[20011]</value>
+    <value condition="Window.IsActive(DialogVideoInfo.xml)">$LOCALIZE[20159]</value>
+    <value condition="Window.IsActive(DialogAlbumInfo.xml) + container.content(albums)">$LOCALIZE[13351]</value>
+    <value condition="Window.IsActive(DialogAlbumInfo.xml) + container.content(artists)">$LOCALIZE[21891]</value>
+    <value condition="Window.IsActive(DialogSongInfo.xml) + container.content(songs)">$LOCALIZE[658]</value>
+    <value condition="Window.IsActive(DialogAddonInfo.xml)">$LOCALIZE[24003]</value>
+    
+    <value condition="Window.IsActive(weather)">$INFO[Window(Weather)]</value>
+	<value condition="Window.IsActive(MyPics.xml)">$LOCALIZE[1]</value>
+    <value>$INFO[Container.FolderName]</value>
+  </variable>
+  
+  <variable name="TopLabel" description="Infos">
+    <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Date,, • ]$INFO[ListItem.Size]</value>
+    <value condition="Container.content(Albums)">$INFO[ListItem.Label]</value>
+    <value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered,, • ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
+    <value condition="Container.Content(Addons)">$INFO[ListItem.Property(Addon.Creator),  ]</value>
+    <value condition="Container.Content(songs)">$INFO[ListItem.Album]</value>
+    <value condition="Container.Content(MusicVideos)">$INFO[ListItem.Label]</value>
+    <value condition="Container.Content(Movies) + IsEmpty(ListItem.Trailer)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31038]]$VAR[MPAAS, • Rated ]</value>
+    <value condition="Container.Content(Movies) + !IsEmpty(ListItem.Trailer)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31038]]$VAR[Trailer, • ]$VAR[MPAAS, • Rated ]</value>
+    <value condition="Container.Content(Seasons) | Container.Content(TVShows)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20453]]$INFO[ListItem.MPAA, • ]</value>
+    <value>$INFO[ListItem.Label2]</value>
+	
+  </variable>
+  <variable name="MPAAS">
+  <value condition="substring(ListItem.MPAA,TV)">$INFO[ListItem.MPAA]</value>
+  <value condition="substring(ListItem.MPAA,PG-13)">PG-13</value>
+  <value condition="substring(ListItem.MPAA,Rated R)">R</value>
+  <value condition="substring(ListItem.MPAA,PG)">PG</value>
+  <value condition="substring(ListItem.MPAA,NC-17)">NC-17</value>
+  <value condition="substring(ListItem.MPAA,G)">G</value>
+  
+  <value>NA</value>
+  </variable>
+  
+  
+  <variable name="Plots">
+    <value condition="Container.content(addons) + !IsEmpty(ListItem.Property(Addon.Description))">$INFO[ListItem.Property(Addon.Description)]</value>
+    <value condition="SubString(ListItem.Path,videodb://1/7)">$LOCALIZE[20457]</value>
+    <value condition="[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes)] + !IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
+    <value condition="Container.Content(Seasons) + !IsEmpty(Container.ShowPlot)">$INFO[Container.ShowPlot]</value>
+    <value condition="Container.Content(albums) + !IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
+    <value condition="Container.Content(artists) + !IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
+    <value condition="!IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
+  </variable>
+  
+</includes>

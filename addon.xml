@@ -1,0 +1,18 @@
+<addon id="skin.SiO2" version="1.2.1" name="SiO2" provider-name="FastColors">
+  <requires>
+    <import addon="xbmc.gui" version="4.0.0"/>
+    <import addon="script.favourites" version="3.2.5"/>
+    <import addon="service.skin.widgets" version="0.0.13"/>
+  </requires>
+  <extension
+    point="xbmc.gui.skin"
+	defaultresolution="1080i"
+    defaultthemename="Textures.xbt"
+    debugging="false">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>A simple and handy Skin based on AppleTv</summary>
+    <description>If you like Apple "everything at hand" policy for interfaces, You might want to give this Skin a try. I designed it trying to put as few clicks as possible between You and what You're trying to do (or watch ;) ).[CR]Thanks To Pecinko.[CR] Thanks to testers and Inspirers: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
+  </extension>
+</addon>

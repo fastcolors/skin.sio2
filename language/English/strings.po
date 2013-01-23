@@ -1,0 +1,242 @@
+# XBMC Media Center language file
+# Addon Name: SiO2
+# Addon id: skin.SiO2
+# Addon version: 1.2.0
+# Addon Provider: FastColors
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: XBMC Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#31000"
+msgid "Page"
+msgstr ""
+
+msgctxt "#31001"
+msgid "Items"
+msgstr ""
+
+msgctxt "#31002"
+msgid "Karaoke Song"
+msgstr ""
+
+msgctxt "#31003"
+msgid "Choose Shortcut function for Music Icon : Albums  Artists Genres Songs"
+msgstr ""
+
+msgctxt "#31004"
+msgid "Visualization Presets"
+msgstr ""
+
+msgctxt "#31005"
+msgid "End Time"
+msgstr ""
+
+msgctxt "#31006"
+msgid "Last Added"
+msgstr ""
+
+msgctxt "#31007"
+msgid "Last Started"
+msgstr ""
+
+msgctxt "#31008"
+msgid "Enable/Disable Always Colored Icons on Home Screen, when Disabled Icons will only become colored when Focused"
+msgstr ""
+
+msgctxt "#31009"
+msgid "Recently Added Episodes"
+msgstr ""
+
+msgctxt "#31010"
+msgid "Open playlist"
+msgstr ""
+
+msgctxt "#31011"
+msgid "Save playlist"
+msgstr ""
+
+msgctxt "#31012"
+msgid "Clear playlist"
+msgstr ""
+
+msgctxt "#31013"
+msgid "Available Audio"
+msgstr ""
+
+msgctxt "#31014"
+msgid "Current Playlist"
+msgstr ""
+
+msgctxt "#31015"
+msgid "Subtitle Add-on"
+msgstr ""
+
+msgctxt "#31016"
+msgid "Last Updated"
+msgstr ""
+
+msgctxt "#31017"
+msgid "Choose Addon for Subtitles Search & Download"
+msgstr ""
+
+msgctxt "#31018"
+msgid "Choose Addon for Lyrics Search & Download"
+msgstr ""
+
+msgctxt "#31019"
+msgid "Enable or Disable Clock On top right of All Pages (not while watching Movies).[CR]Home Menu Will show Time and date."
+msgstr ""
+
+msgctxt "#31020"
+msgid "Enable or Disable Vinyl Record Animation from Home Shelf Albums."
+msgstr ""
+
+msgctxt "#31021"
+msgid "Memory Used:"
+msgstr ""
+
+msgctxt "#31022"
+msgid "Specify Action for Power Icon in Menu"
+msgstr ""
+
+msgctxt "#31023"
+msgid "Fanart image[CR][CR]Unavailable[CR][CR] Click button to set"
+msgstr ""
+
+msgctxt "#31024"
+msgid "Aired"
+msgstr ""
+
+msgctxt "#31025"
+msgid "Playlist Options"
+msgstr ""
+
+msgctxt "#31026"
+msgid "Arial based"
+msgstr ""
+
+msgctxt "#31027"
+msgid "Last Added"
+msgstr ""
+
+msgctxt "#31028"
+msgid "A great way to install Add-Ons is using[CR] FUSION INSTALLER.[CR] In Order to do so: Press YES PLEASE at the bottom of this dialog and Follow onscreen instructions![CR][CR] Brought to You by:[CR] www.XBMCHUB.com"
+msgstr ""
+
+msgctxt "#31029"
+msgid "If You want help with FUSION INSTALLER Just Click On this setting and go to Add-ons Manager. A PopUp will appear asking you if you want further help.. just say yes!"
+msgstr ""
+
+msgctxt "#31030"
+msgid "Custom Shelf Icon"
+msgstr ""
+
+msgctxt "#31031"
+msgid "Replace SiO2 Icon on Shelf with A Picture of Your choice."
+msgstr ""
+
+msgctxt "#31032"
+msgid "Log Off"
+msgstr ""
+
+msgctxt "#31033"
+msgid "Always Colored Menu Icons"
+msgstr ""
+
+msgctxt "#31034"
+msgid "Click to Add Favourite to Home Page"
+msgstr ""
+
+msgctxt "#31035"
+msgid "Click to Pick Icon, Change Favourite or Remove Favourite"
+msgstr ""
+
+msgctxt "#31036"
+msgid "Reset ALL skin settings to default"
+msgstr ""
+
+msgctxt "#31037"
+msgid "Add-ons manager"
+msgstr ""
+
+msgctxt "#31038"
+msgid "min"
+msgstr ""
+
+msgctxt "#31039"
+msgid "Record Animation on Shelf"
+msgstr ""
+
+msgctxt "#31040"
+msgid "Shelf items"
+msgstr ""
+
+msgctxt "#31041"
+msgid "Scrollbars"
+msgstr ""
+
+msgctxt "#31042"
+msgid "Active"
+msgstr ""
+
+msgctxt "#31043"
+msgid "Passive"
+msgstr ""
+
+msgctxt "#31044"
+msgid "View options dialog"
+msgstr ""
+
+msgctxt "#31045"
+msgid "Recent/Recommended Inverted First Item"
+msgstr ""
+
+msgctxt "#31046"
+msgid "Customize What Is Displayed On Home Shelf."
+msgstr ""
+
+msgctxt "#31047"
+msgid "Show Clock"
+msgstr ""
+
+msgctxt "#31048"
+msgid "Recommended"
+msgstr ""
+
+msgctxt "#31049"
+msgid "Home menu Power button function"
+msgstr ""
+
+msgctxt "#31050"
+msgid "Choose from menu"
+msgstr ""
+
+msgctxt "#31051"
+msgid "Custom Shelf Shortcuts"
+msgstr ""
+
+msgctxt "#31052"
+msgid "Home Page Customizer"
+msgstr ""
+
+msgctxt "#31053"
+msgid "Link For Music Icon"
+msgstr ""
+
+msgctxt "#31054"
+msgid "Enable Views Menu in order to change the way Items are presented to you."
+msgstr ""
+
+msgctxt "#31055"
+msgid "Fullscreen player"
+msgstr ""

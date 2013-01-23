@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1123">
+  <defaultcontrol always="true">100</defaultcontrol>
+  <include>DialogOpenClose</include>
+  <controls>
+    <control type="group" description="Side menu 9000 group">
+	        <posx>459</posx>
+        <posy>150</posy>
+      <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+      <include>DialogOpenCloseVisible</include>
+      <control type="grouplist" id="9000">
+        <posx>210</posx>
+		<posy>152</posy>
+		
+		<control type="textbox" id="699">
+		<width>576</width>
+		<height>400</height>
+          <label>$LOCALIZE[31029]</label>
+        </control>
+       <control type="button" id="100">
+			<description>No thanks</description>
+			<include>DialogButt</include>
+			<label>NO THANKS</label>
+			<onclick>Skin.Setbool(FirstTimeRun)</onclick>
+			<onclick>back</onclick>
+			<onleft>100</onleft>
+			<onright>100</onright>
+			<onup>100</onup>
+			<ondown>100</ondown>
+		</control>
+		<control type="button" id="101">
+			<description>Yes Fusion</description>
+			<include>DialogButt</include>
+			<label>YES PLEASE</label>
+			<onclick>Skin.Setbool(FirstTimeRun)</onclick>
+			<onclick>Skin.Setbool(FusionHelp)</onclick>
+			<onclick>ActivateWindow(3,return)</onclick>
+			<onclick>back</onclick>
+			<onleft>100</onleft>
+			<onright>100</onright>
+			<onup>100</onup>
+			<ondown>100</ondown>
+		</control>
+
+
+      </control>
+    </control>
+  </controls>
+</window>

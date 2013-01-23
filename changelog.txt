@@ -1,0 +1,79 @@
+1.2.1
+- Shelf Icon Bug Fix.
+
+1.2.0
+- Added Option to lock Skin Specific Settings from being accessed from home. If combined with MasterLock on Settings avoids changing anything without a password
+- Added Log Off option in quit menu from home.
+- Favourites on Home now before Addons & Scripts.
+- RSS Client now optional
+- Added Localizations for:
+Italian
+French
+Russian
+- Minor bug fixes.
+
+1.1.9
+- Added Support for PseudoTV
+- New FullScreen Infos OSD
+
+1.1.8
+- Bigger & Bolder Keyboard font 
+- Fixed Icon for Shelf Items
+- New Play method for onShelf Episodes works with .strm files too
+- Removed 6 variables to improve Performance
+- HomePageCustomizer now shows Title for Addons & scripts onshelf instead of ID
+- Weather Setting Page now reachable from Home Page Customzer
+
+1.1.7 
+- Added the possibility of having 6 Favourites Shortcuts on Home with custom Icons.
+- New Home Navigation method for bottom rows. More AppleTV like.
+- Fixed Wathclist for Episodes Plot overlapping icons.
+
+1.1.6 
+- Added Option for Custom Icon on Shelf replacing SiO2's
+- Fixed Icons not displaying on 6th addon in Homescreen.
+- Fixed 4th Music Favourite.
+- Minor adjustments & bug fixes.
+- Removed Dependency from RSS.editor
+
+1.1.4 
+- SiO2 Dresses in Black to mourn the Victims of Connecticut School Shooting
+
+1.1.3 
+- Fixed Progress bar sor scanning library
+- Fixed Play Property for TV shows recently added
+
+1.1.0 
+- Added Help for fusion installer.
+
+1.0.9 
+- Label Fixing - Less Custom More Core
+- Added Genres & songs as possibilities for Music Icon Shortcut
+- Added choice to go directely into Skin Specific Settings
+- Removed LOVE-BAN last.fm since is not supported by xbmc anymore.
+- Fixes here & there. Fixed Covers not showing up in OSX.
+
+1.0.8 
+- Minor graphic changes
+- New method for Home Icons now split into three layers
+- Added infinite "back to other end" scrolling for home left - right
+- Colorized Menu is now default (must change it in settings if you had the skin previously and had colorized on, now the setting is inverted)
+- Fixed few viewlists bugs
+
+1.0.7 
+- New Home Shelf Look
+- Upped to 6 items per row home menu
+- Added the possibility to have addons as Icons on Home Screen
+
+1.0.5 
+- Added options for VideoAddons where if You hide both Movies & TvShows a new Icon will made its way to have more addons on Shelf.
+
+1.0.4 
+- Fixed Broken status. Bumped GUI to 4.0.0
+
+1.0.3 
+- Bug Fixes
+- Added support "inskin" for Navi X
+
+1.0.0 
+- Release.
