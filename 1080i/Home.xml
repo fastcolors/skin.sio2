@@ -229,42 +229,42 @@
 		 <visible>!IsEmpty(Skin.String(HomeFav.1.Label))</visible>
              <thumb>$INFO[Skin.String(HomeFav.1.Icon)]</thumb>
             <label>$INFO[Skin.String(HomeFav.1.Label)]</label>
-			<property name="color">icons/base.png</property>
+			<property name="color">icons/red.png</property>
             <onclick>$INFO[Skin.String(HomeFav.1.Path)]</onclick>
 		</item>
 		<item id="602" description="Custom Fvourite">
 		 <visible>!IsEmpty(Skin.String(HomeFav.2.Label))</visible>
             <thumb>$INFO[Skin.String(HomeFav.2.Icon)]</thumb>
             <label>$INFO[Skin.String(HomeFav.2.Label)]</label>
-			<property name="color">icons/base.png</property>
+			<property name="color">icons/lightblue.png</property>
             <onclick>$INFO[Skin.String(HomeFav.2.Path)]</onclick>
 		</item>
 		<item id="603" description="Custom Fvourite">
 		 <visible>!IsEmpty(Skin.String(HomeFav.3.Label))</visible>
              <thumb>$INFO[Skin.String(HomeFav.3.Icon)]</thumb>
             <label>$INFO[Skin.String(HomeFav.3.Label)]</label>
-			<property name="color">icons/base.png</property>
+			<property name="color">icons/green.png</property>
             <onclick>$INFO[Skin.String(HomeFav.3.Path)]</onclick>
 		</item>
 		<item id="604" description="Custom Fvourite">
 		 <visible>!IsEmpty(Skin.String(HomeFav.4.Label))</visible>
              <thumb>$INFO[Skin.String(HomeFav.4.Icon)]</thumb>
             <label>$INFO[Skin.String(HomeFav.4.Label)]</label>
-			<property name="color">icons/base.png</property>
+			<property name="color">icons/Orange.png</property>
             <onclick>$INFO[Skin.String(HomeFav.4.Path)]</onclick>
 		</item>
 		<item id="605" description="Custom Fvourite">
 		 <visible>!IsEmpty(Skin.String(HomeFav.5.Label))</visible>
              <thumb>$INFO[Skin.String(HomeFav.5.Icon)]</thumb>
             <label>$INFO[Skin.String(HomeFav.5.Label)]</label>
-			<property name="color">icons/base.png</property>
+			<property name="color">icons/purple.png</property>
             <onclick>$INFO[Skin.String(HomeFav.5.Path)]</onclick>
 		</item>
 		<item id="606" description="Custom Fvourite">
 		 <visible>!IsEmpty(Skin.String(HomeFav.6.Label))</visible>
              <thumb>$INFO[Skin.String(HomeFav.6.Icon)]</thumb>
             <label>$INFO[Skin.String(HomeFav.6.Label)]</label>
-			<property name="color">icons/base.png</property>
+			<property name="color">icons/darkblue.png</property>
             <onclick>$INFO[Skin.String(HomeFav.6.Path)]</onclick>
 		</item>
 		
@@ -272,7 +272,7 @@
 		<visible>!IsEmpty(Skin.String(HomeAddon.1.Label))</visible>
 		<thumb>$INFO[system.addonicon(Skin.String(HomeAddon.1.label))]</thumb>
 		  <label>$INFO[system.addonTitle(Skin.String(HomeAddon.1.Label))]</label>
-		  <property name="color">icons/red.png</property>
+		  <property name="color">icons/lightblue.png</property>
           <onclick>RunAddon($INFO[Skin.String(HomeAddon.1.Label)])</onclick>
 		</item>
 		<item id="402" description="Custom addon">
@@ -286,28 +286,28 @@
 		<visible>!IsEmpty(Skin.String(HomeAddon.3.Label))</visible>
 		<thumb>$INFO[system.addonicon(Skin.String(HomeAddon.3.label))]</thumb>
 		  <label>$INFO[system.addonTitle(Skin.String(HomeAddon.3.Label))]</label>
-		  <property name="color">icons/red.png</property>
+		  <property name="color">icons/green.png</property>
           <onclick>RunAddon($INFO[Skin.String(HomeAddon.3.Label)])</onclick>
 		</item>
 		<item id="404" description="Custom addon">
 		<visible>!IsEmpty(Skin.String(HomeAddon.4.Label))</visible>
 		<thumb>$INFO[system.addonicon(Skin.String(HomeAddon.4.label))]</thumb>
 		  <label>$INFO[system.addonTitle(Skin.String(HomeAddon.4.Label))]</label>
-		  <property name="color">icons/red.png</property>
+		  <property name="color">icons/blue.png</property>
           <onclick>RunAddon($INFO[Skin.String(HomeAddon.4.Label)])</onclick>
 		</item>
 		<item id="405" description="Custom addon">
 		<visible>!IsEmpty(Skin.String(HomeAddon.5.Label))</visible>
 		<thumb>$INFO[system.addonicon(Skin.String(HomeAddon.5.label))]</thumb>
 		  <label>$INFO[system.addonTitle(Skin.String(HomeAddon.5.Label))]</label>
-		  <property name="color">icons/red.png</property>
+		  <property name="color">icons/teak.png</property>
           <onclick>RunAddon($INFO[Skin.String(HomeAddon.5.Label)])</onclick>
 		</item>
 		<item id="406" description="Custom addon">
 		<visible>!IsEmpty(Skin.String(HomeAddon.6.Label))</visible>
 		<thumb>$INFO[system.addonicon(Skin.String(HomeAddon.6.label))]</thumb>
 		  <label>$INFO[system.addonTitle(Skin.String(HomeAddon.6.Label))]</label>
-		  <property name="color">icons/red.png</property>
+		  <property name="color">icons/purple.png</property>
           <onclick>RunAddon($INFO[Skin.String(HomeAddon.6.Label)])</onclick>
 		</item>
 		
@@ -322,40 +322,37 @@
 		<visible>!IsEmpty(Skin.String(HomeAddon.8.Label))</visible>
 		<thumb>$INFO[system.addonicon(Skin.String(HomeAddon.8.label))]</thumb>
          <label>$INFO[system.addonTitle(Skin.String(HomeAddon.8.Label))]</label>
-		 <property name="color">icons/orange.png</property>
+		 <property name="color">icons/purple.png</property>
           <onclick>RunAddon($INFO[Skin.String(HomeAddon.8.Label)])</onclick>
 		</item>
 		<item id="503" description="Custom script">
 		<visible>!IsEmpty(Skin.String(HomeAddon.9.Label))</visible>
 		<thumb>$INFO[system.addonicon(Skin.String(HomeAddon.9.label))]</thumb>
 		  <label>$INFO[system.addonTitle(Skin.String(HomeAddon.9.Label))]</label>
-		  <property name="color">icons/orange.png</property>
+		  <property name="color">icons/green.png</property>
           <onclick>RunAddon($INFO[Skin.String(HomeAddon.9.Label)])</onclick>
 		</item>
 		<item id="504" description="Custom script">
 		<visible>!IsEmpty(Skin.String(HomeAddon.10.Label))</visible>
 		<thumb>$INFO[system.addonicon(Skin.String(HomeAddon.10.label))]</thumb>
 		  <label>$INFO[system.addonTitle(Skin.String(HomeAddon.10.Label))]</label>
-		  <property name="color">icons/orange.png</property>
+		  <property name="color">icons/red.png</property>
           <onclick>RunAddon($INFO[Skin.String(HomeAddon.10.Label)])</onclick>
 		</item>
 		<item id="505" description="Custom script">
 		<visible>!IsEmpty(Skin.String(HomeAddon.11.Label))</visible>
 		<thumb>$INFO[system.addonicon(Skin.String(HomeAddon.11.label))]</thumb>
 		  <label>$INFO[system.addonTitle(Skin.String(HomeAddon.11.Label))]</label>
-		  <property name="color">icons/orange.png</property>
+		  <property name="color">icons/lightblue.png</property>
           <onclick>RunAddon($INFO[Skin.String(HomeAddon.11.Label)])</onclick>
 		</item>
 		<item id="506" description="Custom script">
 		<visible>!IsEmpty(Skin.String(HomeAddon.12.Label))</visible>
 		<thumb>$INFO[system.addonicon(Skin.String(HomeAddon.12.label))]</thumb>
 		  <label>$INFO[system.addonTitle(Skin.String(HomeAddon.12.Label))]</label>
-		  <property name="color">icons/orange.png</property>
+		  <property name="color">icons/progcolor.png</property>
           <onclick>RunAddon($INFO[Skin.String(HomeAddon.12.Label)])</onclick>
 		</item>
-		
-		
-		
 		
         <item id="346">
           <visible>!Skin.HasSetting(hidewl)</visible>
