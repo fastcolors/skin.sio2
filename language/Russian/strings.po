@@ -4,13 +4,14 @@
 # Addon version: 1.2.0
 # Addon Provider: FastColors
 # Translators:
+# T D <tyler@pisem.net>, 2013.
 #   <tyler@pisem.net>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skin SiO2\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2013-01-12 18:44+0000\n"
+"PO-Revision-Date: 2013-01-26 19:01+0000\n"
 "Last-Translator: relyter <tyler@pisem.net>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/sio2-1/language/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -253,3 +254,11 @@ msgstr "Включить меню Вид для изменения режимо�
 msgctxt "#31055"
 msgid "Fullscreen player"
 msgstr "Воспроизведение в полном экране"
+
+msgctxt "#31056"
+msgid "Change Icon"
+msgstr "Изменить иконку"
+
+msgctxt "#31057"
+msgid "Replace Item"
+msgstr "Заменить элемент"

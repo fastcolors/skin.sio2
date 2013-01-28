@@ -1,5 +1,9 @@
 1.2.2
-* 
+* Fixed (reduced) jumpiness in scrolling Items in views
+* Custom Icons for Addons on HomePage
+* Added Localization for:
+Spanish - Fast
+Polish - Relyter
 
 1.2.1
 * Shelf Icon Bug Fix.
@@ -10,9 +14,9 @@
 * Favourites on Home now before Addons & Scripts.
 * RSS Client now optional
 * Added Localizations for:
-Italian
-French
-Russian
+Italian - Fast
+French - Luca
+Russian - Relyter
 * Minor bug fixes.
 
 1.1.9

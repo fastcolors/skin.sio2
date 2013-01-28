@@ -74,12 +74,20 @@
           <texture>$INFO[ListItem.Property(color)]</texture>
         </control>
         <control type="image" description="THMBSICONS">
-          
+		<visible>!IsEmpty(Listitem.thumb)</visible>
 		  <posx>20</posx>
           <posy>48</posy>
           <width>260</width>
           <height>168</height>
            <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
+        </control>
+		<control type="image" description="THMBSICONS">
+		<visible>IsEmpty(Listitem.thumb)</visible>
+		  <posx>20</posx>
+          <posy>48</posy>
+          <width>260</width>
+          <height>168</height>
+           <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
         </control>
         <control type="image" description="THMBS weather">
 		<posx>20</posx>
@@ -128,7 +136,7 @@
         </control>
         <control type="image" description="THMBSBASE">
 		<visible>Skin.HasSetting(colormenu)</visible>
-          <animation condition="Skin.HasSetting(colormenu)" effect="fade" start="0" end="100" time="100" delay="220" reversible="true">Focus</animation>
+          <animation condition="Skin.HasSetting(colormenu)" effect="fade" start="0" end="100" time="100" delay="200" reversible="true">Focus</animation>
           <animation condition="Skin.HasSetting(colormenu)" effect="fade" start="100" end="0" time="180" reversible="true">unFocus</animation>
 		  <posx>20</posx>
           <posy>48</posy>
@@ -136,12 +144,21 @@
           <height>168</height>
           <texture>$INFO[ListItem.Property(color)]</texture>
         </control>
-        <control type="image" description="THMBSICONS">
-		<posx>20</posx>
+       <control type="image" description="THMBSICONS">
+		<visible>!IsEmpty(Listitem.thumb)</visible>
+		  <posx>20</posx>
           <posy>48</posy>
           <width>260</width>
           <height>168</height>
-          <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
+           <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
+        </control>
+		<control type="image" description="THMBSICONS">
+		<visible>IsEmpty(Listitem.thumb)</visible>
+		  <posx>20</posx>
+          <posy>48</posy>
+          <width>260</width>
+          <height>168</height>
+           <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
         </control>
 		<control type="image" description="THMBS WEATHER">
 		<posx>20</posx>
@@ -270,42 +287,48 @@
 		
 		<item id="401" description="Custom addon">
 		<visible>!IsEmpty(Skin.String(HomeAddon.1.Label))</visible>
-		<thumb>$INFO[system.addonicon(Skin.String(HomeAddon.1.label))]</thumb>
+		<thumb>$INFO[Skin.String(HomeAddon.1.Icon)]</thumb>
+		<label2>$INFO[system.addonicon(Skin.String(HomeAddon.1.label))]</label2>
 		  <label>$INFO[system.addonTitle(Skin.String(HomeAddon.1.Label))]</label>
 		  <property name="color">icons/lightblue.png</property>
           <onclick>RunAddon($INFO[Skin.String(HomeAddon.1.Label)])</onclick>
 		</item>
 		<item id="402" description="Custom addon">
 		<visible>!IsEmpty(Skin.String(HomeAddon.2.Label))</visible>
-		<thumb>$INFO[system.addonicon(Skin.String(HomeAddon.2.label))]</thumb>
+		<thumb>$INFO[Skin.String(HomeAddon.2.Icon)]</thumb>
+		<label2>$INFO[system.addonicon(Skin.String(HomeAddon.2.label))]</label2>
          <label>$INFO[system.addonTitle(Skin.String(HomeAddon.2.Label))]</label>
 		 <property name="color">icons/red.png</property>
           <onclick>RunAddon($INFO[Skin.String(HomeAddon.2.Label)])</onclick>
 		</item>
 		<item id="403" description="Custom addon">
 		<visible>!IsEmpty(Skin.String(HomeAddon.3.Label))</visible>
-		<thumb>$INFO[system.addonicon(Skin.String(HomeAddon.3.label))]</thumb>
+		<thumb>$INFO[Skin.String(HomeAddon.3.Icon)]</thumb>
+		<label2>$INFO[system.addonicon(Skin.String(HomeAddon.3.label))]</label2>
 		  <label>$INFO[system.addonTitle(Skin.String(HomeAddon.3.Label))]</label>
 		  <property name="color">icons/green.png</property>
           <onclick>RunAddon($INFO[Skin.String(HomeAddon.3.Label)])</onclick>
 		</item>
 		<item id="404" description="Custom addon">
 		<visible>!IsEmpty(Skin.String(HomeAddon.4.Label))</visible>
-		<thumb>$INFO[system.addonicon(Skin.String(HomeAddon.4.label))]</thumb>
+		<thumb>$INFO[Skin.String(HomeAddon.4.Icon)]</thumb>
+		<label2>$INFO[system.addonicon(Skin.String(HomeAddon.4.label))]</label2>
 		  <label>$INFO[system.addonTitle(Skin.String(HomeAddon.4.Label))]</label>
 		  <property name="color">icons/blue.png</property>
           <onclick>RunAddon($INFO[Skin.String(HomeAddon.4.Label)])</onclick>
 		</item>
 		<item id="405" description="Custom addon">
 		<visible>!IsEmpty(Skin.String(HomeAddon.5.Label))</visible>
-		<thumb>$INFO[system.addonicon(Skin.String(HomeAddon.5.label))]</thumb>
+		<thumb>$INFO[Skin.String(HomeAddon.5.Icon)]</thumb>
+		<label2>$INFO[system.addonicon(Skin.String(HomeAddon.5.label))]</label2>
 		  <label>$INFO[system.addonTitle(Skin.String(HomeAddon.5.Label))]</label>
 		  <property name="color">icons/teak.png</property>
           <onclick>RunAddon($INFO[Skin.String(HomeAddon.5.Label)])</onclick>
 		</item>
 		<item id="406" description="Custom addon">
 		<visible>!IsEmpty(Skin.String(HomeAddon.6.Label))</visible>
-		<thumb>$INFO[system.addonicon(Skin.String(HomeAddon.6.label))]</thumb>
+		<thumb>$INFO[Skin.String(HomeAddon.6.Icon)]</thumb>
+		<label2>$INFO[system.addonicon(Skin.String(HomeAddon.6.label))]</label2>
 		  <label>$INFO[system.addonTitle(Skin.String(HomeAddon.6.Label))]</label>
 		  <property name="color">icons/purple.png</property>
           <onclick>RunAddon($INFO[Skin.String(HomeAddon.6.Label)])</onclick>

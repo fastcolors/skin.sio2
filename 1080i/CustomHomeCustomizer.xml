@@ -41,11 +41,21 @@
           <texture>icons/base.png</texture>
         </control>
             <control type="Image" description="THUMB">
+			<visible>!IsEmpty(Listitem.thumb)</visible>
               <posx>20</posx>
               <posy>48</posy>
               <height>168</height>
               <width>260</width>
               <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
+              <aspectratio>stretch</aspectratio>
+            </control>
+			<control type="Image" description="THUMB">
+			<visible>IsEmpty(Listitem.thumb)</visible>
+              <posx>20</posx>
+              <posy>48</posy>
+              <height>168</height>
+              <width>260</width>
+              <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="label" description="Main Label">
@@ -66,12 +76,22 @@
 		  <colordiffuse>FF666666</colordiffuse>
           <texture>icons/base.png</texture>
         </control>
-            <control type="image" description="THUMB">
+            <control type="Image" description="THUMB">
+			<visible>!IsEmpty(Listitem.thumb)</visible>
               <posx>20</posx>
               <posy>48</posy>
               <height>168</height>
               <width>260</width>
               <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
+              <aspectratio>stretch</aspectratio>
+            </control>
+			<control type="Image" description="THUMB">
+			<visible>IsEmpty(Listitem.thumb)</visible>
+              <posx>20</posx>
+              <posy>48</posy>
+              <height>168</height>
+              <width>260</width>
+              <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" description="Selection Overlay">
@@ -249,7 +269,7 @@
           <thumb>$INFO[Skin.String(HomeFav.6.Icon)]</thumb>
           <onclick>SetFocus(9000)</onclick>
         </item>
-		<item id="606" description="ScriptCustom">
+		<item id="606" description="HomeFav">
 			<visible>IsEmpty(Skin.String(HomeFav.6.Label))</visible>
               <thumb>DefaultAddon.png</thumb>
               <label>+ $LOCALIZE[1036]</label>
@@ -259,75 +279,87 @@
            
 			<item id="401" description="AddonCustom">
 			<visible>!IsEmpty(Skin.String(HomeAddon.1.Label))</visible>
-              <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.1.Label))]</thumb>
+              <thumb>$INFO[Skin.String(HomeAddon.1.Icon)]</thumb>
+			  <label2>$INFO[system.addonicon(Skin.String(HomeAddon.1.Label))]</label2>
               <label>$INFO[system.addonTitle(Skin.String(HomeAddon.1.Label))]</label>
-              <onclick>Skin.SetAddon(HomeAddon.1.Label,xbmc.python.pluginsource)</onclick>
+              <onclick>SetFocus(9000)</onclick>
             </item>
 			<item id="401" description="AddonCustom">
 			<visible>IsEmpty(Skin.String(HomeAddon.1.Label))</visible>
               <thumb>DefaultAddon.png</thumb>
               <label>+ $LOCALIZE[24000]</label>
               <onclick>Skin.SetAddon(HomeAddon.1.Label,xbmc.python.pluginsource)</onclick>
+			  <onclick>Skin.Reset(HomeAddon.1.Icon)</onclick>
             </item>
 			<item id="402" description="AddonCustom">
 			<visible>!IsEmpty(Skin.String(HomeAddon.2.Label))</visible>
-              <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.2.Label))]</thumb>
+              <thumb>$INFO[Skin.String(HomeAddon.2.Icon)]</thumb>
+			  <label2>$INFO[system.addonicon(Skin.String(HomeAddon.2.Label))]</label2>
               <label>$INFO[system.addonTitle(Skin.String(HomeAddon.2.Label))]</label>
-              <onclick>Skin.SetAddon(HomeAddon.2.Label,xbmc.python.pluginsource)</onclick>
+              <onclick>SetFocus(9000)</onclick>
             </item>
 			<item id="402" description="AddonCustom">
 			<visible>IsEmpty(Skin.String(HomeAddon.2.Label))</visible>
               <thumb>DefaultAddon.png</thumb>
               <label>+ $LOCALIZE[24000]</label>
               <onclick>Skin.SetAddon(HomeAddon.2.Label,xbmc.python.pluginsource)</onclick>
+			  <onclick>Skin.Reset(HomeAddon.2.Icon)</onclick>
             </item>
 			<item id="403" description="AddonCustom">
 			<visible>!IsEmpty(Skin.String(HomeAddon.3.Label))</visible>
-              <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.3.Label))]</thumb>
+              <thumb>$INFO[Skin.String(HomeAddon.3.Icon)]</thumb>
+			  <label2>$INFO[system.addonicon(Skin.String(HomeAddon.3.Label))]</label2>
               <label>$INFO[system.addonTitle(Skin.String(HomeAddon.3.Label))]</label>
-              <onclick>Skin.SetAddon(HomeAddon.3.Label,xbmc.python.pluginsource)</onclick>
+              <onclick>SetFocus(9000)</onclick>
             </item>
 			<item id="403" description="AddonCustom">
 			<visible>IsEmpty(Skin.String(HomeAddon.3.Label))</visible>
               <thumb>DefaultAddon.png</thumb>
               <label>+ $LOCALIZE[24000]</label>
               <onclick>Skin.SetAddon(HomeAddon.3.Label,xbmc.python.pluginsource)</onclick>
+			  <onclick>Skin.Reset(HomeAddon.3.Icon)</onclick>
             </item>
 			<item id="404" description="AddonCustom">
 			<visible>!IsEmpty(Skin.String(HomeAddon.4.Label))</visible>
-              <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.4.Label))]</thumb>
+              <thumb>$INFO[Skin.String(HomeAddon.4.Icon)]</thumb>
+			  <label2>$INFO[system.addonicon(Skin.String(HomeAddon.4.Label))]</label2>
               <label>$INFO[system.addonTitle(Skin.String(HomeAddon.4.Label))]</label>
-              <onclick>Skin.SetAddon(HomeAddon.4.Label,xbmc.python.pluginsource)</onclick>
+              <onclick>SetFocus(9000)</onclick>
             </item>
 			<item id="404" description="AddonCustom">
 			<visible>IsEmpty(Skin.String(HomeAddon.4.Label))</visible>
               <thumb>DefaultAddon.png</thumb>
               <label>+ $LOCALIZE[24000]</label>
               <onclick>Skin.SetAddon(HomeAddon.4.Label,xbmc.python.pluginsource)</onclick>
+			  <onclick>Skin.Reset(HomeAddon.4.Icon)</onclick>
             </item>
 			<item id="405" description="AddonCustom">
 			<visible>!IsEmpty(Skin.String(HomeAddon.5.Label))</visible>
-              <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.5.Label))]</thumb>
+              <thumb>$INFO[Skin.String(HomeAddon.5.Icon)]</thumb>
+			  <label2>$INFO[system.addonicon(Skin.String(HomeAddon.5.Label))]</label2>
               <label>$INFO[system.addonTitle(Skin.String(HomeAddon.5.Label))]</label>
-              <onclick>Skin.SetAddon(HomeAddon.5.Label,xbmc.python.pluginsource)</onclick>
+              <onclick>SetFocus(9000)</onclick>
             </item>
 			<item id="405" description="AddonCustom">
 			<visible>IsEmpty(Skin.String(HomeAddon.5.Label))</visible>
               <thumb>DefaultAddon.png</thumb>
               <label>+ $LOCALIZE[24000]</label>
               <onclick>Skin.SetAddon(HomeAddon.5.Label,xbmc.python.pluginsource)</onclick>
+			  <onclick>Skin.Reset(HomeAddon.5.Icon)</onclick>
             </item>
 			<item id="406" description="AddonCustom">
 			<visible>!IsEmpty(Skin.String(HomeAddon.6.Label))</visible>
-              <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.6.Label))]</thumb>
+             <thumb>$INFO[Skin.String(HomeAddon.6.Icon)]</thumb>
+			  <label2>$INFO[system.addonicon(Skin.String(HomeAddon.6.Label))]</label2>
               <label>$INFO[system.addonTitle(Skin.String(HomeAddon.6.Label))]</label>
-              <onclick>Skin.SetAddon(HomeAddon.6.Label,xbmc.python.pluginsource)</onclick>
+              <onclick>SetFocus(9000)</onclick>
             </item>
 			<item id="406" description="AddonCustom">
 			<visible>IsEmpty(Skin.String(HomeAddon.6.Label))</visible>
               <thumb>DefaultAddon.png</thumb>
               <label>+ $LOCALIZE[24000]</label>
               <onclick>Skin.SetAddon(HomeAddon.6.Label,xbmc.python.pluginsource)</onclick>
+			  <onclick>Skin.Reset(HomeAddon.6.Icon)</onclick>
             </item>
 			
 			<item id="501" description="ScriptCustom">
@@ -1078,13 +1110,19 @@
 	<posy>140</posy>
 	<width>520</width>
 	<height>60</height>
-	<label>ICONA</label>
+	<label>$LOCALIZE[31056]</label>
 	<onclick condition="Container(50).Hasfocus(601)">Skin.SetImage(HomeFav.1.Icon)</onclick>
 	<onclick condition="Container(50).Hasfocus(602)">Skin.SetImage(HomeFav.2.Icon)</onclick>
 	<onclick condition="Container(50).Hasfocus(603)">Skin.SetImage(HomeFav.3.Icon)</onclick>
 	<onclick condition="Container(50).Hasfocus(604)">Skin.SetImage(HomeFav.4.Icon)</onclick>
 	<onclick condition="Container(50).Hasfocus(605)">Skin.SetImage(HomeFav.5.Icon)</onclick>
 	<onclick condition="Container(50).Hasfocus(606)">Skin.SetImage(HomeFav.6.Icon)</onclick>
+	<onclick condition="Container(50).Hasfocus(401)">Skin.SetImage(HomeAddon.1.Icon)</onclick>
+	<onclick condition="Container(50).Hasfocus(402)">Skin.SetImage(HomeAddon.2.Icon)</onclick>
+	<onclick condition="Container(50).Hasfocus(403)">Skin.SetImage(HomeAddon.3.Icon)</onclick>
+	<onclick condition="Container(50).Hasfocus(404)">Skin.SetImage(HomeAddon.4.Icon)</onclick>
+	<onclick condition="Container(50).Hasfocus(405)">Skin.SetImage(HomeAddon.5.Icon)</onclick>
+	<onclick condition="Container(50).Hasfocus(406)">Skin.SetImage(HomeAddon.6.Icon)</onclick>
 	<onclick>SetFocus(50)</onclick>
 	</control>
 	<control type="button" id="667">
@@ -1092,14 +1130,26 @@
 	<posy>200</posy>
 	<width>520</width>
 	<height>60</height>
-	<label>FAVOURITE</label>
+	<label>$LOCALIZE[31057]</label>
 	<onclick condition="Container(50).Hasfocus(601)">RunScript(script.favourites,property=HomeFav.1)</onclick>
 	<onclick condition="Container(50).Hasfocus(602)">RunScript(script.favourites,property=HomeFav.2)</onclick>
 	<onclick condition="Container(50).Hasfocus(603)">RunScript(script.favourites,property=HomeFav.3)</onclick>
 	<onclick condition="Container(50).Hasfocus(604)">RunScript(script.favourites,property=HomeFav.4)</onclick>
 	<onclick condition="Container(50).Hasfocus(605)">RunScript(script.favourites,property=HomeFav.5)</onclick>
 	<onclick condition="Container(50).Hasfocus(606)">RunScript(script.favourites,property=HomeFav.6)</onclick>
+	<onclick condition="Container(50).Hasfocus(401)">Skin.SetAddon(HomeAddon.1.Label,xbmc.python.pluginsource)</onclick>
+	<onclick condition="Container(50).Hasfocus(401)">Skin.Reset(HomeAddon.1.Icon)</onclick>
+	<onclick condition="Container(50).Hasfocus(402)">Skin.SetAddon(HomeAddon.2.Label,xbmc.python.pluginsource)</onclick>
+	<onclick condition="Container(50).Hasfocus(402)">Skin.Reset(HomeAddon.2.Icon)</onclick>
+	<onclick condition="Container(50).Hasfocus(403)">Skin.SetAddon(HomeAddon.3.Label,xbmc.python.pluginsource)</onclick>
+	<onclick condition="Container(50).Hasfocus(403)">Skin.Reset(HomeAddon.3.Icon)</onclick>
+	<onclick condition="Container(50).Hasfocus(404)">Skin.SetAddon(HomeAddon.4.Label,xbmc.python.pluginsource)</onclick>
+	<onclick condition="Container(50).Hasfocus(404)">Skin.Reset(HomeAddon.4.Icon)</onclick>
+	<onclick condition="Container(50).Hasfocus(405)">Skin.SetAddon(HomeAddon.5.Label,xbmc.python.pluginsource)</onclick>
+	<onclick condition="Container(50).Hasfocus(405)">Skin.Reset(HomeAddon.5.Icon)</onclick>
+	<onclick condition="Container(50).Hasfocus(406)">Skin.SetAddon(HomeAddon.6.Label,xbmc.python.pluginsource)</onclick>
 	<onclick>SetFocus(50)</onclick>
+	<onclick condition="Container(50).Hasfocus(406)">Skin.Reset(HomeAddon.6.Icon)</onclick>
 	</control>
         </control>
       </control>

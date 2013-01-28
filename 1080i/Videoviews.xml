@@ -26,7 +26,7 @@
           <focusposition>3</focusposition>
           <movement>4</movement>
           <preloaditems>4</preloaditems>
-          <scrolltime tween="sine" easing="inout">280</scrolltime>
+          <scrolltime>250</scrolltime>
           <include>LargeListLayout</include>
         </control>
         <include>LargeListSlider</include>
@@ -42,10 +42,10 @@
     </control>
     
     <!--ICONE-->
-    <control type="group" description="Grid view">
+    <control type="group" description="Icons view">
       <visible>Control.IsVisible(53)</visible>
-      <control type="group" description="Container and frame">
-        <control type="panel" id="53" description="Grid">
+      <control type="group">
+        <control type="panel" id="53" description="Icons">
           <visible>!IsEmpty(Container.FolderPath) + container.content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes) | container.content(musicvideos) | container.content(addons) | container.content(files)</visible>
           <viewtype label="536">Grid</viewtype>
           <posx>60</posx>
@@ -57,11 +57,11 @@
           <onleft condition="Skin.HasSetting(ViewsMenuOff)">ReloadSkin()</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
           <onright condition="!Skin.HasSetting(Scrollbars_Active)">53</onright>
-          <onup>53</onup>
-          <ondown>53</ondown>
+          <onup>-</onup>
+          <ondown>-</ondown>
           <preloaditems>4</preloaditems>
           <pagecontrol>60</pagecontrol>
-          <scrolltime tween="sine" easing="inout">500</scrolltime>
+          <scrolltime tween="sine" easing="inout">300</scrolltime>
           <itemlayout condition="Container.Content(Movies) | Container.Content(TVshows) | Container.Content(seasons)" height="350" width="257">
             <control type="image">
               <posx>35</posx>
@@ -330,15 +330,15 @@
             <height>322</height>
             <texture border="20">images/GeneralSlider.png</texture>
             <aspectratio>stretch</aspectratio>
-            <animation condition="Container.Column(0)" effect="slide" easing="inout" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(1)" effect="slide" easing="inout" start="0,0" end="257,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(2)" effect="slide" easing="out" start="0,0" end="514,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(3)" effect="slide" easing="inout" start="0,0" end="771,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(4)" effect="slide" easing="inout" start="0,0" end="1028,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(5)" effect="slide" easing="inout" start="0,0" end="1285,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(6)" effect="slide" easing="inout" start="0,0" end="1542,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Row(0)" effect="slide" easing="inout" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Row(1)" effect="slide" easing="inout" start="0,0" end="0,350" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(0)" effect="slide" end="0,0" time="150" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(1)" effect="slide" end="257,0" time="150" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(2)" effect="slide" end="514,0" time="150" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(3)" effect="slide" end="771,0" time="150" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(4)" effect="slide" end="1028,0" time="150" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(5)" effect="slide" end="1285,0" time="150" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(6)" effect="slide" end="1542,0" time="150" reversible="true">Conditional</animation>
+            <animation condition="Container.Row(0)" effect="slide" end="0,0" time="200" reversible="true">Conditional</animation>
+            <animation condition="Container.Row(1)" effect="slide" end="0,350" time="200" reversible="true">Conditional</animation>
           </control>
         </control>
         <control type="group" description="Slider Square">
@@ -534,7 +534,7 @@
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
           <preloaditems>4</preloaditems>
           <pagecontrol>60</pagecontrol>
-          <scrolltime>400</scrolltime>
+          <scrolltime>300</scrolltime>
           <itemlayout condition="container.content(tvshows)" height="200" width="1800">
             <control type="image">
               <posx>521</posx>
@@ -744,7 +744,7 @@
         <width>2200</width>
         <height>700</height>
         <orientation>horizontal</orientation>
-        <scrolltime>400</scrolltime>
+        <scrolltime>300</scrolltime>
         <focusposition>1</focusposition>
         <preloaditems>2</preloaditems>
         <pagecontrol>60</pagecontrol>
@@ -1004,7 +1004,7 @@
             <focusposition>5</focusposition>
             <movement>5</movement>
             <preloaditems>4</preloaditems>
-            <scrolltime tween="sine" easing="inout">280</scrolltime>
+            <scrolltime>250</scrolltime>
             <itemlayout condition="SubString(Container.FolderPath,plugin://,left)" width="802" height="81">
               <control type="label" description="Main Label">
                 <width>720</width>
