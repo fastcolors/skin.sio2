@@ -26,7 +26,7 @@
         <height>70</height>
         <aspectratio align="center">keep</aspectratio>
       </control>
-      <control type="group" id="111"></control>
+      <control type="group" id="111">
       <control type="label" id="100" description="Textarea">
         <posx>150</posx>
         <posy>220</posy>
@@ -61,9 +61,9 @@
         <label>$LOCALIZE[SCRIPT655]</label>
         <font>size33</font>
         <align>center</align>
-        =
         <wrapmultiline>true</wrapmultiline>
       </control>
+	  </control>
       <control type="list" id="120">
         <posx>180</posx>
         <posy>281</posy>
@@ -212,7 +212,7 @@
       </control>
       <control type="label" description="XBMC Subtitles label">
         <posx>2000</posx>
-        <posy>231</posy>
+        <posy>211</posy>
         <width>360</width>
         <height>30</height>
         <label>[B]$LOCALIZE[SCRIPT760][/B]</label>
@@ -223,16 +223,16 @@
       <control type="image">
         <description>separator</description>
         <posx>1975</posx>
-        <posy>278</posy>
+        <posy>258</posy>
         <width>450</width>
         <height>1</height>
         <texture>images/Line.png</texture>
       </control>
       <control type="list" id="150">
         <posx>2000</posx>
-        <posy>285</posy>
+        <posy>265</posy>
         <width>375</width>
-        <height>546</height>
+        <height>442</height>
         <onleft>120</onleft>
         <onright>120</onright>
         <onup>150</onup>

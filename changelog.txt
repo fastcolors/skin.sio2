@@ -1,3 +1,11 @@
+1.2.3
+* Fixed Subtitles Addon always signaling local subtitles available
+* Home Scrolling moved to 3rd line instead of 2nd
+* Removed Now Playing for fullscreen Icon (duplicate)
+* Added Video Preview on Home if/when video is playing
+* Icon view now smoother without sliding effect
+* Cleaned some code.
+
 1.2.2
 * Fixed (reduced) jumpiness in scrolling Items in views
 * Custom Icons for Addons on HomePage
