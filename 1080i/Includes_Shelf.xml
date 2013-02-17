@@ -170,7 +170,7 @@
           <aspectratio scalediffuse="false">scale</aspectratio>
         </control>
         <control type="image">
-          <visible>Control.IsVisible(313)+!Skin.HasSetting(RecordOff)</visible>
+          <visible>Control.IsVisible(313)+!Skin.HasSetting(RecordOff) + !Skin.HasSetting(MusicShelf_Custom)</visible>
           <animation effect="slide" end="0,-60" time="400" delay="100">Focus</animation>
           <posx>26</posx>
           <posy>27</posy>

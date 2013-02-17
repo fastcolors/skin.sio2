@@ -79,15 +79,17 @@
         <texture>Seekbar/Barback.png</texture>
       </control>
       <control type="progress" description="Cache Progress">
-	  <visible>Player.Caching</visible>
+	  <visible>true</visible>
+	  <!--Player.Caching-->
         <posx>255</posx>
-		<posy>-28</posy>
+		<posy>2</posy>
         <width>1410</width>
-        <height>68</height>
-        <texturebg>Seekbar/VideoProgressBG.png</texturebg>
-        <midtexture>Seekbar/bufferM.png</midtexture>
-        <lefttexture>Seekbar/bufferL.png</lefttexture>
-        <righttexture>Seekbar/bufferR.png</righttexture>
+        <height>66</height>
+        <texturebg>Seekbar/BG.png</texturebg>
+        <midtexture border="2,2,2,2">Seekbar/M.png</midtexture>
+        <lefttexture border="0,2,0,2">Seekbar/L.png</lefttexture>
+        <righttexture border="0,2,0,2">Seekbar/R.png</righttexture>
+		<colordiffuse>FF333366</colordiffuse>
         <info>Player.ProgressCache</info>
       </control>
       <control type="progress" id="23" description="Progress Bar">

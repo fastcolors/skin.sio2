@@ -1,3 +1,11 @@
+1.2.4
+* Player Cache Bar now shows.
+* Settings LOCK infos fix
+* Bugs Fix
+* Fixed Album Big List View now showing AlbumArt even with description
+* Fixed Big List second labels disappearing when Context menu is on
+* Fixed issue with record pulling out of Music Addons on Shelf
+
 1.2.3
 * Fixed Subtitles Addon always signaling local subtitles available
 * Home Scrolling moved to 3rd line instead of 2nd

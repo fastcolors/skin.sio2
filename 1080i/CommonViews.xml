@@ -165,6 +165,7 @@
       <animation effect="fade" time="400">Visible</animation>
       <animation effect="fade" time="0">Hidden</animation>
       <control type="image" description="Fanart">
+	  <visible>Container.Content(artists)</visible>
         <posx>0</posx>
         <width>660</width>
         <height>540</height>
@@ -172,6 +173,16 @@
         <texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
         <aspectratio aligny="bottom">keep</aspectratio>
       </control>
+	  <control type="image" description="Fanart">
+	  <visible>Container.Content(Albums)</visible>
+        <posy>200</posy>
+        <width>660</width>
+        <height>340</height>
+        <include>Icon_Fade</include>
+        <texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+        <aspectratio aligny="bottom">keep</aspectratio>
+      </control>
+	   
       <control type="textbox">
         <posy>560</posy>
         <width>660</width>
@@ -811,7 +822,6 @@
         </control>
       </control>
       <control type="group">
-        <visible>Control.IsVisible(50)</visible>
         <control type="label" description="Label2">
 		<visible>!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)</visible>
           <posx>45</posx>
@@ -872,7 +882,6 @@
         </control>
       </control>
       <control type="group">
-        <visible>Control.IsVisible(50)</visible>
         <control type="label" description="Label2">
 		<visible>!isEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)</visible>
           <posx>45</posx>

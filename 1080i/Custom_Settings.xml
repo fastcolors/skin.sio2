@@ -102,7 +102,7 @@
           </control>
         </focusedlayout>
         <content>
-		<item id="1" description="SkinSettingLock">
+		<item id="6" description="SkinSettingLock">
             <label>LOCK</label>
             <label2>$VAR[locksettings]</label2>
             <onclick>Skin.ToggleSetting(locksettings)</onclick>
@@ -233,6 +233,11 @@
         <visible>Container(50).HasFocus(1)</visible>
         <include>Help_Panel</include>
         <texture>colormenu.png</texture>
+      </control>
+	  <control type="image" description="ScrollBars">
+        <visible>Container(50).HasFocus(1) + Skin.HasSetting(colormenu)</visible>
+        <include>Help_Panel</include>
+        <texture>help/OFF.png</texture>
       </control>
       <control type="image" description="Logo">
         <visible>Container(50).HasFocus(2) | Container(50).HasFocus(3)</visible>
