@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="12">
+﻿<window id="12">
   <defaultcontrol always="true">3</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <include>OpenClose</include>
@@ -13,7 +12,7 @@
       <aspectratio>stretch</aspectratio>
       <texture>images/Line.png</texture>
     </control>
-	<control type="image" description="Line Split">
+    <control type="image" description="Line Split">
       <posx>0</posx>
       <posy>80</posy>
       <width>1920</width>
@@ -29,7 +28,7 @@
       <posx>0</posx>
       <posy>78</posy>
       <width>auto</width>
-	  <align>center</align>
+      <align>center</align>
       <height>80</height>
       <itemgap>5</itemgap>
       <onup>-</onup>
@@ -44,8 +43,8 @@
       <onright>60</onright>
       <onup>3</onup>
       <ondown>5</ondown>
-	  <onright>3</onright>
-	  <onleft>3</onleft>
+      <onright>3</onright>
+      <onleft>3</onleft>
       <pagecontrol>60</pagecontrol>
       <orientation>vertical</orientation>
     </control>

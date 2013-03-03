@@ -1,39 +1,38 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="132">
+﻿<window id="132">
   <defaultcontrol always="true">3</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <include>DialogOpenCloseVisible</include>
   <controls>
     <control type="image">
-	<posx>250</posx>
-	<posy>-100</posy>
-	<width>1420</width>
-	<height>1280</height>
-	<texture border="150">images/Dialog.png</texture>
-	</control>
+      <posx>250</posx>
+      <posy>-100</posy>
+      <width>1420</width>
+      <height>1280</height>
+      <texture border="150">images/Dialog.png</texture>
+    </control>
     <control type="group">
       <posx>0</posx>
       <posy>40</posy>
       <control type="label" description="Directory Contains">
         <posx>440</posx>
         <align>left</align>
-		<height>62</height>
+        <height>62</height>
         <font>size39B</font>
         <width>1020</width>
         <label>$LOCALIZE[20344] :</label>
       </control>
-	  <control type="image" description="Splitter">
-          <posx>500</posx>
-          <posy>70</posy>
-          <height>1</height>
-          <width>1035</width>
-          <texture>images/LineR.png</texture>
-        </control>
+      <control type="image" description="Splitter">
+        <posx>500</posx>
+        <posy>70</posy>
+        <height>1</height>
+        <width>1035</width>
+        <texture>images/LineR.png</texture>
+      </control>
       <control type="spincontrolex" id="3" description="Content Type">
         <posx>1100</posx>
         <posy></posy>
         <width>400</width>
-		<height>62</height>
+        <height>62</height>
         <font>-</font>
         <label>-</label>
         <align>right</align>
@@ -48,7 +47,7 @@
         <posx>1100</posx>
         <textoffsetx>20</textoffsetx>
         <width>760</width>
-		<height>62</height>
+        <height>62</height>
         <align>left</align>
         <label>$INFO[Control.GetLabel(3)]</label>
       </control>

@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="120">
+﻿<window id="120">
   <defaultcontrol always="true">101</defaultcontrol>
   <include>OpenClose</include>
   <controls>
@@ -11,9 +10,9 @@
       <info>Player.Progress</info>
       <visible>true</visible>
     </control>
-	<control type="image">
-	<posx>190</posx>
-	<posy>90r</posy>
+    <control type="image">
+      <posx>190</posx>
+      <posy>90r</posy>
       <width>750</width>
       <height>500</height>
       <aspectratio>stretch</aspectratio>

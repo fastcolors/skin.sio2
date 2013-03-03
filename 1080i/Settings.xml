@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <window id="4">
   <defaultcontrol always="true">52</defaultcontrol>
   <allowoverlay>no</allowoverlay>
@@ -8,7 +7,7 @@
     <include>SettingsClock</include>
     <control type="group">
       <posx>1020</posx>
-      <posy>141</posy>
+      <posy>131</posy>
       <control type="group" description="Slider">
         <include>Scrollanim</include>
         <control type="image">
@@ -49,31 +48,28 @@
         <preloaditems>4</preloaditems>
         <scrolltime tween="sine" easing="inout">280</scrolltime>
         <itemlayout width="802" height="81">
-		<include>ArrowNF</include>
+          <include>ArrowNF</include>
           <control type="label" description="Main Label">
             <include>52MainLabel</include>
             <label>$INFO[ListItem.Label]</label>
           </control>
-      
         </itemlayout>
         <focusedlayout width="802" height="81">
-		<include>ArrowFO</include>
+          <include>ArrowFO</include>
           <control type="label" description="Main Label">
             <include>52MainLabelFO</include>
             <label>$INFO[ListItem.Label]</label>
           </control>
-   
         </focusedlayout>
         <content>
           <item id="0" description="Appearance">
             <label>480</label>
             <onclick>activatewindow(AppearanceSettings)</onclick>
           </item>
-		  <item id="1" description="Skin options">
-       <label>$LOCALIZE[166] $LOCALIZE[5]</label>
+          <item id="1" description="Skin options">
+            <label>$LOCALIZE[166] $LOCALIZE[5]</label>
             <onclick>activatewindow(56)</onclick>
           </item>
-
           <item id="3" description="Videos">
             <label>3</label>
             <onclick>activatewindow(VideosSettings)</onclick>
@@ -82,22 +78,25 @@
             <label>2</label>
             <onclick>activatewindow(MusicSettings)</onclick>
           </item>
+		   <item id="14" description="LiveTV">
+            <label>31059</label>
+            <onclick>activatewindow(PVRSettings)</onclick>
+          </item>
           <item id="5" description="Pictures">
             <label>1</label>
             <onclick>activatewindow(PicturesSettings)</onclick>
           </item>
-		  <item id="6" description="Addons">
+          <item id="6" description="Addons">
             <label>24001</label>
             <onclick>activatewindow(AddonBrowser,root)</onclick>
           </item>
-          
           <item id="8" description="Weather">
             <label>8</label>
             <onclick>activatewindow(WeatherSettings)</onclick>
           </item>
           <item id="9" description="Services">
             <label>14036</label>
-			<onclick>Activatewindow(servicesettings)</onclick> 
+            <onclick>Activatewindow(servicesettings)</onclick>
           </item>
           <item id="10" description="System">
             <label>13000</label>
@@ -279,7 +278,7 @@
         <scroll>false</scroll>
         <aligny>top</aligny>
         <align>center</align>
-        <label> $LOCALIZE[115], $LOCALIZE[116], $LOCALIZE[117], $LOCALIZE[118] $LOCALIZE[744].</label>
+        <label>$LOCALIZE[115], $LOCALIZE[116], $LOCALIZE[117], $LOCALIZE[118] $LOCALIZE[744].</label>
       </control>
       <control type="label" description="System info">
         <visible>Container(52).HasFocus(13)</visible>
@@ -291,6 +290,17 @@
         <aligny>top</aligny>
         <align>center</align>
         <label>$LOCALIZE[20037]. [CR][CR]$LOCALIZE[154]. [CR][CR]$LOCALIZE[705]. [CR][CR]$LOCALIZE[1212]. [CR][CR]$LOCALIZE[13281].</label>
+      </control>
+	  <control type="label" description="LiveTV">
+        <visible>Container(52).HasFocus(14)</visible>
+        <width>660</width>
+        <height>625</height>
+        <font>size33</font>
+        <wrapmultiline>true</wrapmultiline>
+        <scroll>false</scroll>
+        <aligny>top</aligny>
+        <align>center</align>
+        <label>$LOCALIZE[128]. [CR][CR]$LOCALIZE[19181]. [CR][CR]$LOCALIZE[19222]. [CR][CR]$LOCALIZE[14086]. [CR][CR]$LOCALIZE[20007]. [CR][CR]$LOCALIZE[14095]. [CR][CR]$LOCALIZE[19259]. [CR][CR]$LOCALIZE[19279].</label>
       </control>
     </control>
   </controls>

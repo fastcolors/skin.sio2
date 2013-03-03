@@ -2,11 +2,12 @@
 <window>
   <defaultcontrol always="true">10</defaultcontrol>
   <allowoverlay>no</allowoverlay>
+  <!--<onload>XBMC.PlayMedia(special://skin/mov/introMovie.mov)</onload>-->
   <controls>
     <control type="button" id="10" description="Startup Trigger">
-      <onfocus>ReplaceWindow(Home)</onfocus>
-      <texturenofocus></texturenofocus>
-      <texturefocus></texturefocus>
+      <texturenofocus>-</texturenofocus>
+      <texturefocus>-</texturefocus>
+	  <onfocus>ReplaceWindow(Home)</onfocus>
     </control>
   </controls>
 </window>

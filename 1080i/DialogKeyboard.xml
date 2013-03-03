@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <window id="103">
   <defaultcontrol always="true">300</defaultcontrol>
   <allowoverlay>no</allowoverlay>
@@ -74,7 +73,7 @@
           </control>
           <control type="button" id="909001" description="cyrillic">
             <include>Keyboardbuttons</include>
-			<label>909001</label>
+            <label>909001</label>
           </control>
         </control>
         <control type="group">

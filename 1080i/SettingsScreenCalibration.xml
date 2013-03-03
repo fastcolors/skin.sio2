@@ -38,7 +38,7 @@
       <texturefocus>calibrate/CalibratePixelRatio.png</texturefocus>
       <texturenofocus>-</texturenofocus>
     </control>
-	<control type="label" id="2" description="coordinates label">
+    <control type="label" id="2" description="coordinates label">
       <posx>30</posx>
       <posy>60</posy>
       <width>1860</width>

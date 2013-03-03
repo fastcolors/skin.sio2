@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="129">
+﻿<window id="129">
   <defaultcontrol always="true">11</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
@@ -19,22 +18,22 @@
         <width>1920</width>
         <texture>images/line.png</texture>
       </control>
-	  <control type="label" description="fusionHelp">
-	  <visible>!Skin.HasSetting(FirstRun)</visible>
+      <control type="label" description="fusionHelp">
+        <visible>!Skin.HasSetting(FirstRun)</visible>
         <posx>1500</posx>
         <posy>260</posy>
         <width>400</width>
-		<textcolor>Yellow</textcolor>
+        <textcolor>Yellow</textcolor>
         <font>size26</font>
         <label>1 - ON THIS LINE ENTER [CR]http://fusion.xbmchub.com</label>
         <align>center</align>
       </control>
-	  <control type="label" description="fusionHelp">
-	  <visible>!Skin.HasSetting(FirstRun)</visible>
+      <control type="label" description="fusionHelp">
+        <visible>!Skin.HasSetting(FirstRun)</visible>
         <posx>1500</posx>
         <posy>800</posy>
         <width>400</width>
-		<textcolor>Yellow</textcolor>
+        <textcolor>Yellow</textcolor>
         <font>size26</font>
         <label>2 - ON THIS LINE ENTER [CR]Fusion[CR] Then Press OK.</label>
         <align>center</align>
@@ -135,7 +134,7 @@
           <label>186</label>
           <onleft>20</onleft>
           <onright>19</onright>
-		  <onclick condition="!Skin.HasSetting(FirstRun)">Skin.SetBool(FusionBack)</onclick>
+          <onclick condition="!Skin.HasSetting(FirstRun)">Skin.SetBool(FusionBack)</onclick>
         </control>
         <control type="button" id="19" description="Cancel">
           <width>300</width>

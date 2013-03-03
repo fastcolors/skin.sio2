@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<window type="buttonMenu" id="1112">
+﻿<window type="buttonMenu" id="1112">
   <defaultcontrol>9000</defaultcontrol>
   <include>DialogOpenClose</include>
   <controls>
@@ -30,7 +29,7 @@
       <itemgap>30</itemgap>
       <align>center</align>
       <orientation>horizontal</orientation>
-      <control type="button" id="1" description="Playdvd"> 
+      <control type="button" id="1" description="Playdvd">
         <enable>System.HasMediadvd</enable>
         <animation type="Conditional" condition="!Control.IsEnabled(1)">
           <effect type="fade" start="100" end="30" time="0" reversible="true" />

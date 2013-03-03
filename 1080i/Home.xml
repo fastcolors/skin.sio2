@@ -1,13 +1,13 @@
 <window>
   <defaultcontrol always="true">9000</defaultcontrol>
   <allowoverlay>no</allowoverlay>
+  <onload>RunScript(script.favourites)</onload>
   <onload>SetProperty(SkinWidgets_RandomItems_Update,true)</onload>
   <include>OpenClose</include>
   <controls>
-    <include>BlackBackground</include>
     <control type="group" description="Furniture">
       <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)] | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
-      <control type="image" description="Stage">
+	  <control type="image" description="Stage">
         <width>1920</width>
         <height>1080</height>
         <aspectratio>stretch</aspectratio>
@@ -155,7 +155,7 @@
           <width>260</width>
           <height>168</height>
           <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
-        </control>
+		</control>
         <control type="image" description="THMBS WEATHER">
           <posx>20</posx>
           <posy>48</posy>
@@ -207,6 +207,7 @@
           <onclick condition="Library.HasContent(TVShows)">ActivateWindow(VideoLibrary,TVShowTitles,return)</onclick>
           <onclick condition="!Library.HasContent(TVShows)">ActivateWindow(Videos,root)</onclick>
         </item>
+		
         <item id="342">
           <visible>!Skin.HasSetting(hidemusic)</visible>
           <thumb>icons/Music.png</thumb>
@@ -228,6 +229,27 @@
           <label>1</label>
           <property name="color">icons/darkblue.png</property>
           <onclick>ActivateWindow(2)</onclick>
+        </item>
+		<item id="352">
+          <visible>!Skin.HasSetting(hidefav)</visible>
+          <thumb>icons/favs.png</thumb>
+          <label>$LOCALIZE[1036]</label>
+          <property name="color">icons/red.png</property>
+          <onclick>ActivateWindow(134)</onclick>
+        </item>
+		<item id="355">
+          <thumb>icons/LiveTV.png</thumb>
+          <label>31059</label>
+          <property name="color">icons/green3.png</property>
+          <onclick>ActivateWindow(myPVR)</onclick>
+		  <visible>!Pvr.IsRecording + System.GetBool(pvrmanager.enabled)</visible>
+        </item>
+		<item id="355">
+          <thumb>icons/LiveTVrec.png</thumb>
+          <label>19043</label>
+          <property name="color">icons/green3.png</property>
+          <onclick>ActivateWindow(myPVR)</onclick>
+		  <visible>Pvr.IsRecording + System.GetBool(pvrmanager.enabled)</visible>
         </item>
         <item id="345">
           <visible>!Skin.HasSetting(hidewtr)</visible>
@@ -373,7 +395,7 @@
           <visible>!Skin.HasSetting(hidewl)</visible>
           <thumb>icons/watchlist.png</thumb>
           <label>WatchList</label>
-          <property name="color">icons/red.png</property>
+          <property name="color">icons/dvdcolor.png</property>
           <onclick>ActivateWindow(1113)</onclick>
         </item>
         <item id="350">
@@ -390,13 +412,13 @@
           <property name="color">icons/darkblue.png</property>
           <onclick>activatewindow(1115)</onclick>
         </item>
-        <item id="352">
+        <!--<item id="352">
           <visible>!Skin.HasSetting(hidefav)</visible>
           <thumb>icons/favs.png</thumb>
           <label>$LOCALIZE[1036]</label>
           <property name="color">icons/pink.png</property>
           <onclick>ActivateWindow(134)</onclick>
-        </item>
+        </item>-->
         <item id="353">
           <visible>!Skin.HasSetting(hidebro)</visible>
           <thumb>icons/browser.png</thumb>
@@ -404,23 +426,13 @@
           <property name="color">icons/lightyellow.png</property>
           <onclick>ActivateWindow(3)</onclick>
         </item>
-        <!--<item id="355">
-    <description>Cinema Experience</description>
-	<visible>system.hasaddon(script.cinema.experience)</visible>
-	<thumb>icons/base.png</thumb>
-    <label>Cinema Experience</label>
-    <onclick>Playlist.Clear</onclick>
-    <onclick>Dialog.Close(MovieInformation)</onclick>
-    <onclick>XBMC.RunScript(script.cinema.experience)</onclick>
-    
-</item>-->
         <item id="354">
           <visible>![System.Platform.ios | System.Platform.atv2]</visible>
           <visible>!Skin.HasSetting(XBMC3)</visible>
           <visible>System.HasMediadvd</visible>
           <thumb>icons/DVD.png</thumb>
           <label>446</label>
-		  <property name="color">icons/dvdcolor.png</property>
+          <property name="color">icons/dvdcolor.png</property>
           <onclick>ActivateWindow(1112)</onclick>
         </item>
         <item id="348">
@@ -462,7 +474,6 @@
       <height>100</height>
       <texture>images/bottomshader.png</texture>
     </control>
-    
     <!--SLIDER-->
     <control type="image">
       <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)] | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
@@ -472,18 +483,18 @@
       <height>173</height>
       <texture>images/atvslider.png</texture>
       <aspectratio>stretch</aspectratio>
-      <animation condition="Container(9000).Column(0)" effect="slide" end="0,0" time="220" easing="inout">Conditional</animation>
-      <animation condition="Container(9000).Column(1)" effect="slide" end="300,0" time="220" easing="inout">Conditional</animation>
-      <animation condition="Container(9000).Column(2)" effect="slide" end="600,0" time="220" easing="inout">Conditional</animation>
-      <animation condition="Container(9000).Column(3)" effect="slide" end="900,0" time="220" easing="inout">Conditional</animation>
-      <animation condition="Container(9000).Column(4)" effect="slide" end="1200,0" time="220" easing="inout">Conditional</animation>
-      <animation condition="Container(9000).Column(5)" effect="slide" end="1500,0" time="220" easing="inout">Conditional</animation>
-      <animation condition="Container(9000).Row(0)" effect="slide" end="0,0" time="220" easing="inout">Conditional</animation>
-      <animation condition="Container(9000).Row(1)" effect="slide" end="0,230" time="220" easing="inout">Conditional</animation>
-      <animation condition="Container(9000).Row(2)" effect="slide" end="0,460" time="220" easing="inout">Conditional</animation>
-      <animation condition="Container(9000).Row(3)" effect="slide" end="0,690" time="220" easing="inout">Conditional</animation>
-      <animation condition="Container(9000).Row(4)" effect="slide" end="0,920" time="220" easing="inout">Conditional</animation>
-      <animation condition="!Control.HasFocus(9000)" effect="fade" start="100" end="0"  time="220" easing="inout">Conditional</animation>
+      <animation condition="Container(9000).Column(0)" effect="slide" end="0,0" time="220">Conditional</animation>
+      <animation condition="Container(9000).Column(1)" effect="slide" end="300,0" time="220">Conditional</animation>
+      <animation condition="Container(9000).Column(2)" effect="slide" end="600,0" time="220">Conditional</animation>
+      <animation condition="Container(9000).Column(3)" effect="slide" end="900,0" time="220">Conditional</animation>
+      <animation condition="Container(9000).Column(4)" effect="slide" end="1200,0" time="220">Conditional</animation>
+      <animation condition="Container(9000).Column(5)" effect="slide" end="1500,0" time="220">Conditional</animation>
+      <animation condition="Container(9000).Row(0)" effect="slide" end="0,0" time="220">Conditional</animation>
+      <animation condition="Container(9000).Row(1)" effect="slide" end="0,230" time="220">Conditional</animation>
+      <animation condition="Container(9000).Row(2)" effect="slide" end="0,460" time="220">Conditional</animation>
+      <animation condition="Container(9000).Row(3)" effect="slide" end="0,690" time="220">Conditional</animation>
+      <animation condition="Container(9000).Row(4)" effect="slide" end="0,920" time="220">Conditional</animation>
+      <animation condition="!Control.HasFocus(9000)" effect="fade" start="100" end="0"  time="220">Conditional</animation>
     </control>
     <include>weather_shelf</include>
     <control type="group" id="700" description="Shelf items">
@@ -496,15 +507,14 @@
       <include condition="Skin.HasSetting(PicturesShelf_Custom)">Pictures_Shortcuts</include>
       <include condition="Skin.HasSetting(AddonsShelf_Custom)">Addons_Shortcuts</include>
       <include condition="Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)">VAddons_Shortcuts</include>
-      <control type="image" description="Logo">
-        <visible>![[Container(9000).HasFocus(340) + Library.HasContent(Movies)] | [Container(9000).HasFocus(341) + Library.HasContent(TVShows)] | [Container(9000).HasFocus(342) + Library.HasContent(Music)] | [Container(9000).HasFocus(342) + Control.IsVisible(313)] | [Container(9000).HasFocus(343) + Skin.HasSetting(AddonsShelf_Custom)] | [Container(9000).HasFocus(344) + Control.IsVisible(314)] | [Container(9000).HasFocus(349) + Player.HasMedia] | Container(9000).HasFocus(345) ]</visible>
+	  <include>Favsshelf</include>
+	  <control type="image" description="Logo">
+        <visible>![[Container(9000).HasFocus(340) + Library.HasContent(Movies)] | [Container(9000).HasFocus(341) + Library.HasContent(TVShows)] | [Container(9000).HasFocus(342) + Library.HasContent(Music)] | [Container(9000).HasFocus(342) + Control.IsVisible(313)] | [Container(9000).HasFocus(343) + Skin.HasSetting(AddonsShelf_Custom)] | [Container(9000).HasFocus(344) + Control.IsVisible(314)] | [Container(9000).HasFocus(349) + Player.HasMedia] | Container(9000).HasFocus(345) | [Container(9000).HasFocus(352) + Container(9000).Row(0) + IntegerGreaterThan(Window.Property(favourite.count),0)]]</visible>
         <include>ShelfFade</include>
-        <posx>68</posx>
-        <posy>78</posy>
-        <width>1785</width>
-        <height>400</height>
+        <width>1920</width>
+        <height>500</height>
         <aspectratio aligny="bottom">keep</aspectratio>
-        <texture>$VAR[ShelfLogo]</texture>
+		<texture>$VAR[ShelfLogo]</texture>
       </control>
     </control>
     <control type="group" description="RSS">
@@ -628,7 +638,7 @@
       </control>
     </control>
     <control type="label" description="Clock">
-      <visible>Skin.HasSetting(ShowClock)</visible>
+      <visible>Skin.HasSetting(ShowClock) + !System.Date(04-01,04-01)</visible>
       <posx>35r</posx>
       <posy>20</posy>
       <width>500</width>
@@ -637,6 +647,17 @@
       <font>size30</font>
       <textcolor>White</textcolor>
       <label>$INFO[System.Time] $INFO[System.Date]</label>
+    </control>
+    <control type="label" description="Clock">
+      <visible>Skin.HasSetting(ShowClock) + System.Date(04-01,04-01)</visible>
+      <posx>35r</posx>
+      <posy>20</posy>
+      <width>500</width>
+      <height>45</height>
+      <align>right</align>
+      <font>size30</font>
+      <textcolor>White</textcolor>
+      <label>9:09 Wed, 2 Apr 1957</label>
     </control>
     <control type="image">
       <include>ShelfFade</include>
@@ -658,19 +679,21 @@
       <height>500</height>
       <texture>Images/LineV.png</texture>
     </control>
-	<control type="image">
-	<visible>Player.HasVideo</visible>
-	<posx>1390</posx>
-	<posy>902</posy>
-	<width>320</width>
+    <control type="image">
+      <visible>Player.HasVideo</visible>
+      <posx>1390</posx>
+      <posy>902</posy>
+      <width>320</width>
       <height>188</height>
-	  <texture>images/black.png</texture>
-	  </control>
+      <texture>images/black.png</texture>
+    </control>
     <control type="videowindow">
+	<visible>Player.HasVideo</visible>
       <posx>1400</posx>
       <posy>912</posy>
       <width>300</width>
       <height>168</height>
     </control>
+	
   </controls>
 </window>

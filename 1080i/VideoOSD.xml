@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <window id="2901">
   <defaultcontrol always="true">100</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
@@ -111,59 +110,77 @@
           <font>size33B</font>
           <textcolor>Yellow</textcolor>
           <shadowcolor>Black</shadowcolor>
-          <label>[B]$INFO[VideoPlayer.Title][/B] </label>
+          <label>[B]$INFO[VideoPlayer.Title][/B]</label>
         </control>
-		
         <control type="group" description="Cover">
           <camera x="1720" y="720" />
-		  <animation effect="fade" start="0" end="100" time="600">VisibleChange</animation>
+          <animation effect="fade" start="0" end="100" time="600">VisibleChange</animation>
           <animation effect="rotatey" end="20" center="1720,0" reversible="false" condition="true">Conditional</animation>
-		  <visible>!ControlGroup(101).HasFocus()</visible>
+          <visible>!ControlGroup(101).HasFocus()</visible>
           <posx>1610</posx>
           <posy>600</posy>
           <control type="image" description="CoverReal">
             <height>300</height>
             <width>220</width>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="images/Diffuse.png">$INFO[Player.Art(poster)]</texture>
+            <texture diffuse="images/Diffuse.png">$INFO[VideoPlayer.Cover]</texture>
           </control>
           <control type="image" description="CoverReal">
+            <height>300</height>
+            <width>220</width>
+            <aspectratio>keep</aspectratio>
+            <texture diffuse="images/Diffuse.png">$INFO[Player.Art(poster)]</texture>
+          </control>
+          <control type="image" description="CoverRef">
             <posy>300</posy>
             <height>300</height>
             <width>220</width>
             <aspectratio>keep</aspectratio>
             <texture flipy="true" diffuse="images/Reflection.png">$INFO[Player.Art(poster)]</texture>
           </control>
-		  <control type="image" description="CoverReal">
+          <control type="image" description="CoverReal">
             <height>300</height>
             <width>220</width>
             <aspectratio>keep</aspectratio>
             <texture diffuse="images/Diffuse.png">$INFO[Player.Art(tvshow.poster)]</texture>
           </control>
-          <control type="image" description="CoverReal">
+          <control type="image" description="CoverRef">
             <posy>300</posy>
             <height>300</height>
             <width>220</width>
             <aspectratio>keep</aspectratio>
             <texture flipy="true" diffuse="images/Reflection.png">$INFO[Player.Art(tvshow.poster)]</texture>
           </control>
-		  <control type="label" description="Episode">
-		  <visible>VideoPlayer.Content(Episodes)</visible>
-          <posx>190</posx>
-          <posy>290</posy>
-          <height>60</height>
-          <width>220</width>
-          <scroll>false</scroll>
-          <font>size12B</font>
-		  <align>right</align>
-          <textcolor>Yellow</textcolor>
-          <shadowcolor>Black</shadowcolor>
-          <label>[B]S $INFO[VideoPlayer.Season] E $INFO[VideoPlayer.Episode][/B] </label>
-        </control>
+          <control type="label" description="Episode">
+            <visible>VideoPlayer.Content(Episodes)</visible>
+            <posx>190</posx>
+            <posy>290</posy>
+            <height>60</height>
+            <width>220</width>
+            <scroll>false</scroll>
+            <font>size24</font>
+            <align>right</align>
+            <textcolor>Yellow</textcolor>
+            <shadowcolor>Black</shadowcolor>
+            <label>[B]S $INFO[VideoPlayer.Season] E $INFO[VideoPlayer.Episode][/B]</label>
+          </control>
+          <control type="label" description="Channel">
+            <visible>Pvr.IsPlayingTV</visible>
+            <posx>190</posx>
+            <posy>290</posy>
+            <height>60</height>
+            <width>220</width>
+            <scroll>false</scroll>
+            <font>size24</font>
+            <align>right</align>
+            <textcolor>Yellow</textcolor>
+            <shadowcolor>Black</shadowcolor>
+            <label>($INFO[VideoPlayer.ChannelNumber])  -  $INFO[VideoPlayer.ChannelName]</label>
+          </control>
         </control>
       </control>
       <control type="list" id="100">
-        <posx>1050</posx>
+        <posx>1000</posx>
         <posy>220r</posy>
         <onright>100</onright>
         <onleft>100</onleft>
@@ -171,11 +188,10 @@
         <ondown>101</ondown>
         <width>700</width>
         <height>100</height>
+        <align>center</align>
         <orientation>horizontal</orientation>
         <itemlayout width="90">
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
             <width>90</width>
             <height>98</height>
             <texture>$INFO[ListItem.thumb]</texture>
@@ -183,32 +199,44 @@
         </itemlayout>
         <focusedlayout width="90">
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
             <width>90</width>
             <height>98</height>
             <texture>$INFO[ListItem.label]</texture>
           </control>
         </focusedlayout>
         <content>
-          <item id="0">
+          <item id="7">
+            <visible>!Pvr.IsPlayingTV</visible>
             <thumb>Seekbar/OSDPreviousNF.png</thumb>
             <label>Seekbar/OSDPreviousFO.png</label>
             <onclick>PlayerControl(Previous)</onclick>
           </item>
+          <item id="10">
+            <visible>Pvr.IsPlayingTV</visible>
+            <thumb>Seekbar/OSDupNF.png</thumb>
+            <label>Seekbar/OSDupFO.png</label>
+            <onclick>PlayerControl(Previous)</onclick>
+          </item>
+          <item id="11">
+            <visible>Pvr.IsPlayingTV</visible>
+            <thumb>Seekbar/OSDdownNF.png</thumb>
+            <label>Seekbar/OSDdownFO.png</label>
+            <onclick>PlayerControl(Next)</onclick>
+          </item>
           <item id="1">
+            <visible>!Pvr.IsPlayingTV</visible>
             <thumb>Seekbar/OSDRWNF.png</thumb>
             <label>Seekbar/OSDRWFO.png</label>
             <onclick>PlayerControl(Rewind)</onclick>
           </item>
-          <item id="2">
-            <visible>!Player.Paused + !Player.Forwarding + !Player.Rewinding</visible>
+          <item id="0">
+            <visible>!Player.Paused + !Player.Forwarding + !Player.Rewinding + !Pvr.IsPlayingTV</visible>
             <thumb>Seekbar/OSDPauseNF.png</thumb>
             <label>Seekbar/OSDPauseFO.png</label>
             <onclick>PlayerControl(Play)</onclick>
           </item>
-          <item id="3">
-            <visible>Player.Paused | Player.Forwarding | Player.Rewinding</visible>
+          <item id="0">
+            <visible>Player.Paused | Player.Forwarding | Player.Rewinding + !Pvr.IsPlayingTV</visible>
             <thumb>Seekbar/OSDPlayNF.png</thumb>
             <label>Seekbar/OSDPlayFO.png</label>
             <onclick>PlayerControl(Play)</onclick>
@@ -218,15 +246,47 @@
             <label>Seekbar/OSDStopFO.png</label>
             <onclick>PlayerControl(Stop)</onclick>
           </item>
+          <item id="0">
+            <visible>Pvr.IsPlayingTv</visible>
+            <thumb>Seekbar/OSDchnNF.png</thumb>
+            <label>Seekbar/OSDchnFO.png</label>
+            <onclick>XBMC.ActivateWindow(PVROSDChannels)</onclick>
+          </item>
+          <item id="16">
+            <visible>Pvr.IsPlayingTv</visible>
+            <thumb>Seekbar/OSDpvrNF.png</thumb>
+            <label>Seekbar/OSDpvrFO.png</label>
+            <onclick>XBMC.ActivateWindow(PVROSDGuide)</onclick>
+          </item>
+          <item id="15">
+            <visible>Pvr.IsPlayingTv</visible>
+            <thumb>Seekbar/OSDtxtNF.png</thumb>
+            <label>Seekbar/OSDtxtFO.png</label>
+            <onclick>XBMC.ActivateWindow(Teletext)</onclick>
+          </item>
           <item id="5">
+            <visible>!Pvr.IsPlayingTV</visible>
             <thumb>Seekbar/OSDFWNF.png</thumb>
             <label>Seekbar/OSDFWFO.png</label>
             <onclick>PlayerControl(Forward)</onclick>
           </item>
           <item id="6">
+            <visible>!Pvr.IsPlayingTV</visible>
             <thumb>Seekbar/OSDNextNF.png</thumb>
             <label>Seekbar/OSDNextFO.png</label>
             <onclick>PlayerControl(Next)</onclick>
+          </item>
+          <item id="8">
+            <visible>Player.CanRecord + !Pvr.IsRecording</visible>
+            <thumb>Seekbar/OSDrecNF.png</thumb>
+            <label>Seekbar/OSDrecFO.png</label>
+            <onclick>PlayerControl(Record)</onclick>
+          </item>
+          <item id="8">
+            <visible>Player.CanRecord + Pvr.IsRecording</visible>
+            <thumb>Seekbar/OSDreconNF.png</thumb>
+            <label>Seekbar/OSDreconFO.png</label>
+            <onclick>PlayerControl(Record)</onclick>
           </item>
         </content>
       </control>

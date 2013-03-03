@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="614">
+﻿<window id="614">
   <defaultcontrol></defaultcontrol>
   <include>OpenClose</include>
   <controls>
@@ -7,7 +6,7 @@
       <posx>570</posx>
       <posy>-120</posy>
       <animation effect="slide" start="0,-120" end="0,120" time="450">WindowOpen</animation>
-	  <animation effect="slide" start="0,120" end="0,-120" time="450">WindowClose</animation>
+      <animation effect="slide" start="0,120" end="0,-120" time="450">WindowClose</animation>
       <control type="image" description="Dialog BG">
         <posx>0</posx>
         <posy>-6</posy>

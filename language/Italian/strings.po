@@ -4,13 +4,14 @@
 # Addon version: 1.2.0
 # Addon Provider: FastColors
 # Translators:
+# Translators:
 #  <fastcolors@gmail.com>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skin SiO2\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2013-01-24 19:05+0000\n"
+"PO-Revision-Date: 2013-02-26 18:56+0000\n"
 "Last-Translator: fastcolors <fastcolors@gmail.com>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/sio2-1/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -239,7 +240,7 @@ msgstr "Collegamenti Personalizzati su Shelf"
 
 msgctxt "#31052"
 msgid "Home Page Customizer"
-msgstr "Personalizza pagina Principale"
+msgstr "Personalizza Pagina Principale"
 
 msgctxt "#31053"
 msgid "Link For Music Icon"
@@ -261,3 +262,15 @@ msgstr "Cambia Icona"
 msgctxt "#31057"
 msgid "Replace Item"
 msgstr "Cambia Elemento"
+
+msgctxt "#31058"
+msgid "Lock Access to Skin Specific Settings from Home Page"
+msgstr "Blocca Accesso alle Impostazioni della Skin dalla Pagina Principale"
+
+msgctxt "#31059"
+msgid "LiveTV"
+msgstr "LiveTV"
+
+msgctxt "#31060"
+msgid "Add"
+msgstr "Aggiungi"

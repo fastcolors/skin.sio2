@@ -1,8 +1,9 @@
-<addon id="skin.sio2" version="1.2.4" name="SiO2" provider-name="FastColors">
+<addon id="skin.sio2" version="2.0.0" name="SiO2" provider-name="FastColors">
   <requires>
     <import addon="xbmc.gui" version="4.0.0"/>
     <import addon="script.favourites" version="3.2.5"/>
     <import addon="service.skin.widgets" version="0.0.13"/>
+	<import addon="script.cinema.experience" version="3.0.3"/>
   </requires>
   <extension
     point="xbmc.gui.skin"
@@ -12,10 +13,10 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <description>If you like Apple "everything at hand" policy for interfaces, You might want to give this Skin a try. I designed it trying to put as few clicks as possible between You and what You're trying to do (or watch ;) ).[CR]Thanks To Pecinko.[CR] Thanks to testers and Inspirers: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
+    <description>If you like Apple "everything at hand" policy for interfaces, You might want to give this Skin a try. I designed it trying to put as few clicks as possible between You and what You're trying to do (or watch ;) ).[CR] Thanks to testers and Inspirers: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
 	<summary lang="ar">A simple and handy Skin visually based on AppleTv</summary>
     <summary lang="be">A simple and handy Skin visually based on AppleTv</summary>
-    <summary lang="bg">Облик от Jezz_X. (стандартния за XBMC)</summary>
+    <summary lang="bg">A simple and handy Skin visually based on AppleTv</summary>
     <summary lang="ca">Una Skin simple i pràctic basat en AppleTV</summary>
     <summary lang="cs">Jednoduchý a praktický kůže na základě AppleTV</summary>
     <summary lang="da">En enkel og handy Skin baseret på AppleTV</summary>
@@ -61,8 +62,8 @@
     <description lang="da"></description>
     <description lang="de"></description>
     <description lang="el"></description>-->
-    <description lang="en">If you like Apple "everything at hand" policy for interfaces, You might want to give this Skin a try. I designed it trying to put as few clicks as possible between You and what You're trying to do (or watch ;) ).[CR]Thanks To Pecinko.[CR] Thanks to testers and Inspirers: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
-    <description lang="es">Si te gusta la política Apple "todo a mano" para interfaces, entonces debe darle una oportunidad a esta Skin. La diseñé tratando de poner menos clics posible entre usted y lo que estas tratando de hacer (o ver ;) ) [CR] Gracias a Pecinko [CR] Gracias a los probadores e inspiradores: .. Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
+    <description lang="en">If you like Apple "everything at hand" policy for interfaces, You might want to give this Skin a try. I designed it trying to put as few clicks as possible between You and what You're trying to do (or watch ;) ).[CR] Thanks to testers and Inspirers: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
+    <description lang="es">Si te gusta la política Apple "todo a mano" para interfaces, entonces debe darle una oportunidad a esta Skin. La diseñé tratando de poner menos clics posible entre usted y lo que estas tratando de hacer (o ver ;) ) [CR] Gracias a los probadores e inspiradores: .. Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
     <!--<description lang="et"></description>
     <description lang="fi"></description>
     <description lang="fr"></description>
@@ -71,19 +72,19 @@
     <description lang="hr"></description>
     <description lang="hu"></description>
     <description lang="is"></description>-->
-    <description lang="it">Se ti piace la politica di Apple per le interfacce grafiche "tutto a portata di mano", allora dovresti provare questa Skin. L'ho progettata cercando di mettere il minor numero di click tra te e quello che stai cercando di fare (o di guardare ;) ) [CR] Grazie a Pecinko [CR] Grazie ai testers e agli ispiratori:.. Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
+    <description lang="it">Se ti piace la politica di Apple per le interfacce grafiche "tutto a portata di mano", allora dovresti provare questa Skin. L'ho progettata cercando di mettere il minor numero di click tra te e quello che stai cercando di fare (o di guardare ;) ) [CR] Grazie ai testers e agli ispiratori:.. Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
     <!--<description lang="ja"></description>
     <description lang="km"></description>
     <description lang="ko"></description>
     <description lang="lt"></description>
     <description lang="mk"></description>
     <description lang="nl"></description>
-    <description lang="no"></description>
-    <description lang="pl"></description>
-    <description lang="pt"></description>
-    <description lang="ro"></description>
-    <description lang="ru"></description>
-    <description lang="sk"></description>
+    <description lang="no"></description>-->
+    <description lang="pl">Jeżeli Wam się podoba podejście Apple Inc. do interfejsów, możecie spróbować tą skórę. Zaprojektowałem ją próbując maksymalnie ułatwić użytkownikom dostęp do ich mediów.[CR] Podziękowania dla testerów i pomysłodawców: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
+    <!--<description lang="pt"></description>
+    <description lang="ro"></description>-->
+    <description lang="ru">Если Вам нравится подход Apple к интерфейсам - "все под рукой", то Вам, возможно, понравится этот скин. Я сделал его, пытаясь максимально уменьшить количество кликов мышкой для выполнения вашей задачи.[CR] Спасибо для тестеров и доноров идей: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
+   <!-- <description lang="sk"></description>
     <description lang="sl"></description>
     <description lang="sv"></description>
     <description lang="th"></description>
@@ -93,7 +94,7 @@
     <description lang="zh"></description>
 	-->
 	
-    <disclaimer>SiO2 should be the default skin for XBMC, removing it may cause Complexity</disclaimer>
+    <disclaimer>SiO2 - Infos and changelog at XBMCHUB.COM</disclaimer>
    
   </extension>
 </addon>

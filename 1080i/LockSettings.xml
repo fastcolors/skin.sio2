@@ -1,12 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="131">
+﻿<window id="131">
   <defaultcontrol always="true">5</defaultcontrol>
   <include>OpenClose</include>
   <allowoverlay>no</allowoverlay>
   <controls>
     <include>BlackBackground</include>
     <control type="label" description="Header Label">
-	  <include>HeadingR</include>  
+      <include>HeadingR</include>
       <label>20043</label>
     </control>
     <control type="group">

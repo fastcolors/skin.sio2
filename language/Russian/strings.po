@@ -4,6 +4,7 @@
 # Addon version: 1.2.0
 # Addon Provider: FastColors
 # Translators:
+# Translators:
 # T D <tyler@pisem.net>, 2013.
 #   <tyler@pisem.net>, 2013.
 msgid ""
@@ -11,7 +12,7 @@ msgstr ""
 "Project-Id-Version: XBMC Skin SiO2\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2013-01-26 19:01+0000\n"
+"PO-Revision-Date: 2013-03-01 19:52+0000\n"
 "Last-Translator: relyter <tyler@pisem.net>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/sio2-1/language/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -262,3 +263,15 @@ msgstr "Изменить иконку"
 msgctxt "#31057"
 msgid "Replace Item"
 msgstr "Заменить элемент"
+
+msgctxt "#31058"
+msgid "Lock Access to Skin Specific Settings from Home Page"
+msgstr "Заблокировать доступ к установкам скина с Главного Экрана"
+
+msgctxt "#31059"
+msgid "LiveTV"
+msgstr "Телевидение"
+
+msgctxt "#31060"
+msgid "Add"
+msgstr "Добавить"

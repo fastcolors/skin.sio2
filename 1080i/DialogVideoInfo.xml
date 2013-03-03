@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="2003">
+﻿<window id="2003">
   <defaultcontrol always="false">8</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <include>OpenClose</include>
@@ -13,28 +12,28 @@
       <aspectratio>scale</aspectratio>
       <colordiffuse>30FFFFFF</colordiffuse>
     </control>
-	<control type="group" description="rotate Poster">
-	<camera x="265" y="330" />
-	<animation condition="true" effect="rotatey" center="265,0" end="-20">conditional</animation>
-    <control type="image" description="Thumb">
-      <visible>!Container.Content(episodes)</visible>
-      <posx>60</posx>
-      <posy>60</posy>
-      <width>500</width>
-      <height>600</height>
-      <texture background="true" diffuse="images/diffuse.png">$INFO[ListItem.Art(poster)]</texture>
-      <aspectratio>keep</aspectratio>
+    <control type="group" description="rotate Poster">
+      <camera x="265" y="330" />
+      <animation condition="true" effect="rotatey" center="265,0" end="-20">conditional</animation>
+      <control type="image" description="Thumb">
+        <visible>!Container.Content(episodes)</visible>
+        <posx>60</posx>
+        <posy>60</posy>
+        <width>500</width>
+        <height>600</height>
+        <texture background="true" diffuse="images/diffuse.png">$INFO[ListItem.Art(poster)]</texture>
+        <aspectratio>keep</aspectratio>
+      </control>
+      <control type="image" description="Thumb">
+        <visible>!Container.Content(episodes)</visible>
+        <posx>60</posx>
+        <posy>660</posy>
+        <width>500</width>
+        <height>600</height>
+        <texture flipy="true" background="true" diffuse="images/Reflection0.png">$INFO[ListItem.Art(poster)]</texture>
+        <aspectratio>keep</aspectratio>
+      </control>
     </control>
-	<control type="image" description="Thumb">
-      <visible>!Container.Content(episodes)</visible>
-      <posx>60</posx>
-      <posy>660</posy>
-      <width>500</width>
-      <height>600</height>
-      <texture flipy="true" background="true" diffuse="images/Reflection0.png">$INFO[ListItem.Art(poster)]</texture>
-      <aspectratio>keep</aspectratio>
-    </control>
-	</control>
     <control type="image" description="Thumb Season">
       <visible>Container.Content(episodes)</visible>
       <posx>60</posx>
@@ -347,7 +346,7 @@
           <texturenofocus>info/trailer.png</texturenofocus>
           <visible>!IsEmpty(ListItem.Trailer)</visible>
         </control>
-		<control type="button" id="6" description="Refresh">
+        <control type="button" id="6" description="Refresh">
           <height>150</height>
           <width>150</width>
           <texturefocus>info/refreshFO.png</texturefocus>

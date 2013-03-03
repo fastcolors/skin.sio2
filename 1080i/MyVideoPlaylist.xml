@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="6">
+﻿<window id="6">
   <defaultcontrol always="true">50</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
@@ -29,12 +28,11 @@
             <texture background="true">$INFO[ListItem.Icon]</texture>
             <aspectratio aligny="bottom">keep</aspectratio>
           </control>
-          
         </control>
         <control type="group" description="Slider and List">
           <include>LargeListItemCount</include>
           <posx>1020</posx>
-          <posy>141</posy>
+      <posy>131</posy>
           <control type="fixedlist" id="50">
             <posx>0</posx>
             <posy>0</posy>
@@ -140,18 +138,18 @@
         </control>
       </control>
       <control type="group" description="Side menu 9000 group">
-      <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
-      <include>DialogOpenCloseVisible</include>
-      <control type="image" description="List back">
-        <posx>459</posx>
-        <posy>168</posy>
-        <width>1002</width>
-        <height>762</height>
-        <aspectratio>stretch</aspectratio>
-        <texture border="150">images/Dialog.png</texture>
-      </control>
-      <control type="grouplist" id="9000">
-        <include>DialogGLs</include>
+        <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+        <include>DialogOpenCloseVisible</include>
+        <control type="image" description="List back">
+          <posx>459</posx>
+          <posy>168</posy>
+          <width>1002</width>
+          <height>762</height>
+          <aspectratio>stretch</aspectratio>
+          <texture border="150">images/Dialog.png</texture>
+        </control>
+        <control type="grouplist" id="9000">
+          <include>DialogGLs</include>
           <control type="radiobutton" id="20" description="Shuffle">
             <radioposx>630</radioposx>
             <include>Dialogbuttons</include>

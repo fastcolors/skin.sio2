@@ -4,6 +4,7 @@
 # Addon version: 1.2.0
 # Addon Provider: FastColors
 # Translators:
+# Translators:
 #  <fastcolors@gmail.com>, 2013.
 #   <fastcolors@gmail.com>, 2013.
 msgid ""
@@ -11,7 +12,7 @@ msgstr ""
 "Project-Id-Version: XBMC Skin SiO2\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2013-01-24 19:06+0000\n"
+"PO-Revision-Date: 2013-02-26 18:57+0000\n"
 "Last-Translator: fastcolors <fastcolors@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/sio2-1/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -262,3 +263,15 @@ msgstr "Cambia Icono"
 msgctxt "#31057"
 msgid "Replace Item"
 msgstr "Cambia Addon"
+
+msgctxt "#31058"
+msgid "Lock Access to Skin Specific Settings from Home Page"
+msgstr "Bloqueo de acceso a ajustes específicas desde la Pagina Principal"
+
+msgctxt "#31059"
+msgid "LiveTV"
+msgstr "LiveTv"
+
+msgctxt "#31060"
+msgid "Add"
+msgstr "añadir"

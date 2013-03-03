@@ -1,3 +1,21 @@
+2.0.0
+* New Font Bitstream Vera.
+* PVR Support (LiveTV)
+* New SeekBar method.
+* Cinema Experience can be started from Context Menu.
+* Cinema Experience Script Included.
+* Added Progress Bar in "Busy" Dialog.
+* Watchlist Flagging for Episodes.
+* Favourites in Home now populate shelf when Icon is selected.
+* Default ShelfIcon is now actual weather on shelf
+* PageCount on Views.
+* Added Search in Movies/TVShows sidemenu
+* Holidays ShelfIcons.
+* Cleaner Code.
+* Bug Fixes.
+
+---
+
 1.2.4
 * Player Cache Bar now shows.
 * Settings LOCK infos fix

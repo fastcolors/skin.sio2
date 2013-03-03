@@ -1,25 +1,33 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="25">
+﻿<window id="25">
   <defaultcontrol always="true">51</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <views>51,50,53,55,500</views>
   <include>OpenClose</include>
   <controls>
-  <include>BlackBackground</include>
+    <include>BlackBackground</include>
     <include>Videoviews</include>
     <control type="group" description="Side menu 9000 group">
       <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
       <include>DialogOpenCloseVisible</include>
       <control type="image" description="List back">
         <posx>459</posx>
-        <posy>168</posy>
+        <posy>68</posy>
         <width>1002</width>
-        <height>762</height>
+        <height>900</height>
         <aspectratio>stretch</aspectratio>
         <texture border="150">images/Dialog.png</texture>
       </control>
       <control type="grouplist" id="9000">
-        <include>DialogGLs</include>
+         <posx>675</posx>
+    <posy>254</posy>
+    <width>576</width>
+    <height>575</height>
+    <itemgap>0</itemgap>
+    <onleft>50</onleft>
+    <onright>50</onright>
+    <onup>9000</onup>
+    <ondown>9000</ondown>
+    <scrolltime>200</scrolltime>
         <control type="button" id="2" description="Views">
           <texturenofocus>-</texturenofocus>
           <include>DialogButt</include>
@@ -29,17 +37,17 @@
           <label>$LOCALIZE[535]: $LOCALIZE[16100]</label>
           <altlabel>$LOCALIZE[535]: $LOCALIZE[16101]</altlabel>
         </control>
-		<control type="radiobutton" id="20" description="Filter">
-		<visible>Container.CanFilterAdvanced</visible>
+        <control type="radiobutton" id="20" description="Filter">
+          <visible>Container.CanFilterAdvanced</visible>
           <include>DialogButt</include>
-		  <onclick>Filter</onclick>
-		  <label>587</label>
+          <onclick>Filter</onclick>
+          <label>587</label>
         </control>
         <control type="button" id="3" description="Sort">
           <include>DialogButt</include>
         </control>
-		<control type="togglebutton" id="699" description="Playing">
-          <visible>Player.HasMedia</visible>
+        <control type="togglebutton" id="699" description="Playing">
+          <visible>!Player.HasMedia</visible>
           <include>DialogButt</include>
           <label>$LOCALIZE[16003]</label>
           <altlabel>$LOCALIZE[31055]</altlabel>
@@ -48,12 +56,16 @@
           <altclick>fullscreen</altclick>
           <animation effect="fade" start="100" end="60" time="100" condition="!Player.HasMedia">Conditional</animation>
         </control>
+		<control type="button" id="8" description="search">
+          <include>DialogButt</include>
+		  <label>137</label>
+        </control>
         <control type="button" id="698" description="Browse files">
           <include>DialogButt</include>
           <label>$LOCALIZE[1024] $LOCALIZE[744]</label>
           <onclick>ActivateWindow(Videos,files)</onclick>
         </control>
-        
+		
       </control>
     </control>
     <control type="group">

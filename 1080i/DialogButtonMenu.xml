@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<window type="buttonMenu" id="111">
+﻿<window type="buttonMenu" id="111">
   <defaultcontrol>9000</defaultcontrol>
   <include>DialogOpenClose</include>
   <controls>
@@ -12,9 +11,9 @@
     </control>
     <control type="image" description="Dialog">
       <posx>400</posx>
-        <posy>290</posy>
-        <width>1122</width>
-        <height>500</height>
+      <posy>290</posy>
+      <width>1122</width>
+      <height>500</height>
       <aspectratio>stretch</aspectratio>
       <texture border="150">images/Dialog.png</texture>
     </control>
@@ -78,7 +77,7 @@
         <onclick>XBMC.Reset()</onclick>
         <label>13013</label>
       </control>
-	  <control type="button" id="5" description="LogOff">
+      <control type="button" id="5" description="LogOff">
         <enable>System.HasLoginScreen</enable>
         <animation type="Conditional" condition="!Control.IsEnabled(5)">
           <effect type="fade" start="100" end="30" time="0" reversible="true" />
@@ -92,44 +91,44 @@
         <label>13013</label>
       </control>
     </control>
-	<control type="group">
-	 <posx>660</posx>
-	 <posy>565</posy>
-    <control type="label">
-      <visible>ControlGroup(9000).HasFocus(1)</visible>
-      <width>600</width>
-      <align>center</align>
-      <font>size39B</font>
-      <label>13009</label>
+    <control type="group">
+      <posx>660</posx>
+      <posy>565</posy>
+      <control type="label">
+        <visible>ControlGroup(9000).HasFocus(1)</visible>
+        <width>600</width>
+        <align>center</align>
+        <font>size39B</font>
+        <label>13009</label>
+      </control>
+      <control type="label">
+        <visible>ControlGroup(9000).HasFocus(2)</visible>
+        <width>600</width>
+        <align>center</align>
+        <font>size39B</font>
+        <label>13005</label>
+      </control>
+      <control type="label">
+        <visible>ControlGroup(9000).HasFocus(3)</visible>
+        <width>600</width>
+        <align>center</align>
+        <font>size39B</font>
+        <label>13011</label>
+      </control>
+      <control type="label">
+        <visible>ControlGroup(9000).HasFocus(4)</visible>
+        <width>600</width>
+        <align>center</align>
+        <font>size39B</font>
+        <label>13013</label>
+      </control>
+      <control type="label">
+        <visible>ControlGroup(9000).HasFocus(5)</visible>
+        <width>600</width>
+        <align>center</align>
+        <font>size39B</font>
+        <label>31032</label>
+      </control>
     </control>
-    <control type="label">
-      <visible>ControlGroup(9000).HasFocus(2)</visible>
-      <width>600</width>
-      <align>center</align>
-      <font>size39B</font>
-      <label>13005</label>
-    </control>
-    <control type="label">
-      <visible>ControlGroup(9000).HasFocus(3)</visible>
-      <width>600</width>
-      <align>center</align>
-      <font>size39B</font>
-      <label>13011</label>
-    </control>
-    <control type="label">
-      <visible>ControlGroup(9000).HasFocus(4)</visible>
-      <width>600</width>
-      <align>center</align>
-      <font>size39B</font>
-      <label>13013</label>
-    </control>
-	<control type="label">
-      <visible>ControlGroup(9000).HasFocus(5)</visible>
-      <width>600</width>
-      <align>center</align>
-      <font>size39B</font>
-      <label>31032</label>
-    </control>
-	</control>
   </controls>
 </window>

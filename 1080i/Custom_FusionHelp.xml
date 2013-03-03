@@ -1,14 +1,12 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<window type="dialog" id="1122">
+﻿<window type="dialog" id="1122">
   <defaultcontrol always="true">100</defaultcontrol>
   <include>DialogOpenClose</include>
   <controls>
     <control type="group" description="Side menu 9000 group">
-	        <posx>459</posx>
+      <posx>459</posx>
       <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
       <include>DialogOpenCloseVisible</include>
       <control type="image" description="List back">
-
         <width>1002</width>
         <height>960</height>
         <aspectratio>stretch</aspectratio>
@@ -16,48 +14,46 @@
       </control>
       <control type="grouplist" id="9000">
         <posx>210</posx>
-		<posy>152</posy>
-		
-		<control type="textbox" id="699">
-		<width>576</width>
-		<height>400</height>
-		<align>center</align>
+        <posy>152</posy>
+        <control type="textbox" id="699">
+          <width>576</width>
+          <height>400</height>
+          <align>center</align>
           <label>$LOCALIZE[31028]</label>
         </control>
-       <control type="button" id="100">
-			<description>Not Now</description>
-			<include>DialogButt</include>
-			<label>NOT NOW</label>
-			<onclick>back</onclick>
-			<onleft>100</onleft>
-			<onright>100</onright>
-			<onup>100</onup>
-			<ondown>100</ondown>
-		</control>
-		<control type="button" id="101">
-			<description>Yes Fusion</description>
-			<include>DialogButt</include>
-			<label>YES PLEASE</label>
-			<onclick>Skin.Setbool(FusionHelp)</onclick>
-			<onclick>ActivateWindow(3)</onclick>
-			<onclick>back</onclick>
-			<onleft>100</onleft>
-			<onright>100</onright>
-			<onup>100</onup>
-			<ondown>100</ondown>
-		</control>
- <control type="button" id="102">
-			<description>Never</description>
-			<include>DialogButt</include>
-			<label>NEVER ASK AGAIN!</label>
-			<onclick>Skin.Setbool(FirstRun)</onclick>
-			<onclick>back</onclick>
-			<onleft>100</onleft>
-			<onright>100</onright>
-			<onup>100</onup>
-			<ondown>100</ondown>
-		</control>
-
+        <control type="button" id="100">
+          <description>Not Now</description>
+          <include>DialogButt</include>
+          <label>NOT NOW</label>
+          <onclick>back</onclick>
+          <onleft>100</onleft>
+          <onright>100</onright>
+          <onup>100</onup>
+          <ondown>100</ondown>
+        </control>
+        <control type="button" id="101">
+          <description>Yes Fusion</description>
+          <include>DialogButt</include>
+          <label>YES PLEASE</label>
+          <onclick>Skin.Setbool(FusionHelp)</onclick>
+          <onclick>ActivateWindow(3)</onclick>
+          <onclick>back</onclick>
+          <onleft>100</onleft>
+          <onright>100</onright>
+          <onup>100</onup>
+          <ondown>100</ondown>
+        </control>
+        <control type="button" id="102">
+          <description>Never</description>
+          <include>DialogButt</include>
+          <label>NEVER ASK AGAIN!</label>
+          <onclick>Skin.Setbool(FirstRun)</onclick>
+          <onclick>back</onclick>
+          <onleft>100</onleft>
+          <onright>100</onright>
+          <onup>100</onup>
+          <ondown>100</ondown>
+        </control>
       </control>
     </control>
   </controls>

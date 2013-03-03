@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="145">
+﻿<window id="145">
   <defaultcontrol always="true">11</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <include>OpenClose</include>
@@ -14,7 +13,7 @@
         <texture border="150">images/Dialog.png</texture>
       </control>
       <control type="label" id="10" description="Heading">
-	  <posx>210</posx>
+        <posx>210</posx>
         <posy>45</posy>
         <width>390</width>
         <align>center</align>
@@ -32,7 +31,7 @@
         <onleft>11</onleft>
         <onright>11</onright>
         <texturesliderbar>images/slider_bg.png</texturesliderbar>
-		<!--textureslidernib>images/slider_nib.png</textureslidernib-->
+        <!--textureslidernib>images/slider_nib.png</textureslidernib-->
         <textureslidernibfocus>images/slider_nib.png</textureslidernibfocus>
       </control>
       <control type="label" id="12" description="Slider value">

@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <include name="Musicviews">
     <control type="group" description="Base Music List">
@@ -9,17 +8,15 @@
       </control>
       <control type="group">
         <visible>Container.content(musicvideos)</visible>
-        <include>left_Panel_plain</include>
+        <include>left_Panel_square</include>
         <include>MusicInfo</include>
       </control>
       <control type="group" description="Slider and List">
         <include>LargeListItemCount</include>
         <posx>1020</posx>
-        <posy>141</posy>
+      <posy>131</posy>
         <control type="fixedlist" id="50">
           <visible>!Container.content(songs)</visible>
-          <posx>0</posx>
-          <posy>0</posy>
           <width>802</width>
           <height>888</height>
           <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
@@ -32,7 +29,7 @@
           <movement>4</movement>
           <preloaditems>4</preloaditems>
           <scrolltime tween="sine" easing="inout">280</scrolltime>
-           <include>LargeListLayout</include>
+          <include>LargeListLayout</include>
         </control>
         <include>LargeListSlider</include>
       </control>
@@ -57,7 +54,7 @@
       <control type="group" description="Slider and List">
         <include>SlimListItemCount</include>
         <posx>1020</posx>
-        <posy>141</posy>
+      <posy>131</posy>
         <include>SlimListSlider</include>
         <control type="fixedlist" id="52">
           <visible>container.content(songs)</visible>
@@ -183,7 +180,6 @@
               <texture background="true">$INFO[ListItem.Icon]</texture>
               <aspectratio>stretch</aspectratio>
             </control>
-            
           </itemlayout>
           <focusedlayout height="345" width="300">
             <control type="image">
@@ -213,7 +209,6 @@
               <texture background="true">$INFO[ListItem.Icon]</texture>
               <aspectratio>stretch</aspectratio>
             </control>
-           
             <control type="label">
               <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
               <posx>150</posx>
@@ -313,13 +308,11 @@
           <label>$INFO[ListItem.Label2]</label>
         </control>
       </control>
-      <control type="image" description="Bottom fade">
-        <posx>0</posx>
-        <posy>990</posy>
+      <control type="image" description="shade">
+	  <posy>100</posy>
         <width>1920</width>
-        <height>90</height>
-        <texture>images/DefaultGradient.png</texture>
-        <aspectratio>stretch</aspectratio>
+        <height>1080</height>
+        <texture>Shades/iconvshade.png</texture>
       </control>
       <control type="scrollbar" id="60">
         <posx>45r</posx>
@@ -377,7 +370,6 @@
             <texture background="true">$INFO[ListItem.Icon]</texture>
             <aspectratio>scale</aspectratio>
           </control>
-         
         </itemlayout>
         <focusedlayout height="357" width="354">
           <control type="group">
@@ -389,7 +381,6 @@
               <texture background="true">$INFO[ListItem.Icon]</texture>
               <aspectratio>scale</aspectratio>
             </control>
-           
           </control>
         </focusedlayout>
       </control>
@@ -558,6 +549,33 @@
           </item>
         </content>
       </control>
+	  <control type="scrollbar" id="60">
+        <animation effect="fade" delay="200" time="300">VisibleChange</animation>
+        <posx>198</posx>
+        <posy>1038</posy>
+        <width>1525</width>
+        <height>9</height>
+        <onup>500</onup>
+        <ondown>500</ondown>
+        <orientation>horizontal</orientation>
+        <texturesliderbackground border="6">Scrollbar/HScrollbarBG.png</texturesliderbackground>
+        <texturesliderbar border="6">Scrollbar/HScrollerNF.png</texturesliderbar>
+        <texturesliderbarfocus border="6">Scrollbar/HScrollerFO.png</texturesliderbarfocus>
+        <showonepage>false</showonepage>
+      </control>
+    </control>
+	<control type="label">
+      <description>Page Count Label</description>
+      <posx>40r</posx>
+      <posy>50r</posy>
+      <width>500</width>
+      <height>20</height>
+      <font>font12</font>
+      <textcolor>Grey</textcolor>
+      <scroll>false</scroll>
+      <align>right</align>
+      <aligny>center</aligny>
+      <label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR])</label>
     </control>
   </include>
 </includes>

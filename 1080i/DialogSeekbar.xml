@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="115">
   <defaultcontrol always="true">901</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
@@ -73,33 +72,31 @@
     <control type="group">
       <posy>932</posy>
       <control type="image" description="Background">
-        <posx>0</posx>
         <width>1920</width>
         <height>68</height>
         <texture>Seekbar/Barback.png</texture>
       </control>
       <control type="progress" description="Cache Progress">
-	  <visible>true</visible>
-	  <!--Player.Caching-->
-        <posx>255</posx>
-		<posy>2</posy>
-        <width>1410</width>
-        <height>66</height>
+        <visible>true</visible>
+        <!--Player.Caching-->
+        <posx>257</posx>
+        <posy>1</posy>
+        <width>1416</width>
+        <height>68</height>
+        <reveal>true</reveal>
         <texturebg>Seekbar/BG.png</texturebg>
-        <midtexture border="2,2,2,2">Seekbar/M.png</midtexture>
-        <lefttexture border="0,2,0,2">Seekbar/L.png</lefttexture>
-        <righttexture border="0,2,0,2">Seekbar/R.png</righttexture>
-		<colordiffuse>FF333366</colordiffuse>
+        <midtexture border="2">Seekbar/M.png</midtexture>
+        <colordiffuse>FF333366</colordiffuse>
         <info>Player.ProgressCache</info>
       </control>
       <control type="progress" id="23" description="Progress Bar">
-        <posx>255</posx>
-        <width>1410</width>
+        <posx>257</posx>
+        <posy>1</posy>
+        <width>1416</width>
         <height>68</height>
+        <reveal>true</reveal>
         <texturebg>Seekbar/BG.png</texturebg>
-        <midtexture border="2,2,2,2">Seekbar/M.png</midtexture>
-        <lefttexture border="0,2,0,2">Seekbar/L.png</lefttexture>
-        <righttexture border="0,2,0,2">Seekbar/R.png</righttexture>
+        <midtexture border="2">Seekbar/M.png</midtexture>
         <info>Player.Progress</info>
         <visible>true</visible>
       </control>
@@ -156,7 +153,7 @@
         <include>OSDbarIcons</include>
         <texture border="2">Seekbar/OSDPlayNF.png</texture>
       </control>
-       <control type="image" description="RF">
+      <control type="image" description="RF">
         <posx>-10</posx>
         <visible>player.rewinding2x | player.rewinding4x | player.rewinding8x | player.rewinding16x | player.rewinding32x</visible>
         <include>OSDbarIcons</include>
@@ -187,14 +184,14 @@
         <texture border="2" flipx="true">Seekbar/OSDPlayNF.png</texture>
       </control>
     </control>
-	<control type="image">
-	<visible>!PLayer.Paused</visible>
-	<posx>1500</posx>
-	<posy>750</posy>
-	<width>100</width>
-	<height>100</height>
-	<texture>$INFO[VideoPlayer.mpaa,Mpaa/,.png]</texture>
-	<colordiffuse>77FFFFFF</colordiffuse>
-	</control>
+    <control type="image">
+      <visible>!PLayer.Paused</visible>
+      <posx>1500</posx>
+      <posy>750</posy>
+      <width>100</width>
+      <height>100</height>
+      <texture>$INFO[VideoPlayer.mpaa,Mpaa/,.png]</texture>
+      <colordiffuse>77FFFFFF</colordiffuse>
+    </control>
   </controls>
 </window>

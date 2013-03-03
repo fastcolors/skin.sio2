@@ -1,41 +1,30 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<window type="window" id="2000">
+﻿<window type="window" id="2000">
   <defaultcontrol always="false">3</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <include>OpenClose</include>
   <controls>
-    <include>BlackBackground</include>
-    <control type="label" id="1" description="Header label">
-      <include>HeadingR</include>
-      <label>13406</label>
-    </control>
+    
     <control type="group" description="Group 3 Plain list">
+	<control type="image">
+        <posx>250</posx>
+        <posy>-100</posy>
+        <width>1420</width>
+        <height>1280</height>
+        <texture border="150">images/Dialog.png</texture>
+      </control>
+	  <control type="label" id="1" description="Header label">
+	  <posy>60</posy>
+	  <width>1920</width>
+	  <height>60</height>
+	  <align>center</align>
+	  <font>Size42B</font>
+      <label></label>
+    </control>
       <control type="group">
-        <posx>1020</posx>
-        <posy>150</posy>
-        <control type="group" description="Slider">
-          <include>Scrollanim</include>
-          <control type="group">
-            <visible>Container(3).HasFocus() + !Control.HasFocus(5)</visible>
-            <include>slider</include>
-          </control>
-          <animation type="Conditional" condition="Control.HasFocus(9001) | ControlGroup(9000).HasFocus()">
-            <effect type="fade" start="100" end="40" time="0" reversible="true" />
-          </animation>
-          <animation condition="Container(3).Position(0)" effect="slide" start="0,0" end="0,-405" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(1)" effect="slide" start="0,0" end="0,-324" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(2)" effect="slide" start="0,0" end="0,-243" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(3)" effect="slide" start="0,0" end="0,-162" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(4)" effect="slide" start="0,0" end="0,-81" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(5)" effect="slide" start="0,0" end="0,0" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(6)" effect="slide" start="0,0" end="0,81" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(7)" effect="slide" start="0,0" end="0,162" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(8)" effect="slide" start="0,0" end="0,243" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(9)" effect="slide" start="0,0" end="0,324" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(10)" effect="slide" start="0,0" end="0,405" time="140" reversible="true">Conditional</animation>
-        </control>
+        <posx>500</posx>
+        <posy>131</posy>
         <control type="list" id="3">
-          <width>802</width>
+          <width>920</width>
           <height>888</height>
           <onleft>5</onleft>
           <onright>60</onright>
@@ -43,53 +32,35 @@
           <ondown>3</ondown>
           <pagecontrol>60</pagecontrol>
           <scrolltime tween="sine" easing="inout">280</scrolltime>
-          <itemlayout width="802" height="81">
-            <include>ArrowNF</include>
+          <itemlayout width="920" height="81">
             <control type="label" description="Main Label">
-              <visible>!ListItem.IsFolder</visible>
-              <width>765</width>
+			  <font>Size30</font>
+			  <width>825</width>
               <include>52MainLabel</include>
-			  <selectedcolor>Yellow</selectedcolor>
-              <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="label" description="Main Label">
-              <visible>ListItem.IsFolder</visible>
-              <include>52MainLabel</include>
-			  <selectedcolor>Yellow</selectedcolor>
+              <selectedcolor>Yellow</selectedcolor>
               <label>$INFO[ListItem.Label]</label>
             </control>
           </itemlayout>
-          <focusedlayout width="802" height="81">
-            <include>ArrowFO</include>
-             <control type="label" description="Main Label">
-              <visible>!ListItem.IsFolder</visible>
-              <width>765</width>
-              <include>52MainLabel</include>
-			  <selectedcolor>Yellow</selectedcolor>
-              <label>$INFO[ListItem.Label]</label>
-            </control>
+          <focusedlayout width="920" height="81">
+		  <control type="image">
+		  <width>920</width>
+		  <height>81</height>
+		  <texture border="20">images/Buttonselect.png</texture>
+		  </control>
             <control type="label" description="Main Label">
-              <visible>ListItem.IsFolder</visible>
-              <include>52MainLabel</include>
-			  <selectedcolor>Yellow</selectedcolor>
+			  <font>Size30</font>
+			  <width>825</width>
+              <include>52MainLabelFO</include>
+              <selectedcolor>Yellow</selectedcolor>
               <label>$INFO[ListItem.Label]</label>
             </control>
           </focusedlayout>
         </control>
       </control>
-      <control type="image">
-        <animation effect="fade" time="200">VisibleChange</animation>
-        <visible>Container(3).HasNext</visible>
-        <posx>1005</posx>
-        <posy>963</posy>
-        <height>81</height>
-        <width>832</width>
-        <texture>images/DefaultGradient.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
     </control>
-	
     <control type="group" description="Group 6 Thumbs">
+	<visible>Control.HasFocus(6) | Control.HasFocus(5)</visible>
+	<include>BlackBackground</include>
       <control type="group" description="Slider and List">
         <posx>1020</posx>
         <posy>140</posy>
@@ -163,7 +134,7 @@
           </focusedlayout>
         </control>
         <control type="group" description="Slider">
-          <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="960,540" time="300" reversible="true">Conditional</animation>
+          
           <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300" reversible="true">Conditional</animation>
           <control type="group">
             <visible>Container(6).HasFocus() + !Control.HasFocus(5)</visible>
@@ -182,16 +153,6 @@
           <animation condition="Container(6).Position(7)" effect="slide" start="0,0" end="0,444" time="180" easing="inout" reversible="true">Conditional</animation>
           <animation condition="Container(6).Position(8)" effect="slide" start="0,0" end="0,555" time="180" easing="inout" reversible="true">Conditional</animation>
         </control>
-      </control>
-      <control type="image">
-        <animation effect="fade" time="200">VisibleChange</animation>
-        <visible>Container(6).HasNext</visible>
-        <posx>1005</posx>
-        <posy>963</posy>
-        <height>81</height>
-        <width>832</width>
-        <texture>images/DefaultGradient.png</texture>
-        <aspectratio>stretch</aspectratio>
       </control>
     </control>
     <control type="group" description="Thumbs">
@@ -250,13 +211,15 @@
         <texture>images/loop.png</texture>
         <aspectratio>keep</aspectratio>
       </control>
+	  
     </control>
+	 
     <control type="scrollbar" id="60">
-      <posx>36r</posx>
-      <posy>258</posy>
-      <height>771</height>
-      <onleft>3</onleft>
-      <onright>-</onright>
-    </control>
+        <posx>39r</posx>
+        <posy>135</posy>
+        <height>870</height>
+        <onleft>3</onleft>
+        <onright>-</onright>
+      </control>
   </controls>
 </window>

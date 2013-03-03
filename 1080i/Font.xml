@@ -1,34 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <fonts>
   <fontset id="Default" unicode="true">
-  <!--Fonts for Navi-X-->
-  <font>
+    <!--Fonts for GeneralAddons-->
+    <font>
       <name>font10</name>
       <filename>Default.ttf</filename>
       <size>21</size>
     </font>
-  <font>
+    <font>
       <name>font14</name>
       <filename>Default.ttf</filename>
       <size>21</size>
     </font>
-	<font>
+    <font>
       <name>font12</name>
       <filename>Default.ttf</filename>
       <size>21</size>
     </font>
-	<font>
-      <name>font13</name>
+    <font>
+      <name>Size26B</name>
       <filename>Default.ttf</filename>
       <size>26</size>
-	  <style>bold</style>
+      <style>bold</style>
     </font>
-	<font>
+    <font>
       <name>special13</name>
       <filename>Default.ttf</filename>
       <size>21</size>
     </font>
-	<!-- End of Navi-X fonts -->
+    <!-- End of GeneralAddons fonts -->
     <font>
       <name>size21</name>
       <filename>Default.ttf</filename>

@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="126">
+﻿<window id="126">
   <defaultcontrol always="true">450</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <include>OpenClose</include>
@@ -86,7 +85,7 @@
       <include>BlackBackground</include>
       <control type="group" description="Slider and List">
         <posx>1020</posx>
-        <posy>141</posy>
+      <posy>131</posy>
         <control type="panel" id="451">
           <posx>0</posx>
           <posy>0</posy>

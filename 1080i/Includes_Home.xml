@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <include name="HomeButtonsCommons">
     <posx>0</posx>
@@ -7,7 +6,7 @@
     <texturefocus>-</texturefocus>
     <label>-</label>
   </include>
-    <include name="Sublist">
+  <include name="Sublist">
     <posy>592</posy>
     <width>300</width>
     <height>430</height>
@@ -41,4 +40,4 @@
       </control>
     </focusedlayout>
   </include>
- </includes>
+</includes>

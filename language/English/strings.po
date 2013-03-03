@@ -260,3 +260,15 @@ msgstr "Change Icon"
 msgctxt "#31057"
 msgid "Replace Item"
 msgstr "Replace Item"
+
+msgctxt "#31058"
+msgid "Lock Access to Skin Specific Settings from Home Page"
+msgstr "Lock Access to Skin Specific Settings from Home Page"
+
+msgctxt "#31059"
+msgid "LiveTV"
+msgstr "LiveTv"
+
+msgctxt "#31060"
+msgid "Add"
+msgstr "Add"

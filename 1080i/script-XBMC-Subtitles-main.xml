@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<window>
+﻿<window>
   <allowoverlay>no</allowoverlay>
   <include>OpenClose</include>
   <controls>
@@ -27,43 +26,43 @@
         <aspectratio align="center">keep</aspectratio>
       </control>
       <control type="group" id="111">
-      <control type="label" id="100" description="Textarea">
-        <posx>150</posx>
-        <posy>220</posy>
-        <width>1400</width>
-        <height>60</height>
-        <font>size27</font>
-        <textcolor>Silver</textcolor>
-        <align>center</align>
-        <aligny>center</aligny>
-        <wrapmultiline>true</wrapmultiline>
+        <control type="label" id="100" description="Textarea">
+          <posx>150</posx>
+          <posy>220</posy>
+          <width>1400</width>
+          <height>60</height>
+          <font>size27</font>
+          <textcolor>Silver</textcolor>
+          <align>center</align>
+          <aligny>center</aligny>
+          <wrapmultiline>true</wrapmultiline>
+        </control>
+        <control type="image" description="linetop">
+          <posx>120</posx>
+          <posy>280</posy>
+          <width>1460</width>
+          <height>1</height>
+          <texture>images/Line.png</texture>
+        </control>
+        <control type="image" description="linebottom">
+          <posx>120</posx>
+          <posy>850</posy>
+          <width>1460</width>
+          <height>1</height>
+          <texture>images/Line.png</texture>
+        </control>
+        <control type="label" description="Local subtitle available">
+          <posx>200</posx>
+          <posy>870</posy>
+          <width>1300</width>
+          <height>60</height>
+          <textcolor>White</textcolor>
+          <label>$LOCALIZE[SCRIPT655]</label>
+          <font>size33</font>
+          <align>center</align>
+          <wrapmultiline>true</wrapmultiline>
+        </control>
       </control>
-      <control type="image" description="linetop">
-        <posx>120</posx>
-        <posy>280</posy>
-        <width>1460</width>
-        <height>1</height>
-        <texture>images/Line.png</texture>
-      </control>
-      <control type="image" description="linebottom">
-        <posx>120</posx>
-        <posy>850</posy>
-        <width>1460</width>
-        <height>1</height>
-        <texture>images/Line.png</texture>
-      </control>
-      <control type="label" description="Local subtitle available">
-        <posx>200</posx>
-        <posy>870</posy>
-        <width>1300</width>
-        <height>60</height>
-        <textcolor>White</textcolor>
-        <label>$LOCALIZE[SCRIPT655]</label>
-        <font>size33</font>
-        <align>center</align>
-        <wrapmultiline>true</wrapmultiline>
-      </control>
-	  </control>
       <control type="list" id="120">
         <posx>180</posx>
         <posy>281</posy>

@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="106">
+﻿<window id="106">
   <defaultcontrol always="true">996</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <include>DialogOpenClose</include>
@@ -21,6 +20,19 @@
       <width>480</width>
       <height max="960">auto</height>
       <itemgap>3</itemgap>
+	  <control type="button" id="214">
+	  <visible>Container.Content(Movies)</visible>
+	<posx>-</posx>
+      <posy>-</posy>
+      <width>480</width>
+      <height>60</height>
+      <shadowcolor>BlackT</shadowcolor>
+      <focusedcolor>White2</focusedcolor>
+      <texturefocus border="5">images/ContextButton.png</texturefocus>
+      <texturenofocus>-</texturenofocus>
+	<label>CINEMA</label>
+	<onclick>XBMC.RunScript(script.cinema.experience)</onclick>
+	</control>
     </control>
     <control type="button" id="1000" description="Buttons">
       <posx>-</posx>
@@ -32,5 +44,6 @@
       <texturefocus border="5">images/ContextButton.png</texturefocus>
       <texturenofocus>-</texturenofocus>
     </control>
+	
   </controls>
 </window>

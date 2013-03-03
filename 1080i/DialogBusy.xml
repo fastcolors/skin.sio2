@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="136">
+﻿<window id="136">
   <coordinates>
     <posx>0</posx>
     <posy>0</posy>
@@ -32,6 +31,16 @@
         <aspectratio>keep</aspectratio>
         <animation effect="rotate" start="360" end="0" center="auto" time="1800" loop="true" condition="true">conditional</animation>
       </control>
+    </control>
+    <control type="progress" id="10">
+      <posx>735</posx>
+      <posy>650</posy>
+      <width>450</width>
+      <height>8</height>
+      <texturebg>MusicOSD/ProgressBG.png</texturebg>
+      <midtexture>MusicOSD/ProgressM.png</midtexture>
+      <righttexture>MusicOSD/ProgressR.png</righttexture>
+      <lefttexture>MusicOSD/ProgressL.png</lefttexture>
     </control>
   </controls>
 </window>

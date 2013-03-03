@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="501">
+﻿<window id="501">
   <defaultcontrol always="true">50</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
@@ -9,7 +8,7 @@
       <control type="group">
         <include>SlimListItemCount</include>
         <posx>1020</posx>
-        <posy>141</posy>
+      <posy>131</posy>
         <include>SlimListSlider</include>
         <control type="fixedlist" id="50">
           <visible>!container.content(addons)</visible>
@@ -67,7 +66,7 @@
       <control type="group" description="Slider and List">
         <include>LargeListItemCount</include>
         <posx>1020</posx>
-        <posy>141</posy>
+      <posy>131</posy>
         <control type="fixedlist" id="51">
           <visible>container.content(addons)</visible>
           <posx>0</posx>
@@ -101,7 +100,6 @@
       <visible>Control.IsVisible(53)</visible>
       <control type="group" description="Container and frame">
         <control type="panel" id="53" description="Grid">
-          
           <viewtype label="536">Icons</viewtype>
           <posx>60</posx>
           <posy>210</posy>
@@ -132,7 +130,6 @@
               <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
               <aspectratio>stretch</aspectratio>
             </control>
-            
           </itemlayout>
           <focusedlayout height="375" width="300">
             <control type="image">
@@ -152,7 +149,6 @@
               <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
               <aspectratio>stretch</aspectratio>
             </control>
-            
             <control type="label">
               <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
               <posx>150</posx>
@@ -282,7 +278,6 @@
         <aspectratio>stretch</aspectratio>
       </control>
       <control type="fixedlist" id="58" description="Fanart 3">
-        
         <onup>9000</onup>
         <ondown condition="Skin.HasSetting(Scrollbars_Active)">60</ondown>
         <ondown condition="![Skin.HasSetting(Scrollbars_Active) | Skin.HasSeting(ViewsMenuOff)]">9000</ondown>
@@ -316,7 +311,6 @@
             <texture background="true">$INFO[ListItem.Icon]</texture>
             <aspectratio>scale</aspectratio>
           </control>
-          
         </itemlayout>
         <focusedlayout height="357" width="354">
           <control type="group">
@@ -336,7 +330,6 @@
               <texture background="true">$INFO[ListItem.Icon]</texture>
               <aspectratio>scale</aspectratio>
             </control>
-            
           </control>
         </focusedlayout>
       </control>

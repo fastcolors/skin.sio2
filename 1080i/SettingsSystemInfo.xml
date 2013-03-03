@@ -5,7 +5,7 @@
   <include>OpenClose</include>
   <controls>
     <include>BlackBackground</include>
-	<control type="image" description="Line Split">
+    <control type="image" description="Line Split">
       <posx>0</posx>
       <posy>150</posy>
       <width>1920</width>
@@ -13,7 +13,7 @@
       <aspectratio>stretch</aspectratio>
       <texture>images/Line.png</texture>
     </control>
-	<control type="image" description="Line Split">
+    <control type="image" description="Line Split">
       <posx>0</posx>
       <posy>80</posy>
       <width>1920</width>
@@ -27,16 +27,16 @@
     </control>
     <control type="group">
       <control type="grouplist" id="9001" description="TopHat">
-      <posy>78</posy>
-      <width>auto</width>
-	  <align>center</align>
-      <height>80</height>
-      <itemgap>9</itemgap>
+        <posy>78</posy>
+        <width>auto</width>
+        <align>center</align>
+        <height>80</height>
+        <itemgap>9</itemgap>
         <onleft>-</onleft>
         <onright>-</onright>
         <onup>9001</onup>
         <ondown>9001</ondown>
-		<orientation>horizontal</orientation>
+        <orientation>horizontal</orientation>
         <control type="button" id="95" description="Summary">
           <texturenofocus border="5">-</texturenofocus>
           <texturefocus border="5">images/backfocus.png</texturefocus>
@@ -70,11 +70,10 @@
       </control>
       <control type="grouplist" description="Stage">
         <posx>250</posx>
-      <posy>200</posy>
-      <width>1420</width>
-      <height>860</height>
+        <posy>200</posy>
+        <width>1420</width>
+        <height>860</height>
         <itemgap>9</itemgap>
-        
         <control type="label" id="21">
           <description>CPU Text</description>
           <width>1420</width>
@@ -168,10 +167,10 @@
           <width>1420</width>
           <font>size27</font>
         </control>
-		<control type="label" id="52" description="XBMC BUILD">
+        <control type="label" id="52" description="XBMC BUILD">
           <width>1420</width>
-		  <align>center</align>
-		  <font>size27</font>
+          <align>center</align>
+          <font>size27</font>
         </control>
       </control>
     </control>
