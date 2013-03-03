@@ -1,3 +1,6 @@
+2.0.1
+* Selection Dialog Bug fixed
+
 2.0.0
 * New Font Bitstream Vera.
 * PVR Support (LiveTV)

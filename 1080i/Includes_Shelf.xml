@@ -1889,7 +1889,7 @@
       </control>
       <control type="panel" id="319" description="TOP Shortcuts">
         <visible>IntegerGreaterThan(Window.Property(favourite.count),0) + [Container(9000).HasFocus(352) | Control.HasFocus(319)] + Container(9000).Row(0)</visible>
-        <onup>9009</onup>
+        <onup>-</onup>
         <ondown>9000</ondown>
         <onleft>319</onleft>
         <onright>319</onright>
