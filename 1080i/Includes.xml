@@ -357,6 +357,11 @@
     <height>68</height>
     <aspectratio aligny="center" align="left">keep</aspectratio>
   </include>
+  <include name="OSDbarIcons3D">
+    <width>34</width>
+    <height>68</height>
+    <aspectratio aligny="center" align="left">stretch</aspectratio>
+  </include>
   <include name="SeekbarLabels">
     <posx>0</posx>
     <posy>0</posy>

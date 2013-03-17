@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: XBMC Skin SiO2\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2013-03-01 19:52+0000\n"
-"Last-Translator: relyter <tyler@pisem.net>\n"
+"PO-Revision-Date: 2013-03-11 08:48+0000\n"
+"Last-Translator: fastcolors <fastcolors@gmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/sio2-1/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -43,7 +43,7 @@ msgstr "Предустановки визуализации"
 
 msgctxt "#31005"
 msgid "End Time"
-msgstr "Время окончания"
+msgstr "Конец"
 
 msgctxt "#31006"
 msgid "Last Added"
@@ -77,15 +77,15 @@ msgstr "Очистить плейлист"
 
 msgctxt "#31013"
 msgid "Available Audio"
-msgstr "Доступные аудио дорожки"
+msgstr "Источники музыки"
 
 msgctxt "#31014"
 msgid "Current Playlist"
 msgstr "Текущий плейлист"
 
 msgctxt "#31015"
-msgid "Subtitle Add-on"
-msgstr "Аддон субтитров"
+msgid "Select Subtitle Add-on"
+msgstr "Выбор дополнения субтитров"
 
 msgctxt "#31016"
 msgid "Last Updated"
@@ -93,17 +93,17 @@ msgstr "Последнее обновление"
 
 msgctxt "#31017"
 msgid "Choose Addon for Subtitles Search & Download"
-msgstr "Выбор аддона для поиска и загрузки субтиров"
+msgstr "Выбор дополнения для поиска и загрузки субтиров"
 
 msgctxt "#31018"
 msgid "Choose Addon for Lyrics Search & Download"
-msgstr "Выбор аддона для поиска и загрузки текстов песен"
+msgstr "Выбор дополнения для поиска и загрузки текстов песен"
 
 msgctxt "#31019"
 msgid ""
 "Enable or Disable Clock On top right of All Pages (not while watching "
 "Movies).[CR]Home Menu Will show Time and date."
-msgstr "Включить/выключить часы в правом верхнем углу на всех страницах, кроме страницы просмотра видео.[CR] В главном меню дополнительно еще будет дата."
+msgstr "Включить/выключить часы в правом верхнем углу на всех страницах, кроме страницы просмотра видео.[CR] В главном меню дополнительно будет еще дата."
 
 msgctxt "#31020"
 msgid "Enable or Disable Vinyl Record Animation from Home Shelf Albums."
@@ -138,22 +138,16 @@ msgid "Last Added"
 msgstr "Последние добавленные"
 
 msgctxt "#31028"
-msgid ""
-"A great way to install Add-Ons is using[CR] FUSION INSTALLER.[CR] In Order "
-"to do so: Press YES PLEASE at the bottom of this dialog and Follow onscreen "
-"instructions![CR][CR] Brought to You by:[CR] www.XBMCHUB.com"
-msgstr "FUSION - это огромный выбор отличных аддонов. Для инсталляции FUSION выберите YES PLEASE внизу этого диалога и следуйте инструкциям, появляющимся на экране.  Разработка: www.XBMCHUB.com"
+msgid "do not translate this"
+msgstr ""
 
 msgctxt "#31029"
-msgid ""
-"If You want help with FUSION INSTALLER Just Click On this setting and go to "
-"Add-ons Manager. A PopUp will appear asking you if you want further help.. "
-"just say yes!"
-msgstr "Если вам нужна помощь при инсталяции FUSION, включите данную опцию и перейдите в Управление Аддонами. В появившемся окне выберите Да."
+msgid "Adds FUSION as a source for installing 3rd Party Addons as Zip Files"
+msgstr ""
 
 msgctxt "#31030"
 msgid "Custom Shelf Icon"
-msgstr "Выбрать иконку для Полки"
+msgstr "Выбрать свою иконку для Полки"
 
 msgctxt "#31031"
 msgid "Replace SiO2 Icon on Shelf with A Picture of Your choice."
@@ -169,19 +163,19 @@ msgstr "Всегда цветные иконки в главном меню"
 
 msgctxt "#31034"
 msgid "Click to Add Favourite to Home Page"
-msgstr "Нажмите, чтобы добавить Закладку в главное меню"
+msgstr "Нажмите, чтобы добавить Избранное в главное меню"
 
 msgctxt "#31035"
 msgid "Click to Pick Icon, Change Favourite or Remove Favourite"
-msgstr "Нажмите, чтобы выбрать иконку, изменить или убрать закладку "
+msgstr "Нажмите, чтобы выбрать иконку, изменить или убрать Избранное "
 
 msgctxt "#31036"
 msgid "Reset ALL skin settings to default"
-msgstr "Восстановить все настройки скина по умолчанию"
+msgstr "Сбросить все настройки обложки на значения по умолчанию"
 
 msgctxt "#31037"
 msgid "Add-ons manager"
-msgstr "Управление аддонами"
+msgstr "Управление дополнениями"
 
 msgctxt "#31038"
 msgid "min"
@@ -213,7 +207,7 @@ msgstr "Диалог выбора параметров"
 
 msgctxt "#31045"
 msgid "Recent/Recommended Inverted First Item"
-msgstr "Заменять первую позицию на Полке"
+msgstr "Заменять первую позицию на Полке (Добавленные/Рекомендованные)"
 
 msgctxt "#31046"
 msgid "Customize What Is Displayed On Home Shelf."
@@ -233,7 +227,7 @@ msgstr "Выбор действия для иконки питания в гла
 
 msgctxt "#31050"
 msgid "Choose from menu"
-msgstr "Выбрать из меню"
+msgstr "Показать меню"
 
 msgctxt "#31051"
 msgid "Custom Shelf Shortcuts"
@@ -241,7 +235,7 @@ msgstr "Настойка ярлыков на Полке"
 
 msgctxt "#31052"
 msgid "Home Page Customizer"
-msgstr "Настойки главного меню "
+msgstr "Настройки главного меню "
 
 msgctxt "#31053"
 msgid "Link For Music Icon"
@@ -254,7 +248,7 @@ msgstr "Включить меню Вид для изменения режимо�
 
 msgctxt "#31055"
 msgid "Fullscreen player"
-msgstr "Воспроизведение в полном экране"
+msgstr "Воспроизведение на весь экран"
 
 msgctxt "#31056"
 msgid "Change Icon"
@@ -265,8 +259,8 @@ msgid "Replace Item"
 msgstr "Заменить элемент"
 
 msgctxt "#31058"
-msgid "Lock Access to Skin Specific Settings from Home Page"
-msgstr "Заблокировать доступ к установкам скина с Главного Экрана"
+msgid "-"
+msgstr ""
 
 msgctxt "#31059"
 msgid "LiveTV"
@@ -275,3 +269,117 @@ msgstr "Телевидение"
 msgctxt "#31060"
 msgid "Add"
 msgstr "Добавить"
+
+msgctxt "#31061"
+msgid ""
+"In Order for this to work You need to create a Smart Playlist for 3D Movies "
+"and name it 3D. One good way to do it is to add a separate source for 3D "
+"content, and then create the filter for the playlist using (Path) - "
+"(Contains) and the name of the source folder."
+msgstr "Чтобы это работало нужно создать смартплейлист для фильмов 3D и назвать его 3D. Это легко сделать, если перенести весь 3D контент в отдельную папку и потом создать фильтр для плейлиста на основе пути к папке."
+
+msgctxt "#31062"
+msgid "Select Lyrics Add-on"
+msgstr "Выбор дополнения текстов песен"
+
+msgctxt "#31063"
+msgid "Install Fusion"
+msgstr ""
+
+msgctxt "#31064"
+msgid "Fullscreen"
+msgstr "На весь экран"
+
+msgctxt "#31065"
+msgid "Delete Cache"
+msgstr ""
+
+msgctxt "#31066"
+msgid "Delete Thumbnails"
+msgstr ""
+
+msgctxt "#31067"
+msgid "Remove Downloaded Packages"
+msgstr ""
+
+msgctxt "#31068"
+msgid ""
+"Advanced Maintenance Tools, used to clean up after XBMC. Or to fix some "
+"annoying issues. To be used carefully.[CR][CR]Brought to You by Mikey1234 "
+"and Fastcolors.[CR][CR]www.XBMCHub.com"
+msgstr ""
+
+msgctxt "#31069"
+msgid "Maintenance Tools"
+msgstr ""
+
+msgctxt "#31070"
+msgid ""
+"[COLOR FFFF0000]USE THESE TOOLS ONLY IF YOU KNOW WHAT YOU'RE DOING AND AT "
+"YOUR OWN RISK!!![/COLOR] WE DON'T TAKE ANY RESPONSABILITY FOR THE POSSIBLE "
+"OUTCOME. [COLOR FFFF0000]MAY RESULT IN THE MALFUNCTIONING OF "
+"XBMC.[/COLOR][CR] [CR]PROUDLY BROUGHT TO YOU BY MIKEY1234 and "
+"FASTCOLORS.[CR][CR]For support with please visit www.xbmchub.com"
+msgstr ""
+
+msgctxt "#31071"
+msgid "Delete MetaHandler Cache"
+msgstr ""
+
+msgctxt "#31072"
+msgid "Install XBMCHub Repository"
+msgstr ""
+
+msgctxt "#31073"
+msgid "All Done[CR]Brought to You by XBMCHub.com"
+msgstr ""
+
+msgctxt "#31074"
+msgid "Are You Sure?"
+msgstr ""
+
+msgctxt "#31075"
+msgid "Remove cache.db for XBMC and most Addons"
+msgstr ""
+
+msgctxt "#31076"
+msgid "Remove Corrupted Metadata"
+msgstr ""
+
+msgctxt "#31077"
+msgid "Do You want to install Fusion?"
+msgstr ""
+
+msgctxt "#31078"
+msgid "restart XBMC for changes to take effect"
+msgstr ""
+
+msgctxt "#31079"
+msgid ""
+"select Install from zip using Fusion as Source [CR]Would You like to open "
+"Addon Manager now?"
+msgstr ""
+
+msgctxt "#31080"
+msgid "Delete AdvancedSettings"
+msgstr ""
+
+msgctxt "#31081"
+msgid "Remove Addons"
+msgstr ""
+
+msgctxt "#31082"
+msgid "Video Guides"
+msgstr ""
+
+msgctxt "#31083"
+msgid "Maintenance"
+msgstr ""
+
+msgctxt "#31084"
+msgid "Remove Video Database"
+msgstr ""
+
+msgctxt "#31085"
+msgid "Remove Music Database"
+msgstr ""

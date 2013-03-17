@@ -1,3 +1,19 @@
+2.0.3
+* Keyboard Fix to point to "a" as default instead of "DONE"
+* Bug Fix for 3D banner not showing on all covers on shelf
+*Color icons option is back.
+
+2.0.2
+* 3D OSD Fullscreen.
+* Advanced Tools - Clean XBMC.
+* LiveTV Icon now shows title of item being recorded (when recording)
+* Fixed Icon view, now returning to selected Item
+* 3D Movie Ready Homescreen Button
+* Fixed Missing DefaultFile Icon
+* Label Fixing
+* Added Localization for:
+Korean - Piodio.
+
 2.0.1
 * Selection Dialog Bug fixed
 

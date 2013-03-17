@@ -20,8 +20,8 @@
       <width>480</width>
       <height max="960">auto</height>
       <itemgap>3</itemgap>
-	  <control type="button" id="214">
-	  <visible>Container.Content(Movies)</visible>
+	  <control type="button" id="1500">
+	  <visible>System.HasAddon(script.cinema.experience) + Container.Content(Movies)</visible>
 	<posx>-</posx>
       <posy>-</posy>
       <width>480</width>
@@ -30,7 +30,7 @@
       <focusedcolor>White2</focusedcolor>
       <texturefocus border="5">images/ContextButton.png</texturefocus>
       <texturenofocus>-</texturenofocus>
-	<label>CINEMA</label>
+	<label>Cinema</label>
 	<onclick>XBMC.RunScript(script.cinema.experience)</onclick>
 	</control>
     </control>

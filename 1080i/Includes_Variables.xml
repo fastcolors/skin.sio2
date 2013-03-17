@@ -13,10 +13,6 @@
     <value condition="!Skin.HasSetting(locksettings)">$LOCALIZE[16039]</value>
     <value>$LOCALIZE[16041]</value>
   </variable>
-  <variable name="FusionHelpStatus">
-    <value condition="Skin.HasSetting(FirstRun)">$LOCALIZE[16039]</value>
-    <value>$LOCALIZE[16041]</value>
-  </variable>
   <variable name="CustomImgStatus">
     <value condition="Skin.HasSetting(CustomImage)">$LOCALIZE[16041]</value>
     <value>$LOCALIZE[16039]</value>
@@ -26,6 +22,7 @@
     <value condition="System.Date(10-31,11-01)">images/halloween.png</value>
     <value condition="System.Date(01-01,01-02)">images/newyear.png</value>
     <value condition="System.Date(12-25,12-26)">images/xmas.png</value>
+	<!--<value condition="System.Date(01-14,01-15)">images/davegrohl.png</value>-->
     <value condition="Skin.HasSetting(CustomImage)">$INFO[Skin.String(ShelfCustomImage)]</value>
     <!--<value>images/XBMCHomeLogo.png</value>-->
 	<value>$INFO[Window(Weather).Property(Current.ConditionIcon)]</value>
@@ -60,7 +57,8 @@
     <value condition="Window.IsActive(MyPics.xml)">$LOCALIZE[1]</value>
     <value condition="Window.IsActive(MyPVR.xml) + [Control.HasFocus(13) | Control.HasFocus(34) | Control.HasFocus(14) | Control.HasFocus(35) | Control.HasFocus(17) | Control.HasFocus(36)]">$INFO[Control.GetLabel(29)]</value>
     <value condition="Window.IsActive(MyPVR.xml)">$INFO[Control.GetLabel(30)]</value>
-    <value>$INFO[Container.FolderName]</value>
+    <value condition="Window.IsActive(1717)">$LOCALIZE[31069]</value>
+	<value>$INFO[Container.FolderName]</value>
   </variable>
   <variable name="TopLabel" description="Infos">
     <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Date,, • ]$INFO[ListItem.Size]</value>
@@ -110,5 +108,11 @@
     <value condition="Container(50).HasFocus(14)">$LOCALIZE[31003]</value>
     <value condition="Container(50).HasFocus(15)">$LOCALIZE[31029]</value>
     <value condition="Container(50).HasFocus(16)">$LOCALIZE[31031]</value>
+	<value condition="Container(50).HasFocus(17)">$LOCALIZE[31068]</value>
+  </variable>
+  <variable name="nowplay">
+  <value condition="Pvr.IsPlayingTV">$INFO[]</value>
+  <value condition="IsEmpty(Player.Art(tvshow.poster))">$INFO[VideoPlayer.Cover]</value>
+  <value>$INFO[Player.Art(tvshow.poster)]</value>
   </variable>
 </includes>

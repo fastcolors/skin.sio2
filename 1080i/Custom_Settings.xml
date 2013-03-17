@@ -13,7 +13,7 @@
         <control type="image">
           <animation effect="fade" time="200">VisibleChange</animation>
           <posx>-20</posx>
-          <posy>381</posy>
+          <posy>361</posy>
           <width>900</width>
           <height>129</height>
           <texture border="32">images/slider.png</texture>
@@ -35,9 +35,9 @@
         <animation condition="Container(50).Position(10)" effect="slide" start="0,0" end="0,455" time="140" reversible="true">Conditional</animation>
       </control>
       <control type="list" id="50">
-        <posy>50</posy>
+        <posy>30</posy>
         <width>902</width>
-        <height>801</height>
+        <height>882</height>
         <onleft>-</onleft>
         <onright>-</onright>
         <onup>50</onup>
@@ -85,18 +85,18 @@
           </control>
         </focusedlayout>
         <content>
-          <item id="6" description="SkinSettingLock">
+          <!--<item id="6" description="SkinSettingLock">
             <label>LOCK</label>
             <label2>$VAR[locksettings]</label2>
             <onclick>Skin.ToggleSetting(locksettings)</onclick>
-          </item>
+          </item>-->
           <item id="3" description="Subtitles">
-            <label>$LOCALIZE[424] $LOCALIZE[31015]</label>
+            <label>31015</label>
             <label2>$INFO[Skin.String(SubtitleScript_Path)]</label2>
             <onclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</onclick>
           </item>
           <item id="2" description="Lyrics">
-            <label>$LOCALIZE[424] $LOCALIZE[24013] $LOCALIZE[24000]</label>
+            <label>31062</label>
             <label2>$INFO[Skin.String(LyricPath)]</label2>
             <onclick>Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
           </item>
@@ -124,7 +124,7 @@
             <label2>$LOCALIZE[305]</label2>
             <onclick>Skin.ToggleSetting(ViewsMenuOff)</onclick>
           </item>
-          <item id="1" description="HomeColor">
+         <item id="1" description="HomeColor">
             <label>31033</label>
             <label2>$VAR[colormenu]</label2>
             <onclick>Skin.ToggleSetting(colormenu)</onclick>
@@ -132,6 +132,15 @@
           <item id="8" description="Home Customize">
             <label>31052</label>
             <onclick>ActivateWindow(1117)</onclick>
+          </item>
+		  <item id="18" description="VideoGuides">
+            <label>31082</label>
+			<onclick>RunScript(special://skin/resources/videoguide.py)</onclick>
+          </item>
+		  <item id="17" description="Manteinance">
+            <label>31069</label>
+			<icon>DefaultIconWarning.png</icon>
+			<onclick>ActivateWindow(1717)</onclick>
           </item>
           <item id="9" description="Quit button function">
             <label>$LOCALIZE[31049]</label>
@@ -167,16 +176,9 @@
             <label2>$INFO[Skin.String(MusicLink)]</label2>
             <onclick>ActivateWindow(1121)</onclick>
           </item>
-		  <!--<item id="17" description="Manteinance">
-            <label>DF Mant</label>
-            <onclick>RunScript(special://skin/resources/default.py)</onclick>
-          </item>-->
           <item id="15" description="Fusion">
-            <label>Help Me Install Fusion</label>
-            <label2>$VAR[FusionHelpStatus]</label2>
-            <onclick>Skin.Reset(FirstRun)</onclick>
-            <onclick>Skin.Reset(FusionHelp)</onclick>
-            <onclick>Skin.Reset(FusionBack)</onclick>
+            <label>31063</label>
+            <onclick>RunScript(special://skin/resources/fusion.py)</onclick>
           </item>
           <item id="16" description="Custom Image for Shelf">
             <label>$LOCALIZE[31030]</label>
@@ -207,7 +209,7 @@
       <animation effect="fade" time="200">VisibleChange</animation>
       <visible>Container(50).HasNext</visible>
       <posx>945</posx>
-      <posy>963</posy>
+      <posy>1000</posy>
       <height>81</height>
       <width>952</width>
       <texture>images/DefaultGradient.png</texture>
@@ -281,7 +283,7 @@
         <texture>help/Off.png</texture>
       </control>
       <control type="image" description="reset">
-        <visible>Container(50).HasFocus(12)</visible>
+        <visible>Container(50).HasFocus(12) | Container(50).HasFocus(17)</visible>
         <include>Help_Panel</include>
         <texture>help/Warning.png</texture>
       </control>

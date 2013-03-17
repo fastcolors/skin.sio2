@@ -1,5 +1,5 @@
 <window id="103">
-  <defaultcontrol always="true">300</defaultcontrol>
+  <defaultcontrol always="true">65</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
     <control type="group">

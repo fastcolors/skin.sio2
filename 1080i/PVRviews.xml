@@ -85,18 +85,19 @@
             <selectedcolor>Yellow</selectedcolor>
             <align>left</align>
             <aligny>center</aligny>
-            <width>650</width>
+            <width>640</width>
             <include>50Title</include>
             <label>$INFO[ListItem.Label]</label>
           </control>
           <control type="label">
             <description>Label 2 Title</description>
             <posx>45</posx>
-            <width>650</width>
+            <width>640</width>
             <include>50details</include>
             <label>$INFO[ListItem.Title]</label>
           </control>
-          <include>statusbiglist</include> </itemlayout>
+          <include>statusbiglist</include> 
+		  </itemlayout>
         <focusedlayout height="111" width="390">
           <control type="label">
             <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
@@ -117,20 +118,22 @@
             <selectedcolor>Yellow</selectedcolor>
             <align>left</align>
             <aligny>center</aligny>
-            <width>650</width>
+            <width>640</width>
             <include>50TitleFO</include>
             <label>$INFO[ListItem.Label]</label>
           </control>
           <control type="label">
             <description>Label 2 Title</description>
             <posx>45</posx>
-            <width>650</width>
+            <width>640</width>
             <include>50details</include>
             <label>$INFO[ListItem.Title]</label>
           </control>
-          <include>statusbiglist</include> </focusedlayout>
+          <include>statusbiglist</include>
+		  </focusedlayout>
       </control>
-      <include>LargeListSlider</include> </control>
+      <include>LargeListSlider</include> 
+	  </control>
     <include>ListFade</include>
     <control type="scrollbar" id="60">
       <posx>39r</posx>

@@ -1,4 +1,4 @@
-<addon id="skin.sio2" version="2.0.1" name="SiO2" provider-name="FastColors">
+<addon id="skin.sio2" version="2.0.3" name="SiO2" provider-name="FastColors">
   <requires>
     <import addon="xbmc.gui" version="4.0.0"/>
     <import addon="script.favourites" version="3.2.5"/>
@@ -65,9 +65,9 @@
     <description lang="en">If you like Apple "everything at hand" policy for interfaces, You might want to give this Skin a try. I designed it trying to put as few clicks as possible between You and what You're trying to do (or watch ;) ).[CR] Thanks to testers and Inspirers: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
     <description lang="es">Si te gusta la política Apple "todo a mano" para interfaces, entonces debe darle una oportunidad a esta Skin. La diseñé tratando de poner menos clics posible entre usted y lo que estas tratando de hacer (o ver ;) ) [CR] Gracias a los probadores e inspiradores: .. Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
     <!--<description lang="et"></description>
-    <description lang="fi"></description>
-    <description lang="fr"></description>
-    <description lang="gl"></description>
+    <description lang="fi"></description>-->
+    <description lang="fr">Si vous aimez Apple "tout sous la main" la politique pour les interfaces, vous pourriez vouloir donner à ce thème un essai. Je l'ai conçu comme essayer de mettre quelques clics possible entre vous et ce que vous essayez de faire (ou de regarder;)) [CR] Merci aux testeurs et les inspirateurs:.. Toiva, défilement, Abrasher, Lucanoid, Relyter.</description>
+    <!--<description lang="gl"></description>
     <description lang="he"></description>
     <description lang="hr"></description>
     <description lang="hu"></description>

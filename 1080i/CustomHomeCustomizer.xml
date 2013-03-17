@@ -195,6 +195,30 @@
               <label>$LOCALIZE[8]</label>
               <onclick>Skin.ToggleSetting(hidewtr)</onclick>
             </item>
+            <item id="1010" description="Favourites">
+              <visible>!Skin.HasSetting(hidefav)</visible>
+              <thumb>icons/favs.png</thumb>
+              <label>$LOCALIZE[1036]</label>
+              <onclick>Skin.ToggleSetting(hidefav)</onclick>
+            </item>
+            <item id="1010" description="Favourites">
+              <visible>Skin.HasSetting(hidefav)</visible>
+              <thumb>help/Off.png</thumb>
+              <label>$LOCALIZE[1036]</label>
+              <onclick>Skin.ToggleSetting(hidefav)</onclick>
+            </item>
+            <item id="356">
+              <visible>!Skin.HasSetting(3dmovs)</visible>
+              <thumb>help/Off.png</thumb>
+              <label>3D $LOCALIZE[342]</label>
+              <onclick>Skin.ToggleSetting(3dmovs)</onclick>
+            </item>
+            <item id="356">
+              <visible>Skin.HasSetting(3dmovs)</visible>
+              <thumb>icons/3d.png</thumb>
+              <label>3D $LOCALIZE[342]</label>
+              <onclick>Skin.ToggleSetting(3dmovs)</onclick>
+            </item>
             <item id="1014">
               <visible>System.GetBool(pvrmanager.enabled)</visible>
               <thumb>icons/LiveTV.png</thumb>
@@ -489,18 +513,7 @@
               <label>RSS</label>
               <onclick>Skin.ToggleSetting(hiderss)</onclick>
             </item>-->
-            <item id="1010" description="Favourites">
-              <visible>!Skin.HasSetting(hidefav)</visible>
-              <thumb>icons/favs.png</thumb>
-              <label>$LOCALIZE[1036]</label>
-              <onclick>Skin.ToggleSetting(hidefav)</onclick>
-            </item>
-            <item id="1010" description="Favourites">
-              <visible>Skin.HasSetting(hidefav)</visible>
-              <thumb>help/Off.png</thumb>
-              <label>$LOCALIZE[1036]</label>
-              <onclick>Skin.ToggleSetting(hidefav)</onclick>
-            </item>
+            
             <item id="1012" description="Browser">
               <visible>!Skin.HasSetting(hidebro)</visible>
               <thumb>icons/browser.png</thumb>
@@ -1160,7 +1173,6 @@
     <control type="group" id="520" description="WEATHER">
       <posy>60</posy>
       <posx>60</posx>
-      <visible>Library.HasContent(Movies)</visible>
       <visible>Container(50).HasFocus(1006)</visible>
       <control type="label">
         <posx>450</posx>
@@ -1191,6 +1203,21 @@
         <label>SETTINGS</label>
         <enable>!Skin.HasSetting(hidewtr)</enable>
         <onclick>activatewindow(weathersettings)</onclick>
+      </control>
+    </control>
+    <control type="group" id="521" description="WEATHER">
+      <posy>60</posy>
+      <posx>60</posx>
+      <visible>Container(50).HasFocus(356)</visible>
+      <control type="textbox">
+        <posx>450</posx>
+        <posy>100</posy>
+        <width>900</width>
+        <height>300</height>
+        <align>center</align>
+        <textcolor>Grey2</textcolor>
+        <font>Size26</font>
+        <label>$LOCALIZE[31061]</label>
       </control>
     </control>
   </controls>

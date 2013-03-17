@@ -1,0 +1,67 @@
+﻿<window type="dialog" id="1718">
+  <defaultcontrol always="true">9000</defaultcontrol>
+  <include>DialogOpenClose</include>
+  <controls>
+    <control type="group" description="back">
+      <control type="image">
+        <posx>444</posx>
+        <posy>105</posy>
+        <width>1023</width>
+        <height>762</height>
+        <texture border="150">images/Dialog.png</texture>
+      </control>
+      <control type="label" description="Dialog heading">
+        <posx>615</posx>
+        <posy>281</posy>
+        <width>690</width>
+        <height>52</height>
+        <label>[B]$LOCALIZE[31081][/B]</label>
+        <align>center</align>
+        <aligny>center</aligny>
+        <font>size36</font>
+        <textcolor>White</textcolor>
+        <shadowcolor>Black</shadowcolor>
+      </control>
+      <control type="group">
+        <posx>697</posx>
+        <posy>366</posy>
+        <control type="grouplist" id="9000">
+          <width>525</width>
+          <height>450</height>
+          <onleft>-</onleft>
+          <onright>-</onright>
+          <onup>9000</onup>
+          <ondown>9000</ondown>
+          <itemgap>0</itemgap>
+          <font>size33</font>
+          <scrolltime>260</scrolltime>
+          <defaultcontrol always="true">701</defaultcontrol>
+          <control type="button" id="701">
+            <width>525</width>
+            <label>Plugins</label>
+            <onclick>RunScript(special://skin/resources/removeaddons.py,plugin)</onclick>
+			<onclick>Close</onclick>
+          </control>
+          <control type="button" id="702">
+            <width>525</width>
+            <label>Repositories</label>
+            <onclick>RunScript(special://skin/resources/removerepos.py)</onclick>
+			<onclick>Close</onclick>
+          </control>
+          <control type="button" id="703">
+            <width>525</width>
+            <label>Programs</label>
+            <onclick>RunScript(special://skin/resources/removeaddons.py,script)</onclick>
+			<onclick>Close</onclick>
+          </control>
+          <control type="button" id="704">
+            <width>525</width>
+            <label>Skins</label>
+            <onclick>RunScript(special://skin/resources/removeaddons.py,skin)</onclick>
+			<onclick>Close</onclick>
+          </control>
+        </control>
+      </control>
+    </control>
+  </controls>
+</window>

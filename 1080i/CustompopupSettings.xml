@@ -9,7 +9,7 @@
       <include>DialogOpenCloseVisible</include>
       <control type="image" description="List back">
         <width>1002</width>
-        <height>460</height>
+        <height>540</height>
         <aspectratio>stretch</aspectratio>
         <texture border="150">images/Dialog.png</texture>
       </control>
@@ -25,9 +25,14 @@
         <control type="button" id="700">
           <include>DialogButt</include>
           <label>20077</label>
-          <enable>!Skin.HasSetting(locksettings)</enable>
           <onclick>Close</onclick>
-          <onclick condition="!Skin.HasSetting(locksettings)">ActivateWindow(56)</onclick>
+          <onclick>RunScript(special://skin/resources/passwordcheck.py,$INFO[System.ProfileName],56)</onclick>
+        </control>
+		<control type="button" id="701">
+          <include>DialogButt</include>
+          <label>31069</label>
+          <onclick>Close</onclick>
+          <onclick>RunScript(special://skin/resources/passwordcheck.py,$INFO[System.ProfileName],1717)</onclick>
         </control>
       </control>
     </control>

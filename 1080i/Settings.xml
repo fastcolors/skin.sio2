@@ -66,8 +66,8 @@
             <label>480</label>
             <onclick>activatewindow(AppearanceSettings)</onclick>
           </item>
-          <item id="1" description="Skin options">
-            <label>$LOCALIZE[166] $LOCALIZE[5]</label>
+          <item id="1" description="Skin Settings">
+            <label>20077</label>
             <onclick>activatewindow(56)</onclick>
           </item>
           <item id="3" description="Videos">

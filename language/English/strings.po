@@ -51,8 +51,7 @@ msgid "Last Started"
 msgstr "Last Started"
 
 msgctxt "#31008"
-msgid ""
-"Enable/Disable Always Colored Icons on Home Screen, when Disabled Icons will"
+msgid "Enable/Disable Always Colored Icons on Home Screen, when Disabled Icons will"
 " only become colored when Focused"
 msgstr "Enable/Disable Always Colored Icons on Home Screen, when Disabled Icons will only become colored when Focused"
 
@@ -81,8 +80,8 @@ msgid "Current Playlist"
 msgstr "Current Playlist"
 
 msgctxt "#31015"
-msgid "Subtitle Add-on"
-msgstr "Subtitle Add-on"
+msgid "Select Subtitle Add-on"
+msgstr "Select Subtitle Add-on"
 
 msgctxt "#31016"
 msgid "Last Updated"
@@ -97,9 +96,7 @@ msgid "Choose Addon for Lyrics Search & Download"
 msgstr "Choose Addon for Lyrics Search & Download"
 
 msgctxt "#31019"
-msgid ""
-"Enable or Disable Clock On top right of All Pages (not while watching "
-"Movies).[CR]Home Menu Will show Time and date."
+msgid "Enable or Disable Clock On top right of All Pages (not while watching Movies).[CR]Home Menu Will show Time and date."
 msgstr "Enable or Disable Clock On top right of All Pages (not while watching Movies).[CR]Home Menu Will show Time and date."
 
 msgctxt "#31020"
@@ -135,18 +132,12 @@ msgid "Last Added"
 msgstr "Last Added"
 
 msgctxt "#31028"
-msgid ""
-"A great way to install Add-Ons is using[CR] FUSION INSTALLER.[CR] In Order "
-"to do so: Press YES PLEASE at the bottom of this dialog and Follow onscreen "
-"instructions![CR][CR] Brought to You by:[CR] www.XBMCHUB.com"
-msgstr "A great way to install Add-Ons is using[CR] FUSION INSTALLER.[CR] In Order to do so: Press YES PLEASE at the bottom of this dialog and Follow onscreen instructions![CR][CR] Brought to You by:[CR] www.XBMCHUB.com"
+msgid "do not translate this"
+msgstr "do not translate this"
 
 msgctxt "#31029"
-msgid ""
-"If You want help with FUSION INSTALLER Just Click On this setting and go to "
-"Add-ons Manager. A PopUp will appear asking you if you want further help.. "
-"just say yes!"
-msgstr "If You want help with FUSION INSTALLER Just Click On this setting and go to Add-ons Manager. A PopUp will appear asking you if you want further help.. just say yes!"
+msgid "Adds FUSION as a source for installing 3rd Party Addons as Zip Files"
+msgstr "Adds FUSION as a source for installing 3rd Party Addons as Zip Files"
 
 msgctxt "#31030"
 msgid "Custom Shelf Icon"
@@ -245,8 +236,7 @@ msgid "Link For Music Icon"
 msgstr "Link For Music Icon"
 
 msgctxt "#31054"
-msgid ""
-"Enable Views Menu in order to change the way Items are presented to you."
+msgid "Enable Views Menu in order to change the way Items are presented to you."
 msgstr "Enable Views Menu in order to change the way Items are presented to you."
 
 msgctxt "#31055"
@@ -272,3 +262,105 @@ msgstr "LiveTv"
 msgctxt "#31060"
 msgid "Add"
 msgstr "Add"
+
+msgctxt "#31061"
+msgid "In Order for this to work You need to create a Smart Playlist for 3D Movies and name it 3D. One good way to do it is to add a separate source for 3D content, and then create the filter for the playlist using (Path) - (Contains) and the name of the source folder."
+msgstr "In Order for this to work You need to create a Smart Playlist for 3D Movies and name it 3D. One good way to do it is to add a separate source for 3D content, and then create the filter for the playlist using (Path) - (Contains) and the name of the source folder."
+
+msgctxt "#31062"
+msgid "Select Lyrics Add-on"
+msgstr "Select Lyrics Add-on"
+
+msgctxt "#31063"
+msgid "Install Fusion"
+msgstr "Install Fusion"
+
+msgctxt "#31064"
+msgid "Fullscreen"
+msgstr "Fullscreen"
+
+msgctxt "#31065"
+msgid "Delete Cache"
+msgstr "Delete Cache"
+
+msgctxt "#31066"
+msgid "Delete Thumbnails"
+msgstr "Delete Thumbnails"
+
+msgctxt "#31067"
+msgid "Remove Downloaded Packages"
+msgstr "Remove Downloaded Packages"
+
+msgctxt "#31068"
+msgid "Advanced Maintenance Tools, used to clean up after XBMC. Or to fix some annoying issues. To be used carefully.[CR][CR]Brought to You by Mikey1234 and Fastcolors.[CR][CR]www.XBMCHub.com"
+msgstr "Advanced Maintenance Tools, used to clean up after XBMC. Or to fix some annoying issues. To be used carefully.[CR][CR]Brought to You by Mikey1234 and Fastcolors.[CR][CR]www.XBMCHub.com"
+
+msgctxt "#31069"
+msgid "Maintenance Tools"
+msgstr "Maintenance Tools"
+
+msgctxt "#31070"
+msgid "[COLOR FFFF0000]USE THESE TOOLS ONLY IF YOU KNOW WHAT YOU'RE DOING AND AT YOUR OWN RISK!!![/COLOR] WE DON'T TAKE ANY RESPONSABILITY FOR THE POSSIBLE OUTCOME. [COLOR FFFF0000]MAY RESULT IN THE MALFUNCTIONING OF XBMC.[/COLOR][CR] [CR]PROUDLY BROUGHT TO YOU BY MIKEY1234 and FASTCOLORS.[CR][CR]For support with please visit www.xbmchub.com"
+msgstr "[COLOR FFFF0000]USE THESE TOOLS ONLY IF YOU KNOW WHAT YOU'RE DOING AND AT YOUR OWN RISK!!![/COLOR] WE DON'T TAKE ANY RESPONSABILITY FOR THE POSSIBLE OUTCOME. [COLOR FFFF0000]MAY RESULT IN THE MALFUNCTIONING OF XBMC.[/COLOR][CR] [CR]PROUDLY BROUGHT TO YOU BY MIKEY1234 and FASTCOLORS.[CR][CR]For support with please visit www.xbmchub.com"
+
+msgctxt "#31071"
+msgid "Delete MetaHandler Cache"
+msgstr "Delete MetaHandler Cache"
+
+msgctxt "#31072"
+msgid "Install XBMCHub Repository"
+msgstr "Install XBMCHub Repository"
+
+msgctxt "#31073"
+msgid "All Done[CR]Brought to You by XBMCHub.com"
+msgstr "All Done[CR]Brought to You by XBMCHub.com"
+
+msgctxt "#31074"
+msgid "Are You Sure?"
+msgstr "Are You Sure?"
+
+msgctxt "#31075"
+msgid "Remove cache.db for XBMC and most Addons"
+msgstr "Remove cache.db for XBMC and most Addons"
+
+msgctxt "#31076"
+msgid "Remove Corrupted Metadata"
+msgstr "Remove Corrupted Metadata"
+
+msgctxt "#31077"
+msgid "Do You want to install Fusion?"
+msgstr "Do You want to install Fusion?"
+
+msgctxt "#31078"
+msgid "restart XBMC for changes to take effect"
+msgstr "restart XBMC for changes to take effect"
+
+msgctxt "#31079"
+msgid "select Install from zip using Fusion as Source [CR]Would You like to open Addon Manager now?"
+msgstr "select Install from zip using Fusion as Source [CR]Would You like to open Addon Manager now?"
+
+msgctxt "#31080"
+msgid "Delete AdvancedSettings"
+msgstr "Delete AdvancedSettings"
+
+msgctxt "#31081"
+msgid "Remove Addons"
+msgstr "Remove Addons"
+
+msgctxt "#31082"
+msgid "Video Guides"
+msgstr "Video Guides"
+
+msgctxt "#31083"
+msgid "Maintenance"
+msgstr "Maintenance"
+
+msgctxt "#31084"
+msgid "Remove Video Database"
+msgstr "Remove Video Database"
+
+msgctxt "#31085"
+msgid "Remove Music Database"
+msgstr "Remove Music Database"
+
+

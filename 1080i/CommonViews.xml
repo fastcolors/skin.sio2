@@ -1317,7 +1317,7 @@
   </include>
   <include name="statusbiglist">
   <control type="image">
-            <posx>720</posx>
+            <posx>710</posx>
             <posy>15</posy>
             <width>81</width>
             <height>81</height>

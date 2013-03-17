@@ -38,23 +38,13 @@
           <altlabel>$LOCALIZE[535]: $LOCALIZE[16101]</altlabel>
         </control>
         <control type="radiobutton" id="20" description="Filter">
-          <visible>Container.CanFilterAdvanced</visible>
+          <enable>Container.CanFilterAdvanced</enable>
           <include>DialogButt</include>
           <onclick>Filter</onclick>
           <label>587</label>
         </control>
         <control type="button" id="3" description="Sort">
           <include>DialogButt</include>
-        </control>
-        <control type="togglebutton" id="699" description="Playing">
-          <visible>!Player.HasMedia</visible>
-          <include>DialogButt</include>
-          <label>$LOCALIZE[16003]</label>
-          <altlabel>$LOCALIZE[31055]</altlabel>
-          <usealttexture>Player.HasMedia</usealttexture>
-          <onclick>fullscreen</onclick>
-          <altclick>fullscreen</altclick>
-          <animation effect="fade" start="100" end="60" time="100" condition="!Player.HasMedia">Conditional</animation>
         </control>
 		<control type="button" id="8" description="search">
           <include>DialogButt</include>
@@ -65,7 +55,15 @@
           <label>$LOCALIZE[1024] $LOCALIZE[744]</label>
           <onclick>ActivateWindow(Videos,files)</onclick>
         </control>
-		
+		<control type="togglebutton" id="699" description="Playing">
+          <enable>Player.HasMedia</enable>
+          <include>DialogButt</include>
+          <label>$LOCALIZE[16003]</label>
+          <altlabel>$LOCALIZE[31055]</altlabel>
+          <usealttexture>Player.HasMedia</usealttexture>
+          <onclick>fullscreen</onclick>
+          <altclick>fullscreen</altclick>
+        </control>
       </control>
     </control>
     <control type="group">

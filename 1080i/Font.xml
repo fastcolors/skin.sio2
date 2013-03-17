@@ -6,6 +6,11 @@
       <filename>Default.ttf</filename>
       <size>21</size>
     </font>
+	<font>
+      <name>font13</name>
+      <filename>Default.ttf</filename>
+      <size>21</size>
+    </font>
     <font>
       <name>font14</name>
       <filename>Default.ttf</filename>
@@ -144,6 +149,11 @@
   </fontset>
   <fontset id="Strong" unicode="true">
     <font>
+      <name>font13</name>
+      <filename>Strong.ttf</filename>
+      <size>21</size>
+    </font>
+	<font>
       <name>size21</name>
       <filename>Strong.ttf</filename>
       <size>21</size>
@@ -246,6 +256,11 @@
     </font>
   </fontset>
   <fontset id="Light" unicode="true">
+  <font>
+      <name>font13</name>
+      <filename>Light.ttf</filename>
+      <size>21</size>
+    </font>
     <font>
       <name>size21</name>
       <filename>Light.ttf</filename>
@@ -349,6 +364,11 @@
     </font>
   </fontset>
   <fontset id="Arial" idloc="31026" unicode="true">
+  <font>
+      <name>font13</name>
+      <filename>arial.ttf</filename>
+      <size>21</size>
+    </font>
     <font>
       <name>size21</name>
       <filename>arial.ttf</filename>

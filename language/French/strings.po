@@ -4,14 +4,16 @@
 # Addon version: 1.2.0
 # Addon Provider: FastColors
 # Translators:
+# Translators:
+#  <fastcolors@gmail.com>, 2013.
 #   <luc@seufer.co>, 2013.
 msgid ""
 msgstr ""
-"Project-Id-Version: sio2\n"
+"Project-Id-Version: XBMC Skin SiO2\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2013-01-10 09:29+0000\n"
-"Last-Translator: lucanoid <luc@seufer.co>\n"
+"PO-Revision-Date: 2013-03-11 10:17+0000\n"
+"Last-Translator: fastcolors <fastcolors@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/sio2-1/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -45,7 +47,7 @@ msgstr "Heure de Fin"
 
 msgctxt "#31006"
 msgid "Last Added"
-msgstr "Ajouté Récemment"
+msgstr "Ajouté(s) Récemment"
 
 msgctxt "#31007"
 msgid "Last Started"
@@ -82,8 +84,8 @@ msgid "Current Playlist"
 msgstr "Liste de Lecture en cours"
 
 msgctxt "#31015"
-msgid "Subtitle Add-on"
-msgstr "Extension pour les sous-titres"
+msgid "Select Subtitle Add-on"
+msgstr "Sélectionnez sous-titres Addon"
 
 msgctxt "#31016"
 msgid "Last Updated"
@@ -133,21 +135,15 @@ msgstr "Police Arial"
 
 msgctxt "#31027"
 msgid "Last Added"
-msgstr "Ajouté Récemment"
+msgstr "Ajouté(s) Récemment"
 
 msgctxt "#31028"
-msgid ""
-"A great way to install Add-Ons is using[CR] FUSION INSTALLER.[CR] In Order "
-"to do so: Press YES PLEASE at the bottom of this dialog and Follow onscreen "
-"instructions![CR][CR] Brought to You by:[CR] www.XBMCHUB.com"
-msgstr "[CR]FUSION INSTALLER[CR] est un outil très utile pour installer de nouvelles extensions: Cliquer sur ACTIVER pour démarrer son installation.[CR][CR]Proposé par:[CR]www.XBMCHUB.com"
+msgid "do not translate this"
+msgstr "do not translate this"
 
 msgctxt "#31029"
-msgid ""
-"If You want help with FUSION INSTALLER Just Click On this setting and go to "
-"Add-ons Manager. A PopUp will appear asking you if you want further help.. "
-"just say yes!"
-msgstr "Si vous avez besoin d'aide avec FUSION INSTALLER, cliquez sur l'icône Paramètres et choisissez Gestionnaire des Extensions. Une fenêtre vous proposant de l'aide s'affichera."
+msgid "Adds FUSION as a source for installing 3rd Party Addons as Zip Files"
+msgstr "joute fusion comme source pour l'installation de Addons de 3ème partie sous forme de fichiers Zip"
 
 msgctxt "#31030"
 msgid "Custom Shelf Icon"
@@ -253,3 +249,137 @@ msgstr "Activer le menu Options de Présentation"
 msgctxt "#31055"
 msgid "Fullscreen player"
 msgstr "Lire en Plein Ecran"
+
+msgctxt "#31056"
+msgid "Change Icon"
+msgstr "changer d'icône"
+
+msgctxt "#31057"
+msgid "Replace Item"
+msgstr "Remplacer l'élément"
+
+msgctxt "#31058"
+msgid "-"
+msgstr "-"
+
+msgctxt "#31059"
+msgid "LiveTV"
+msgstr "LiveTv"
+
+msgctxt "#31060"
+msgid "Add"
+msgstr "Ajouter"
+
+msgctxt "#31061"
+msgid ""
+"In Order for this to work You need to create a Smart Playlist for 3D Movies "
+"and name it 3D. One good way to do it is to add a separate source for 3D "
+"content, and then create the filter for the playlist using (Path) - "
+"(Contains) and the name of the source folder."
+msgstr "de faire que cela fonctionne, vous devez créer une liste de lecture intelligente pour les films 3D et nommez-le 3D. Une bonne manière de le faire est d'ajouter une source distincte du contenu 3D, puis créez le filtre à l'aide de la liste de lecture (Path) - (Contient) et le nom du dossier source."
+
+msgctxt "#31062"
+msgid "Select Lyrics Add-on"
+msgstr "Sélectionnez  Lyrics Addon"
+
+msgctxt "#31063"
+msgid "Install Fusion"
+msgstr "Installer Fusion"
+
+msgctxt "#31064"
+msgid "Fullscreen"
+msgstr "Plein écran"
+
+msgctxt "#31065"
+msgid "Delete Cache"
+msgstr "supprimer le cache"
+
+msgctxt "#31066"
+msgid "Delete Thumbnails"
+msgstr "Supprimer les Vignettes"
+
+msgctxt "#31067"
+msgid "Remove Downloaded Packages"
+msgstr "Supprimer des paquets téléchargés"
+
+msgctxt "#31068"
+msgid ""
+"Advanced Maintenance Tools, used to clean up after XBMC. Or to fix some "
+"annoying issues. To be used carefully.[CR][CR]Brought to You by Mikey1234 "
+"and Fastcolors.[CR][CR]www.XBMCHub.com"
+msgstr "Outils de maintenance avancées, utilisées pour nettoyer après XBMC. Ou pour résoudre certains problèmes. utiliser avec précaution. [CR] [CR] présenté par Mikey1234 et Fastcolors. [CR] [CR] www.XBMCHub.com"
+
+msgctxt "#31069"
+msgid "Maintenance Tools"
+msgstr "Outils de Maintenance"
+
+msgctxt "#31070"
+msgid ""
+"[COLOR FFFF0000]USE THESE TOOLS ONLY IF YOU KNOW WHAT YOU'RE DOING AND AT "
+"YOUR OWN RISK!!![/COLOR] WE DON'T TAKE ANY RESPONSABILITY FOR THE POSSIBLE "
+"OUTCOME. [COLOR FFFF0000]MAY RESULT IN THE MALFUNCTIONING OF "
+"XBMC.[/COLOR][CR] [CR]PROUDLY BROUGHT TO YOU BY MIKEY1234 and "
+"FASTCOLORS.[CR][CR]For support with please visit www.xbmchub.com"
+msgstr "[COLOR FFFF0000] UTILISEZ CES OUTILS UNIQUEMENT SI VOUS SAVEZ CE QUE VOUS FAITES ET À VOS PROPRES RISQUES! [/ COLOR] NOUS NE PRENONS AUCUNE RESPONSABILITÉ QUANT AU RÉSULTAT POSSIBLE. [COLOR FFFF0000] PEUT PROVOQUER LE MAUVAIS FONCTIONNEMENT DE XBMC. [/ COLOR] [CR] [CR] FIÈREMENT PRÉSENTÉ PAR MIKEY1234 et FASTCOLORS. [CR] [CR] Pour le support s'il vous plaît visitez www.xbmchub.com"
+
+msgctxt "#31071"
+msgid "Delete MetaHandler Cache"
+msgstr "Supprimer Cache MetaHandler"
+
+msgctxt "#31072"
+msgid "Install XBMCHub Repository"
+msgstr "Installer XBMCHUB  référentiel"
+
+msgctxt "#31073"
+msgid "All Done[CR]Brought to You by XBMCHub.com"
+msgstr "Processus achevé [CR] présenté par XBMCHub.com"
+
+msgctxt "#31074"
+msgid "Are You Sure?"
+msgstr "êtes-Vous sûr?"
+
+msgctxt "#31075"
+msgid "Remove cache.db for XBMC and most Addons"
+msgstr "Retirer cache.db pour XBMC et la plupart des Addons"
+
+msgctxt "#31076"
+msgid "Remove Corrupted Metadata"
+msgstr "Retirer les métadonnées corrompu"
+
+msgctxt "#31077"
+msgid "Do You want to install Fusion?"
+msgstr "tes-vous le voulez installer Fusion?"
+
+msgctxt "#31078"
+msgid "restart XBMC for changes to take effect"
+msgstr "redémarrer XBMC pour que les modifications prennent effet"
+
+msgctxt "#31079"
+msgid ""
+"select Install from zip using Fusion as Source [CR]Would You like to open "
+"Addon Manager now?"
+msgstr "sélectionnez Installer depuis un fichier zip en utilisant Fusion comme source [CR] Désirez-vous ouvrir le gestionnaire d'extension maintenant?"
+
+msgctxt "#31080"
+msgid "Delete AdvancedSettings"
+msgstr "Supprimer AdvancedSettings"
+
+msgctxt "#31081"
+msgid "Remove Addons"
+msgstr "Supprimer Addons"
+
+msgctxt "#31082"
+msgid "Video Guides"
+msgstr "Guides vidéo"
+
+msgctxt "#31083"
+msgid "Maintenance"
+msgstr "Maintenance"
+
+msgctxt "#31084"
+msgid "Remove Video Database"
+msgstr "Retirer Base de données vidéos"
+
+msgctxt "#31085"
+msgid "Remove Music Database"
+msgstr "Retirez la base de données de musique"

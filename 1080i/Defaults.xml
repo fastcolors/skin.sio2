@@ -107,7 +107,7 @@
     <shadowcolor>Shadow</shadowcolor>
     <focusedcolor>White2</focusedcolor>
     <selectedcolor>White2</selectedcolor>
-    <altselectedcolor>Blue</altselectedcolor>
+    <altselectedcolor>Yellow</altselectedcolor>
     <disabledcolor>Disabled</disabledcolor>
     <texturefocus border="8">Images/Buttonselect.png</texturefocus>
     <alttexturefocus border="8">Images/Buttonselect.png</alttexturefocus>
