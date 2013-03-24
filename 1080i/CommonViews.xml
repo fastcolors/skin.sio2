@@ -35,8 +35,9 @@
       <visible>!IsEmpty(ListItem.Plot)</visible>
       <animation effect="fade" time="400">Visible</animation>
       <animation effect="fade" time="0">Hidden</animation>
-      <control type="image" description="Reflection">
-        <visible>!IsEmpty(ListItem.Thumb)</visible>
+      <control type="group">
+	  <visible>!Container.Content(episodes)</visible>
+	  <control type="image" description="Reflection">
         <posx>0</posx>
         <posy>470</posy>
         <width>756</width>
@@ -53,6 +54,27 @@
         <texture background="true">$VAR[Locandine]</texture>
         <aspectratio aligny="bottom">keep</aspectratio>
       </control>
+	  </control>
+	  <control type="group">
+	  <visible>Container.Content(episodes)</visible>
+	  <control type="image" description="Reflection">
+        <posx>0</posx>
+        <posy>470</posy>
+        <width>756</width>
+        <height>470</height>
+        <include>Icon_Fade</include>
+        <texture background="true" diffuse="images/Reflection.png" flipy="true">$INFO[ListItem.Icon]</texture>
+        <aspectratio aligny="top">keep</aspectratio>
+      </control>
+      <control type="image" description="Thumb">
+        <posx>0</posx>
+        <width>756</width>
+        <height>470</height>
+        <include>Icon_Fade</include>
+        <texture background="true">$INFO[ListItem.Icon]</texture>
+        <aspectratio aligny="bottom">keep</aspectratio>
+      </control>
+	  </control>
       <include>Unwatched</include>
       <control type="grouplist">
         <posy>520</posy>
@@ -192,7 +214,7 @@
         <width>621</width>
         <height>720</height>
         <include>Icon_Fade</include>
-        <texture diffuse="images/Diffuse.png" background="true">$VAR[Locandine]</texture>
+        <texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
         <aspectratio aligny="center">keep</aspectratio>
       </control>
     </control>
