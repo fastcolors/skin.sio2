@@ -242,14 +242,14 @@
           <label>31059</label>
           <property name="color">icons/green3.png</property>
           <onclick>ActivateWindow(myPVR)</onclick>
-		  <visible>!Pvr.IsRecording + System.GetBool(pvrmanager.enabled)</visible>
+		  <visible>!Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
         </item>
 		<item id="355">
           <thumb>icons/LiveTVrec.png</thumb>
           <label>$INFO[Pvr.NowRecordingTitle]</label>
           <property name="color">icons/green3.png</property>
           <onclick>ActivateWindow(myPVR)</onclick>
-		  <visible>Pvr.IsRecording + System.GetBool(pvrmanager.enabled)</visible>
+		  <visible>Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
         </item>
         <item id="345">
           <visible>!Skin.HasSetting(hidewtr)</visible>
@@ -500,7 +500,7 @@
       <animation condition="Container(9000).Row(2)" effect="slide" end="0,460" time="220">Conditional</animation>
       <animation condition="Container(9000).Row(3)" effect="slide" end="0,690" time="220">Conditional</animation>
       <animation condition="Container(9000).Row(4)" effect="slide" end="0,920" time="220">Conditional</animation>
-      <animation condition="!Control.HasFocus(9000)" effect="fade" start="100" end="0"  time="220">Conditional</animation>
+      <!--<animation condition="!Control.HasFocus(9000)" effect="fade" start="100" end="0"  time="220">Conditional</animation>-->
     </control>
     <include>weather_shelf</include>
     <control type="group" id="700" description="Shelf items">

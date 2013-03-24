@@ -25,7 +25,7 @@
         <width>621</width>
         <height>720</height>
         <include>Icon_Fade</include>
-        <texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+        <texture diffuse="images/Diffuse.png" background="true">$VAR[Locandine]</texture>
         <aspectratio aligny="center">keep</aspectratio>
       </control>
     </control>
@@ -42,7 +42,7 @@
         <width>756</width>
         <height>470</height>
         <include>Icon_Fade</include>
-        <texture background="true" diffuse="images/Reflection.png" flipy="true">$INFO[ListItem.Icon]</texture>
+        <texture background="true" diffuse="images/Reflection.png" flipy="true">$VAR[Locandine]</texture>
         <aspectratio aligny="top">keep</aspectratio>
       </control>
       <control type="image" description="Thumb">
@@ -50,7 +50,7 @@
         <width>756</width>
         <height>470</height>
         <include>Icon_Fade</include>
-        <texture background="true">$INFO[ListItem.Icon]</texture>
+        <texture background="true">$VAR[Locandine]</texture>
         <aspectratio aligny="bottom">keep</aspectratio>
       </control>
       <include>Unwatched</include>
@@ -192,7 +192,7 @@
         <width>621</width>
         <height>720</height>
         <include>Icon_Fade</include>
-        <texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+        <texture diffuse="images/Diffuse.png" background="true">$VAR[Locandine]</texture>
         <aspectratio aligny="center">keep</aspectratio>
       </control>
     </control>
@@ -213,7 +213,7 @@
         <texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
         <aspectratio aligny="bottom">keep</aspectratio>
       </control>
-      <control type="image" description="Fanart">
+      <control type="image">
         <visible>Container.Content(Albums)</visible>
         <posy>200</posy>
         <width>660</width>
@@ -576,8 +576,11 @@
     </control>
   </include>
   <include name="Unwatched">
+  <control type="group">
+  <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
+  <animation effect="fade" time="200" delay="300">Visible</animation>
+    <animation effect="fade" end="0">Hidden</animation>
     <control type="image">
-      <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
       <posy>480</posy>
       <posx>140</posx>
       <height>55</height>
@@ -586,7 +589,7 @@
       <texture>Badges/Badgecount.png</texture>
     </control>
     <control type="label" description="Label2">
-      <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
+      
       <posy>480</posy>
       <posx>140</posx>
       <height>44</height>
@@ -596,6 +599,7 @@
       <textcolor>White</textcolor>
       <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
     </control>
+	</control>
   </include>
   <include name="ArrowNF">
     <control type="image" description="arrow">
@@ -724,115 +728,6 @@
       </control>
     </focusedlayout>
   </include>
-  <include name="LargeListFilesLayout">
-    <itemlayout condition="Container.content(files)" width="802" height="111">
-      <control type="image">
-        <posx>0</posx>
-        <height>111</height>
-        <width>30</width>
-        <texture>$VAR[Overlay]</texture>
-        <aspectratio>keep</aspectratio>
-      </control>
-      <control type="label" description="Main Label">
-        <visible>!IsEmpty(ListItem.Label2)</visible>
-        <posx>36</posx>
-        <width>735</width>
-        <include>50Title</include>
-        <label>$INFO[ListItem.Label]</label>
-      </control>
-      <control type="label" description="Main Label">
-        <visible>IsEmpty(ListItem.Label2)</visible>
-        <posx>36</posx>
-        <posy>27</posy>
-        <width>735</width>
-        <include>50Title</include>
-        <label>$INFO[ListItem.Label]</label>
-      </control>
-      <control type="label" description="Label2">
-        <posx>36</posx>
-        <width>735</width>
-        <include>50details</include>
-        <label>$INFO[ListItem.Label2]</label>
-      </control>
-    </itemlayout>
-    <focusedlayout condition="Container.content(files)" width="802" height="111">
-      <control type="image">
-        <posx>0</posx>
-        <height>111</height>
-        <width>30</width>
-        <texture>$VAR[Overlay]</texture>
-        <aspectratio>keep</aspectratio>
-      </control>
-      <control type="label" description="Main Label">
-        <visible>!IsEmpty(ListItem.Label2)</visible>
-        <posx>36</posx>
-        <width>735</width>
-        <include>50TitleFO</include>
-        <label>$INFO[ListItem.Label]</label>
-      </control>
-      <control type="label" description="Main Label">
-        <visible>IsEmpty(ListItem.Label2)</visible>
-        <posx>36</posx>
-        <posy>27</posy>
-        <width>735</width>
-        <include>50TitleFO</include>
-        <label>$INFO[ListItem.Label]</label>
-      </control>
-      <control type="label" description="Label2">
-        <posx>36</posx>
-        <width>735</width>
-        <include>50detailsFO</include>
-        <label>$INFO[ListItem.Label2]</label>
-      </control>
-    </focusedlayout>
-  </include>
-  <include name="LargeListNoThumbFilesLayout">
-    <itemlayout condition="Container.content(files)" width="802" height="111">
-      <control type="label" description="Main Label">
-        <visible>!IsEmpty(ListItem.Label2)</visible>
-        <posx>30</posx>
-        <width>720</width>
-        <include>50Title</include>
-        <label>$INFO[ListItem.Label]</label>
-      </control>
-      <control type="label" description="Main Label">
-        <visible>IsEmpty(ListItem.Label2)</visible>
-        <posx>30</posx>
-        <posy>27</posy>
-        <width>720</width>
-        <include>50Title</include>
-        <label>$INFO[ListItem.Label]</label>
-      </control>
-      <control type="label" description="Label2">
-        <posx>30</posx>
-        <include>50details</include>
-        <label>$INFO[ListItem.Label2]</label>
-      </control>
-    </itemlayout>
-    <focusedlayout condition="Container.content(files)" width="802" height="111">
-      <control type="label" description="Main Label">
-        <visible>!IsEmpty(ListItem.Label2)</visible>
-        <posx>30</posx>
-        <width>720</width>
-        <include>50TitleFO</include>
-        <label>$INFO[ListItem.Label]</label>
-      </control>
-      <control type="label" description="Main Label">
-        <visible>IsEmpty(ListItem.Label2)</visible>
-        <posx>30</posx>
-        <posy>27</posy>
-        <width>720</width>
-        <include>50TitleFO</include>
-        <label>$INFO[ListItem.Label]</label>
-      </control>
-      <control type="label" description="Label2">
-        <posx>30</posx>
-        <width>720</width>
-        <include>50detailsFO</include>
-        <label>$INFO[ListItem.Label2]</label>
-      </control>
-    </focusedlayout>
-  </include>
   <include name="LargeListLayout">
     <itemlayout  width="802" height="111">
       <include>Watched_Marks</include>
@@ -867,7 +762,7 @@
           <visible>!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)</visible>
           <posx>45</posx>
           <include>50details</include>
-          <label>$INFO[ListItem.Year,,  ]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]</label>
+          <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]</label>
         </control>
         <control type="label" description="Label2">
           <visible>container.content(episodes)</visible>
@@ -926,7 +821,7 @@
           <posx>45</posx>
           <width>630</width>
           <include>50detailsFO</include>
-          <label>$INFO[ListItem.Year,,  ]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]</label>
+          <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]</label>
         </control>
         <control type="label" description="Label2">
           <visible>container.content(episodes)</visible>

@@ -1,7 +1,4 @@
 <includes>
-  <variable name="Trailer" description="Trailer check">
-    <value condition="Container.Content(Movies) + !IsEmpty(ListItem.Trailer)">$LOCALIZE[20410]</value>
-  </variable>
   <variable name="QuitLabel" description="Label for skin settings Quit function item">
     <value condition="StringCompare(Skin.String(shutdown),quit)">$LOCALIZE[13009]</value>
     <value condition="StringCompare(Skin.String(shutdown),powerdown)">$LOCALIZE[13005]</value>
@@ -9,23 +6,22 @@
     <value condition="StringCompare(Skin.String(shutdown),suspend)">$LOCALIZE[13011]</value>
     <value condition="StringCompare(Skin.String(shutdown),reboot)">$LOCALIZE[13013]</value>
   </variable>
-  <variable name="locksettings">
-    <value condition="!Skin.HasSetting(locksettings)">$LOCALIZE[16039]</value>
-    <value>$LOCALIZE[16041]</value>
-  </variable>
   <variable name="CustomImgStatus">
     <value condition="Skin.HasSetting(CustomImage)">$LOCALIZE[16041]</value>
     <value>$LOCALIZE[16039]</value>
   </variable>
   <variable name="ShelfLogo">
-    <value condition="System.Date(03-17,03-18)">images/stpatrick.png</value>
-    <value condition="System.Date(10-31,11-01)">images/halloween.png</value>
-    <value condition="System.Date(01-01,01-02)">images/newyear.png</value>
-    <value condition="System.Date(12-25,12-26)">images/xmas.png</value>
-	<!--<value condition="System.Date(01-14,01-15)">images/davegrohl.png</value>-->
+    <value condition="System.Date(01-01,01-02)">holidays/newyear.png</value>
+    <value condition="System.Date(03-17,03-18)">holidays/stpatrick.png</value>
+    <value condition="System.Date(04-15,04-16)">holidays/leonardo.png</value>
+    <value condition="System.Date(05-12,05-13)">holidays/mother.png</value>
+    <value condition="System.Date(06-16,06-17)">holidays/father.png</value>
+    <value condition="System.Date(10-31,11-01)">holidays/halloween.png</value>
+    <value condition="System.Date(12-25,12-26)">holidays/xmas.png</value>
+    <!--<value condition="System.Date(01-14,01-15)">images/davegrohl.png</value>-->
     <value condition="Skin.HasSetting(CustomImage)">$INFO[Skin.String(ShelfCustomImage)]</value>
     <!--<value>images/XBMCHomeLogo.png</value>-->
-	<value>$INFO[Window(Weather).Property(Current.ConditionIcon)]</value>
+    <value>$INFO[Window(Weather).Property(Current.ConditionIcon)]</value>
   </variable>
   <variable name="colormenu" description="Colormenu">
     <value condition="!Skin.HasSetting(colormenu)">$LOCALIZE[16041]</value>
@@ -58,7 +54,7 @@
     <value condition="Window.IsActive(MyPVR.xml) + [Control.HasFocus(13) | Control.HasFocus(34) | Control.HasFocus(14) | Control.HasFocus(35) | Control.HasFocus(17) | Control.HasFocus(36)]">$INFO[Control.GetLabel(29)]</value>
     <value condition="Window.IsActive(MyPVR.xml)">$INFO[Control.GetLabel(30)]</value>
     <value condition="Window.IsActive(1717)">$LOCALIZE[31069]</value>
-	<value>$INFO[Container.FolderName]</value>
+    <value>$INFO[Container.FolderName]</value>
   </variable>
   <variable name="TopLabel" description="Infos">
     <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Date,, • ]$INFO[ListItem.Size]</value>
@@ -108,11 +104,16 @@
     <value condition="Container(50).HasFocus(14)">$LOCALIZE[31003]</value>
     <value condition="Container(50).HasFocus(15)">$LOCALIZE[31029]</value>
     <value condition="Container(50).HasFocus(16)">$LOCALIZE[31031]</value>
-	<value condition="Container(50).HasFocus(17)">$LOCALIZE[31068]</value>
+    <value condition="Container(50).HasFocus(17)">$LOCALIZE[31068]</value>
   </variable>
   <variable name="nowplay">
-  <value condition="Pvr.IsPlayingTV">$INFO[]</value>
-  <value condition="IsEmpty(Player.Art(tvshow.poster))">$INFO[VideoPlayer.Cover]</value>
-  <value>$INFO[Player.Art(tvshow.poster)]</value>
+    <value condition="Pvr.IsPlayingTV">$INFO[]</value>
+    <value condition="IsEmpty(Player.Art(tvshow.poster))">$INFO[VideoPlayer.Cover]</value>
+    <value>$INFO[Player.Art(tvshow.poster)]</value>
+  </variable>
+  <variable name="Locandine">
+  <value condition="Container.Content(episodes)">$INFO[ListItem.Art(tvshow.poster)]</value>
+    <value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+    <value condition="IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Icon]</value>
   </variable>
 </includes>

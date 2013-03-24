@@ -219,11 +219,17 @@
               <label>3D $LOCALIZE[342]</label>
               <onclick>Skin.ToggleSetting(3dmovs)</onclick>
             </item>
-            <item id="1014">
-              <visible>System.GetBool(pvrmanager.enabled)</visible>
+			<item id="1014">
+              <visible>System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
               <thumb>icons/LiveTV.png</thumb>
               <label>31059</label>
-              <onclick>ActivateWindow(pvrsettings)</onclick>
+              <onclick>Skin.ToggleSetting(PVRhide)</onclick>
+            </item>
+            <item id="1014">
+              <visible>System.GetBool(pvrmanager.enabled) + Skin.HasSetting(PVRhide)</visible>
+              <thumb>help/Off.png</thumb>
+              <label>31059</label>
+              <onclick>Skin.ToggleSetting(PVRhide)</onclick>
             </item>
             <item id="1014">
               <visible>!System.GetBool(pvrmanager.enabled)</visible>

@@ -1,3 +1,15 @@
+2.0.5
+* Added Sortorder Ascending/descending option
+* New Sio2 View for Movies & Episodes
+* Reverse Control for LiveTv (enable disable deafult state changed)
+* Bug Fixes.
+
+
+2.0.4
+* LiveTv Icon now switchable even with PVR enabled
+* New Holidays
+* Enhanced code for Shelf Slider.
+
 2.0.3
 * Keyboard Fix to point to "a" as default instead of "DONE"
 * Bug Fix for 3D banner not showing on all covers on shelf

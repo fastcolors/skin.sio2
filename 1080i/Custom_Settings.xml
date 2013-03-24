@@ -85,11 +85,6 @@
           </control>
         </focusedlayout>
         <content>
-          <!--<item id="6" description="SkinSettingLock">
-            <label>LOCK</label>
-            <label2>$VAR[locksettings]</label2>
-            <onclick>Skin.ToggleSetting(locksettings)</onclick>
-          </item>-->
           <item id="3" description="Subtitles">
             <label>31015</label>
             <label2>$INFO[Skin.String(SubtitleScript_Path)]</label2>
