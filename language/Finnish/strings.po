@@ -5,14 +5,15 @@
 # Addon Provider: FastColors
 # Translators:
 # Translators:
+#  <atoiva@gmail.com>, 2013.
 #   <atoiva@gmail.com>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skin SiO2\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2013-03-11 08:48+0000\n"
-"Last-Translator: fastcolors <fastcolors@gmail.com>\n"
+"PO-Revision-Date: 2013-03-16 12:31+0000\n"
+"Last-Translator: toiva <atoiva@gmail.com>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/sio2-1/language/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,11 +31,11 @@ msgstr "Kohteet"
 
 msgctxt "#31002"
 msgid "Karaoke Song"
-msgstr "Karaoke-laulu"
+msgstr "Karaoke-kappale"
 
 msgctxt "#31003"
 msgid "Choose Shortcut function for Music Icon : Albums  Artists Genres Songs"
-msgstr "Valitse musiikki-painikkeen kohde: Albumit Esiintyjät Genret Kappaleet"
+msgstr "Valitse musiikki-painikkeen toiminto: Albumit Esiintyjät Genret Kappaleet"
 
 msgctxt "#31004"
 msgid "Visualization Presets"
@@ -56,7 +57,7 @@ msgctxt "#31008"
 msgid ""
 "Enable/Disable Always Colored Icons on Home Screen, when Disabled Icons will"
 " only become colored when Focused"
-msgstr "Värilliset ikonit"
+msgstr "Värilliset ikonit. Kun asetus ei ole päällä vain aktiivinen ikoni on värillinen."
 
 msgctxt "#31009"
 msgid "Recently Added Episodes"
@@ -84,7 +85,7 @@ msgstr "Nykyinen soittolista"
 
 msgctxt "#31015"
 msgid "Select Subtitle Add-on"
-msgstr ""
+msgstr "Valitse tekstitysten lisäosa"
 
 msgctxt "#31016"
 msgid "Last Updated"
@@ -96,7 +97,7 @@ msgstr "Valitse lisäosa tekstityksille"
 
 msgctxt "#31018"
 msgid "Choose Addon for Lyrics Search & Download"
-msgstr "Valitse lisäosa laulun sanoituksilla"
+msgstr "Valitse lisäosa laulun sanoituksille"
 
 msgctxt "#31019"
 msgid ""
@@ -106,7 +107,7 @@ msgstr "Näytä kellonaika kaikkialla (ei videota toistettaessa).\n[CR]Kotivalik
 
 msgctxt "#31020"
 msgid "Enable or Disable Vinyl Record Animation from Home Shelf Albums."
-msgstr "Vinyylianimaatio"
+msgstr "Näytä vinyylianimaatio kotinäytöllä."
 
 msgctxt "#31021"
 msgid "Memory Used:"
@@ -138,11 +139,11 @@ msgstr "Viimeksi lisätty"
 
 msgctxt "#31028"
 msgid "do not translate this"
-msgstr ""
+msgstr "älä käännä tätä"
 
 msgctxt "#31029"
 msgid "Adds FUSION as a source for installing 3rd Party Addons as Zip Files"
-msgstr ""
+msgstr "Lisää Fusionin jonka kautta voit asentaa 3. osapuolen lisäosia zip-tiedostoista"
 
 msgctxt "#31030"
 msgid "Custom Shelf Icon"
@@ -166,11 +167,11 @@ msgstr "Lisää suosikki etusivulle"
 
 msgctxt "#31035"
 msgid "Click to Pick Icon, Change Favourite or Remove Favourite"
-msgstr ""
+msgstr "Klikkaa valitaksesi ikonin, muuttaaksesi suosikkia tai poistaaksesi sen"
 
 msgctxt "#31036"
 msgid "Reset ALL skin settings to default"
-msgstr "Nollaa skinin asetukset"
+msgstr "Palauta skinin oletusasetukset"
 
 msgctxt "#31037"
 msgid "Add-ons manager"
@@ -202,15 +203,15 @@ msgstr "Passiiviset"
 
 msgctxt "#31044"
 msgid "View options dialog"
-msgstr ""
+msgstr "Näkymädialogi"
 
 msgctxt "#31045"
 msgid "Recent/Recommended Inverted First Item"
-msgstr ""
+msgstr "Viimeisimmät/suositellut invertoitu"
 
 msgctxt "#31046"
 msgid "Customize What Is Displayed On Home Shelf."
-msgstr ""
+msgstr "Kustomoi kotihyllyä"
 
 msgctxt "#31047"
 msgid "Show Clock"
@@ -226,48 +227,48 @@ msgstr "Virta-painikkeen toiminto"
 
 msgctxt "#31050"
 msgid "Choose from menu"
-msgstr ""
+msgstr "Valitse valikosta"
 
 msgctxt "#31051"
 msgid "Custom Shelf Shortcuts"
-msgstr ""
+msgstr "Omat hyllyn pikakuvakkeet"
 
 msgctxt "#31052"
 msgid "Home Page Customizer"
-msgstr ""
+msgstr "Kotisivun muokkaus"
 
 msgctxt "#31053"
 msgid "Link For Music Icon"
-msgstr ""
+msgstr "Musiikki-ikoni"
 
 msgctxt "#31054"
 msgid ""
 "Enable Views Menu in order to change the way Items are presented to you."
-msgstr ""
+msgstr "Salli näkymävalikko muuttaaksesi näkymiä"
 
 msgctxt "#31055"
 msgid "Fullscreen player"
-msgstr ""
+msgstr "Kokoruudun soitin"
 
 msgctxt "#31056"
 msgid "Change Icon"
-msgstr ""
+msgstr "Vaihda ikoni"
 
 msgctxt "#31057"
 msgid "Replace Item"
-msgstr ""
+msgstr "Korvaa kohde"
 
 msgctxt "#31058"
 msgid "-"
-msgstr ""
+msgstr "-"
 
 msgctxt "#31059"
 msgid "LiveTV"
-msgstr ""
+msgstr "TV-lähetys"
 
 msgctxt "#31060"
 msgid "Add"
-msgstr ""
+msgstr "Lisää"
 
 msgctxt "#31061"
 msgid ""
@@ -275,42 +276,42 @@ msgid ""
 "and name it 3D. One good way to do it is to add a separate source for 3D "
 "content, and then create the filter for the playlist using (Path) - "
 "(Contains) and the name of the source folder."
-msgstr ""
+msgstr "Ottaaksesi tämän käyttöön sinun täytyy luoda smart playlist 3D-elokuville ja antaa sille nimeksi 3D. Voit esimerkiksi siirtää kaikki 3D-elokuvasi yhteen hakemistoon ja luoda smart playlistin käyttämällä tätä polkua ehtona (Path) - (Contains)."
 
 msgctxt "#31062"
 msgid "Select Lyrics Add-on"
-msgstr ""
+msgstr "Valitse laulun sanoitusten lisäosa"
 
 msgctxt "#31063"
 msgid "Install Fusion"
-msgstr ""
+msgstr "Asenna Fusion"
 
 msgctxt "#31064"
 msgid "Fullscreen"
-msgstr ""
+msgstr "Koko ruutu"
 
 msgctxt "#31065"
 msgid "Delete Cache"
-msgstr ""
+msgstr "Tyhjennä välimuisti"
 
 msgctxt "#31066"
 msgid "Delete Thumbnails"
-msgstr ""
+msgstr "Poista videokuvakkeet"
 
 msgctxt "#31067"
 msgid "Remove Downloaded Packages"
-msgstr ""
+msgstr "Poista ladatut paketit"
 
 msgctxt "#31068"
 msgid ""
 "Advanced Maintenance Tools, used to clean up after XBMC. Or to fix some "
 "annoying issues. To be used carefully.[CR][CR]Brought to You by Mikey1234 "
 "and Fastcolors.[CR][CR]www.XBMCHub.com"
-msgstr ""
+msgstr "Edistykselliset huoltotyökalut, siivotaksesi tai korjataksesi XBMC:n ongelmia. Käytä varoen.[CR][CR] Tämän tarjoavat sinulle Mikey1234 ja Fastcolors.[CR][CR]www.XBMCHub.com"
 
 msgctxt "#31069"
 msgid "Maintenance Tools"
-msgstr ""
+msgstr "Huoltotyökalut"
 
 msgctxt "#31070"
 msgid ""
@@ -319,66 +320,66 @@ msgid ""
 "OUTCOME. [COLOR FFFF0000]MAY RESULT IN THE MALFUNCTIONING OF "
 "XBMC.[/COLOR][CR] [CR]PROUDLY BROUGHT TO YOU BY MIKEY1234 and "
 "FASTCOLORS.[CR][CR]For support with please visit www.xbmchub.com"
-msgstr ""
+msgstr "[COLOR FFFF0000]Käytä näitä työkaluja vain jos tiedät mitä olet tekemässä ja omalla vastuullasi!!!![/COLOR]Emme ota vastuuta lopputuloksesta.[COLOR FFFF0000]Saattaa aiheuttaa XBMC:n toimimattomuuden.[/COLOR][CR] [CR]Tämän tarjoavat sinulle MIKEY1234 ja FASTCOLORS.[CR][CR]Tukea saat osoitteesta www.xbmchub.com"
 
 msgctxt "#31071"
 msgid "Delete MetaHandler Cache"
-msgstr ""
+msgstr "Tyhjennä MetaHandler-välimuisti"
 
 msgctxt "#31072"
 msgid "Install XBMCHub Repository"
-msgstr ""
+msgstr "Asenna XBMCHub repository"
 
 msgctxt "#31073"
 msgid "All Done[CR]Brought to You by XBMCHub.com"
-msgstr ""
+msgstr "Valmis[CR]Tämän tarjoaa sinulle XBMCHub.com"
 
 msgctxt "#31074"
 msgid "Are You Sure?"
-msgstr ""
+msgstr "Oletko varma?"
 
 msgctxt "#31075"
 msgid "Remove cache.db for XBMC and most Addons"
-msgstr ""
+msgstr "Poista XBMC:n ja monien lisäosien käyttämä cache.db"
 
 msgctxt "#31076"
 msgid "Remove Corrupted Metadata"
-msgstr ""
+msgstr "Poista korruptoitunut metadata"
 
 msgctxt "#31077"
 msgid "Do You want to install Fusion?"
-msgstr ""
+msgstr "Haluatko asentaa Fusionin?"
 
 msgctxt "#31078"
 msgid "restart XBMC for changes to take effect"
-msgstr ""
+msgstr "Uudelleenkäynnistä XBMC ottaaksesi asetukset käyttöön"
 
 msgctxt "#31079"
 msgid ""
 "select Install from zip using Fusion as Source [CR]Would You like to open "
 "Addon Manager now?"
-msgstr ""
+msgstr "Valitse asenna zip-paketista ja valitse Fusion [CR]Haluatko avata lisäosien hallinnan?"
 
 msgctxt "#31080"
 msgid "Delete AdvancedSettings"
-msgstr ""
+msgstr "Poista lisäasetukset"
 
 msgctxt "#31081"
 msgid "Remove Addons"
-msgstr ""
+msgstr "Poista lisäosia"
 
 msgctxt "#31082"
 msgid "Video Guides"
-msgstr ""
+msgstr "Video-ohjeet"
 
 msgctxt "#31083"
 msgid "Maintenance"
-msgstr ""
+msgstr "Huolto"
 
 msgctxt "#31084"
 msgid "Remove Video Database"
-msgstr ""
+msgstr "Poista videotietokanta"
 
 msgctxt "#31085"
 msgid "Remove Music Database"
-msgstr ""
+msgstr "Poista musiikkitietokanta"

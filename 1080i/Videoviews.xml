@@ -3,22 +3,22 @@
   <include name="Videoviews">
     <!--SMALL LIST-->
     <control type="group" description="List">
-      <visible>Control.IsVisible(51)</visible>
+      <visible>Control.IsVisible(50)</visible>
       <include>left_Panel_plain</include>
       <control type="group" description="Slider and List">
         <include>SlimListItemCount</include>
         <posx>1020</posx>
         <posy>131</posy>
         <include>SlimListSlider</include>
-        <control type="fixedlist" id="51">
+        <control type="fixedlist" id="50">
           <width>802</width>
           <height>891</height>
           <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
           <onleft condition="Skin.HasSetting(ViewsMenuOff)">-</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
           <onright condition="!Skin.HasSetting(Scrollbars_Active)">-</onright>
-          <onup>51</onup>
-          <ondown>51</ondown>
+          <onup>50</onup>
+          <ondown>50</ondown>
           <pagecontrol>60</pagecontrol>
           <viewtype label="535">List</viewtype>
           <focusposition>5</focusposition>
@@ -89,18 +89,18 @@
         <posy>135</posy>
         <height>870</height>
         <onright>-</onright>
-        <onleft>51</onleft>
+        <onleft>50</onleft>
       </control>
     </control>
     <!--LISTA GRANDE -->
     <control type="group" description="BigList">
-      <visible>Control.IsVisible(50)</visible>
+      <visible>Control.IsVisible(51)</visible>
       <include>left_Panel</include>
       <control type="group">
         <include>LargeListItemCount</include>
         <posx>1020</posx>
         <posy>131</posy>
-        <control type="fixedlist" id="50">
+        <control type="fixedlist" id="51">
           <visible>!container.content(Sets)</visible>
           <visible>!IsEmpty(Container.FolderPath)</visible>
           <width>802</width>
@@ -109,8 +109,8 @@
           <onleft condition="Skin.HasSetting(ViewsMenuOff)">-</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
           <onright condition="!Skin.HasSetting(Scrollbars_Active)">-</onright>
-          <onup>50</onup>
-          <ondown>50</ondown>
+          <onup>51</onup>
+          <ondown>51</ondown>
           <pagecontrol>60</pagecontrol>
           <viewtype label="537">Big List 50</viewtype>
           <focusposition>3</focusposition>
@@ -126,7 +126,7 @@
         <posx>39r</posx>
         <posy>135</posy>
         <height>870</height>
-        <onleft>50</onleft>
+        <onleft>51</onleft>
         <onright>-</onright>
       </control>
     </control>
@@ -172,8 +172,8 @@
         <onleft condition="Skin.HasSetting(ViewsMenuOff)">-</onleft>
         <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
         <onright condition="!Skin.HasSetting(Scrollbars_Active)">-</onright>
-        <onup>50</onup>
-        <ondown>50</ondown>
+        <onup>52</onup>
+        <ondown>52</ondown>
         <pagecontrol>60</pagecontrol>
         <viewtype label="Sio2View">Sio2View</viewtype>
         <focusposition>2</focusposition>

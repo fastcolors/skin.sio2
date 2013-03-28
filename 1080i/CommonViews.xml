@@ -494,7 +494,6 @@
     <height>80</height>
     <width>630</width>
     <aligny>center</aligny>
-    <scroll>false</scroll>
     <font>size36</font>
     <textcolor>White2</textcolor>
   </include>
@@ -782,7 +781,8 @@
       <control type="group">
         <control type="label" description="Label2">
           <visible>!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)</visible>
-          <posx>45</posx>
+          <width>630</width>
+		  <posx>45</posx>
           <include>50details</include>
           <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]</label>
         </control>
@@ -819,14 +819,14 @@
           <visible>![ListItem.IsFolder | IntegerGreaterThan(ListItem.VideoResolution,700)]</visible>
           <posx>45</posx>
           <width>717</width>
-          <include>50Title</include>
+          <include>50TitleFO</include>
           <label>$INFO[ListItem.label]</label>
         </control>
         <control type="label" description="Main Label">
           <visible>IntegerGreaterThan(ListItem.VideoResolution,700) + !ListItem.IsFolder</visible>
           <posx>45</posx>
           <width>630</width>
-          <include>50Title</include>
+          <include>50TitleFO</include>
           <label>$INFO[ListItem.label]</label>
         </control>
         <control type="label" description="Main Label">
