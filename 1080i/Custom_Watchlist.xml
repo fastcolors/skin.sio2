@@ -21,10 +21,10 @@
     </control>
     <control type="list" id="222">
       <visible>true</visible>
-      <posx>0</posx>
+	  <posx>385</posx>
       <posy>1005</posy>
       <height>80</height>
-      <width>1920</width>
+      <width>1200</width>
       <onup>700</onup>
       <ondown>700</ondown>
       <onleft>-</onleft>
@@ -37,13 +37,14 @@
           <posx>192</posx>
           <width>364</width>
           <height>80</height>
-          <font>size27</font>
+          <font>size26</font>
           <align>center</align>
           <label>$INFO[Listitem.label]</label>
         </control>
       </itemlayout>
       <focusedlayout width="384">
         <control type="image">
+		<visible>Control.HasFocus(222)</visible>
           <height>80</height>
           <width>384</width>
           <texture>images/backfocus.png</texture>

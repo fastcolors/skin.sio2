@@ -685,8 +685,9 @@
       <height>500</height>
       <texture>Images/LineV.png</texture>
     </control>
+    <control type="group">
+	<visible>Player.HasVideo + [System.Platform.OSX | System.Platform.Windows]</visible>
     <control type="image">
-      <visible>Player.HasVideo</visible>
       <posx>1390</posx>
       <posy>902</posy>
       <width>320</width>
@@ -694,12 +695,12 @@
       <texture>images/black.png</texture>
     </control>
     <control type="videowindow">
-	<visible>Player.HasVideo</visible>
       <posx>1400</posx>
       <posy>912</posy>
       <width>300</width>
       <height>168</height>
     </control>
+	</control>
 	
   </controls>
 </window>

@@ -670,7 +670,7 @@
   <control type="group">
     <description>Timers group</description>
     <visible>Control.IsVisible(14)</visible>
-    <include>VisibleFadeEffect</include>
+    <include>VisibleFade</include>
     <control type="group">
       <posx>80</posx>
       <posy>80</posy>
@@ -886,7 +886,7 @@
   <control type="group">
     <description>TV Search group</description>
     <visible>Control.IsVisible(17)</visible>
-    <include>VisibleFadeEffect</include> <include>left_Panel_livetv</include>
+    <include>VisibleFade</include> <include>left_Panel_livetv</include>
     <control type="group">
       <posx>1020</posx>
       <posy>131</posy>
@@ -1208,7 +1208,7 @@
   <control type="group">
     <description>TV Guide Now/Next</description>
     <visible>Control.IsVisible(16)</visible>
-    <include>VisibleFadeEffect</include> <include>left_Panel_livetv</include>
+    <include>VisibleFade</include> <include>left_Panel_livetv</include>
     <control type="group">
       <posx>1020</posx>
       <posy>131</posy>
