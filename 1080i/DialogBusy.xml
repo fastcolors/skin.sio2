@@ -16,20 +16,14 @@
     <control type="group">
       <posx>832</posx>
       <posy>412</posy>
-      <control type="image" description="Busy animation">
+      <control type="multiimage" description="Busy animation">
         <width>256</width>
         <height>256</height>
-        <bordersize>24</bordersize>
-        <texture>busy/Busyout.png</texture>
+        <imagepath>busy/multi</imagepath>
+        <timeperimage>85</timeperimage>
+		<fadetime>0</fadetime>
+		<loop>yes</loop>
         <aspectratio>keep</aspectratio>
-      </control>
-      <control type="image" description="Busy animation">
-        <width>256</width>
-        <height>256</height>
-        <bordersize>24</bordersize>
-        <texture>busy/Busy.png</texture>
-        <aspectratio>keep</aspectratio>
-        <animation effect="rotate" start="360" end="auto" center="auto" time="1800" loop="true" condition="true">conditional</animation>
       </control>
     </control>
     <control type="progress" id="10">

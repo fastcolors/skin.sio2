@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: SiO2
 # Addon id: skin.SiO2
-# Addon version: 1.2.0
+# Addon version: 2.2.4
 # Addon Provider: FastColors
 # Translators:
 msgid ""
@@ -51,8 +51,7 @@ msgid "Last Started"
 msgstr "Last Started"
 
 msgctxt "#31008"
-msgid "Enable/Disable Always Colored Icons on Home Screen, when Disabled Icons will"
-" only become colored when Focused"
+msgid "Enable/Disable Always Colored Icons on Home Screen, when Disabled Icons will only become colored when Focused"
 msgstr "Enable/Disable Always Colored Icons on Home Screen, when Disabled Icons will only become colored when Focused"
 
 msgctxt "#31009"
@@ -252,8 +251,8 @@ msgid "Replace Item"
 msgstr "Replace Item"
 
 msgctxt "#31058"
-msgid "Lock Access to Skin Specific Settings from Home Page"
-msgstr "Lock Access to Skin Specific Settings from Home Page"
+msgid "-"
+msgstr "-"
 
 msgctxt "#31059"
 msgid "LiveTV"
@@ -292,16 +291,16 @@ msgid "Remove Downloaded Packages"
 msgstr "Remove Downloaded Packages"
 
 msgctxt "#31068"
-msgid "Advanced Maintenance Tools, used to clean up after XBMC. Or to fix some annoying issues. To be used carefully.[CR][CR]Brought to You by Mikey1234 and Fastcolors.[CR][CR]www.XBMCHub.com"
-msgstr "Advanced Maintenance Tools, used to clean up after XBMC. Or to fix some annoying issues. To be used carefully.[CR][CR]Brought to You by Mikey1234 and Fastcolors.[CR][CR]www.XBMCHub.com"
+msgid "Advanced Maintenance Tools, used to clean up after XBMC. Or to fix some annoying issues. To be used carefully.[CR][CR]Brought to You by Mikey1234 and Fastcolors."
+msgstr "Advanced Maintenance Tools, used to clean up after XBMC. Or to fix some annoying issues. To be used carefully.[CR][CR]Brought to You by Mikey1234 and Fastcolors."
 
 msgctxt "#31069"
 msgid "Maintenance Tools"
 msgstr "Maintenance Tools"
 
 msgctxt "#31070"
-msgid "[COLOR FFFF0000]USE THESE TOOLS ONLY IF YOU KNOW WHAT YOU'RE DOING AND AT YOUR OWN RISK!!![/COLOR] WE DON'T TAKE ANY RESPONSABILITY FOR THE POSSIBLE OUTCOME. [COLOR FFFF0000]MAY RESULT IN THE MALFUNCTIONING OF XBMC.[/COLOR][CR] [CR]PROUDLY BROUGHT TO YOU BY MIKEY1234 and FASTCOLORS.[CR][CR]For support with please visit www.xbmchub.com"
-msgstr "[COLOR FFFF0000]USE THESE TOOLS ONLY IF YOU KNOW WHAT YOU'RE DOING AND AT YOUR OWN RISK!!![/COLOR] WE DON'T TAKE ANY RESPONSABILITY FOR THE POSSIBLE OUTCOME. [COLOR FFFF0000]MAY RESULT IN THE MALFUNCTIONING OF XBMC.[/COLOR][CR] [CR]PROUDLY BROUGHT TO YOU BY MIKEY1234 and FASTCOLORS.[CR][CR]For support with please visit www.xbmchub.com"
+msgid "[COLOR FFFF0000]USE THESE TOOLS ONLY IF YOU KNOW WHAT YOU'RE DOING AND AT YOUR OWN RISK!!![/COLOR] WE DON'T TAKE ANY RESPONSABILITY FOR THE POSSIBLE OUTCOME. [COLOR FFFF0000]MAY RESULT IN THE MALFUNCTIONING OF XBMC.[/COLOR][CR][CR]BROUGHT TO YOU BY MIKEY1234 and FASTCOLORS."
+msgstr "[COLOR FFFF0000]USE THESE TOOLS ONLY IF YOU KNOW WHAT YOU'RE DOING AND AT YOUR OWN RISK!!![/COLOR] WE DON'T TAKE ANY RESPONSABILITY FOR THE POSSIBLE OUTCOME. [COLOR FFFF0000]MAY RESULT IN THE MALFUNCTIONING OF XBMC.[/COLOR][CR][CR]BROUGHT TO YOU BY MIKEY1234 and FASTCOLORS."
 
 msgctxt "#31071"
 msgid "Delete MetaHandler Cache"
@@ -312,8 +311,8 @@ msgid "Install XBMCHub Repository"
 msgstr "Install XBMCHub Repository"
 
 msgctxt "#31073"
-msgid "All Done[CR]Brought to You by XBMCHub.com"
-msgstr "All Done[CR]Brought to You by XBMCHub.com"
+msgid "All Done."
+msgstr "All Done."
 
 msgctxt "#31074"
 msgid "Are You Sure?"
@@ -326,10 +325,6 @@ msgstr "Remove cache.db for XBMC and most Addons"
 msgctxt "#31076"
 msgid "Remove Corrupted Metadata"
 msgstr "Remove Corrupted Metadata"
-
-msgctxt "#31077"
-msgid "Do You want to install Fusion?"
-msgstr "Do You want to install Fusion?"
 
 msgctxt "#31078"
 msgid "restart XBMC for changes to take effect"
@@ -362,5 +357,3 @@ msgstr "Remove Video Database"
 msgctxt "#31085"
 msgid "Remove Music Database"
 msgstr "Remove Music Database"
-
-

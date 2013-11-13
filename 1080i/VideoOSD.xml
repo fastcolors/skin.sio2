@@ -89,8 +89,6 @@
       <visible>![Window.IsActive(DialogSelect.xml) | Window.IsActive(SliderDialog) | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
       <animation effect="fade" end="100" time="400">Visible</animation>
       <animation effect="fade" end="0" time="100">Hidden</animation>
-      <posx>0</posx>
-      <posy>0</posy>
       <control type="group">
         <control type="group" description="Dialog Background">
           <visible>Window.IsVisible(videoosd.xml) + Window.IsActive(dialogseekbar.xml)</visible>
@@ -295,6 +293,7 @@
     </control>
     <control type="image">
       <visible>!ControlGroup(101).HasFocus()</visible>
+	  <visible>!Window.IsVisible(10123) + !Window.IsVisible(10124) + !Window.IsVisible(10125)</visible>
       <animation type="Visible">
         <effect type="fade" tween="circle" easing="in" start="0" end="100" time="800" />
       </animation>

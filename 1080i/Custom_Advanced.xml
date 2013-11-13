@@ -8,32 +8,6 @@
     <control type="group">
       <posx>1020</posx>
       <posy>131</posy>
-      <control type="group" description="Slider">
-        <include>Scrollanim</include>
-        <control type="image">
-          <animation effect="fade" time="200">VisibleChange</animation>
-          <posx>-20</posx>
-          <posy>361</posy>
-          <width>900</width>
-          <height>129</height>
-          <texture border="32">images/slider.png</texture>
-          <aspectratio>stretch</aspectratio>
-        </control>
-        <animation type="Conditional" condition="Control.HasFocus(9001) | ControlGroup(9000).HasFocus()">
-          <effect type="fade" start="100" end="40" time="0" reversible="true" />
-        </animation>
-        <animation condition="Container(50).Position(0)" effect="slide" start="0,0" end="0,-355" time="140" reversible="true">Conditional</animation>
-        <animation condition="Container(50).Position(1)" effect="slide" start="0,0" end="0,-274" time="140" reversible="true">Conditional</animation>
-        <animation condition="Container(50).Position(2)" effect="slide" start="0,0" end="0,-193" time="140" reversible="true">Conditional</animation>
-        <animation condition="Container(50).Position(3)" effect="slide" start="0,0" end="0,-112" time="140" reversible="true">Conditional</animation>
-        <animation condition="Container(50).Position(4)" effect="slide" start="0,0" end="0,-31" time="140" reversible="true">Conditional</animation>
-        <animation condition="Container(50).Position(5)" effect="slide" start="0,0" end="0,50" time="140" reversible="true">Conditional</animation>
-        <animation condition="Container(50).Position(6)" effect="slide" start="0,0" end="0,131" time="140" reversible="true">Conditional</animation>
-        <animation condition="Container(50).Position(7)" effect="slide" start="0,0" end="0,212" time="140" reversible="true">Conditional</animation>
-        <animation condition="Container(50).Position(8)" effect="slide" start="0,0" end="0,293" time="140" reversible="true">Conditional</animation>
-        <animation condition="Container(50).Position(9)" effect="slide" start="0,0" end="0,374" time="140" reversible="true">Conditional</animation>
-        <animation condition="Container(50).Position(10)" effect="slide" start="0,0" end="0,455" time="140" reversible="true">Conditional</animation>
-      </control>
       <control type="list" id="50">
         <posy>30</posy>
         <width>902</width>
@@ -100,29 +74,19 @@
             <onclick>RunScript(special://skin/resources/thumbnails.py)</onclick>
             <icon>DefaultIconWarning.png</icon>
           </item>
-		  <item id="3" description="packages">
+		  <item id="3" description="Packages">
             <label>31067</label>
             <onclick>RunScript(special://skin/resources/packages.py)</onclick>
             <icon>DefaultIconWarning.png</icon>
           </item>
-		  <item id="4" description="packages">
+		  <item id="4" description="MetaHandler Cache">
             <label>31071</label>
             <onclick>RunScript(special://skin/resources/metahandler.py)</onclick>
             <icon>DefaultIconWarning.png</icon>
           </item>
-		  <item id="5" description="packages">
-            <label>31072</label>
-            <onclick>RunScript(special://skin/resources/hubrepo.py)</onclick>
-            <icon>DefaultIconWarning.png</icon>
-          </item>
-		  <item id="6" description="packages">
+		  <item id="6" description="AdvancedSettings">
             <label>31080</label>
             <onclick>RunScript(special://skin/resources/advancedremove.py)</onclick>
-            <icon>DefaultIconWarning.png</icon>
-          </item>
-		  <item id="7" description="packages">
-            <label>31081</label>
-            <onclick>ActivateWindow(1718)</onclick>
             <icon>DefaultIconWarning.png</icon>
           </item>
 		  <item id="8" description="videodb">
@@ -141,6 +105,32 @@
             <icon>DefaultIconWarning.png</icon>
           </item>-->
         </content>
+      </control>
+	  <control type="group" description="Slider">
+        <include>Scrollanim</include>
+        <control type="image">
+          <animation effect="fade" time="200">VisibleChange</animation>
+          <posx>-20</posx>
+          <posy>361</posy>
+          <width>900</width>
+          <height>129</height>
+          <texture border="32">images/slider.png</texture>
+          <aspectratio>stretch</aspectratio>
+        </control>
+        <animation type="Conditional" condition="Control.HasFocus(9001) | ControlGroup(9000).HasFocus()">
+          <effect type="fade" start="100" end="40" time="0" reversible="true" />
+        </animation>
+        <animation condition="Container(50).Position(0)" effect="slide" start="0,0" end="0,-355" time="140" reversible="true">Conditional</animation>
+        <animation condition="Container(50).Position(1)" effect="slide" start="0,0" end="0,-274" time="140" reversible="true">Conditional</animation>
+        <animation condition="Container(50).Position(2)" effect="slide" start="0,0" end="0,-193" time="140" reversible="true">Conditional</animation>
+        <animation condition="Container(50).Position(3)" effect="slide" start="0,0" end="0,-112" time="140" reversible="true">Conditional</animation>
+        <animation condition="Container(50).Position(4)" effect="slide" start="0,0" end="0,-31" time="140" reversible="true">Conditional</animation>
+        <animation condition="Container(50).Position(5)" effect="slide" start="0,0" end="0,50" time="140" reversible="true">Conditional</animation>
+        <animation condition="Container(50).Position(6)" effect="slide" start="0,0" end="0,131" time="140" reversible="true">Conditional</animation>
+        <animation condition="Container(50).Position(7)" effect="slide" start="0,0" end="0,212" time="140" reversible="true">Conditional</animation>
+        <animation condition="Container(50).Position(8)" effect="slide" start="0,0" end="0,293" time="140" reversible="true">Conditional</animation>
+        <animation condition="Container(50).Position(9)" effect="slide" start="0,0" end="0,374" time="140" reversible="true">Conditional</animation>
+        <animation condition="Container(50).Position(10)" effect="slide" start="0,0" end="0,455" time="140" reversible="true">Conditional</animation>
       </control>
     </control>
     <control type="image">
