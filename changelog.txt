@@ -1,5 +1,9 @@
+2.3.5 GOTHAM
+* added tooglebutton gotham compatibility
+
 2.2.4
 * Added timer option
+* last FRODO
 
 2.2.3
 * Pinwheel Change

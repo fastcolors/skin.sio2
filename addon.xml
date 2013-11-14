@@ -1,4 +1,4 @@
-<addon id="skin.sio2" version="2.2.4" name="SiO2" provider-name="FastColors">
+<addon id="skin.sio2" version="2.3.5" name="SiO2" provider-name="FastColors">
   <requires>
     <import addon="xbmc.gui" version="4.0.0"/>
     <import addon="script.favourites" version="3.2.5"/>
