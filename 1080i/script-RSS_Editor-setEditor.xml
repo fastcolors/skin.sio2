@@ -1,4 +1,5 @@
-﻿<window id="129">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window id="129">
   <defaultcontrol always="true">10</defaultcontrol>
   <animation effect="fade" time="400">WindowOpen</animation>
   <animation effect="fade" time="400">WindowClose</animation>
