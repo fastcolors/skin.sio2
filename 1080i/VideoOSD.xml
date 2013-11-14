@@ -289,6 +289,12 @@
             <label>Seekbar/OSDreconFO.png</label>
             <onclick>PlayerControl(Record)</onclick>
           </item>
+		  <item id="255">
+				<visible>VideoPlayer.IsStereoscopic</visible>
+				<thumb>Seekbar/OSD3DNF.png</thumb>
+            	<label>Seekbar/OSD3DFO.png</label>
+				<onclick>SetFocus(500)</onclick>
+			</item>
         </content>
       </control>
     </control>
@@ -598,5 +604,79 @@
       <texture>images/Dialogpull.png</texture>
     </control>
 	</control>
+	<!-- 3D -->
+	<control type="group">
+	<visible>VideoPlayer.IsStereoscopic + ![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
+	<visible allowhiddenfocus="true">ControlGroup(500).HasFocus</visible>
+			<animation effect="fade" time="200">VisibleChange</animation>
+	<control type="image">
+	<posx>510</posx>
+			<posy>500</posy>
+        <width>900</width>
+        <height>450</height>
+        <aspectratio>stretch</aspectratio>
+        <texture border="150">images/Dialog.png</texture>
+      </control>
+	<control type="grouplist" id="500">
+			
+			<posx>710</posx>
+			<posy>300</posy>
+			<width>500</width>
+			<height>500</height>
+			<align>bottom</align>
+			<itemgap>0</itemgap>
+			<onleft>100</onleft>
+			<onright>100</onright>
+			<onup>-</onup>
+			<ondown>-</ondown>
+			<orientation>vertical</orientation>
+			
+			<include>VisibleFadeEffect</include>
+			
+			<control type="group">
+				<description>Header</description>
+				<width>500</width>
+				<height>50</height>
+				<control type="label" id="">
+					<posy>20</posy>
+					<width>500</width>
+					<height>15</height>
+					<font>Size33</font>
+					<label>36501</label>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+			</control>
+			<control type="radiobutton" id="503">
+				<height>40</height>
+				<width>500</width>
+				<font>Size33</font>
+				<label>Enable</label>
+				<onclick>ToggleStereoMode</onclick>
+				<selected>IntegerGreaterThan(System.StereoscopicMode,0)</selected>
+				<pulseonselect>false</pulseonselect>
+			</control>
+			<control type="button" id="502">
+				<height>40</height>
+				<width>500</width>
+				<align>left</align>
+				<font>Size33</font>
+				<textoffsetx>30</textoffsetx>
+				<pulseonselect>false</pulseonselect>
+				<label>3D Mode Selection</label>
+				<onclick>StereoMode</onclick>
+			</control>
+			<control type="radiobutton" id="501">
+				<height>40</height>
+				<width>500</width>
+				<font>Size33</font>
+				<label>Force 2D</label>
+				<onclick>StereoModeToMono</onclick>
+				<selected>StringCompare(System.StereoscopicMode,7)</selected>
+				<pulseonselect>false</pulseonselect>
+			</control>
+		</control>
+		</control>
+	<!-- 3D -->
   </controls>
 </window>
