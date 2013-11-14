@@ -140,7 +140,7 @@
         <posy></posy>
         <width>1920</width>
         <height>1080</height>
-        <info>ListItem.Art(fanart)</info>
+        <texture>$VAR[fanart]</texture>
         <colordiffuse>50DDFFDD</colordiffuse>
         <aspectratio align="left">scale</aspectratio>
       </control>
@@ -151,7 +151,7 @@
         <posy></posy>
         <width>1920</width>
         <height>1080</height>
-        <info>ListItem.Art(fanart)</info>
+        <texture>$VAR[fanart]</texture>
         <colordiffuse>50FFDDDD</colordiffuse>
         <aspectratio align="left">scale</aspectratio>
       </control>
@@ -170,8 +170,8 @@
         <height>810</height>
         <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
         <onleft condition="Skin.HasSetting(ViewsMenuOff)">-</onleft>
-        <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-        <onright condition="!Skin.HasSetting(Scrollbars_Active)">-</onright>
+        <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+        <onright condition="Skin.HasSetting(Scrollbars_Passive)">-</onright>
         <onup>52</onup>
         <ondown>52</ondown>
         <pagecontrol>60</pagecontrol>
@@ -181,11 +181,19 @@
         <scrolltime>250</scrolltime>
         <itemlayout height="160">
           <control type="image">
-            <posx>1320</posx>
+            <posx>1680</posx>
 			<posy>10</posy>
-            <width>460</width>
+            <width>108</width>
             <height>140</height>
             <texture>$VAR[Locandine]</texture>
+			<aspectratio>scale</aspectratio>
+          </control>
+		  <control type="image">
+            <posx>1316</posx>
+			<posy>120</posy>
+            <width>360</width>
+            <height>30</height>
+            <texture>$VAR[WatchStatus,Overlay/List/]</texture>
 			<aspectratio align="right">keep</aspectratio>
           </control>
 		  <control type="textbox">
@@ -193,33 +201,41 @@
 			<posy>20</posy>
             <width>340</width>
             <height>140</height>
-            <font>Size24</font>
+            <font>Size24B</font>
             <textcolor>Grey3</textcolor>
             <align>right</align>
-            <label>[B]$INFO[ListItem.label][/B]</label>
+            <label>$INFO[ListItem.label]</label>
           </control>
 			<control type="image">
             <posx>1280</posx>
             <width>440</width>
             <height>1</height>
             <texture>images/LineL.png</texture>
-          
           </control>
         </itemlayout>
         <focusedlayout height="160">
 		<control type="image">
+		<animation effect="fade" end="0" time="30">UnFocus</animation>
             <posx>1280</posx>
             <width>510</width>
             <height>160</height>
-            <texture>images/white.png</texture>
+            <texture>images/white2.png</texture>
 			<colordiffuse>335555FF</colordiffuse>
           </control>
           <control type="image">
-            <posx>1320</posx>
+            <posx>1680</posx>
 			<posy>10</posy>
-            <width>460</width>
+            <width>108</width>
             <height>140</height>
             <texture>$VAR[Locandine]</texture>
+			<aspectratio>scale</aspectratio>
+          </control>
+		  <control type="image">
+            <posx>1316</posx>
+			<posy>120</posy>
+            <width>360</width>
+            <height>30</height>
+            <texture>$VAR[WatchStatus,Overlay/List/]</texture>
 			<aspectratio align="right">keep</aspectratio>
           </control>
 		  <control type="textbox">
@@ -227,10 +243,10 @@
 			<posy>20</posy>
             <width>340</width>
             <height>140</height>
-            <font>Size24</font>
+            <font>Size24B</font>
             <textcolor>White</textcolor>
             <align>right</align>
-            <label>[B]$INFO[ListItem.label][/B]</label>
+            <label>$INFO[ListItem.label]</label>
           </control>
 			<control type="image">
             <posx>1280</posx>
@@ -348,7 +364,7 @@
         <font>Size20</font>
         <textcolor>Grey3</textcolor>
         <align>right</align>
-        <label>DF - Last Played: [COLOR Silver][B]$INFO[ListItem.LastPlayed][/B][/COLOR]</label>
+        <label>$LOCALIZE[568]: [COLOR Silver][B]$INFO[ListItem.LastPlayed][/B][/COLOR]</label>
 	  </control>
 	  <control type="label">
         <width>800</width>
@@ -356,7 +372,7 @@
         <font>Size20</font>
         <textcolor>Grey3</textcolor>
         <align>right</align>
-        <label>DF - Percent Played: [COLOR Silver][B]$INFO[ListItem.PercentPlayed] %[/B][/COLOR]</label>
+        <label>$LOCALIZE[31087]: [COLOR Silver][B]$INFO[ListItem.PercentPlayed] %[/B][/COLOR]</label>
 	  </control>
 	  <control type="label">
         <width>800</width>
@@ -376,7 +392,7 @@
 	  <orientation>horizontal</orientation>
 	  <align>right</align>
 	  <control type="image">
-	   <animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2150" tween="sine">Conditional</animation>
+	   <animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2650" tween="sine">Conditional</animation>
               <height>50</height>
               <width>130</width>
               <bordersize>3</bordersize>
@@ -386,7 +402,7 @@
             </control>
             <control type="image">
               <visible>!IsEmpty(ListItem.VideoCodec)</visible>
-			  <animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2030" tween="sine">Conditional</animation>
+			  <animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2530" tween="sine">Conditional</animation>
               <height>50</height>
               <width>130</width>
               <bordersize>3</bordersize>
@@ -396,7 +412,7 @@
             </control>
             <control type="image">
               <visible>!IsEmpty(ListItem.AudioChannels)</visible>
-			  <animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="1880" tween="sine">Conditional</animation>
+			  <animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2380" tween="sine">Conditional</animation>
               <height>50</height>
               <width>130</width>
               <bordersize>3</bordersize>
@@ -406,7 +422,7 @@
             </control>
             <control type="image">
               <visible>!IsEmpty(ListItem.AudioCodec)</visible>
-			  <animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="1700" tween="sine">Conditional</animation>
+			  <animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2200" tween="sine">Conditional</animation>
               <height>50</height>
               <width>130</width>
               <bordersize>3</bordersize>
@@ -416,7 +432,7 @@
             </control>
             <control type="image">
 			<visible>!IsEmpty(ListItem.FileExtension)</visible>
-			<animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="1500" tween="sine">Conditional</animation>
+			<animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2000" tween="sine">Conditional</animation>
               <height>50</height>
               <width>130</width>
               <bordersize>3</bordersize>
@@ -461,10 +477,10 @@
         <aspectratio>stretch</aspectratio>
       </control>
 	  <control type="image">
-		<posx>-8</posx>
-		<posy>368</posy>
-          <width>40</width>
-          <height>40</height>
+		<posx>-10</posx>
+		<posy>350</posy>
+          <width>60</width>
+          <height>60</height>
           <info>ListItem.Overlay</info>
         </control>
       </control>
@@ -482,82 +498,21 @@
         <width>1340</width>
         <texture>images/LineR.png</texture>
       </control>
-      
-	  <control type="group" description="EPISODES BLADE">
-	  <visible>Container.Content(episodes)</visible>
-	   <control type="image">
-        <visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Art(fanart)]</visible>
-		<animation effect="slide" end="-1340,0" time="500" delay="1000" reversible="false">Hidden</animation>
-        <width>1340</width>
-        <height>1080</height>
-        <texture>images/black.png</texture>
-      </control>
-	  
-      <control type="image">
-	  <visible>Container(52).OnNext | Container(52).OnPrevious</visible>
-        <fadetime>200</fadetime>
-		<animation effect="slide" end="-1340,0" time="500" delay="1000" reversible="false">Hidden</animation>
-        <width>1340</width>
-        <height>1080</height>
-        <texture background="true">$INFO[ListItem.Thumb]</texture>
-        <aspectratio align="left">keep</aspectratio>
-      </control>
-	  <control type="image">
-	  <visible>Container(52).OnNext | Container(52).OnPrevious</visible>
-        <fadetime>200</fadetime>
-		<animation effect="slide" end="-1340,0" time="500" delay="1000" reversible="false">Hidden</animation>
-        <posx>720</posx>
-		<posy>820</posy>
-		<width>600</width>
-        <height>80</height>
-        <texture background="true">$INFO[ListItem.Art(tvshow.banner)]</texture>
-		<colordiffuse>88FFFFFF</colordiffuse>
-		<aspectratio>scale</aspectratio>
-      </control>
-	  <control type="label">
-	  <visible>Container(52).OnNext | Container(52).OnPrevious</visible>
-	  <posx>1330</posx>
-	  <posy>980</posy>
-		<animation effect="slide" end="-1340,0" time="500" delay="1000" reversible="false">Hidden</animation>
-		<font>Size42B</font>
-        <width>1280</width>
-        <height>80</height>
-		<align>right</align>
-		<label>$LOCALIZE[20359]: $INFO[ListItem.label] </label>
-	  </control>
-	   <control type="image">
-	  <visible>IsEmpty(ListItem.Art(fanart)) + IsEmpty(ListItem.Plot)</visible>
-        <fadetime>200</fadetime>
-		<width>1340</width>
-        <height>1080</height>
-        <texture background="true">$INFO[ListItem.Icon]</texture>
-        <aspectratio align="left">scale</aspectratio>
-      </control>
-	  </control>
 	  <control type="group">
-	  <visible>!Container.Content(episodes)</visible>
 	   <control type="image">
         <visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Art(fanart)]</visible>
-		<animation effect="slide" end="-1340,0" time="500" delay="1000" reversible="false">Hidden</animation>
+		<animation effect="slide" end="-1340,0" time="500" delay="1500" reversible="false">Hidden</animation>
         <width>1340</width>
         <height>1080</height>
         <texture>images/black.png</texture>
       </control>
       <control type="image">
-	  <visible>Container(52).OnNext | Container(52).OnPrevious</visible>
+	  <visible>Container(52).OnNext | Container(52).OnPrevious | IsEmpty(ListItem.Plot)</visible>
         <fadetime>200</fadetime>
-		<animation effect="slide" end="-1340,0" time="500" delay="1000" reversible="false">Hidden</animation>
+		<animation effect="slide" end="-1340,0" time="500" delay="1500" reversible="false">Hidden</animation>
         <width>1340</width>
         <height>1080</height>
-        <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-        <aspectratio align="left">scale</aspectratio>
-      </control>
-	   <control type="image">
-	  <visible>IsEmpty(ListItem.Art(fanart)) + IsEmpty(ListItem.Plot)</visible>
-        <fadetime>200</fadetime>
-		<width>1340</width>
-        <height>1080</height>
-        <texture background="true">$INFO[ListItem.Icon]</texture>
+        <texture background="true">$VAR[fanart]</texture>
         <aspectratio align="left">scale</aspectratio>
       </control>
 	  </control>

@@ -119,11 +119,6 @@
             <label2>$LOCALIZE[305]</label2>
             <onclick>Skin.ToggleSetting(ViewsMenuOff)</onclick>
           </item>
-         <item id="1" description="HomeColor">
-            <label>31033</label>
-            <label2>$VAR[colormenu]</label2>
-            <onclick>Skin.ToggleSetting(colormenu)</onclick>
-          </item>
           <item id="8" description="Home Customize">
             <label>31052</label>
             <onclick>ActivateWindow(1117)</onclick>

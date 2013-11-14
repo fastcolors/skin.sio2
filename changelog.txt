@@ -1,3 +1,21 @@
+2.3.5 GOTHAM
+* added tooglebutton gotham compatibility
+
+2.2.4
+* Added timer option
+* last FRODO
+
+2.2.3
+* Pinwheel Change
+
+2.2.2
+* Pinwheel Change
+
+2.2.0
+* Back to 5 rows
+* No more black icons
+* few less options to make ATV look.
+
 2.1.0
 * Watchlist Cosmetic Fixes
 

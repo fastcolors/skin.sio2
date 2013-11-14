@@ -6,16 +6,16 @@
   <include>OpenClose</include>
   <controls>
     <control type="group" description="Furniture">
-      <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)] | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
+      <animation condition="!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-590" time="220">Conditonal</animation>
 	  <control type="image" description="Stage">
         <width>1920</width>
         <height>1080</height>
         <aspectratio>stretch</aspectratio>
-        <texture>images/HomeBG.png</texture>
+        <texture>HomeBG.png</texture>
       </control>
       <control type="image" description="Line">
         <posx>-90</posx>
-        <posy>503</posy>
+        <posy>560</posy>
         <width>2100</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -23,8 +23,8 @@
       </control>
     </control>
     <control type="button" id="9009">
-      <animation effect="slide" condition="[Control.IsVisible(311) + !Skin.HasSetting(Intruder) + !Container(311).HasPrevious] | [Control.IsVisible(311) + !Container(311).HasPrevious + Player.HasVideo]" end="320,0">Conditional</animation>
-      <animation effect="slide" condition="Control.IsVisible(312) + !Skin.HasSetting(IntruderTV) + !Container(312).HasPrevious" end="520,0">Conditional</animation>
+      <animation effect="slide" condition="[Control.IsVisible(311) + !Skin.HasSetting(Intruder) + !Container(311).HasPrevious] | [Control.IsVisible(311) + Skin.HasSetting(Intruder) + !Container(311).HasPrevious + Player.HasVideo]" end="320,0">Conditional</animation>
+      <animation effect="slide" condition="[Control.IsVisible(312) + !Skin.HasSetting(IntruderTV) + !Container(312).HasPrevious] | [Control.IsVisible(312) + Skin.HasSetting(IntruderTV) + !Container(312).HasPrevious + Player.HasVideo]" end="320,0">Conditional</animation>
       <visible allowhiddenfocus="true">Control.HasFocus(9009)</visible>
       <posx></posx>
       <posy>26</posy>
@@ -41,143 +41,123 @@
       <onright>-</onright>
     </control>
     <control type="panel" id="9000" description="ICONE">
-      <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)] | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
-      <width>1800</width>
+      <animation condition="!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-590" time="220">Conditonal</animation>
+      <posx>40</posx>
+	  <posy>620</posy>
+	  <width>1840</width>
       <height>1080</height>
-      <posy>518</posy>
-      <posx>60</posx>
       <onleft>9000</onleft>
       <onright>9000</onright>
       <onup>700</onup>
       <ondown>-</ondown>
       <orientation>vertical</orientation>
       <scrolltime tween="sine" easing="inout">280</scrolltime>
-      <itemlayout height="230" width="300">
-        <control type="image" description="THMBSBASE">
-          <visible>Skin.HasSetting(colormenu)</visible>
-          <posx>20</posx>
-          <posy>48</posy>
-          <width>260</width>
-          <height>168</height>
-          <colordiffuse>FF333333</colordiffuse>
-          <texture>icons/base.png</texture>
+      <itemlayout height="250" width="368">
+	  <control type="image" description="THMBSCOLOR">
+          <width>368</width>
+          <height>250</height>
+          <texture>Images/MenuIconShadow.png</texture>
         </control>
-        <control type="image" description="THMBSBASECOLOR">
-          <visible>!Skin.HasSetting(colormenu)</visible>
-          <posx>20</posx>
-          <posy>48</posy>
-          <width>260</width>
-          <height>168</height>
+        <control type="image" description="THMBSCOLOR">
+          <posx>30</posx>
+          <posy>30</posy>
+          <width>312</width>
+          <height>180</height>
           <texture>$INFO[ListItem.Property(color)]</texture>
         </control>
         <control type="image" description="THMBSICONS">
           <visible>!IsEmpty(Listitem.thumb)</visible>
-          <posx>20</posx>
-          <posy>48</posy>
-          <width>260</width>
-          <height>168</height>
+          <posx>30</posx>
+          <posy>30</posy>
+          <width>312</width>
+          <height>180</height>
           <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
         </control>
         <control type="image" description="THMBSICONS">
           <visible>IsEmpty(Listitem.thumb)</visible>
-          <posx>20</posx>
-          <posy>48</posy>
-          <width>260</width>
-          <height>168</height>
+          <posx>30</posx>
+          <posy>30</posy>
+          <width>312</width>
+          <height>180</height>
           <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
         </control>
         <control type="image" description="THMBS weather">
-          <posx>20</posx>
-          <posy>48</posy>
-          <width>260</width>
-          <height>168</height>
+          <posx>30</posx>
+          <posy>30</posy>
+          <width>312</width>
+          <height>180</height>
           <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
           <aspectratio>keep</aspectratio>
         </control>
         <control type="image" description="OVERLAY">
-          <posx>20</posx>
-          <posy>48</posy>
-          <width>260</width>
-          <height>168</height>
+          <posx>30</posx>
+          <posy>30</posy>
+          <width>312</width>
+          <height>180</height>
           <texture>icons/overlay.png</texture>
         </control>
         <control type="label" description="LABEL">
-          <posx>150</posx>
+          <posx>184</posx>
           <posy>220</posy>
-          <width>300</width>
+          <width>368</width>
           <height>24</height>
-          <font>size24</font>
+          <font>size30</font>
           <align>center</align>
           <textcolor>White</textcolor>
           <label>[B]$INFO[ListItem.label][/B]</label>
         </control>
       </itemlayout>
-      <focusedlayout height="230" width="300">
-        <control type="image" description="THMBSBASE">
-          <visible>!Skin.HasSetting(colormenu)</visible>
-          <posx>20</posx>
-          <posy>48</posy>
-          <width>260</width>
-          <height>168</height>
-          <texture>$INFO[ListItem.Property(color)]</texture>
+      <focusedlayout height="250" width="384">
+	   <control type="image" description="THMBSCOLOR">
+          <width>368</width>
+          <height>250</height>
+          <texture>Images/MenuIconShadow.png</texture>
         </control>
-        <control type="image" description="THMBSBASE">
-          <visible>Skin.HasSetting(colormenu)</visible>
-          <posx>20</posx>
-          <posy>48</posy>
-          <width>260</width>
-          <height>168</height>
-          <colordiffuse>FF333333</colordiffuse>
-          <texture>icons/base.png</texture>
-        </control>
-        <control type="image" description="THMBSBASE">
-          <visible>Skin.HasSetting(colormenu)</visible>
-          <animation condition="Skin.HasSetting(colormenu)" effect="fade" start="0" end="100" time="100" delay="200" reversible="true">Focus</animation>
-          <animation condition="Skin.HasSetting(colormenu)" effect="fade" start="100" end="0" time="180" reversible="true">unFocus</animation>
-          <posx>20</posx>
-          <posy>48</posy>
-          <width>260</width>
-          <height>168</height>
+        <control type="image" description="THMBSCOLOR">
+          <posx>30</posx>
+          <posy>30</posy>
+          <width>312</width>
+          <height>180</height>
           <texture>$INFO[ListItem.Property(color)]</texture>
         </control>
         <control type="image" description="THMBSICONS">
           <visible>!IsEmpty(Listitem.thumb)</visible>
-          <posx>20</posx>
-          <posy>48</posy>
-          <width>260</width>
-          <height>168</height>
+          <posx>30</posx>
+          <posy>30</posy>
+          <width>312</width>
+          <height>180</height>
           <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
         </control>
         <control type="image" description="THMBSICONS">
           <visible>IsEmpty(Listitem.thumb)</visible>
-          <posx>20</posx>
-          <posy>48</posy>
-          <width>260</width>
-          <height>168</height>
+          <posx>30</posx>
+          <posy>30</posy>
+          <width>312</width>
+          <height>180</height>
           <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
-		</control>
-        <control type="image" description="THMBS WEATHER">
-          <posx>20</posx>
-          <posy>48</posy>
-          <width>260</width>
-          <height>168</height>
+        </control>
+        <control type="image" description="THMBS weather">
+          <posx>30</posx>
+          <posy>30</posy>
+          <width>312</width>
+          <height>180</height>
           <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
           <aspectratio>keep</aspectratio>
         </control>
-        <control type="image" description="THMBSOVERLAY">
-          <posx>20</posx>
-          <posy>48</posy>
-          <width>260</width>
-          <height>168</height>
+        <control type="image" description="OVERLAY">
+          <posx>30</posx>
+          <posy>30</posy>
+          <width>312</width>
+          <height>180</height>
           <texture>icons/overlay.png</texture>
         </control>
         <control type="label" description="label">
           <animation effect="fade" start="80" end="100" time="300=" delay="300">Focus</animation>
-          <posx>150</posx>
+          <posx>184</posx>
           <posy>220</posy>
-          <width>300</width>
+          <width>368</width>
           <height>24</height>
-          <font>size24</font>
+          <font>size30</font>
           <align>center</align>
           <textcolor>White2</textcolor>
           <label>[B]$INFO[ListItem.label][/B]</label>
@@ -230,6 +210,13 @@
           <property name="color">icons/darkblue.png</property>
           <onclick>ActivateWindow(2)</onclick>
         </item>
+		<item id="345">
+          <visible>!Skin.HasSetting(hidewtr)</visible>
+          <property name="weatherthumb">$INFO[Weather.Conditions]</property>
+          <label>$INFO[Weather.Temperature]</label>
+          <property name="color">icons/teak.png</property>
+          <onclick>ActivateWindow(MyWeather)</onclick>
+        </item>
 		<item id="352">
           <visible>!Skin.HasSetting(hidefav)</visible>
           <thumb>icons/favs.png</thumb>
@@ -251,13 +238,7 @@
           <onclick>XBMC.ActivateWindowAndFocus(MyPVR, 31,0, 10,0)</onclick>
 		  <visible>Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
         </item>
-        <item id="345">
-          <visible>!Skin.HasSetting(hidewtr)</visible>
-          <property name="weatherthumb">$INFO[Weather.Conditions]</property>
-          <label>$INFO[Weather.Temperature]</label>
-          <property name="color">icons/teak.png</property>
-          <onclick>ActivateWindow(MyWeather)</onclick>
-        </item>
+        
 		 <item id="356">
           <visible>Skin.HasSetting(3dmovs)</visible>
           <thumb>icons/3d.png</thumb>
@@ -482,29 +463,28 @@
     </control>
     <!--SLIDER-->
     <control type="image">
-      <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)] | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
-      <posy>564</posy>
-      <posx>77</posx>
-      <width>268</width>
-      <height>173</height>
+      <animation condition="!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-590" time="220">Conditonal</animation>
+      <posy>648</posy>
+      <posx>69</posx>
+      <width>316</width>
+      <height>185</height>
       <texture>images/atvslider.png</texture>
       <aspectratio>stretch</aspectratio>
       <animation condition="Container(9000).Column(0)" effect="slide" end="0,0" time="220">Conditional</animation>
-      <animation condition="Container(9000).Column(1)" effect="slide" end="300,0" time="220">Conditional</animation>
-      <animation condition="Container(9000).Column(2)" effect="slide" end="600,0" time="220">Conditional</animation>
-      <animation condition="Container(9000).Column(3)" effect="slide" end="900,0" time="220">Conditional</animation>
-      <animation condition="Container(9000).Column(4)" effect="slide" end="1200,0" time="220">Conditional</animation>
-      <animation condition="Container(9000).Column(5)" effect="slide" end="1500,0" time="220">Conditional</animation>
+      <animation condition="Container(9000).Column(1)" effect="slide" end="368,0" time="220">Conditional</animation>
+      <animation condition="Container(9000).Column(2)" effect="slide" end="735,0" time="220">Conditional</animation>
+      <animation condition="Container(9000).Column(3)" effect="slide" end="1104,0" time="220">Conditional</animation>
+      <animation condition="Container(9000).Column(4)" effect="slide" end="1472,0" time="220">Conditional</animation>
       <animation condition="Container(9000).Row(0)" effect="slide" end="0,0" time="220">Conditional</animation>
-      <animation condition="Container(9000).Row(1)" effect="slide" end="0,230" time="220">Conditional</animation>
-      <animation condition="Container(9000).Row(2)" effect="slide" end="0,460" time="220">Conditional</animation>
-      <animation condition="Container(9000).Row(3)" effect="slide" end="0,690" time="220">Conditional</animation>
-      <animation condition="Container(9000).Row(4)" effect="slide" end="0,920" time="220">Conditional</animation>
+      <animation condition="Container(9000).Row(1)" effect="slide" end="0,250" time="220">Conditional</animation>
+      <animation condition="Container(9000).Row(2)" effect="slide" end="0,500" time="220">Conditional</animation>
+      <animation condition="Container(9000).Row(3)" effect="slide" end="0,750" time="220">Conditional</animation>
+      <animation condition="Container(9000).Row(4)" effect="slide" end="0,1000" time="220">Conditional</animation>
       <!--<animation condition="!Control.HasFocus(9000)" effect="fade" start="100" end="0"  time="220">Conditional</animation>-->
     </control>
-    <include>weather_shelf</include>
+	<include>weather_shelf</include>
     <control type="group" id="700" description="Shelf items">
-      <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]  | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
+      <animation condition="!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
       <include condition="!Skin.HasSetting(MoviesShelfWL)">Movies_RA</include>
       <include condition="Skin.HasSetting(MoviesShelfWL)">Movies_WL</include>
       <include condition="!Skin.HasSetting(TVShelf_Watchlist)">TV_RAIR</include>
@@ -515,7 +495,7 @@
       <include condition="Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)">VAddons_Shortcuts</include>
 	  <include>Favsshelf</include>
 	  <control type="image" description="Logo">
-        <visible>![[Container(9000).HasFocus(340) + Library.HasContent(Movies)] | [Container(9000).HasFocus(341) + Library.HasContent(TVShows)] | [Container(9000).HasFocus(342) + Library.HasContent(Music)] | [Container(9000).HasFocus(342) + Control.IsVisible(313)] | [Container(9000).HasFocus(343) + Skin.HasSetting(AddonsShelf_Custom)] | [Container(9000).HasFocus(344) + Control.IsVisible(314)] | [Container(9000).HasFocus(349) + Player.HasMedia] | Container(9000).HasFocus(345) | [Container(9000).HasFocus(352) + Container(9000).Row(0) + IntegerGreaterThan(Window.Property(favourite.count),0)]]</visible>
+        <visible>![[Container(9000).HasFocus(340) + Library.HasContent(Movies)] | [Container(9000).HasFocus(341) + Library.HasContent(TVShows)] | [Container(9000).HasFocus(342) + Library.HasContent(Music)] | [Container(9000).HasFocus(342) + Control.IsVisible(313)] | [Container(9000).HasFocus(343) + Skin.HasSetting(AddonsShelf_Custom)] | [Container(9000).HasFocus(344) + Control.IsVisible(314)] | [Container(9000).HasFocus(349) + Player.HasMedia] | Container(9000).HasFocus(345) | Control.IsVisible(317) | [Container(9000).HasFocus(352) + Container(9000).Row(0) + IntegerGreaterThan(Window.Property(favourite.count),0)]]</visible>
         <include>ShelfFade</include>
         <width>1920</width>
         <height>500</height>
@@ -654,53 +634,14 @@
       <textcolor>White</textcolor>
       <label>$INFO[System.Time] $INFO[System.Date]</label>
     </control>
-    <control type="label" description="Clock">
-      <visible>Skin.HasSetting(ShowClock) + System.Date(04-01,04-01)</visible>
-      <posx>35r</posx>
-      <posy>20</posy>
-      <width>500</width>
-      <height>45</height>
-      <align>right</align>
-      <font>size30</font>
-      <textcolor>White</textcolor>
-      <label>9:09 Wed, 2 Apr 1957</label>
-    </control>
     <control type="image">
       <include>ShelfFade</include>
-      <visible>Container(9000).HasFocus(341) + !Skin.HasSetting(IntruderTV)</visible>
-      <visible>Library.HasContent(TVShows) + !Container(312).HasPrevious</visible>
-      <posy>30</posy>
-      <posx>518</posx>
+      <visible>[Container(9000).HasFocus(341) + !Skin.HasSetting(IntruderTV) + Library.HasContent(TVShows) + !Container(312).HasPrevious] | [Container(9000).HasFocus(340) + [!Skin.HasSetting(Intruder) | Player.HasVideo] + Library.HasContent(Movies) + !Container(311).HasPrevious]</visible>
+      <posy>50</posy>
+      <posx>357</posx>
       <width>2</width>
       <height>500</height>
       <texture>Images/LineV.png</texture>
     </control>
-    <control type="image">
-      <include>ShelfFade</include>
-      <visible>Container(9000).HasFocus(340) + [!Skin.HasSetting(Intruder) | Player.HasVideo]</visible>
-      <visible>Library.HasContent(Movies) + !Container(311).HasPrevious</visible>
-      <posy>30</posy>
-      <posx>320</posx>
-      <width>2</width>
-      <height>500</height>
-      <texture>Images/LineV.png</texture>
-    </control>
-    <control type="group">
-	<visible>Player.HasVideo + [System.Platform.OSX | System.Platform.Windows]</visible>
-    <control type="image">
-      <posx>1390</posx>
-      <posy>902</posy>
-      <width>320</width>
-      <height>188</height>
-      <texture>images/black.png</texture>
-    </control>
-    <control type="videowindow">
-      <posx>1400</posx>
-      <posy>912</posy>
-      <width>300</width>
-      <height>168</height>
-    </control>
-	</control>
-	
   </controls>
 </window>

@@ -764,14 +764,7 @@
           <label>$INFO[ListItem.label]</label>
         </control>
         <control type="label" description="Main Label">
-          <visible>IntegerGreaterThan(ListItem.VideoResolution,700) + !ListItem.IsFolder</visible>
-          <posx>45</posx>
-          <width>630</width>
-          <include>50Title</include>
-          <label>$INFO[ListItem.label]</label>
-        </control>
-        <control type="label" description="Main Label">
-          <visible>ListItem.IsFolder | IsEmpty(ListItem.Title)</visible>
+          <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
           <posx>45</posx>
           <width>630</width>
           <include>50Title</include>
@@ -823,17 +816,10 @@
           <label>$INFO[ListItem.label]</label>
         </control>
         <control type="label" description="Main Label">
-          <visible>IntegerGreaterThan(ListItem.VideoResolution,700) + !ListItem.IsFolder</visible>
+          <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
           <posx>45</posx>
           <width>630</width>
           <include>50TitleFO</include>
-          <label>$INFO[ListItem.label]</label>
-        </control>
-        <control type="label" description="Main Label">
-          <visible>ListItem.IsFolder | IsEmpty(ListItem.Title)</visible>
-          <posx>45</posx>
-          <width>630</width>
-          <include>50Title</include>
           <label>$INFO[ListItem.label]</label>
         </control>
       </control>

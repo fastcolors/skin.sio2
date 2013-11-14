@@ -114,13 +114,13 @@
             <item id="1013" description="VAddons">
               <visible>!Skin.HasSetting(hidevaddons) + Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)</visible>
               <thumb>icons/vaddons.png</thumb>
-              <label>$LOCALIZE[24001]</label>
+              <label>$LOCALIZE[157] $LOCALIZE[24001]</label>
               <onclick>Skin.ToggleSetting(hidevaddons)</onclick>
             </item>
             <item id="1013" description="Movies">
               <visible>Skin.HasSetting(hidevaddons) + Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)</visible>
               <thumb>help/Off.png</thumb>
-              <label>$LOCALIZE[20342]</label>
+              <label>$LOCALIZE[157] $LOCALIZE[24001]</label>
               <onclick>Skin.ToggleSetting(hidevaddons)</onclick>
             </item>
             <item id="1001" description="Movies">

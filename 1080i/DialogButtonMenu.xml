@@ -10,17 +10,17 @@
       <texture>images/BlackT.png</texture>
     </control>
     <control type="image" description="Dialog">
-      <posx>400</posx>
+      <posx>350</posx>
       <posy>290</posy>
-      <width>1122</width>
+      <width>1220</width>
       <height>500</height>
       <aspectratio>stretch</aspectratio>
       <texture border="150">images/Dialog.png</texture>
     </control>
     <control type="grouplist" id="9000">
-      <posx>560</posx>
+      <posx>500</posx>
       <posy>450</posy>
-      <width>800</width>
+      <width>920</width>
       <height>126</height>
       <onleft>9000</onleft>
       <onright>9000</onright>
@@ -90,6 +90,19 @@
         <onclick>Activatewindow(29)</onclick>
         <label>13013</label>
       </control>
+	  <control type="button" id="6" description="TimerOff">
+        <animation type="Conditional" condition="!Control.IsEnabled(6)">
+          <effect type="fade" start="100" end="30" time="0" reversible="true" />
+        </animation>
+        <width>126</width>
+        <height>126</height>
+        <font>-</font>
+        <texturenofocus>BM_TimeroffNF.png</texturenofocus>
+        <texturefocus>BM_TimeroffFO.png</texturefocus>
+		<colordiffuse>FFFFFFFF</colordiffuse>
+        <onclick>AlarmClock(Timer,Quit())</onclick>
+        <label>13013</label>
+      </control>
     </control>
     <control type="group">
       <posx>660</posx>
@@ -128,6 +141,13 @@
         <align>center</align>
         <font>size39B</font>
         <label>31032</label>
+      </control>
+	  <control type="label">
+        <visible>ControlGroup(9000).HasFocus(6)</visible>
+        <width>600</width>
+        <align>center</align>
+        <font>size39B</font>
+        <label>Timer</label>
       </control>
     </control>
   </controls>
