@@ -10,15 +10,13 @@
       <include>DialogOpenCloseVisible</include>
       <control type="image" description="List back">
         <posx>459</posx>
-        <posy>150</posy>
+        <posy>168</posy>
         <width>1002</width>
-        <height>798</height>
+        <height>762</height>
         <aspectratio>stretch</aspectratio>
         <texture border="150">images/Dialog.png</texture>
       </control>
       <control type="grouplist" id="9000">
-	  <posy>330</posy>
-	  <height>auto</height>
         <include>DialogGLs</include>
         <control type="button" id="2" description="Views">
           <texturenofocus>-</texturenofocus>
@@ -46,13 +44,6 @@
           <onclick>fullscreen</onclick>
           <altclick>fullscreen</altclick>
           <animation effect="fade" start="100" end="60" time="100" condition="!Player.HasMedia">Conditional</animation>
-        </control>
-		<control type="togglebutton" id="20">
-          <description>Update library</description>
-          <include>DialogButt</include>
-          <label>653</label>
-          <altlabel>13353</altlabel>
-          <usealttexture>library.isscanningvideo</usealttexture>
         </control>
       </control>
     </control>

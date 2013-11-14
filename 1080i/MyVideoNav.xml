@@ -10,17 +10,17 @@
       <include>DialogOpenCloseVisible</include>
       <control type="image" description="List back">
         <posx>380</posx>
-        <posy>50</posy>
+        <posy>68</posy>
         <width>1002</width>
-        <height>1006</height>
+        <height>970</height>
         <aspectratio>stretch</aspectratio>
         <texture border="150">images/Dialog.png</texture>
       </control>
       <control type="grouplist" id="9000">
         <posx>600</posx>
-        <posy>220</posy>
+        <posy>254</posy>
         <width>576</width>
-        <height>678</height>
+        <height>650</height>
         <itemgap>0</itemgap>
         <onleft>50</onleft>
         <onright>50</onright>
@@ -36,7 +36,7 @@
           <label>$LOCALIZE[535]: $LOCALIZE[16100]</label>
           <altlabel>$LOCALIZE[535]: $LOCALIZE[16101]</altlabel>
         </control>
-        <control type="radiobutton" id="98" description="Filter">
+        <control type="radiobutton" id="20" description="Filter">
           <enable>Container.CanFilterAdvanced</enable>
           <include>DialogButt</include>
           <onclick>Filter</onclick>
@@ -68,13 +68,6 @@
           <usealttexture>Player.HasMedia</usealttexture>
           <onclick>fullscreen</onclick>
           <altclick>fullscreen</altclick>
-        </control>
-		<control type="togglebutton" id="20">
-         <description>Update library</description>
-          <include>DialogButt</include>
-          <label>653</label>
-          <altlabel>13353</altlabel>
-          <usealttexture>library.isscanningvideo</usealttexture>
         </control>
       </control>
     </control>
