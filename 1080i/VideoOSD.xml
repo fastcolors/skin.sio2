@@ -11,20 +11,20 @@
       <posx>630</posx>
       <posy>865</posy>
       <animation type="Focus">
-        <effect type="slide" tween="Cubic" easing="out" start="0,0" end="0,-850" time="800" />
+        <effect type="slide" tween="Cubic" easing="out" start="0,0" end="0,-800" time="800" />
       </animation>
-      <animation type="Unfocus">
-        <effect type="slide" tween="Cubic" easing="in" start="0,-850" end="0,0" time="500" />
+      <animation type="unFocus">
+        <effect type="slide" tween="Cubic" easing="in" start="0,-800" end="0,0" time="500" />
       </animation>
       <control type="image">
         <posx>430</posx>
         <posy>66</posy>
         <width>900</width>
-        <height>900</height>
+        <height>780</height>
         <aspectratio>stretch</aspectratio>
         <texture border="150">images/Dialog.png</texture>
       </control>
-      <control type="grouplist" description="OSD Options">
+      <control type="grouplist" id="101" description="OSD Options">
         <posx>600</posx>
         <posy>246</posy>
         <width>720</width>
@@ -34,40 +34,42 @@
         <onright>100</onright>
         <onup>101</onup>
         <ondown>101</ondown>
-        <itemgap>0</itemgap>
         <scrolltime>240</scrolltime>
         <control type="togglebutton" id="701" description="Subtitles">
           <include>DialogButt</include>
           <label>$LOCALIZE[33003] $LOCALIZE[287]</label>
-          <onclick>SetFocus(100)</onclick>
-          <onclick>Close</onclick>
-          <onclick>XBMC.RunScript($INFO[Skin.String(SubtitleScript_Path)])</onclick>
-          <onclick>SetFocus(100)</onclick>
-          <altclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</altclick>
-          <altclick>Close</altclick>
+		  <onclick>SetFocus(100,2)</onclick>
+           <onclick>Dialog.Close(VideoOSD)</onclick>
+ 	       <onclick>ActivateWindow(SubtitleSearch)</onclick>
+          <!--altclick>Close</altclick>
           <altclick>XBMC.RunScript($INFO[Skin.String(SubtitleScript_Path)])</altclick>
-          <usealttexture>IsEmpty(Skin.String(SubtitleScript_Path))</usealttexture>
+          <usealttexture>IsEmpty(Skin.String(SubtitleScript_Path))</usealttexture-->
         </control>
         <control type="button" id="703">
           <include>DialogButt</include>
           <label>13395</label>
+		  <onclick>SetFocus(100,2)</onclick>
           <onclick>ActivateWindow(OSDVideoSettings)</onclick>
         </control>
         <control type="button" id="704">
           <include>DialogButt</include>
           <label>$LOCALIZE[292] &amp; $LOCALIZE[287]</label>
+		  <onclick>SetFocus(100,2)</onclick>
           <onclick>ActivateWindow(OSDAudioSettings)</onclick>
         </control>
         <control type="button" id="705">
           <include>DialogButt</include>
           <label>298</label>
+		  <onclick>SetFocus(100,2)</onclick>
           <onclick>ActivateWindow(VideoBookmarks)</onclick>
         </control>
         <control type="togglebutton" id="706" description="Info">
           <include>DialogButt</include>
           <label>20176</label>
+		  <onclick>SetFocus(100,2)</onclick>
           <onclick>close</onclick>
-          <onclick>ActivateWindow(142)</onclick>
+		  <onclick>ActivateWindow(142)</onclick>
+		  <altclick>SetFocus(100,2)</altclick>
           <altclick>close</altclick>
           <altclick>Dialog.Close(142)</altclick>
           <usealttexture>Window.IsActive(142)</usealttexture>
@@ -80,6 +82,7 @@
         <control type="button" id="708">
           <include>DialogButt</include>
           <label>25003</label>
+		  <onclick>SetFocus(100,2)</onclick>
           <onclick>PlayerControl(ShowVideoMenu)</onclick>
           <enable>VideoPlayer.HasMenu</enable>
           <animation effect="fade" start="100" end="50" time="100" condition="!VideoPlayer.HasMenu">Conditional</animation>
