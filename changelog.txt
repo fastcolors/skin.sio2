@@ -1,3 +1,6 @@
+2.2.5
+*fix for OSD not unfocusing
+
 2.2.4
 * Added timer option
 
