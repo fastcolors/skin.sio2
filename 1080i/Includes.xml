@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <include file="Includes_Variables.xml" />
   <include file="Defaults.xml" />
@@ -361,17 +362,6 @@
     <width>34</width>
     <height>68</height>
     <aspectratio aligny="center" align="left">stretch</aspectratio>
-  </include>
-  <include name="SeekbarLabels">
-    <posx>0</posx>
-    <posy>0</posy>
-    <height>75</height>
-    <width>1920</width>
-    <align>center</align>
-    <font>size36B</font>
-    <textcolor>White</textcolor>
-    <shadowcolor>Black</shadowcolor>
-    <animation effect="fade" time="200">VisibleChange</animation>
   </include>
   <include name="BlackBackground">
     <control type="image" description="Default BG">

@@ -1,4 +1,5 @@
-﻿<window id="100">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window id="100">
   <defaultcontrol always="true">10</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <include>DialogOpenClose</include>
@@ -20,29 +21,12 @@
         <font>size28</font>
         <align>center</align>
       </control>
-      <control type="label" id="2" description="Line 1">
-        <posx>0</posx>
-        <posy>108</posy>
-        <label>-</label>
+      <control type="textbox" id="9" description="content">
+        <posy>75</posy>
         <width>960</width>
+		<height>145</height>
         <align>center</align>
-        <scroll>true</scroll>
-      </control>
-      <control type="label" id="3" description="Line 2">
-        <posx>0</posx>
-        <posy>156</posy>
         <label>-</label>
-        <width>960</width>
-        <align>center</align>
-        <scroll>true</scroll>
-      </control>
-      <control type="label" id="4" description="Line 3">
-        <posx>0</posx>
-        <posy>204</posy>
-        <label>-</label>
-        <width>960</width>
-        <align>center</align>
-        <scroll>true</scroll>
       </control>
       <control type="button" id="10" description="No">
         <posx>188</posx>

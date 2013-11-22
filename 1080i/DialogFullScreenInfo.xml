@@ -1,4 +1,5 @@
-﻿<window type="dialog" id="142">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="142">
   <defaultcontrol always="false">9000</defaultcontrol>
   <include>OpenClose</include>
   <zorder>2</zorder>
