@@ -99,25 +99,25 @@
           <item id="4" description="Scrollbars">
             <visible>Skin.HasSetting(Scrollbars_Active)</visible>
             <label>$LOCALIZE[31041]</label>
-            <label2>$LOCALIZE[31042]</label2>
+            <label2>$LOCALIZE[107]</label2>
             <onclick>Skin.ToggleSetting(Scrollbars_Active)</onclick>
           </item>
           <item id="4" description="Scrollbars">
             <visible>!Skin.HasSetting(Scrollbars_Active)</visible>
             <label>$LOCALIZE[31041]</label>
-            <label2>$LOCALIZE[31043]</label2>
+            <label2>$LOCALIZE[106]</label2>
             <onclick>Skin.ToggleSetting(Scrollbars_Active)</onclick>
           </item>
           <item id="5" description="Options dialog">
             <visible>Skin.HasSetting(ViewsMenuOff)</visible>
             <label>$LOCALIZE[31044]</label>
-            <label2>$LOCALIZE[1223]</label2>
+            <label2>$LOCALIZE[106]</label2>
             <onclick>Skin.ToggleSetting(ViewsMenuOff)</onclick>
           </item>
           <item id="5" description="Options dialog">
             <visible>!Skin.HasSetting(ViewsMenuOff)</visible>
             <label>$LOCALIZE[31044]</label>
-            <label2>$LOCALIZE[305]</label2>
+            <label2>$LOCALIZE[107]</label2>
             <onclick>Skin.ToggleSetting(ViewsMenuOff)</onclick>
           </item>
           <item id="8" description="Home Customize">
@@ -158,10 +158,6 @@
             <label2>$INFO[Skin.String(MusicLink)]</label2>
             <onclick>ActivateWindow(1121)</onclick>
           </item>
-          <item id="15" description="Fusion">
-            <label>31063</label>
-            <onclick>RunScript(special://skin/resources/fusion.py)</onclick>
-          </item>
           <item id="16" description="Custom Image for Shelf">
             <label>$LOCALIZE[31030]</label>
             <label2>$VAR[CustomImgStatus]</label2>
@@ -199,16 +195,6 @@
     <control type="group" description="Left panel">
       <posx>270</posx>
       <posy>160</posy>
-      <control type="image" description="Lock">
-        <visible>Container(50).HasFocus(6)</visible>
-        <include>Help_Panel</include>
-        <texture>help/Lock.jpg</texture>
-      </control>
-      <control type="image" description="LockOff">
-        <visible>Container(50).HasFocus(6) + !Skin.HasSetting(locksettings)</visible>
-        <include>Help_Panel</include>
-        <texture>help/OFF.png</texture>
-      </control>
       <control type="image" description="ColorMenu">
         <visible>Container(50).HasFocus(1)</visible>
         <include>Help_Panel</include>

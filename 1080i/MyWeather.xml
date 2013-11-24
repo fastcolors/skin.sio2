@@ -4,6 +4,7 @@
   <allowoverlay>no</allowoverlay>
   <include>OpenClose</include>
   <controls>
+  <include>BlackBackground</include>
     <control type="image">
       <width>1920</width>
       <height>1080</height>
@@ -163,6 +164,12 @@
           <texture>$INFO[ListItem.thumb]</texture>
           <aspectratio align="center">keep</aspectratio>
         </control>
+		<control type="image">
+		<posx>250</posx>
+		<width>5</width>
+		<height>500</height>
+		<texture>images/LineV.png</texture>
+		</control>
       </itemlayout>
       <focusedlayout width="250">
         <control type="label">
@@ -203,6 +210,12 @@
           <texture>$INFO[ListItem.thumb]</texture>
           <aspectratio align="center">keep</aspectratio>
         </control>
+		<control type="image">
+		<posx>250</posx>
+		<width>5</width>
+		<height>500</height>
+		<texture>images/LineV.png</texture>
+		</control>
       </focusedlayout>
       <content>
         <item id="0">

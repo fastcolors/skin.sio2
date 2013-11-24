@@ -240,13 +240,13 @@
 		  <visible>Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
         </item>
         
-		 <item id="356">
+		 <!--item id="356">
           <visible>Skin.HasSetting(3dmovs)</visible>
           <thumb>icons/3d.png</thumb>
 		  <label>3D $LOCALIZE[342]</label>
           <property name="color">icons/lightblue.png</property>
-          <onclick>ActivateWindow(10025,"special://profile/playlists/video/3D.xsp",return)</onclick>
-        </item>
+          <onclick></onclick>
+        </item-->
         <item id="601" description="Custom Fvourite">
           <visible>!IsEmpty(Skin.String(HomeFav.1.Label))</visible>
           <thumb>$INFO[Skin.String(HomeFav.1.Icon)]</thumb>
@@ -452,7 +452,7 @@
           <thumb>icons/quits.png</thumb>
           <label>351</label>
           <property name="color">icons/darkblue.png</property>
-          <onclick>ActivateWindow(shutdownmenu)</onclick>
+          <onclick>ActivateWindow(1191)</onclick>
         </item>
       </content>
     </control>
