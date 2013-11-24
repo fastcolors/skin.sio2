@@ -208,18 +208,6 @@
               <label>$LOCALIZE[1036]</label>
               <onclick>Skin.ToggleSetting(hidefav)</onclick>
             </item>
-            <item id="356">
-              <visible>!Skin.HasSetting(3dmovs)</visible>
-              <thumb>help/Off.png</thumb>
-              <label>3D $LOCALIZE[342]</label>
-              <onclick>Skin.ToggleSetting(3dmovs)</onclick>
-            </item>
-            <item id="356">
-              <visible>Skin.HasSetting(3dmovs)</visible>
-              <thumb>icons/3d.png</thumb>
-              <label>3D $LOCALIZE[342]</label>
-              <onclick>Skin.ToggleSetting(3dmovs)</onclick>
-            </item>
 			<item id="1014">
               <visible>System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
               <thumb>icons/LiveTV.png</thumb>

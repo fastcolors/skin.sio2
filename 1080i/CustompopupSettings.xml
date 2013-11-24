@@ -10,7 +10,7 @@
       <include>DialogOpenCloseVisible</include>
       <control type="image" description="List back">
         <width>1002</width>
-        <height>540</height>
+        <height>460</height>
         <aspectratio>stretch</aspectratio>
         <texture border="150">images/Dialog.png</texture>
       </control>
@@ -27,13 +27,7 @@
           <include>DialogButt</include>
           <label>20077</label>
           <onclick>Close</onclick>
-          <onclick>RunScript(special://skin/resources/passwordcheck.py,$INFO[System.ProfileName],56)</onclick>
-        </control>
-		<control type="button" id="701">
-          <include>DialogButt</include>
-          <label>31069</label>
-          <onclick>Close</onclick>
-          <onclick>RunScript(special://skin/resources/passwordcheck.py,$INFO[System.ProfileName],1717)</onclick>
+          <onclick>RunScript(script.password.sio2,$INFO[System.ProfileName],56)</onclick>
         </control>
       </control>
     </control>
