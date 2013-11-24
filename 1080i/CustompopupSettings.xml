@@ -27,7 +27,7 @@
           <include>DialogButt</include>
           <label>20077</label>
           <onclick>Close</onclick>
-          <onclick>RunScript(script.password.sio2,$INFO[System.ProfileName],56)</onclick>
+          <onclick>RunScript(script.password.check,$INFO[System.ProfileName],56)</onclick>
         </control>
       </control>
     </control>

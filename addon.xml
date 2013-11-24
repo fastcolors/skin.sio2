@@ -4,9 +4,9 @@
     <import addon="xbmc.gui" version="4.0.0"/>
     <import addon="script.favourites" version="3.2.5"/>
     <import addon="service.skin.widgets" version="0.0.13"/>
-	<import addon="script.cinema.experience" version="3.0.3"/>
-	<import addon="script.password.sio2" version="0.0.1"/>
-	<import addon="plugin.populate.set" version="0.0.1"/>
+    <import addon="script.cinema.experience" version="3.0.3"/>
+    <import addon="script.password.check" version="0.0.1"/>
+    <import addon="plugin.populate.set" version="0.0.1"/>
   </requires>
   <extension
     point="xbmc.gui.skin"
@@ -17,7 +17,7 @@
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <description>If you like Apple "everything at hand" policy for interfaces, You might want to give this Skin a try. I designed it trying to put as few clicks as possible between You and what You're trying to do (or watch ;) ).[CR] Thanks to testers and Inspirers: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
-	<summary lang="ar">A simple and handy Skin visually based on AppleTv</summary>
+    <summary lang="ar">A simple and handy Skin visually based on AppleTv</summary>
     <summary lang="be">A simple and handy Skin visually based on AppleTv</summary>
     <summary lang="bg">A simple and handy Skin visually based on AppleTv</summary>
     <summary lang="ca">Una Skin simple i pràctic basat en AppleTV</summary>
@@ -55,8 +55,7 @@
     <summary lang="uk">Проста і зручна шкіри заснована на AppleTV</summary>
     <summary lang="vi">Giao diện đơn giản và tiện dụng dựa trên AppleTV</summary>
     <summary lang="zh">一个简单和方便的皮肤上的AppleTV</summary>
-	
-	
+    
     <!--<description lang="ar"></description>
     <description lang="be"></description>
     <description lang="bg"></description>
@@ -87,7 +86,7 @@
     <!--<description lang="pt"></description>
     <description lang="ro"></description>-->
     <description lang="ru">Если Вам нравится подход Apple к интерфейсам - "все под рукой", то Вам, возможно, понравится этот скин. Я сделал его, пытаясь максимально уменьшить количество кликов мышкой для выполнения вашей задачи.[CR] Спасибо тестерам и донорам идей: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
-   <!-- <description lang="sk"></description>
+    <!-- <description lang="sk"></description>
     <description lang="sl"></description>
     <description lang="sv"></description>
     <description lang="th"></description>
@@ -96,8 +95,7 @@
     <description lang="vi"></description>
     <description lang="zh"></description>
 	-->
-	
-    <disclaimer>SiO2 - Infos and changelog at XBMCHUB.COM</disclaimer>
-   
+    
+    <disclaimer>SiO2 - Enjoy</disclaimer>
   </extension>
 </addon>
