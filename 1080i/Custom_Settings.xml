@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="56">
   <defaultcontrol always="true">50</defaultcontrol>
   <allowoverlay>no</allowoverlay>
@@ -122,15 +123,6 @@
           <item id="8" description="Home Customize">
             <label>31052</label>
             <onclick>ActivateWindow(1117)</onclick>
-          </item>
-		  <item id="18" description="VideoGuides">
-            <label>31082</label>
-			<onclick>RunScript(special://skin/resources/videoguide.py)</onclick>
-          </item>
-		  <item id="17" description="Manteinance">
-            <label>31069</label>
-			<icon>DefaultIconWarning.png</icon>
-			<onclick>ActivateWindow(1717)</onclick>
           </item>
           <item id="9" description="Quit button function">
             <label>$LOCALIZE[31049]</label>

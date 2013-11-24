@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <variable name="QuitLabel" description="Label for skin settings Quit function item">
     <value condition="StringCompare(Skin.String(shutdown),quit)">$LOCALIZE[13009]</value>

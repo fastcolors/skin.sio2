@@ -1,4 +1,5 @@
-﻿<window type="window" id="2000">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window type="window" id="2000">
   <defaultcontrol always="false">3</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <include>OpenClose</include>

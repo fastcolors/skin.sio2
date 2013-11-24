@@ -1,4 +1,5 @@
-﻿<window id="107">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window id="107">
   <type>dialog</type>
   <zorder>2</zorder>
   <allowoverlay>no</allowoverlay>

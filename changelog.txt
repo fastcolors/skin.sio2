@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 2.2.5
 *fix for OSD not unfocusing
+=======
+2.3.5 GOTHAM
+* added tooglebutton gotham compatibility
+>>>>>>> parent of 414134a... Merge pull request #2 from fastcolors/Frodo
 
 2.2.4
 * Added timer option
+* last FRODO
 
 2.2.3
 * Pinwheel Change

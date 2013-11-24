@@ -1,4 +1,5 @@
-<!--NAVI X-->
+
+<?xml version="1.0" encoding="UTF-8"?><!--NAVI X-->
 <window>
   <defaultcontrol>9000</defaultcontrol>
   <allowoverlays>false</allowoverlays>
