@@ -131,7 +131,7 @@
       </control>
     </control>
     <!--NEW VIEW-->
-    <control type="group" description="sio2view">
+        <control type="group" description="sio2view">
       <visible>Control.IsVisible(52)</visible>
       <control type="image">
         <visible>!substring(ListItem.MPAA,Rated R)</visible>
@@ -143,6 +143,22 @@
         <texture>$VAR[fanart]</texture>
         <colordiffuse>50DDFFDD</colordiffuse>
         <aspectratio align="left">scale</aspectratio>
+      </control>
+      <control type="image">
+        <visible>substring(ListItem.MPAA,Rated R)</visible>
+        <include>Fanart_Fade</include>
+        <posx></posx>
+        <posy></posy>
+        <width>1920</width>
+        <height>1080</height>
+        <texture>$VAR[fanart]</texture>
+        <colordiffuse>50FFDDDD</colordiffuse>
+        <aspectratio align="left">scale</aspectratio>
+      </control>
+      <control type="image">
+        <include>Dimensions_Fullscreen</include>
+        <texture>images/sio2right.png</texture>
+        <colordiffuse>AAFFFFFF</colordiffuse>
       </control>
       <control type="fixedlist" id="52">
         <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(Sets)</visible>
@@ -199,6 +215,7 @@
         </itemlayout>
         <focusedlayout height="160">
           <control type="button">
+            <onfocus condition="SubString(ListItem.path,videodb://1/7/)">RunScript(plugin.populate.set,$INFO[ListItem.label])</onfocus>
             <texturefocus>-</texturefocus>
             <texturenofocus>-</texturenofocus>
           </control>
@@ -452,6 +469,7 @@
             <aspectratio>scale</aspectratio>
           </control>
           <control type="image">
+            <visible>!Substring(Listitem.path,3DMovies)</visible>
             <posx>-6</posx>
             <posy>-7</posy>
             <height>414</height>
@@ -471,7 +489,208 @@
       <!--SET-->
       <control type="group" description="setinfos">
         <visible>SubString(ListItem.path,videodb://1/7/)</visible>
+        <control type="grouplist" description="icons+overlay row 1">
+          <posx>100</posx>
+          <posy>120</posy>
+          <width>1180</width>
+          <height>570</height>
+          <orientation>horizontal</orientation>
+          <itemgap>30</itemgap>
+          <control type="image">
+            <height>400</height>
+            <width>267</width>
+            <texture>$INFO[Window(Home).Property(SetItem.1.art(poster))]</texture>
+          </control>
+          <control type="image">
+            <height>400</height>
+            <width>267</width>
+            <texture>$INFO[Window(Home).Property(SetItem.2.art(poster))]</texture>
+          </control>
+          <control type="image">
+            <height>400</height>
+            <width>267</width>
+            <texture>$INFO[Window(Home).Property(SetItem.3.art(poster))]</texture>
+          </control>
+          <control type="image">
+            <height>400</height>
+            <width>267</width>
+            <texture>$INFO[Window(Home).Property(SetItem.4.art(poster))]</texture>
+          </control>
+        </control>
+        <control type="grouplist" description="dvdcover row 1">
+          <posx>94</posx>
+          <posy>113</posy>
+          <width>1180</width>
+          <height>570</height>
+          <orientation>horizontal</orientation>
+          <itemgap>16</itemgap>
+          <control type="image">
+            <visible>!IsEmpty(Window(Home).Property(SetItem.1.art(poster)))</visible>
+            <height>414</height>
+            <width>281</width>
+            <texture border="10" background="true">images/dvdbox.png</texture>
+            <aspectratio>stretch</aspectratio>
+          </control>
+          <control type="image">
+            <visible>!IsEmpty(Window(Home).Property(SetItem.2.art(poster)))</visible>
+            <height>414</height>
+            <width>281</width>
+            <texture border="10" background="true">images/dvdbox.png</texture>
+            <aspectratio>stretch</aspectratio>
+          </control>
+          <control type="image">
+            <visible>!IsEmpty(Window(Home).Property(SetItem.3.art(poster)))</visible>
+            <height>414</height>
+            <width>281</width>
+            <texture border="10" background="true">images/dvdbox.png</texture>
+            <aspectratio>stretch</aspectratio>
+          </control>
+          <control type="image">
+            <visible>!IsEmpty(Window(Home).Property(SetItem.4.art(poster)))</visible>
+            <height>414</height>
+            <width>281</width>
+            <texture border="10" background="true">images/dvdbox.png</texture>
+            <aspectratio>stretch</aspectratio>
+          </control>
+        </control>
+        <control type="grouplist" description="titles row 1">
+          <posx>100</posx>
+          <posy>530</posy>
+          <width>1180</width>
+          <height>570</height>
+          <orientation>horizontal</orientation>
+          <itemgap>30</itemgap>
+          <control type="textbox">
+            <width>267</width>
+            <height>60</height>
+            <align>center</align>
+            <font>Size20</font>
+            <label>$INFO[Window(Home).Property(SetItem.1.title)]</label>
+          </control>
+          <control type="textbox">
+            <width>267</width>
+            <height>60</height>
+            <align>center</align>
+            <font>Size20</font>
+            <label>$INFO[Window(Home).Property(SetItem.2.title)]</label>
+          </control>
+          <control type="textbox">
+            <width>267</width>
+            <height>60</height>
+            <align>center</align>
+            <font>Size20</font>
+            <label>$INFO[Window(Home).Property(SetItem.3.title)]</label>
+          </control>
+          <control type="textbox">
+            <width>267</width>
+            <height>60</height>
+            <align>center</align>
+            <font>Size20</font>
+            <label>$INFO[Window(Home).Property(SetItem.4.title)]</label>
+          </control>
+        </control>
+        <control type="grouplist" description="icons+overlay row 2">
+          <posx>100</posx>
+          <posy>600</posy>
+          <width>1180</width>
+          <height>980</height>
+          <orientation>horizontal</orientation>
+          <itemgap>30</itemgap>
+          <control type="image">
+            <height>400</height>
+            <width>267</width>
+            <texture>$INFO[Window(Home).Property(SetItem.5.art(poster))]</texture>
+          </control>
+          <control type="image">
+            <height>400</height>
+            <width>267</width>
+            <texture>$INFO[Window(Home).Property(SetItem.6.art(poster))]</texture>
+          </control>
+          <control type="image">
+            <height>400</height>
+            <width>267</width>
+            <texture>$INFO[Window(Home).Property(SetItem.7.art(poster))]</texture>
+          </control>
+          <control type="image">
+            <height>400</height>
+            <width>267</width>
+            <texture>$INFO[Window(Home).Property(SetItem.8.art(poster))]</texture>
+          </control>
+        </control>
+        <control type="grouplist" description="dvdcover row 1">
+          <posx>94</posx>
+          <posy>593</posy>
+          <width>1180</width>
+          <height>570</height>
+          <orientation>horizontal</orientation>
+          <itemgap>16</itemgap>
+          <control type="image">
+            <visible>!IsEmpty(Window(Home).Property(SetItem.5.art(poster)))</visible>
+            <height>414</height>
+            <width>281</width>
+            <texture border="10" background="true">images/dvdbox.png</texture>
+            <aspectratio>stretch</aspectratio>
+          </control>
+          <control type="image">
+            <visible>!IsEmpty(Window(Home).Property(SetItem.6.art(poster)))</visible>
+            <height>414</height>
+            <width>281</width>
+            <texture border="10" background="true">images/dvdbox.png</texture>
+            <aspectratio>stretch</aspectratio>
+          </control>
+          <control type="image">
+            <visible>!IsEmpty(Window(Home).Property(SetItem.7.art(poster)))</visible>
+            <height>414</height>
+            <width>281</width>
+            <texture border="10" background="true">images/dvdbox.png</texture>
+            <aspectratio>stretch</aspectratio>
+          </control>
+          <control type="image">
+            <visible>!IsEmpty(Window(Home).Property(SetItem.8.art(poster)))</visible>
+            <height>414</height>
+            <width>281</width>
+            <texture border="10" background="true">images/dvdbox.png</texture>
+            <aspectratio>stretch</aspectratio>
+          </control>
+        </control>
+        <control type="grouplist" description="titles row 2">
+          <posx>100</posx>
+          <posy>1010</posy>
+          <width>1180</width>
+          <height>570</height>
+          <orientation>horizontal</orientation>
+          <itemgap>30</itemgap>
+          <control type="textbox">
+            <width>267</width>
+            <height>60</height>
+            <align>center</align>
+            <font>Size20</font>
+            <label>$INFO[Window(Home).Property(SetItem.5.title)]</label>
+          </control>
+          <control type="textbox">
+            <width>267</width>
+            <height>60</height>
+            <align>center</align>
+            <font>Size20</font>
+            <label>$INFO[Window(Home).Property(SetItem.6.title)]</label>
+          </control>
+          <control type="textbox">
+            <width>267</width>
+            <height>60</height>
+            <align>center</align>
+            <font>Size20</font>
+            <label>$INFO[Window(Home).Property(SetItem.7.title)]</label>
+          </control>
+          <control type="textbox">
+            <width>267</width>
+            <height>60</height>
+            <align>center</align>
+            <font>Size20</font>
+            <label>$INFO[Window(Home).Property(SetItem.8.title)]</label>
+          </control>
+        </control>
 		<control type="panel" id="990">
+		<visible>!Control.IsVisible(777)</visible>
           <posx>85</posx>
           <posy>110</posy>
           <width>1200</width>
@@ -479,38 +698,8 @@
 		  <onup>-</onup>
 		  <ondown>-</ondown>
           <onright>52</onright>
-          <itemlayout width="297" height="480">
-		   <control type="image">
-		   <posx>15</posx>
-		   <posy>10</posy>
-            <height>400</height>
-            <width>267</width>
-            <texture>$INFO[ListItem.Thumb]</texture>
-          </control>
-		   <control type="textbox">
-		   <posy>415</posy>
-            <width>297</width>
-            <height>60</height>
-            <align>center</align>
-            <font>Size20</font>
-            <label>$INFO[ListItem.Title]</label>
-          </control>
-		  </itemlayout>
+          <itemlayout width="297" height="480"></itemlayout>
           <focusedlayout width="297" height="480">
-		  <control type="image">
-		   <posx>15</posx>
-		   <posy>10</posy>
-            <height>400</height>
-            <width>267</width>
-            <texture>$INFO[ListItem.Thumb]</texture>
-			</control>
-			<control type="image">
-		   <posx>15</posx>
-		   <posy>10</posy>
-            <height>400</height>
-            <width>267</width>
-            <texture>images/dvdbox.png</texture>
-          </control>
 		  <control type="group">
 		  <animation effect="fade" start="0" end="100" time="250">Focus</animation>
 		  <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
@@ -525,20 +714,84 @@
               <height>400</height>
 			  <font>Size22</font>
 			  <align>center</align>
-			<label>[B][CR]$INFO[ListItem.Duration] $LOCALIZE[12391][CR][CR]$LOCALIZE[345]:[CR]$INFO[ListItem.Year][CR][CR]$LOCALIZE[563] $INFO[ListItem.Rating][CR][CR]$LOCALIZE[20339]:[CR]$INFO[ListItem.Director][CR][CR]$LOCALIZE[20074]:[CR]$INFO[ListItem.MPAA][/B]</label>
+			<label>[B][CR]$INFO[ListItem.label] $LOCALIZE[12391][CR][CR]$LOCALIZE[345]:[CR]$INFO[ListItem.label2][CR][CR]$LOCALIZE[563] $INFO[ListItem.Property(rating)][CR][CR]$LOCALIZE[20339]:[CR]$INFO[ListItem.Property(director)][CR][CR]$LOCALIZE[20074]:[CR]$INFO[ListItem.Property(MPAA)][/B]</label>
 			</control>
-			
 			</control>
-			 <control type="textbox">
-		   <posy>415</posy>
-            <width>297</width>
-            <height>60</height>
-            <align>center</align>
-            <font>Size20</font>
-            <label>$INFO[ListItem.Title]</label>
-          </control>
           </focusedlayout>
-          <content>plugin://plugin.populate.set/,$INFO[Container(52).ListItem.Label]</content>
+          <content>
+            <item id="1">
+              <visible>!IsEmpty(Window(Home).Property(SetItem.1.art(poster)))</visible>
+			  <label>$INFO[Window(Home).Property(SetItem.1.Duration)]</label>
+			  <label2>$INFO[Window(Home).Property(SetItem.1.Year)]</label2>
+			  <property name="rating">$INFO[Window(Home).Property(SetItem.1.Rating)]</property>
+			  <property name="MPAA">$INFO[Window(Home).Property(SetItem.1.MPAA)]</property>
+			  <property name="director">$INFO[Window(Home).Property(SetItem.1.director)]</property>
+			  <onclick>PlayMedia($ESCINFO[Window(Home).Property(SetItem.1.Path)])</onclick>
+            </item>
+            <item id="2">
+              <visible>!IsEmpty(Window(Home).Property(SetItem.2.art(poster)))</visible>
+			  <label>$INFO[Window(Home).Property(SetItem.2.Duration)]</label>
+			  <label2>$INFO[Window(Home).Property(SetItem.2.Year)]</label2>
+			  <property name="rating">$INFO[Window(Home).Property(SetItem.2.Rating)]</property>
+			  <property name="MPAA">$INFO[Window(Home).Property(SetItem.2.MPAA)]</property>
+			  <property name="director">$INFO[Window(Home).Property(SetItem.2.director)]</property>
+              <onclick>PlayMedia($ESCINFO[Window(Home).Property(SetItem.2.Path)])</onclick>
+            </item>
+            <item id="3">
+              <visible>!IsEmpty(Window(Home).Property(SetItem.3.art(poster)))</visible>
+			  <label>$INFO[Window(Home).Property(SetItem.3.Duration)]</label>
+			  <label2>$INFO[Window(Home).Property(SetItem.3.Year)]</label2>
+			  <property name="rating">$INFO[Window(Home).Property(SetItem.3.Rating)]</property>
+			  <property name="MPAA">$INFO[Window(Home).Property(SetItem.3.MPAA)]</property>
+			  <property name="director">$INFO[Window(Home).Property(SetItem.3.director)]</property>
+              <onclick>PlayMedia($ESCINFO[Window(Home).Property(SetItem.3.Path)])</onclick>
+            </item>
+            <item id="4">
+              <visible>!IsEmpty(Window(Home).Property(SetItem.4.art(poster)))</visible>
+			  <label>$INFO[Window(Home).Property(SetItem.4.Duration)]</label>
+			  <label2>$INFO[Window(Home).Property(SetItem.4.Year)]</label2>
+			  <property name="rating">$INFO[Window(Home).Property(SetItem.4.Rating)]</property>
+			  <property name="MPAA">$INFO[Window(Home).Property(SetItem.4.MPAA)]</property>
+			  <property name="director">$INFO[Window(Home).Property(SetItem.4.director)]</property>
+              <onclick>PlayMedia($ESCINFO[Window(Home).Property(SetItem.4.Path)])</onclick>
+            </item>
+            <item id="5">
+              <visible>!IsEmpty(Window(Home).Property(SetItem.5.art(poster)))</visible>
+			  <label>$INFO[Window(Home).Property(SetItem.5.Duration)]</label>
+			  <label2>$INFO[Window(Home).Property(SetItem.5.Year)]</label2>
+			  <property name="rating">$INFO[Window(Home).Property(SetItem.5.Rating)]</property>
+			  <property name="MPAA">$INFO[Window(Home).Property(SetItem.5.MPAA)]</property>
+			  <property name="director">$INFO[Window(Home).Property(SetItem.5.director)]</property>
+              <onclick>PlayMedia($ESCINFO[Window(Home).Property(SetItem.5.Path)])</onclick>
+            </item>
+            <item id="6">
+              <visible>!IsEmpty(Window(Home).Property(SetItem.6.art(poster)))</visible>
+			  <label>$INFO[Window(Home).Property(SetItem.6.Duration)]</label>
+			  <label2>$INFO[Window(Home).Property(SetItem.6.Year)]</label2>
+			  <property name="rating">$INFO[Window(Home).Property(SetItem.6.Rating)]</property>
+			  <property name="MPAA">$INFO[Window(Home).Property(SetItem.6.MPAA)]</property>
+			  <property name="director">$INFO[Window(Home).Property(SetItem.6.director)]</property>
+              <onclick>PlayMedia($ESCINFO[Window(Home).Property(SetItem.6.Path)])</onclick>
+            </item>
+            <item id="7">
+              <visible>!IsEmpty(Window(Home).Property(SetItem.7.art(poster)))</visible>
+			  <label>$INFO[Window(Home).Property(SetItem.7.Duration)]</label>
+			  <label2>$INFO[Window(Home).Property(SetItem.7.Year)]</label2>
+			  <property name="rating">$INFO[Window(Home).Property(SetItem.7.Rating)]</property>
+			  <property name="MPAA">$INFO[Window(Home).Property(SetItem.7.MPAA)]</property>
+			  <property name="director">$INFO[Window(Home).Property(SetItem.7.director)]</property>
+              <onclick>PlayMedia($ESCINFO[Window(Home).Property(SetItem.7.Path)])</onclick>
+            </item>
+            <item id="8">
+              <visible>!IsEmpty(Window(Home).Property(SetItem.8.art(poster)))</visible>
+			  <label>$INFO[Window(Home).Property(SetItem.8.Duration)]</label>
+			  <label2>$INFO[Window(Home).Property(SetItem.8.Year)]</label2>
+			  <property name="rating">$INFO[Window(Home).Property(SetItem.8.Rating)]</property>
+			  <property name="MPAA">$INFO[Window(Home).Property(SetItem.8.MPAA)]</property>
+			  <property name="director">$INFO[Window(Home).Property(SetItem.8.director)]</property>
+              <onclick>PlayMedia($ESCINFO[Window(Home).Property(SetItem.8.Path)])</onclick>
+            </item>
+          </content>
         </control>
       </control>
       <control type="image">
@@ -555,7 +808,6 @@
         <width>1340</width>
         <texture>images/LineR.png</texture>
       </control>
-	  <!--SLIDERPANEL-->
       <control type="group">
         <control type="image">
           <visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Art(fanart))]</visible>
@@ -564,28 +816,15 @@
           <height>1080</height>
           <texture>images/black.png</texture>
         </control>
-        <control type="group">
+        <control type="image" id="777">
           <visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + !SubString(ListItem.path,videodb://1/7/)]</visible>
-         <animation effect="slide" end="-1340,0" time="500" delay="1500" reversible="false">Hidden</animation>
-		 <fadetime>200</fadetime>
-		 <control type="image">
-		  <fadetime>200</fadetime>
+          <fadetime>200</fadetime>
           <animation effect="slide" end="-1340,0" time="500" delay="1500" reversible="false">Hidden</animation>
           <width>1340</width>
           <height>1080</height>
           <texture background="true">$VAR[fanart]</texture>
           <aspectratio align="left">scale</aspectratio>
         </control>
-		<control type="image">
-          <visible>ListItem.IsStereoscopic</visible>
-          <fadetime>200</fadetime>
-          <posx>60</posx>
-		  <top>880</top>
-		  <width>160</width>
-          <height>160</height>
-          <texture background="true">images/3dpflagsio2.png</texture>
-        </control>
-		</control>
       </control>
       <control type="scrollbar" id="60">
         <posx>50r</posx>
