@@ -39,8 +39,8 @@
         <posy>30</posy>
         <width>902</width>
         <height>882</height>
-        <onleft>-</onleft>
-        <onright>-</onright>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
         <onup>50</onup>
         <ondown>50</ondown>
         <pagecontrol>60</pagecontrol>

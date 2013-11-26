@@ -13,7 +13,7 @@
       <font>size42B</font>
       <textcolor>White</textcolor>
       <shadowcolor>BlackT</shadowcolor>
-      <label>Shelf Addons</label>
+      <label>$LOCALIZE[31040]</label>
     </control>
     <control type="group">
       <posy>180</posy>
@@ -60,7 +60,7 @@
       <onup>50</onup>
       <onleft>50</onleft>
       <onright>50</onright>
-      <ondown>-</ondown>
+      <ondown>noop</ondown>
       <itemgap>0</itemgap>
       <pagecontrol>60</pagecontrol>
       <scrolltime tween="sine" easing="inout">280</scrolltime>

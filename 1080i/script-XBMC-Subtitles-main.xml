@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <allowoverlay>no</allowoverlay>
   <include>OpenClose</include>
@@ -194,7 +194,7 @@
         <posx>152</posx>
         <posy>303</posy>
         <height>522</height>
-        <onleft>-</onleft>
+        <onleft>noop</onleft>
         <onright>120</onright>
         <showonepage>true</showonepage>
       </control>

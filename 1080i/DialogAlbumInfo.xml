@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="2001">
   <defaultcontrol always="true">300</defaultcontrol>
   <allowoverlay>no</allowoverlay>
@@ -8,7 +8,6 @@
   <include>OpenClose</include>
   <controls>
     <include>BlackBackground</include>
-    <include>MusicBackground</include>
     <control type="image" description="Vignette">
       <include>Dimensions_Fullscreen</include>
       <texture>Shades/Infoshade.png</texture>

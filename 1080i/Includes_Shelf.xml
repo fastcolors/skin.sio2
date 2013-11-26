@@ -729,10 +729,10 @@
       </control>
       <control type="panel" id="313" description="TOP Shortcuts">
         <visible>[Library.HasContent(musicvideos) | Library.HasContent(music) | Skin.HasSetting(MusicShelf_Custom)] + [Container(9000).HasFocus(342) | Control.HasFocus(313)]</visible>
-        <onup>-</onup>
+        <onup>noop</onup>
         <ondown>9000</ondown>
-        <onleft>-</onleft>
-        <onright>-</onright>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
         <focusposition>2</focusposition>
         <include>SquareShortcutsCommons</include>
         <content>
@@ -1035,7 +1035,7 @@
       </control>
       <control type="panel" id="315" description="TOP Shortcuts">
         <visible>Container(9000).HasFocus(343) | Control.HasFocus(315)</visible>
-        <onup>-</onup>
+        <onup>noop</onup>
         <ondown>9000</ondown>
         <onleft>315</onleft>
         <onright>315</onright>
@@ -1230,7 +1230,7 @@
       </control>
       <control type="panel" id="317" description="TOP Shortcuts">
         <visible>Container(9000).HasFocus(355) | Control.HasFocus(317)</visible>
-        <onup>-</onup>
+        <onup>noop</onup>
         <ondown>9000</ondown>
         <onleft>317</onleft>
         <onright>317</onright>
@@ -1545,7 +1545,7 @@
         <texture background="true" diffuse="images/ReflectionShelf.png" flipy="true">images/weathersingle.png</texture>
       </control>
       <control type="list" id="414" description="TOP Weather">
-        <onup>-</onup>
+        <onup>noop</onup>
         <ondown>9000</ondown>
         <onleft>9000</onleft>
         <onright>9000</onright>
@@ -1628,49 +1628,49 @@
             <label2>Min:  $INFO[Window(Weather).Property(Day0.LowTemp)] [CR] Max:  $INFO[Window(Weather).Property(Day0.HighTemp)]</label2>
             <property name="Conditions">$INFO[Window(Weather).Property(Day0.Outlook)]</property>
             <thumb>$INFO[Window(Weather).Property(Day0.OutlookIcon)]</thumb>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
           </item>
           <item id="1">
             <label>$INFO[Window(Weather).Property(Day1.Title)]</label>
             <label2>Min:  $INFO[Window(Weather).Property(Day1.LowTemp)] [CR] Max:  $INFO[Window(Weather).Property(Day1.HighTemp)]</label2>
             <property name="Conditions">$INFO[Window(Weather).Property(Day1.Outlook)]</property>
             <thumb>$INFO[Window(Weather).Property(Day1.OutlookIcon)]</thumb>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
           </item>
           <item id="2">
             <label>$INFO[Window(Weather).Property(Day2.Title)]</label>
             <label2>Min:  $INFO[Window(Weather).Property(Day2.LowTemp)] [CR] Max:  $INFO[Window(Weather).Property(Day2.HighTemp)]</label2>
             <property name="Conditions">$INFO[Window(Weather).Property(Day2.Outlook)]</property>
             <thumb>$INFO[Window(Weather).Property(Day2.OutlookIcon)]</thumb>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
           </item>
           <item id="3">
             <label>$INFO[Window(Weather).Property(Day3.Title)]</label>
             <label2>Min:  $INFO[Window(Weather).Property(Day3.LowTemp)] [CR] Max:  $INFO[Window(Weather).Property(Day3.HighTemp)]</label2>
             <property name="Conditions">$INFO[Window(Weather).Property(Day3.Outlook)]</property>
             <thumb>$INFO[Window(Weather).Property(Day3.OutlookIcon)]</thumb>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
           </item>
           <item id="4">
             <label>$INFO[Window(Weather).Property(Day4.Title)]</label>
             <label2>Min:  $INFO[Window(Weather).Property(Day4.LowTemp)] [CR] Max:  $INFO[Window(Weather).Property(Day4.HighTemp)]</label2>
             <property name="Conditions">$INFO[Window(Weather).Property(Day4.Outlook)]</property>
             <thumb>$INFO[Window(Weather).Property(Day4.OutlookIcon)]</thumb>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
           </item>
           <item id="5">
             <label>$INFO[Window(Weather).Property(Day5.Title)]</label>
             <label2>Min:  $INFO[Window(Weather).Property(Day5.LowTemp)] [CR] Max:  $INFO[Window(Weather).Property(Day5.HighTemp)]</label2>
             <property name="Conditions">$INFO[Window(Weather).Property(Day5.Outlook)]</property>
             <thumb>$INFO[Window(Weather).Property(Day5.OutlookIcon)]</thumb>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
           </item>
           <item id="6">
             <label>$INFO[Window(Weather).Property(Day6.Title)]</label>
             <label2>Min:  $INFO[Window(Weather).Property(Day6.LowTemp)] [CR] Max:  $INFO[Window(Weather).Property(Day6.HighTemp)]</label2>
             <property name="Conditions">$INFO[Window(Weather).Property(Day6.Outlook)]</property>
             <thumb>$INFO[Window(Weather).Property(Day6.OutlookIcon)]</thumb>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
           </item>
         </content>
       </control>
@@ -1702,7 +1702,7 @@
       </control>
       <control type="panel" id="319" description="TOP Shortcuts">
         <visible>IntegerGreaterThan(Window.Property(favourite.count),0) + [Container(9000).HasFocus(352) | Control.HasFocus(319)] + Container(9000).Row(0)</visible>
-        <onup>-</onup>
+        <onup>noop</onup>
         <ondown>9000</ondown>
         <onleft>319</onleft>
         <onright>319</onright>

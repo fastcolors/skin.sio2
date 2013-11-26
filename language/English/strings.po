@@ -130,6 +130,14 @@ msgctxt "#31027"
 msgid "Last Added"
 msgstr "Last Added"
 
+msgctxt "#31028"
+msgid "Watchlist"
+msgstr "Watchlist"
+
+msgctxt "#31029"
+msgid "Favourite"
+msgstr "Favourite"
+
 msgctxt "#31030"
 msgid "Custom Shelf Icon"
 msgstr "Custom Shelf Icon"
@@ -242,6 +250,10 @@ msgctxt "#31060"
 msgid "Add"
 msgstr "Add"
 
+msgctxt "#31061"
+msgid "Cinema Experience"
+msgstr "Cinema Experience"
+
 msgctxt "#31062"
 msgid "Select Lyrics Add-on"
 msgstr "Select Lyrics Add-on"
@@ -249,3 +261,15 @@ msgstr "Select Lyrics Add-on"
 msgctxt "#31064"
 msgid "Fullscreen"
 msgstr "Fullscreen"
+
+msgctxt "#31065"
+msgid "Started Movies"
+msgstr "Started Movies"
+
+msgctxt "#31066"
+msgid "Recommended Episodes"
+msgstr "Recommended Episodes"
+
+msgctxt "#31067"
+msgid "Top Albums"
+msgstr "Top Albums"

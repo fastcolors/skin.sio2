@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="501">
   <defaultcontrol always="true">50</defaultcontrol>
   <allowoverlay>no</allowoverlay>
@@ -57,7 +57,7 @@
         <posy>147</posy>
         <height>882</height>
         <onleft>50</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
       <include>MusicInfo</include>
     </control>
@@ -94,7 +94,7 @@
         <posy>135</posy>
         <height>870</height>
         <onleft>51</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
     <control type="group" description="Grid">
@@ -107,8 +107,8 @@
           <width>1800</width>
           <height>897</height>
           <orientation>vertical</orientation>
-          <onup>-</onup>
-          <ondown>-</ondown>
+          <onup>noop</onup>
+          <ondown>noop</ondown>
           <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
           <preloaditems>4</preloaditems>

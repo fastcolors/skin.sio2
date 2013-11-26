@@ -38,8 +38,8 @@
       <control type="fixedlist" id="52">
         <width>902</width>
         <height>891</height>
-        <onleft>-</onleft>
-        <onright>-</onright>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
         <onup>52</onup>
         <ondown>52</ondown>
         <pagecontrol>60</pagecontrol>

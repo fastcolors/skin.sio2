@@ -15,8 +15,8 @@
       <visible>true</visible>
       <onup>30051</onup>
       <ondown>30052</ondown>
-      <onleft>-</onleft>
-      <onright>-</onright>
+      <onleft>noop</onleft>
+      <onright>noop</onright>
       <orientation>horizontal</orientation>
       <pagecontrol>60</pagecontrol>
       <scrolltime tween="sine" easing="out">250</scrolltime>
@@ -151,9 +151,9 @@
         <align>center</align>
         <orientation>horizontal</orientation>
         <onup>30050</onup>
-        <ondown>-</ondown>
-        <onleft>-</onleft>
-        <onright>-</onright>
+        <ondown>noop</ondown>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
         <control type="button" id="39001">
           <label>$ADDON[script.rssclient-standalone 30013]</label>
           <onclick>XBMC.SlideShow($INFO[Container(30050).ListItem.Property(multiimagepath)])</onclick>
@@ -186,7 +186,7 @@
       <posy>50</posy>
       <width>1800</width>
       <height>780</height>
-      <onleft>-</onleft>
+      <onleft>noop</onleft>
       <onright>30051</onright>
       <onup>30005</onup>
       <ondown>30050</ondown>
@@ -251,10 +251,10 @@
         <scrolltime tween="sine" easing="out">250</scrolltime>
         <orientation>horizontal</orientation>
         <align>center</align>
-        <onup>-</onup>
+        <onup>noop</onup>
         <ondown>30051</ondown>
-        <onleft>-</onleft>
-        <onright>-</onright>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
         <!--<control type="button" id="39003" description="Sort by button">
 				<label>103</label>
 				<textcolor>White</textcolor>

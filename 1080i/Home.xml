@@ -35,11 +35,11 @@
       <onclick  condition="Control.IsVisible(311)">Skin.ToggleSetting(MoviesShelfWL)</onclick>
       <onclick  condition="Control.IsVisible(312)">Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
       <onclick>ReplaceWindow(0)</onclick>
-      <onup>-</onup>
+      <onup>noop</onup>
       <ondown condition="Control.IsVisible(311)">311</ondown>
       <ondown condition="Control.IsVisible(312)">312</ondown>
-      <onleft>-</onleft>
-      <onright>-</onright>
+      <onleft>noop</onleft>
+      <onright>noop</onright>
     </control>
     <control type="panel" id="9000" description="ICONE">
       <animation condition="!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-590" time="220">Conditonal</animation>
@@ -50,7 +50,7 @@
       <onleft>9000</onleft>
       <onright>9000</onright>
       <onup>700</onup>
-      <ondown>-</ondown>
+      <ondown>noop</ondown>
       <orientation>vertical</orientation>
       <scrolltime tween="sine" easing="inout">280</scrolltime>
       <itemlayout height="250" width="368">
@@ -169,8 +169,8 @@
           <visible>Skin.HasSetting(hidemovie) + Skin.HasSetting(hidetv)  + !Skin.HasSetting(hidevaddons)</visible>
           <thumb>icons/vaddons.png</thumb>
           <label>$LOCALIZE[157] $LOCALIZE[24001]</label>
-          <onclick>-</onclick>
-          <onclick>-</onclick>
+          <onclick>noop</onclick>
+          <onclick>noop</onclick>
         </item>
         <item id="340">
           <visible>!Skin.HasSetting(hidemovie)</visible>
@@ -382,7 +382,7 @@
         <item id="346">
           <visible>!Skin.HasSetting(hidewl)</visible>
           <thumb>icons/watchlist.png</thumb>
-          <label>WatchList</label>
+          <label>31028</label>
           <property name="color">icons/dvdcolor.png</property>
           <onclick>ActivateWindow(1113)</onclick>
         </item>

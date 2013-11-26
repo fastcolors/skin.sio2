@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="2">
   <defaultcontrol always="true">50</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
-    <include>BlackBackgroud</include>
+  <include>BlackBackground</include>
     <control type="group" description="List 50">
       <visible>Control.IsVisible(50)</visible>
       <control type="group" description="Thumbs">
@@ -61,7 +61,7 @@
         <posy>147</posy>
         <height>882</height>
         <onleft>50</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
     <control type="group">
@@ -74,8 +74,8 @@
           <width>1800</width>
           <height>897</height>
           <orientation>vertical</orientation>
-          <onup>-</onup>
-          <ondown>-</ondown>
+          <onup>noop</onup>
+          <ondown>noop</ondown>
           <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
           <preloaditems>4</preloaditems>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="12">
   <defaultcontrol always="true">3</defaultcontrol>
   <allowoverlay>no</allowoverlay>
@@ -32,7 +32,7 @@
       <align>center</align>
       <height>80</height>
       <itemgap>5</itemgap>
-      <onup>-</onup>
+      <onup>noop</onup>
       <ondown>5</ondown>
       <orientation>horizontal</orientation>
     </control>
@@ -84,7 +84,7 @@
       <posy>159</posy>
       <height>861</height>
       <onleft>5</onleft>
-      <onright>-</onright>
+      <onright>noop</onright>
     </control>
   </controls>
 </window>

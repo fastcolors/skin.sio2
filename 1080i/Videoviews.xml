@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <include name="Videoviews">
     <!--SMALL LIST-->
@@ -88,7 +88,7 @@
         <posx>39r</posx>
         <posy>135</posy>
         <height>870</height>
-        <onright>-</onright>
+        <onright>noop</onright>
         <onleft>50</onleft>
       </control>
     </control>
@@ -127,7 +127,7 @@
         <posy>135</posy>
         <height>870</height>
         <onleft>51</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
     <!--NEW VIEW-->
@@ -695,8 +695,8 @@
           <posy>110</posy>
           <width>1200</width>
           <height>1080</height>
-		  <onup>-</onup>
-		  <ondown>-</ondown>
+		  <onup>noop</onup>
+		  <ondown>noop</ondown>
           <onright>52</onright>
           <itemlayout width="297" height="480"></itemlayout>
           <focusedlayout width="297" height="480">
@@ -831,7 +831,7 @@
         <posy>120</posy>
         <height>820</height>
         <onleft>50</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
     <!--BANNERS-->
@@ -856,8 +856,8 @@
           <orientation>vertical</orientation>
           <focusposition>1</focusposition>
           <preloaditems>2</preloaditems>
-          <onup>-</onup>
-          <ondown>-</ondown>
+          <onup>noop</onup>
+          <ondown>noop</ondown>
           <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
           <preloaditems>4</preloaditems>

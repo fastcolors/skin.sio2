@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="buttonMenu" id="1191">
   <defaultcontrol>9000</defaultcontrol>
   <include>DialogOpenClose</include>
@@ -25,8 +25,8 @@
       <height>126</height>
       <onleft>9000</onleft>
       <onright>9000</onright>
-      <onup>-</onup>
-      <ondown>-</ondown>
+      <onup>noop</onup>
+      <ondown>noop</ondown>
       <itemgap>30</itemgap>
       <align>center</align>
       <orientation>horizontal</orientation>
@@ -149,7 +149,7 @@
         <width>600</width>
         <align>center</align>
         <font>size39B</font>
-        <label>Timer</label>
+        <label>19040</label>
       </control>
     </control>
   </controls>

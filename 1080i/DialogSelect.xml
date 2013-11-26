@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="window" id="2000">
   <defaultcontrol always="false">3</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
@@ -104,7 +104,7 @@
           <movement>3</movement>
           <scrolltime tween="sine" easing="inout">280</scrolltime>
           <itemlayout width="802" height="111">
-            <include>ListBG</include>
+            
             <control type="image">
               <height>111</height>
               <width>111</width>
@@ -132,7 +132,7 @@
             </control>
           </itemlayout>
           <focusedlayout width="802" height="111">
-            <include>ListBG</include>
+            
             <control type="image">
               <posx>0</posx>
               <posy>0</posy>
@@ -256,7 +256,7 @@
       <posy>258</posy>
       <height>771</height>
       <onleft>3</onleft>
-      <onright>-</onright>
+      <onright>noop</onright>
     </control>
   </controls>
 </window>

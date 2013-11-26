@@ -49,7 +49,7 @@
 				<posy>120</posy>
 				<width>8</width>
 				<height>900</height>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onright>20</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
@@ -98,7 +98,7 @@
 				<posx>1020</posx>
 				<posy>100</posy>
 				<height>900</height>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<onleft>20</onleft>
 				<ondown>9000</ondown>
 				<aligny>center</aligny>

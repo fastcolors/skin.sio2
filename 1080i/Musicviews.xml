@@ -40,7 +40,7 @@
         <posy>135</posy>
         <height>870</height>
         <onleft>50</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
       <control type="label" description="Heading">
         <visible>!IsEmpty(Container.FolderName)</visible>
@@ -125,7 +125,7 @@
         <posy>147</posy>
         <height>882</height>
         <onleft>52</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
       <control type="label" description="Heading">
         <visible>!IsEmpty(Container.FolderName)</visible>
@@ -147,8 +147,8 @@
           <width>1800</width>
           <height>897</height>
           <orientation>vertical</orientation>
-          <onup>-</onup>
-          <ondown>-</ondown>
+          <onup>noop</onup>
+          <ondown>noop</ondown>
           <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
           <preloaditems>4</preloaditems>
@@ -340,7 +340,7 @@
         <visible>Container.content(Albums) | Container.content(Artists)</visible>
         <onup>9000</onup>
         <ondown condition="Skin.HasSetting(Scrollbars_Active)">60</ondown>
-        <ondown>-</ondown>
+        <ondown>noop</ondown>
         <onleft>500</onleft>
         <onright>500</onright>
         <viewtype label="$LOCALIZE[20445]">Fanart</viewtype>
@@ -464,8 +464,8 @@
         <posy>40</posy>
         <width>460</width>
         <height>450</height>
-        <onleft>-</onleft>
-        <onright>-</onright>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
         <pagecontrol>-</pagecontrol>
         <itemlayout height="42">
           <control type="label">
@@ -522,31 +522,31 @@
             <visible>!IsEmpty(ListItem.Property(Artist_Genre))</visible>
             <label>515</label>
             <label2>$INFO[ListItem.Property(Artist_Genre)]</label2>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
           </item>
           <item>
             <visible>!IsEmpty(ListItem.Property(Artist_Formed))</visible>
             <label>21894</label>
             <label2>$INFO[ListItem.Property(Artist_Formed)]</label2>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
           </item>
           <item>
-            <visible>!IsEmpty(ListItem.Property(Artist_Disbanded)</visible>
+            <visible>!IsEmpty(ListItem.Property(Artist_Disbanded))</visible>
             <label>21896</label>
             <label2>$INFO[ListItem.Property(Artist_Disbanded)]</label2>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
           </item>
           <item>
             <visible>!IsEmpty(ListItem.Property(Artist_Born))</visible>
             <label>21893</label>
             <label2>$INFO[ListItem.Property(Artist_Born)]</label2>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
           </item>
           <item>
             <visible>!IsEmpty(ListItem.Property(Artist_Died))</visible>
             <label>21897</label>
             <label2>$INFO[ListItem.Property(Artist_Died)]</label2>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
           </item>
         </content>
       </control>
