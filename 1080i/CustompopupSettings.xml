@@ -27,7 +27,7 @@
           <include>DialogButt</include>
           <label>20077</label>
           <onclick>Close</onclick>
-          <onclick>RunScript(script.password.check,$INFO[System.ProfileName],56)</onclick>
+          <onclick>ActivateWindow(SkinSettings)</onclick>
         </control>
       </control>
     </control>

@@ -69,7 +69,7 @@
           </item>
           <item id="1" description="Skin Settings">
             <label>20077</label>
-            <onclick>activatewindow(56)</onclick>
+            <onclick>activatewindow(SkinSettings)</onclick>
           </item>
           <item id="3" description="Videos">
             <label>3</label>
