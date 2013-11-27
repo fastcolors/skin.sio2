@@ -135,7 +135,7 @@
           <control type="image">
             <width>1358</width>
             <height>54</height>
-            <texture border="8">Images/Buttonselect.png</texture>
+            <texture border="8">images/Buttonselect.png</texture>
             <visible>Control.HasFocus(120)</visible>
           </control>
           <control type="image">
@@ -270,7 +270,7 @@
             <posy>0</posy>
             <width>375</width>
             <height>57</height>
-            <texture border="8">Images/Buttonselect.png</texture>
+            <texture border="8">images/Buttonselect.png</texture>
             <visible>Control.HasFocus(150)</visible>
           </control>
           <control type="label">

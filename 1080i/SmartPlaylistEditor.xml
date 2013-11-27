@@ -50,7 +50,7 @@
         <onleft>12</onleft>
         <onright>12</onright>
         <ondown>10</ondown>
-        <texturefocus flipy="true" border="8">Images/Buttonselect.png</texturefocus>
+        <texturefocus flipy="true" border="8">images/Buttonselect.png</texturefocus>
       </control>
       <control type="label">
         <description>Find items where</description>
@@ -94,7 +94,7 @@
               <posy>0</posy>
               <width>840</width>
               <height>63</height>
-              <texture border="8">Images/Buttonselect.png</texture>
+              <texture border="8">images/Buttonselect.png</texture>
               <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(10)">Conditional</animation>
             </control>
             <control type="label">

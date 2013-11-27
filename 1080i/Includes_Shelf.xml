@@ -69,7 +69,7 @@
         <posy>370</posy>
         <width>260</width>
         <height>30</height>
-        <texture>Images/Black.png</texture>
+        <texture>images/Black.png</texture>
 		<colordiffuse>99FFFFFF</colordiffuse>
         <aspectratio>scale</aspectratio>
       </control>

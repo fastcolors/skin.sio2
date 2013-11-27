@@ -125,7 +125,7 @@
       <height>200</height>
       <width>250</width>
       <aspectratio>scale</aspectratio>
-      <texture diffuse="Images/Diffuse.png">$INFO[Player.Art(fanart)]</texture>
+      <texture diffuse="images/Diffuse.png">$INFO[Player.Art(fanart)]</texture>
     </control>
     <control type="group">
       <posy>10</posy>

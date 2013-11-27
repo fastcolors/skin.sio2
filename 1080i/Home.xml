@@ -57,7 +57,7 @@
 	  <control type="image" description="THMBSCOLOR">
           <width>368</width>
           <height>250</height>
-          <texture>Images/MenuIconShadow.png</texture>
+          <texture>images/MenuIconShadow.png</texture>
         </control>
         <control type="image" description="THMBSCOLOR">
           <posx>30</posx>
@@ -112,7 +112,7 @@
 	   <control type="image" description="THMBSCOLOR">
           <width>368</width>
           <height>250</height>
-          <texture>Images/MenuIconShadow.png</texture>
+          <texture>images/MenuIconShadow.png</texture>
         </control>
         <control type="image" description="THMBSCOLOR">
           <posx>30</posx>
@@ -605,7 +605,7 @@
       <posx>357</posx>
       <width>2</width>
       <height>500</height>
-      <texture>Images/LineV.png</texture>
+      <texture>images/LineV.png</texture>
     </control>
   </controls>
 </window>

@@ -72,7 +72,7 @@
     <focusedcolor>White2</focusedcolor>
     <selectedcolor>White2</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <texturefocus border="8">Images/Buttonselect.png</texturefocus>
+    <texturefocus border="8">images/Buttonselect.png</texturefocus>
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="edit">
@@ -91,7 +91,7 @@
     <selectedcolor>White2</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
     <texturenofocus border="8">images/Black.png</texturenofocus>
-    <texturefocus flipy="true" border="8">Images/Buttonselect.png</texturefocus>
+    <texturefocus flipy="true" border="8">images/Buttonselect.png</texturefocus>
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="togglebutton">
@@ -110,8 +110,8 @@
     <selectedcolor>White2</selectedcolor>
     <altselectedcolor>Yellow</altselectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <texturefocus border="8">Images/Buttonselect.png</texturefocus>
-    <alttexturefocus border="8">Images/Buttonselect.png</alttexturefocus>
+    <texturefocus border="8">images/Buttonselect.png</texturefocus>
+    <alttexturefocus border="8">images/Buttonselect.png</alttexturefocus>
     <align>center</align>
     <aligny>center</aligny>
     <pulseonselect>false</pulseonselect>
@@ -131,7 +131,7 @@
     <disabledcolor>Disabled</disabledcolor>
     <radiowidth>30</radiowidth>
     <radioheight>30</radioheight>
-    <texturefocus border="8">Images/Buttonselect.png</texturefocus>
+    <texturefocus border="8">images/Buttonselect.png</texturefocus>
     <textureradiofocus>images/RadioON.png</textureradiofocus>
     <textureradionofocus>-</textureradionofocus>
     <textoffsetx>20</textoffsetx>
@@ -145,7 +145,7 @@
     <textureupfocus>images/ArrowUpFO.png</textureupfocus>
     <texturedown>images/ArrowDownNF.png</texturedown>
     <texturedownfocus>images/ArrowDownFO.png</texturedownfocus>
-    <texturefocus border="8">Images/Buttonselect.png</texturefocus>
+    <texturefocus border="8">images/Buttonselect.png</texturefocus>
     <spinwidth>18</spinwidth>
     <spinheight>18</spinheight>
     <font>size33</font>
@@ -171,7 +171,7 @@
     <textureupfocus>images/ArrowUpFO.png</textureupfocus>
     <texturedown>images/ArrowDownNF.png</texturedown>
     <texturedownfocus>images/ArrowDownFO.png</texturedownfocus>
-    <texturefocus border="8">Images/Buttonselect.png</texturefocus>
+    <texturefocus border="8">images/Buttonselect.png</texturefocus>
     <spinwidth>18</spinwidth>
     <spinheight>18</spinheight>
     <textcolor>White</textcolor>
@@ -204,7 +204,7 @@
     <texturesliderbar>OSD/SliderBackground.png</texturesliderbar>
     <textureslidernib>OSD/SliderNibNF.png</textureslidernib>
     <textureslidernibfocus>OSD/SliderNibFO.png</textureslidernibfocus>
-    <texturefocus border="8">Images/Buttonselect.png</texturefocus>
+    <texturefocus border="8">images/Buttonselect.png</texturefocus>
     <texturenofocus>-</texturenofocus>
     <font>size33</font>
     <textcolor>White</textcolor>

@@ -265,10 +265,10 @@
 				<label>-</label>
 				<width>50</width>
 				<height>50</height>
-				<texturefocus>Images/ArrowUpFO.png</texturefocus>
-				<texturenofocus>Images/ArrowUpNF.png</texturenofocus>
-				<alttexturefocus>Images/ArrowDownFO.png</alttexturefocus>
-				<alttexturenofocus>Images/ArrowDownNF.png</alttexturenofocus>
+				<texturefocus>images/ArrowUpFO.png</texturefocus>
+				<texturenofocus>images/ArrowUpNF.png</texturenofocus>
+				<alttexturefocus>images/ArrowDownFO.png</alttexturefocus>
+				<alttexturenofocus>images/ArrowDownNF.png</alttexturenofocus>
 			</control>
 			-->
         <control type="button" id="39008">

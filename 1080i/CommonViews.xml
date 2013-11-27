@@ -570,7 +570,7 @@
       <posx>4</posx>
       <height>81</height>
       <width>30</width>
-      <texture>$VAR[WatchStatus,Overlay/List/]</texture>
+      <texture>$VAR[WatchStatus,overlay/List/]</texture>
       <aspectratio>keep</aspectratio>
     </control>
   </include>
@@ -608,7 +608,7 @@
       <height>55</height>
       <width>80</width>
       <aspectratio>keep</aspectratio>
-      <texture>Badges/Badgecount.png</texture>
+      <texture>badges/Badgecount.png</texture>
     </control>
     <control type="label" description="Label2">
       
@@ -864,16 +864,16 @@
     <font>size36</font>
     <align>left</align>
     <textoffsetx>20</textoffsetx>
-    <texturefocus border="8">Images/Buttonselect.png</texturefocus>
-    <alttexturefocus border="8">Images/Buttonselect.png</alttexturefocus>
+    <texturefocus border="8">images/Buttonselect.png</texturefocus>
+    <alttexturefocus border="8">images/Buttonselect.png</alttexturefocus>
   </include>
   <include name="SmallButt">
   <width>200</width>
     <height>40</height>
     <font>size22</font>
     <align>center</align>
-    <texturefocus border="8">Images/Buttonselect.png</texturefocus>
-    <alttexturefocus border="8">Images/Buttonselect.png</alttexturefocus>
+    <texturefocus border="8">images/Buttonselect.png</texturefocus>
+    <alttexturefocus border="8">images/Buttonselect.png</alttexturefocus>
 	</include>
   <include name="DialogGLs">
     <posx>675</posx>
@@ -897,8 +897,8 @@
     <disabledcolor>Grey</disabledcolor>
     <texturenofocus>-</texturenofocus>
     <alttexturenofocus>-</alttexturenofocus>
-    <texturefocus border="8">Images/Buttonselect.png</texturefocus>
-    <alttexturefocus border="8">Images/Buttonselect.png</alttexturefocus>
+    <texturefocus border="8">images/Buttonselect.png</texturefocus>
+    <alttexturefocus border="8">images/Buttonselect.png</alttexturefocus>
   </include>
   <include name="Plot51Commons">
     <posx>0</posx>
@@ -926,7 +926,7 @@
     <shadowcolor>Black</shadowcolor>
   </include>
   <include name="Keyboard">
-    <texturefocus border="8">Images/Buttonselect.png</texturefocus>
+    <texturefocus border="8">images/Buttonselect.png</texturefocus>
     <align>center</align>
     <aligny>center</aligny>
     <textoffsetx>0</textoffsetx>

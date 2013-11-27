@@ -52,14 +52,14 @@
     <control type="button" id="7" description="Button">
       <width>300</width>
       <texturenofocus>-</texturenofocus>
-      <texturefocus border="8">Images/Buttonselect.png</texturefocus>
+      <texturefocus border="8">images/Buttonselect.png</texturefocus>
       <font>size34</font>
       <align>left</align>
     </control>
     <control type="radiobutton" id="8" description="Radio Button">
       <width>300</width>
       <texturenofocus>-</texturenofocus>
-      <texturefocus border="8">Images/Buttonselect.png</texturefocus>
+      <texturefocus border="8">images/Buttonselect.png</texturefocus>
       <radioposx>1197</radioposx>
       <font>size34</font>
       <align>left</align>
@@ -67,7 +67,7 @@
     <control type="spincontrolex" id="9" description="Spin control">
       <width>1260</width>
       <texturenofocus>-</texturenofocus>
-      <texturefocus border="8">Images/Buttonselect.png</texturefocus>
+      <texturefocus border="8">images/Buttonselect.png</texturefocus>
       <align>left</align>
       <font>size34</font>
     </control>

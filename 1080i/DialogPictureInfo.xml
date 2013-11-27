@@ -55,7 +55,7 @@
           <control type="image">
             <height>70</height>
             <width>930</width>
-            <texture border="8">Images/Buttonselect.png</texture>
+            <texture border="8">images/Buttonselect.png</texture>
           </control>
           <control type="label">
             <posx>30</posx>

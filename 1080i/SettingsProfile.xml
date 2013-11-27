@@ -63,7 +63,7 @@
             <visible>!Control.HasFocus(4)</visible>
             <width>900</width>
             <height>81</height>
-            <texture border="8">Images/Buttonselect.png</texture>
+            <texture border="8">images/Buttonselect.png</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label" description="Main Label">

@@ -193,7 +193,7 @@
             <posy>120</posy>
             <width>360</width>
             <height>30</height>
-            <texture>$VAR[WatchStatus,Overlay/List/]</texture>
+            <texture>$VAR[WatchStatus,overlay/List/]</texture>
             <aspectratio align="right">keep</aspectratio>
           </control>
           <control type="textbox">
@@ -240,7 +240,7 @@
             <posy>120</posy>
             <width>360</width>
             <height>30</height>
-            <texture>$VAR[WatchStatus,Overlay/List/]</texture>
+            <texture>$VAR[WatchStatus,overlay/List/]</texture>
             <aspectratio align="right">keep</aspectratio>
           </control>
           <control type="textbox">
@@ -1184,13 +1184,13 @@
             <posx>550</posx>
             <width>620</width>
             <height>1</height>
-            <texture>Images/Line.png</texture>
+            <texture>images/Line.png</texture>
           </control>
           <control type="image" description="lineplot">
             <posy>80</posy>
             <width>1724</width>
             <height>1</height>
-            <texture>Images/Line.png</texture>
+            <texture>images/Line.png</texture>
           </control>
           <control type="textbox" description="Plot">
             <posy>80</posy>
@@ -1207,7 +1207,7 @@
             <posy>410</posy>
             <width>1724</width>
             <height>1</height>
-            <texture>Images/Line.png</texture>
+            <texture>images/Line.png</texture>
           </control>
           <control type="label">
             <posy>440</posy>

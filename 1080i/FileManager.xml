@@ -88,7 +88,7 @@
             <visible>Control.HasFocus(20)</visible>
             <width>830</width>
             <height>60</height>
-            <texture border="8">Images/Buttonselect.png</texture>
+            <texture border="8">images/Buttonselect.png</texture>
           </control>
         </focusedlayout>
       </control>
@@ -172,7 +172,7 @@
             <posx>10</posx>
             <width>830</width>
             <height>60</height>
-            <texture border="8">Images/Buttonselect.png</texture>
+            <texture border="8">images/Buttonselect.png</texture>
           </control>
         </focusedlayout>
       </control>

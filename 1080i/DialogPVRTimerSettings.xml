@@ -103,7 +103,7 @@
       <description>Default Seperator</description>
       <width>1000</width>
       <height>2</height>
-      <texture>Images/line.png</texture>
+      <texture>images/line.png</texture>
     </control>
     <control type="edit" id="12">
       <description>Default Edit</description>
