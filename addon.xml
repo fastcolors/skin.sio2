@@ -5,7 +5,6 @@
     <import addon="script.favourites" version="3.2.5"/>
     <import addon="service.skin.widgets" version="0.0.13"/>
     <import addon="script.cinema.experience" version="3.0.3"/>
-    <import addon="script.password.check" version="0.0.1"/>
     <import addon="script.populate.sets" version="0.0.1"/>
   </requires>
   <extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="1" debugging="false">
