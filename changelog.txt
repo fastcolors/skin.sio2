@@ -1,2 +1,2 @@
-2.2.5
-Frodo SiO2
+2.3.5 GOTHAM
+* Initial Release in Official Repo.
