@@ -174,7 +174,7 @@
         </item>
         <item id="340">
           <visible>!Skin.HasSetting(hidemovie)</visible>
-          <thumb>icons/Movies.png</thumb>
+          <thumb>icons/movies.png</thumb>
           <label>342</label>
           <property name="color">icons/lightblue.png</property>
           <onclick condition="Library.HasContent(Movies)">ActivateWindow(Videos,MovieTitles,return)</onclick>
@@ -182,7 +182,7 @@
         </item>
         <item id="341">
           <visible>!Skin.HasSetting(hidetv)</visible>
-          <thumb>icons/TVshows.png</thumb>
+          <thumb>icons/tvshows.png</thumb>
           <label>20343</label>
           <property name="color">icons/purple.png</property>
           <onclick condition="Library.HasContent(TVShows)">ActivateWindow(VideoLibrary,TVShowTitles,return)</onclick>
@@ -191,7 +191,7 @@
 		
         <item id="342">
           <visible>!Skin.HasSetting(hidemusic)</visible>
-          <thumb>icons/Music.png</thumb>
+          <thumb>icons/music.png</thumb>
           <label>2</label>
           <property name="color">icons/Orange.png</property>
           <onclick>ActivateWindow(502,$INFO[Skin.String(MusicLink)])</onclick>
@@ -199,14 +199,14 @@
         </item>
         <item id="343">
           <visible>!Skin.HasSetting(hideaddon)</visible>
-          <thumb>icons/Addons.png</thumb>
+          <thumb>icons/addons.png</thumb>
           <label>24001</label>
           <property name="color">icons/Green.png</property>
           <onclick>ActivateWindow(1118)</onclick>
         </item>
         <item id="344">
           <visible>!Skin.HasSetting(hidepic)</visible>
-          <thumb>icons/Photos.png</thumb>
+          <thumb>icons/photos.png</thumb>
           <label>1</label>
           <property name="color">icons/darkblue.png</property>
           <onclick>ActivateWindow(2)</onclick>

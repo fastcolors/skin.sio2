@@ -8,11 +8,6 @@
   <include>OpenClose</include>
   <controls>
     <include>BlackBackground</include>
-    <control type="image" description="Vignette">
-      <include>Dimensions_Fullscreen</include>
-      <texture>Shades/Infoshade.png</texture>
-      <aspectratio>stretch</aspectratio>
-    </control>
     <include>Header</include>
     <control type="group">
       <control type="group" description="Thumbs">
