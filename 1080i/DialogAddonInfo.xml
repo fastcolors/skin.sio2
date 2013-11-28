@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="146">
   <defaultcontrol always="true">300</defaultcontrol>
   <include>OpenClose</include>
@@ -101,8 +101,8 @@
         <align>center</align>
         <height>80</height>
         <itemgap>9</itemgap>
-        <onleft>-</onleft>
-        <onright>-</onright>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
         <onup></onup>
         <ondown>9001</ondown>
         <orientation>horizontal</orientation>

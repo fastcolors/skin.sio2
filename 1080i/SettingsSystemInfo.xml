@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="7">
   <defaultcontrol always="true">9001</defaultcontrol>
   <allowoverlay>no</allowoverlay>
@@ -32,8 +32,8 @@
         <align>center</align>
         <height>80</height>
         <itemgap>9</itemgap>
-        <onleft>-</onleft>
-        <onright>-</onright>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
         <onup>9001</onup>
         <ondown>9001</ondown>
         <orientation>horizontal</orientation>

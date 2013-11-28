@@ -1,20 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.sio2" version="2.3.5" name="SiO2" provider-name="FastColors">
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<addon id="skin.sio2" version="2.2.5" name="SiO2" provider-name="FastColors">
   <requires>
     <import addon="xbmc.gui" version="4.0.0"/>
     <import addon="script.favourites" version="3.2.5"/>
     <import addon="service.skin.widgets" version="0.0.13"/>
-	<import addon="script.cinema.experience" version="3.0.3"/>
+    <import addon="script.cinema.experience" version="3.0.3"/>
+    <import addon="script.password.check" version="0.0.1"/>
+    <import addon="plugin.populate.set" version="0.0.1"/>
   </requires>
-  <extension
-    point="xbmc.gui.skin"
-	defaultresolution="1080i"
-    defaultthemename="Textures.xbt"
-    debugging="false">
-  </extension>
+  <extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="1" debugging="false">
+        <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
+    </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <description>If you like Apple "everything at hand" policy for interfaces, You might want to give this Skin a try. I designed it trying to put as few clicks as possible between You and what You're trying to do (or watch ;) ).[CR] Thanks to testers and Inspirers: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
 	<summary lang="ar">A simple and handy Skin visually based on AppleTv</summary>
     <summary lang="be">A simple and handy Skin visually based on AppleTv</summary>
     <summary lang="bg">A simple and handy Skin visually based on AppleTv</summary>
@@ -53,8 +51,7 @@
     <summary lang="uk">Проста і зручна шкіри заснована на AppleTV</summary>
     <summary lang="vi">Giao diện đơn giản và tiện dụng dựa trên AppleTV</summary>
     <summary lang="zh">一个简单和方便的皮肤上的AppleTV</summary>
-	
-	
+    
     <!--<description lang="ar"></description>
     <description lang="be"></description>
     <description lang="bg"></description>
@@ -63,29 +60,29 @@
     <description lang="da"></description>
     <description lang="de"></description>
     <description lang="el"></description>-->
-    <description lang="en">If you like Apple "everything at hand" policy for interfaces, You might want to give this Skin a try. I designed it trying to put as few clicks as possible between You and what You're trying to do (or watch ;) ).[CR] Thanks to testers and Inspirers: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
-    <description lang="es">Si te gusta la política Apple "todo a mano" para interfaces, entonces debe darle una oportunidad a esta Skin. La diseñé tratando de poner menos clics posible entre usted y lo que estas tratando de hacer (o ver ;) ) [CR] Gracias a los probadores e inspiradores: .. Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
-    <!--<description lang="et"></description>-->
-    <description lang="fi">Jos pidät Applen käyttöliittymistä, todennäköisesti haluat kokeilla tätä skiniä. Suunnittelin sen siten että sinun ja haluamasi sisällön välillä on mahdollisimman vähän klikkauksia.[CR]Kiitos nimimerkille Pecinko.[CR] Kiitos testaajille ja inspiroijille: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
-    <description lang="fr">Si vous aimez Apple "tout sous la main" la politique pour les interfaces, vous pourriez vouloir donner à ce thème un essai. Je l'ai conçu comme essayer de mettre quelques clics possible entre vous et ce que vous essayez de faire (ou de regarder;)) [CR] Merci aux testeurs et les inspirateurs:.. Toiva, défilement, Abrasher, Lucanoid, Relyter.</description>
-    <!--<description lang="gl"></description>
+    <description lang="en">If you like Apple "everything at hand" policy for interfaces, You might want to give this Skin a try. I designed it trying to put as few clicks as possible between You and what You're trying to do (or watch ;) ).[CR]Thanks to Pecinko for Quartz as a solid base to build on.[CR] Thanks to testers and Inspirers: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
+    <!--description lang="es"></description>
+    <description lang="et"></description>
+    <description lang="fi"></description>
+    <description lang="fr"></description>
+    <description lang="gl"></description>
     <description lang="he"></description>
     <description lang="hr"></description>
     <description lang="hu"></description>
     <description lang="is"></description>-->
-    <description lang="it">Se ti piace la politica di Apple per le interfacce grafiche "tutto a portata di mano", allora dovresti provare questa Skin. L'ho progettata cercando di mettere il minor numero di click tra te e quello che stai cercando di fare (o di guardare ;) ) [CR] Grazie ai testers e agli ispiratori:.. Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
-    <!--<description lang="ja"></description>
-    <description lang="km"></description>-->
-    <description lang="ko">만약 애플의 인터페이스 철학 "everything at hand"를 좋아한다면 이 스킨을 사용해 보고 싶을 것입니다. 가능한 최소한의 클릭으로 원하는 것을 할 수 있게 디자인하였습니다. [CR]Pecinko에게 감사드립니다.[CR] 영감을 준 Toiva, Scrolling, Abrasher, Lucanoid, Relyter 와 테스터해 준 사람들에게 감사드립니다.</description>
-    <!--<description lang="lt"></description>
+    <description lang="it">Se ti piace la politica di Apple per le interfacce grafiche "tutto a portata di mano", allora dovresti provare questa Skin. L'ho progettata cercando di mettere il minor numero di click tra te e quello che stai cercando di fare (o di guardare ;) ).[CR]Grazie a Pecinko per Quartz come solida base di partenza.[CR] Grazie ai testers e agli ispiratori:.. Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
+    <!--description lang="ja"></description>
+    <description lang="km"></description>
+    <description lang="ko"></description>
+    <description lang="lt"></description>
     <description lang="mk"></description>
     <description lang="nl"></description>
-    <description lang="no"></description>-->
-    <description lang="pl">Jeżeli Wam się podoba podejście Apple Inc. do interfejsów, możecie spróbować tą skórę. Zaprojektowałem ją próbując maksymalnie ułatwić użytkownikom dostęp do ich mediów.[CR] Podziękowania dla testerów i pomysłodawców: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
-    <!--<description lang="pt"></description>
-    <description lang="ro"></description>-->
-    <description lang="ru">Если Вам нравится подход Apple к интерфейсам - "все под рукой", то Вам, возможно, понравится этот скин. Я сделал его, пытаясь максимально уменьшить количество кликов мышкой для выполнения вашей задачи.[CR] Спасибо тестерам и донорам идей: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
-   <!-- <description lang="sk"></description>
+    <description lang="no"></description>
+    <description lang="pl"></description>
+    <description lang="pt"></description>
+    <description lang="ro"></description>
+    <description lang="ru"></description>
+    <description lang="sk"></description>
     <description lang="sl"></description>
     <description lang="sv"></description>
     <description lang="th"></description>
@@ -94,8 +91,7 @@
     <description lang="vi"></description>
     <description lang="zh"></description>
 	-->
-	
-    <disclaimer>SiO2 - Infos and changelog at XBMCHUB.COM</disclaimer>
-   
+    
+    <disclaimer>SiO2 - Enjoy</disclaimer>
   </extension>
 </addon>

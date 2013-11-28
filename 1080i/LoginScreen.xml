@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="29">
   <defaultcontrol always="true">52</defaultcontrol>
   <allowoverlay>no</allowoverlay>
@@ -12,9 +12,9 @@
         <posy>249</posy>
         <width>1350</width>
         <height>450</height>
-        <onleft>-</onleft>
-        <onright>-</onright>
-        <onup>-</onup>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
+        <onup>noop</onup>
         <ondown>11</ondown>
         <pagecontrol>-</pagecontrol>
         <scrolltime>250</scrolltime>

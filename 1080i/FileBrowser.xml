@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="126">
   <defaultcontrol always="true">450</defaultcontrol>
   <allowoverlay>no</allowoverlay>
@@ -101,7 +101,7 @@
           <movement>4</movement>
           <scrolltime tween="sine" easing="inout">280</scrolltime>
           <itemlayout width="802" height="111">
-            <include>ListBG</include>
+            
             <control type="image">
               <height>111</height>
               <width>111</width>

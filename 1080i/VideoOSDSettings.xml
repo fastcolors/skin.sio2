@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="123">
   <defaultcontrol always="true">5</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
@@ -13,7 +13,7 @@
         <posx>-50</posx>
         <width>1050</width>
         <height>1080</height>
-        <texture>images/black.png</texture>
+        <texture>images/Black.png</texture>
         <colordiffuse>CCFFFFFF</colordiffuse>
         <aspectratio>stretch</aspectratio>
       </control>

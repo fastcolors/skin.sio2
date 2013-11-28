@@ -141,7 +141,7 @@
       <posy>135</posy>
       <height>870</height>
       <onleft>11</onleft>
-      <onright>-</onright>
+      <onright>noop</onright>
     </control>
     <control type="label">
       <description>Page Count Label</description>
@@ -262,7 +262,7 @@
             <visible>ListItem.IsRecording</visible>
           </control>
         </itemlayout>
-        <focusedlayout width="802 "height="81">
+        <focusedlayout width="802" height="81">
           <control type="label">
             <posx>40</posx>
             <width>40</width>
@@ -309,7 +309,7 @@
       <posy>135</posy>
       <height>870</height>
       <onleft>11</onleft>
-      <onright>-</onright>
+      <onright>noop</onright>
     </control>
     <control type="label">
       <description>Page Count Label</description>
@@ -401,7 +401,7 @@
       <posy>135</posy>
       <height>870</height>
       <onleft>13</onleft>
-      <onright>-</onright>
+      <onright>noop</onright>
     </control>
  
   <control type="label">
@@ -699,7 +699,7 @@
           <font>Size26_title</font>
           <align>center</align>
           <aligny>center</aligny>
-          <label>DATE</label>
+          <label>552</label>
         </control>
         <control type="label">
           <description>Title header label</description>
@@ -942,7 +942,7 @@
       <posy>135</posy>
       <height>870</height>
       <onleft>11</onleft>
-      <onright>-</onright>
+      <onright>noop</onright>
     </control>
     <control type="label">
       <description>Page Count Label</description>
@@ -1186,7 +1186,7 @@
         <posy>60</posy>
         <height>480</height>
         <onleft>15</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
         <showonepage>false</showonepage>
         <orientation>vertical</orientation>
       </control>
@@ -1265,7 +1265,7 @@
       <posy>135</posy>
       <height>870</height>
       <onleft>11</onleft>
-      <onright>-</onright>
+      <onright>noop</onright>
     </control>
     <control type="label">
       <description>Page Count Label</description>

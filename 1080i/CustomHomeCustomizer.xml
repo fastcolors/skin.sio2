@@ -29,7 +29,7 @@
           <onleft>50</onleft>
           <onright>50</onright>
           <onup>520</onup>
-          <ondown>-</ondown>
+          <ondown>noop</ondown>
           <scrolltime tween="sine" easing="inout">280</scrolltime>
           <itemlayout height="230" width="300">
             <control type="image" description="THMBSBASE">
@@ -207,18 +207,6 @@
               <thumb>help/Off.png</thumb>
               <label>$LOCALIZE[1036]</label>
               <onclick>Skin.ToggleSetting(hidefav)</onclick>
-            </item>
-            <item id="356">
-              <visible>!Skin.HasSetting(3dmovs)</visible>
-              <thumb>help/Off.png</thumb>
-              <label>3D $LOCALIZE[342]</label>
-              <onclick>Skin.ToggleSetting(3dmovs)</onclick>
-            </item>
-            <item id="356">
-              <visible>Skin.HasSetting(3dmovs)</visible>
-              <thumb>icons/3d.png</thumb>
-              <label>3D $LOCALIZE[342]</label>
-              <onclick>Skin.ToggleSetting(3dmovs)</onclick>
             </item>
 			<item id="1014">
               <visible>System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
@@ -475,13 +463,13 @@
             <item id="1007" description="Watchlist">
               <visible>!Skin.HasSetting(hidewl)</visible>
               <thumb>icons/watchlist.png</thumb>
-              <label>Watchlist</label>
+              <label>31028</label>
               <onclick>Skin.ToggleSetting(hidewl)</onclick>
             </item>
             <item id="1007" description="Watchlist">
               <visible>Skin.HasSetting(hidewl)</visible>
               <thumb>help/Off.png</thumb>
-              <label>Watchlist</label>
+              <label>31028</label>
               <onclick>Skin.ToggleSetting(hidewl)</onclick>
             </item>
             <item id="1008" description="Programs">
@@ -637,61 +625,61 @@
       <content>
         <item id="1" description="ADDONS">
           <label>$INFO[system.addonTitle(Skin.String(ShelfMusic.1.Label))]</label>
-          <label2>addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.1.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfMusic.1.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="2" description="ADDONS">
           <label>$INFO[system.addonTitle(Skin.String(ShelfMusic.2.Label))]</label>
-          <label2>addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.2.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfMusic.2.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="3" description="ADDONS">
           <label>$INFO[system.addonTitle(Skin.String(ShelfMusic.3.Label))]</label>
-          <label2>addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.3.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfMusic.3.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="4" description="ADDONS">
           <label>$INFO[system.addonTitle(Skin.String(ShelfMusic.4.Label))]</label>
-          <label2>addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.4.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfMusic.4.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="5" description="ADDONS">
           <label>$INFO[system.addonTitle(Skin.String(ShelfMusic.5.Label))]</label>
-          <label2>addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.5.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfMusic.5.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="6" description="fav">
           <label>$INFO[Skin.String(ShelfMusic.6.Label)]</label>
-          <label2>favourite</label2>
+          <label2>31029</label2>
           <thumb>$INFO[Skin.String(ShelfMusic.6.Icon)]</thumb>
           <onclick>RunScript(script.favourites,property=ShelfMusic.6)</onclick>
         </item>
         <item id="7" description="fav">
           <label>$INFO[Skin.String(ShelfPictures.7.Label)]</label>
-          <label2>favourite</label2>
+          <label2>31029</label2>
           <thumb>$INFO[Skin.String(ShelfMusic.7.Icon)]</thumb>
           <onclick>RunScript(script.favourites,property=ShelfMusic.7)</onclick>
         </item>
         <item id="8" description="fav">
           <label>$INFO[Skin.String(ShelfPictures.8.Label)]</label>
-          <label2>favourite</label2>
+          <label2>31029</label2>
           <thumb>$INFO[Skin.String(ShelfMusic.8.Icon)]</thumb>
           <onclick>RunScript(script.favourites,property=ShelfMusic.8)</onclick>
         </item>
         <item id="9" description="fav">
           <label>$INFO[Skin.String(ShelfPictures.9.Label)]</label>
-          <label2>favourite</label2>
+          <label2>31029</label2>
           <thumb>$INFO[Skin.String(ShelfMusic.9.Icon)]</thumb>
           <onclick>RunScript(script.favourites,property=ShelfMusic.9)</onclick>
         </item>
         <item id="10" description="fav">
           <label>$INFO[Skin.String(ShelfPictures.10.Label)]</label>
-          <label2>favourite</label2>
+          <label2>31029</label2>
           <thumb>$INFO[Skin.String(ShelfMusic.10.Icon)]</thumb>
           <onclick>RunScript(script.favourites,property=ShelfMusic.10)</onclick>
         </item>
@@ -727,73 +715,73 @@
       <content>
         <item id="1">
           <label>$INFO[system.addonTitle(Skin.String(ShelfPictures.1.Label))]</label>
-          <label2>addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.1.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfPictures.1.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="2">
           <label>$INFO[system.addonTitle(Skin.String(ShelfPictures.2.Label))]</label>
-          <label2>addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.2.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfPictures.2.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="3">
           <label>$INFO[system.addonTitle(Skin.String(ShelfPictures.3.Label))]</label>
-          <label2>addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.3.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfPictures.3.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="4">
           <label>$INFO[system.addonTitle(Skin.String(ShelfPictures.4.Label))]</label>
-          <label2>addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.4.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfPictures.4.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="5">
           <label>$INFO[system.addonTitle(Skin.String(ShelfPictures.5.Label))]</label>
-          <label2>addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.5.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfPictures.5.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="6" description="script">
           <label>$INFO[system.addonTitle(Skin.String(ShelfPictures.6.Label))]</label>
-          <label2>script</label2>
+          <label2>24009</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.6.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfPictures.6.Label,xbmc.python.script)</onclick>
         </item>
         <item id="7" description="script">
           <label>$INFO[system.addonTitle(Skin.String(ShelfPictures.7.Label))]</label>
-          <label2>script</label2>
+          <label2>24009</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.7.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfPictures.7.Label,xbmc.python.script)</onclick>
         </item>
         <item id="8" description="script">
           <label>$INFO[system.addonTitle(Skin.String(ShelfPictures.8.Label))]</label>
-          <label2>script</label2>
+          <label2>24009</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.8.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfPictures.8.Label,xbmc.python.script)</onclick>
         </item>
         <item id="9" description="script">
           <label>$INFO[system.addonTitle(Skin.String(ShelfPictures.9.Label))]</label>
-          <label2>script</label2>
+          <label2>24009</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.9.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfPictures.9.Label,xbmc.python.script)</onclick>
         </item>
         <item id="10" description="script">
           <label>$INFO[system.addonTitle(Skin.String(ShelfPictures.10.Label))]</label>
-          <label2>script</label2>
+          <label2>24009</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.10.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfPictures.10.Label,xbmc.python.script)</onclick>
         </item>
         <item id="11" description="fav">
           <label>$INFO[Skin.String(ShelfPictures.11.Label)]</label>
-          <label2>favourite</label2>
+          <label2>31029</label2>
           <thumb>$INFO[Skin.String(ShelfPictures.11.Icon)]</thumb>
           <onclick>RunScript(script.favourites,property=ShelfPictures.11)</onclick>
         </item>
         <item id="12" description="fav">
           <label>$INFO[Skin.String(ShelfPictures.12.Label)]</label>
-          <label2>favourite</label2>
+          <label2>31029</label2>
           <thumb>$INFO[Skin.String(ShelfPictures.12.Icon)]</thumb>
           <onclick>RunScript(script.favourites,property=ShelfPictures.12)</onclick>
         </item>
@@ -829,109 +817,109 @@
       <content>
         <item id="1">
           <label>$INFO[system.addonTitle(Skin.String(ShelfAddons.1.Label))]</label>
-          <label2>Addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.1.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfAddons.1.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="2">
           <label>$INFO[system.addonTitle(Skin.String(ShelfAddons.2.Label))]</label>
-          <label2>Addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.2.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfAddons.2.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="3">
           <label>$INFO[system.addonTitle(Skin.String(ShelfAddons.3.Label))]</label>
-          <label2>Addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.3.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfAddons.3.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="4">
           <label>$INFO[system.addonTitle(Skin.String(ShelfAddons.4.Label))]</label>
-          <label2>Addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.4.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfAddons.4.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="5">
           <label>$INFO[system.addonTitle(Skin.String(ShelfAddons.5.Label))]</label>
-          <label2>Addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.5.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfAddons.5.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="6">
           <label>$INFO[system.addonTitle(Skin.String(ShelfAddons.6.Label))]</label>
-          <label2>Addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.6.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfAddons.6.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="7">
           <label>$INFO[system.addonTitle(Skin.String(ShelfAddons.7.Label))]</label>
-          <label2>Addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.7.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfAddons.7.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="8">
           <label>$INFO[system.addonTitle(Skin.String(ShelfAddons.8.Label))]</label>
-          <label2>Addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.8.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfAddons.8.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="9">
           <label>$INFO[system.addonTitle(Skin.String(ShelfAddons.9.Label))]</label>
-          <label2>Addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.9.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfAddons.9.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="10">
           <label>$INFO[system.addonTitle(Skin.String(ShelfAddons.10.Label))]</label>
-          <label2>Addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.10.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfAddons.10.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="11">
           <label>$INFO[system.addonTitle(Skin.String(ShelfAddons.11.Label))]</label>
-          <label2>Script</label2>
+          <label2>24009</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.11.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfAddons.11.Label,xbmc.python.script)</onclick>
         </item>
         <item id="12">
           <label>$INFO[system.addonTitle(Skin.String(ShelfAddons.12.Label))]</label>
-          <label2>Script</label2>
+          <label2>24009</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.12.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfAddons.12.Label,xbmc.python.script)</onclick>
         </item>
         <item id="13">
           <label>$INFO[system.addonTitle(Skin.String(ShelfAddons.13.Label))]</label>
-          <label2>Script</label2>
+          <label2>24009</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.13.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfAddons.13.Label,xbmc.python.script)</onclick>
         </item>
         <item id="14">
           <label>$INFO[system.addonTitle(Skin.String(ShelfAddons.14.Label))]</label>
-          <label2>Script</label2>
+          <label2>24009</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.14.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfAddons.14.Label,xbmc.python.script)</onclick>
         </item>
         <item id="15">
           <label>$INFO[system.addonTitle(Skin.String(ShelfAddons.15.Label))]</label>
-          <label2>Script</label2>
+          <label2>24009</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.15.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfAddons.15.Label,xbmc.python.script)</onclick>
         </item>
         <item id="16">
           <label>$INFO[Skin.String(ShelfAddons.16.Label)]</label>
-          <label2>Favourite</label2>
+          <label2>31029</label2>
           <thumb>$INFO[Skin.String(ShelfAddons.16.Icon)]</thumb>
           <onclick>RunScript(script.favourites,property=ShelfAddons.16)</onclick>
         </item>
         <item id="17">
           <label>$INFO[Skin.String(ShelfAddons.17.Label)]</label>
-          <label2>Favourite</label2>
+          <label2>31029</label2>
           <thumb>$INFO[Skin.String(ShelfAddons.17.Icon)]</thumb>
           <onclick>RunScript(script.favourites,property=ShelfAddons.17)</onclick>
         </item>
         <item id="18">
           <label>$INFO[Skin.String(ShelfAddons.18.Label)]</label>
-          <label2>Favourite</label2>
+          <label2>31029</label2>
           <thumb>$INFO[Skin.String(ShelfAddons.18.Icon)]</thumb>
           <onclick>RunScript(script.favourites,property=ShelfAddons.18)</onclick>
         </item>
@@ -957,109 +945,109 @@
       <content>
         <item id="1">
           <label>$INFO[Skin.String(ShelfVaddons.1.Label)]</label>
-          <label2>Addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.1.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfVaddons.1.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="2">
           <label>$INFO[Skin.String(ShelfVaddons.2.Label)]</label>
-          <label2>Addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.2.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfVaddons.2.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="3">
           <label>$INFO[Skin.String(ShelfVaddons.3.Label)]</label>
-          <label2>Addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.3.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfVaddons.3.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="4">
           <label>$INFO[Skin.String(ShelfVaddons.4.Label)]</label>
-          <label2>Addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.4.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfVaddons.4.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="5">
           <label>$INFO[Skin.String(ShelfVaddons.5.Label)]</label>
-          <label2>Addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.5.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfVaddons.5.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="6">
           <label>$INFO[Skin.String(ShelfVaddons.6.Label)]</label>
-          <label2>Addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.6.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfVaddons.6.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="7">
           <label>$INFO[Skin.String(ShelfVaddons.7.Label)]</label>
-          <label2>Addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.7.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfVaddons.7.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="8">
           <label>$INFO[Skin.String(ShelfVaddons.8.Label)]</label>
-          <label2>Addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.8.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfVaddons.8.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="9">
           <label>$INFO[Skin.String(ShelfVaddons.9.Label)]</label>
-          <label2>Addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.9.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfVaddons.9.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="10">
           <label>$INFO[Skin.String(ShelfVaddons.10.Label)]</label>
-          <label2>Addon</label2>
+          <label2>24000</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.10.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfVaddons.10.Label,xbmc.python.pluginsource)</onclick>
         </item>
         <item id="11">
           <label>$INFO[Skin.String(ShelfVaddons.11.Label)]</label>
-          <label2>Script</label2>
+          <label2>24009</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.11.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfVaddons.11.Label,xbmc.python.script)</onclick>
         </item>
         <item id="12">
           <label>$INFO[Skin.String(ShelfVaddons.12.Label)]</label>
-          <label2>Script</label2>
+          <label2>24009</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.12.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfVaddons.12.Label,xbmc.python.script)</onclick>
         </item>
         <item id="13">
           <label>$INFO[Skin.String(ShelfVaddons.13.Label)]</label>
-          <label2>Script</label2>
+          <label2>24009</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.13.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfVaddons.13.Label,xbmc.python.script)</onclick>
         </item>
         <item id="14">
           <label>$INFO[Skin.String(ShelfVaddons.14.Label)]</label>
-          <label2>Script</label2>
+          <label2>24009</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.14.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfVaddons.14.Label,xbmc.python.script)</onclick>
         </item>
         <item id="15">
           <label>$INFO[Skin.String(ShelfVaddons.15.Label)]</label>
-          <label2>Script</label2>
+          <label2>24009</label2>
           <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.15.Label))]</thumb>
           <onclick>Skin.SetAddon(ShelfVaddons.15.Label,xbmc.python.script)</onclick>
         </item>
         <item id="16">
           <label>$INFO[Skin.String(ShelfVaddons.16.Label)]</label>
-          <label2>Favourite</label2>
+          <label2>31029</label2>
           <thumb>$INFO[Skin.String(ShelfVaddons.16.Icon)]</thumb>
           <onclick>RunScript(script.favourites,property=ShelfVaddons.16)</onclick>
         </item>
         <item id="17">
           <label>$INFO[Skin.String(ShelfVaddons.17.Label)]</label>
-          <label2>Favourite</label2>
+          <label2>31029</label2>
           <thumb>$INFO[Skin.String(ShelfVaddons.17.Icon)]</thumb>
           <onclick>RunScript(script.favourites,property=ShelfVaddons.17)</onclick>
         </item>
         <item id="18">
           <label>$INFO[Skin.String(ShelfVaddons.18.Label)]</label>
-          <label2>Favourite</label2>
+          <label2>31029</label2>
           <thumb>$INFO[Skin.String(ShelfVaddons.18.Icon)]</thumb>
           <onclick>RunScript(script.favourites,property=ShelfVaddons.18)</onclick>
         </item>
@@ -1105,7 +1093,7 @@
         <posy>321</posy>
         <width>690</width>
         <height>52</height>
-        <label>[B]Favourite Options[/B]</label>
+        <label>[B]$LOCALIZE[31029] $LOCALIZE[33063][/B]</label>
         <align>center</align>
         <aligny>center</aligny>
         <font>size36</font>
@@ -1120,8 +1108,8 @@
           <posy>150</posy>
           <width>525</width>
           <height>450</height>
-          <onleft>-</onleft>
-          <onright>-</onright>
+          <onleft>noop</onleft>
+          <onright>noop</onright>
           <onup>9000</onup>
           <ondown>9000</ondown>
           <itemgap>0</itemgap>
@@ -1189,7 +1177,7 @@
         <align>center</align>
         <textcolor>Grey</textcolor>
         <font>Size26</font>
-        <label>Current Location:</label>
+        <label>$LOCALIZE[35500]:</label>
       </control>
       <control type="label">
         <posx>450</posx>
@@ -1207,12 +1195,12 @@
         <width>300</width>
         <height>60</height>
         <align>center</align>
-        <label>SETTINGS</label>
+        <label>5</label>
         <enable>!Skin.HasSetting(hidewtr)</enable>
         <onclick>activatewindow(weathersettings)</onclick>
       </control>
     </control>
-    <control type="group" id="521" description="WEATHER">
+    <!--control type="group" id="521">
       <posy>60</posy>
       <posx>60</posx>
       <visible>Container(50).HasFocus(356)</visible>
@@ -1226,6 +1214,6 @@
         <font>Size26</font>
         <label>$LOCALIZE[31061]</label>
       </control>
-    </control>
+    </control-->
   </controls>
 </window>

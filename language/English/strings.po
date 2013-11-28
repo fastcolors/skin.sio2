@@ -131,12 +131,12 @@ msgid "Last Added"
 msgstr "Last Added"
 
 msgctxt "#31028"
-msgid "do not translate this"
-msgstr "do not translate this"
+msgid "Watchlist"
+msgstr "Watchlist"
 
 msgctxt "#31029"
-msgid "Adds FUSION as a source for installing 3rd Party Addons as Zip Files"
-msgstr "Adds FUSION as a source for installing 3rd Party Addons as Zip Files"
+msgid "Favourite"
+msgstr "Favourite"
 
 msgctxt "#31030"
 msgid "Custom Shelf Icon"
@@ -183,16 +183,8 @@ msgid "Shelf items"
 msgstr "Shelf items"
 
 msgctxt "#31041"
-msgid "Scrollbars"
-msgstr "Scrollbars"
-
-msgctxt "#31042"
-msgid "Active"
-msgstr "Active"
-
-msgctxt "#31043"
-msgid "Passive"
-msgstr "Passive"
+msgid "Active Scrollbars"
+msgstr "Active Scrollbars"
 
 msgctxt "#31044"
 msgid "View options dialog"
@@ -250,10 +242,6 @@ msgctxt "#31057"
 msgid "Replace Item"
 msgstr "Replace Item"
 
-msgctxt "#31058"
-msgid "-"
-msgstr "-"
-
 msgctxt "#31059"
 msgid "LiveTV"
 msgstr "LiveTv"
@@ -263,97 +251,25 @@ msgid "Add"
 msgstr "Add"
 
 msgctxt "#31061"
-msgid "In Order for this to work You need to create a Smart Playlist for 3D Movies and name it 3D. One good way to do it is to add a separate source for 3D content, and then create the filter for the playlist using (Path) - (Contains) and the name of the source folder."
-msgstr "In Order for this to work You need to create a Smart Playlist for 3D Movies and name it 3D. One good way to do it is to add a separate source for 3D content, and then create the filter for the playlist using (Path) - (Contains) and the name of the source folder."
+msgid "Cinema Experience"
+msgstr "Cinema Experience"
 
 msgctxt "#31062"
 msgid "Select Lyrics Add-on"
 msgstr "Select Lyrics Add-on"
-
-msgctxt "#31063"
-msgid "Install Fusion"
-msgstr "Install Fusion"
 
 msgctxt "#31064"
 msgid "Fullscreen"
 msgstr "Fullscreen"
 
 msgctxt "#31065"
-msgid "Delete Cache"
-msgstr "Delete Cache"
+msgid "Started Movies"
+msgstr "Started Movies"
 
 msgctxt "#31066"
-msgid "Delete Thumbnails"
-msgstr "Delete Thumbnails"
+msgid "Recommended Episodes"
+msgstr "Recommended Episodes"
 
 msgctxt "#31067"
-msgid "Remove Downloaded Packages"
-msgstr "Remove Downloaded Packages"
-
-msgctxt "#31068"
-msgid "Advanced Maintenance Tools, used to clean up after XBMC. Or to fix some annoying issues. To be used carefully.[CR][CR]Brought to You by Mikey1234 and Fastcolors."
-msgstr "Advanced Maintenance Tools, used to clean up after XBMC. Or to fix some annoying issues. To be used carefully.[CR][CR]Brought to You by Mikey1234 and Fastcolors."
-
-msgctxt "#31069"
-msgid "Maintenance Tools"
-msgstr "Maintenance Tools"
-
-msgctxt "#31070"
-msgid "[COLOR FFFF0000]USE THESE TOOLS ONLY IF YOU KNOW WHAT YOU'RE DOING AND AT YOUR OWN RISK!!![/COLOR] WE DON'T TAKE ANY RESPONSABILITY FOR THE POSSIBLE OUTCOME. [COLOR FFFF0000]MAY RESULT IN THE MALFUNCTIONING OF XBMC.[/COLOR][CR][CR]BROUGHT TO YOU BY MIKEY1234 and FASTCOLORS."
-msgstr "[COLOR FFFF0000]USE THESE TOOLS ONLY IF YOU KNOW WHAT YOU'RE DOING AND AT YOUR OWN RISK!!![/COLOR] WE DON'T TAKE ANY RESPONSABILITY FOR THE POSSIBLE OUTCOME. [COLOR FFFF0000]MAY RESULT IN THE MALFUNCTIONING OF XBMC.[/COLOR][CR][CR]BROUGHT TO YOU BY MIKEY1234 and FASTCOLORS."
-
-msgctxt "#31071"
-msgid "Delete MetaHandler Cache"
-msgstr "Delete MetaHandler Cache"
-
-msgctxt "#31072"
-msgid "Install XBMCHub Repository"
-msgstr "Install XBMCHub Repository"
-
-msgctxt "#31073"
-msgid "All Done."
-msgstr "All Done."
-
-msgctxt "#31074"
-msgid "Are You Sure?"
-msgstr "Are You Sure?"
-
-msgctxt "#31075"
-msgid "Remove cache.db for XBMC and most Addons"
-msgstr "Remove cache.db for XBMC and most Addons"
-
-msgctxt "#31076"
-msgid "Remove Corrupted Metadata"
-msgstr "Remove Corrupted Metadata"
-
-msgctxt "#31078"
-msgid "restart XBMC for changes to take effect"
-msgstr "restart XBMC for changes to take effect"
-
-msgctxt "#31079"
-msgid "select Install from zip using Fusion as Source [CR]Would You like to open Addon Manager now?"
-msgstr "select Install from zip using Fusion as Source [CR]Would You like to open Addon Manager now?"
-
-msgctxt "#31080"
-msgid "Delete AdvancedSettings"
-msgstr "Delete AdvancedSettings"
-
-msgctxt "#31081"
-msgid "Remove Addons"
-msgstr "Remove Addons"
-
-msgctxt "#31082"
-msgid "Video Guides"
-msgstr "Video Guides"
-
-msgctxt "#31083"
-msgid "Maintenance"
-msgstr "Maintenance"
-
-msgctxt "#31084"
-msgid "Remove Video Database"
-msgstr "Remove Video Database"
-
-msgctxt "#31085"
-msgid "Remove Music Database"
-msgstr "Remove Music Database"
+msgid "Top Albums"
+msgstr "Top Albums"

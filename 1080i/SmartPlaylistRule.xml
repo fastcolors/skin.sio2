@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="129">
   <defaultcontrol always="true">9001</defaultcontrol>
   <allowoverlay>no</allowoverlay>
@@ -82,7 +82,7 @@
         <onright>20</onright>
         <ondown>9000</ondown>
         <texturenofocus border="8">images/Black.png</texturenofocus>
-        <texturefocus flipy="true" border="8">Images/Buttonselect.png</texturefocus>
+        <texturefocus flipy="true" border="8">images/Buttonselect.png</texturefocus>
       </control>
       <control type="button" id="20">
         <description>Browse Button</description>

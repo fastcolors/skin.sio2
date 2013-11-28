@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1114">
   <defaultcontrol always="true">9000</defaultcontrol>
   <include>DialogOpenClose</include>
@@ -29,8 +29,8 @@
         <control type="grouplist" id="9000">
           <width>525</width>
           <height>450</height>
-          <onleft>-</onleft>
-          <onright>-</onright>
+          <onleft>noop</onleft>
+          <onright>noop</onright>
           <onup>9000</onup>
           <ondown>9000</ondown>
           <itemgap>0</itemgap>

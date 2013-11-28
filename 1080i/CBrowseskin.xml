@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--NAVI X-->
+<?xml version="1.0" encoding="UTF-8"?><!--NAVI X-->
 <window>
   <defaultcontrol>9000</defaultcontrol>
   <allowoverlays>false</allowoverlays>
@@ -10,7 +9,7 @@
       <posy>0</posy>
       <width>1920</width>
       <height>1080</height>
-      <texture>Images/Black.png</texture>
+      <texture>images/Black.png</texture>
     </control>
     <control type="label" id="141">
       <description>label_title</description>

@@ -54,7 +54,6 @@
     <value condition="Window.IsActive(MyPics.xml)">$LOCALIZE[1]</value>
     <value condition="Window.IsActive(MyPVR.xml) + [Control.HasFocus(13) | Control.HasFocus(34) | Control.HasFocus(14) | Control.HasFocus(35) | Control.HasFocus(17) | Control.HasFocus(36)]">$INFO[Control.GetLabel(29)]</value>
     <value condition="Window.IsActive(MyPVR.xml)">$INFO[Control.GetLabel(30)]</value>
-    <value condition="Window.IsActive(1717)">$LOCALIZE[31069]</value>
     <value>$INFO[Container.FolderName]</value>
   </variable>
   <variable name="TopLabel" description="Infos">
@@ -65,7 +64,7 @@
     <value condition="Container.Content(songs)">$INFO[ListItem.Album]</value>
     <value condition="Container.Content(MusicVideos)">$INFO[ListItem.Label]</value>
     <value condition="Container.Content(Movies) + IsEmpty(ListItem.Trailer)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31038]]$VAR[MPAAS, • Rated ]</value>
-    <value condition="Container.Content(Movies) + !IsEmpty(ListItem.Trailer)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31038]]$VAR[Trailer, • ]$VAR[MPAAS, • Rated ]</value>
+    <value condition="Container.Content(Movies) + !IsEmpty(ListItem.Trailer)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31038]] • $LOCALIZE[20410, • ]$VAR[MPAAS, • Rated ]</value>
     <value condition="Container.Content(Seasons) | Container.Content(TVShows)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20453]]$INFO[ListItem.MPAA, • ]</value>
     <value>$INFO[ListItem.Label2]</value>
   </variable>
@@ -113,11 +112,12 @@
     <value>$INFO[Player.Art(tvshow.poster)]</value>
   </variable>
   <variable name="Locandine">
-  <value condition="Container.Content(episodes) + !IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
+  <value condition="Container.Content(episodes)">$INFO[ListItem.Art(tvshow.poster)]</value>
     <value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
-    <value>$INFO[ListItem.Icon]</value>
+    <value condition="IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Icon]</value>
+  </variable>
    <variable name="fanart">
-  <value condition="IsEmpty(ListItem.Art(fanart) | Container.Content(Albums) | Container.Content(episodes)">$INFO[ListItem.Icon]</value>
+  <value condition="IsEmpty(ListItem.Art(fanart)) | Container.Content(Albums) | Container.Content(episodes)">$INFO[ListItem.Icon]</value>
   <value>$INFO[ListItem.Art(fanart)]</value>
   </variable>
 </includes>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="134">
   <defaultcontrol always="true">450</defaultcontrol>
   <allowoverlay>no</allowoverlay>
@@ -16,7 +16,7 @@
       <control type="fixedlist" id="450">
         <width>802</width>
         <height>888</height>
-        <onleft>-</onleft>
+        <onleft>noop</onleft>
         <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
         <onup>450</onup>
         <ondown>450</ondown>
@@ -93,7 +93,7 @@
       <posy>135</posy>
       <height>870</height>
       <onleft>450</onleft>
-      <onright>-</onright>
+      <onright>noop</onright>
     </control>
   </controls>
 </window>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="109">
   <defaultcontrol always="true">21</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
@@ -31,7 +31,7 @@
       <posy>210</posy>
       <width>465</width>
       <height>75</height>
-      <texture border="8" flipy="true">Images/Buttonselect.png</texture>
+      <texture border="8" flipy="true">images/Buttonselect.png</texture>
     </control>
     <control type="label" id="4" description="Edit Text">
       <posx>144</posx>

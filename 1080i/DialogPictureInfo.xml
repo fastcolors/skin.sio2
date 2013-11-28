@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="139">
   <defaultcontrol always="true">5</defaultcontrol>
   <allowoverlay>no</allowoverlay>
@@ -27,11 +27,11 @@
         <posy>120</posy>
         <width>930</width>
         <height>770</height>
-        <onleft>-</onleft>
+        <onleft>noop</onleft>
         <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
         <onright condition="!Skin.HasSetting(Scrollbars_Active)">9000</onright>
-        <onup>-</onup>
-        <ondown>-</ondown>
+        <onup>noop</onup>
+        <ondown>noop</ondown>
         <pagecontrol>60</pagecontrol>
         <itemlayout height="70">
           <control type="label">
@@ -55,7 +55,7 @@
           <control type="image">
             <height>70</height>
             <width>930</width>
-            <texture border="8">Images/Buttonselect.png</texture>
+            <texture border="8">images/Buttonselect.png</texture>
           </control>
           <control type="label">
             <posx>30</posx>
@@ -79,7 +79,7 @@
       <posy>180</posy>
       <height>770</height>
       <onleft>5</onleft>
-      <onright>-</onright>
+      <onright>noop</onright>
     </control>
   </controls>
 </window>

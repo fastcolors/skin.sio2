@@ -1,21 +1,10 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="3">
   <defaultcontrol always="true">20</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <include>OpenClose</include>
-  <onunload condition="!Skin.HasSetting(FirstRun)">Skin.SetBool(FirstRun)</onunload>
   <controls>
     <include>BlackBackground</include>
-    <control type="label">
-      <visible>!Skin.HasSetting(FirstRun) + Skin.HasSetting(FusionHelp) + !Skin.HasSetting(FusionBack)</visible>
-      <posx>300</posx>
-      <posy>80</posy>
-      <width>500</width>
-      <height>50</height>
-      <font>Size42B</font>
-      <textcolor>Yellow</textcolor>
-      <label>SELECT $LOCALIZE[1026]</label>
-    </control>
     <include>Header</include>
     <control type="label" description="Heading">
       <include>Heading</include>
@@ -99,7 +88,7 @@
             <visible>Control.HasFocus(20)</visible>
             <width>830</width>
             <height>60</height>
-            <texture border="8">Images/Buttonselect.png</texture>
+            <texture border="8">images/Buttonselect.png</texture>
           </control>
         </focusedlayout>
       </control>
@@ -183,7 +172,7 @@
             <posx>10</posx>
             <width>830</width>
             <height>60</height>
-            <texture border="8">Images/Buttonselect.png</texture>
+            <texture border="8">images/Buttonselect.png</texture>
           </control>
         </focusedlayout>
       </control>
@@ -210,18 +199,6 @@
       <height>810</height>
       <onleft>21</onleft>
       <onright>21</onright>
-    </control>
-    <control type="label">
-      <visible>!Skin.HasSetting(FirstRun) + Skin.HasSetting(FusionHelp) + Skin.HasSetting(FusionBack)</visible>
-      <posx>300</posx>
-      <posy>80</posy>
-      <width>1300</width>
-      <height>200</height>
-      <font>Size42B</font>
-      <wrapmultiline>true</wrapmultiline>
-      <textcolor>Yellow</textcolor>
-      <align>center</align>
-      <label>GO BACK TO ADDONS AND SELECT "INSTALL FROM ZIP FILE" SELECT "FUSION" AND INSTALL ANY REPOSITORIES YOU'D LIKE TO!</label>
     </control>
   </controls>
 </window>

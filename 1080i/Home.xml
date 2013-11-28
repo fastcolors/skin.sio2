@@ -35,11 +35,11 @@
       <onclick  condition="Control.IsVisible(311)">Skin.ToggleSetting(MoviesShelfWL)</onclick>
       <onclick  condition="Control.IsVisible(312)">Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
       <onclick>ReplaceWindow(0)</onclick>
-      <onup>-</onup>
+      <onup>noop</onup>
       <ondown condition="Control.IsVisible(311)">311</ondown>
       <ondown condition="Control.IsVisible(312)">312</ondown>
-      <onleft>-</onleft>
-      <onright>-</onright>
+      <onleft>noop</onleft>
+      <onright>noop</onright>
     </control>
     <control type="panel" id="9000" description="ICONE">
       <animation condition="!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-590" time="220">Conditonal</animation>
@@ -50,14 +50,14 @@
       <onleft>9000</onleft>
       <onright>9000</onright>
       <onup>700</onup>
-      <ondown>-</ondown>
+      <ondown>noop</ondown>
       <orientation>vertical</orientation>
       <scrolltime tween="sine" easing="inout">280</scrolltime>
       <itemlayout height="250" width="368">
 	  <control type="image" description="THMBSCOLOR">
           <width>368</width>
           <height>250</height>
-          <texture>Images/MenuIconShadow.png</texture>
+          <texture>images/MenuIconShadow.png</texture>
         </control>
         <control type="image" description="THMBSCOLOR">
           <posx>30</posx>
@@ -112,7 +112,7 @@
 	   <control type="image" description="THMBSCOLOR">
           <width>368</width>
           <height>250</height>
-          <texture>Images/MenuIconShadow.png</texture>
+          <texture>images/MenuIconShadow.png</texture>
         </control>
         <control type="image" description="THMBSCOLOR">
           <posx>30</posx>
@@ -169,12 +169,12 @@
           <visible>Skin.HasSetting(hidemovie) + Skin.HasSetting(hidetv)  + !Skin.HasSetting(hidevaddons)</visible>
           <thumb>icons/vaddons.png</thumb>
           <label>$LOCALIZE[157] $LOCALIZE[24001]</label>
-          <onclick>-</onclick>
-          <onclick>-</onclick>
+          <onclick>noop</onclick>
+          <onclick>noop</onclick>
         </item>
         <item id="340">
           <visible>!Skin.HasSetting(hidemovie)</visible>
-          <thumb>icons/Movies.png</thumb>
+          <thumb>icons/movies.png</thumb>
           <label>342</label>
           <property name="color">icons/lightblue.png</property>
           <onclick condition="Library.HasContent(Movies)">ActivateWindow(Videos,MovieTitles,return)</onclick>
@@ -182,7 +182,7 @@
         </item>
         <item id="341">
           <visible>!Skin.HasSetting(hidetv)</visible>
-          <thumb>icons/TVshows.png</thumb>
+          <thumb>icons/tvshows.png</thumb>
           <label>20343</label>
           <property name="color">icons/purple.png</property>
           <onclick condition="Library.HasContent(TVShows)">ActivateWindow(VideoLibrary,TVShowTitles,return)</onclick>
@@ -191,7 +191,7 @@
 		
         <item id="342">
           <visible>!Skin.HasSetting(hidemusic)</visible>
-          <thumb>icons/Music.png</thumb>
+          <thumb>icons/music.png</thumb>
           <label>2</label>
           <property name="color">icons/Orange.png</property>
           <onclick>ActivateWindow(502,$INFO[Skin.String(MusicLink)])</onclick>
@@ -199,14 +199,14 @@
         </item>
         <item id="343">
           <visible>!Skin.HasSetting(hideaddon)</visible>
-          <thumb>icons/Addons.png</thumb>
+          <thumb>icons/addons.png</thumb>
           <label>24001</label>
           <property name="color">icons/Green.png</property>
           <onclick>ActivateWindow(1118)</onclick>
         </item>
         <item id="344">
           <visible>!Skin.HasSetting(hidepic)</visible>
-          <thumb>icons/Photos.png</thumb>
+          <thumb>icons/photos.png</thumb>
           <label>1</label>
           <property name="color">icons/darkblue.png</property>
           <onclick>ActivateWindow(2)</onclick>
@@ -240,13 +240,13 @@
 		  <visible>Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
         </item>
         
-		 <item id="356">
+		 <!--item id="356">
           <visible>Skin.HasSetting(3dmovs)</visible>
           <thumb>icons/3d.png</thumb>
 		  <label>3D $LOCALIZE[342]</label>
           <property name="color">icons/lightblue.png</property>
-          <onclick>ActivateWindow(10025,"special://profile/playlists/video/3D.xsp",return)</onclick>
-        </item>
+          <onclick></onclick>
+        </item-->
         <item id="601" description="Custom Fvourite">
           <visible>!IsEmpty(Skin.String(HomeFav.1.Label))</visible>
           <thumb>$INFO[Skin.String(HomeFav.1.Icon)]</thumb>
@@ -382,7 +382,7 @@
         <item id="346">
           <visible>!Skin.HasSetting(hidewl)</visible>
           <thumb>icons/watchlist.png</thumb>
-          <label>WatchList</label>
+          <label>31028</label>
           <property name="color">icons/dvdcolor.png</property>
           <onclick>ActivateWindow(1113)</onclick>
         </item>
@@ -452,7 +452,7 @@
           <thumb>icons/quits.png</thumb>
           <label>351</label>
           <property name="color">icons/darkblue.png</property>
-          <onclick>ActivateWindow(shutdownmenu)</onclick>
+          <onclick>ActivateWindow(1191)</onclick>
         </item>
       </content>
     </control>
@@ -538,89 +538,52 @@
       </control>
     </control>
     <control type="group" description="Player Info">
-      <visible>Player.HasMedia</visible>
+      <visible>Player.HasAudio</visible>
       <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
-      <include>VisibleFade</include>
-      <animation effect="fade" start="100" end="0" time="100" condition="Control.HasFocus(340)">conditional</animation>
-      <posx>15</posx>
-      <posy>960</posy>
+      <animation effect="slide" tween="Sine" easing="Out" start="430,0" end="0,0" time="600" delay="200">VisibleChange</animation>
+      <posx>1500</posx>
+      <posy>440</posy>
       <control type="image" description="Playing BG">
-        <width>390</width>
+        <width>430</width>
         <height>105</height>
-        <texture border="14">images/ProgressBG.png</texture>
+        <texture border="20">images/ProgressBG.png</texture>
       </control>
       <control type="group">
         <control type="image">
-          <posx>15</posx>
+          <posx>18</posx>
           <posy>15</posy>
           <width>75</width>
           <height>75</height>
           <texture>$INFO[MusicPlayer.Cover]</texture>
           <aspectratio>keep</aspectratio>
         </control>
-        <control type="image">
-          <posx>15</posx>
-          <posy>21</posy>
-          <width>75</width>
-          <height>75</height>
-          <texture>$INFO[VideoPlayer.Cover]</texture>
-          <aspectratio>keep</aspectratio>
-        </control>
         <control type="label">
-          <posx>105</posx>
+          <posx>110</posx>
           <posy>9</posy>
           <aligny>center</aligny>
-          <width>261</width>
+          <width>300</width>
           <height>36</height>
           <font>size24</font>
           <textcolor>White2</textcolor>
           <label>$INFO[MusicPlayer.Title]</label>
         </control>
         <control type="label">
-          <posx>105</posx>
+          <posx>110</posx>
           <posy>36</posy>
           <aligny>center</aligny>
-          <width>261</width>
+          <width>300</width>
           <height>36</height>
           <font>size21</font>
           <label>$INFO[MusicPlayer.Artist]</label>
         </control>
         <control type="label">
-          <posx>105</posx>
+          <posx>110</posx>
           <posy>60</posy>
           <aligny>center</aligny>
-          <width>261</width>
+          <width>300</width>
           <height>36</height>
           <font>size21</font>
           <label>$INFO[MusicPlayer.Album]</label>
-        </control>
-        <control type="label">
-          <posx>105</posx>
-          <posy>9</posy>
-          <aligny>center</aligny>
-          <width>261</width>
-          <height>36</height>
-          <font>size24</font>
-          <textcolor>White2</textcolor>
-          <label>$INFO[VideoPlayer.Title]</label>
-        </control>
-        <control type="label">
-          <posx>105</posx>
-          <posy>36</posy>
-          <aligny>center</aligny>
-          <width>261</width>
-          <height>36</height>
-          <font>size21</font>
-          <label>$INFO[VideoPlayer.Artist]</label>
-        </control>
-        <control type="label">
-          <posx>105</posx>
-          <posy>60</posy>
-          <aligny>center</aligny>
-          <width>261</width>
-          <height>36</height>
-          <font>size21</font>
-          <label>$INFO[VideoPlayer.Album]</label>
         </control>
       </control>
     </control>
@@ -642,7 +605,7 @@
       <posx>357</posx>
       <width>2</width>
       <height>500</height>
-      <texture>Images/LineV.png</texture>
+      <texture>images/LineV.png</texture>
     </control>
   </controls>
 </window>

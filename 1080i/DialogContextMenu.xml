@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="106">
   <defaultcontrol always="true">996</defaultcontrol>
   <allowoverlay>no</allowoverlay>
@@ -31,7 +31,7 @@
       <focusedcolor>White2</focusedcolor>
       <texturefocus border="5">images/ContextButton.png</texturefocus>
       <texturenofocus>-</texturenofocus>
-	<label>Cinema</label>
+	<label>31061</label>
 	<onclick>XBMC.RunScript(script.cinema.experience)</onclick>
 	</control>
     </control>

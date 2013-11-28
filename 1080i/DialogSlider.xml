@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="145">
   <defaultcontrol always="true">11</defaultcontrol>
   <allowoverlay>no</allowoverlay>
@@ -27,8 +27,8 @@
         <posx>210</posx>
         <posy>120</posy>
         <width>390</width>
-        <onup>-</onup>
-        <ondown>-</ondown>
+        <onup>noop</onup>
+        <ondown>noop</ondown>
         <onleft>11</onleft>
         <onright>11</onright>
         <texturesliderbar>images/slider_bg.png</texturesliderbar>

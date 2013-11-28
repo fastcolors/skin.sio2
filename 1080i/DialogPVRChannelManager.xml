@@ -49,7 +49,7 @@
 				<posy>120</posy>
 				<width>8</width>
 				<height>900</height>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onright>20</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
@@ -81,7 +81,7 @@
       <posy>-18</posy>
       <width>820</width>
       <height>126</height>
-      <texture border="32">images/slider.png</texture>
+      <texture border="32">images/Slider.png</texture>
       <aspectratio>stretch</aspectratio>
 			</control>
               <control type="label" description="Main Label">
@@ -98,7 +98,7 @@
 				<posx>1020</posx>
 				<posy>100</posy>
 				<height>900</height>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<onleft>20</onleft>
 				<ondown>9000</ondown>
 				<aligny>center</aligny>

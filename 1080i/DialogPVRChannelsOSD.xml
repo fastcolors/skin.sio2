@@ -6,7 +6,7 @@
 	<posy>310</posy>
 	<height>760</height>
 	<width>1920</width>
-	<texture>images/black.png</texture>
+	<texture>images/Black.png</texture>
 	<colordiffuse>77FFFFFF</colordiffuse>
 	</control>
 		<control type="group">
@@ -86,7 +86,7 @@
         <height>480</height>
         <onup>11</onup>
         <ondown>11</ondown>
-        <onleft>-</onleft>
+        <onleft>noop</onleft>
         <onright>60</onright>
         <pagecontrol>70</pagecontrol>
         <scrolltime>200</scrolltime>
@@ -277,7 +277,7 @@
         <posy>60</posy>
         <height>480</height>
         <onleft>11</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
         <showonepage>false</showonepage>
         <orientation>vertical</orientation>
       </control>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="503">
   <defaultcontrol allways="true">50</defaultcontrol>
   <allowoverlay>no</allowoverlay>
@@ -51,7 +51,7 @@
         <posy>99</posy>
         <width>600</width>
         <height>69</height>
-        <texture border="8">Images/Buttonselect.png</texture>
+        <texture border="8">images/Buttonselect.png</texture>
         <aspectratio>stretch</aspectratio>
         <animation condition="!Control.HasFocus(50)" effect="fade" start="100" end="0" time="180" reversible="true">Conditional</animation>
         <animation condition="Container(50).Position(0)" effect="slide" start="0,0" end="0,0" time="180" reversible="true">Conditional</animation>
@@ -251,7 +251,7 @@
         <posy>96</posy>
         <width>600</width>
         <height>69</height>
-        <texture border="8">Images/Buttonselect.png</texture>
+        <texture border="8">images/Buttonselect.png</texture>
         <aspectratio>stretch</aspectratio>
         <animation condition="!Control.HasFocus(100)" effect="fade" start="100" end="0" time="180" reversible="true">Conditional</animation>
         <!--FADE-->
@@ -309,7 +309,7 @@
       <posy>190</posy>
       <height>780</height>
       <width>30</width>
-      <onleft>-</onleft>
+      <onleft>noop</onleft>
       <onright>50</onright>
       <animation type="Conditional" condition="!Control.HasFocus(151) + !Container.Scrolling">
         <effect type="fade" start="100" end="40" time="200" />
@@ -321,7 +321,7 @@
       <height>780</height>
       <width>30</width>
       <onleft>100</onleft>
-      <onright>-</onright>
+      <onright>noop</onright>
       <animation type="Conditional" condition="!Control.HasFocus(150) + !Container.Scrolling">
         <effect type="fade" start="100" end="40" time="200" />
       </animation>

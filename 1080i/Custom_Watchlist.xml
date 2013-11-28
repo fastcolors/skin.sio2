@@ -10,7 +10,7 @@
       <height>30</height>
       <width>600</width>
       <font>Size42B</font>
-      <label>Watchlists</label>
+      <label>$LOCALIZE[31028]</label>
     </control>
     <include>Header</include>
     <control type="image" description="Line">
@@ -28,8 +28,8 @@
       <width>1200</width>
       <onup>700</onup>
       <ondown>700</ondown>
-      <onleft>-</onleft>
-      <onright>-</onright>
+      <onleft>noop</onleft>
+      <onright>noop</onright>
       <pagecontrol>60</pagecontrol>
       <orientation>horizontal</orientation>
       <focusposition>2</focusposition>
@@ -61,24 +61,24 @@
       </focusedlayout>
       <content>
         <item id="0">
-          <label>STARTED MOVIES</label>
-          <onclick>-</onclick>
+          <label>31065</label>
+          <onclick>noop</onclick>
         </item>
         <item id="1">
-          <label>NEXT EPISODES</label>
-          <onclick>-</onclick>
+          <label>31066</label>
+          <onclick>noop</onclick>
         </item>
         <item id="2">
-          <label>TOP ALBUMS</label>
-          <onclick>-</onclick>
+          <label>31067</label>
+          <onclick>noop</onclick>
         </item>
         <!--  <item id="3">
           <label>OTHER</label>
-          <onclick>-</onclick>
+          <onclick>noop</onclick>
         </item>
         <item id="4">
           <label>OTHER</label>
-          <onclick>-</onclick>
+          <onclick>noop</onclick>
         </item>-->
       </content>
     </control>
@@ -92,8 +92,8 @@
           <control type="fixedlist" id="52">
             <height>926</height>
             <width>2200</width>
-            <onleft>-</onleft>
-            <onright>-</onright>
+            <onleft>noop</onleft>
+            <onright>noop</onright>
             <onup>222</onup>
             <ondown>222</ondown>
             <pagecontrol>60</pagecontrol>
@@ -376,8 +376,8 @@
         <control type="fixedlist" id="51">
           <height>926</height>
           <width>1740</width>
-          <onleft>-</onleft>
-          <onright>-</onright>
+          <onleft>noop</onleft>
+          <onright>noop</onright>
           <onup>222</onup>
           <ondown>222</ondown>
           <scrolltime tween="sine" easing="inout">280</scrolltime>
@@ -701,9 +701,9 @@
             <width>1780</width>
             <height>1000</height>
             <orientation>horizontal</orientation>
-            <onleft>-</onleft>
-            <onright>-</onright>
-            <onup>-</onup>
+            <onleft>noop</onleft>
+            <onright>noop</onright>
+            <onup>noop</onup>
             <ondown>222</ondown>
             <preloaditems>2</preloaditems>
             <pagecontrol>80</pagecontrol>
