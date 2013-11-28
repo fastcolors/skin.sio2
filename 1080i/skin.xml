@@ -271,7 +271,7 @@
           <posy>-20</posy>
           <width>800</width>
           <height>150</height>
-          <texture border="32">images/slider.png</texture>
+          <texture border="32">images/Slider.png</texture>
           <aspectratio>stretch</aspectratio>
         </control>
         <control type="image">
@@ -347,7 +347,7 @@
           <posy>-20</posy>
           <width>800</width>
           <height>150</height>
-          <texture border="32">images/slider.png</texture>
+          <texture border="32">images/Slider.png</texture>
           <aspectratio>stretch</aspectratio>
         </control>
         <control type="image">

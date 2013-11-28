@@ -6,7 +6,7 @@
 	<posy>320</posy>
 	<height>760</height>
 	<width>1920</width>
-	<texture>images/black.png</texture>
+	<texture>images/Black.png</texture>
 	<colordiffuse>77FFFFFF</colordiffuse>
 	</control>
 		<control type="group">

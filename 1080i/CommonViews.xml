@@ -466,7 +466,7 @@
       <posy>383</posy>
       <width>855</width>
       <height>126</height>
-      <texture border="32">images/slider.png</texture>
+      <texture border="32">images/Slider.png</texture>
       <aspectratio>stretch</aspectratio>
     </control>
   </include>
@@ -477,7 +477,7 @@
       <posy>306</posy>
       <width>855</width>
       <height>165</height>
-      <texture border="32">images/slider.png</texture>
+      <texture border="32">images/Slider.png</texture>
       <aspectratio>stretch</aspectratio>
     </control>
   </include>

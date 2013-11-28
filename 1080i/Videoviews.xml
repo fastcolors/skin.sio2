@@ -224,7 +224,7 @@
             <posx>1280</posx>
             <width>510</width>
             <height>160</height>
-            <texture>images/white2.png</texture>
+            <texture>images/White2.png</texture>
             <colordiffuse>335555FF</colordiffuse>
           </control>
           <control type="image">

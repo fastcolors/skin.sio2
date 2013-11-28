@@ -13,7 +13,7 @@
         <posx>-50</posx>
         <width>1050</width>
         <height>1080</height>
-        <texture>images/black.png</texture>
+        <texture>images/Black.png</texture>
         <colordiffuse>CCFFFFFF</colordiffuse>
         <aspectratio>stretch</aspectratio>
       </control>
