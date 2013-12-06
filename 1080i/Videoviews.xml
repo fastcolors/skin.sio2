@@ -729,7 +729,7 @@
               </control>
             </control>
             <control type="image" description="WatchStatus">
-              <visible>!SubString(ListItem.Path,videodb://1/7)</visible>
+              <visible>!SubString(ListItem.Path,videodb://movies/sets)</visible>
               <posx>30</posx>
               <posy>290</posy>
               <height>32</height>
@@ -794,7 +794,7 @@
               </control>
             </control>
             <control type="image" description="WatchStatus">
-              <visible>!SubString(ListItem.Path,videodb://1/7)</visible>
+              <visible>!SubString(ListItem.Path,videodb://movies/sets)</visible>
               <posx>30</posx>
               <posy>290</posy>
               <height>32</height>
@@ -844,7 +844,7 @@
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image" description="WatchStatus">
-              <visible>!SubString(ListItem.Path,videodb://1/7)</visible>
+              <visible>!SubString(ListItem.Path,videodb://movies/sets)</visible>
               <posx>40</posx>
               <posy>251</posy>
               <height>32</height>
@@ -893,7 +893,7 @@
               <label>[B]$INFO[ListItem.Label][/B]</label>
             </control>
             <control type="image" description="WatchStatus">
-              <visible>!SubString(ListItem.Path,videodb://1/7)</visible>
+              <visible>!SubString(ListItem.Path,videodb://movies/sets)</visible>
               <posx>40</posx>
               <posy>251</posy>
               <height>32</height>
@@ -987,7 +987,7 @@
         <itemgap>15</itemgap>
         <orientation>horizontal</orientation>
         <control type="image" description="Sets">
-          <visible>SubString(ListItem.Path,videodb://1/7)</visible>
+          <visible>SubString(ListItem.Path,videodb://movies/sets)</visible>
           <height>33</height>
           <width>60</width>
           <aspectratio>keep</aspectratio>
@@ -1385,7 +1385,7 @@
           <aspectratio>stretch</aspectratio>
         </control>
         <control type="group">
-          <!--<visible>!SubString(ListItem.Path,videodb://1/7)</visible>-->
+          <!--<visible>!SubString(ListItem.Path,videodb://movies/sets)</visible>-->
           <control type="image" description="lineplot">
             <posy>70</posy>
             <posx>550</posx>
