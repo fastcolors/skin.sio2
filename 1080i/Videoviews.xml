@@ -554,7 +554,7 @@
             <label>$INFO[ListItem.Title]</label>
           </control>
           </focusedlayout>
-          <content>plugin://script.populate.set/,$INFO[Container(52).ListItem.Label]</content>
+          <content target="video">$INFO[Container.ListItem.Path]</content>
         </control>
       </control>
       <control type="image">
