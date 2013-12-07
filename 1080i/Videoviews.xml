@@ -1253,7 +1253,7 @@
         <posy>100</posy>
         <height>800</height>
         <onleft>53</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
       <control type="image" description="Line Split">
         <posx>260</posx>
