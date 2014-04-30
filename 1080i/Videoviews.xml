@@ -1403,7 +1403,7 @@
             <posy>80</posy>
             <width>1724</width>
             <height>330</height>
-i            <textcolor>Silver</textcolor>
+            <textcolor>Silver</textcolor>
             <align>justify</align>
             <autoscroll delay="7000" time="4300" repeat="10000"></autoscroll>
             <label>$INFO[ListItem.Plot]</label>
