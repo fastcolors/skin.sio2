@@ -70,7 +70,7 @@
         <posy>135</posy>
         <height>870</height>
         <onleft>50</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     <include>WindowsTopInfos</include>
     <include>Left_Panel_Addons</include>

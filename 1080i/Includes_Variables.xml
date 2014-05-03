@@ -54,7 +54,6 @@
     <value condition="Window.IsActive(MyPics.xml)">$LOCALIZE[1]</value>
     <value condition="Window.IsActive(MyPVR.xml) + [Control.HasFocus(13) | Control.HasFocus(34) | Control.HasFocus(14) | Control.HasFocus(35) | Control.HasFocus(17) | Control.HasFocus(36)]">$INFO[Control.GetLabel(29)]</value>
     <value condition="Window.IsActive(MyPVR.xml)">$INFO[Control.GetLabel(30)]</value>
-    <value condition="Window.IsActive(1717)">$LOCALIZE[31069]</value>
     <value>$INFO[Container.FolderName]</value>
   </variable>
   <variable name="TopLabel" description="Infos">
