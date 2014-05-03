@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <addon id="skin.sio2" version="2.3.6" name="SiO2" provider-name="FastColors">
-  <requi res>
+  <requires>
     <import addon="xbmc.gui" version="5.0.1"/>
     <import addon="script.favourites" version="3.2.5"/>
     <import addon="service.skin.widgets" version="0.0.13"/>
