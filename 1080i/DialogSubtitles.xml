@@ -194,7 +194,7 @@
         <posx>152</posx>
         <posy>303</posy>
         <height>522</height>
-        <onleft>-</onleft>
+        <onleft>noop</onleft>
         <onright>120</onright>
         <showonepage>true</showonepage>
       </control>

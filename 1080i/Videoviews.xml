@@ -14,9 +14,9 @@
           <width>802</width>
           <height>891</height>
           <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-          <onleft condition="Skin.HasSetting(ViewsMenuOff)">-</onleft>
+          <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">-</onright>
+          <onright condition="!Skin.HasSetting(Scrollbars_Active)">noop</onright>
           <onup>50</onup>
           <ondown>50</ondown>
           <pagecontrol>60</pagecontrol>
@@ -106,9 +106,9 @@
           <width>802</width>
           <height>888</height>
           <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-          <onleft condition="Skin.HasSetting(ViewsMenuOff)">-</onleft>
+          <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">-</onright>
+          <onright condition="!Skin.HasSetting(Scrollbars_Active)">noop</onright>
           <onup>51</onup>
           <ondown>51</ondown>
           <pagecontrol>60</pagecontrol>
@@ -169,9 +169,9 @@
         <height>810</height>
         <onleft condition="SubString(ListItem.path,videodb://movies/sets/)">990</onleft>
         <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-        <onleft condition="Skin.HasSetting(ViewsMenuOff)">-</onleft>
+        <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
         <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
-        <onright condition="Skin.HasSetting(Scrollbars_Passive)">-</onright>
+        <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
         <onup>52</onup>
         <ondown>52</ondown>
         <pagecontrol>60</pagecontrol>
@@ -492,8 +492,8 @@
           <posy>110</posy>
           <width>1200</width>
           <height>1080</height>
-		  <onup>-</onup>
-		  <ondown>-</ondown>
+		  <onup>noop</onup>
+		  <ondown>noop</ondown>
           <onright>52</onright>
           <itemlayout width="297" height="480">
 		   <control type="image">
@@ -608,7 +608,7 @@
         <posy>120</posy>
         <height>820</height>
         <onleft>50</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
     <!--ICONVIEW-->
@@ -621,9 +621,9 @@
           <width>1800</width>
           <height>900</height>
           <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-          <onleft condition="Skin.HasSetting(ViewsMenuOff)">-</onleft>
+          <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">-</onright>
+          <onright condition="!Skin.HasSetting(Scrollbars_Active)">noop</onright>
           <onup>53</onup>
           <ondown>53</ondown>
           <viewtype label="536">Grid</viewtype>
@@ -1030,7 +1030,7 @@
         <posy>100</posy>
         <height>800</height>
         <onleft>53</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
       <control type="image" description="Line Split">
         <posx>260</posx>
@@ -1259,9 +1259,9 @@
       <control type="fixedlist" id="500" description="Shortcuts">
         <visible>Container.content(movies) | container.content(seasons) | container.content(tvshows)</visible>
         <onup condition="!Skin.HasSetting(ViewsMenuOff)">9000</onup>
-        <onup condition="Skin.HasSetting(ViewsMenuOff)">-</onup>
+        <onup condition="Skin.HasSetting(ViewsMenuOff)">noop</onup>
         <ondown condition="Skin.HasSetting(Scrollbars_Active)">60</ondown>
-        <ondown condition="!Skin.HasSetting(Scrollbars_Active)">-</ondown>
+        <ondown condition="!Skin.HasSetting(Scrollbars_Active)">noop</ondown>
         <onleft>500</onleft>
         <onright>500</onright>
         <viewtype label="$LOCALIZE[20445]">Fanart</viewtype>

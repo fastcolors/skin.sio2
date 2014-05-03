@@ -627,8 +627,8 @@
 			<itemgap>0</itemgap>
 			<onleft>100</onleft>
 			<onright>100</onright>
-			<onup>-</onup>
-			<ondown>-</ondown>
+			<onup>noop</onup>
+			<ondown>noop</ondown>
 			<orientation>vertical</orientation>
 			
 			<include>VisibleFadeEffect</include>
