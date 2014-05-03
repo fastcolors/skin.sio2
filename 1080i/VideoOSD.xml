@@ -648,7 +648,7 @@
                     <height>40</height>
                     <width>500</width>
                     <font>Size33</font>
-                    <label>Enable</label>
+                    <label>24022</label></label>
                     <onclick>ToggleStereoMode</onclick>
                     <selected>IntegerGreaterThan(System.StereoscopicMode,0)</selected>
                     <pulseonselect>false</pulseonselect>
