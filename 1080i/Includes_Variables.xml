@@ -119,7 +119,7 @@
 </variable>
 	
    <variable name="fanart">
-  <value condition="IsEmpty(ListItem.Art(fanart) | Container.Content(Albums) | Container.Content(episodes)">$INFO[ListItem.Icon]</value>
+  <value condition="IsEmpty(ListItem.Art(fanart) | Container.Content(Albums) | Container.Content(episodes))">$INFO[ListItem.Icon]</value>
   <value>$INFO[ListItem.Art(fanart)]</value>
   </variable>
   
