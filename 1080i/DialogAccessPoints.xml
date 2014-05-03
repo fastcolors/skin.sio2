@@ -104,7 +104,6 @@
           <movement>3</movement>
           <scrolltime tween="sine" easing="inout">280</scrolltime>
           <itemlayout width="802" height="111">
-            <include>ListBG</include>
             <control type="image">
               <height>111</height>
               <width>111</width>
@@ -132,7 +131,6 @@
             </control>
           </itemlayout>
           <focusedlayout width="802" height="111">
-            <include>ListBG</include>
             <control type="image">
               <posx>0</posx>
               <posy>0</posy>

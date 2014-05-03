@@ -263,14 +263,6 @@
       </control>
     </control>
     <control type="group">
-      <control type="label" description="Seek time label">
-        <visible>![player.forwarding | player.rewinding]</visible>
-        <visible>Player.DisplayAfterSeek</visible>
-        <include>SeekbarLabels</include>
-        <label>$INFO[Player.SeekOffset]</label>
-      </control>
-    </control>
-    <control type="group">
       <posy>932</posy>
       <control type="image" description="Background">
         <width>1920</width>

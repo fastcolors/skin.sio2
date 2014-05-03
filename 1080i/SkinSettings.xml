@@ -165,12 +165,6 @@
             <onclick condition="Skin.HasSetting(CustomImage)">Skin.Reset(CustomImage)</onclick>
             <onclick condition="!Skin.HasSetting(CustomImage)">Skin.SetBool(CustomImage)</onclick>
           </item>
-		  <item id="17" description="Manteinance">
-		   <visible>System.HasAddon(service.clean.up)</visible>
-            <label>31069</label>
-            <icon>DefaultIconWarning.png</icon>
-            <onclick>ActivateWindow(1717)</onclick>
-          </item>
           <item id="12" description="Reset Skin">
             <label>$LOCALIZE[31036]</label>
             <onclick>Skin.ResetSettings</onclick>
