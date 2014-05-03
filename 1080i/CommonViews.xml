@@ -15,7 +15,7 @@
     <font>size27</font>
   </include>
   <include name="left_Panel">
-    <control type="group" description="Thumbs no info">
+    <control type="group">
       <posx>180</posx>
       <posy>180</posy>
       <visible>IsEmpty(ListItem.Plot)</visible>
@@ -574,27 +574,53 @@
       <aspectratio>keep</aspectratio>
     </control>
   </include>
-  <include name="HD_Badge">
+ <include name="HD_Badge">
     <control type="image">
-      <visible>!IsEmpty(ListItem.VideoResolution)</visible>
-      <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
-      <posx>81r</posx>
-      <height>81</height>
-      <width>42</width>
-      <aspectratio>keep</aspectratio>
-      <texture>$INFO[ListItem.VideoResolution,badges/,.png]</texture>
-    </control>
-  </include>
-  <include name="HD_BadgeLW">
-    <control type="image">
-      <animation condition="!IsEmpty(ListItem.Premiered)" effect="slide" end="0,-18">Conditional</animation>
-      <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+	<animation effect="slide" end="0,-16" condition="ListItem.IsStereoscopic | Control.Isvisible(50) | !IsEmpty(ListItem.Premiered)">Conditional</animation>
+    <animation effect="slide" end="0,-14" condition="ListItem.IsStereoscopic + Control.Isvisible(50)">Conditional</animation>
+      
+	  <visible>!IsEmpty(ListItem.VideoResolution)</visible>
       <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
       <posx>81r</posx>
       <height>111</height>
       <width>42</width>
       <aspectratio>keep</aspectratio>
-      <texture>$INFO[ListItem.VideoResolution,badges/,.png]</texture>
+      <texture>badges/720.png</texture>
+    </control>
+	 <control type="image">
+	<visible>ListItem.IsStereoscopic</visible>
+	<animation effect="slide" end="0,-14" condition="ListItem.IsStereoscopic + Control.Isvisible(50)">Conditional</animation>
+      <posy>30</posy>
+	  <posx>81r</posx>
+      <height>80</height>
+      <width>42</width>
+      <aspectratio>keep</aspectratio>
+      <texture>badges/3d.png</texture>
+    </control>
+  </include>
+  <include name="HD_BadgeLW">
+    <control type="image">
+	<animation effect="slide" end="0,-16" condition="ListItem.IsStereoscopic | Control.Isvisible(50) | !IsEmpty(ListItem.Premiered)">Conditional</animation>
+    <animation effect="slide" end="0,-14" condition="ListItem.IsStereoscopic + Control.Isvisible(50)">Conditional</animation>
+      
+	  <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+      <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
+      <posx>81r</posx>
+      <height>111</height>
+      <width>42</width>
+      <aspectratio>keep</aspectratio>
+      <texture>badges/720.png</texture>
+    </control>
+	 <control type="image">
+	<visible>ListItem.IsStereoscopic</visible>
+	<animation effect="slide" end="0,-14" condition="ListItem.IsStereoscopic + Control.Isvisible(50)">Conditional</animation>
+    <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
+      <posy>30</posy>
+	  <posx>81r</posx>
+      <height>80</height>
+      <width>42</width>
+      <aspectratio>keep</aspectratio>
+      <texture>badges/3d.png</texture>
     </control>
   </include>
   <include name="Unwatched">

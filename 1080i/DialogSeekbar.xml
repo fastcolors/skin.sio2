@@ -68,7 +68,13 @@
       <control type="label" description="Seek time label">
         <visible>![player.forwarding | player.rewinding]</visible>
         <visible>Player.DisplayAfterSeek</visible>
-        <include>SeekbarLabels</include>
+         <height>75</height>
+    <width>1920</width>
+    <align>center</align>
+    <font>size36B</font>
+    <textcolor>White</textcolor>
+    <shadowcolor>Black</shadowcolor>
+    <animation effect="fade" time="200">VisibleChange</animation>
         <label>$INFO[Player.SeekOffset]</label>
       </control>
     </control>
@@ -254,14 +260,6 @@
         <font>size26</font>
         <textcolor>Silver</textcolor>
         <label>$INFO[VideoPlayer.NextTitle,[COLOR=Grey]$LOCALIZE[209]:  [/COLOR]]</label>
-      </control>
-    </control>
-    <control type="group">
-      <control type="label" description="Seek time label">
-        <visible>![player.forwarding | player.rewinding]</visible>
-        <visible>Player.DisplayAfterSeek</visible>
-        <include>SeekbarLabels</include>
-        <label>$INFO[Player.SeekOffset]</label>
       </control>
     </control>
     <control type="group">

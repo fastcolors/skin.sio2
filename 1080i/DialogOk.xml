@@ -22,21 +22,10 @@
         <shadowcolor>black</shadowcolor>
         <align>center</align>
       </control>
-      <control type="label" id="2" description="Line 1">
+      <control type="textbox" id="9" description="content">
         <posy>75</posy>
         <width>960</width>
-        <align>center</align>
-        <label>-</label>
-      </control>
-      <control type="label" id="3" description="Line 2">
-        <posy>120</posy>
-        <width>960</width>
-        <align>center</align>
-        <label>-</label>
-      </control>
-      <control type="label" id="4" description="Line 3">
-        <posy>165</posy>
-        <width>960</width>
+		<height>135</height>
         <align>center</align>
         <label>-</label>
       </control>
