@@ -24,7 +24,7 @@
         <onleft>10</onleft>
         <onright>10</onright>
       </control>
-      <control type="button" id="11" description="Server Name">
+      <control type="edit" id="11" description="Server Name">
         <posx>500</posx>
         <posy>168</posy>
         <width>690</width>
@@ -79,7 +79,7 @@
           <onright>16</onright>
           <ondown>13</ondown>
         </control>
-        <control type="button" id="13">
+        <control type="edit" id="13">
           <description>Port</description>
           <posx>500</posx>
           <posy>306</posy>

@@ -90,7 +90,7 @@
         <control type="button" id="3" description="Sort">
           <include>DialogButt</include>
         </control>
-        <control type="togglebutton" id="5" description="Updates">
+        <control type="button" id="5" description="Updates">
           <include>DialogButt</include>
           <label>$LOCALIZE[24063]: $LOCALIZE[1223]</label>
           <altlabel>$LOCALIZE[24063]: $LOCALIZE[305]</altlabel>

@@ -5,9 +5,9 @@
   <allowoverlay>no</allowoverlay>
   <controls>
     <include>BlackBackground</include>
-    <control type="label" description="Header Label">
+    <control type="label" description="Header Label" id="2">
       <include>HeadingR</include>
-      <label>20043</label>
+        <label>-</label>
     </control>
     <control type="group">
       <posx>1020</posx>

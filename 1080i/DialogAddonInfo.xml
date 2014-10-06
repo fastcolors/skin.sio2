@@ -108,37 +108,43 @@
         <orientation>horizontal</orientation>
         <control type="button" id="6" description="Install">
           <label>24038</label>
-          <width>270</width>
+          <width>260</width>
           <texturenofocus>-</texturenofocus>
           <texturefocus>images/backfocus.png</texturefocus>
         </control>
         <control type="button" id="7" description="Disable">
           <label>24021</label>
-          <width>270</width>
+          <width>260</width>
           <texturenofocus>-</texturenofocus>
           <texturefocus>images/backfocus.png</texturefocus>
         </control>
         <control type="button" id="8" description="update">
           <label>24069</label>
-          <width>270</width>
+          <width>260</width>
           <texturenofocus>-</texturenofocus>
           <texturefocus>images/backfocus.png</texturefocus>
         </control>
         <control type="button" id="9" description="settings">
           <label>5</label>
-          <width>270</width>
+          <width>260</width>
           <texturenofocus>-</texturenofocus>
           <texturefocus>images/backfocus.png</texturefocus>
         </control>
         <control type="button" id="10" description="changelog">
           <label>24054</label>
-          <width>270</width>
+          <width>260</width>
           <texturenofocus>-</texturenofocus>
           <texturefocus>images/backfocus.png</texturefocus>
         </control>
         <control type="button" id="11" description="rollback">
           <label>$LOCALIZE[24048]</label>
-          <width>270</width>
+          <width>260</width>
+          <texturenofocus>-</texturenofocus>
+          <texturefocus>images/backfocus.png</texturefocus>
+        </control>
+          <control type="button" id="12" description="rollback">
+          <label>$LOCALIZE[335]</label>
+          <width>260</width>
           <texturenofocus>-</texturenofocus>
           <texturefocus>images/backfocus.png</texturefocus>
         </control>

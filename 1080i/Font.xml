@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fonts>
-  <fontset id="Default" unicode="true">
+  <fontset id="Default">
     <!--Fonts for GeneralAddons-->
     <font>
       <name>font10</name>
@@ -148,7 +148,7 @@
       <style>bold</style>
     </font>
   </fontset>
-  <fontset id="Strong" unicode="true">
+  <fontset id="Strong">
     <font>
       <name>font13</name>
       <filename>Strong.ttf</filename>
@@ -256,7 +256,7 @@
       <style>bold</style>
     </font>
   </fontset>
-  <fontset id="Light" unicode="true">
+  <fontset id="Light">
   <font>
       <name>font13</name>
       <filename>Light.ttf</filename>
@@ -364,7 +364,7 @@
       <style>bold</style>
     </font>
   </fontset>
-  <fontset id="Arial" idloc="31026" unicode="true">
+  <fontset id="Arial" idloc="31026">
   <font>
       <name>font13</name>
       <filename>arial.ttf</filename>

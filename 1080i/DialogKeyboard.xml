@@ -30,7 +30,7 @@
       <control type="group">
         <posx>0</posx>
         <posy>150</posy>
-        <control type="label" id="310" description="Edit Text">
+        <control type="edi" id="312" description="Edit Text">
           <posx>122</posx>
           <posy>6</posy>
           <width>735</width>

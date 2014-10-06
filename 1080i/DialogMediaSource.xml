@@ -87,7 +87,7 @@
         <align>center</align>
         <label>1022</label>
       </control>
-      <control type="button" id="12" description="Source Name Button Field">
+      <control type="edit" id="12" description="Source Name Button Field">
         <posx>450</posx>
         <posy>765</posy>
         <label>-</label>
