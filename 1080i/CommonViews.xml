@@ -4,7 +4,7 @@
     <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="250" reversible="true">Conditional</animation>
   </include>
   <include name="Keyboardbuttons">
-    <width>152</width>
+    <width>130</width>
     <height>40</height>
     <texturenofocus>keyb/plain.png</texturenofocus>
     <texturefocus>keyb/selected.png</texturefocus>
