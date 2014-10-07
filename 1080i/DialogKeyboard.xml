@@ -252,6 +252,7 @@
                     </control>
                     <control type="button" id="143">
                         <include>Keyboardbuttons</include>
+                        <onup>123</onup>
                         <ondown>163</ondown>
                     </control>
                     <control type="button" id="144">
