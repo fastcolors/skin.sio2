@@ -5,176 +5,176 @@
 # Addon Provider: FastColors
 # Translators:
 # Translators:
-# fastcolors <fastcolors@gmail.com>, 2013-2014
+# Nuno Ferreira <numilofe@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skin SiO2\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2014-10-12 16:05+0000\n"
+"PO-Revision-Date: 2014-10-12 16:06+0000\n"
 "Last-Translator: fastcolors <fastcolors@gmail.com>\n"
-"Language-Team: Italian (http://www.transifex.com/projects/p/sio2-1/language/it/)\n"
+"Language-Team: Portuguese (http://www.transifex.com/projects/p/sio2-1/language/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: it\n"
+"Language: pt\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgctxt "#31000"
 msgid "Page"
-msgstr "Pagina"
+msgstr "Página"
 
 msgctxt "#31001"
 msgid "Items"
-msgstr "Elementi"
+msgstr "Itens"
 
 msgctxt "#31002"
 msgid "Karaoke Song"
-msgstr "Canzone Karaoke"
+msgstr "Canção Karaoke"
 
 msgctxt "#31003"
 msgid "Choose Shortcut function for Music Icon : Albums  Artists Genres Songs"
-msgstr "Seleziona la funzione dell'icona Musica Album - Artisti - Generi - Canzoni."
+msgstr "Escolher o atalho para o Ícone Música: Albuns Artistas Géneros Canções"
 
 msgctxt "#31004"
 msgid "Visualization Presets"
-msgstr "Presets di Visualizzazione"
+msgstr "Predefinições de Visualização"
 
 msgctxt "#31005"
 msgid "End Time"
-msgstr "Fine"
+msgstr "Hora Final"
 
 msgctxt "#31006"
 msgid "Last Added"
-msgstr "Ultimo Aggiunto"
+msgstr "Último Adicionado"
 
 msgctxt "#31007"
 msgid "Last Started"
-msgstr "Ultimo Iniziato"
+msgstr "Último Iniciado"
 
 msgctxt "#31008"
 msgid ""
 "Enable/Disable Always Colored Icons on Home Screen, when Disabled Icons will"
 " only become colored when Focused"
-msgstr "Abitita/Disabilita Icone Colorate. Se disabilitato le icone si coloraranno quando selezionate."
+msgstr "Ativar/Desativar Ícones Sempre Coloridos no Ecrã Inicial. Quando Desativado, os Ícones apenas ficam coloridos quando Realçados"
 
 msgctxt "#31009"
 msgid "Recently Added Episodes"
-msgstr "Ultimi Episodi Aggiunti"
+msgstr "Episódios Recentemente Adicionados"
 
 msgctxt "#31010"
 msgid "Open playlist"
-msgstr "Apri playlist"
+msgstr "Abrir playlist"
 
 msgctxt "#31011"
 msgid "Save playlist"
-msgstr "Salva playlist"
+msgstr "Gravar playlist"
 
 msgctxt "#31012"
 msgid "Clear playlist"
-msgstr "Elimina playlist"
+msgstr "Limpar playlist"
 
 msgctxt "#31013"
 msgid "Available Audio"
-msgstr "Audio Disponibile"
+msgstr "Áudio Disponível"
 
 msgctxt "#31014"
 msgid "Current Playlist"
-msgstr "Playlist Corrente"
+msgstr "Playlist atual"
 
 msgctxt "#31015"
 msgid "Select Subtitle Add-on"
-msgstr "Seleziona Add-On Sottotitoli"
+msgstr "Selecionar Addon de Legendas"
 
 msgctxt "#31016"
 msgid "Last Updated"
-msgstr "Ultimo Aggiornamento"
+msgstr "Última Atualização"
 
 msgctxt "#31017"
 msgid "Choose Addon for Subtitles Search & Download"
-msgstr "Scegli Addon per cercare e scaricare Sottotitoli"
+msgstr "Escolher Addon para a Procura e Download de Legendas"
 
 msgctxt "#31018"
 msgid "Choose Addon for Lyrics Search & Download"
-msgstr "Scegli Addon per cercare e scaricare Testi"
+msgstr "Escolher o Addon para a Procura e Download de Letras de Música"
 
 msgctxt "#31019"
 msgid ""
 "Enable or Disable Clock On top right of All Pages (not while watching "
 "Movies).[CR]Home Menu Will show Time and date."
-msgstr "Abilita o Disabilita l'orologio in alto a destra (spento durante la riproduazione).[CR]La Home pge mostra anche la data."
+msgstr "Ativar/Desativar o Relógio no canto superior direito de Todas as Páginas (quando não a visualizar Videos).\n[CR]Ecrã Inicial mostrará a Data e a Hora"
 
 msgctxt "#31020"
 msgid "Enable or Disable Vinyl Record Animation from Home Shelf Albums."
-msgstr "Abilita o Disabilita l'animazione del disco che esce dalla custiodia sulla shelf della pagian principale."
+msgstr "Ativar/Desativar a Animação Disco de Vinil dos Albuns na Estante Inicial"
 
 msgctxt "#31021"
 msgid "Memory Used:"
-msgstr "Memoria in Uso:"
+msgstr "Memória Usada:"
 
 msgctxt "#31022"
 msgid "Specify Action for Power Icon in Menu"
-msgstr "Specifica l'azione per l'icona Power nella pagina principale"
+msgstr "Ação específica para o Ícone Ligar/Desligar do Menu"
 
 msgctxt "#31023"
 msgid "Fanart image[CR][CR]Unavailable[CR][CR] Click button to set"
-msgstr "Immagine Fanart [CR][CR]Non Disponibile[CR][CR] Premi per scaricare"
+msgstr "Imagem de Fanart[CR][CR]Indisponível[CR][CR] Premir botão para definir"
 
 msgctxt "#31024"
 msgid "Aired"
-msgstr "Trasmesso"
+msgstr "Emitido"
 
 msgctxt "#31025"
 msgid "Playlist Options"
-msgstr "Opzioni Playlist"
+msgstr "Opções da Playlist"
 
 msgctxt "#31026"
 msgid "Arial based"
-msgstr "Arial based"
+msgstr "Baseado em Arial"
 
 msgctxt "#31027"
 msgid "Last Added"
-msgstr "Ultimo Aggiunto"
+msgstr "Último Adicionado"
 
 msgctxt "#31028"
 msgid "Watchlist"
-msgstr "Lista personalizzata"
+msgstr "Em Visualização"
 
 msgctxt "#31029"
 msgid "Favourite"
-msgstr "Preferito"
+msgstr "Favorito"
 
 msgctxt "#31030"
 msgid "Custom Shelf Icon"
-msgstr "Icona Personalizzata"
+msgstr "Ícone Personalizar a Estante"
 
 msgctxt "#31031"
 msgid "Replace SiO2 Icon on Shelf with A Picture of Your choice."
-msgstr "Sostituisce l'icona di default su shelf di SiO2 con una a scelta."
+msgstr "Substituir o Ícone SiO2 da Estante por outra imagem"
 
 msgctxt "#31032"
 msgid "Log Off"
-msgstr "Disconnetti"
+msgstr "Logoff"
 
 msgctxt "#31033"
 msgid "Always Colored Menu Icons"
-msgstr "Icone Pagina Principale sempre colorate"
+msgstr "Ícones do Menu Sempre Coloridos"
 
 msgctxt "#31034"
 msgid "Click to Add Favourite to Home Page"
-msgstr "Aggiungi Favorito alla pagina Principale"
+msgstr "Premir para Adicionar Favorito ao Ecrã Inicial"
 
 msgctxt "#31035"
 msgid "Click to Pick Icon, Change Favourite or Remove Favourite"
-msgstr "Scegli Icona-cambia-elimina favorito su pagina principale"
+msgstr "Premir para Escolher um Ícone, Alterar Favorito ou Remover Favorito"
 
 msgctxt "#31036"
 msgid "Reset ALL skin settings to default"
-msgstr "Ripristina la skin ai valori iniziali"
+msgstr "Repor TODAS as configurações do tema para as de default"
 
 msgctxt "#31037"
 msgid "Add-ons manager"
-msgstr "Manager degli Add-ons"
+msgstr "Gestor de Addons"
 
 msgctxt "#31038"
 msgid "min"
@@ -182,101 +182,101 @@ msgstr "min"
 
 msgctxt "#31039"
 msgid "Record Animation on Shelf"
-msgstr "Animazione disco vinile su Shelf"
+msgstr "Animação Disco de Vinil na Estante"
 
 msgctxt "#31040"
 msgid "Shelf items"
-msgstr "Elementi Shelf"
+msgstr "Itens da Estante"
 
 msgctxt "#31041"
 msgid "Active Scrollbars"
-msgstr "Scrollbars Attive"
+msgstr "Scrollbars ativas"
 
 msgctxt "#31044"
 msgid "View options dialog"
-msgstr "Vista dialogo opzioni"
+msgstr "Exibir o menu de opções"
 
 msgctxt "#31045"
 msgid "Recent/Recommended Inverted First Item"
-msgstr "Recenti/Raccomandati Primo elemento invertito"
+msgstr "Primeiro Item Invertido Recente/Recomendado"
 
 msgctxt "#31046"
 msgid "Customize What Is Displayed On Home Shelf."
-msgstr "Personalizza la pagina principale"
+msgstr "Personalizar o que é exibido na Estante Inicial"
 
 msgctxt "#31047"
 msgid "Show Clock"
-msgstr "Mostra Orologio"
+msgstr "Mostrar Relógio"
 
 msgctxt "#31048"
 msgid "Recommended"
-msgstr "Raccomandati"
+msgstr "Recomendado"
 
 msgctxt "#31049"
 msgid "Home menu Power button function"
-msgstr "Funzione Icona Power dalla pagina principale"
+msgstr "Função do botão Ligar/Desligar do Ecra Inicial"
 
 msgctxt "#31050"
 msgid "Choose from menu"
-msgstr "Scegli dal menu"
+msgstr "Escolher do menu"
 
 msgctxt "#31051"
 msgid "Custom Shelf Shortcuts"
-msgstr "Collegamenti Personalizzati su Shelf"
+msgstr "Atalhos da Estante Personalizada"
 
 msgctxt "#31052"
 msgid "Home Page Customizer"
-msgstr "Personalizza Pagina Principale"
+msgstr "Personalizar o Ecrã Inicial"
 
 msgctxt "#31053"
 msgid "Link For Music Icon"
-msgstr "Link Icona Musica"
+msgstr "Link para o Ícone Música"
 
 msgctxt "#31054"
 msgid ""
 "Enable Views Menu in order to change the way Items are presented to you."
-msgstr "Abilita - Disablita menu per la scelta del metodo di visone delgli elementi."
+msgstr "Ativar o Menu Aspetos para modificar a forma de apresentação dos Itens"
 
 msgctxt "#31055"
 msgid "Fullscreen player"
-msgstr "Riproduttore a Schermo Intero"
+msgstr "Leitor de Tela Cheia"
 
 msgctxt "#31056"
 msgid "Change Icon"
-msgstr "Cambia Icona"
+msgstr "Alterar Ícone"
 
 msgctxt "#31057"
 msgid "Replace Item"
-msgstr "Cambia Elemento"
+msgstr "Substituir Item"
 
 msgctxt "#31059"
 msgid "LiveTV"
-msgstr "LiveTV"
+msgstr "TV ao Vivo"
 
 msgctxt "#31060"
 msgid "Add"
-msgstr "Aggiungi"
+msgstr "Adicionar"
 
 msgctxt "#31061"
 msgid "Cinema Experience"
-msgstr "Cinema Experience"
+msgstr "Experiência de Cinema"
 
 msgctxt "#31062"
 msgid "Select Lyrics Add-on"
-msgstr "Seleziona Add-On Testi"
+msgstr "Selecionar Addon de Letras de Música"
 
 msgctxt "#31064"
 msgid "Fullscreen"
-msgstr "Schermo Intero"
+msgstr "Tela Cheia"
 
 msgctxt "#31065"
 msgid "Started Movies"
-msgstr "Film Iniziati"
+msgstr "Filmes Iniciados"
 
 msgctxt "#31066"
 msgid "Recommended Episodes"
-msgstr "Episodi Raccomandati"
+msgstr "Episódios Recomendados"
 
 msgctxt "#31067"
 msgid "Top Albums"
-msgstr "Top Album"
+msgstr "Melhores Albuns"
