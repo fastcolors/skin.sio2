@@ -15,7 +15,6 @@
             <description>passes the values up one level</description>
             <visible>False</visible>
         </control>
-
         <control type="group">
             <description>Small Media Window</description>
             <include>Icon_Fade</include>
