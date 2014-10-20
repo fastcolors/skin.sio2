@@ -229,14 +229,14 @@
                     <thumb>icons/LiveTV.png</thumb>
                     <label>31059</label>
                     <property name="color">icons/green3.png</property>
-                    <onclick>ActivateWindowAndFocus(1718)</onclick>
+                    <onclick>ActivateWindow(TVGuide)</onclick>
                     <visible>!Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
                 </item>
                 <item id="355">
                     <thumb>icons/LiveTVrec.png</thumb>
                     <label>$INFO[Pvr.NowRecordingTitle]</label>
                     <property name="color">icons/green3.png</property>
-                    <onclick>XBMC.ActivateWindowAndFocus(1718)</onclick>
+                    <onclick>ActivateWindow(TVGuide)</onclick>
                     <visible>Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
                 </item>
 

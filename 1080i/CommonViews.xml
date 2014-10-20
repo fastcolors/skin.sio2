@@ -166,22 +166,6 @@
       <posx>120</posx>
       <animation effect="fade" time="400">Visible</animation>
       <animation effect="fade" time="0">Hidden</animation>
-      <control type="image" description="Thumb">
-	  <visible>!Player.HasMedia</visible>
-        <width>756</width>
-        <height>470</height>
-        <include>Icon_Fade</include>
-        <texture background="true">$INFO[ListItem.Icon]</texture>
-        <aspectratio aligny="bottom">keep</aspectratio>
-      </control>
-	  <control type="image" description="Thumb">
-	  <visible>IsEmpty(ListItem.Icon) + !Player.HasMedia</visible>
-        <width>756</width>
-        <height>470</height>
-        <include>Icon_Fade</include>
-        <texture background="true">pvr/logo.png</texture>
-        <aspectratio aligny="bottom">keep</aspectratio>
-      </control>
       <include>Unwatched</include>
       <control type="image">
         <posy>550</posy>
