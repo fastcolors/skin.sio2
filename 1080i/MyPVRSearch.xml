@@ -160,7 +160,7 @@
             <height>60</height>
             <font>size42</font>
             <scroll>false</scroll>
-            <label>Search</label>
+            <label>137</label>
         </control>
         <control type="label" description="Number of files">
             <width>auto</width>
