@@ -24,17 +24,18 @@
             </control>
         </control>
         <control type="button" id="9009">
-            <animation effect="slide" condition="[Control.IsVisible(311) + !Skin.HasSetting(Intruder) + !Container(311).HasPrevious] | [Control.IsVisible(311) + Skin.HasSetting(Intruder) + !Container(311).HasPrevious + Player.HasVideo]" end="320,0">Conditional</animation>
-            <animation effect="slide" condition="[Control.IsVisible(312) + !Skin.HasSetting(IntruderTV) + !Container(312).HasPrevious] | [Control.IsVisible(312) + Skin.HasSetting(IntruderTV) + !Container(312).HasPrevious + Player.HasVideo]" end="320,0">Conditional</animation>
             <visible allowhiddenfocus="true">Control.HasFocus(9009)</visible>
             <posx></posx>
             <posy>26</posy>
             <width>34</width>
             <height>34</height>
             <texturefocus aspectratio="keep">images/hometoggle.png</texturefocus>
-            <onclick  condition="Control.IsVisible(311)">Skin.ToggleSetting(MoviesShelfWL)</onclick>
+            <!--MOVIES-->
+            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
+            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
+            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
+            <!--TVSHOWS-->
             <onclick  condition="Control.IsVisible(312)">Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
-            <onclick>ReplaceWindow(0)</onclick>
             <onup>noop</onup>
             <ondown condition="Control.IsVisible(311)">311</ondown>
             <ondown condition="Control.IsVisible(312)">312</ondown>
@@ -486,10 +487,8 @@
         <include>weather_shelf</include>
         <control type="group" id="700" description="Shelf items">
             <animation condition="!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
-            <include condition="!Skin.HasSetting(MoviesShelfWL)">Movies_RA</include>
-            <include condition="Skin.HasSetting(MoviesShelfWL)">Movies_WL</include>
-            <include condition="!Skin.HasSetting(TVShelf_Watchlist)">TV_RAIR</include>
-            <include condition="Skin.HasSetting(TVShelf_Watchlist)">TV_WL</include>
+            <include>Movies</include>
+            <include>TV</include>
             <include>Music_RA</include>
             <include condition="Skin.HasSetting(PicturesShelf_Custom)">Pictures_Shortcuts</include>
             <include condition="Skin.HasSetting(AddonsShelf_Custom)">Addons_Shortcuts</include>
@@ -598,14 +597,10 @@
             <textcolor>White</textcolor>
             <label>$INFO[System.Time] $INFO[System.Date]</label>
         </control>
-        <control type="image">
+        <control type="label" description="Top Label">
             <include>ShelfFade</include>
-            <visible>[Container(9000).HasFocus(341) + !Skin.HasSetting(IntruderTV) + Library.HasContent(TVShows) + !Container(312).HasPrevious] | [Container(9000).HasFocus(340) + [!Skin.HasSetting(Intruder) | Player.HasVideo] + Library.HasContent(Movies) + !Container(311).HasPrevious]</visible>
-            <posy>50</posy>
-            <posx>357</posx>
-            <width>2</width>
-            <height>500</height>
-            <texture>images/LineV.png</texture>
+            <include>ShelfTitle</include>
+            <label>[B] $VAR[shelflabel] [/B]</label>
         </control>
     </controls>
 </window>
