@@ -5,8 +5,8 @@
         <animation effect="fade" end="0" time="100">Hidden</animation>
     </include>
     <include name="ShelfTitle">
-        <posx>30</posx>
-        <posy>20</posy>
+        <left>30</left>
+        <top>20</top>
         <height>45</height>
         <width>750</width>
         <align>left</align>
@@ -17,7 +17,7 @@
     </include>
     <include name="MoviesShortcutsCommons">
         <include>ShelfFade</include>
-        <posy>90</posy>
+        <top>90</top>
         <width>1920</width>
         <height>500</height>
         <orientation>horizontal</orientation>
@@ -25,8 +25,8 @@
         <itemlayout height="350" width="300">
             <control type="image" description="Reflection">
                 <visible>IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <posx>78</posx>
-                <posy>400</posy>
+                <left>78</left>
+                <top>400</top>
                 <width>260</width>
                 <height>390</height>
                 <texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
@@ -34,8 +34,8 @@
             </control>
             <control type="image" description="Reflection">
                 <visible>!IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <posx>78</posx>
-                <posy>400</posy>
+                <left>78</left>
+                <top>400</top>
                 <width>260</width>
                 <height>390</height>
                 <texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
@@ -43,8 +43,8 @@
             </control>
             <control type="image">
                 <visible>IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <posx>78</posx>
-                <posy>10</posy>
+                <left>78</left>
+                <top>10</top>
                 <width>260</width>
                 <height>390</height>
                 <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
@@ -52,8 +52,8 @@
             </control>
             <control type="image">
                 <visible>!IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <posx>78</posx>
-                <posy>10</posy>
+                <left>78</left>
+                <top>10</top>
                 <width>260</width>
                 <height>390</height>
                 <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
@@ -65,8 +65,8 @@
                 <visible>IsEmpty(ListItem.Art(tvshow.poster))</visible>
                 <animation effect="fade" start="100" end="0" time="400">Focus</animation>
                 <animation effect="fade" start="0" end="100" time="400">unFocus</animation>
-                <posx>78</posx>
-                <posy>400</posy>
+                <left>78</left>
+                <top>400</top>
                 <width>260</width>
                 <height>390</height>
                 <texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
@@ -76,8 +76,8 @@
                 <visible>!IsEmpty(ListItem.Art(tvshow.poster))</visible>
                 <animation effect="fade" start="100" end="0" time="400">Focus</animation>
                 <animation effect="fade" start="0" end="100" time="400">unFocus</animation>
-                <posx>78</posx>
-                <posy>400</posy>
+                <left>78</left>
+                <top>400</top>
                 <width>260</width>
                 <height>390</height>
                 <texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
@@ -85,8 +85,8 @@
             </control>
             <control type="image">
                 <visible>IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <posx>78</posx>
-                <posy>10</posy>
+                <left>78</left>
+                <top>10</top>
                 <width>260</width>
                 <height>390</height>
                 <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
@@ -94,8 +94,8 @@
             </control>
             <control type="image">
                 <visible>!IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <posx>78</posx>
-                <posy>10</posy>
+                <left>78</left>
+                <top>10</top>
                 <width>260</width>
                 <height>390</height>
                 <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
@@ -107,8 +107,8 @@
                 <control type="image">
                     <visible>ControlGroup(700).HasFocus() + !IsEmpty(Listitem.Label2)</visible>
                     <include>VisibleFade</include>
-                    <posx>78</posx>
-                    <posy>370</posy>
+                    <left>78</left>
+                    <top>370</top>
                     <width>260</width>
                     <height>30</height>
                     <texture>images/Black.png</texture>
@@ -118,7 +118,7 @@
                 <control type="label">
                     <visible>ControlGroup(700).HasFocus() + !IsEmpty(Listitem.Label2)</visible>
                     <centerleft>208</centerleft>
-                    <posy>370</posy>
+                    <top>370</top>
                     <width>260</width>
                     <height>30</height>
                     <font>size24</font>
@@ -129,8 +129,8 @@
                 </control>
                 <control type="textbox">
                     <visible>ControlGroup(700).HasFocus()</visible>
-                    <posx>60</posx>
-                    <posy>405</posy>
+                    <left>60</left>
+                    <top>410</top>
                     <width>296</width>
                     <height>60</height>
                     <font>size24</font>
@@ -144,44 +144,35 @@
     </include>
     <include name="SquareShortcutsCommons">
         <include>ShelfFade</include>
-        <posx>72</posx>
-        <posy>140</posy>
-        <width>1776</width>
+        <!--<left>72</left>-->
+        <top>140</top>
+        <width>1920</width>
         <height>402</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
         <itemlayout height="357" width="354">
             <control type="image" description="Reflection">
-                <posx>27</posx>
-                <posy>330</posy>
+                <left>99</left>
+                <top>330</top>
                 <width>303</width>
                 <height>303</height>
                 <texture fallback="DefaultAlbumcover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
                 <aspectratio scalediffuse="false">scale</aspectratio>
             </control>
             <control type="image">
-                <posx>27</posx>
-                <posy>27</posy>
+                <left>99</left>
+                <top>27</top>
                 <width>303</width>
                 <height>303</height>
                 <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Thumb]</texture>
                 <aspectratio>scale</aspectratio>
             </control>
-            <control type="image">
-                <visible>Control.IsVisible(313)</visible>
-                <posx>25</posx>
-                <posy>25</posy>
-                <width>307</width>
-                <height>307</height>
-                <texture background="true">images/cellophane.png</texture>
-                <aspectratio>stretch</aspectratio>
-            </control>
         </itemlayout>
         <focusedlayout height="357" width="354">
             <control type="group">
                 <control type="image" description="Reflection">
-                    <posx>27</posx>
-                    <posy>330</posy>
+                    <left>99</left>
+                    <top>330</top>
                     <width>303</width>
                     <height>303</height>
                     <texture fallback="DefaultAlbumcover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
@@ -190,41 +181,33 @@
                 <control type="image">
                     <visible>Control.IsVisible(313)+!Skin.HasSetting(RecordOff) + !Skin.HasSetting(MusicShelf_Custom)</visible>
                     <animation effect="slide" end="0,-60" time="400" delay="100">Focus</animation>
-                    <posx>26</posx>
-                    <posy>27</posy>
+                    <left>99</left>
+                    <top>27</top>
                     <width>303</width>
                     <height>303</height>
                     <texture background="true">images/record.png</texture>
                     <aspectratio>keep</aspectratio>
                 </control>
                 <control type="image">
-                    <posx>27</posx>
-                    <posy>27</posy>
+                    <left>99</left>
+                    <top>27</top>
                     <width>303</width>
                     <height>303</height>
                     <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Thumb]</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
-                <control type="image">
-                    <visible>Control.IsVisible(313)</visible>
-                    <posx>25</posx>
-                    <posy>25</posy>
-                    <width>307</width>
-                    <height>307</height>
-                    <texture background="true">images/cellophane.png</texture>
-                    <aspectratio>stretch</aspectratio>
-                </control>
                 <control type="textbox">
                     <visible>ControlGroup(700).HasFocus()</visible>
                     <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
                     <animation effect="fade" start="100" end="0" time="80">unFocus</animation>
-                    <posy>340</posy>
+                    <left>79</left>
+                    <top>340</top>
                     <width>345</width>
                     <height>60</height>
                     <font>size26</font>
                     <textcolor>White2</textcolor>
-                    <label>[B]$INFO[ListItem.Label][/B]</label>
                     <align>center</align>
+                    <label>[B]$INFO[ListItem.Label][/B]</label>
                 </control>
             </control>
         </focusedlayout>
@@ -232,8 +215,8 @@
     <include name="movshelslider">
         <control type="image">
             <visible>Control.HasFocus(311)</visible>
-            <posx>66</posx>
-            <posy>90</posy>
+            <left>66</left>
+            <top>90</top>
             <width>283</width>
             <height>408</height>
             <texture border="10=">images/SliderWL.png</texture>
@@ -262,8 +245,8 @@
     <include name="tvshelfslider">
         <control type="image">
             <visible>Control.HasFocus(312)</visible>
-            <posx>66</posx>
-            <posy>90</posy>
+            <left>66</left>
+            <top>90</top>
             <width>283</width>
             <height>408</height>
             <texture border="10=">images/SliderWL.png</texture>
@@ -305,8 +288,8 @@
         </control>
         <control type="image">
             <visible>Control.HasFocus(313)</visible>
-            <posx>88</posx>
-            <posy>157</posy>
+            <left>88</left>
+            <top>157</top>
             <width>322</width>
             <height>324</height>
             <texture border="20">images/GeneralSlider.png</texture>
@@ -493,8 +476,8 @@
             </control>
             <control type="image">
                 <visible>Control.HasFocus(315)</visible>
-                <posx>88</posx>
-                <posy>157</posy>
+                <left>88</left>
+                <top>157</top>
                 <width>322</width>
                 <height>322</height>
                 <texture border="20">images/GeneralSlider.png</texture>
@@ -633,8 +616,8 @@
             </control>
             <control type="image">
                 <visible>Control.HasFocus(317)</visible>
-                <posx>88</posx>
-                <posy>157</posy>
+                <left>88</left>
+                <top>157</top>
                 <width>322</width>
                 <height>322</height>
                 <texture border="20">images/GeneralSlider.png</texture>
@@ -787,8 +770,8 @@
             </control>
             <control type="image">
                 <visible>Control.HasFocus(314)</visible>
-                <posx>88</posx>
-                <posy>157</posy>
+                <left>88</left>
+                <top>157</top>
                 <width>322</width>
                 <height>322</height>
                 <texture border="20">images/GeneralSlider.png</texture>
@@ -805,28 +788,28 @@
     <include name="weather_shelf">
         <control type="group">
             <animation condition="!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
-            <posy>60</posy>
+            <top>60</top>
             <visible>[Container(9000).HasFocus(345)]</visible>
             <include>ShelfFade</include>
             <control type="label">
-                <posx>83</posx>
-                <posy>20</posy>
+                <left>83</left>
+                <top>20</top>
                 <width>1754</width>
                 <height>40</height>
                 <align>center</align>
                 <label>[B]$INFO[Weather.Location][/B]</label>
             </control>
             <control type="image">
-                <posx>83</posx>
-                <posy>70</posy>
+                <left>83</left>
+                <top>70</top>
                 <width>1754</width>
                 <height>350</height>
                 <aspectratio>stretch</aspectratio>
                 <texture background="true">images/weathersingle.png</texture>
             </control>
             <control type="image">
-                <posx>83</posx>
-                <posy>420</posy>
+                <left>83</left>
+                <top>420</top>
                 <width>1754</width>
                 <height>350</height>
                 <aspectratio>stretch</aspectratio>
@@ -838,14 +821,14 @@
                 <onleft>9000</onleft>
                 <onright>9000</onright>
                 <orientation>horizontal</orientation>
-                <posx>85</posx>
-                <posy>70</posy>
+                <left>85</left>
+                <top>70</top>
                 <width>1760</width>
                 <height>418</height>
                 <itemlayout width="250">
                     <control type="label">
-                        <posx>125</posx>
-                        <posy>160</posy>
+                        <left>125</left>
+                        <top>160</top>
                         <height>45</height>
                         <width>250</width>
                         <align>center</align>
@@ -853,16 +836,16 @@
                         <label>$INFO[ListItem.label]</label>
                     </control>
                     <control type="label" description="temps">
-                        <posx>125</posx>
-                        <posy>200</posy>
+                        <left>125</left>
+                        <top>200</top>
                         <height>100</height>
                         <width>250</width>
                         <align>center</align>
                         <label>$INFO[ListItem.label2]</label>
                     </control>
                     <control type="label" description="Conditions">
-                        <posx>125</posx>
-                        <posy>290</posy>
+                        <left>125</left>
+                        <top>290</top>
                         <height>45</height>
                         <width>250</width>
                         <font>size21</font>
@@ -878,8 +861,8 @@
                 </itemlayout>
                 <focusedlayout width="250">
                     <control type="label">
-                        <posx>125</posx>
-                        <posy>160</posy>
+                        <left>125</left>
+                        <top>160</top>
                         <height>45</height>
                         <width>250</width>
                         <align>center</align>
@@ -887,16 +870,16 @@
                         <label>$INFO[ListItem.label]</label>
                     </control>
                     <control type="label" description="temps">
-                        <posx>125</posx>
-                        <posy>200</posy>
+                        <left>125</left>
+                        <top>200</top>
                         <height>100</height>
                         <width>250</width>
                         <align>center</align>
                         <label>$INFO[ListItem.label2]</label>
                     </control>
                     <control type="label" description="Conditions">
-                        <posx>125</posx>
-                        <posy>290</posy>
+                        <left>125</left>
+                        <top>290</top>
                         <height>45</height>
                         <width>250</width>
                         <font>size21</font>
@@ -963,8 +946,8 @@
                 </content>
             </control>
             <control type="image">
-                <posx>85</posx>
-                <posy>70</posy>
+                <left>85</left>
+                <top>70</top>
                 <width>1750</width>
                 <height>360</height>
                 <aspectratio>stretch</aspectratio>
@@ -1064,8 +1047,8 @@
             </control>
             <control type="image">
                 <visible>Control.HasFocus(319)</visible>
-                <posx>66</posx>
-                <posy>90</posy>
+                <left>66</left>
+                <top>90</top>
                 <width>283</width>
                 <height>408</height>
                 <texture border="10=">images/SliderWL.png</texture>
