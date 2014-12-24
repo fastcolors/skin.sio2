@@ -107,7 +107,7 @@
       <top>40</top>
       <animation condition="!Control.HasFocus(21)" effect="fade" start="100" end="60" time="20" reversible="true">Conditional</animation>
       <control type="label" id="102" description="Right Header Label">
-        <left>45r</left>
+        <right>45</right>
         <width>900</width>
         <align>right</align>
         <label>-</label>
@@ -128,7 +128,7 @@
         <pagecontrol>61</pagecontrol>
         <itemlayout height="60" width="840">
           <control type="label">
-            <left>15r</left>
+            <right>15</right>
             <width>790</width>
             <height>60</height>
             <font>size26</font>
@@ -138,7 +138,7 @@
             <info>ListItem.Label</info>
           </control>
           <control type="label">
-            <left>820r</left>
+            <right>820</right>
             <height>60</height>
             <width>150</width>
             <font>size27</font>
@@ -149,7 +149,7 @@
         </itemlayout>
         <focusedlayout height="60" width="840">
           <control type="label">
-            <left>15r</left>
+            <right>15</right>
             <width>790</width>
             <height>60</height>
             <font>size26</font>
@@ -159,7 +159,7 @@
             <info>ListItem.Label</info>
           </control>
           <control type="label">
-            <left>820r</left>
+            <right>820</right>
             <height>60</height>
             <width>150</width>
             <font>size27</font>

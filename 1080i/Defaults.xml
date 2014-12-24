@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <default type="label">
-    <left>0</left>
-    <top>0</top>
     <label>-</label>
     <height>75</height>
     <align>left</align>

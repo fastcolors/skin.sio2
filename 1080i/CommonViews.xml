@@ -886,7 +886,7 @@
     <alttexturefocus border="8">images/Buttonselect.png</alttexturefocus>
 	</include>
   <include name="DialogGLs">
-    <left>675</left>
+    <centerleft>960</centerleft>
     <top>354</top>
     <width>576</width>
     <height>375</height>

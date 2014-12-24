@@ -5,8 +5,8 @@
         <animation effect="fade" end="0" time="100">Hidden</animation>
     </include>
     <include name="ShelfTitle">
-        <left>30</left>
-        <top>20</top>
+        <left>90</left>
+        <top>60</top>
         <height>45</height>
         <width>750</width>
         <align>left</align>
@@ -17,15 +17,15 @@
     </include>
     <include name="MoviesShortcutsCommons">
         <include>ShelfFade</include>
-        <top>90</top>
+        <top>100</top>
         <width>1920</width>
         <height>500</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
-        <itemlayout height="350" width="300">
+        <itemlayout height="350" width="295">
             <control type="image" description="Reflection">
                 <visible>IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <left>78</left>
+                <left>92</left>
                 <top>400</top>
                 <width>260</width>
                 <height>390</height>
@@ -34,7 +34,7 @@
             </control>
             <control type="image" description="Reflection">
                 <visible>!IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <left>78</left>
+                <left>92</left>
                 <top>400</top>
                 <width>260</width>
                 <height>390</height>
@@ -43,29 +43,29 @@
             </control>
             <control type="image">
                 <visible>IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <left>78</left>
-                <top>10</top>
+                <left>92</left>
+                <top>16</top>
                 <width>260</width>
-                <height>390</height>
+                <height>384</height>
                 <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
                 <visible>!IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <left>78</left>
-                <top>10</top>
+                <left>92</left>
+                <top>16</top>
                 <width>260</width>
-                <height>390</height>
+                <height>384</height>
                 <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
                 <aspectratio>scale</aspectratio>
             </control>
         </itemlayout>
-        <focusedlayout height="420" width="300">
+        <focusedlayout height="420" width="295">
             <control type="image" description="Reflection">
                 <visible>IsEmpty(ListItem.Art(tvshow.poster))</visible>
                 <animation effect="fade" start="100" end="0" time="400">Focus</animation>
                 <animation effect="fade" start="0" end="100" time="400">unFocus</animation>
-                <left>78</left>
+                <left>92</left>
                 <top>400</top>
                 <width>260</width>
                 <height>390</height>
@@ -76,7 +76,7 @@
                 <visible>!IsEmpty(ListItem.Art(tvshow.poster))</visible>
                 <animation effect="fade" start="100" end="0" time="400">Focus</animation>
                 <animation effect="fade" start="0" end="100" time="400">unFocus</animation>
-                <left>78</left>
+                <left>92</left>
                 <top>400</top>
                 <width>260</width>
                 <height>390</height>
@@ -85,19 +85,19 @@
             </control>
             <control type="image">
                 <visible>IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <left>78</left>
-                <top>10</top>
+                <left>92</left>
+                <top>16</top>
                 <width>260</width>
-                <height>390</height>
+                <height>384</height>
                 <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
                 <visible>!IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <left>78</left>
-                <top>10</top>
+                <left>92</left>
+                <top>16</top>
                 <width>260</width>
-                <height>390</height>
+                <height>384</height>
                 <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
                 <aspectratio>scale</aspectratio>
             </control>
@@ -107,7 +107,7 @@
                 <control type="image">
                     <visible>ControlGroup(700).HasFocus() + !IsEmpty(Listitem.Label2)</visible>
                     <include>VisibleFade</include>
-                    <left>78</left>
+                    <centerleft>224</centerleft>
                     <top>370</top>
                     <width>260</width>
                     <height>30</height>
@@ -117,7 +117,7 @@
                 </control>
                 <control type="label">
                     <visible>ControlGroup(700).HasFocus() + !IsEmpty(Listitem.Label2)</visible>
-                    <centerleft>208</centerleft>
+                    <centerleft>224</centerleft>
                     <top>370</top>
                     <width>260</width>
                     <height>30</height>
@@ -129,7 +129,7 @@
                 </control>
                 <control type="textbox">
                     <visible>ControlGroup(700).HasFocus()</visible>
-                    <left>60</left>
+                    <centerleft>224</centerleft>
                     <top>410</top>
                     <width>296</width>
                     <height>60</height>
@@ -215,19 +215,19 @@
     <include name="movshelslider">
         <control type="image">
             <visible>Control.HasFocus(311)</visible>
-            <left>66</left>
-            <top>90</top>
-            <width>283</width>
+            <left>80</left>
+            <top>104</top>
+            <width>284</width>
             <height>408</height>
             <texture border="10=">images/SliderWL.png</texture>
             <aspectratio>stretch</aspectratio>
             <animation effect="fade" time="220">VisibleChange</animation>
             <animation condition="Container(311).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(1)" effect="slide" start="0,0" end="300,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(2)" effect="slide" start="0,0" end="600,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(3)" effect="slide" start="0,0" end="900,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(4)" effect="slide" start="0,0" end="1200,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(5)" effect="slide" start="0,0" end="1500,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(311).Position(1)" effect="slide" start="0,0" end="295,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(311).Position(2)" effect="slide" start="0,0" end="590,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(311).Position(3)" effect="slide" start="0,0" end="885,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(311).Position(4)" effect="slide" start="0,0" end="1180,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(311).Position(5)" effect="slide" start="0,0" end="1475,0" time="220" easing="inout" reversible="true">Conditional</animation>
         </control>
     </include>
     <include name="Movies">
@@ -245,19 +245,19 @@
     <include name="tvshelfslider">
         <control type="image">
             <visible>Control.HasFocus(312)</visible>
-            <left>66</left>
-            <top>90</top>
-            <width>283</width>
+            <left>80</left>
+            <top>104</top>
+            <width>284</width>
             <height>408</height>
             <texture border="10=">images/SliderWL.png</texture>
             <aspectratio>stretch</aspectratio>
             <animation effect="fade" time="220">VisibleChange</animation>
             <animation condition="Container(312).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="300,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(312).Position(2)" effect="slide" start="0,0" end="600,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="900,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(312).Position(4)" effect="slide" start="0,0" end="1200,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(312).Position(5)" effect="slide" start="0,0" end="1500,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="295,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(312).Position(2)" effect="slide" start="0,0" end="590,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="885,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(312).Position(4)" effect="slide" start="0,0" end="1180,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(312).Position(5)" effect="slide" start="0,0" end="1475,0" time="220" easing="inout" reversible="true">Conditional</animation>
         </control>
     </include>
     <include name="TV">

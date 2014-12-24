@@ -18,16 +18,8 @@
                 <texture border="150">images/Dialog.png</texture>
             </control>
             <control type="grouplist" id="9000">
-                <left>600</left>
-                <top>220</top>
-                <width>576</width>
                 <height>678</height>
-                <itemgap>0</itemgap>
-                <onleft>50</onleft>
-                <onright>50</onright>
-                <onup>9000</onup>
-                <ondown>9000</ondown>
-                <scrolltime>200</scrolltime>
+                <include>DialogGLs</include>
                 <control type="button" id="2" description="Views">
                     <texturenofocus>-</texturenofocus>
                     <include>DialogButt</include>

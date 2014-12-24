@@ -19,7 +19,7 @@
       </control>
       <control type="grouplist" id="9000">
 	  <top>330</top>
-	  <height>auto</height>
+	  <height>678</height>
         <include>DialogGLs</include>
         <control type="button" id="2" description="Views">
           <texturenofocus>-</texturenofocus>
