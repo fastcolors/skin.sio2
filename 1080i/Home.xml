@@ -17,8 +17,8 @@
         </control>
         <control type="button" id="9009">
             <visible allowhiddenfocus="true">Control.HasFocus(9009)</visible>
-            <left></left>
-            <top>26</top>
+            <left>50</left>
+            <top>65</top>
             <width>34</width>
             <height>34</height>
             <texturefocus aspectratio="keep">images/hometoggle.png</texturefocus>
