@@ -10,7 +10,7 @@
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
             <include>DialogOpenCloseVisible</include>
             <control type="image" description="List back">
-                <left>380</left>
+                <centerleft>960</centerleft>
                 <top>50</top>
                 <width>1002</width>
                 <height>1006</height>
@@ -19,6 +19,7 @@
             </control>
             <control type="grouplist" id="9000">
                 <height>678</height>
+                <top>220</top>
                 <include>DialogGLs</include>
                 <control type="button" id="2" description="Views">
                     <texturenofocus>-</texturenofocus>
