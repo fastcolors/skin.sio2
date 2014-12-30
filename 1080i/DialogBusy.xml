@@ -18,8 +18,8 @@
       <left>832</left>
       <top>412</top>
       <control type="multiimage" description="Busy animation">
-        <width>256</width>
-        <height>256</height>
+        <width>200</width>
+        <height>200</height>
         <imagepath>busy/multi</imagepath>
         <timeperimage>85</timeperimage>
 		<fadetime>0</fadetime>
