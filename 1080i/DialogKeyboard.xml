@@ -43,7 +43,6 @@
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>
                 <align>center</align>
-                <textcolor>black</textcolor>
             </control>
             <control type="group">
                 <left>160</left>
