@@ -827,7 +827,7 @@
                 <height>418</height>
                 <itemlayout width="250">
                     <control type="label">
-                        <left>125</left>
+                        <centercenterleft>125</centercenterleft>
                         <top>160</top>
                         <height>45</height>
                         <width>250</width>
@@ -836,7 +836,7 @@
                         <label>$INFO[ListItem.label]</label>
                     </control>
                     <control type="label" description="temps">
-                        <left>125</left>
+                        <centerleft>125</centerleft>
                         <top>200</top>
                         <height>100</height>
                         <width>250</width>
@@ -844,7 +844,7 @@
                         <label>$INFO[ListItem.label2]</label>
                     </control>
                     <control type="label" description="Conditions">
-                        <left>125</left>
+                        <centerleft>125</centerleft>
                         <top>290</top>
                         <height>45</height>
                         <width>250</width>
@@ -861,7 +861,7 @@
                 </itemlayout>
                 <focusedlayout width="250">
                     <control type="label">
-                        <left>125</left>
+                        <centerleft>125</centerleft>
                         <top>160</top>
                         <height>45</height>
                         <width>250</width>
@@ -870,7 +870,7 @@
                         <label>$INFO[ListItem.label]</label>
                     </control>
                     <control type="label" description="temps">
-                        <left>125</left>
+                        <centerleft>125</centerleft>
                         <top>200</top>
                         <height>100</height>
                         <width>250</width>
@@ -878,7 +878,7 @@
                         <label>$INFO[ListItem.label2]</label>
                     </control>
                     <control type="label" description="Conditions">
-                        <left>125</left>
+                        <centerleft>125</centerleft>
                         <top>290</top>
                         <height>45</height>
                         <width>250</width>
