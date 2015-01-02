@@ -1020,7 +1020,7 @@
     <scrolltime>400</scrolltime>
     <itemlayout height="357" width="354">
       <control type="label">
-        <left>178</left>
+        <centerleft>178</centerleft>
         <top>178</top>
         <width>345</width>
         <height>30</height>
@@ -1057,7 +1057,7 @@
     </itemlayout>
     <focusedlayout height="357" width="354">
       <control type="label">
-        <left>178</left>
+        <centerleft>178</centerleft>
         <top>178</top>
         <width>345</width>
         <height>30</height>
@@ -1091,7 +1091,7 @@
         <texture border="10">images/generalslider.png</texture>
       </control>
       <control type="label" description="title">
-        <left>177</left>
+        <centerleft>177</centerleft>
         <top>310</top>
         <width>360</width>
         <align>center</align>

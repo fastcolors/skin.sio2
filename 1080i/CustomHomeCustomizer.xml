@@ -32,14 +32,6 @@
                     <ondown>noop</ondown>
                     <scrolltime tween="sine" easing="inout">280</scrolltime>
                     <itemlayout height="230" width="300">
-                        <control type="image" description="THMBSBASE">
-                            <left>20</left>
-                            <top>48</top>
-                            <width>260</width>
-                            <height>168</height>
-                            <colordiffuse>FF666666</colordiffuse>
-                            <texture>icons/base.png</texture>
-                        </control>
                         <control type="Image" description="THUMB">
                             <visible>!IsEmpty(Listitem.thumb)</visible>
                             <left>20</left>
@@ -47,7 +39,7 @@
                             <height>168</height>
                             <width>260</width>
                             <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
-                            <aspectratio>stretch</aspectratio>
+                            <aspectratio scalediffuse="false">scale</aspectratio>
                         </control>
                         <control type="Image" description="THUMB">
                             <visible>IsEmpty(Listitem.thumb)</visible>
@@ -56,7 +48,7 @@
                             <height>168</height>
                             <width>260</width>
                             <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
-                            <aspectratio>stretch</aspectratio>
+                            <aspectratio scalediffuse="false">scale</aspectratio>
                         </control>
                         <control type="label" description="Main Label">
                             <centerleft>150</centerleft>
@@ -68,14 +60,6 @@
                         </control>
                     </itemlayout>
                     <focusedlayout  height="230" width="370">
-                        <control type="image" description="THMBSBASE">
-                            <left>20</left>
-                            <top>48</top>
-                            <width>260</width>
-                            <height>168</height>
-                            <colordiffuse>FF666666</colordiffuse>
-                            <texture>icons/base.png</texture>
-                        </control>
                         <control type="Image" description="THUMB">
                             <visible>!IsEmpty(Listitem.thumb)</visible>
                             <left>20</left>
@@ -83,7 +67,7 @@
                             <height>168</height>
                             <width>260</width>
                             <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
-                            <aspectratio>stretch</aspectratio>
+                            <aspectratio scalediffuse="false">scale</aspectratio>
                         </control>
                         <control type="Image" description="THUMB">
                             <visible>IsEmpty(Listitem.thumb)</visible>
@@ -92,15 +76,13 @@
                             <height>168</height>
                             <width>260</width>
                             <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
-                            <aspectratio>stretch</aspectratio>
+                            <aspectratio scalediffuse="false">scale</aspectratio>
                         </control>
                         <control type="image" description="Selection Overlay">
-                            <left>20</left>
-                            <top>48</top>
-                            <height>168</height>
-                            <width>260</width>
+                            <top>40</top>
+                            <height>184</height>
+                            <width>300</width>
                             <texture>images/atvslider.png</texture>
-                            <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label" description="Main Label">
                             <centerleft>150</centerleft>
