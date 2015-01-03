@@ -5,17 +5,17 @@
         <font>
             <name>font10</name>
             <filename>Default.ttf</filename>
-            <size>21</size>
+            <size>26</size>
         </font>
         <font>
             <name>font13</name>
             <filename>Default.ttf</filename>
-            <size>21</size>
+            <size>26</size>
         </font>
         <font>
             <name>font14</name>
             <filename>Default.ttf</filename>
-            <size>21</size>
+            <size>26</size>
         </font>
         <font>
             <name>font12</name>
@@ -150,7 +150,33 @@
     </fontset>
     <fontset id="Strong">
         <font>
+            <name>font10</name>
+            <filename>Strong.ttf</filename>
+            <size>26</size>
+        </font>
+        <font>
             <name>font13</name>
+            <filename>Strong.ttf</filename>
+            <size>26</size>
+        </font>
+        <font>
+            <name>font14</name>
+            <filename>Strong.ttf</filename>
+            <size>26</size>
+        </font>
+        <font>
+            <name>font12</name>
+            <filename>Strong.ttf</filename>
+            <size>21</size>
+        </font>
+        <font>
+            <name>Size26B</name>
+            <filename>Strong.ttf</filename>
+            <size>26</size>
+            <style>bold</style>
+        </font>
+        <font>
+            <name>special13</name>
             <filename>Strong.ttf</filename>
             <size>21</size>
         </font>
@@ -258,7 +284,33 @@
     </fontset>
     <fontset id="Light">
         <font>
+            <name>font10</name>
+            <filename>Light.ttf</filename>
+            <size>26</size>
+        </font>
+        <font>
             <name>font13</name>
+            <filename>Light.ttf</filename>
+            <size>26</size>
+        </font>
+        <font>
+            <name>font14</name>
+            <filename>Light.ttf</filename>
+            <size>26</size>
+        </font>
+        <font>
+            <name>font12</name>
+            <filename>Light.ttf</filename>
+            <size>21</size>
+        </font>
+        <font>
+            <name>Size26B</name>
+            <filename>Light.ttf</filename>
+            <size>26</size>
+            <style>bold</style>
+        </font>
+        <font>
+            <name>special13</name>
             <filename>Light.ttf</filename>
             <size>21</size>
         </font>
