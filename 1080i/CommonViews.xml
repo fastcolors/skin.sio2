@@ -538,7 +538,7 @@
     <textcolor>White2</textcolor>
   </include>
   <include name="SettingsLabel2">
-    <left>808</left>
+    <right>0</right>
     <top>0</top>
     <height>81</height>
     <width>450</width>

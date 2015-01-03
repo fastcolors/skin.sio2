@@ -4,7 +4,7 @@
     <include>OpenClose</include>
     <controls>
         <control type="label" description="Heading">
-            <left>60r</left>
+            <right>60</right>
             <top>40</top>
             <width>720</width>
             <height>55</height>
