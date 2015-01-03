@@ -477,7 +477,7 @@
                 <visible>!Skin.HasSetting(NORSS)</visible>
                 <include>VisibleFade</include>
                 <left>0</left>
-                <top>1038</top>
+                <top>1046</top>
                 <width>1920</width>
                 <height>33</height>
                 <font>size22</font>
