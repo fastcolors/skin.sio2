@@ -896,49 +896,49 @@
                 <content>
                     <item id="0">
                         <label>33006</label>
-                        <label2>Min:  $INFO[Window(Weather).Property(Day0.LowTemp)] [CR] Max:  $INFO[Window(Weather).Property(Day0.HighTemp)]</label2>
+                        <label2>Min:  $INFO[Window(Weather).Property(Day0.LowTemp)][CR]Max:  $INFO[Window(Weather).Property(Day0.HighTemp)]</label2>
                         <property name="Conditions">$INFO[Window(Weather).Property(Day0.Outlook)]</property>
                         <thumb>$INFO[Window(Weather).Property(Day0.OutlookIcon)]</thumb>
                         <onclick>noop</onclick>
                     </item>
                     <item id="1">
                         <label>$INFO[Window(Weather).Property(Day1.Title)]</label>
-                        <label2>Min:  $INFO[Window(Weather).Property(Day1.LowTemp)] [CR] Max:  $INFO[Window(Weather).Property(Day1.HighTemp)]</label2>
+                        <label2>Min:  $INFO[Window(Weather).Property(Day1.LowTemp)][CR]Max:  $INFO[Window(Weather).Property(Day1.HighTemp)]</label2>
                         <property name="Conditions">$INFO[Window(Weather).Property(Day1.Outlook)]</property>
                         <thumb>$INFO[Window(Weather).Property(Day1.OutlookIcon)]</thumb>
                         <onclick>noop</onclick>
                     </item>
                     <item id="2">
                         <label>$INFO[Window(Weather).Property(Day2.Title)]</label>
-                        <label2>Min:  $INFO[Window(Weather).Property(Day2.LowTemp)] [CR] Max:  $INFO[Window(Weather).Property(Day2.HighTemp)]</label2>
+                        <label2>Min:  $INFO[Window(Weather).Property(Day2.LowTemp)][CR]Max:  $INFO[Window(Weather).Property(Day2.HighTemp)]</label2>
                         <property name="Conditions">$INFO[Window(Weather).Property(Day2.Outlook)]</property>
                         <thumb>$INFO[Window(Weather).Property(Day2.OutlookIcon)]</thumb>
                         <onclick>noop</onclick>
                     </item>
                     <item id="3">
                         <label>$INFO[Window(Weather).Property(Day3.Title)]</label>
-                        <label2>Min:  $INFO[Window(Weather).Property(Day3.LowTemp)] [CR] Max:  $INFO[Window(Weather).Property(Day3.HighTemp)]</label2>
+                        <label2>Min:  $INFO[Window(Weather).Property(Day3.LowTemp)][CR]Max:  $INFO[Window(Weather).Property(Day3.HighTemp)]</label2>
                         <property name="Conditions">$INFO[Window(Weather).Property(Day3.Outlook)]</property>
                         <thumb>$INFO[Window(Weather).Property(Day3.OutlookIcon)]</thumb>
                         <onclick>noop</onclick>
                     </item>
                     <item id="4">
                         <label>$INFO[Window(Weather).Property(Day4.Title)]</label>
-                        <label2>Min:  $INFO[Window(Weather).Property(Day4.LowTemp)] [CR] Max:  $INFO[Window(Weather).Property(Day4.HighTemp)]</label2>
+                        <label2>Min:  $INFO[Window(Weather).Property(Day4.LowTemp)][CR]Max:  $INFO[Window(Weather).Property(Day4.HighTemp)]</label2>
                         <property name="Conditions">$INFO[Window(Weather).Property(Day4.Outlook)]</property>
                         <thumb>$INFO[Window(Weather).Property(Day4.OutlookIcon)]</thumb>
                         <onclick>noop</onclick>
                     </item>
                     <item id="5">
                         <label>$INFO[Window(Weather).Property(Day5.Title)]</label>
-                        <label2>Min:  $INFO[Window(Weather).Property(Day5.LowTemp)] [CR] Max:  $INFO[Window(Weather).Property(Day5.HighTemp)]</label2>
+                        <label2>Min:  $INFO[Window(Weather).Property(Day5.LowTemp)][CR]Max:  $INFO[Window(Weather).Property(Day5.HighTemp)]</label2>
                         <property name="Conditions">$INFO[Window(Weather).Property(Day5.Outlook)]</property>
                         <thumb>$INFO[Window(Weather).Property(Day5.OutlookIcon)]</thumb>
                         <onclick>noop</onclick>
                     </item>
                     <item id="6">
                         <label>$INFO[Window(Weather).Property(Day6.Title)]</label>
-                        <label2>Min:  $INFO[Window(Weather).Property(Day6.LowTemp)] [CR] Max:  $INFO[Window(Weather).Property(Day6.HighTemp)]</label2>
+                        <label2>Min:  $INFO[Window(Weather).Property(Day6.LowTemp)][CR]Max:  $INFO[Window(Weather).Property(Day6.HighTemp)]</label2>
                         <property name="Conditions">$INFO[Window(Weather).Property(Day6.Outlook)]</property>
                         <thumb>$INFO[Window(Weather).Property(Day6.OutlookIcon)]</thumb>
                         <onclick>noop</onclick>
