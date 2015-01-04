@@ -287,7 +287,7 @@
                     <thumb>$INFO[Skin.String(HomeAddon.4.Icon)]</thumb>
                     <label2>$INFO[system.addonicon(Skin.String(HomeAddon.4.label))]</label2>
                     <label>$INFO[system.addonTitle(Skin.String(HomeAddon.4.Label))]</label>
-                    <property name="color">icons/blue.png</property>
+                    <property name="color">icons/lightblue.png</property>
                     <onclick>RunAddon($INFO[Skin.String(HomeAddon.4.Label)])</onclick>
                 </item>
                 <item id="405" description="Custom addon">

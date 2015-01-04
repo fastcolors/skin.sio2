@@ -28,10 +28,10 @@
         <control type="grouplist" id="3" description="TopMenu">
             <left>0</left>
             <top>78</top>
-            <width>auto</width>
+            <width>1920</width>
             <align>center</align>
             <height>80</height>
-            <itemgap>5</itemgap>
+            <itemgap>0</itemgap>
             <onup>20</onup>
             <ondown>5</ondown>
             <orientation>horizontal</orientation>
@@ -77,6 +77,7 @@
             <textoffsetx>20</textoffsetx>
             <align>center</align>
             <aligny>center</aligny>
+            <width>300</width>
             <font>size34</font>
         </control>
         <control type="sliderex" id="13">
