@@ -74,7 +74,7 @@
         </control>
         <control type="label" id="107">
             <description>version</description>
-            <left>50r</left>
+            <right>50</right>
             <top>5</top>
             <width>350</width>
             <height>40</height>

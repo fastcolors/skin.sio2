@@ -561,7 +561,7 @@
             <width>500</width>
             <height>45</height>
             <align>right</align>
-            <font>size30</font>
+            <font>size33B</font>
             <textcolor>White</textcolor>
             <label>$INFO[System.Time] $INFO[System.Date]</label>
         </control>

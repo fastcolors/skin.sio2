@@ -177,7 +177,7 @@
         </focusedlayout>
       </control>
       <control type="label" id="13" description="itemcount">
-        <left>50r</left>
+        <right>50</right>
         <top>40</top>
         <width>480</width>
         <align>right</align>

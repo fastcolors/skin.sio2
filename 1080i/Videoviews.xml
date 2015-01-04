@@ -604,7 +604,7 @@
                 </control>
             </control>
             <control type="scrollbar" id="60">
-                <left>50r</left>
+                <right>50</right>
                 <top>120</top>
                 <height>820</height>
                 <onleft>50</onleft>
