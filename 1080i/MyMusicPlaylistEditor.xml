@@ -12,7 +12,7 @@
     </control>
     <control type="label" description="Clock">
       <visible>Skin.HasSetting(ShowClock)</visible>
-      <left>33r</left>
+      <left>50</left>
       <top>3</top>
       <width>195</width>
       <height>75</height>
