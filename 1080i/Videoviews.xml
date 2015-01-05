@@ -640,7 +640,7 @@
                             <aspectratio scalediffuse="false">scale</aspectratio>
                         </control>
                         <control type="label">
-                            <left>181</left>
+                            <centerleft>181</centerleft>
                             <top>290</top>
                             <width>296</width>
                             <height>45</height>
@@ -661,7 +661,7 @@
                             <aspectratio scalediffuse="false">scale</aspectratio>
                         </control>
                         <control type="label">
-                            <left>181</left>
+                            <centerleft>181</centerleft>
                             <top>290</top>
                             <width>296</width>
                             <height>45</height>

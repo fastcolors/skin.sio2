@@ -18,14 +18,14 @@
       <control type="label" id="1" description="Heading">
         <width>960</width>
         <label>-</label>
-        <font>size28</font>
+        <font>size30B</font>
         <shadowcolor>black</shadowcolor>
         <align>center</align>
       </control>
       <control type="textbox" id="9" description="content">
         <top>75</top>
         <width>960</width>
-		<height>135</height>
+		<height>185</height>
         <align>center</align>
         <label>-</label>
       </control>

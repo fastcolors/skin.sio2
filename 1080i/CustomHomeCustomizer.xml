@@ -102,7 +102,7 @@
                         </item>
                         <item id="1013" description="Movies">
                             <visible>Skin.HasSetting(hidevaddons) + Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)</visible>
-                            <thumb>help/Off.png</thumb>
+                            <thumb>help/off.png</thumb>
                             <label>$LOCALIZE[157] $LOCALIZE[24001]</label>
                             <onclick>Skin.ToggleSetting(hidevaddons)</onclick>
                         </item>
@@ -114,7 +114,7 @@
                         </item>
                         <item id="1001" description="Movies">
                             <visible>Skin.HasSetting(hidemovie)</visible>
-                            <thumb>help/Off.png</thumb>
+                            <thumb>help/off.png</thumb>
                             <label>$LOCALIZE[20342]</label>
                             <onclick>Skin.ToggleSetting(hidemovie)</onclick>
                         </item>
@@ -126,7 +126,7 @@
                         </item>
                         <item id="1002" description="TV">
                             <visible>Skin.HasSetting(hidetv)</visible>
-                            <thumb>help/Off.png</thumb>
+                            <thumb>help/off.png</thumb>
                             <label>$LOCALIZE[20343]</label>
                             <onclick>Skin.ToggleSetting(hidetv)</onclick>
                         </item>
@@ -138,7 +138,7 @@
                         </item>
                         <item id="1003" description="Music">
                             <visible>Skin.HasSetting(hidemusic)</visible>
-                            <thumb>help/Off.png</thumb>
+                            <thumb>help/off.png</thumb>
                             <label>$LOCALIZE[2]</label>
                             <onclick>Skin.ToggleSetting(hidemusic)</onclick>
                         </item>
@@ -150,7 +150,7 @@
                         </item>
                         <item id="1005" description="Addons">
                             <visible>Skin.HasSetting(hideaddon)</visible>
-                            <thumb>help/Off.png</thumb>
+                            <thumb>help/off.png</thumb>
                             <label>$LOCALIZE[24001]</label>
                             <onclick>Skin.ToggleSetting(hideaddon)</onclick>
                         </item>
@@ -162,7 +162,7 @@
                         </item>
                         <item id="1004" description="Photos">
                             <visible>Skin.HasSetting(hidepic)</visible>
-                            <thumb>help/Off.png</thumb>
+                            <thumb>help/off.png</thumb>
                             <label>$LOCALIZE[1]</label>
                             <onclick>Skin.ToggleSetting(hidepic)</onclick>
                         </item>
@@ -174,7 +174,7 @@
                         </item>
                         <item id="1006" description="Weather">
                             <visible>Skin.HasSetting(hidewtr)</visible>
-                            <thumb>help/Off.png</thumb>
+                            <thumb>help/off.png</thumb>
                             <label>$LOCALIZE[8]</label>
                             <onclick>Skin.ToggleSetting(hidewtr)</onclick>
                         </item>
@@ -186,13 +186,13 @@
                         </item>
                         <item id="1010" description="Favourites">
                             <visible>Skin.HasSetting(hidefav)</visible>
-                            <thumb>help/Off.png</thumb>
+                            <thumb>help/off.png</thumb>
                             <label>$LOCALIZE[1036]</label>
                             <onclick>Skin.ToggleSetting(hidefav)</onclick>
                         </item>
                         <!--item id="356">
                           <visible>!Skin.HasSetting(3dmovs)</visible>
-                          <thumb>help/Off.png</thumb>
+                          <thumb>help/off.png</thumb>
                           <label>3D $LOCALIZE[342]</label>
                           <onclick>Skin.ToggleSetting(3dmovs)</onclick>
                         </item>
@@ -210,13 +210,13 @@
                         </item>
                         <item id="1014">
                             <visible>System.GetBool(pvrmanager.enabled) + Skin.HasSetting(PVRhide)</visible>
-                            <thumb>help/Off.png</thumb>
+                            <thumb>help/off.png</thumb>
                             <label>31059</label>
                             <onclick>Skin.ToggleSetting(PVRhide)</onclick>
                         </item>
                         <item id="1014">
                             <visible>!System.GetBool(pvrmanager.enabled)</visible>
-                            <thumb>help/Off.png</thumb>
+                            <thumb>help/off.png</thumb>
                             <label>31059</label>
                             <onclick>ActivateWindow(pvrsettings)</onclick>
                         </item>
@@ -462,7 +462,7 @@
                         </item>
                         <item id="1007" description="Watchlist">
                             <visible>Skin.HasSetting(hidewl)</visible>
-                            <thumb>help/Off.png</thumb>
+                            <thumb>help/off.png</thumb>
                             <label>31028</label>
                             <onclick>Skin.ToggleSetting(hidewl)</onclick>
                         </item>
@@ -474,7 +474,7 @@
                         </item>
                         <item id="1008" description="Programs">
                             <visible>Skin.HasSetting(hideprog)</visible>
-                            <thumb>help/Off.png</thumb>
+                            <thumb>help/off.png</thumb>
                             <label>$LOCALIZE[0]</label>
                             <onclick>Skin.ToggleSetting(hideprog)</onclick>
                         </item>
@@ -486,7 +486,7 @@
                         </item>
                         <item id="1011" description="Sources">
                             <visible>Skin.HasSetting(hideSources)</visible>
-                            <thumb>help/Off.png</thumb>
+                            <thumb>help/off.png</thumb>
                             <label>20094</label>
                             <onclick>Skin.ToggleSetting(hideSources)</onclick>
                         </item>
@@ -498,7 +498,7 @@
                         </item>
                         <item id="1009" description="RSS">
                           <visible>Skin.HasSetting(hiderss)</visible>
-                          <thumb>help/Off.png</thumb>
+                          <thumb>help/off.png</thumb>
                           <label>RSS</label>
                           <onclick>Skin.ToggleSetting(hiderss)</onclick>
                         </item>-->
@@ -511,7 +511,7 @@
                         </item>
                         <item id="1012" description="Browser">
                             <visible>Skin.HasSetting(hidebro)</visible>
-                            <thumb>help/Off.png</thumb>
+                            <thumb>help/off.png</thumb>
                             <label>7</label>
                             <onclick>Skin.ToggleSetting(hidebro)</onclick>
                         </item>

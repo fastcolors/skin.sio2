@@ -198,7 +198,7 @@
       <control type="image" description="ScrollBars">
         <visible>Container(50).HasFocus(1) + Skin.HasSetting(colormenu)</visible>
         <include>Help_Panel</include>
-        <texture>help/OFF.png</texture>
+        <texture>help/off.png</texture>
       </control>
       <control type="image" description="Logo">
         <visible>Container(50).HasFocus(2) | Container(50).HasFocus(3)</visible>
@@ -213,7 +213,7 @@
       <control type="image" description="ScrollBars">
         <visible>Container(50).HasFocus(4) + !Skin.HasSetting(Scrollbars_Active)</visible>
         <include>Help_Panel</include>
-        <texture>help/OFF.png</texture>
+        <texture>help/off.png</texture>
       </control>
       <control type="image" description="Menuviews">
         <visible>Container(50).HasFocus(5)</visible>
@@ -223,7 +223,7 @@
       <control type="image" description="Menuviews">
         <visible>Container(50).HasFocus(5) + Skin.HasSetting(ViewsMenuOff)</visible>
         <include>Help_Panel</include>
-        <texture>help/OFF.png</texture>
+        <texture>help/off.png</texture>
       </control>
       <control type="image" description="shelf">
         <visible>Container(50).HasFocus(8)</visible>
@@ -243,7 +243,7 @@
       <control type="image" description="clock">
         <visible>Container(50).HasFocus(11) + !Skin.HasSetting(ShowClock)</visible>
         <include>Help_Panel</include>
-        <texture>help/Off.png</texture>
+        <texture>help/off.png</texture>
       </control>
       <control type="image" description="reset">
         <visible>Container(50).HasFocus(12) | Container(50).HasFocus(17)</visible>
@@ -258,7 +258,7 @@
       <control type="image" description="shelf">
         <visible>Container(50).HasFocus(13) + Skin.HasSetting(RecordOff)</visible>
         <include>Help_Panel</include>
-        <texture>help/OFF.png</texture>
+        <texture>help/off.png</texture>
       </control>
       <control type="image" description="shelf">
         <visible>Container(50).HasFocus(14)</visible>
