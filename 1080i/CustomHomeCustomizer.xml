@@ -528,24 +528,24 @@
             <visible>Container(50).HasFocus(1001)</visible>
             <control type="radiobutton" id="100" description="Auto">
                 <include>SettingsSubmenuButtons</include>
-                <label>20386</label>
-                <selected>!Skin.HasSetting(MoviesShelfWL)</selected>
+                <label>$LOCALIZE[20386]</label>
+                <selected>StringCompare(Skin.String(moviesshelf),)</selected>
                 <enable>!Skin.HasSetting(hidemovie)</enable>
-                <onclick>Skin.Reset(MoviesShelfWL)</onclick>
+                <onclick>Skin.SetString(moviesshelf,)</onclick>
+            </control>
+            <control type="radiobutton" id="102" description="Random">
+                <include>SettingsSubmenuButtons</include>
+                <label>$LOCALIZE[590]</label>
+                <selected>StringCompare(Skin.String(moviesshelf),RND)</selected>
+                <enable>!Skin.HasSetting(hidemovie)</enable>
+                <onclick>Skin.SetString(moviesshelf,RND)</onclick>
             </control>
             <control type="radiobutton" id="103" description="Movie Watchlist">
                 <include>SettingsSubmenuButtons</include>
-                <label>$LOCALIZE[31048] $LOCALIZE[342]</label>
-                <selected>Skin.HasSetting(MoviesShelfWL)</selected>
+                <label>$LOCALIZE[31048]</label>
+                <selected>StringCompare(Skin.String(moviesshelf),WL)</selected>
                 <enable>!Skin.HasSetting(hidemovie)</enable>
-                <onclick>Skin.ToggleSetting(MoviesShelfWL)</onclick>
-            </control>
-            <control type="radiobutton" id="104" description="Intruder">
-                <include>SettingsSubmenuButtons</include>
-                <label>$LOCALIZE[31045]</label>
-                <selected>!Skin.HasSetting(intruder)</selected>
-                <enable>!Skin.HasSetting(hidemovie)</enable>
-                <onclick>Skin.ToggleSetting(intruder)</onclick>
+                <onclick>Skin.SetString(moviesshelf,WL)</onclick>
             </control>
         </control>
         <control type="grouplist" id="520" description="TV">
@@ -555,26 +555,19 @@
             <onright>50</onright>
             <visible>Library.HasContent(TVShows)</visible>
             <visible>Container(50).HasFocus(1002)</visible>
-            <control type="radiobutton" id="200" description="TV Auto">
+            <control type="radiobutton" id="200" description="TV WL">
                 <include>SettingsSubmenuButtons</include>
-                <label>20387</label>
+                <label>$LOCALIZE[31048] $LOCALIZE[20364]</label>
                 <selected>!Skin.HasSetting(TVShelf_Watchlist)</selected>
                 <enable>!Skin.HasSetting(hidetv)</enable>
                 <onclick>Skin.Reset(TVShelf_Watchlist)</onclick>
             </control>
-            <control type="radiobutton" id="203" description="TV Watchlist">
+            <control type="radiobutton" id="203" description="TV Auto">
                 <include>SettingsSubmenuButtons</include>
-                <label>$LOCALIZE[31048] $LOCALIZE[20364]</label>
+                <label>20387</label>
                 <selected>Skin.HasSetting(TVShelf_Watchlist)</selected>
                 <enable>!Skin.HasSetting(hidetv)</enable>
                 <onclick>Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
-            </control>
-            <control type="radiobutton" id="204" description="Intruder">
-                <include>SettingsSubmenuButtons</include>
-                <label>$LOCALIZE[31045]</label>
-                <selected>!Skin.HasSetting(intruderTV)</selected>
-                <enable>!Skin.HasSetting(hidetv)</enable>
-                <onclick>Skin.ToggleSetting(intruderTV)</onclick>
             </control>
         </control>
         <control type="group" id="520">
