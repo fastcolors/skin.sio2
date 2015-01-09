@@ -716,8 +716,8 @@
                             </control>
                             <control type="label" description="Label2">
                                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                                <left>197</left>
-                                <top>270</top>
+                                <centerleft>197</centerleft>
+                                <top>272</top>
                                 <height>45</height>
                                 <width>150</width>
                                 <font>size24</font>
@@ -781,8 +781,8 @@
                             </control>
                             <control type="label" description="Label2">
                                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                                <left>197</left>
-                                <top>270</top>
+                                <centerleft>197</centerleft>
+                                <top>272</top>
                                 <height>45</height>
                                 <width>150</width>
                                 <font>size24</font>
@@ -1099,8 +1099,8 @@
                         </control>
                         <control type="label" description="Label2">
                             <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                            <left>1275</left>
-                            <top>125</top>
+                            <centerleft>1275</centerleft>
+                            <top>126</top>
                             <height>45</height>
                             <width>150</width>
                             <font>size26</font>
@@ -1159,8 +1159,8 @@
                             </control>
                             <control type="label" description="Label2">
                                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                                <left>1275</left>
-                                <top>125</top>
+                                <centerleft>1275</centerleft>
+                                <top>126</top>
                                 <height>45</height>
                                 <width>150</width>
                                 <font>size26</font>
