@@ -31,7 +31,7 @@
                     </control>
                     <control type="label" description="Label2">
                         <visible>!ListItem.IsFolder</visible>
-                        <left>45r</left>
+                        <right>45</right>
                         <top>0</top>
                         <height>81</height>
                         <width>300</width>
@@ -52,7 +52,7 @@
                     <control type="label" description="Label2">
                         <visible>!ListItem.IsFolder</visible>
                         <animation effect="fade" time="300" start="50" end="100" delay="100">Focus</animation>
-                        <left>45r</left>
+                        <right>45</right>
                         <top>0</top>
                         <height>81</height>
                         <width>300</width>
