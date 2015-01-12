@@ -36,9 +36,9 @@
             </control>
             <control type="edit" id="312">
                 <description>Edit Text</description>
-                <centerleft>960</centerleft>
+                <left>190</left>
                 <top>199</top>
-                <width>1500</width>
+                <width>1540</width>
                 <height>60</height>
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>
