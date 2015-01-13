@@ -483,7 +483,7 @@
     <textcolor>White2</textcolor>
   </include>
   <include name="52Label2">
-    <left>42r</left>
+    <right>42</right>
     <height>81</height>
     <width>120</width>
     <font>size27</font>
@@ -492,7 +492,7 @@
     <align>right</align>
   </include>
   <include name="52Label2FO">
-    <left>42r</left>
+    <right>42</right>
     <height>81</height>
     <width>120</width>
     <font>size27</font>

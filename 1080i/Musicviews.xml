@@ -133,7 +133,6 @@
         <label>$VAR[RootLabel]</label>
       </control>
     </control>
-    
     <!--ICONE-->
     <control type="group">
       <visible>Control.IsVisible(53)</visible>
