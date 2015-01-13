@@ -490,7 +490,7 @@
             <control type="image" description="RSS Left fade">
                 <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
                 <left>0</left>
-                <top>1038</top>
+                <bottom>0</bottom>
                 <width>90</width>
                 <height>33</height>
                 <texture>images/DefaultGradientH.png</texture>
@@ -498,7 +498,7 @@
             <control type="image" description="RSS Right fade">
                 <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
                 <left>1830</left>
-                <top>1038</top>
+                <bottom>0</bottom>
                 <width>90</width>
                 <height>33</height>
                 <texture flipx="true">images/DefaultGradientH.png</texture>

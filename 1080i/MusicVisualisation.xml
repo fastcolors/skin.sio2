@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window id="2006">
+<window>
   <defaultcontrol always="true">-</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <onload condition="system.hasaddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
@@ -180,7 +180,7 @@
                 <visible>true</visible>
               </control>
               <control type="label">
-                <left>930</left>
+                <left>807</left>
                 <top>0</top>
                 <height>30</height>
                 <width>123</width>
@@ -248,9 +248,9 @@
             </control>
           </control>
           <control type="group" description="Main Labels">
-            <left>1166</left>
+            <right>739</right>
             <control type="image" description="Info BG">
-              <left>-965</left>
+              <right>-35</right>
               <top>515</top>
               <width>1000</width>
               <height>300</height>
@@ -261,7 +261,7 @@
               <animation effect="fade" time="200">Hidden</animation>
             </control>
             <control type="label" description="Title label">
-              <left>0</left>
+              <right>0</right>
               <top>525</top>
               <width>900</width>
               <scroll>true</scroll>
@@ -272,7 +272,7 @@
               <label>$INFO[MusicPlayer.Title]</label>
             </control>
             <control type="label" description="Artist">
-              <left>0</left>
+              <right>0</right>
               <top>585</top>
               <width>900</width>
               <label>$INFO[MusicPlayer.Artist]</label>
@@ -282,6 +282,7 @@
               <textcolor>Grey3</textcolor>
             </control>
             <control type="label" description="Album">
+              <right>0</right>
               <top>636</top>
               <width>900</width>
               <label>$INFO[MusicPlayer.Album]</label>
@@ -290,7 +291,7 @@
               <textcolor>Grey3</textcolor>
             </control>
             <control type="label" description="Track position">
-              <left>0</left>
+              <right>0</right>
               <top>690</top>
               <width>900</width>
               <align>right</align>
@@ -300,52 +301,52 @@
               <font>size26</font>
               <shadowcolor>Black</shadowcolor>
             </control>
-          </control>
-          <control type="group">
-            <top>756</top>
-            <control type="label">
-              <left>237</left>
-              <top>0</top>
-              <height>30</height>
-              <width>123</width>
-              <align>left</align>
-              <label>[B]$INFO[Player.Time][/B]</label>
-              <font>size26</font>
-              <textcolor>Grey2</textcolor>
-            </control>
-            <control type="progress" description="Progress Bar">
-              <left>357</left>
-              <top>11</top>
-              <width>675</width>
-              <height>13</height>
-              <texturebg border="6,6,6,6">MusicOSD/ProgressBG.png</texturebg>
-              <midtexture border="6,0,6,0">MusicOSD/ProgressM.png</midtexture>
-              <righttexture border="0,6,0,6">MusicOSD/ProgressR.png</righttexture>
-              <lefttexture border="0,6,0,6">MusicOSD/ProgressL.png</lefttexture>
-              <overlaytexture>-</overlaytexture>
-              <info>Player.Progress</info>
-              <visible>true</visible>
-            </control>
-            <control type="label">
-              <left>1166</left>
-              <top>0</top>
-              <height>30</height>
-              <width>123</width>
-              <align>right</align>
-              <label>[B]$INFO[Player.TimeRemaining,-][/B]</label>
-              <font>size26</font>
-              <textcolor>Grey2</textcolor>
-            </control>
-            <control type="label">
-              <left>777</left>
-              <top>45</top>
-              <height>30</height>
-              <width>135</width>
-              <align>left</align>
-              <label>$INFO[Control.GetLabel(23)]</label>
-              <font>size26</font>
-              <textcolor>Red</textcolor>
-              <visible>Skin.HasSetting(DebugInfo)</visible>
+            <control type="group">
+              <top>756</top>
+              <control type="label">
+                <right>807</right>
+                <top>0</top>
+                <height>30</height>
+                <width>123</width>
+                <align>left</align>
+                <label>[B]$INFO[Player.Time][/B]</label>
+                <font>size26</font>
+                <textcolor>Grey2</textcolor>
+              </control>
+              <control type="progress" description="Progress Bar">
+                <right>132</right>
+                <top>11</top>
+                <width>675</width>
+                <height>13</height>
+                <texturebg border="6,6,6,6">MusicOSD/ProgressBG.png</texturebg>
+                <midtexture border="6,0,6,0">MusicOSD/ProgressM.png</midtexture>
+                <righttexture border="0,6,0,6">MusicOSD/ProgressR.png</righttexture>
+                <lefttexture border="0,6,0,6">MusicOSD/ProgressL.png</lefttexture>
+                <overlaytexture>-</overlaytexture>
+                <info>Player.Progress</info>
+                <visible>true</visible>
+              </control>
+              <control type="label">
+                <right>0</right>
+                <top>0</top>
+                <height>30</height>
+                <width>123</width>
+                <align>right</align>
+                <label>[B]$INFO[Player.TimeRemaining,-][/B]</label>
+                <font>size26</font>
+                <textcolor>Grey2</textcolor>
+              </control>
+              <control type="label">
+                <left>777</left>
+                <top>45</top>
+                <height>30</height>
+                <width>135</width>
+                <align>left</align>
+                <label>$INFO[Control.GetLabel(23)]</label>
+                <font>size26</font>
+                <textcolor>Red</textcolor>
+                <visible>Skin.HasSetting(DebugInfo)</visible>
+              </control>
             </control>
           </control>
         </control>

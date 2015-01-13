@@ -1047,19 +1047,19 @@
             </control>
             <control type="image">
                 <visible>Control.HasFocus(319)</visible>
-                <left>66</left>
-                <top>90</top>
-                <width>283</width>
+                <left>80</left>
+                <top>104</top>
+                <width>284</width>
                 <height>408</height>
                 <texture border="10=">images/SliderWL.png</texture>
                 <aspectratio>stretch</aspectratio>
                 <animation effect="fade" time="220">VisibleChange</animation>
                 <animation condition="Container(319).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(319).Position(1)" effect="slide" start="0,0" end="300,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(319).Position(2)" effect="slide" start="0,0" end="600,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(319).Position(3)" effect="slide" start="0,0" end="900,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(319).Position(4)" effect="slide" start="0,0" end="1200,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(319).Position(5)" effect="slide" start="0,0" end="1500,0" time="220" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(319).Position(1)" effect="slide" start="0,0" end="295,0" time="220" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(319).Position(2)" effect="slide" start="0,0" end="590,0" time="220" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(319).Position(3)" effect="slide" start="0,0" end="885,0" time="220" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(319).Position(4)" effect="slide" start="0,0" end="1180,0" time="220" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(319).Position(5)" effect="slide" start="0,0" end="1475,0" time="220" easing="inout" reversible="true">Conditional</animation>
             </control>
         </control>
     </include>

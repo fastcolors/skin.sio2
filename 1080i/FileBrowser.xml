@@ -86,7 +86,7 @@
       <include>BlackBackground</include>
       <control type="group" description="Slider and List">
         <left>1020</left>
-      <top>131</top>
+        <top>131</top>
         <control type="panel" id="451">
           <left>0</left>
           <top>0</top>
@@ -101,7 +101,6 @@
           <movement>4</movement>
           <scrolltime tween="sine" easing="inout">280</scrolltime>
           <itemlayout width="802" height="111">
-            
             <control type="image">
               <height>111</height>
               <width>111</width>

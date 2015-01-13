@@ -158,7 +158,7 @@
             <pagecontrol>-</pagecontrol>
             <itemlayout height="26">
               <control type="label">
-                <left>230</left>
+                <left>0</left>
                 <top>0</top>
                 <width>230</width>
                 <height>45</height>
@@ -183,7 +183,7 @@
             </itemlayout>
             <focusedlayout height="26">
               <control type="label">
-                <left>230</left>
+                <left>0</left>
                 <top>0</top>
                 <width>230</width>
                 <height>45</height>
@@ -216,7 +216,7 @@
               <item>
                 <label>$LOCALIZE[20339]:</label>
                 <label2>$INFO[ListItem.Director]</label2>
-                <onclick>SendClick(2003,13)</onclick>
+                <onclick>noop</onclick>
                 <visible>!IsEmpty(ListItem.Director)</visible>
               </item>
               <item>
@@ -293,7 +293,7 @@
               </item>
               <item>
                 <label>$LOCALIZE[573]:</label>
-                <label2>[COLOR=Grey]$INFO[ListItem.Path][/COLOR]</label2>
+                <label2>$INFO[ListItem.Path]</label2>
                 <onclick>noop</onclick>
                 <visible>!IsEmpty(ListItem.Path)</visible>
               </item>
