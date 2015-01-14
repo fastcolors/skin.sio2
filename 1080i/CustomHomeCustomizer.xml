@@ -1109,18 +1109,19 @@
                         <width>520</width>
                         <height>60</height>
                         <label>$LOCALIZE[31056]</label>
-                        <onclick condition="Container(50).Hasfocus(601)">Skin.SetFile(HomeFav.1.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(602)">Skin.SetFile(HomeFav.2.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(603)">Skin.SetFile(HomeFav.3.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(604)">Skin.SetFile(HomeFav.4.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(605)">Skin.SetFile(HomeFav.5.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(606)">Skin.SetFile(HomeFav.6.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(401)">Skin.SetFile(HomeAddon.1.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(402)">Skin.SetFile(HomeAddon.2.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(403)">Skin.SetFile(HomeAddon.3.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(404)">Skin.SetFile(HomeAddon.4.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(405)">Skin.SetFile(HomeAddon.5.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(406)">Skin.SetFile(HomeAddon.6.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                        <!--special://skin/icons-->
+                        <onclick condition="Container(50).Hasfocus(601)">Skin.SetImage(HomeFav.1.Icon)</onclick>
+                        <onclick condition="Container(50).Hasfocus(602)">Skin.SetImage(HomeFav.2.Icon)</onclick>
+                        <onclick condition="Container(50).Hasfocus(603)">Skin.SetImage(HomeFav.3.Icon)</onclick>
+                        <onclick condition="Container(50).Hasfocus(604)">Skin.SetImage(HomeFav.4.Icon)</onclick>
+                        <onclick condition="Container(50).Hasfocus(605)">Skin.SetImage(HomeFav.5.Icon)</onclick>
+                        <onclick condition="Container(50).Hasfocus(606)">Skin.SetImage(HomeFav.6.Icon)</onclick>
+                        <onclick condition="Container(50).Hasfocus(401)">Skin.SetImage(HomeAddon.1.Icon)</onclick>
+                        <onclick condition="Container(50).Hasfocus(402)">Skin.SetImage(HomeAddon.2.Icon)</onclick>
+                        <onclick condition="Container(50).Hasfocus(403)">Skin.SetImage(HomeAddon.3.Icon)</onclick>
+                        <onclick condition="Container(50).Hasfocus(404)">Skin.SetImage(HomeAddon.4.Icon)</onclick>
+                        <onclick condition="Container(50).Hasfocus(405)">Skin.SetImage(HomeAddon.5.Icon)</onclick>
+                        <onclick condition="Container(50).Hasfocus(406)">Skin.SetImage(HomeAddon.6.Icon)</onclick>
                         <onclick>SetFocus(50)</onclick>
                     </control>
                     <control type="button" id="667">

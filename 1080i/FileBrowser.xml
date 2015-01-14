@@ -87,7 +87,7 @@
       <control type="group" description="Slider and List">
         <left>1020</left>
         <top>131</top>
-        <control type="panel" id="451">
+        <control type="list" id="451">
           <left>0</left>
           <top>0</top>
           <width>802</width>
@@ -158,7 +158,7 @@
     </control>
     <control type="group" description="Thumbs">
       <left>110</left>
-      <top>215=</top>
+      <top>215</top>
       <control type="image" description="Item Thumb">
         <visible>!SubString(Control.GetLabel(416),*)</visible>
         <width>765</width>
