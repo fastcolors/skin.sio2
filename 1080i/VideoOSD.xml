@@ -120,31 +120,27 @@
                         <left>1610</left>
                         <top>600</top>
                         <control type="image" description="CoverReal">
+                            <visible>IsEmpty(Player.Art(tvshow.poster)) + !Window.IsActive(610)</visible>
                             <height>300</height>
                             <width>220</width>
                             <aspectratio>keep</aspectratio>
                             <texture diffuse="images/Diffuse.png">$INFO[VideoPlayer.Cover]</texture>
                         </control>
-                        <control type="image" description="CoverReal">
-                            <height>300</height>
-                            <width>220</width>
-                            <aspectratio>keep</aspectratio>
-                            <texture diffuse="images/Diffuse.png">$INFO[Player.Art(poster)]</texture>
-                        </control>
                         <control type="image" description="CoverRef">
+                            <visible>IsEmpty(Player.Art(tvshow.poster)) + !Window.IsActive(610)</visible>
                             <top>300</top>
                             <height>300</height>
                             <width>220</width>
                             <aspectratio>keep</aspectratio>
-                            <texture flipy="true" diffuse="images/Reflection.png">$INFO[Player.Art(poster)]</texture>
+                            <texture flipy="true" diffuse="images/Reflection.png">$INFO[VideoPlayer.Cover]</texture>
                         </control>
-                        <control type="image" description="CoverReal">
+                        <control type="image" description="TVSHOW">
                             <height>300</height>
                             <width>220</width>
                             <aspectratio>keep</aspectratio>
                             <texture diffuse="images/Diffuse.png">$INFO[Player.Art(tvshow.poster)]</texture>
                         </control>
-                        <control type="image" description="CoverRef">
+                        <control type="image" description="TVSHOWRef">
                             <top>300</top>
                             <height>300</height>
                             <width>220</width>
@@ -153,7 +149,7 @@
                         </control>
                         <control type="label" description="Episode">
                             <visible>VideoPlayer.Content(Episodes)</visible>
-                            <left>190</left>
+                            <left>0</left>
                             <top>290</top>
                             <height>60</height>
                             <width>220</width>
@@ -166,7 +162,7 @@
                         </control>
                         <control type="label" description="Channel">
                             <visible>Pvr.IsPlayingTV</visible>
-                            <left>190</left>
+                            <left>0</left>
                             <top>290</top>
                             <height>60</height>
                             <width>220</width>
@@ -175,7 +171,7 @@
                             <align>right</align>
                             <textcolor>Yellow</textcolor>
                             <shadowcolor>Black</shadowcolor>
-                            <label>($INFO[VideoPlayer.ChannelNumber])  -  $INFO[VideoPlayer.ChannelName]</label>
+                            <label>[B]$INFO[VideoPlayer.ChannelNumber] - $INFO[VideoPlayer.ChannelName][/B]</label>
                         </control>
                     </control>
                 </control>
