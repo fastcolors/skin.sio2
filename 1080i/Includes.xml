@@ -576,33 +576,23 @@
                 <control type="radiobutton" id="600" description="EPG">
                     <visible>Window.IsActive(MyPVRGuide.xml)</visible>
                     <include>DialogButt</include>
-                    <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
                     <onclick>Container.SetViewMode(10)</onclick>
                     <selected>Control.IsVisible(10)</selected>
                     <label>EPG</label>
                 </control>
-                <!--<control type="radiobutton" id="601" description="LiveChannel">-->
-                <!--<include>DialogButt</include>-->
-                <!--&lt;!&ndash;<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>&ndash;&gt;-->
-                <!--<onclick>Container.SetViewMode(13)</onclick>-->
-                <!--<selected>Control.IsVisible(13) + !Control.IsVisible(10)</selected>-->
-                <!--<label>LiveChannels</label>-->
-                <!--</control>-->
                 <control type="radiobutton" id="602" description="Now">
                     <visible>Window.IsActive(MyPVRGuide.xml)</visible>
                     <include>DialogButt</include>
-                    <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
                     <onclick>Container.SetViewMode(11)</onclick>
                     <selected>Control.IsVisible(11) + !Control.IsVisible(10)</selected>
-                    <label>Now</label>
+                    <label>19030</label>
                 </control>
                 <control type="radiobutton" id="603" description="Next">
                     <visible>Window.IsActive(MyPVRGuide.xml)</visible>
                     <include>DialogButt</include>
-                    <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
                     <onclick>Container.SetViewMode(12)</onclick>
                     <selected>Control.IsVisible(12) + !Control.IsVisible(10)</selected>
-                    <label>Next</label>
+                    <label>19031</label>
                 </control>
             </control>
         </control>

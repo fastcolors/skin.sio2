@@ -137,7 +137,7 @@
 
     <variable name="shelfTV">
         <value condition="Skin.HasSetting(TVShelf_Watchlist)">videodb://recentlyaddedepisodes/</value>
-        <value>plugin://service.library.data.provider?type=recommendedepisodes&limit=18&reload=$INFO[Window.Property(recommendedepisodes)]</value>
+        <value>plugin://service.library.data.provider?type=recommendedepisodes&amp;limit=18&amp;reload=$INFO[Window.Property(recommendedepisodes)]</value>
     </variable>
 
     <variable name="shelflabel">
