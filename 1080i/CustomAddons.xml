@@ -5,12 +5,12 @@
   <controls>
     <control type="group" description="Side menu 9000 group">
       <left>459</left>
-      <top>250</top>
+      <top>220</top>
       <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
       <include>DialogOpenCloseVisible</include>
       <control type="image" description="List back">
         <width>1002</width>
-        <height>620</height>
+        <height>700</height>
         <aspectratio>stretch</aspectratio>
         <texture border="150">images/Dialog.png</texture>
       </control>
@@ -28,6 +28,12 @@
           <label>1038</label>
           <onclick>Close</onclick>
           <onclick>ActivateWindow(Music,Addons)</onclick>
+        </control>
+        <control type="button" id="703">
+          <include>DialogButt</include>
+          <label>0</label>
+          <onclick>Close</onclick>
+          <onclick>ActivateWindow(Programs,Addons)</onclick>
         </control>
         <control type="button" id="701">
           <include>DialogButt</include>

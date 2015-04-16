@@ -17,15 +17,15 @@
                 </animation>
                 <control type="image">
                     <left>430</left>
-                    <top>66</top>
+                    <top>46</top>
                     <width>900</width>
-                    <height>780</height>
+                    <height>820</height>
                     <aspectratio>stretch</aspectratio>
                     <texture border="150">images/Dialog.png</texture>
                 </control>
                 <control type="grouplist" id="101" description="OSD Options">
                     <left>600</left>
-                    <top>246</top>
+                    <top>192</top>
                     <width>720</width>
                     <height>720</height>
                     <itemgap>0</itemgap>
