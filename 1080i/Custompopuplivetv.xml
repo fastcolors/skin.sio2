@@ -20,31 +20,31 @@
                     <include>DialogButt</include>
                     <label>19023</label>
                     <onclick>close</onclick>
-                    <onclick>ActivateWindowAndFocus(MyPVR, 32,0, 11,0)</onclick>
+                    <onclick>ActivateWindowAndFocus(TVChannels)</onclick>
                 </control>
                 <control type="button" id="2">
                     <include>DialogButt</include>
                     <label>19024</label>
                     <onclick>close</onclick>
-                    <onclick>ActivateWindowAndFocus(MyPVR, 33,0, 12,0)</onclick>
+                    <onclick>ActivateWindowAndFocus(RADIOChannels)</onclick>
                 </control>
                 <control type="button" id="3">
                     <include>DialogButt</include>
                     <label>19069</label>
                     <onclick>close</onclick>
-                    <onclick>ActivateWindowAndFocus(MyPVR, 31,0, 10,0)</onclick>
+                    <onclick>ActivateWindow(TVGuide)</onclick>
                 </control>
                 <control type="button" id="4">
                     <include>DialogButt</include>
                     <label>19163</label>
                     <onclick>close</onclick>
-                    <onclick>ActivateWindowAndFocus(MyPVR, 34,0, 13,0)</onclick>
+                    <onclick>ActivateWindowAndFocus(tvrecordings)</onclick>
                 </control>
                 <control type="button" id="5">
                     <include>DialogButt</include>
                     <label>19040</label>
                     <onclick>close</onclick>
-                    <onclick>ActivateWindowAndFocus(MyPVR, 35,0, 14,0)</onclick>
+                    <onclick>ActivateWindowAndFocus(tvtimers)</onclick>
                 </control>
             </control>
         </control>
