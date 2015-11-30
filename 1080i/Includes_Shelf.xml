@@ -6,100 +6,73 @@
     </include>
     <include name="ShelfTitle">
         <left>90</left>
-        <top>60</top>
+        <top>30</top>
         <height>45</height>
         <width>750</width>
         <align>left</align>
         <aligny>center</aligny>
-        <font>size27</font>
-        <textcolor>White2</textcolor>
-        <shadowcolor>Shadow</shadowcolor>
+        <font>size30</font>
+        <textcolor>dimgray</textcolor>
+        <shadowcolor>-</shadowcolor>
     </include>
     <include name="MoviesShortcutsCommons">
         <include>ShelfFade</include>
-        <top>100</top>
+        <top>90</top>
         <width>1920</width>
-        <height>500</height>
+        <height>610</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
-        <itemlayout height="350" width="295">
-            <control type="image" description="Reflection">
-                <visible>IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <left>92</left>
-                <top>400</top>
-                <width>260</width>
-                <height>390</height>
-                <texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-                <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image" description="Reflection">
-                <visible>!IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <left>92</left>
-                <top>400</top>
-                <width>260</width>
-                <height>390</height>
-                <texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
-                <aspectratio>scale</aspectratio>
-            </control>
+        <itemlayout height="600" width="380">
             <control type="image">
                 <visible>IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <left>92</left>
+                <left>100</left>
                 <top>16</top>
-                <width>260</width>
-                <height>384</height>
+                <width>340</width>
+                <height>500</height>
                 <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
                 <visible>!IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <left>92</left>
+                <left>100</left>
                 <top>16</top>
-                <width>260</width>
-                <height>384</height>
+                <width>340</width>
+                <height>500</height>
                 <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
                 <aspectratio>scale</aspectratio>
             </control>
         </itemlayout>
-        <focusedlayout height="420" width="295">
-            <control type="image" description="Reflection">
-                <visible>IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <animation effect="fade" start="100" end="0" time="400">Focus</animation>
-                <animation effect="fade" start="0" end="100" time="400">unFocus</animation>
-                <left>92</left>
-                <top>400</top>
-                <width>260</width>
-                <height>390</height>
-                <texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-                <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image" description="Reflection">
-                <visible>!IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <animation effect="fade" start="100" end="0" time="400">Focus</animation>
-                <animation effect="fade" start="0" end="100" time="400">unFocus</animation>
-                <left>92</left>
-                <top>400</top>
-                <width>260</width>
-                <height>390</height>
-                <texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
-                <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image">
-                <visible>IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <left>92</left>
-                <top>16</top>
-                <width>260</width>
-                <height>384</height>
-                <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
-                <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image">
-                <visible>!IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <left>92</left>
-                <top>16</top>
-                <width>260</width>
-                <height>384</height>
-                <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
-                <aspectratio>scale</aspectratio>
+        <focusedlayout height="600" width="380">
+            <control type="group">
+                <animation effect="zoom" start="100" end="110" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+                <animation effect="zoom" start="110" end="100" time="120" center="auto" easing="">unFocus</animation>
+                <control type="image">
+                    <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
+                    <animation effect="fade" start="100" end="0" time="200">unFocus</animation>
+                    <left>50</left>
+                    <top>46</top>
+                    <width>440</width>
+                    <height>550</height>
+                    <texture>shadow.png</texture>
+                </control>
+                <control type="image">
+                    <visible>IsEmpty(ListItem.Art(tvshow.poster))</visible>
+                    <left>100</left>
+                    <top>16</top>
+                    <width>340</width>
+                    <height>500</height>
+                    <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
+                    <aspectratio>scale</aspectratio>
+                </control>
+                <control type="image">
+                    <visible>!IsEmpty(ListItem.Art(tvshow.poster))</visible>
+                    <left>100</left>
+                    <top>16</top>
+                    <width>340</width>
+                    <height>500</height>
+                    <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
+                    <aspectratio>scale</aspectratio>
+                </control>
             </control>
             <control type="group" description="labels">
                 <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
@@ -107,8 +80,8 @@
                 <control type="image">
                     <visible>ControlGroup(700).HasFocus() + !IsEmpty(Listitem.Label2)</visible>
                     <include>VisibleFade</include>
-                    <centerleft>224</centerleft>
-                    <top>370</top>
+                    <left>700</left>
+                    <top>380</top>
                     <width>260</width>
                     <height>30</height>
                     <texture>images/Black.png</texture>
@@ -117,8 +90,8 @@
                 </control>
                 <control type="label">
                     <visible>ControlGroup(700).HasFocus() + !IsEmpty(Listitem.Label2)</visible>
-                    <centerleft>224</centerleft>
-                    <top>370</top>
+                    <left>700</left>
+                    <top>380</top>
                     <width>260</width>
                     <height>30</height>
                     <font>size24</font>
@@ -129,9 +102,9 @@
                 </control>
                 <control type="textbox">
                     <visible>ControlGroup(700).HasFocus()</visible>
-                    <centerleft>224</centerleft>
-                    <top>410</top>
-                    <width>296</width>
+                    <centerleft>290</centerleft>
+                    <top>544</top>
+                    <width>360</width>
                     <height>60</height>
                     <font>size24</font>
                     <textcolor>White2</textcolor>
@@ -147,7 +120,7 @@
         <!--<left>72</left>-->
         <top>140</top>
         <width>1920</width>
-        <height>402</height>
+        <height>462</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
         <itemlayout height="357" width="354">
@@ -170,24 +143,8 @@
         </itemlayout>
         <focusedlayout height="357" width="354">
             <control type="group">
-                <control type="image" description="Reflection">
-                    <left>99</left>
-                    <top>330</top>
-                    <width>303</width>
-                    <height>303</height>
-                    <texture fallback="DefaultAlbumcover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-                    <aspectratio scalediffuse="false">scale</aspectratio>
-                </control>
-                <control type="image">
-                    <visible>Control.IsVisible(313)+!Skin.HasSetting(RecordOff) + !Skin.HasSetting(MusicShelf_Custom)</visible>
-                    <animation effect="slide" end="0,-60" time="400" delay="100">Focus</animation>
-                    <left>99</left>
-                    <top>27</top>
-                    <width>303</width>
-                    <height>303</height>
-                    <texture background="true">images/record.png</texture>
-                    <aspectratio>keep</aspectratio>
-                </control>
+                <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+                <animation effect="zoom" start="120" end="100" time="120" center="auto" easing="">unFocus</animation>
                 <control type="image">
                     <left>99</left>
                     <top>27</top>
@@ -196,68 +153,31 @@
                     <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Thumb]</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
-                <control type="textbox">
-                    <visible>ControlGroup(700).HasFocus()</visible>
-                    <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-                    <animation effect="fade" start="100" end="0" time="80">unFocus</animation>
-                    <left>79</left>
-                    <top>340</top>
-                    <width>345</width>
-                    <height>60</height>
-                    <font>size26</font>
-                    <textcolor>White2</textcolor>
-                    <align>center</align>
-                    <label>[B]$INFO[ListItem.Label][/B]</label>
-                </control>
+            </control>
+            <control type="textbox">
+                <visible>ControlGroup(700).HasFocus()</visible>
+                <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
+                <animation effect="fade" start="100" end="0" time="80">unFocus</animation>
+                <left>79</left>
+                <top>360</top>
+                <width>345</width>
+                <height>150</height>
+                <font>size26</font>
+                <textcolor>White2</textcolor>
+                <align>center</align>
+                <label>[B]$INFO[ListItem.Label][/B]</label>
             </control>
         </focusedlayout>
-    </include>
-    <include name="movshelslider">
-        <control type="image">
-            <visible>Control.HasFocus(311)</visible>
-            <left>80</left>
-            <top>104</top>
-            <width>284</width>
-            <height>408</height>
-            <texture border="10=">images/SliderWL.png</texture>
-            <aspectratio>stretch</aspectratio>
-            <animation effect="fade" time="220">VisibleChange</animation>
-            <animation condition="Container(311).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(1)" effect="slide" start="0,0" end="295,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(2)" effect="slide" start="0,0" end="590,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(3)" effect="slide" start="0,0" end="885,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(4)" effect="slide" start="0,0" end="1180,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(5)" effect="slide" start="0,0" end="1475,0" time="220" easing="inout" reversible="true">Conditional</animation>
-        </control>
     </include>
     <include name="Movies">
         <control type="panel" id="311" description="TOP Shortcuts">
             <visible>Library.HasContent(Movies) + [Container(9000).HasFocus(340) | Control.HasFocus(311)]</visible>
             <onup>9009</onup>
             <ondown>9000</ondown>
-            <onleft>311</onleft>
-            <onright>311</onright>
+            <onleft>noop</onleft>
+            <onright>noop</onright>
             <include>MoviesShortcutsCommons</include>
             <content target="video">$VAR[shelfmovies]</content>
-        </control>
-        <include>movshelslider</include>
-    </include>
-    <include name="tvshelfslider">
-        <control type="image">
-            <visible>Control.HasFocus(312)</visible>
-            <left>80</left>
-            <top>104</top>
-            <width>284</width>
-            <height>408</height>
-            <texture border="10=">images/SliderWL.png</texture>
-            <aspectratio>stretch</aspectratio>
-            <animation effect="fade" time="220">VisibleChange</animation>
-            <animation condition="Container(312).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="295,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(312).Position(2)" effect="slide" start="0,0" end="590,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="885,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(312).Position(4)" effect="slide" start="0,0" end="1180,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(312).Position(5)" effect="slide" start="0,0" end="1475,0" time="220" easing="inout" reversible="true">Conditional</animation>
         </control>
     </include>
     <include name="TV">
@@ -272,7 +192,6 @@
                 <include>MoviesShortcutsCommons</include>
                 <content target="video">$VAR[shelfTV]</content>
             </control>
-            <include>tvshelfslider</include>
         </control>
     </include>
     <include name="Music_RA">
@@ -285,21 +204,6 @@
             <focusposition>2</focusposition>
             <include>SquareShortcutsCommons</include>
             <content target="music">special://skin/resources/rcntalbums.xsp</content>
-        </control>
-        <control type="image">
-            <visible>Control.HasFocus(313)</visible>
-            <left>88</left>
-            <top>157</top>
-            <width>322</width>
-            <height>324</height>
-            <texture border="20">images/GeneralSlider.png</texture>
-            <aspectratio>stretch</aspectratio>
-            <animation effect="fade" time="220">VisibleChange</animation>
-            <animation condition="Container(313).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(313).Position(1)" effect="slide" start="0,0" end="354,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(313).Position(2)" effect="slide" start="0,0" end="708,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(313).Position(3)" effect="slide" start="0,0" end="1062,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(313).Position(4)" effect="slide" start="0,0" end="1416,0" time="220" easing="inout" reversible="true">Conditional</animation>
         </control>
     </include>
     <include name="Addons_Shortcuts">
@@ -474,21 +378,6 @@
                     </item>
                 </content>
             </control>
-            <control type="image">
-                <visible>Control.HasFocus(315)</visible>
-                <left>88</left>
-                <top>157</top>
-                <width>322</width>
-                <height>322</height>
-                <texture border="20">images/GeneralSlider.png</texture>
-                <aspectratio>stretch</aspectratio>
-                <animation effect="fade" time="220">VisibleChange</animation>
-                <animation condition="Container(315).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(315).Position(1)" effect="slide" start="0,0" end="354,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(315).Position(2)" effect="slide" start="0,0" end="708,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(315).Position(3)" effect="slide" start="0,0" end="1062,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(315).Position(4)" effect="slide" start="0,0" end="1416,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            </control>
         </control>
     </include>
     <include name="VAddons_Shortcuts">
@@ -613,21 +502,6 @@
                         <property name="ItemType">$LOCALIZE[111]</property>
                     </item>
                 </content>
-            </control>
-            <control type="image">
-                <visible>Control.HasFocus(317)</visible>
-                <left>88</left>
-                <top>157</top>
-                <width>322</width>
-                <height>322</height>
-                <texture border="20">images/GeneralSlider.png</texture>
-                <aspectratio>stretch</aspectratio>
-                <animation effect="fade" time="220">VisibleChange</animation>
-                <animation condition="Container(317).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(317).Position(1)" effect="slide" start="0,0" end="354,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(317).Position(2)" effect="slide" start="0,0" end="708,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(317).Position(3)" effect="slide" start="0,0" end="1062,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(317).Position(4)" effect="slide" start="0,0" end="1416,0" time="220" easing="inout" reversible="true">Conditional</animation>
             </control>
         </control>
     </include>
@@ -767,21 +641,6 @@
                         <property name="ItemType">$LOCALIZE[111]</property>
                     </item>
                 </content>
-            </control>
-            <control type="image">
-                <visible>Control.HasFocus(314)</visible>
-                <left>88</left>
-                <top>157</top>
-                <width>322</width>
-                <height>322</height>
-                <texture border="20">images/GeneralSlider.png</texture>
-                <aspectratio>stretch</aspectratio>
-                <animation effect="fade" time="220">VisibleChange</animation>
-                <animation condition="Container(314).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(314).Position(1)" effect="slide" start="0,0" end="354,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(314).Position(2)" effect="slide" start="0,0" end="708,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(314).Position(3)" effect="slide" start="0,0" end="1062,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(314).Position(4)" effect="slide" start="0,0" end="1416,0" time="220" easing="inout" reversible="true">Conditional</animation>
             </control>
         </control>
     </include>

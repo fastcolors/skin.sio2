@@ -2,8 +2,8 @@
 	<color name="Grey">FF838383</color>
 	<color name="Grey2">FFBEBEBE</color>
 	<color name="Grey3">FFACACAC</color>
-	<color name="White">FFDDDDDD</color>
-	<color name="White2">FFFFFFFF</color>
+	<color name="White">FF000000</color>
+	<color name="White2">FFEEEEEE</color>
 	<color name="Red">FFFF0000</color>
 	<color name="Blue">FF2261B4</color>
 	<color name="Black">FF000000</color>

@@ -10,9 +10,16 @@
             <animation condition="!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-590" time="220">Conditonal</animation>
             <control type="image" description="Stage">
                 <width>1920</width>
-                <height>1080</height>
+                <height>2080</height>
                 <aspectratio>stretch</aspectratio>
                 <texture>HomeBG.png</texture>
+            </control>
+            <control type="image" description="banda bianca">
+                <top>694</top>
+                <width>1920</width>
+                <height>286</height>
+                <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="66FFFFFF">images/white.png</texture>
             </control>
         </control>
         <control type="button" id="9009">
@@ -37,7 +44,7 @@
         <control type="panel" id="9000" description="ICONE">
             <animation condition="!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-590" time="220">Conditonal</animation>
             <centerleft>960</centerleft>
-            <top>620</top>
+            <top>710</top>
             <width>1800</width>
             <height>1060</height>
             <onleft>9000</onleft>
@@ -46,88 +53,75 @@
             <ondown>noop</ondown>
             <orientation>vertical</orientation>
             <scrolltime tween="sine" easing="inout">280</scrolltime>
-            <itemlayout height="270" width="360">
+            <itemlayout height="290" width="360">
                 <control type="image" description="THMBSCOLOR">
                     <centerleft>180</centerleft>
-                    <top>30</top>
-                    <width>304</width>
-                    <height>176</height>
+                    <width>360</width>
+                    <height>250</height>
                     <texture border="20">$INFO[ListItem.Property(color)]</texture>
                 </control>
                 <control type="image" description="THMBSICONS">
                     <visible>!IsEmpty(Listitem.thumb)</visible>
                     <centerleft>180</centerleft>
-                    <top>30</top>
-                    <width>304</width>
-                    <height>176</height>
+                    <width>360</width>
+                    <height>250</height>
                     <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
                 </control>
                 <control type="image" description="THMBSICONS">
                     <visible>IsEmpty(Listitem.thumb)</visible>
                     <centerleft>180</centerleft>
-                    <top>30</top>
-                    <width>304</width>
-                    <height>176</height>
+                    <width>360</width>
+                    <height>250</height>
                     <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
                 </control>
                 <control type="image" description="THMBS weather">
                     <centerleft>180</centerleft>
-                    <top>30</top>
-                    <width>304</width>
-                    <height>176</height>
+                    <width>360</width>
+                    <height>250</height>
                     <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
                     <aspectratio>keep</aspectratio>
-                </control>
-                <control type="label" description="LABEL">
-                    <centerleft>180</centerleft>
-                    <top>220</top>
-                    <width>368</width>
-                    <height>24</height>
-                    <font>size30</font>
-                    <align>center</align>
-                    <textcolor>White</textcolor>
-                    <label>[B]$INFO[ListItem.label][/B]</label>
                 </control>
             </itemlayout>
-            <focusedlayout height="270" width="360">
-                <control type="image" description="THMBSCOLOR">
-                    <centerleft>180</centerleft>
-                    <top>30</top>
-                    <width>304</width>
-                    <height>176</height>
-                    <texture border="20">$INFO[ListItem.Property(color)]</texture>
-                </control>
-                <control type="image" description="THMBSICONS">
-                    <visible>!IsEmpty(Listitem.thumb)</visible>
-                    <centerleft>180</centerleft>
-                    <top>30</top>
-                    <width>304</width>
-                    <height>176</height>
-                    <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
-                </control>
-                <control type="image" description="THMBSICONS">
-                    <visible>IsEmpty(Listitem.thumb)</visible>
-                    <centerleft>180</centerleft>
-                    <top>30</top>
-                    <width>304</width>
-                    <height>176</height>
-                    <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
-                </control>
-                <control type="image" description="THMBS weather">
-                    <centerleft>180</centerleft>
-                    <top>30</top>
-                    <width>304</width>
-                    <height>176</height>
-                    <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
-                    <aspectratio>keep</aspectratio>
+            <focusedlayout height="290" width="360">
+                <control type="group">
+                    <animation effect="zoom" start="100" end="130" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+                    <animation effect="zoom" start="130" end="100" time="120" center="auto">unFocus</animation>
+                    <control type="image" description="THMBSCOLOR">
+                        <centerleft>180</centerleft>
+                        <width>360</width>
+                        <height>250</height>
+                        <texture border="20">$INFO[ListItem.Property(color)]</texture>
+                    </control>
+                    <control type="image" description="THMBSICONS">
+                        <visible>!IsEmpty(Listitem.thumb)</visible>
+                        <centerleft>180</centerleft>
+                        <width>360</width>
+                        <height>250</height>
+                        <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
+                    </control>
+                    <control type="image" description="THMBSICONS">
+                        <visible>IsEmpty(Listitem.thumb)</visible>
+                        <centerleft>180</centerleft>
+                        <width>360</width>
+                        <height>250</height>
+                        <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
+                    </control>
+                    <control type="image" description="THMBS weather">
+                        <centerleft>180</centerleft>
+                        <width>360</width>
+                        <height>250</height>
+                        <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
+                        <aspectratio>keep</aspectratio>
+                    </control>
                 </control>
                 <control type="label" description="label">
-                    <animation effect="fade" start="80" end="100" time="300=" delay="300">Focus</animation>
+                    <animation effect="fade" start="0" end="100" time="150" delay="50">Focus</animation>
+                    <animation effect="fade" start="100" end="0" time="100">unFocus</animation>
                     <centerleft>180</centerleft>
-                    <top>220</top>
+                    <top>234</top>
                     <width>368</width>
                     <height>24</height>
-                    <font>size30</font>
+                    <font>size27</font>
                     <align>center</align>
                     <textcolor>White2</textcolor>
                     <label>[B]$INFO[ListItem.label][/B]</label>
@@ -143,41 +137,35 @@
                 </item>
                 <item id="340">
                     <visible>!Skin.HasSetting(hidemovie)</visible>
-                    <thumb>icons/movies.png</thumb>
                     <label>342</label>
-                    <property name="color">icons/lightblue.png</property>
+                    <property name="color">icons/movies.png</property>
                     <onclick condition="Library.HasContent(Movies)">ActivateWindow(Videos,MovieTitles,return)</onclick>
                     <onclick condition="!Library.HasContent(Movies)">ActivateWindow(Videos,root)</onclick>
                 </item>
                 <item id="341">
                     <visible>!Skin.HasSetting(hidetv)</visible>
-                    <thumb>icons/tvshows.png</thumb>
                     <label>20343</label>
-                    <property name="color">icons/purple.png</property>
+                    <property name="color">icons/tvshows.png</property>
                     <onclick condition="Library.HasContent(TVShows)">ActivateWindow(VideoLibrary,TVShowTitles,return)</onclick>
                     <onclick condition="!Library.HasContent(TVShows)">ActivateWindow(Videos,root)</onclick>
                 </item>
-
                 <item id="342">
                     <visible>!Skin.HasSetting(hidemusic)</visible>
-                    <thumb>icons/music.png</thumb>
                     <label>2</label>
-                    <property name="color">icons/Orange.png</property>
+                    <property name="color">icons/music.png</property>
                     <onclick>ActivateWindow(502,$INFO[Skin.String(MusicLink)])</onclick>
                     <onclick condition="!Library.HasContent(Music)">ActivateWindow(501,root)</onclick>
                 </item>
                 <item id="343">
                     <visible>!Skin.HasSetting(hideaddon)</visible>
-                    <thumb>icons/addons.png</thumb>
                     <label>24001</label>
-                    <property name="color">icons/Green.png</property>
+                    <property name="color">icons/addons.png</property>
                     <onclick>ActivateWindow(1118)</onclick>
                 </item>
                 <item id="344">
                     <visible>!Skin.HasSetting(hidepic)</visible>
-                    <thumb>icons/photos.png</thumb>
                     <label>1</label>
-                    <property name="color">icons/dvdcolor.png</property>
+                    <property name="color">icons/photos.png</property>
                     <onclick>ActivateWindow(2)</onclick>
                 </item>
                 <item id="345">
@@ -425,33 +413,6 @@
                 </item>
             </content>
         </control>
-        <control type="image">
-            <top>980</top>
-            <width>1920</width>
-            <height>100</height>
-            <texture>images/bottomshader.png</texture>
-        </control>
-        <!--SLIDER-->
-        <control type="image">
-            <animation condition="!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-590" time="220">Conditonal</animation>
-            <centertop>738</centertop>
-            <centerleft>240</centerleft>
-            <width>358</width>
-            <height>200</height>
-            <texture>images/atvslider.png</texture>
-            <aspectratio>stretch</aspectratio>
-            <animation condition="Container(9000).Column(0)" effect="slide" end="0,0" time="220">Conditional</animation>
-            <animation condition="Container(9000).Column(1)" effect="slide" end="360,0" time="220">Conditional</animation>
-            <animation condition="Container(9000).Column(2)" effect="slide" end="720,0" time="220">Conditional</animation>
-            <animation condition="Container(9000).Column(3)" effect="slide" end="1080,0" time="220">Conditional</animation>
-            <animation condition="Container(9000).Column(4)" effect="slide" end="1440,0" time="220">Conditional</animation>
-            <animation condition="Container(9000).Row(0)" effect="slide" end="0,0" time="220">Conditional</animation>
-            <animation condition="Container(9000).Row(1)" effect="slide" end="0,270" time="220">Conditional</animation>
-            <animation condition="Container(9000).Row(2)" effect="slide" end="0,540" time="220">Conditional</animation>
-            <animation condition="Container(9000).Row(3)" effect="slide" end="0,810" time="220">Conditional</animation>
-            <animation condition="Container(9000).Row(4)" effect="slide" end="0,1080" time="220">Conditional</animation>
-            <!--<animation condition="!Control.HasFocus(9000)" effect="fade" start="100" end="0"  time="220">Conditional</animation>-->
-        </control>
         <include>weather_shelf</include>
         <control type="group" id="700" description="Shelf items">
             <animation condition="!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
@@ -482,26 +443,10 @@
                 <height>33</height>
                 <font>size22</font>
                 <urlset>1</urlset>
-                <shadowcolor>Black</shadowcolor>
+                <shadowcolor>-</shadowcolor>
                 <titlecolor>White</titlecolor>
                 <headlinecolor>White</headlinecolor>
                 <textcolor>Grey</textcolor>
-            </control>
-            <control type="image" description="RSS Left fade">
-                <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-                <left>0</left>
-                <bottom>0</bottom>
-                <width>90</width>
-                <height>33</height>
-                <texture>images/DefaultGradientH.png</texture>
-            </control>
-            <control type="image" description="RSS Right fade">
-                <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-                <left>1830</left>
-                <bottom>0</bottom>
-                <width>90</width>
-                <height>33</height>
-                <texture flipx="true">images/DefaultGradientH.png</texture>
             </control>
         </control>
         <control type="group" description="Player Info">
@@ -556,14 +501,15 @@
         </control>
         <control type="label" description="Clock">
             <visible>Skin.HasSetting(ShowClock) + !System.Date(04-01,04-01)</visible>
-            <right>35</right>
+            <right>30</right>
             <top>20</top>
             <width>500</width>
-            <height>45</height>
+            <height>25</height>
             <align>right</align>
-            <font>size33B</font>
+            <font>size27</font>
+            <shadowcolor>-</shadowcolor>
             <textcolor>White</textcolor>
-            <label>$INFO[System.Time] $INFO[System.Date]</label>
+            <label>$INFO[System.Date] • $INFO[System.Time]</label>
         </control>
         <control type="label" description="Top Label">
             <include>ShelfFade</include>
