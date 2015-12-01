@@ -45,14 +45,14 @@
         <focusedlayout height="600" width="380">
             <control type="group">
                 <animation effect="zoom" start="100" end="110" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
-                <animation effect="zoom" start="110" end="100" time="120" center="auto" easing="">unFocus</animation>
+                <animation effect="zoom" start="110" end="100" time="120" center="auto">unFocus</animation>
                 <control type="image">
-                    <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-                    <animation effect="fade" start="100" end="0" time="200">unFocus</animation>
-                    <left>50</left>
+                    <animation effect="fade" start="0" end="100" time="150">Focus</animation>
+                    <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
+                    <left>40</left>
                     <top>46</top>
-                    <width>440</width>
-                    <height>550</height>
+                    <width>460</width>
+                    <height>580</height>
                     <texture>shadow.png</texture>
                 </control>
                 <control type="image">
@@ -77,29 +77,6 @@
             <control type="group" description="labels">
                 <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
                 <animation effect="fade" start="100" end="0" time="200">unFocus</animation>
-                <control type="image">
-                    <visible>ControlGroup(700).HasFocus() + !IsEmpty(Listitem.Label2)</visible>
-                    <include>VisibleFade</include>
-                    <left>700</left>
-                    <top>380</top>
-                    <width>260</width>
-                    <height>30</height>
-                    <texture>images/Black.png</texture>
-                    <colordiffuse>99FFFFFF</colordiffuse>
-                    <aspectratio>scale</aspectratio>
-                </control>
-                <control type="label">
-                    <visible>ControlGroup(700).HasFocus() + !IsEmpty(Listitem.Label2)</visible>
-                    <left>700</left>
-                    <top>380</top>
-                    <width>260</width>
-                    <height>30</height>
-                    <font>size24</font>
-                    <textcolor>White2</textcolor>
-                    <autoscroll>false</autoscroll>
-                    <label>[B]$INFO[ListItem.Label2][/B]</label>
-                    <align>center</align>
-                </control>
                 <control type="textbox">
                     <visible>ControlGroup(700).HasFocus()</visible>
                     <centerleft>290</centerleft>
@@ -666,14 +643,6 @@
                 <aspectratio>stretch</aspectratio>
                 <texture background="true">images/weathersingle.png</texture>
             </control>
-            <control type="image">
-                <left>83</left>
-                <top>420</top>
-                <width>1754</width>
-                <height>350</height>
-                <aspectratio>stretch</aspectratio>
-                <texture background="true" diffuse="images/ReflectionShelf.png" flipy="true">images/weathersingle.png</texture>
-            </control>
             <control type="list" id="414" description="TOP Weather">
                 <onup>noop</onup>
                 <ondown>9000</ondown>
@@ -903,22 +872,6 @@
                         <onclick>$INFO[Window.Property(favourite.10.path)]</onclick>
                     </item>
                 </content>
-            </control>
-            <control type="image">
-                <visible>Control.HasFocus(319)</visible>
-                <left>80</left>
-                <top>104</top>
-                <width>284</width>
-                <height>408</height>
-                <texture border="10=">images/SliderWL.png</texture>
-                <aspectratio>stretch</aspectratio>
-                <animation effect="fade" time="220">VisibleChange</animation>
-                <animation condition="Container(319).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(319).Position(1)" effect="slide" start="0,0" end="295,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(319).Position(2)" effect="slide" start="0,0" end="590,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(319).Position(3)" effect="slide" start="0,0" end="885,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(319).Position(4)" effect="slide" start="0,0" end="1180,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(319).Position(5)" effect="slide" start="0,0" end="1475,0" time="220" easing="inout" reversible="true">Conditional</animation>
             </control>
         </control>
     </include>
