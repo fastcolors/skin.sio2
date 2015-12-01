@@ -12,7 +12,7 @@
         <width>1002</width>
         <height>700</height>
         <aspectratio>stretch</aspectratio>
-        <texture border="150">images/Dialog.png</texture>
+        <texture border="150">images/ContextMenu.png</texture>
       </control>
       <control type="grouplist" id="9000">
         <left>210</left>

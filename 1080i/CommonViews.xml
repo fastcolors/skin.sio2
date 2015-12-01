@@ -467,24 +467,26 @@
   </include>
   <include name="52MainLabel">
     <left>45</left>
-    <height>80</height>
+    <height>70</height>
     <width>630</width>
     <aligny>center</aligny>
     <scroll>false</scroll>
     <font>size36</font>
-    <textcolor>White</textcolor>
+    <textcolor>black</textcolor>
+    <shadowcolor>-</shadowcolor>
   </include>
   <include name="52MainLabelFO">
     <left>45</left>
-    <height>80</height>
+    <height>70</height>
     <width>630</width>
     <aligny>center</aligny>
     <font>size36</font>
-    <textcolor>White2</textcolor>
+    <textcolor>black</textcolor>
+    <shadowcolor>-</shadowcolor>
   </include>
   <include name="52Label2">
     <right>42</right>
-    <height>81</height>
+    <height>70</height>
     <width>120</width>
     <font>size27</font>
     <scroll>false</scroll>
@@ -493,7 +495,7 @@
   </include>
   <include name="52Label2FO">
     <right>42</right>
-    <height>81</height>
+    <height>70</height>
     <width>120</width>
     <font>size27</font>
     <scroll>false</scroll>
@@ -546,7 +548,8 @@
     <scroll>false</scroll>
     <haspath>true</haspath>
     <align>right</align>
-    <textcolor>Grey2</textcolor>
+    <textcolor>black</textcolor>
+    <shadowcolor>-</shadowcolor>
   </include>
   <include name="Watched_Marks">
     <control type="image">
@@ -633,25 +636,14 @@
     </control>
 	</control>
   </include>
-  <include name="ArrowNF">
+  <include name="Arrow">
     <control type="image" description="arrow">
-      <visible>[Window.IsActive(Settings.xml) | ListItem.IsFolder] + ![StringCompare(ListItem.Label,..) | SubString(ListItem.Path,videodb://1/7) | container.content(Movies) | container.content(TVshows) | container.content(Seasons) | container.content(Episodes) | container.content(musicvideos) | container.content(songs) | container.content(addons) | SubString(Container.FolderPath,plugin://,left)]</visible>
+      <visible>[Window.IsActive(Settings.xml) | ListItem.IsFolder] + ![StringCompare(ListItem.Label,..) | ListItem.IsCollection  | container.content(Movies) | container.content(TVshows) | container.content(Seasons) | container.content(Episodes) | container.content(musicvideos) | container.content(songs) | container.content(addons) | SubString(Container.FolderPath,plugin://,left)]</visible>
       <left>75r</left>
-      <height>81</height>
-      <width>42</width>
+      <height>70</height>
+      <width>54</width>
       <aspectratio>keep</aspectratio>
-      <texture>images/ArrowNF.png</texture>
-    </control>
-  </include>
-  <include name="ArrowFO">
-    <control type="image" description="arrow">
-      <visible>[Window.IsActive(Settings.xml) | ListItem.IsFolder] + ![StringCompare(ListItem.Label,..) | SubString(ListItem.Path,videodb://1/7) | container.content(Movies) | container.content(TVshows) | container.content(Seasons) | container.content(Episodes) | container.content(musicvideos) | container.content(songs) | container.content(addons) | SubString(Container.FolderPath,plugin://,left)]</visible>
-      <animation effect="fade" start="30" end="100" time="150" delay="300">Focus</animation>
-      <left>75r</left>
-      <height>81</height>
-      <width>42</width>
-      <aspectratio>keep</aspectratio>
-      <texture>images/ArrowFO.png</texture>
+      <texture>images/Arrow.png</texture>
     </control>
   </include>
   <include name="Sets">
@@ -659,7 +651,7 @@
       <visible>Window.IsActive(MyVideoNav.xml)</visible>
       <visible>SubString(ListItem.Path,videodb://1/7)</visible>
       <left>82r</left>
-      <height>81</height>
+      <height>70</height>
       <width>45</width>
       <aspectratio align="right">keep</aspectratio>
       <texture>badges/sets.png</texture>
@@ -889,8 +881,8 @@
     <centerleft>960</centerleft>
     <top>354</top>
     <width>576</width>
-    <height>375</height>
-    <itemgap>0</itemgap>
+    <height>380</height>
+    <itemgap>10</itemgap>
     <onleft>50</onleft>
     <onright>50</onright>
     <onup>9000</onup>
@@ -899,16 +891,17 @@
     <orientation>vertical</orientation>
   </include>
   <include name="DialogButt">
+    <animation effect="zoom" time="120" start="100" end="110" center="auto" tween="Back" easing="Out">Focus</animation>
     <width>576</width>
     <textoffsetx>0</textoffsetx>
     <align>center</align>
     <aligny>center</aligny>
     <font>size36</font>
     <disabledcolor>Grey</disabledcolor>
-    <texturenofocus>-</texturenofocus>
-    <alttexturenofocus>-</alttexturenofocus>
-    <texturefocus border="8">images/Buttonselect.png</texturefocus>
-    <alttexturefocus border="8">images/Buttonselect.png</alttexturefocus>
+    <texturenofocus colordiffuse="77FFFFFF">images/white.png</texturenofocus>
+    <alttexturenofocus colordiffuse="77FFFFFF">images/white.png</alttexturenofocus>
+    <texturefocus>images/white.png</texturefocus>
+    <alttexturefocus>images/white.png</alttexturefocus>
   </include>
   <include name="Plot51Commons">
     <left>0</left>

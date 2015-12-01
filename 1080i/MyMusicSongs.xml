@@ -28,7 +28,7 @@
           <preloaditems>4</preloaditems>
           <scrolltime tween="sine" easing="inout">280</scrolltime>
           <itemlayout width="802" height="81">
-            <include>ArrowNF</include>
+            <include>Arrow</include>
             <control type="label" description="Main Label">
               <include>52MainLabel</include>
               <label>$INFO[ListItem.Label]</label>
@@ -39,7 +39,7 @@
             </control>
           </itemlayout>
           <focusedlayout width="802" height="81">
-            <include>ArrowFO</include>
+            <include>Arrow</include>
             <control type="label" description="Main Label">
               <include>52MainLabelFO</include>
               <label>$INFO[ListItem.Label]</label>

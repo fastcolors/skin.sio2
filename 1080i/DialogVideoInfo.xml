@@ -13,9 +13,7 @@
       <aspectratio>scale</aspectratio>
       <colordiffuse>30FFFFFF</colordiffuse>
     </control>
-    <control type="group" description="rotate Poster">
-      <camera x="265" y="330" />
-      <animation condition="true" effect="rotatey" center="265,0" end="-20">conditional</animation>
+    <control type="group" description="Poster">
       <control type="image" description="Thumb">
         <visible>!Container.Content(episodes)</visible>
         <left>60</left>
@@ -23,15 +21,6 @@
         <width>500</width>
         <height>600</height>
         <texture background="true" diffuse="images/diffuse.png">$INFO[ListItem.Art(poster)]</texture>
-        <aspectratio>keep</aspectratio>
-      </control>
-      <control type="image" description="Thumb">
-        <visible>!Container.Content(episodes)</visible>
-        <left>60</left>
-        <top>660</top>
-        <width>500</width>
-        <height>600</height>
-        <texture flipy="true" background="true" diffuse="images/Reflection0.png">$INFO[ListItem.Art(poster)]</texture>
         <aspectratio>keep</aspectratio>
       </control>
     </control>

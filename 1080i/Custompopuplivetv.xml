@@ -4,15 +4,14 @@
     <include>DialogOpenClose</include>
     <controls>
         <control type="group">
-            <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
             <include>DialogOpenCloseVisible</include>
             <control type="image" description="List back">
                 <centerleft>960</centerleft>
                 <top>200</top>
-                <width>1002</width>
+                <width>802</width>
                 <height>680</height>
                 <aspectratio>stretch</aspectratio>
-                <texture border="150">images/Dialog.png</texture>
+                <texture border="50">images/ContextMenu.png</texture>
             </control>
             <control type="grouplist" id="9000">
                 <include>DialogGLs</include>

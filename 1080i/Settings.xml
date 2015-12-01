@@ -9,32 +9,6 @@
     <control type="group">
       <left>1020</left>
       <top>131</top>
-      <control type="group" description="Slider">
-        <include>Scrollanim</include>
-        <control type="image">
-          <animation effect="fade" time="200">VisibleChange</animation>
-          <left>-20</left>
-          <top>381</top>
-          <width>840</width>
-          <height>129</height>
-          <texture border="32">images/Slider.png</texture>
-          <aspectratio>stretch</aspectratio>
-        </control>
-        <animation type="Conditional" condition="Control.HasFocus(9001) | ControlGroup(9000).HasFocus()">
-          <effect type="fade" start="100" end="40" time="0" reversible="true" />
-        </animation>
-        <animation condition="Container(52).Position(0)" effect="slide" start="0,0" end="0,-405" time="140" reversible="true">Conditional</animation>
-        <animation condition="Container(52).Position(1)" effect="slide" start="0,0" end="0,-324" time="140" reversible="true">Conditional</animation>
-        <animation condition="Container(52).Position(2)" effect="slide" start="0,0" end="0,-243" time="140" reversible="true">Conditional</animation>
-        <animation condition="Container(52).Position(3)" effect="slide" start="0,0" end="0,-162" time="140" reversible="true">Conditional</animation>
-        <animation condition="Container(52).Position(4)" effect="slide" start="0,0" end="0,-81" time="140" reversible="true">Conditional</animation>
-        <animation condition="Container(52).Position(5)" effect="slide" start="0,0" end="0,0" time="140" reversible="true">Conditional</animation>
-        <animation condition="Container(52).Position(6)" effect="slide" start="0,0" end="0,81" time="140" reversible="true">Conditional</animation>
-        <animation condition="Container(52).Position(7)" effect="slide" start="0,0" end="0,162" time="140" reversible="true">Conditional</animation>
-        <animation condition="Container(52).Position(8)" effect="slide" start="0,0" end="0,243" time="140" reversible="true">Conditional</animation>
-        <animation condition="Container(52).Position(9)" effect="slide" start="0,0" end="0,324" time="140" reversible="true">Conditional</animation>
-        <animation condition="Container(52).Position(10)" effect="slide" start="0,0" end="0,405" time="140" reversible="true">Conditional</animation>
-      </control>
       <control type="fixedlist" id="52">
         <width>902</width>
         <height>891</height>
@@ -49,17 +23,37 @@
         <preloaditems>4</preloaditems>
         <scrolltime tween="sine" easing="inout">280</scrolltime>
         <itemlayout width="802" height="81">
-          <include>ArrowNF</include>
+          <control type="image">
+            <height>70</height>
+            <width>805</width>
+            <texture colordiffuse="77FFFFFF">images/white.png</texture>
+          </control>
+          <include>Arrow</include>
           <control type="label" description="Main Label">
             <include>52MainLabel</include>
             <label>$INFO[ListItem.Label]</label>
           </control>
         </itemlayout>
         <focusedlayout width="802" height="81">
-          <include>ArrowFO</include>
-          <control type="label" description="Main Label">
-            <include>52MainLabelFO</include>
-            <label>$INFO[ListItem.Label]</label>
+          <control type="group">
+            <animation effect="zoom" time="120" start="100" end="105" center="auto" tween="Back" easing="Out">Focus</animation>
+            <control type="image">
+              <top>12</top>
+              <left>-50</left>
+              <height>70</height>
+              <width>905</width>
+              <texture>shadow.png</texture>
+            </control>
+            <control type="image">
+              <height>70</height>
+              <width>805</width>
+              <texture>images/white.png</texture>
+            </control>
+            <include>Arrow</include>
+            <control type="label" description="Main Label">
+              <include>52MainLabelFO</include>
+              <label>$INFO[ListItem.Label]</label>
+            </control>
           </control>
         </focusedlayout>
         <content>
@@ -134,15 +128,6 @@
         <aspectratio align="center" aligny="bottom">keep</aspectratio>
         <texture background="true">images/XBMCLogo.png</texture>
       </control>
-      <control type="image" description="Logo reflection">
-        <visible>!Container(52).HasFocus(1)</visible>
-        <animation effect="fade" time="100">VisibleChange</animation>
-        <top>349</top>
-        <width>384</width>
-        <height>192</height>
-        <texture background="true" diffuse="images/Reflection.png" flipy="true">images/XBMCLogo.png</texture>
-        <aspectratio>keep</aspectratio>
-      </control>
       <control type="image" description="Logo">
         <visible>Container(52).HasFocus(1)</visible>
         <animation effect="fade" time="100">VisibleChange</animation>
@@ -151,15 +136,6 @@
         <height>192</height>
         <aspectratio align="center" aligny="bottom">keep</aspectratio>
         <texture background="true">images/Sio2Logo.png</texture>
-      </control>
-      <control type="image" description="Reflection">
-        <visible>Container(52).HasFocus(1)</visible>
-        <animation effect="fade" time="100">VisibleChange</animation>
-        <top>349</top>
-        <width>384</width>
-        <height>192</height>
-        <aspectratio align="center" aligny="top">keep</aspectratio>
-        <texture background="true" diffuse="images/Reflection.png" flipy="true">images/Sio2Logo.png</texture>
       </control>
     </control>
     <control type="group" description="Items description">

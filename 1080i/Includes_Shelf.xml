@@ -95,38 +95,39 @@
     <include name="SquareShortcutsCommons">
         <include>ShelfFade</include>
         <!--<left>72</left>-->
-        <top>140</top>
+        <top>90</top>
         <width>1920</width>
-        <height>462</height>
+        <height>610</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
-        <itemlayout height="357" width="354">
-            <control type="image" description="Reflection">
-                <left>99</left>
-                <top>330</top>
-                <width>303</width>
-                <height>303</height>
-                <texture fallback="DefaultAlbumcover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-                <aspectratio scalediffuse="false">scale</aspectratio>
-            </control>
+        <itemlayout height="600" width="550">
             <control type="image">
                 <left>99</left>
                 <top>27</top>
-                <width>303</width>
-                <height>303</height>
+                <width>500</width>
+                <height>500</height>
                 <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Thumb]</texture>
                 <aspectratio>scale</aspectratio>
             </control>
         </itemlayout>
-        <focusedlayout height="357" width="354">
+        <focusedlayout height="600" width="550">
             <control type="group">
-                <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
-                <animation effect="zoom" start="120" end="100" time="120" center="auto" easing="">unFocus</animation>
+                <animation effect="zoom" start="100" end="110" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+                <animation effect="zoom" start="110" end="100" time="120" center="auto" easing="">unFocus</animation>
+                <control type="image">
+                    <animation effect="fade" start="0" end="100" time="150">Focus</animation>
+                    <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
+                    <left>40</left>
+                    <top>46</top>
+                    <width>580</width>
+                    <height>580</height>
+                    <texture>shadow.png</texture>
+                </control>
                 <control type="image">
                     <left>99</left>
                     <top>27</top>
-                    <width>303</width>
-                    <height>303</height>
+                    <width>500</width>
+                    <height>500</height>
                     <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Thumb]</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
@@ -136,8 +137,8 @@
                 <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
                 <animation effect="fade" start="100" end="0" time="80">unFocus</animation>
                 <left>79</left>
-                <top>360</top>
-                <width>345</width>
+                <top>550</top>
+                <width>540</width>
                 <height>150</height>
                 <font>size26</font>
                 <textcolor>White2</textcolor>

@@ -2,9 +2,10 @@
 <window>
     <defaultcontrol always="true">50</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <views>50,51,53,55,500,52</views>
+    <views>50,51,53,55,500</views>
     <include>OpenClose</include>
     <controls>
+        <include>BlackBackground</include>
         <include>Videoviews</include>
         <control type="group" description="Side menu 9000 group">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>

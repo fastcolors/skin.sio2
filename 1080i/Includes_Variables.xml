@@ -64,6 +64,7 @@
         <value condition="Container.Content(Addons)">$INFO[ListItem.Property(Addon.Creator),  ]</value>
         <value condition="Container.Content(songs)">$INFO[ListItem.Album]</value>
         <value condition="Container.Content(MusicVideos)">$INFO[ListItem.Label]</value>
+        <value condition="Container.Content(Movies) + ListItem.IsCollection">$INFO[ListItem.Year]</value>
         <value condition="Container.Content(Movies) + IsEmpty(ListItem.Trailer)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31038]]$VAR[MPAAS, • Rated ]</value>
         <value condition="Container.Content(Movies) + !IsEmpty(ListItem.Trailer)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31038]] • $LOCALIZE[20410, • ]$VAR[MPAAS, • Rated ]</value>
         <value condition="Container.Content(Seasons) | Container.Content(TVShows)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20453]]$INFO[ListItem.MPAA, • ]</value>
