@@ -354,18 +354,10 @@
                     <property name="color">icons/progcolor.png</property>
                     <onclick>RunAddon($INFO[Skin.String(HomeAddon.12.Label)])</onclick>
                 </item>
-                <!--<item id="346">-->
-                <!--<visible>!Skin.HasSetting(hidewl)</visible>-->
-                <!--<thumb>icons/watchlist.png</thumb>-->
-                <!--<label>31028</label>-->
-                <!--<property name="color">icons/dvdcolor.png</property>-->
-                <!--<onclick>ActivateWindow(1113)</onclick>-->
-                <!--</item>-->
                 <item id="350">
                     <visible>!Skin.HasSetting(hideprog)</visible>
                     <thumb>icons/program.png</thumb>
                     <label>0</label>
-                    <property name="color">icons/progcolor.png</property>
                     <onclick>ActivateWindow(Programs)</onclick>
                 </item>
                 <item id="347">
@@ -375,13 +367,6 @@
                     <property name="color">icons/darkblue.png</property>
                     <onclick>activatewindow(1115)</onclick>
                 </item>
-                <!--<item id="352">
-                  <visible>!Skin.HasSetting(hidefav)</visible>
-                  <thumb>icons/favs.png</thumb>
-                  <label>$LOCALIZE[1036]</label>
-                  <property name="color">icons/pink.png</property>
-                  <onclick>ActivateWindow(134)</onclick>
-                </item>-->
                 <item id="353">
                     <visible>!Skin.HasSetting(hidebro)</visible>
                     <thumb>icons/browser.png</thumb>
