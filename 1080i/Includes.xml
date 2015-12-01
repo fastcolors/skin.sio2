@@ -151,7 +151,7 @@
         <control type="grouplist">
             <visible>![Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(58) | Control.IsVisible(500) | Control.IsVisible(510) | Control.IsVisible(501) | Control.IsVisible(502) | [Window.IsActive(myPVR) + Control.IsVisible(10)] | [Window.IsActive(myPVR) + Control.IsVisible(14)]]</visible>
             <left>990</left>
-            <top>60</top>
+            <top>40</top>
             <width>870</width>
             <height>75</height>
             <align>center</align>
@@ -161,7 +161,6 @@
                 <width min="60" max="750">auto</width>
                 <height>75</height>
                 <font>Size42</font>
-                <textcolor>White2</textcolor>
                 <scroll>false</scroll>
                 <label>$VAR[RootLabel]</label>
             </control>
@@ -170,7 +169,7 @@
                 <width min="60" max="120">auto</width>
                 <height>81</height>
                 <font>size26</font>
-                <textcolor>Grey</textcolor>
+                <textcolor>dimgray</textcolor>
                 <label>$INFO[Container.NumItems,  (,)]</label>
             </control>
         </control>
@@ -187,7 +186,6 @@
                 <width min="60" max="1080">auto</width>
                 <height>75</height>
                 <font>size42</font>
-                <textcolor>White2</textcolor>
                 <scroll>false</scroll>
                 <label>$VAR[RootLabel]</label>
             </control>
@@ -196,7 +194,7 @@
                 <width min="60" max="120">auto</width>
                 <height>81</height>
                 <font>size26</font>
-                <textcolor>Grey</textcolor>
+                <textcolor>dimgray</textcolor>
                 <label>$INFO[Container.NumItems,  (,)]</label>
             </control>
         </control>

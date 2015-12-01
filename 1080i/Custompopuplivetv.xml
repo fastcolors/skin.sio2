@@ -7,13 +7,14 @@
             <include>DialogOpenCloseVisible</include>
             <control type="image" description="List back">
                 <centerleft>960</centerleft>
-                <top>200</top>
+                <centertop>540</centertop>
                 <width>802</width>
-                <height>680</height>
+                <height>600</height>
                 <aspectratio>stretch</aspectratio>
                 <texture border="50">images/ContextMenu.png</texture>
             </control>
             <control type="grouplist" id="9000">
+                <height>400</height>
                 <include>DialogGLs</include>
                 <control type="button" id="1">
                     <include>DialogButt</include>

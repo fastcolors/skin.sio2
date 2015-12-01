@@ -37,87 +37,76 @@
       <animation effect="fade" time="400">Visible</animation>
       <animation effect="fade" time="0">Hidden</animation>
       <control type="group">
-	  <visible>!Container.Content(episodes)</visible>
-	  <control type="image" description="Reflection">
-        <left>0</left>
-        <top>470</top>
-        <width>756</width>
-        <height>470</height>
-        <include>Icon_Fade</include>
-        <texture background="true" diffuse="images/Reflection.png" flipy="true">$VAR[Locandine]</texture>
-        <aspectratio aligny="top">keep</aspectratio>
+        <visible>!Container.Content(episodes)</visible>
+        <control type="image" description="Thumb">
+          <left>0</left>
+          <width>756</width>
+          <height>470</height>
+          <include>Icon_Fade</include>
+          <texture background="true">$VAR[Locandine]</texture>
+          <aspectratio aligny="bottom">keep</aspectratio>
+        </control>
       </control>
-      <control type="image" description="Thumb">
-        <left>0</left>
-        <width>756</width>
-        <height>470</height>
-        <include>Icon_Fade</include>
-        <texture background="true">$VAR[Locandine]</texture>
-        <aspectratio aligny="bottom">keep</aspectratio>
+      <control type="group">
+        <visible>Container.Content(episodes)</visible>
+        <control type="image" description="Reflection">
+          <left>0</left>
+          <top>470</top>
+          <width>756</width>
+          <height>470</height>
+          <include>Icon_Fade</include>
+          <texture background="true" diffuse="images/Reflection.png" flipy="true">$INFO[ListItem.Icon]</texture>
+          <aspectratio aligny="top">keep</aspectratio>
+        </control>
+        <control type="image" description="Thumb">
+          <left>0</left>
+          <width>756</width>
+          <height>470</height>
+          <include>Icon_Fade</include>
+          <texture background="true">$INFO[ListItem.Icon]</texture>
+          <aspectratio aligny="bottom">keep</aspectratio>
+        </control>
       </control>
-	  </control>
-	  <control type="group">
-	  <visible>Container.Content(episodes)</visible>
-	  <control type="image" description="Reflection">
-        <left>0</left>
-        <top>470</top>
-        <width>756</width>
-        <height>470</height>
-        <include>Icon_Fade</include>
-        <texture background="true" diffuse="images/Reflection.png" flipy="true">$INFO[ListItem.Icon]</texture>
-        <aspectratio aligny="top">keep</aspectratio>
-      </control>
-      <control type="image" description="Thumb">
-        <left>0</left>
-        <width>756</width>
-        <height>470</height>
-        <include>Icon_Fade</include>
-        <texture background="true">$INFO[ListItem.Icon]</texture>
-        <aspectratio aligny="bottom">keep</aspectratio>
-      </control>
-	  </control>
       <include>Unwatched</include>
       <control type="grouplist">
         <top>520</top>
-        <width>756</width>
+        <width>750</width>
         <height>50</height>
         <orientation>horizontal</orientation>
-        <itemgap>5</itemgap>
+        <itemgap>0</itemgap>
         <align>center</align>
-        <control type="image">
-          <visible>![Container.Content(tvshows) | Container.Content(Seasons)]</visible>
+        <control type="label">
+          <visible>!IsEmpty(ListItem.VideoResolution)</visible>
           <height>35</height>
-          <width>91</width>
-          <aspectratio>keep</aspectratio>
-          <texture>$INFO[ListItem.VideoResolution,badges/Video/,.png]</texture>
+          <width>auto</width>
+          <label>$INFO[ListItem.VideoResolution]</label>
         </control>
-        <control type="image">
-          <visible>![Container.Content(tvshows) | Container.Content(Seasons)]</visible>
+        <control type="label">
+         <visible>!IsEmpty(ListItem.AudioCodec)</visible>
           <height>35</height>
-          <width>91</width>
-          <aspectratio>keep</aspectratio>
-          <texture>$INFO[ListItem.AudioCodec,badges/Audio/,.png]</texture>
+          <width>auto</width>
+          <label>$INFO[ListItem.AudioCodec, • ]</label>
         </control>
-        <control type="image">
-          <visible>![Container.Content(tvshows) | Container.Content(Seasons)]</visible>
+        <control type="label">
+          <visible>!IsEmpty(ListItem.VideoCodec)</visible>
           <height>35</height>
-          <width>91</width>
+          <width>auto</width>
           <aspectratio>keep</aspectratio>
-          <texture>$INFO[ListItem.VideoCodec,badges/Video/,.png]</texture>
+          <label>$INFO[ListItem.VideoCodec, • ]</label>
         </control>
-        <control type="image">
-          <visible>![Container.Content(tvshows) | Container.Content(Seasons)]</visible>
+        <control type="label">
+          <visible>!IsEmpty(ListItem.FileExtension)</visible>
           <height>35</height>
-          <width>91</width>
+          <width>auto</width>
           <aspectratio>keep</aspectratio>
-          <texture>$INFO[ListItem.FileExtension,badges/Video/,.png]</texture>
+          <label>$INFO[ListItem.FileExtension, • ]</label>
         </control>
-        <control type="image">
-          <visible>!IsEmpty(ListItem.Mpaa) + Container.Content(Movies)</visible>
+        <control type="label">
+          <visible>!IsEmpty(ListItem.MPAA) + !StringCompare($VAR[MPAAS],NA)</visible>
           <height>35</height>
-          <width>91</width>
+          <width>auto</width>
           <aspectratio>keep</aspectratio>
-          <texture>$VAR[MPAAS,Mpaa/,.png]</texture>
+          <label>$VAR[MPAAS, • ]</label>
         </control>
       </control>
       <control type="image">
@@ -137,7 +126,7 @@
         <height>24</height>
         <width>135</width>
         <aspectratio align="right">keep</aspectratio>
-        <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
+        <texture colordiffuse="black">$INFO[ListItem.Rating,badges/,.png]</texture>
       </control>
       <control type="image">
         <top>570</top>
@@ -504,8 +493,8 @@
   </include>
   <include name="50Title">
     <left>128</left>
-    <top>12</top>
-    <height>50</height>
+    <top>10</top>
+    <height>40</height>
     <width>720</width>
     <textcolor>White</textcolor>
     <aligny>center</aligny>
@@ -514,16 +503,15 @@
   </include>
   <include name="50TitleFO">
     <left>128</left>
-    <top>12</top>
-    <height>50</height>
+    <top>10</top>
+    <height>40</height>
     <width>720</width>
-    <textcolor>White2</textcolor>
     <aligny>center</aligny>
     <font>size36</font>
   </include>
   <include name="50details">
     <left>128</left>
-    <top>63</top>
+    <top>58</top>
     <height>33</height>
     <width>350</width>
     <font>size27</font>
@@ -533,11 +521,11 @@
   <include name="50detailsFO">
     <animation effect="fade" time="200" start="50" end="100" delay="100">Focus</animation>
     <left>128</left>
-    <top>63</top>
+    <top>58</top>
     <height>33</height>
     <width>350</width>
     <font>size27</font>
-    <textcolor>White2</textcolor>
+    <textcolor>dimgray</textcolor>
   </include>
   <include name="SettingsLabel2">
     <right>0</right>
@@ -561,12 +549,12 @@
       <aspectratio>keep</aspectratio>
     </control>
   </include>
- <include name="HD_Badge">
+  <include name="HD_Badge">
     <control type="image">
-	<animation effect="slide" end="0,-16" condition="ListItem.IsStereoscopic | Control.Isvisible(50) | !IsEmpty(ListItem.Premiered)">Conditional</animation>
-    <animation effect="slide" end="0,-14" condition="ListItem.IsStereoscopic + Control.Isvisible(50)">Conditional</animation>
-      
-	  <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+      <animation effect="slide" end="0,-16" condition="ListItem.IsStereoscopic | Control.Isvisible(50) | !IsEmpty(ListItem.Premiered)">Conditional</animation>
+      <animation effect="slide" end="0,-14" condition="ListItem.IsStereoscopic + Control.Isvisible(50)">Conditional</animation>
+
+      <visible>!IsEmpty(ListItem.VideoResolution)</visible>
       <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
       <left>81r</left>
       <height>111</height>
@@ -574,11 +562,11 @@
       <aspectratio>keep</aspectratio>
       <texture>badges/720.png</texture>
     </control>
-	 <control type="image">
-	<visible>ListItem.IsStereoscopic</visible>
-	<animation effect="slide" end="0,-14" condition="ListItem.IsStereoscopic + Control.Isvisible(50)">Conditional</animation>
+    <control type="image">
+      <visible>ListItem.IsStereoscopic</visible>
+      <animation effect="slide" end="0,-14" condition="ListItem.IsStereoscopic + Control.Isvisible(50)">Conditional</animation>
       <top>30</top>
-	  <left>81r</left>
+      <left>81r</left>
       <height>80</height>
       <width>42</width>
       <aspectratio>keep</aspectratio>
@@ -587,10 +575,10 @@
   </include>
   <include name="HD_BadgeLW">
     <control type="image">
-	<animation effect="slide" end="0,-16" condition="ListItem.IsStereoscopic | Control.Isvisible(50) | !IsEmpty(ListItem.Premiered)">Conditional</animation>
-    <animation effect="slide" end="0,-14" condition="ListItem.IsStereoscopic + Control.Isvisible(50)">Conditional</animation>
-      
-	  <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+      <animation effect="slide" end="0,-16" condition="ListItem.IsStereoscopic | Control.Isvisible(50) | !IsEmpty(ListItem.Premiered)">Conditional</animation>
+      <animation effect="slide" end="0,-14" condition="ListItem.IsStereoscopic + Control.Isvisible(50)">Conditional</animation>
+
+      <visible>!IsEmpty(ListItem.VideoResolution)</visible>
       <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
       <left>81r</left>
       <height>111</height>
@@ -598,12 +586,12 @@
       <aspectratio>keep</aspectratio>
       <texture>badges/720.png</texture>
     </control>
-	 <control type="image">
-	<visible>ListItem.IsStereoscopic</visible>
-	<animation effect="slide" end="0,-14" condition="ListItem.IsStereoscopic + Control.Isvisible(50)">Conditional</animation>
-    <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
+    <control type="image">
+      <visible>ListItem.IsStereoscopic</visible>
+      <animation effect="slide" end="0,-14" condition="ListItem.IsStereoscopic + Control.Isvisible(50)">Conditional</animation>
+      <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
       <top>30</top>
-	  <left>81r</left>
+      <left>81r</left>
       <height>80</height>
       <width>42</width>
       <aspectratio>keep</aspectratio>
@@ -611,30 +599,30 @@
     </control>
   </include>
   <include name="Unwatched">
-  <control type="group">
-  <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
-  <animation effect="fade" time="200" delay="300">Visible</animation>
-    <animation effect="fade" end="0">Hidden</animation>
-    <control type="image">
-      <top>480</top>
-      <left>140</left>
-      <height>55</height>
-      <width>80</width>
-      <aspectratio>keep</aspectratio>
-      <texture>badges/Badgecount.png</texture>
+    <control type="group">
+      <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
+      <animation effect="fade" time="200" delay="300">Visible</animation>
+      <animation effect="fade" end="0">Hidden</animation>
+      <control type="image">
+        <top>480</top>
+        <left>140</left>
+        <height>55</height>
+        <width>80</width>
+        <aspectratio>keep</aspectratio>
+        <texture>badges/Badgecount.png</texture>
+      </control>
+      <control type="label" description="Label2">
+
+        <top>480</top>
+        <left>140</left>
+        <height>44</height>
+        <width>80</width>
+        <font>size30</font>
+        <align>center</align>
+        <textcolor>White</textcolor>
+        <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
+      </control>
     </control>
-    <control type="label" description="Label2">
-      
-      <top>480</top>
-      <left>140</left>
-      <height>44</height>
-      <width>80</width>
-      <font>size30</font>
-      <align>center</align>
-      <textcolor>White</textcolor>
-      <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
-    </control>
-	</control>
   </include>
   <include name="Arrow">
     <control type="image" description="arrow">
@@ -754,6 +742,11 @@
   </include>
   <include name="LargeListLayout">
     <itemlayout  width="802" height="111">
+      <control type="image">
+        <height>100</height>
+        <width>805</width>
+        <texture colordiffuse="77FFFFFF">images/white.png</texture>
+      </control>
       <include>Watched_Marks</include>
       <include>HD_BadgeLW</include>
       <include>SetsLW</include>
@@ -778,7 +771,7 @@
         <control type="label" description="Label2">
           <visible>!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)</visible>
           <width>630</width>
-		  <left>45</left>
+          <left>45</left>
           <include>50details</include>
           <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]</label>
         </control>
@@ -806,56 +799,71 @@
       </control>
     </itemlayout>
     <focusedlayout width="802" height="111">
-      <include>Watched_Marks</include>
-      <include>HD_BadgeLW</include>
-      <include>SetsFOLW</include>
       <control type="group">
-        <animation condition="IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Duration) + IsEmpty(ListItem.Year)  + IsEmpty(ListItem.Artist)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
-        <control type="label" description="Main Label">
-          <visible>![ListItem.IsFolder | IntegerGreaterThan(ListItem.VideoResolution,700)]</visible>
-          <left>45</left>
-          <width>717</width>
-          <include>50TitleFO</include>
-          <label>$INFO[ListItem.label]</label>
+        <animation effect="zoom" time="120" start="100" end="105" center="auto" tween="Back" easing="Out">Focus</animation>
+        <control type="image">
+          <top>22</top>
+          <left>-50</left>
+          <height>100</height>
+          <width>905</width>
+          <texture>shadow.png</texture>
         </control>
-        <control type="label" description="Main Label">
-          <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
-          <left>45</left>
-          <width>630</width>
-          <include>50TitleFO</include>
-          <label>$INFO[ListItem.label]</label>
+        <control type="image">
+          <height>100</height>
+          <width>805</width>
+          <texture>images/white.png</texture>
         </control>
-      </control>
-      <control type="group">
-        <control type="label" description="Label2">
-          <visible>!isEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)</visible>
-          <left>45</left>
-          <width>630</width>
-          <include>50detailsFO</include>
-          <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]</label>
+        <include>Watched_Marks</include>
+        <include>HD_BadgeLW</include>
+        <include>SetsFOLW</include>
+        <control type="group">
+          <animation condition="IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Duration) + IsEmpty(ListItem.Year)  + IsEmpty(ListItem.Artist)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
+          <control type="label" description="Main Label">
+            <visible>![ListItem.IsFolder | IntegerGreaterThan(ListItem.VideoResolution,700)]</visible>
+            <left>45</left>
+            <width>717</width>
+            <include>50TitleFO</include>
+            <label>$INFO[ListItem.label]</label>
+          </control>
+          <control type="label" description="Main Label">
+            <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
+            <left>45</left>
+            <width>630</width>
+            <include>50TitleFO</include>
+            <label>$INFO[ListItem.label]</label>
+          </control>
         </control>
-        <control type="label" description="Label2">
-          <visible>container.content(episodes)</visible>
-          <left>760</left>
-          <width>480</width>
-          <align>right</align>
-          <include>50detailsFO</include>
-          <label>$INFO[ListItem.Premiered]</label>
-        </control>
-        <control type="label" description="Label2">
-          <visible>container.content(episodes) + !ListItem.IsFolder</visible>
-          <left>45</left>
-          <align>left</align>
-          <include>50details</include>
-          <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]</label>
-        </control>
-        <control type="label" description="Label2">
-          <visible>!Container.Content(Artists)</visible>
-          <left>760</left>
-          <width>480</width>
-          <align>right</align>
-          <include>50detailsFO</include>
-          <label>$INFO[ListItem.Artist]</label>
+        <control type="group">
+          <control type="label" description="Label2">
+            <visible>!isEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)</visible>
+            <left>45</left>
+            <width>630</width>
+            <include>50detailsFO</include>
+            <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]</label>
+          </control>
+          <control type="label" description="Label2">
+            <visible>container.content(episodes)</visible>
+            <left>760</left>
+            <width>480</width>
+            <align>right</align>
+            <include>50detailsFO</include>
+            <label>$INFO[ListItem.Premiered]</label>
+          </control>
+          <control type="label" description="Label2">
+            <visible>container.content(episodes) + !ListItem.IsFolder</visible>
+            <left>45</left>
+            <align>left</align>
+            <include>50details</include>
+            <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]</label>
+          </control>
+          <control type="label" description="Label2">
+            <visible>!Container.Content(Artists)</visible>
+            <left>760</left>
+            <width>480</width>
+            <align>right</align>
+            <include>50detailsFO</include>
+            <label>$INFO[ListItem.Artist]</label>
+          </control>
         </control>
       </control>
     </focusedlayout>
@@ -870,13 +878,13 @@
     <alttexturefocus border="8">images/Buttonselect.png</alttexturefocus>
   </include>
   <include name="SmallButt">
-  <width>200</width>
+    <width>200</width>
     <height>40</height>
     <font>size22</font>
     <align>center</align>
     <texturefocus border="8">images/Buttonselect.png</texturefocus>
     <alttexturefocus border="8">images/Buttonselect.png</alttexturefocus>
-	</include>
+  </include>
   <include name="DialogGLs">
     <centerleft>960</centerleft>
     <top>354</top>
@@ -1223,29 +1231,29 @@
     </control>
   </include>
   <include name="statusbiglist">
-  <control type="image">
-            <left>710</left>
-            <top>15</top>
-            <width>81</width>
-            <height>81</height>
-            <texture>$INFO[ListItem.Icon]</texture>
-			<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
-          </control>
-          <control type="image" description="rec">
-          <left>720</left>
-		  <top>15</top>
-		  <height>81</height>
-		  <width>81</width>
-          <texture>pvr/rec.png</texture>
-		  <visible>ListItem.IsRecording</visible>
-        </control>
-		<control type="image" description="timer">
-          <left>720</left>
-		  <top>15</top>
-		  <height>81</height>
-		  <width>81</width>
-          <texture>pvr/timer.png</texture>
-		  <visible>!ListItem.IsRecording + ListItem.HasTimer</visible>
-        </control>
+    <control type="image">
+      <left>710</left>
+      <top>15</top>
+      <width>81</width>
+      <height>81</height>
+      <texture>$INFO[ListItem.Icon]</texture>
+      <visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
+    </control>
+    <control type="image" description="rec">
+      <left>720</left>
+      <top>15</top>
+      <height>81</height>
+      <width>81</width>
+      <texture>pvr/rec.png</texture>
+      <visible>ListItem.IsRecording</visible>
+    </control>
+    <control type="image" description="timer">
+      <left>720</left>
+      <top>15</top>
+      <height>81</height>
+      <width>81</width>
+      <texture>pvr/timer.png</texture>
+      <visible>!ListItem.IsRecording + ListItem.HasTimer</visible>
+    </control>
   </include>
 </includes>

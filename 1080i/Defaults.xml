@@ -25,7 +25,7 @@
     <font>size33</font>
     <textoffsetx>20</textoffsetx>
     <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
+    <shadowcolor>-</shadowcolor>
     <focusedcolor>White2</focusedcolor>
     <selectedcolor>White2</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
@@ -37,7 +37,7 @@
     <label>-</label>
     <font>size30</font>
     <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
+    <shadowcolor>-</shadowcolor>
     <focusedcolor>White2</focusedcolor>
     <selectedcolor>White2</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
@@ -78,7 +78,7 @@
     <label>-</label>
     <textoffsetx>20</textoffsetx>
     <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
+    <shadowcolor>-</shadowcolor>
     <focusedcolor>White2</focusedcolor>
     <selectedcolor>White2</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
@@ -97,7 +97,7 @@
     <label>-</label>
     <textoffsetx>20</textoffsetx>
     <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
+    <shadowcolor>-</shadowcolor>
     <focusedcolor>White2</focusedcolor>
     <selectedcolor>White2</selectedcolor>
     <altselectedcolor>Yellow</altselectedcolor>
@@ -117,7 +117,7 @@
     <font>size33</font>
     <label>-</label>
     <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
+    <shadowcolor>-</shadowcolor>
     <focusedcolor>White2</focusedcolor>
     <selectedcolor>White2</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
@@ -142,7 +142,7 @@
     <spinheight>18</spinheight>
     <font>size33</font>
     <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
+    <shadowcolor>-</shadowcolor>
     <focusedcolor>White2</focusedcolor>
     <selectedcolor>White2</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
@@ -167,7 +167,7 @@
     <spinwidth>18</spinwidth>
     <spinheight>18</spinheight>
     <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
+    <shadowcolor>-</shadowcolor>
     <focusedcolor>White2</focusedcolor>
     <selectedcolor>White2</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>

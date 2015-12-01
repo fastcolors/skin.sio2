@@ -157,9 +157,7 @@
                     <scrolltime>250</scrolltime>
                     <include>LargeListLayout</include>
                 </control>
-                <include>LargeListSlider</include>
             </control>
-            <include>ListFade</include>
             <control type="scrollbar" id="60">
                 <left>39r</left>
                 <top>135</top>
@@ -170,485 +168,486 @@
         </control>
         <!--NEW VIEW-->
         <!--<control type="group" description="sio2view">-->
-            <!--<visible>Control.IsVisible(52)</visible>-->
-            <!--<control type="image">-->
-                <!--<visible>!substring(ListItem.MPAA,Rated R)</visible>-->
-                <!--<include>Fanart_Fade</include>-->
-                <!--<left></left>-->
-                <!--<top></top>-->
-                <!--<width>1920</width>-->
-                <!--<height>1080</height>-->
-                <!--<texture>$VAR[fanart]</texture>-->
-                <!--<colordiffuse>50DDFFDD</colordiffuse>-->
-                <!--<aspectratio align="left">scale</aspectratio>-->
-            <!--</control>-->
-            <!--<control type="image">-->
-                <!--<visible>substring(ListItem.MPAA,Rated R)</visible>-->
-                <!--<include>Fanart_Fade</include>-->
-                <!--<left></left>-->
-                <!--<top></top>-->
-                <!--<width>1920</width>-->
-                <!--<height>1080</height>-->
-                <!--<texture>$VAR[fanart]</texture>-->
-                <!--<colordiffuse>50FFDDDD</colordiffuse>-->
-                <!--<aspectratio align="left">scale</aspectratio>-->
-            <!--</control>-->
-            <!--<control type="image">-->
-                <!--<include>Dimensions_Fullscreen</include>-->
-                <!--<texture>images/sio2right.png</texture>-->
-                <!--<colordiffuse>AAFFFFFF</colordiffuse>-->
-            <!--</control>-->
-            <!--<control type="fixedlist" id="52">-->
-                <!--<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(Sets)</visible>-->
-                <!--<left>60</left>-->
-                <!--<top>130</top>-->
-                <!--<visible>!IsEmpty(Container.FolderPath)</visible>-->
-                <!--<width>1820</width>-->
-                <!--<height>810</height>-->
-                <!--<onleft condition="SubString(ListItem.path,videodb://movies/sets/)">990</onleft>-->
-                <!--<onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>-->
-                <!--<onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>-->
-                <!--<onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>-->
-                <!--<onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>-->
-                <!--<onup>52</onup>-->
-                <!--<ondown>52</ondown>-->
-                <!--<pagecontrol>60</pagecontrol>-->
-                <!--<viewtype label="Sio2View">Sio2View</viewtype>-->
-                <!--<focusposition>2</focusposition>-->
-                <!--<preloaditems>4</preloaditems>-->
-                <!--<scrolltime>250</scrolltime>-->
-                <!--<itemlayout height="160">-->
-                    <!--<control type="image">-->
-                        <!--<left>1680</left>-->
-                        <!--<top>10</top>-->
-                        <!--<width>108</width>-->
-                        <!--<height>140</height>-->
-                        <!--<texture>$VAR[Locandine]</texture>-->
-                        <!--<aspectratio>scale</aspectratio>-->
-                    <!--</control>-->
-                    <!--<control type="image">-->
-                        <!--<left>1316</left>-->
-                        <!--<top>120</top>-->
-                        <!--<width>360</width>-->
-                        <!--<height>30</height>-->
-                        <!--<texture>$VAR[WatchStatus,overlay/List/]</texture>-->
-                        <!--<aspectratio align="right">keep</aspectratio>-->
-                    <!--</control>-->
-                    <!--<control type="textbox">-->
-                        <!--<left>1310</left>-->
-                        <!--<top>20</top>-->
-                        <!--<width>340</width>-->
-                        <!--<height>140</height>-->
-                        <!--<font>Size24B</font>-->
-                        <!--<textcolor>Grey3</textcolor>-->
-                        <!--<align>right</align>-->
-                        <!--<label>$INFO[ListItem.label]</label>-->
-                    <!--</control>-->
-                    <!--<control type="image">-->
-                        <!--<left>1280</left>-->
-                        <!--<width>440</width>-->
-                        <!--<height>1</height>-->
-                        <!--<texture>images/LineL.png</texture>-->
-                    <!--</control>-->
-                <!--</itemlayout>-->
-                <!--<focusedlayout height="160">-->
-                    <!--<control type="button">-->
-                        <!--<texturefocus>-</texturefocus>-->
-                        <!--<texturenofocus>-</texturenofocus>-->
-                    <!--</control>-->
-                    <!--<control type="image">-->
-                        <!--<animation effect="fade" end="0" time="30">UnFocus</animation>-->
-                        <!--<left>1280</left>-->
-                        <!--<width>510</width>-->
-                        <!--<height>160</height>-->
-                        <!--<texture>images/White2.png</texture>-->
-                        <!--<colordiffuse>335555FF</colordiffuse>-->
-                    <!--</control>-->
-                    <!--<control type="image">-->
-                        <!--<left>1680</left>-->
-                        <!--<top>10</top>-->
-                        <!--<width>108</width>-->
-                        <!--<height>140</height>-->
-                        <!--<texture>$VAR[Locandine]</texture>-->
-                        <!--<aspectratio>scale</aspectratio>-->
-                    <!--</control>-->
-                    <!--<control type="image">-->
-                        <!--<left>1316</left>-->
-                        <!--<top>120</top>-->
-                        <!--<width>360</width>-->
-                        <!--<height>30</height>-->
-                        <!--<texture>$VAR[WatchStatus,overlay/List/]</texture>-->
-                        <!--<aspectratio align="right">keep</aspectratio>-->
-                    <!--</control>-->
-                    <!--<control type="textbox">-->
-                        <!--<left>1310</left>-->
-                        <!--<top>20</top>-->
-                        <!--<width>340</width>-->
-                        <!--<height>140</height>-->
-                        <!--<font>Size24B</font>-->
-                        <!--<textcolor>White</textcolor>-->
-                        <!--<align>right</align>-->
-                        <!--<label>$INFO[ListItem.label]</label>-->
-                    <!--</control>-->
-                    <!--<control type="image">-->
-                        <!--<left>1280</left>-->
-                        <!--<width>440</width>-->
-                        <!--<height>1</height>-->
-                        <!--<texture>images/LineL.png</texture>-->
-                    <!--</control>-->
-                <!--</focusedlayout>-->
-            <!--</control>-->
-            <!--<control type="label">-->
-                <!--<left>100</left>-->
-                <!--<top>42</top>-->
-                <!--<width>1140</width>-->
-                <!--<height>80</height>-->
-                <!--<font>Size42B</font>-->
-                <!--<textcolor>Yellow</textcolor>-->
-                <!--<align>center</align>-->
-                <!--<label>$INFO[ListItem.label]</label>-->
-            <!--</control>-->
-            <!--<control type="textbox">-->
-                <!--<visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>-->
-                <!--<left>240</left>-->
-                <!--<top>110</top>-->
-                <!--<width>860</width>-->
-                <!--<height>50</height>-->
-                <!--<font>Size20</font>-->
-                <!--<textcolor>Silver</textcolor>-->
-                <!--<align>center</align>-->
-                <!--<label>$INFO[ListItem.Tagline]</label>-->
-            <!--</control>-->
-            <!--<control type="grouplist" description="detailedinfos">-->
-                <!--<visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>-->
-                <!--<left>60</left>-->
-                <!--<top>180</top>-->
-                <!--<height>600</height>-->
-                <!--<width>1000</width>-->
-                <!--<itemgap>10</itemgap>-->
-                <!--<control type="label">-->
-                    <!--<width>800</width>-->
-                    <!--<height>20</height>-->
-                    <!--<font>Size20</font>-->
-                    <!--<textcolor>Grey3</textcolor>-->
-                    <!--<align>right</align>-->
-                    <!--<label>$LOCALIZE[180]: [COLOR Silver][B]$INFO[ListItem.Duration] $LOCALIZE[12391][/B][/COLOR]</label>-->
-                <!--</control>-->
-                <!--<control type="label">-->
-                    <!--<width>800</width>-->
-                    <!--<height>20</height>-->
-                    <!--<font>Size20</font>-->
-                    <!--<textcolor>Grey3</textcolor>-->
-                    <!--<align>right</align>-->
-                    <!--<label>$LOCALIZE[515]: [COLOR Silver][B]$INFO[ListItem.Genre][/B][/COLOR]</label>-->
-                <!--</control>-->
-                <!--<control type="label">-->
-                    <!--<width>800</width>-->
-                    <!--<height>20</height>-->
-                    <!--<font>Size20</font>-->
-                    <!--<textcolor>Grey3</textcolor>-->
-                    <!--<align>right</align>-->
-                    <!--<label>$LOCALIZE[562]: [COLOR Silver][B]$INFO[ListItem.Year][/B][/COLOR]</label>-->
-                <!--</control>-->
-                <!--<control type="label">-->
-                    <!--<visible>!StringCompare(ListItem.OriginalTitle,ListItem.label)</visible>-->
-                    <!--<width>800</width>-->
-                    <!--<height>20</height>-->
-                    <!--<font>Size20</font>-->
-                    <!--<textcolor>Grey3</textcolor>-->
-                    <!--<align>right</align>-->
-                    <!--<label>$LOCALIZE[20376]: [COLOR Silver][B]$INFO[ListItem.OriginalTitle][/B][/COLOR]</label>-->
-                <!--</control>-->
-                <!--<control type="label">-->
-                    <!--<width>800</width>-->
-                    <!--<height>20</height>-->
-                    <!--<font>Size20</font>-->
-                    <!--<textcolor>Grey3</textcolor>-->
-                    <!--<align>right</align>-->
-                    <!--<label>$LOCALIZE[20339]: [COLOR Silver][B]$INFO[ListItem.Director][/B][/COLOR]</label>-->
-                <!--</control>-->
-                <!--<control type="label">-->
-                    <!--<width>800</width>-->
-                    <!--<height>20</height>-->
-                    <!--<font>Size20</font>-->
-                    <!--<textcolor>Grey3</textcolor>-->
-                    <!--<align>right</align>-->
-                    <!--<label>$LOCALIZE[21875]: [COLOR Silver][B]$INFO[ListItem.Country][/B][/COLOR]</label>-->
-                <!--</control>-->
-                <!--<control type="label">-->
-                    <!--<width>800</width>-->
-                    <!--<height>20</height>-->
-                    <!--<font>Size20</font>-->
-                    <!--<textcolor>Grey3</textcolor>-->
-                    <!--<align>right</align>-->
-                    <!--<label>$LOCALIZE[563]: [COLOR Silver][B]$INFO[ListItem.RatingAndVotes][/B][/COLOR]</label>-->
-                <!--</control>-->
-                <!--<control type="label">-->
-                    <!--<width>800</width>-->
-                    <!--<height>20</height>-->
-                    <!--<font>Size20</font>-->
-                    <!--<textcolor>Grey3</textcolor>-->
-                    <!--<align>right</align>-->
-                    <!--<scroll>false</scroll>-->
-                    <!--<label>$LOCALIZE[20388]: [COLOR Silver][B]$INFO[ListItem.Studio][/B][/COLOR]</label>-->
-                <!--</control>-->
-                <!--<control type="label">-->
-                    <!--<width>800</width>-->
-                    <!--<height>20</height>-->
-                    <!--<font>Size20</font>-->
-                    <!--<textcolor>Grey3</textcolor>-->
-                    <!--<align>right</align>-->
-                    <!--<label>$LOCALIZE[576]: [COLOR Silver][B]$INFO[ListItem.PlayCount][/B][/COLOR]</label>-->
-                <!--</control>-->
-                <!--<control type="label">-->
-                    <!--<width>800</width>-->
-                    <!--<height>20</height>-->
-                    <!--<font>Size20</font>-->
-                    <!--<textcolor>Grey3</textcolor>-->
-                    <!--<align>right</align>-->
-                    <!--<label>$LOCALIZE[568]: [COLOR Silver][B]$INFO[ListItem.LastPlayed][/B][/COLOR]</label>-->
-                <!--</control>-->
-                <!--<control type="label">-->
-                    <!--<visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>-->
-                    <!--<width>800</width>-->
-                    <!--<height>20</height>-->
-                    <!--<font>Size20</font>-->
-                    <!--<textcolor>Grey3</textcolor>-->
-                    <!--<align>right</align>-->
-                    <!--<label>$LOCALIZE[31087]: [COLOR Silver][B]$INFO[ListItem.PercentPlayed] %[/B][/COLOR]</label>-->
-                <!--</control>-->
-                <!--<control type="label">-->
-                    <!--<width>800</width>-->
-                    <!--<height>20</height>-->
-                    <!--<font>Size20</font>-->
-                    <!--<textcolor>Grey3</textcolor>-->
-                    <!--<align>right</align>-->
-                    <!--<label>$LOCALIZE[582]: [COLOR Silver][B]$INFO[Container.Viewmode][/B][/COLOR]</label>-->
-                <!--</control>-->
-            <!--</control>-->
-            <!--<control type="grouplist" description="flags">-->
-                <!--<visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>-->
-                <!--<left>60</left>-->
-                <!--<top>540</top>-->
-                <!--<height>600</height>-->
-                <!--<width>810</width>-->
-                <!--<itemgap>10</itemgap>-->
-                <!--<orientation>horizontal</orientation>-->
-                <!--<align>right</align>-->
-                <!--<control type="image">-->
-                    <!--<animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2650" tween="sine">Conditional</animation>-->
-                    <!--<height>50</height>-->
-                    <!--<width>130</width>-->
-                    <!--<bordersize>3</bordersize>-->
-                    <!--<aspectratio>keep</aspectratio>-->
-                    <!--<colordiffuse>Silver</colordiffuse>-->
-                    <!--<texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>-->
-                <!--</control>-->
-                <!--<control type="image">-->
-                    <!--<visible>!IsEmpty(ListItem.VideoCodec)</visible>-->
-                    <!--<animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2530" tween="sine">Conditional</animation>-->
-                    <!--<height>50</height>-->
-                    <!--<width>130</width>-->
-                    <!--<bordersize>3</bordersize>-->
-                    <!--<aspectratio>keep</aspectratio>-->
-                    <!--<colordiffuse>Silver</colordiffuse>-->
-                    <!--<texture>$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>-->
-                <!--</control>-->
-                <!--<control type="image">-->
-                    <!--<visible>!IsEmpty(ListItem.AudioChannels)</visible>-->
-                    <!--<animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2380" tween="sine">Conditional</animation>-->
-                    <!--<height>50</height>-->
-                    <!--<width>130</width>-->
-                    <!--<bordersize>3</bordersize>-->
-                    <!--<aspectratio>keep</aspectratio>-->
-                    <!--<colordiffuse>Silver</colordiffuse>-->
-                    <!--<texture>$INFO[ListItem.AudioChannels,badges/channels,.png]</texture>-->
-                <!--</control>-->
-                <!--<control type="image">-->
-                    <!--<visible>!IsEmpty(ListItem.AudioCodec)</visible>-->
-                    <!--<animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2200" tween="sine">Conditional</animation>-->
-                    <!--<height>50</height>-->
-                    <!--<width>130</width>-->
-                    <!--<bordersize>3</bordersize>-->
-                    <!--<aspectratio>keep</aspectratio>-->
-                    <!--<colordiffuse>Silver</colordiffuse>-->
-                    <!--<texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>-->
-                <!--</control>-->
-                <!--<control type="image">-->
-                    <!--<visible>!IsEmpty(ListItem.FileExtension)</visible>-->
-                    <!--<animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2000" tween="sine">Conditional</animation>-->
-                    <!--<height>50</height>-->
-                    <!--<width>130</width>-->
-                    <!--<bordersize>3</bordersize>-->
-                    <!--<aspectratio>keep</aspectratio>-->
-                    <!--<colordiffuse>Silver</colordiffuse>-->
-                    <!--<texture>$INFO[ListItem.FileExtension,badges/video/,.png]</texture>-->
-                <!--</control>-->
-            <!--</control>-->
-            <!--&lt;!&ndash;NONSET&ndash;&gt;-->
-            <!--<control type="group" description="nonsetinfos">-->
-                <!--<visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>-->
-                <!--<control type="textbox" description="plots">-->
-                    <!--<left>140</left>-->
-                    <!--<top>600</top>-->
-                    <!--<width>1060</width>-->
-                    <!--<height>420</height>-->
-                    <!--<align>justify</align>-->
-                    <!--<label>$VAR[Plots]</label>-->
-                <!--</control>-->
-                <!--<control type="group" description="icon+overlay">-->
-                    <!--<left>900</left>-->
-                    <!--<top>180</top>-->
-                    <!--<control type="image">-->
-                        <!--<height>400</height>-->
-                        <!--<width>267</width>-->
-                        <!--<texture>$VAR[Locandine]</texture>-->
-                        <!--<aspectratio>scale</aspectratio>-->
-                    <!--</control>-->
-                    <!--<control type="image">-->
-                        <!--<left>-6</left>-->
-                        <!--<top>-7</top>-->
-                        <!--<height>414</height>-->
-                        <!--<width>281</width>-->
-                        <!--<texture border="10" background="true">$VAR[dvdbox]</texture>-->
-                        <!--<aspectratio>stretch</aspectratio>-->
-                    <!--</control>-->
-                    <!--<control type="image">-->
-                        <!--<left>-10</left>-->
-                        <!--<top>350</top>-->
-                        <!--<width>60</width>-->
-                        <!--<height>60</height>-->
-                        <!--<info>ListItem.Overlay</info>-->
-                    <!--</control>-->
-                <!--</control>-->
-            <!--</control>-->
-            <!--&lt;!&ndash;SET&ndash;&gt;-->
-            <!--<control type="group" description="setinfos">-->
-                <!--<visible>SubString(ListItem.path,videodb://movies/sets/)</visible>-->
-                <!--<control type="panel" id="990">-->
-                    <!--<left>85</left>-->
-                    <!--<top>110</top>-->
-                    <!--<width>1200</width>-->
-                    <!--<height>1080</height>-->
-                    <!--<onup>noop</onup>-->
-                    <!--<ondown>noop</ondown>-->
-                    <!--<onright>52</onright>-->
-                    <!--<itemlayout width="297" height="480">-->
-                        <!--<control type="image">-->
-                            <!--<left>15</left>-->
-                            <!--<top>10</top>-->
-                            <!--<height>400</height>-->
-                            <!--<width>267</width>-->
-                            <!--<texture>$INFO[ListItem.Thumb]</texture>-->
-                        <!--</control>-->
-                        <!--<control type="textbox">-->
-                            <!--<top>415</top>-->
-                            <!--<width>297</width>-->
-                            <!--<height>60</height>-->
-                            <!--<align>center</align>-->
-                            <!--<font>Size20</font>-->
-                            <!--<label>$INFO[ListItem.Title]</label>-->
-                        <!--</control>-->
-                    <!--</itemlayout>-->
-                    <!--<focusedlayout width="297" height="480">-->
-                        <!--<control type="image">-->
-                            <!--<left>15</left>-->
-                            <!--<top>10</top>-->
-                            <!--<height>400</height>-->
-                            <!--<width>267</width>-->
-                            <!--<texture>$INFO[ListItem.Thumb]</texture>-->
-                        <!--</control>-->
-                        <!--<control type="image">-->
-                            <!--<left>15</left>-->
-                            <!--<top>10</top>-->
-                            <!--<height>400</height>-->
-                            <!--<width>267</width>-->
-                            <!--<texture>$VAR[dvdbox]</texture>-->
-                        <!--</control>-->
-                        <!--<control type="group">-->
-                            <!--<animation effect="fade" start="0" end="100" time="250">Focus</animation>-->
-                            <!--<animation effect="fade" start="100" end="0" time="150">unFocus</animation>-->
-                            <!--<control type="image">-->
-                                <!--<width>297</width>-->
-                                <!--<height>420</height>-->
-                                <!--<texture border="9">images/SetsBlack.png</texture>-->
-                            <!--</control>-->
-                            <!--<control type="textbox">-->
-                                <!--<top>10</top>-->
-                                <!--<width>290</width>-->
-                                <!--<height>400</height>-->
-                                <!--<font>Size22</font>-->
-                                <!--<align>center</align>-->
-                                <!--<label>[B][CR]$INFO[ListItem.Duration] $LOCALIZE[12391][CR][CR]$LOCALIZE[345]:[CR]$INFO[ListItem.Year][CR][CR]$LOCALIZE[563] $INFO[ListItem.Rating][CR][CR]$LOCALIZE[20339]:[CR]$INFO[ListItem.Director][CR][CR]$LOCALIZE[20074]:[CR]$INFO[ListItem.MPAA][/B]</label>-->
-                            <!--</control>-->
-
-                        <!--</control>-->
-                        <!--<control type="textbox">-->
-                            <!--<top>415</top>-->
-                            <!--<width>297</width>-->
-                            <!--<height>60</height>-->
-                            <!--<align>center</align>-->
-                            <!--<font>Size20</font>-->
-                            <!--<label>$INFO[ListItem.Title]</label>-->
-                        <!--</control>-->
-                    <!--</focusedlayout>-->
-                    <!--<content target="video">$INFO[Container.ListItem.Path]</content>-->
-                <!--</control>-->
-            <!--</control>-->
-            <!--<control type="image">-->
-                <!--<left>1340</left>-->
-                <!--<top>-100</top>-->
-                <!--<height>1280</height>-->
-                <!--<width>1</width>-->
-                <!--<texture>images/LineV.png</texture>-->
-            <!--</control>-->
-            <!--<control type="image">-->
-                <!--<visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>-->
-                <!--<top>600</top>-->
-                <!--<height>1</height>-->
-                <!--<width>1340</width>-->
-                <!--<texture>images/LineR.png</texture>-->
-            <!--</control>-->
-            <!--&lt;!&ndash;SLIDERPANEL&ndash;&gt;-->
-            <!--<control type="group">-->
-                <!--<control type="image">-->
-                    <!--<visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Art(fanart))]</visible>-->
-                    <!--<animation effect="slide" end="-1340,0" time="500" delay="1500" reversible="false">Hidden</animation>-->
-                    <!--<width>1340</width>-->
-                    <!--<height>1080</height>-->
-                    <!--<texture>images/black.png</texture>-->
-                <!--</control>-->
-                <!--<control type="group">-->
-                    <!--<visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + !SubString(ListItem.path,videodb://movies/sets/)]</visible>-->
-                    <!--<animation effect="slide" end="-1340,0" time="500" delay="1500" reversible="false">Hidden</animation>-->
-                    <!--<fadetime>200</fadetime>-->
-                    <!--<control type="image">-->
-                        <!--<fadetime>200</fadetime>-->
-                        <!--<animation effect="slide" end="-1340,0" time="500" delay="1500" reversible="false">Hidden</animation>-->
-                        <!--<width>1340</width>-->
-                        <!--<height>1080</height>-->
-                        <!--<texture background="true">$VAR[fanart]</texture>-->
-                        <!--<aspectratio align="left">scale</aspectratio>-->
-                    <!--</control>-->
-                    <!--<control type="image">-->
-                        <!--<visible>ListItem.IsStereoscopic</visible>-->
-                        <!--<fadetime>200</fadetime>-->
-                        <!--<left>60</left>-->
-                        <!--<top>880</top>-->
-                        <!--<width>160</width>-->
-                        <!--<height>160</height>-->
-                        <!--<texture background="true">images/3dpflagsio2.png</texture>-->
-                    <!--</control>-->
-                <!--</control>-->
-            <!--</control>-->
-            <!--<control type="scrollbar" id="60">-->
-                <!--<right>50</right>-->
-                <!--<top>120</top>-->
-                <!--<height>820</height>-->
-                <!--<onleft>50</onleft>-->
-                <!--<onright>noop</onright>-->
-            <!--</control>-->
+        <!--<visible>Control.IsVisible(52)</visible>-->
+        <!--<control type="image">-->
+        <!--<visible>!substring(ListItem.MPAA,Rated R)</visible>-->
+        <!--<include>Fanart_Fade</include>-->
+        <!--<left></left>-->
+        <!--<top></top>-->
+        <!--<width>1920</width>-->
+        <!--<height>1080</height>-->
+        <!--<texture>$VAR[fanart]</texture>-->
+        <!--<colordiffuse>50DDFFDD</colordiffuse>-->
+        <!--<aspectratio align="left">scale</aspectratio>-->
         <!--</control>-->
+        <!--<control type="image">-->
+        <!--<visible>substring(ListItem.MPAA,Rated R)</visible>-->
+        <!--<include>Fanart_Fade</include>-->
+        <!--<left></left>-->
+        <!--<top></top>-->
+        <!--<width>1920</width>-->
+        <!--<height>1080</height>-->
+        <!--<texture>$VAR[fanart]</texture>-->
+        <!--<colordiffuse>50FFDDDD</colordiffuse>-->
+        <!--<aspectratio align="left">scale</aspectratio>-->
+        <!--</control>-->
+        <!--<control type="image">-->
+        <!--<include>Dimensions_Fullscreen</include>-->
+        <!--<texture>images/sio2right.png</texture>-->
+        <!--<colordiffuse>AAFFFFFF</colordiffuse>-->
+        <!--</control>-->
+        <!--<control type="fixedlist" id="52">-->
+        <!--<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(Sets)</visible>-->
+        <!--<left>60</left>-->
+        <!--<top>130</top>-->
+        <!--<visible>!IsEmpty(Container.FolderPath)</visible>-->
+        <!--<width>1820</width>-->
+        <!--<height>810</height>-->
+        <!--<onleft condition="SubString(ListItem.path,videodb://movies/sets/)">990</onleft>-->
+        <!--<onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>-->
+        <!--<onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>-->
+        <!--<onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>-->
+        <!--<onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>-->
+        <!--<onup>52</onup>-->
+        <!--<ondown>52</ondown>-->
+        <!--<pagecontrol>60</pagecontrol>-->
+        <!--<viewtype label="Sio2View">Sio2View</viewtype>-->
+        <!--<focusposition>2</focusposition>-->
+        <!--<preloaditems>4</preloaditems>-->
+        <!--<scrolltime>250</scrolltime>-->
+        <!--<itemlayout height="160">-->
+        <!--<control type="image">-->
+        <!--<left>1680</left>-->
+        <!--<top>10</top>-->
+        <!--<width>108</width>-->
+        <!--<height>140</height>-->
+        <!--<texture>$VAR[Locandine]</texture>-->
+        <!--<aspectratio>scale</aspectratio>-->
+        <!--</control>-->
+        <!--<control type="image">-->
+        <!--<left>1316</left>-->
+        <!--<top>120</top>-->
+        <!--<width>360</width>-->
+        <!--<height>30</height>-->
+        <!--<texture>$VAR[WatchStatus,overlay/List/]</texture>-->
+        <!--<aspectratio align="right">keep</aspectratio>-->
+        <!--</control>-->
+        <!--<control type="textbox">-->
+        <!--<left>1310</left>-->
+        <!--<top>20</top>-->
+        <!--<width>340</width>-->
+        <!--<height>140</height>-->
+        <!--<font>Size24B</font>-->
+        <!--<textcolor>Grey3</textcolor>-->
+        <!--<align>right</align>-->
+        <!--<label>$INFO[ListItem.label]</label>-->
+        <!--</control>-->
+        <!--<control type="image">-->
+        <!--<left>1280</left>-->
+        <!--<width>440</width>-->
+        <!--<height>1</height>-->
+        <!--<texture>images/LineL.png</texture>-->
+        <!--</control>-->
+        <!--</itemlayout>-->
+        <!--<focusedlayout height="160">-->
+        <!--<control type="button">-->
+        <!--<texturefocus>-</texturefocus>-->
+        <!--<texturenofocus>-</texturenofocus>-->
+        <!--</control>-->
+        <!--<control type="image">-->
+        <!--<animation effect="fade" end="0" time="30">UnFocus</animation>-->
+        <!--<left>1280</left>-->
+        <!--<width>510</width>-->
+        <!--<height>160</height>-->
+        <!--<texture>images/White2.png</texture>-->
+        <!--<colordiffuse>335555FF</colordiffuse>-->
+        <!--</control>-->
+        <!--<control type="image">-->
+        <!--<left>1680</left>-->
+        <!--<top>10</top>-->
+        <!--<width>108</width>-->
+        <!--<height>140</height>-->
+        <!--<texture>$VAR[Locandine]</texture>-->
+        <!--<aspectratio>scale</aspectratio>-->
+        <!--</control>-->
+        <!--<control type="image">-->
+        <!--<left>1316</left>-->
+        <!--<top>120</top>-->
+        <!--<width>360</width>-->
+        <!--<height>30</height>-->
+        <!--<texture>$VAR[WatchStatus,overlay/List/]</texture>-->
+        <!--<aspectratio align="right">keep</aspectratio>-->
+        <!--</control>-->
+        <!--<control type="textbox">-->
+        <!--<left>1310</left>-->
+        <!--<top>20</top>-->
+        <!--<width>340</width>-->
+        <!--<height>140</height>-->
+        <!--<font>Size24B</font>-->
+        <!--<textcolor>White</textcolor>-->
+        <!--<align>right</align>-->
+        <!--<label>$INFO[ListItem.label]</label>-->
+        <!--</control>-->
+        <!--<control type="image">-->
+        <!--<left>1280</left>-->
+        <!--<width>440</width>-->
+        <!--<height>1</height>-->
+        <!--<texture>images/LineL.png</texture>-->
+        <!--</control>-->
+        <!--</focusedlayout>-->
+        <!--</control>-->
+        <!--<control type="label">-->
+        <!--<left>100</left>-->
+        <!--<top>42</top>-->
+        <!--<width>1140</width>-->
+        <!--<height>80</height>-->
+        <!--<font>Size42B</font>-->
+        <!--<textcolor>Yellow</textcolor>-->
+        <!--<align>center</align>-->
+        <!--<label>$INFO[ListItem.label]</label>-->
+        <!--</control>-->
+        <!--<control type="textbox">-->
+        <!--<visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>-->
+        <!--<left>240</left>-->
+        <!--<top>110</top>-->
+        <!--<width>860</width>-->
+        <!--<height>50</height>-->
+        <!--<font>Size20</font>-->
+        <!--<textcolor>Silver</textcolor>-->
+        <!--<align>center</align>-->
+        <!--<label>$INFO[ListItem.Tagline]</label>-->
+        <!--</control>-->
+        <!--<control type="grouplist" description="detailedinfos">-->
+        <!--<visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>-->
+        <!--<left>60</left>-->
+        <!--<top>180</top>-->
+        <!--<height>600</height>-->
+        <!--<width>1000</width>-->
+        <!--<itemgap>10</itemgap>-->
+        <!--<control type="label">-->
+        <!--<width>800</width>-->
+        <!--<height>20</height>-->
+        <!--<font>Size20</font>-->
+        <!--<textcolor>Grey3</textcolor>-->
+        <!--<align>right</align>-->
+        <!--<label>$LOCALIZE[180]: [COLOR Silver][B]$INFO[ListItem.Duration] $LOCALIZE[12391][/B][/COLOR]</label>-->
+        <!--</control>-->
+        <!--<control type="label">-->
+        <!--<width>800</width>-->
+        <!--<height>20</height>-->
+        <!--<font>Size20</font>-->
+        <!--<textcolor>Grey3</textcolor>-->
+        <!--<align>right</align>-->
+        <!--<label>$LOCALIZE[515]: [COLOR Silver][B]$INFO[ListItem.Genre][/B][/COLOR]</label>-->
+        <!--</control>-->
+        <!--<control type="label">-->
+        <!--<width>800</width>-->
+        <!--<height>20</height>-->
+        <!--<font>Size20</font>-->
+        <!--<textcolor>Grey3</textcolor>-->
+        <!--<align>right</align>-->
+        <!--<label>$LOCALIZE[562]: [COLOR Silver][B]$INFO[ListItem.Year][/B][/COLOR]</label>-->
+        <!--</control>-->
+        <!--<control type="label">-->
+        <!--<visible>!StringCompare(ListItem.OriginalTitle,ListItem.label)</visible>-->
+        <!--<width>800</width>-->
+        <!--<height>20</height>-->
+        <!--<font>Size20</font>-->
+        <!--<textcolor>Grey3</textcolor>-->
+        <!--<align>right</align>-->
+        <!--<label>$LOCALIZE[20376]: [COLOR Silver][B]$INFO[ListItem.OriginalTitle][/B][/COLOR]</label>-->
+        <!--</control>-->
+        <!--<control type="label">-->
+        <!--<width>800</width>-->
+        <!--<height>20</height>-->
+        <!--<font>Size20</font>-->
+        <!--<textcolor>Grey3</textcolor>-->
+        <!--<align>right</align>-->
+        <!--<label>$LOCALIZE[20339]: [COLOR Silver][B]$INFO[ListItem.Director][/B][/COLOR]</label>-->
+        <!--</control>-->
+        <!--<control type="label">-->
+        <!--<width>800</width>-->
+        <!--<height>20</height>-->
+        <!--<font>Size20</font>-->
+        <!--<textcolor>Grey3</textcolor>-->
+        <!--<align>right</align>-->
+        <!--<label>$LOCALIZE[21875]: [COLOR Silver][B]$INFO[ListItem.Country][/B][/COLOR]</label>-->
+        <!--</control>-->
+        <!--<control type="label">-->
+        <!--<width>800</width>-->
+        <!--<height>20</height>-->
+        <!--<font>Size20</font>-->
+        <!--<textcolor>Grey3</textcolor>-->
+        <!--<align>right</align>-->
+        <!--<label>$LOCALIZE[563]: [COLOR Silver][B]$INFO[ListItem.RatingAndVotes][/B][/COLOR]</label>-->
+        <!--</control>-->
+        <!--<control type="label">-->
+        <!--<width>800</width>-->
+        <!--<height>20</height>-->
+        <!--<font>Size20</font>-->
+        <!--<textcolor>Grey3</textcolor>-->
+        <!--<align>right</align>-->
+        <!--<scroll>false</scroll>-->
+        <!--<label>$LOCALIZE[20388]: [COLOR Silver][B]$INFO[ListItem.Studio][/B][/COLOR]</label>-->
+        <!--</control>-->
+        <!--<control type="label">-->
+        <!--<width>800</width>-->
+        <!--<height>20</height>-->
+        <!--<font>Size20</font>-->
+        <!--<textcolor>Grey3</textcolor>-->
+        <!--<align>right</align>-->
+        <!--<label>$LOCALIZE[576]: [COLOR Silver][B]$INFO[ListItem.PlayCount][/B][/COLOR]</label>-->
+        <!--</control>-->
+        <!--<control type="label">-->
+        <!--<width>800</width>-->
+        <!--<height>20</height>-->
+        <!--<font>Size20</font>-->
+        <!--<textcolor>Grey3</textcolor>-->
+        <!--<align>right</align>-->
+        <!--<label>$LOCALIZE[568]: [COLOR Silver][B]$INFO[ListItem.LastPlayed][/B][/COLOR]</label>-->
+        <!--</control>-->
+        <!--<control type="label">-->
+        <!--<visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>-->
+        <!--<width>800</width>-->
+        <!--<height>20</height>-->
+        <!--<font>Size20</font>-->
+        <!--<textcolor>Grey3</textcolor>-->
+        <!--<align>right</align>-->
+        <!--<label>$LOCALIZE[31087]: [COLOR Silver][B]$INFO[ListItem.PercentPlayed] %[/B][/COLOR]</label>-->
+        <!--</control>-->
+        <!--<control type="label">-->
+        <!--<width>800</width>-->
+        <!--<height>20</height>-->
+        <!--<font>Size20</font>-->
+        <!--<textcolor>Grey3</textcolor>-->
+        <!--<align>right</align>-->
+        <!--<label>$LOCALIZE[582]: [COLOR Silver][B]$INFO[Container.Viewmode][/B][/COLOR]</label>-->
+        <!--</control>-->
+        <!--</control>-->
+        <!--<control type="grouplist" description="flags">-->
+        <!--<visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>-->
+        <!--<left>60</left>-->
+        <!--<top>540</top>-->
+        <!--<height>600</height>-->
+        <!--<width>810</width>-->
+        <!--<itemgap>10</itemgap>-->
+        <!--<orientation>horizontal</orientation>-->
+        <!--<align>right</align>-->
+        <!--<control type="image">-->
+        <!--<animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2650" tween="sine">Conditional</animation>-->
+        <!--<height>50</height>-->
+        <!--<width>130</width>-->
+        <!--<bordersize>3</bordersize>-->
+        <!--<aspectratio>keep</aspectratio>-->
+        <!--<colordiffuse>Silver</colordiffuse>-->
+        <!--<texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>-->
+        <!--</control>-->
+        <!--<control type="image">-->
+        <!--<visible>!IsEmpty(ListItem.VideoCodec)</visible>-->
+        <!--<animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2530" tween="sine">Conditional</animation>-->
+        <!--<height>50</height>-->
+        <!--<width>130</width>-->
+        <!--<bordersize>3</bordersize>-->
+        <!--<aspectratio>keep</aspectratio>-->
+        <!--<colordiffuse>Silver</colordiffuse>-->
+        <!--<texture>$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>-->
+        <!--</control>-->
+        <!--<control type="image">-->
+        <!--<visible>!IsEmpty(ListItem.AudioChannels)</visible>-->
+        <!--<animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2380" tween="sine">Conditional</animation>-->
+        <!--<height>50</height>-->
+        <!--<width>130</width>-->
+        <!--<bordersize>3</bordersize>-->
+        <!--<aspectratio>keep</aspectratio>-->
+        <!--<colordiffuse>Silver</colordiffuse>-->
+        <!--<texture>$INFO[ListItem.AudioChannels,badges/channels,.png]</texture>-->
+        <!--</control>-->
+        <!--<control type="image">-->
+        <!--<visible>!IsEmpty(ListItem.AudioCodec)</visible>-->
+        <!--<animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2200" tween="sine">Conditional</animation>-->
+        <!--<height>50</height>-->
+        <!--<width>130</width>-->
+        <!--<bordersize>3</bordersize>-->
+        <!--<aspectratio>keep</aspectratio>-->
+        <!--<colordiffuse>Silver</colordiffuse>-->
+        <!--<texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>-->
+        <!--</control>-->
+        <!--<control type="image">-->
+        <!--<visible>!IsEmpty(ListItem.FileExtension)</visible>-->
+        <!--<animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2000" tween="sine">Conditional</animation>-->
+        <!--<height>50</height>-->
+        <!--<width>130</width>-->
+        <!--<bordersize>3</bordersize>-->
+        <!--<aspectratio>keep</aspectratio>-->
+        <!--<colordiffuse>Silver</colordiffuse>-->
+        <!--<texture>$INFO[ListItem.FileExtension,badges/video/,.png]</texture>-->
+        <!--</control>-->
+        <!--</control>-->
+        <!--&lt;!&ndash;NONSET&ndash;&gt;-->
+        <!--<control type="group" description="nonsetinfos">-->
+        <!--<visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>-->
+        <!--<control type="textbox" description="plots">-->
+        <!--<left>140</left>-->
+        <!--<top>600</top>-->
+        <!--<width>1060</width>-->
+        <!--<height>420</height>-->
+        <!--<align>justify</align>-->
+        <!--<label>$VAR[Plots]</label>-->
+        <!--</control>-->
+        <!--<control type="group" description="icon+overlay">-->
+        <!--<left>900</left>-->
+        <!--<top>180</top>-->
+        <!--<control type="image">-->
+        <!--<height>400</height>-->
+        <!--<width>267</width>-->
+        <!--<texture>$VAR[Locandine]</texture>-->
+        <!--<aspectratio>scale</aspectratio>-->
+        <!--</control>-->
+        <!--<control type="image">-->
+        <!--<left>-6</left>-->
+        <!--<top>-7</top>-->
+        <!--<height>414</height>-->
+        <!--<width>281</width>-->
+        <!--<texture border="10" background="true">$VAR[dvdbox]</texture>-->
+        <!--<aspectratio>stretch</aspectratio>-->
+        <!--</control>-->
+        <!--<control type="image">-->
+        <!--<left>-10</left>-->
+        <!--<top>350</top>-->
+        <!--<width>60</width>-->
+        <!--<height>60</height>-->
+        <!--<info>ListItem.Overlay</info>-->
+        <!--</control>-->
+        <!--</control>-->
+        <!--</control>-->
+        <!--&lt;!&ndash;SET&ndash;&gt;-->
+        <!--<control type="group" description="setinfos">-->
+        <!--<visible>SubString(ListItem.path,videodb://movies/sets/)</visible>-->
+        <!--<control type="panel" id="990">-->
+        <!--<left>85</left>-->
+        <!--<top>110</top>-->
+        <!--<width>1200</width>-->
+        <!--<height>1080</height>-->
+        <!--<onup>noop</onup>-->
+        <!--<ondown>noop</ondown>-->
+        <!--<onright>52</onright>-->
+        <!--<itemlayout width="297" height="480">-->
+        <!--<control type="image">-->
+        <!--<left>15</left>-->
+        <!--<top>10</top>-->
+        <!--<height>400</height>-->
+        <!--<width>267</width>-->
+        <!--<texture>$INFO[ListItem.Thumb]</texture>-->
+        <!--</control>-->
+        <!--<control type="textbox">-->
+        <!--<top>415</top>-->
+        <!--<width>297</width>-->
+        <!--<height>60</height>-->
+        <!--<align>center</align>-->
+        <!--<font>Size20</font>-->
+        <!--<label>$INFO[ListItem.Title]</label>-->
+        <!--</control>-->
+        <!--</itemlayout>-->
+        <!--<focusedlayout width="297" height="480">-->
+        <!--<control type="image">-->
+        <!--<left>15</left>-->
+        <!--<top>10</top>-->
+        <!--<height>400</height>-->
+        <!--<width>267</width>-->
+        <!--<texture>$INFO[ListItem.Thumb]</texture>-->
+        <!--</control>-->
+        <!--<control type="image">-->
+        <!--<left>15</left>-->
+        <!--<top>10</top>-->
+        <!--<height>400</height>-->
+        <!--<width>267</width>-->
+        <!--<texture>$VAR[dvdbox]</texture>-->
+        <!--</control>-->
+        <!--<control type="group">-->
+        <!--<animation effect="fade" start="0" end="100" time="250">Focus</animation>-->
+        <!--<animation effect="fade" start="100" end="0" time="150">unFocus</animation>-->
+        <!--<control type="image">-->
+        <!--<width>297</width>-->
+        <!--<height>420</height>-->
+        <!--<texture border="9">images/SetsBlack.png</texture>-->
+        <!--</control>-->
+        <!--<control type="textbox">-->
+        <!--<top>10</top>-->
+        <!--<width>290</width>-->
+        <!--<height>400</height>-->
+        <!--<font>Size22</font>-->
+        <!--<align>center</align>-->
+        <!--<label>[B][CR]$INFO[ListItem.Duration] $LOCALIZE[12391][CR][CR]$LOCALIZE[345]:[CR]$INFO[ListItem.Year][CR][CR]$LOCALIZE[563] $INFO[ListItem.Rating][CR][CR]$LOCALIZE[20339]:[CR]$INFO[ListItem.Director][CR][CR]$LOCALIZE[20074]:[CR]$INFO[ListItem.MPAA][/B]</label>-->
+        <!--</control>-->
+
+        <!--</control>-->
+        <!--<control type="textbox">-->
+        <!--<top>415</top>-->
+        <!--<width>297</width>-->
+        <!--<height>60</height>-->
+        <!--<align>center</align>-->
+        <!--<font>Size20</font>-->
+        <!--<label>$INFO[ListItem.Title]</label>-->
+        <!--</control>-->
+        <!--</focusedlayout>-->
+        <!--<content target="video">$INFO[Container.ListItem.Path]</content>-->
+        <!--</control>-->
+        <!--</control>-->
+        <!--<control type="image">-->
+        <!--<left>1340</left>-->
+        <!--<top>-100</top>-->
+        <!--<height>1280</height>-->
+        <!--<width>1</width>-->
+        <!--<texture>images/LineV.png</texture>-->
+        <!--</control>-->
+        <!--<control type="image">-->
+        <!--<visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>-->
+        <!--<top>600</top>-->
+        <!--<height>1</height>-->
+        <!--<width>1340</width>-->
+        <!--<texture>images/LineR.png</texture>-->
+        <!--</control>-->
+        <!--&lt;!&ndash;SLIDERPANEL&ndash;&gt;-->
+        <!--<control type="group">-->
+        <!--<control type="image">-->
+        <!--<visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Art(fanart))]</visible>-->
+        <!--<animation effect="slide" end="-1340,0" time="500" delay="1500" reversible="false">Hidden</animation>-->
+        <!--<width>1340</width>-->
+        <!--<height>1080</height>-->
+        <!--<texture>images/black.png</texture>-->
+        <!--</control>-->
+        <!--<control type="group">-->
+        <!--<visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + !SubString(ListItem.path,videodb://movies/sets/)]</visible>-->
+        <!--<animation effect="slide" end="-1340,0" time="500" delay="1500" reversible="false">Hidden</animation>-->
+        <!--<fadetime>200</fadetime>-->
+        <!--<control type="image">-->
+        <!--<fadetime>200</fadetime>-->
+        <!--<animation effect="slide" end="-1340,0" time="500" delay="1500" reversible="false">Hidden</animation>-->
+        <!--<width>1340</width>-->
+        <!--<height>1080</height>-->
+        <!--<texture background="true">$VAR[fanart]</texture>-->
+        <!--<aspectratio align="left">scale</aspectratio>-->
+        <!--</control>-->
+        <!--<control type="image">-->
+        <!--<visible>ListItem.IsStereoscopic</visible>-->
+        <!--<fadetime>200</fadetime>-->
+        <!--<left>60</left>-->
+        <!--<top>880</top>-->
+        <!--<width>160</width>-->
+        <!--<height>160</height>-->
+        <!--<texture background="true">images/3dpflagsio2.png</texture>-->
+        <!--</control>-->
+        <!--</control>-->
+        <!--</control>-->
+        <!--<control type="scrollbar" id="60">-->
+        <!--<right>50</right>-->
+        <!--<top>120</top>-->
+        <!--<height>820</height>-->
+        <!--<onleft>50</onleft>-->
+        <!--<onright>noop</onright>-->
+        <!--</control>-->
+        <!--</control>-->
+
         <!--ICONVIEW-->
         <control type="group" description="Icons view">
             <visible>Control.IsVisible(53)</visible>
@@ -1270,7 +1269,14 @@
                 <colordiffuse>55AAAABB</colordiffuse>
                 <aspectratio>scale</aspectratio>
             </control>
-            <control type="list" id="500" description="Shortcuts">
+            <control type="image" description="white back">
+                <top>470</top>
+                <width>1920</width>
+                <height>612</height>
+                <texture colordiffuse="77FFFFFF">images/White.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="list" id="500" description="fanart">
                 <visible>Container.content(movies) | container.content(seasons) | container.content(tvshows)</visible>
                 <onup condition="!Skin.HasSetting(ViewsMenuOff)">9000</onup>
                 <onup condition="Skin.HasSetting(ViewsMenuOff)">noop</onup>
@@ -1279,13 +1285,12 @@
                 <onleft>500</onleft>
                 <onright>500</onright>
                 <viewtype label="$LOCALIZE[20445]">Fanart</viewtype>
-                <left>-210</left>
                 <top>590</top>
-                <width>2200</width>
+                <width>1920</width>
                 <height>700</height>
                 <orientation>horizontal</orientation>
                 <scrolltime>300</scrolltime>
-                <focusposition>1</focusposition>
+                <focusposition>2</focusposition>
                 <preloaditems>2</preloaditems>
                 <pagecontrol>60</pagecontrol>
                 <itemlayout width="256" height="500">
@@ -1350,9 +1355,8 @@
             <control type="group" description="Media Info">
                 <visible>!StringCompare(ListItem.label,..)</visible>
                 <top>40</top>
-                <left>98</left>
                 <control type="image" description="Stars rating">
-                    <left>1590</left>
+                    <left>1688</left>
                     <top>435</top>
                     <height>45</height>
                     <width>135</width>
@@ -1360,38 +1364,32 @@
                     <texture colordiffuse="black">$INFO[ListItem.Rating,badges/,.png]</texture>
                 </control>
                 <control type="label" description="Item Title">
+                    <left>98</left>
                     <font>size42B</font>
-                    <textcolor>Yellow</textcolor>
                     <align>center</align>
                     <width>1724</width>
                     <info>ListItem.Label</info>
                 </control>
-                <control type="image" description="Line Split">
-                    <left>450</left>
-                    <top>515</top>
-                    <width>1300</width>
-                    <height>1</height>
-                    <texture>images/LineL.png</texture>
-                    <aspectratio>stretch</aspectratio>
-                </control>
                 <control type="group">
                     <control type="image" description="lineplot">
                         <top>70</top>
-                        <left>550</left>
+                        <left>648</left>
                         <width>620</width>
                         <height>1</height>
                         <texture>images/Line.png</texture>
                     </control>
                     <control type="image" description="lineplot">
                         <top>80</top>
+                        <left>98</left>
                         <width>1724</width>
                         <height>1</height>
                         <texture>images/Line.png</texture>
                     </control>
                     <control type="textbox" description="Plot">
                         <top>80</top>
+                        <left>98</left>
                         <width>1724</width>
-                        <height>330</height>
+                        <height>350</height>
                         <textcolor>black</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <align>justify</align>
@@ -1399,74 +1397,65 @@
                         <label>$INFO[ListItem.Plot]</label>
                     </control>
                     <control type="image" description="lineplot">
-                        <top>410</top>
+                        <top>430</top>
+                        <left>98</left>
                         <width>1724</width>
                         <height>1</height>
                         <texture>images/Line.png</texture>
                     </control>
                     <control type="label">
                         <top>440</top>
+                        <centerleft>960</centerleft>
                         <font>size27</font>
                         <height>40</height>
                         <align>center</align>
-                        <width>1724</width>
+                        <width>1120</width>
                         <label>$VAR[TopLabel]</label>
                     </control>
                     <control type="grouplist" description="Flags">
-                        <top>540</top>
-                        <width>1724</width>
+                        <top>510</top>
+                        <width>1920</width>
                         <height>150</height>
-                        <itemgap>30</itemgap>
                         <orientation>horizontal</orientation>
                         <align>center</align>
-                        <control type="image">
+                        <control type="label">
                             <height>50</height>
-                            <width>130</width>
+                            <width>auto</width>
                             <bordersize>3</bordersize>
-                            <aspectratio>keep</aspectratio>
-                            <colordiffuse>Silver</colordiffuse>
-                            <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
+                            <label>[UPPERCASE]$INFO[ListItem.VideoResolution][/UPPERCASE]</label>
                         </control>
-                        <control type="image">
+                        <control type="label">
                             <visible>!IsEmpty(ListItem.VideoCodec)</visible>
                             <height>50</height>
-                            <width>130</width>
+                            <width>auto</width>
                             <bordersize>3</bordersize>
-                            <aspectratio>keep</aspectratio>
-                            <colordiffuse>Silver</colordiffuse>
-                            <texture>$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>
+                            <label>[UPPERCASE]$INFO[ListItem.VideoCodec, • ][/UPPERCASE]</label>
                         </control>
-                        <control type="image">
+                        <control type="label">
                             <visible>!IsEmpty(ListItem.AudioChannels)</visible>
                             <height>50</height>
-                            <width>130</width>
+                            <width>auto</width>
                             <bordersize>3</bordersize>
-                            <aspectratio>keep</aspectratio>
-                            <colordiffuse>Silver</colordiffuse>
-                            <texture>$INFO[ListItem.AudioChannels,badges/channels,.png]</texture>
+                            <label>[UPPERCASE]$INFO[ListItem.AudioChannels, • ][/UPPERCASE]</label>
                         </control>
-                        <control type="image">
+                        <control type="label">
                             <visible>!IsEmpty(ListItem.AudioCodec)</visible>
                             <height>50</height>
-                            <width>130</width>
+                            <width>auto</width>
                             <bordersize>3</bordersize>
-                            <aspectratio>keep</aspectratio>
-                            <colordiffuse>Silver</colordiffuse>
-                            <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
+                            <label>[UPPERCASE]$INFO[ListItem.AudioCodec, • ][/UPPERCASE]</label>
                         </control>
-                        <control type="image">
+                        <control type="label">
                             <height>50</height>
-                            <width>130</width>
+                            <width>auto</width>
                             <bordersize>3</bordersize>
-                            <aspectratio>keep</aspectratio>
-                            <colordiffuse>Silver</colordiffuse>
-                            <texture>$INFO[ListItem.FileExtension,badges/video/,.png]</texture>
+                            <label>[UPPERCASE]$INFO[ListItem.FileExtension, • ][/UPPERCASE]</label>
                         </control>
                     </control>
                     <control type="label" description="Genre">
                         <top>470</top>
                         <font>size27</font>
-                        <width>1724</width>
+                        <width>1920</width>
                         <height>50</height>
                         <align>center</align>
                         <label>$INFO[ListItem.Genre]</label>
