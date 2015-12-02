@@ -138,22 +138,6 @@
             </control>
           </focusedlayout>
         </control>
-        <control type="group" description="Slider">
-          <control type="group">
-            <visible>Container(451).HasFocus()</visible>
-            <include>Scrollanim</include>
-            <include>Slider2</include>
-          </control>
-          <animation condition="Container(451).Position(0)" effect="slide" start="0,0" end="0,-333" time="180" easing="inout" reversible="true">Conditional</animation>
-          <animation condition="Container(451).Position(1)" effect="slide" start="0,0" end="0,-222" time="180" easing="inout" reversible="true">Conditional</animation>
-          <animation condition="Container(451).Position(2)" effect="slide" start="0,0" end="0,-111" time="180" easing="inout" reversible="true">Conditional</animation>
-          <animation condition="Container(451).Position(3)" effect="slide" start="0,0" end="0,0" time="180" easing="inout" reversible="true">Conditional</animation>
-          <animation condition="Container(451).Position(4)" effect="slide" start="0,0" end="0,111" time="180" easing="inout" reversible="true">Conditional</animation>
-          <animation condition="Container(451).Position(5)" effect="slide" start="0,0" end="0,222" time="180" easing="inout" reversible="true">Conditional</animation>
-          <animation condition="Container(451).Position(6)" effect="slide" start="0,0" end="0,333" time="180" easing="inout" reversible="true">Conditional</animation>
-          <animation condition="Container(451).Position(7)" effect="slide" start="0,0" end="0,444" time="180" easing="inout" reversible="true">Conditional</animation>
-          <animation condition="Container(451).Position(8)" effect="slide" start="0,0" end="0,555" time="180" easing="inout" reversible="true">Conditional</animation>
-        </control>
       </control>
     </control>
     <control type="group" description="Thumbs">

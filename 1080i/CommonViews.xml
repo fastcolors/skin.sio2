@@ -49,15 +49,6 @@
       </control>
       <control type="group">
         <visible>Container.Content(episodes)</visible>
-        <control type="image" description="Reflection">
-          <left>0</left>
-          <top>470</top>
-          <width>756</width>
-          <height>470</height>
-          <include>Icon_Fade</include>
-          <texture background="true" diffuse="images/Reflection.png" flipy="true">$INFO[ListItem.Icon]</texture>
-          <aspectratio aligny="top">keep</aspectratio>
-        </control>
         <control type="image" description="Thumb">
           <left>0</left>
           <width>756</width>
@@ -252,15 +243,6 @@
       <control type="group" description="Music Square">
         <left>225</left>
         <top>90</top>
-        <control type="image" description="Thumb Reflection">
-          <visible>!IsEmpty(ListItem.Thumb)</visible>
-          <top>600</top>
-          <width>600</width>
-          <height>600</height>
-          <include>Icon_Fade</include>
-          <texture background="true" diffuse="images/Reflection0.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-          <aspectratio>keep</aspectratio>
-        </control>
         <control type="image" description="Thumb">
           <width>600</width>
           <height>600</height>
@@ -288,57 +270,6 @@
     <animation effect="slide" start="0,0" end="0,-222" time="0" condition="StringCompare(Container.NumItems,3)">conditional</animation>
     <animation effect="slide" start="0,0" end="0,-111" time="0" condition="StringCompare(Container.NumItems,4)">conditional</animation>
     <animation effect="slide" start="0,0" end="0,-111" time="0" condition="StringCompare(Container.NumItems,5)">conditional</animation>
-  </include>
-  <include name="LargeListSlider">
-    <control type="group" description="Slider">
-      <include>Scrollanim</include>
-      <include>Slider2</include>
-      <animation condition="Container.Position(0)" effect="slide" end="0,-333" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(1)" effect="slide" end="0,-222" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(2)" effect="slide" end="0,-111" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(4)" effect="slide" end="0,111" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(5)" effect="slide" end="0,222" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(6)" effect="slide" end="0,333" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(7)" effect="slide" end="0,444" time="180" easing="inout" reversible="true">Conditional</animation>
-    </control>
-  </include>
-  <include name="SlimListSlider">
-    <control type="group" description="Slider">
-      <include>Scrollanim</include>
-      <include>slider</include>
-      <animation condition="Container.Position(0)" effect="slide" end="0,-405" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(1)" effect="slide" end="0,-324" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(2)" effect="slide" end="0,-243" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(3)" effect="slide" end="0,-162" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(4)" effect="slide" end="0,-81" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(6)" effect="slide" end="0,81" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(7)" effect="slide" end="0,162" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(8)" effect="slide" end="0,243" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(9)" effect="slide" end="0,324" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(10)" effect="slide" end="0,405" time="180" easing="inout" reversible="true">Conditional</animation>
-    </control>
-  </include>
-  <include name="ListFade">
-    <control type="image">
-      <visible>Container.HasPrevious</visible>
-      <animation effect="fade" time="200">VisibleChange</animation>
-      <left>1005</left>
-      <top>110</top>
-      <height>81</height>
-      <width>832</width>
-      <texture flipy="true">images/DefaultGradient.png</texture>
-      <aspectratio>stretch</aspectratio>
-    </control>
-    <control type="image">
-      <animation effect="fade" time="200">VisibleChange</animation>
-      <visible>Container.HasNext</visible>
-      <left>1005</left>
-      <top>950</top>
-      <height>81</height>
-      <width>832</width>
-      <texture>images/DefaultGradient.png</texture>
-      <aspectratio>stretch</aspectratio>
-    </control>
   </include>
   <include name="FullscreenInfoLabel">
     <left>400</left>
@@ -439,17 +370,6 @@
       <top>383</top>
       <width>855</width>
       <height>126</height>
-      <texture border="32">images/Slider.png</texture>
-      <aspectratio>stretch</aspectratio>
-    </control>
-  </include>
-  <include name="Slider2">
-    <control type="image">
-      <animation effect="fade" time="100">VisibleChange</animation>
-      <left>-27</left>
-      <top>306</top>
-      <width>855</width>
-      <height>165</height>
       <texture border="32">images/Slider.png</texture>
       <aspectratio>stretch</aspectratio>
     </control>
@@ -1030,14 +950,6 @@
         <label>+ $INFO[ListItem.label2]</label>
         <align>center</align>
       </control>
-      <control type="image" description="Reflection">
-        <left>27</left>
-        <top>330</top>
-        <width>303</width>
-        <height>303</height>
-        <texture background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-        <aspectratio scalediffuse="false">scale</aspectratio>
-      </control>
       <control type="image">
         <left>27</left>
         <top>27</top>
@@ -1144,15 +1056,6 @@
       <visible>ListItem.IsFolder + !IsEmpty(Container.FolderPath)</visible>
       <animation effect="fade" time="400">Visible</animation>
       <animation effect="fade" time="0">Hidden</animation>
-      <control type="image" description="Thumb Reflection">
-        <left>180</left>
-        <top>621</top>
-        <width>621</width>
-        <height>621</height>
-        <include>Icon_Fade</include>
-        <texture background="true" diffuse="images/Reflection0Long.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-        <aspectratio aligny="top">keep</aspectratio>
-      </control>
       <control type="image" description="Thumb">
         <left>180</left>
         <top>0</top>
@@ -1170,14 +1073,6 @@
       <control type="group">
         <left>260</left>
         <top>80</top>
-        <control type="image" description="Thumb Reflection">
-          <top>500</top>
-          <width>500</width>
-          <height>500</height>
-          <include>Icon_Fade</include>
-          <texture background="true" diffuse="images/Reflection0.png" flipy="true">$INFO[ListItem.Icon]</texture>
-          <aspectratio>keep</aspectratio>
-        </control>
         <control type="image" description="Thumb">
           <width>500</width>
           <height>500</height>

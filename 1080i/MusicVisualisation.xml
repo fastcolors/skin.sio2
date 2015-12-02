@@ -84,15 +84,6 @@
             </control>
             <control type="image" description="MusicAlbum">
               <left>0</left>
-              <top>600</top>
-              <height>600</height>
-              <width>600</width>
-              <fadetime>300</fadetime>
-              <aspectratio aligny="top">stretch</aspectratio>
-              <texture flipy="true" diffuse="images/Reflection1.png">$INFO[MusicPlayer.Cover]</texture>
-            </control>
-            <control type="image" description="MusicAlbum">
-              <left>0</left>
               <top>0</top>
               <height>600</height>
               <width>600</width>
@@ -227,15 +218,6 @@
               <fadetime>300</fadetime>
               <aspectratio aligny="bottom">stretch</aspectratio>
               <texture>images/record.png</texture>
-            </control>
-            <control type="image" description="MusicAlbum">
-              <left>0</left>
-              <top>600</top>
-              <height>600</height>
-              <width>600</width>
-              <fadetime>300</fadetime>
-              <aspectratio aligny="top">stretch</aspectratio>
-              <texture flipy="true" diffuse="images/Reflection1.png">$INFO[MusicPlayer.Cover]</texture>
             </control>
             <control type="image" description="MusicAlbum">
               <left>0</left>

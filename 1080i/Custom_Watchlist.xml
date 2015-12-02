@@ -104,14 +104,6 @@
             <itemlayout width="300" height="500">
               <control type="group">
                 <top>450</top>
-                <control type="image" description="THUMBNAIL Reflection">
-                  <left>85</left>
-                  <top>440</top>
-                  <height>350</height>
-                  <width>230</width>
-                  <texture background="true" flipy="true" diffuse="images/Reflection.png">$INFO[ListItem.Thumb]</texture>
-                  <aspectratio>scale</aspectratio>
-                </control>
                 <control type="image" description="THUMBNAIL">
                   <left>85</left>
                   <top>80</top>

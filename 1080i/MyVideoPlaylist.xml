@@ -11,15 +11,6 @@
           <top>240</top>
           <animation effect="fade" time="400">Visible</animation>
           <animation effect="fade" time="0">Hidden</animation>
-          <control type="image" description="Thumb Reflection">
-            <left>180</left>
-            <top>720</top>
-            <width>621</width>
-            <height>720</height>
-            <include>Icon_Fade</include>
-            <texture background="true" diffuse="images/Reflection0Long.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-            <aspectratio aligny="top">keep</aspectratio>
-          </control>
           <control type="image" description="Thumb">
             <left>180</left>
             <top>0</top>
@@ -129,7 +120,7 @@
           </control>
           <include>LargeListSlider</include>
         </control>
-        <include>ListFade</include>
+
         <control type="scrollbar" id="60">
           <left>51r</left>
           <top>135</top>

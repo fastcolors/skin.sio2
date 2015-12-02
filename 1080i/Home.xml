@@ -25,7 +25,7 @@
         <control type="button" id="9009">
             <visible allowhiddenfocus="true">Control.HasFocus(9009)</visible>
             <left>50</left>
-            <top>65</top>
+            <top>35</top>
             <width>34</width>
             <height>34</height>
             <texturefocus aspectratio="keep">images/hometoggle.png</texturefocus>
@@ -366,6 +366,12 @@
                     <label>20094</label>
                     <property name="color">icons/darkblue.png</property>
                     <onclick>activatewindow(1115)</onclick>
+                </item>
+                <item id="355">
+                    <visible>!Skin.HasSetting(hidesearch) + System.HasAddon(script.globalsearch)</visible>
+                    <thumb>icons/search.png</thumb>
+                    <label>search</label>
+                    <onclick>RunScript(script.globalsearch)</onclick>
                 </item>
                 <item id="353">
                     <visible>!Skin.HasSetting(hidebro)</visible>

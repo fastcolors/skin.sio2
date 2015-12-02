@@ -55,7 +55,7 @@
           </focusedlayout>
         </control>
       </control>
-      <include>ListFade</include>
+
       <control type="scrollbar" id="60">
         <left>51r</left>
         <top>147</top>

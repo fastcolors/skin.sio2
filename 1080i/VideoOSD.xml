@@ -126,26 +126,11 @@
                             <aspectratio>keep</aspectratio>
                             <texture diffuse="images/Diffuse.png">$INFO[VideoPlayer.Cover]</texture>
                         </control>
-                        <control type="image" description="CoverRef">
-                            <visible>IsEmpty(Player.Art(tvshow.poster)) + !Window.IsActive(610)</visible>
-                            <top>300</top>
-                            <height>300</height>
-                            <width>220</width>
-                            <aspectratio>keep</aspectratio>
-                            <texture flipy="true" diffuse="images/Reflection.png">$INFO[VideoPlayer.Cover]</texture>
-                        </control>
                         <control type="image" description="TVSHOW">
                             <height>300</height>
                             <width>220</width>
                             <aspectratio>keep</aspectratio>
                             <texture diffuse="images/Diffuse.png">$INFO[Player.Art(tvshow.poster)]</texture>
-                        </control>
-                        <control type="image" description="TVSHOWRef">
-                            <top>300</top>
-                            <height>300</height>
-                            <width>220</width>
-                            <aspectratio>keep</aspectratio>
-                            <texture flipy="true" diffuse="images/Reflection.png">$INFO[Player.Art(tvshow.poster)]</texture>
                         </control>
                         <control type="label" description="Episode">
                             <visible>VideoPlayer.Content(Episodes)</visible>

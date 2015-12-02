@@ -96,10 +96,10 @@
     <font>size33</font>
     <label>-</label>
     <textoffsetx>20</textoffsetx>
-    <textcolor>White</textcolor>
+    <textcolor>black</textcolor>
     <shadowcolor>-</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
+    <focusedcolor>black</focusedcolor>
+    <selectedcolor>Yellow</selectedcolor>
     <altselectedcolor>Yellow</altselectedcolor>
     <disabledcolor>Disabled</disabledcolor>
     <texturefocus border="8">images/Buttonselect.png</texturefocus>
@@ -116,10 +116,10 @@
     <aligny>center</aligny>
     <font>size33</font>
     <label>-</label>
-    <textcolor>White</textcolor>
+    <textcolor>black</textcolor>
     <shadowcolor>-</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
+    <focusedcolor>black</focusedcolor>
+    <selectedcolor>Yellow</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
     <radiowidth>30</radiowidth>
     <radioheight>30</radioheight>

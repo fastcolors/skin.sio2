@@ -51,7 +51,7 @@
           </focusedlayout>
         </control>
       </control>
-      <include>ListFade</include>
+
       <control type="scrollbar" id="60">
         <left>51r</left>
         <top>147</top>
@@ -88,7 +88,7 @@
         </control>
         <include>LargeListSlider</include>
       </control>
-      <include>ListFade</include>
+
       <control type="scrollbar" id="60">
         <left>51r</left>
         <top>135</top>
@@ -117,14 +117,6 @@
           <itemlayout height="375" width="300">
             <control type="image">
               <left>22</left>
-              <top>279</top>
-              <width>255</width>
-              <height>255</height>
-              <texture flipy="true" diffuse="images/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-              <left>22</left>
               <top>24</top>
               <width>255</width>
               <height>255</height>
@@ -133,15 +125,6 @@
             </control>
           </itemlayout>
           <focusedlayout height="375" width="300">
-            <control type="image">
-              <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
-              <left>22</left>
-              <top>279</top>
-              <width>255</width>
-              <height>255</height>
-              <texture flipy="true" diffuse="images/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
             <control type="image">
               <left>22</left>
               <top>24</top>
@@ -296,14 +279,6 @@
         <preloaditems>4</preloaditems>
         <pagecontrol>60</pagecontrol>
         <itemlayout height="357" width="354">
-          <control type="image" description="Reflection">
-            <left>27</left>
-            <top>330</top>
-            <width>303</width>
-            <height>303</height>
-            <texture background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Icon]</texture>
-            <aspectratio>scale</aspectratio>
-          </control>
           <control type="image" description="Thumb">
             <left>27</left>
             <top>27</top>
@@ -315,14 +290,6 @@
         </itemlayout>
         <focusedlayout height="357" width="354">
           <control type="group">
-            <control type="image" description="Reflection">
-              <left>27</left>
-              <top>330</top>
-              <width>303</width>
-              <height>303</height>
-              <texture background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>scale</aspectratio>
-            </control>
             <control type="image" description="Thumb">
               <left>27</left>
               <top>27</top>

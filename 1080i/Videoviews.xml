@@ -653,7 +653,7 @@
             <visible>Control.IsVisible(53)</visible>
             <control type="group">
                 <control type="panel" id="53">
-                    <left>60</left>
+                    <left>50</left>
                     <top>68</top>
                     <width>1800</width>
                     <height>900</height>
@@ -722,9 +722,9 @@
                             </control>
                         </control>
                     </focusedlayout>
-                    <itemlayout condition="Container.Content(MusicVideos) | Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="350" width="257">
+                    <itemlayout condition="Container.Content(MusicVideos) | Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="350" width="220">
                         <control type="image">
-                            <left>35</left>
+                            <centerleft>130</centerleft>
                             <top>24</top>
                             <width>197</width>
                             <height>294</height>
@@ -758,7 +758,7 @@
                         </control>
                         <control type="image" description="WatchStatus">
                             <visible>!SubString(ListItem.Path,videodb://movies/sets)</visible>
-                            <left>30</left>
+                            <left>27</left>
                             <top>290</top>
                             <height>32</height>
                             <width>60</width>
@@ -766,22 +766,22 @@
                             <texture>$VAR[WatchStatus]</texture>
                         </control>
                     </itemlayout>
-                    <focusedlayout condition="Container.Content(MusicVideos) | Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="350" width="257">
+                    <focusedlayout condition="Container.Content(MusicVideos) | Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="350" width="220">
                         <control type="group">
-                            <animation effect="zoom" time="120" start="100" end="120" center="auto" tween="Back" easing="Out">Focus</animation>
-                            <animation effect="zoom" start="120" end="100" time="120" center="auto">unFocus</animation>
+                            <animation effect="zoom" time="120" start="100" end="120" center="130,175" tween="Back" easing="Out">Focus</animation>
+                            <animation effect="zoom" start="120" end="100" time="120" center="130,175">unFocus</animation>
                             <control type="image">
                                 <animation effect="fade" start="0" end="100" time="150">Focus</animation>
                                 <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
                                 <visible>!StringCompare(ListItem.Label,..)</visible>
-                                <left>0</left>
+                                <centerleft>130</centerleft>
                                 <top>45</top>
                                 <width>267</width>
                                 <height>380</height>
                                 <texture>shadow.png</texture>
                             </control>
                             <control type="image">
-                                <left>35</left>
+                                <centerleft>130</centerleft>
                                 <top>24</top>
                                 <width>197</width>
                                 <height>294</height>
@@ -790,7 +790,7 @@
                             </control>
                             <control type="label">
                                 <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-                                <centerself>135</centerself>
+                                <centerleft>130</centerleft>
                                 <top>314</top>
                                 <width>270</width>
                                 <height>45</height>
@@ -813,7 +813,7 @@
                                 </control>
                                 <control type="label" description="Label2">
                                     <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                                    <centerleft>197</centerleft>
+                                    <centerleft>110</centerleft>
                                     <top>272</top>
                                     <height>45</height>
                                     <width>150</width>
@@ -827,7 +827,7 @@
                             </control>
                             <control type="image" description="WatchStatus">
                                 <visible>!SubString(ListItem.Path,videodb://movies/sets)</visible>
-                                <left>30</left>
+                                <left>27</left>
                                 <top>290</top>
                                 <height>32</height>
                                 <width>60</width>
