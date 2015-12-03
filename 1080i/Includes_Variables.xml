@@ -81,7 +81,7 @@
     </variable>
     <variable name="Plots">
         <value condition="Container.content(addons) + !IsEmpty(ListItem.Property(Addon.Description))">$INFO[ListItem.Property(Addon.Description)]</value>
-        <value condition="SubString(ListItem.Path,videodb://1/7)">$LOCALIZE[20457]</value>
+        <value condition="SubString(ListItem.IsCollection)">$LOCALIZE[20457]</value>
         <value condition="[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes)] + !IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
         <value condition="Container.Content(Seasons) + !IsEmpty(Container.ShowPlot)">$INFO[Container.ShowPlot]</value>
         <value condition="Container.Content(albums) + !IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
@@ -159,5 +159,14 @@
         <value condition="Container(9000).HasFocus(355)"> </value>
         <!--GENERAL-->
         <value> </value>
+    </variable>
+
+    <variable name="audiochannels">
+        <value condition="StringCompare(ListItem.AudioChannels,8)">7.1</value>
+        <value condition="StringCompare(ListItem.AudioChannels,6)">5.1</value>
+        <value condition="StringCompare(ListItem.AudioChannels,5)">4.1</value>
+        <value condition="StringCompare(ListItem.AudioChannels,3)">2.1</value>
+        <value condition="StringCompare(ListItem.AudioChannels,2)">STEREO</value>
+        <value>$INFO[ListItem.AudioChannels]</value>
     </variable>
 </includes>

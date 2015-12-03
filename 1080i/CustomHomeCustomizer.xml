@@ -3,6 +3,7 @@
     <defaultcontrol always="true">50</defaultcontrol>
     <include>OpenClose</include>
     <controls>
+        <include>BlackBackground</include>
         <control type="label" description="Heading">
             <right>60</right>
             <top>40</top>
@@ -60,37 +61,41 @@
                         </control>
                     </itemlayout>
                     <focusedlayout  height="230" width="370">
-                        <control type="Image" description="THUMB">
-                            <visible>!IsEmpty(Listitem.thumb)</visible>
-                            <left>20</left>
-                            <top>48</top>
-                            <height>168</height>
-                            <width>260</width>
-                            <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
-                            <aspectratio scalediffuse="false">scale</aspectratio>
-                        </control>
-                        <control type="Image" description="THUMB">
-                            <visible>IsEmpty(Listitem.thumb)</visible>
-                            <left>20</left>
-                            <top>48</top>
-                            <height>168</height>
-                            <width>260</width>
-                            <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
-                            <aspectratio scalediffuse="false">scale</aspectratio>
-                        </control>
-                        <control type="image" description="Selection Overlay">
-                            <top>40</top>
-                            <height>184</height>
-                            <width>300</width>
-                            <texture>images/atvslider.png</texture>
-                        </control>
-                        <control type="label" description="Main Label">
-                            <centerleft>150</centerleft>
-                            <top>220</top>
-                            <width>300</width>
-                            <height>24</height>
-                            <align>center</align>
-                            <label>$INFO[ListItem.Label]</label>
+                        <control type="group">
+                            <animation effect="zoom" start="100" end="130" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+                            <animation effect="zoom" start="130" end="100" time="120" center="auto">unFocus</animation>
+                            <control type="image">
+                                <top>40</top>
+                                <height>184</height>
+                                <width>300</width>
+                                <texture>images/atvslider.png</texture>
+                            </control>
+                            <control type="Image" description="THUMB">
+                                <visible>!IsEmpty(Listitem.thumb)</visible>
+                                <left>20</left>
+                                <top>48</top>
+                                <height>168</height>
+                                <width>260</width>
+                                <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
+                                <aspectratio scalediffuse="false">scale</aspectratio>
+                            </control>
+                            <control type="Image" description="THUMB">
+                                <visible>IsEmpty(Listitem.thumb)</visible>
+                                <left>20</left>
+                                <top>48</top>
+                                <height>168</height>
+                                <width>260</width>
+                                <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
+                                <aspectratio scalediffuse="false">scale</aspectratio>
+                            </control>
+                            <control type="label" description="Main Label">
+                                <centerleft>150</centerleft>
+                                <top>220</top>
+                                <width>300</width>
+                                <height>24</height>
+                                <align>center</align>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
                         </control>
                     </focusedlayout>
                     <content>

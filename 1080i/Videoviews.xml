@@ -1003,7 +1003,7 @@
                 <top>1020</top>
                 <height>50</height>
                 <width>1920</width>
-                <itemgap>15</itemgap>
+                <itemgap>5</itemgap>
                 <align>center</align>
                 <orientation>horizontal</orientation>
                 <control type="image" description="Sets">
@@ -1022,12 +1022,20 @@
                     <label>[UPPERCASE]$INFO[ListItem.VideoResolution][/UPPERCASE]</label>
                 </control>
                 <control type="label">
+                    <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+                    <height>25</height>
+                    <width>auto</width>
+                    <font>size24</font>
+                    <align>center</align>
+                    <label>[UPPERCASE]$VAR[audiochannels,• ][/UPPERCASE]</label>
+                </control>
+                <control type="label">
                     <visible>!IsEmpty(ListItem.AudioCodec)</visible>
                     <height>25</height>
                     <width>auto</width>
                     <font>size24</font>
                     <align>center</align>
-                    <label>[UPPERCASE]$INFO[ListItem.AudioCodec,•  ][/UPPERCASE]</label>
+                    <label>[UPPERCASE]$INFO[ListItem.AudioCodec,• ][/UPPERCASE]</label>
                 </control>
                 <control type="label">
                     <visible>!IsEmpty(ListItem.VideoCodec)</visible>
@@ -1035,7 +1043,7 @@
                     <width>auto</width>
                     <font>size24</font>
                     <align>center</align>
-                    <label>[UPPERCASE]$INFO[ListItem.VideoCodec,•  ][/UPPERCASE]</label>
+                    <label>[UPPERCASE]$INFO[ListItem.VideoCodec,• ][/UPPERCASE]</label>
                 </control>
                 <control type="label">
                     <visible>!IsEmpty(ListItem.FileExtension)</visible>
@@ -1043,7 +1051,7 @@
                     <width>auto</width>
                     <font>size24</font>
                     <align>center</align>
-                    <label>[UPPERCASE]$INFO[ListItem.FileExtension,•  ][/UPPERCASE]</label>
+                    <label>[UPPERCASE]$INFO[ListItem.FileExtension,• ][/UPPERCASE]</label>
                 </control>
             </control>
             <control type="scrollbar" id="60">
@@ -1436,7 +1444,7 @@
                             <height>50</height>
                             <width>auto</width>
                             <bordersize>3</bordersize>
-                            <label>[UPPERCASE]$INFO[ListItem.AudioChannels, • ][/UPPERCASE]</label>
+                            <label>[UPPERCASE]$VAR[audiochannels, • ][/UPPERCASE]</label>
                         </control>
                         <control type="label">
                             <visible>!IsEmpty(ListItem.AudioCodec)</visible>
