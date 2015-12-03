@@ -1,75 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="107">
-  <type>dialog</type>
-  <zorder>2</zorder>
-  <allowoverlay>no</allowoverlay>
-<backgroundcolor>0xffffffff</backgroundcolor>
-  <controls>
-   <control type="group">
-      <left>1230</left>
-      <top>965</top>
-	  <animation effect="slide" start="710,0" end="0,0" time="450">WindowOpen</animation>
-      <animation effect="slide" start="0,0" end="710,0" time="450">WindowClose</animation>
-      <control type="image" description="Dialog BG">
-        <left>0</left>
-        <top>0</top>
-        <width>700</width>
-        <height>108</height>
-        <texture border="30">images/ProgressBG.png</texture>
-      </control>
-      <control type="group">
-        <left>20</left>
-        <top>14</top>
-        <control type="image" id="400" description="File Icon">
-          <width>80</width>
-          <height>80</height>
-          <aspectratio align="left" aligny="center">keep</aspectratio>
-          <texture>DefaultIconInfo.png</texture>
+    <type>dialog</type>
+    <controls>
+        <control type="group">
+            <animation effect="slide" end="0,-138" condition="Window.IsActive(DialogExtendedProgressBar.xml)">Conditional</animation>
+            <left>1190</left>
+            <top>944</top>
+            <animation effect="fade" start="0" end="100" time="500">WindowOpen</animation>
+            <animation effect="fade" start="100" end="0" time="500">WindowClose</animation>
+            <control type="image" description="Dialog BG">
+                <width>720</width>
+                <height>128</height>
+                <texture border="25">images/notification.png</texture>
+            </control>
+            <control type="group">
+                <left>20</left>
+                <top>17</top>
+                <control type="image" id="400" description="File Icon">
+                    <width>90</width>
+                    <height>90</height>
+                    <aspectratio>keep</aspectratio>
+                </control>
+            </control>
+            <control type="label" id="401" description="Heading">
+                <top>20</top>
+                <left>130</left>
+                <width>575</width>
+                <height>44</height>
+                <font>size21</font>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textcolor>black</textcolor>
+                <shadowcolor>-</shadowcolor>
+                <label>-</label>
+            </control>
+            <control type="label" id="402" description="Message">
+                <left>130</left>
+                <top>64</top>
+                <width>575</width>
+                <height>44</height>
+                <font>size21</font>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textcolor>black</textcolor>
+                <shadowcolor>-</shadowcolor>
+                <label>-</label>
+            </control>
         </control>
-        <control type="image" id="403" description="Default Icon">
-          <width>80</width>
-          <height>80</height>
-          <aspectratio align="left" aligny="center">keep</aspectratio>
-          <visible>false</visible>
-          <texture>DefaultIconInfo.png</texture>
-        </control>
-        <control type="image" id="404" description="Default Warning">
-          <width>80</width>
-          <height>80</height>
-          <aspectratio align="left" aligny="center">keep</aspectratio>
-          <visible>false</visible>
-          <texture>DefaultIconWarning.png</texture>
-        </control>
-        <control type="image" id="405" description="Default Error">
-          <width>80</width>
-          <height>80</height>
-          <aspectratio>keep</aspectratio>
-          <visible>false</visible>
-          <texture>DefaultIconError.png</texture>
-        </control>
-        <control type="label" id="401" description="Heading">
-          <left>90</left>
-          <top>3</top>
-          <width>610</width>
-          <height>27</height>
-          <font>size26</font>
-          <align>left</align>
-          <aligny>bottom</aligny>
-          <scroll>true</scroll>
-          <label>-</label>
-        </control>
-        <control type="label" id="402" description="Message">
-          <left>90</left>
-          <top>34</top>
-          <width>610</width>
-          <height>70</height>
-          <scroll>true</scroll>
-          <font>size26</font>
-          <align>left</align>
-          <aligny>bottom</aligny>
-          <label>-</label>
-        </control>
-      </control>
-    </control>
-  </controls>
+    </controls>
 </window>

@@ -8,7 +8,6 @@
             <include>SlimListItemCount</include>
             <left>1020</left>
             <top>131</top>
-            <include>SlimListSlider</include>
             <control type="fixedlist" id="50">
                 <width>802</width>
                 <height>891</height>
@@ -81,6 +80,7 @@
                             <textcolor>White2</textcolor>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
+                    </control>
                 </focusedlayout>
             </control>
         </control>
