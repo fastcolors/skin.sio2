@@ -826,7 +826,6 @@
     <aligny>center</aligny>
     <font>size36</font>
     <disabledcolor>Grey</disabledcolor>
-    <texturenofocus colordiffuse="77FFFFFF">images/white.png</texturenofocus>
     <alttexturenofocus colordiffuse="77FFFFFF">images/white.png</alttexturenofocus>
     <texturefocus>images/white.png</texturefocus>
     <alttexturefocus>images/white.png</alttexturefocus>

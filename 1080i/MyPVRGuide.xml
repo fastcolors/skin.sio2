@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <views>10,11,12</views>
     <defaultcontrol>10</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <backgroundcolor>background</backgroundcolor>
+    <backgroundcolor>aliceblue</backgroundcolor>
+    <views>10,11,12</views>
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>

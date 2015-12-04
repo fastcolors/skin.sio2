@@ -14,7 +14,7 @@
         <texture border="50">images/ContextMenu.png</texture>
       </control>
       <control type="grouplist" id="9000">
-        <centerleft>960</centerleft>
+        <top>345</top>
         <height>400</height>
         <include>DialogGLs</include>
         <control type="button" id="699">

@@ -11,13 +11,11 @@
     <focusedcolor>White2</focusedcolor>
     <selectedcolor>White2</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <scroll>true</scroll>
+    <scroll>false</scroll>
     <scrollspeed>50</scrollspeed>
     <scrollsuffix>  •  </scrollsuffix>
   </default>
   <default type="fadelabel">
-    <left>0</left>
-    <top>0</top>
     <height>75</height>
     <label>-</label>
     <align>left</align>
@@ -67,6 +65,7 @@
     <selectedcolor>yellow</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
     <texturefocus>images/white.png</texturefocus>
+    <texturenofocus colordiffuse="77FFFFFF">images/white.png</texturenofocus>
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="edit">
@@ -87,8 +86,6 @@
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="togglebutton">
-    <left>0</left>
-    <top>0</top>
     <width>450</width>
     <height>75</height>
     <align>center</align>
@@ -109,7 +106,6 @@
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="radiobutton">
-    <left>0</left>
     <top>6</top>
     <height>75</height>
     <align>left</align>
@@ -131,8 +127,6 @@
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="spincontrol">
-    <left>0</left>
-    <top>0</top>
     <textureup>images/ArrowUpNF.png</textureup>
     <textureupfocus>images/ArrowUpFO.png</textureupfocus>
     <texturedown>images/ArrowDownNF.png</texturedown>
@@ -153,8 +147,6 @@
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="spincontrolex">
-    <left>0</left>
-    <top>0</top>
     <width>450</width>
     <height>75</height>
     <label>-</label>
@@ -206,8 +198,6 @@
     <textoffsetx>20</textoffsetx>
   </default>
   <default type="scrollbar">
-    <left>0</left>
-    <top>0</top>
     <width>9</width>
     <orientation>vertical</orientation>
     <texturesliderbackground border="0,4,0,4">Scrollbar/ScrollbarBG.png</texturesliderbackground>

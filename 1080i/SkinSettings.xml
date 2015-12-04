@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+  <backgroundcolor>aliceblue</backgroundcolor>
   <defaultcontrol always="true">50</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <include>OpenClose</include>
@@ -118,18 +119,6 @@
             <label2 fallback="33061">$VAR[QuitLabel]</label2>
             <onclick>ActivateWindow(1114)</onclick>
           </item>
-          <item id="13" description="RecordAnim">
-            <visible>!Skin.HasSetting(RecordOff)</visible>
-            <label>$LOCALIZE[31039]</label>
-            <label2>$LOCALIZE[107]</label2>
-            <onclick>Skin.ToggleSetting(RecordOff)</onclick>
-          </item>
-          <item id="13" description="RecordAnim">
-            <visible>Skin.HasSetting(RecordOff)</visible>
-            <label>$LOCALIZE[31039]</label>
-            <label2>$LOCALIZE[106]</label2>
-            <onclick>Skin.ToggleSetting(RecordOff)</onclick>
-          </item>
           <item id="11" description="Show Clock">
             <visible>Skin.HasSetting(ShowClock)</visible>
             <label>$LOCALIZE[31047]</label>
@@ -159,6 +148,10 @@
             <onclick>Skin.ResetSettings</onclick>
             <onclick>XBMC.ReloadSkin()</onclick>
             <icon>DefaultIconWarning.png</icon>
+          </item>
+          <item id="17" description="Debug Skin">
+            <label>$LOCALIZE[31068]</label>
+            <onclick>Skin.ToggleDebug</onclick>
           </item>
         </content>
       </control>

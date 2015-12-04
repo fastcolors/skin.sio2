@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+    <backgroundcolor>aliceblue</backgroundcolor>
     <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <onload>RunScript(script.favourites)</onload>
@@ -85,8 +86,9 @@
                 </control>
                 <control type="image" description="THMBS weather">
                     <centerleft>180</centerleft>
-                    <width>360</width>
-                    <height>230</height>
+                    <top>27</top>
+                    <width>287</width>
+                    <height>179</height>
                     <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
                     <aspectratio>keep</aspectratio>
                 </control>
@@ -126,8 +128,9 @@
                     </control>
                     <control type="image" description="THMBS weather">
                         <centerleft>180</centerleft>
-                        <width>360</width>
-                        <height>230</height>
+                        <top>27</top>
+                        <width>287</width>
+                        <height>179</height>
                         <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
@@ -418,7 +421,7 @@
                     <thumb>icons/quits.png</thumb>
                     <label>351</label>
                     <property name="color">icons/darkblue.png</property>
-                    <onclick>ActivateWindow(1191)</onclick>
+                    <onclick>ActivateWindow(DialogButtonMenu.xml)</onclick>
                 </item>
             </content>
         </control>

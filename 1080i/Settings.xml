@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="4">
+  <backgroundcolor>aliceblue</backgroundcolor>
   <defaultcontrol always="true">52</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <include>OpenClose</include>

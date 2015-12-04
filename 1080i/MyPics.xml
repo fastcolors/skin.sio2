@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2">
+  <backgroundcolor>aliceblue</backgroundcolor>
   <defaultcontrol always="true">50</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
-  <include>BlackBackground</include>
+    <include>BlackBackground</include>
     <control type="group" description="List 50">
       <visible>Control.IsVisible(50)</visible>
       <control type="group" description="Thumbs">
@@ -22,8 +23,7 @@
       <control type="group" description="Slider and List">
         <include>SlimListItemCount</include>
         <left>1020</left>
-      <top>131</top>
-        <include>SlimListSlider</include>
+        <top>131</top>
         <control type="fixedlist" id="50">
           <left>0</left>
           <top>0</top>
@@ -40,6 +40,11 @@
           <preloaditems>2</preloaditems>
           <scrolltime tween="sine" easing="inout">280</scrolltime>
           <itemlayout width="802" height="81">
+            <control type="image">
+              <height>70</height>
+              <width>805</width>
+              <texture colordiffuse="77FFFFFF">images/white.png</texture>
+            </control>
             <include>Arrow</include>
             <control type="label" description="Main Label">
               <include>52MainLabel</include>
@@ -47,15 +52,29 @@
             </control>
           </itemlayout>
           <focusedlayout width="802" height="81">
-            <include>Arrow</include>
-            <control type="label" description="Main Label">
-              <include>52MainLabelFO</include>
-              <label>$INFO[ListItem.Label]</label>
+            <control type="group">
+              <animation effect="zoom" time="120" start="100" end="105" center="auto" tween="Back" easing="Out">Focus</animation>
+              <control type="image">
+                <top>12</top>
+                <left>-50</left>
+                <height>70</height>
+                <width>905</width>
+                <texture>shadow.png</texture>
+              </control>
+              <control type="image">
+                <height>70</height>
+                <width>805</width>
+                <texture>images/white.png</texture>
+              </control>
+              <include>Arrow</include>
+              <control type="label" description="Main Label">
+                <include>52MainLabelFO</include>
+                <label>$INFO[ListItem.Label]</label>
+              </control>
             </control>
           </focusedlayout>
         </control>
       </control>
-
       <control type="scrollbar" id="60">
         <left>51r</left>
         <top>147</top>
@@ -70,9 +89,9 @@
         <control type="panel" id="53" description="icons">
           <viewtype label="536">Icons</viewtype>
           <left>60</left>
-          <top>140</top>
+          <top>150</top>
           <width>1800</width>
-          <height>897</height>
+          <height>930</height>
           <orientation>vertical</orientation>
           <onup>noop</onup>
           <ondown>noop</ondown>
@@ -102,44 +121,45 @@
             </control>
           </itemlayout>
           <focusedlayout height="345" width="300">
-            <control type="image">
-              <visible>!StringCompare(ListItem.Label,..)</visible>
-              <left>9</left>
-              <top>11</top>
-              <width>281</width>
-              <height>281</height>
-              <texture diffuse="images/diffusepic.png" background="true" fallback="PhotoFolder.png">$INFO[ListItem.Thumb]</texture>
-              <aspectratio scalediffuse="false">scale</aspectratio>
-            </control>
-            <control type="image">
-              <visible>StringCompare(ListItem.Label,..)</visible>
-              <left>9</left>
-              <top>11</top>
-              <width>281</width>
-              <height>281</height>
-              <texture diffuse="images/diffusepic.png" >$INFO[ListItem.Icon]</texture>
-              <aspectratio scalediffuse="false">scale</aspectratio>
-            </control>
-            <control type="label">
-              <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-              <left>150</left>
-              <top>290</top>
-              <width>270</width>
-              <height>45</height>
-              <font>size22</font>
-              <textcolor>White</textcolor>
-              <shadowcolor>Black</shadowcolor>
-              <align>center</align>
-              <label>[B]$INFO[ListItem.Label][/B]</label>
-            </control>
-            <control type="image" description="selection">
-              <animation effect="fade" start="0" end="100" time="500" delay="50" reversible="false">Focus</animation>
-              <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
-              <left>9</left>
-              <top>11</top>
-              <width>281</width>
-              <height>281</height>
-              <texture>images/picselection.png</texture>
+            <control type="group">
+              <animation effect="zoom" time="120" start="100" end="120" center="auto" tween="Back" easing="Out">Focus</animation>
+              <control type="image">
+                <visible>!StringCompare(ListItem.Label,..)</visible>
+                <left>9</left>
+                <top>11</top>
+                <width>281</width>
+                <height>281</height>
+                <texture diffuse="images/diffusepic.png" background="true" fallback="PhotoFolder.png">$INFO[ListItem.Thumb]</texture>
+                <aspectratio scalediffuse="false">scale</aspectratio>
+              </control>
+              <control type="image">
+                <visible>StringCompare(ListItem.Label,..)</visible>
+                <left>9</left>
+                <top>11</top>
+                <width>281</width>
+                <height>281</height>
+                <texture diffuse="images/diffusepic.png" >$INFO[ListItem.Icon]</texture>
+                <aspectratio scalediffuse="false">scale</aspectratio>
+              </control>
+              <control type="label">
+                <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
+                <centerleft>150</centerleft>
+                <top>290</top>
+                <width>270</width>
+                <height>45</height>
+                <font>size22</font>
+                <align>center</align>
+                <label>[B]$INFO[ListItem.Label][/B]</label>
+              </control>
+              <control type="image" description="selection">
+                <animation effect="fade" start="0" end="100" time="500" delay="50" reversible="false">Focus</animation>
+                <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
+                <left>9</left>
+                <top>11</top>
+                <width>281</width>
+                <height>281</height>
+                <texture>images/picselection.png</texture>
+              </control>
             </control>
           </focusedlayout>
         </control>

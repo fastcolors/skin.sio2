@@ -273,3 +273,7 @@ msgstr "Recommended Episodes"
 msgctxt "#31067"
 msgid "Top Albums"
 msgstr "Top Albums"
+
+msgctxt "#31068"
+msgid "Toggle Debug"
+msgstr "Toggle Debug"

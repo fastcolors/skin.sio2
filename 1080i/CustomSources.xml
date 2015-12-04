@@ -3,18 +3,19 @@
   <defaultcontrol always="true">9000</defaultcontrol>
   <include>DialogOpenClose</include>
   <controls>
-    <control type="group" description="Side menu 9000 group">
-      <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+    <control type="group">
       <include>DialogOpenCloseVisible</include>
       <control type="image" description="List back">
-        <left>459</left>
-        <top>168</top>
-        <width>1002</width>
-        <height>612</height>
+        <centerleft>960</centerleft>
+        <centertop>540</centertop>
+        <width>802</width>
+        <height>600</height>
         <aspectratio>stretch</aspectratio>
-        <texture border="150">images/Dialog.png</texture>
+        <texture border="50">images/ContextMenu.png</texture>
       </control>
       <control type="grouplist" id="9000">
+        <height>400</height>
+        <top>345</top>
         <include>DialogGLs</include>
         <control type="button" id="701" description="Video">
           <include>DialogButt</include>
@@ -33,6 +34,20 @@
           <label>$LOCALIZE[24001]</label>
           <onclick>Close</onclick>
           <onclick>ActivateWindow(AddonBrowser,root)</onclick>
+        </control>
+        <control type="button" id="704" description="Update Library">
+          <enable>Library.HasContent(Movies) | Library.HasContent(TVShows)</enable>
+          <include>DialogButt</include>
+          <label>653</label>
+          <onclick>Close</onclick>
+          <onclick>UpdateLibrary(video,,true)</onclick>
+        </control>
+        <control type="button" id="705" description="Update Library">
+          <enable>Library.HasContent(Movies) | Library.HasContent(TVShows)</enable>
+          <include>DialogButt</include>
+          <label>334</label>
+          <onclick>Close</onclick>
+          <onclick>CleanLibrary(video,true)</onclick>
         </control>
       </control>
     </control>
