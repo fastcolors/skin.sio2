@@ -395,7 +395,6 @@
                 <item id="348">
                     <thumb>icons/settings.png</thumb>
                     <label>5</label>
-                    <property name="color">icons/bluegray.png</property>
                     <onclick>ActivateWindow(1120)</onclick>
                 </item>
                 <item id="349">

@@ -27,42 +27,7 @@
         <include>LargeListLayout</include>
       </control>
     </control>
-    <control type="image">
-      <visible>Container.HasPrevious</visible>
-      <animation effect="fade" time="200">VisibleChange</animation>
-      <left>1005</left>
-      <top>135</top>
-      <height>81</height>
-      <width>832</width>
-      <texture flipy="true">images/DefaultGradient.png</texture>
-      <aspectratio>stretch</aspectratio>
-    </control>
-    <control type="image">
-      <animation effect="fade" time="200">VisibleChange</animation>
-      <visible>Container.HasNext</visible>
-      <left>1005</left>
-      <top>963</top>
-      <height>81</height>
-      <width>832</width>
-      <texture>images/DefaultGradient.png</texture>
-      <aspectratio>stretch</aspectratio>
-    </control>
-    <control type="group" description="Thumbs">
-      <left>-6</left>
-      <top>267</top>
-      <!--<animation effect="rotatey" start="0" end="-9" center="260," time="0" reversible="false" condition="true">Conditional</animation>-->
-      <control type="group" description="Squares">
-        <control type="image" description="Thumb">
-          <left>248</left>
-          <top>90</top>
-          <width>495</width>
-          <height>495</height>
-          <include>Icon_Fade</include>
-          <texture diffuse="images/DiffuseB.png" background="true">$INFO[ListItem.Icon]</texture>
-          <aspectratio>keep</aspectratio>
-        </control>
-      </control>
-    </control>
+    <include>left_Panel_plain</include>
     <control type="scrollbar" id="60">
       <left>51r</left>
       <top>135</top>
