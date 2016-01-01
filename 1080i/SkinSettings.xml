@@ -11,7 +11,6 @@
       <left>1020</left>
       <top>131</top>
       <control type="list" id="50">
-        <top>30</top>
         <width>902</width>
         <height>882</height>
         <onleft>noop</onleft>

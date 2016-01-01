@@ -5,44 +5,40 @@
   <controls>
     <control type="group" description="back">
       <control type="image">
-        <left>444</left>
-        <top>105</top>
-        <width>1023</width>
-        <height>862</height>
-        <texture border="150">images/Dialog.png</texture>
-      </control>
-      <control type="label" description="Dialog heading">
-        <left>615</left>
-        <top>281</top>
-        <width>690</width>
-        <height>52</height>
-        <label>[B]$LOCALIZE[13008][/B]</label>
-        <align>center</align>
-        <aligny>center</aligny>
-        <font>size36</font>
-        <textcolor>White</textcolor>
-        <shadowcolor>Black</shadowcolor>
+        <centerleft>960</centerleft>
+        <centertop>540</centertop>
+        <width>823</width>
+        <height>662</height>
+        <texture border="50">images/ContextMenu.png</texture>
       </control>
       <control type="group">
         <left>697</left>
-        <top>366</top>
         <control type="grouplist" id="9000">
           <width>525</width>
-          <height>450</height>
+          <height>1022</height>
+          <align>center</align>
           <onleft>noop</onleft>
           <onright>noop</onright>
           <onup>9000</onup>
           <ondown>9000</ondown>
-          <itemgap>0</itemgap>
+          <itemgap>8</itemgap>
           <font>size33</font>
           <scrolltime>260</scrolltime>
           <defaultcontrol always="true">701</defaultcontrol>
+          <control type="label" description="Dialog heading">
+            <width>525</width>
+            <height>112</height>
+            <label>$LOCALIZE[13008]</label>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>size36</font>
+          </control>
           <control type="radiobutton" id="701" description="Quit">
             <width>525</width>
             <label>31050</label>
             <onclick>Skin.Reset(shutdown)</onclick>
             <onclick>Skin.Reset(quitter)</onclick>
-			<onclick>Close</onclick>
+            <onclick>Close</onclick>
             <selected>IsEmpty(Skin.String(shutdown))</selected>
           </control>
           <control type="radiobutton" id="702" description="Suspend">
@@ -52,7 +48,7 @@
             <onclick>Skin.SetString(shutdown,suspend)</onclick>
             <onclick condition="!Skin.HasSetting(quitter)">Skin.ToggleSetting(quitter)</onclick>
             <onclick>Close</onclick>
-			<selected>StringCompare(Skin.String(shutdown),suspend)</selected>
+            <selected>StringCompare(Skin.String(shutdown),suspend)</selected>
           </control>
           <control type="radiobutton" id="703" description="Hibernate">
             <width>525</width>
@@ -61,7 +57,7 @@
             <onclick>Skin.SetString(shutdown,hibernate)</onclick>
             <onclick condition="!Skin.HasSetting(quitter)">Skin.ToggleSetting(quitter)</onclick>
             <onclick>Close</onclick>
-			<selected>StringCompare(Skin.String(shutdown),hibernate)</selected>
+            <selected>StringCompare(Skin.String(shutdown),hibernate)</selected>
           </control>
           <control type="radiobutton" id="704" description="Shutdown">
             <width>525</width>
@@ -70,7 +66,7 @@
             <onclick>Skin.SetString(shutdown,powerdown)</onclick>
             <onclick condition="!Skin.HasSetting(quitter)">Skin.ToggleSetting(quitter)</onclick>
             <onclick>Close</onclick>
-			<selected>StringCompare(Skin.String(shutdown),powerdown)</selected>
+            <selected>StringCompare(Skin.String(shutdown),powerdown)</selected>
           </control>
           <control type="radiobutton" id="705" description="Reboot">
             <width>525</width>
@@ -79,7 +75,7 @@
             <onclick>Skin.SetString(shutdown,reboot)</onclick>
             <onclick condition="!Skin.HasSetting(quitter)">Skin.ToggleSetting(quitter)</onclick>
             <onclick>Close</onclick>
-			<selected>StringCompare(Skin.String(shutdown),reboot)</selected>
+            <selected>StringCompare(Skin.String(shutdown),reboot)</selected>
           </control>
           <control type="radiobutton" id="706" description="Quit">
             <width>525</width>
@@ -87,7 +83,7 @@
             <onclick>Skin.SetString(shutdown,quit)</onclick>
             <onclick condition="!Skin.HasSetting(quitter)">Skin.ToggleSetting(quitter)</onclick>
             <onclick>Close</onclick>
-			<selected>StringCompare(Skin.String(shutdown),quit)</selected>
+            <selected>StringCompare(Skin.String(shutdown),quit)</selected>
           </control>
         </control>
       </control>

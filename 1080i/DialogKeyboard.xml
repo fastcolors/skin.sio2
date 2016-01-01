@@ -14,9 +14,10 @@
             <top>450</top>
             <visible>!Window.IsVisible(numericinput)</visible>
             <control type="image">
+                <top>80</top>
                 <width>1920</width>
                 <height>700</height>
-                <texture border="150">images/Dialog.png</texture>
+                <texture border="50">images/ContextMenu.png</texture>
                 <colordiffuse>EEFFFFFF</colordiffuse>
             </control>
             <control type="label" id="311">
@@ -32,7 +33,7 @@
                 <width>1500</width>
                 <height>60</height>
                 <aspectratio>stretch</aspectratio>
-                <texture colordiffuse="black" border="10">images/textedit.png</texture>
+                <!--<texture colordiffuse="black" border="10">images/textedit.png</texture>-->
             </control>
             <control type="edit" id="312">
                 <description>Edit Text</description>
@@ -45,15 +46,15 @@
                 <align>center</align>
             </control>
             <control type="group">
-                <left>160</left>
+                <left>140</left>
                 <top>280</top>
                 <control type="grouplist">
                     <!--fila 1-->
                     <orientation>horizontal</orientation>
-                    <itemgap>0</itemgap>
+                    <itemgap>8</itemgap>
                     <control type="button" id="309">
                         <description>LAYOUT button</description>
-                        <width>300</width>
+                        <width>310</width>
                         <include>Keyboardbuttons</include>
                         <label>20177</label>
                         <onup>312</onup>
@@ -135,11 +136,11 @@
                 <control type="grouplist">
                     <top>50</top>
                     <orientation>horizontal</orientation>
-                    <itemgap>0</itemgap>
+                    <itemgap>8</itemgap>
                     <control type="radiobutton" id="304">
                         <left>0</left>
                         <top>50</top>
-                        <width>300</width>
+                        <width>310</width>
                         <include>Keyboardbuttons</include>
                         <label>20180</label>
                         <onup>309</onup>
@@ -223,12 +224,12 @@
                 <control type="grouplist">
                     <top>100</top>
                     <orientation>horizontal</orientation>
-                    <itemgap>0</itemgap>
+                    <itemgap>8</itemgap>
                     <control type="radiobutton" id="303">
                         <description>CAPS LOCK button</description>
                         <left>0</left>
                         <top>100</top>
-                        <width>300</width>
+                        <width>310</width>
                         <include>Keyboardbuttons</include>
                         <label>20179</label>
                         <onup>304</onup>
@@ -286,15 +287,14 @@
                     </control>
                 </control>
                 <control type="grouplist">
-                    <itemgap>0</itemgap>
+                    <itemgap>8</itemgap>
                     <orientation>horizontal</orientation>
                     <top>150</top>
-
                     <control type="radiobutton" id="302">
                         <description>SHIFT button</description>
                         <left>0</left>
                         <top>150</top>
-                        <width>300</width>
+                        <width>310</width>
                         <include>Keyboardbuttons</include>
                         <label>20178</label>
                         <onup>303</onup>
@@ -355,7 +355,7 @@
                 </control>
                 <control type="grouplist">
                     <orientation>horizontal</orientation>
-                    <itemgap>0</itemgap>
+                    <itemgap>8</itemgap>
                     <top>200</top>
                     <control type="button" id="300">
                         <description>DONE button</description>

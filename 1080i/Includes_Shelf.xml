@@ -5,8 +5,11 @@
         <animation effect="fade" end="0" time="100">Hidden</animation>
     </include>
     <include name="ShelfTitle">
-        <left>90</left>
-        <top>30</top>
+        <visible>Container(9000).Row(0)</visible>
+        <animation condition="ControlGroup(700).HasFocus | Control.HasFocus(9009)" effect="zoom" start="100" end="110" time="120" center="325,200" tween="Back" easing="Out">Conditional</animation>
+        <animation condition="!ControlGroup(700).HasFocus + !Control.HasFocus(9009)" effect="zoom" start="110" end="100" time="120" center="325,200">Conditional</animation>
+        <left>80</left>
+        <top>40</top>
         <height>45</height>
         <width>750</width>
         <align>left</align>
@@ -624,9 +627,8 @@
     </include>
     <include name="weather_shelf">
         <control type="group">
-            <animation condition="!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
             <top>60</top>
-            <visible>[Container(9000).HasFocus(345)]</visible>
+            <visible>Container(9000).HasFocus(345) + Container(9000).Row(0)</visible>
             <include>ShelfFade</include>
             <control type="label">
                 <left>83</left>

@@ -4,12 +4,10 @@
     <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="250" reversible="true">Conditional</animation>
   </include>
   <include name="Keyboardbuttons">
-    <width>130</width>
+    <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+    <animation effect="zoom" start="120" end="100" time="120" center="auto">unFocus</animation>
+    <width>125</width>
     <height>40</height>
-    <texturenofocus>keyb/plain.png</texturenofocus>
-    <texturefocus>keyb/selected.png</texturefocus>
-    <alttexturenofocus>keyb/plainalt.png</alttexturenofocus>
-    <alttexturefocus>keyb/selectedalt.png</alttexturefocus>
     <align>center</align>
     <aligny>center</aligny>
     <font>size27</font>
@@ -33,15 +31,15 @@
       <visible>!IsEmpty(ListItem.Plot)</visible>
       <animation effect="fade" time="400">Visible</animation>
       <animation effect="fade" time="0">Hidden</animation>
-        <control type="image" description="Thumb">
-          <centerleft>500</centerleft>
-          <bottom>560</bottom>
-          <width>756</width>
-          <height>470</height>
-          <include>Icon_Fade</include>
-          <texture background="true">$INFO[ListItem.Icon]</texture>
-          <aspectratio aligny="bottom">keep</aspectratio>
-        </control>
+      <control type="image" description="Thumb">
+        <centerleft>500</centerleft>
+        <bottom>560</bottom>
+        <width>756</width>
+        <height>470</height>
+        <include>Icon_Fade</include>
+        <texture background="true">$INFO[ListItem.Icon]</texture>
+        <aspectratio aligny="bottom">keep</aspectratio>
+      </control>
       <include>Unwatched</include>
       <control type="grouplist">
         <centerleft>500</centerleft>
@@ -532,7 +530,7 @@
   <include name="Arrow">
     <control type="image" description="arrow">
       <visible>[Window.IsActive(Settings.xml) | ListItem.IsFolder] + ![StringCompare(ListItem.Label,..) | ListItem.IsCollection  | container.content(Movies) | container.content(TVshows) | container.content(Seasons) | container.content(Episodes) | container.content(musicvideos) | container.content(songs) | container.content(addons) | SubString(Container.FolderPath,plugin://,left)]</visible>
-      <left>75r</left>
+      <right>0</right>
       <height>70</height>
       <width>54</width>
       <aspectratio>keep</aspectratio>
@@ -804,7 +802,6 @@
     <orientation>vertical</orientation>
   </include>
   <include name="DialogButt">
-    <animation effect="zoom" time="120" start="100" end="110" center="auto" tween="Back" easing="Out">Focus</animation>
     <width>576</width>
     <textoffsetx>0</textoffsetx>
     <align>center</align>
@@ -1134,5 +1131,69 @@
       <texture>pvr/timer.png</texture>
       <visible>!ListItem.IsRecording + ListItem.HasTimer</visible>
     </control>
+  </include>
+  <include name="SlimListLayout">
+    <itemlayout width="802" height="81">
+      <control type="image">
+        <height>70</height>
+        <width>805</width>
+        <texture colordiffuse="77FFFFFF">images/white.png</texture>
+      </control>
+      <include>Watched_Marks</include>
+      <include>HD_Badge</include>
+      <include>Arrow</include>
+      <control type="label" description="Main Label">
+        <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
+        <include>52MainLabel</include>
+        <label>$INFO[ListItem.Label]</label>
+      </control>
+      <control type="label" description="Main Label">
+        <visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
+        <width>711</width>
+        <include>52MainLabel</include>
+        <label>$INFO[ListItem.Label]</label>
+      </control>
+      <control type="label" description="Label2">
+        <visible>container.content(songs) | container.content(musicvideos)</visible>
+        <include>52Label2</include>
+        <label>$INFO[ListItem.Duration]</label>
+      </control>
+    </itemlayout>
+    <focusedlayout width="802" height="81">
+      <control type="group">
+        <animation effect="zoom" time="120" start="100" end="105" center="auto" tween="Back" easing="Out">Focus</animation>
+        <control type="image">
+          <top>12</top>
+          <left>-50</left>
+          <height>70</height>
+          <width>905</width>
+          <texture>shadow.png</texture>
+        </control>
+        <control type="image">
+          <height>70</height>
+          <width>805</width>
+          <texture>images/white.png</texture>
+        </control>
+        <include>Watched_Marks</include>
+        <include>HD_Badge</include>
+        <include>Arrow</include>
+        <control type="label" description="Main Label">
+          <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
+          <include>52MainLabelFO</include>
+          <label>$INFO[ListItem.Label]</label>
+        </control>
+        <control type="label" description="Main Label">
+          <visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
+          <width>711</width>
+          <include>52MainLabelFO</include>
+          <label>$INFO[ListItem.Label]</label>
+        </control>
+        <control type="label" description="Label2">
+          <visible>container.content(songs) | container.content(musicvideos)</visible>
+          <include>52Label2FO</include>
+          <label>$INFO[ListItem.Duration]</label>
+        </control>
+      </control>
+    </focusedlayout>
   </include>
 </includes>

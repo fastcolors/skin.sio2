@@ -61,7 +61,7 @@
         <aligny>center</aligny>
         <width>1260</width>
         <height>75</height>
-        <textcolor>White2</textcolor>
+        <textcolor>dimgray</textcolor>
         <font>size42</font>
     </include>
     <include name="HeadingL">
@@ -71,7 +71,7 @@
         <aligny>center</aligny>
         <width>1260</width>
         <height>45</height>
-        <textcolor>White2</textcolor>
+        <textcolor>dimgray</textcolor>
         <font>size42</font>
     </include>
     <include name="HeadingR">
@@ -81,7 +81,7 @@
         <height>75</height>
         <align>center</align>
         <aligny>bottom</aligny>
-        <textcolor>White2</textcolor>
+        <textcolor>dimgray</textcolor>
         <font>size42</font>
     </include>
     <include name="Dimensions_Fullscreen">
@@ -360,13 +360,13 @@
         <height>68</height>
         <aspectratio aligny="center" align="left">stretch</aspectratio>
     </include>
-    <!--<include name="BlackBackground">-->
-        <!--<control type="image" description="Default BG">-->
-            <!--<width>1920</width>-->
-            <!--<height>1080</height>-->
-            <!--<texture>HomeBG.png</texture>-->
-        <!--</control>-->
-    <!--</include>-->
+    <include name="BlackBackground">
+        <control type="image" description="Default BG">
+            <width>1920</width>
+            <height>1080</height>
+            <texture>HomeBG.png</texture>
+        </control>
+    </include>
     <include name="SettingsClock">
         <control type="label" id="7777" description="Heading">
             <centerleft>960</centerleft>

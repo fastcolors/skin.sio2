@@ -26,7 +26,7 @@
         <itemlayout width="802" height="81">
           <control type="image">
             <height>70</height>
-            <width>805</width>
+            <width>840</width>
             <texture colordiffuse="77FFFFFF">images/white.png</texture>
           </control>
           <include>Arrow</include>
@@ -42,12 +42,12 @@
               <top>12</top>
               <left>-50</left>
               <height>70</height>
-              <width>905</width>
+              <width>940</width>
               <texture>shadow.png</texture>
             </control>
             <control type="image">
               <height>70</height>
-              <width>805</width>
+              <width>840</width>
               <texture>images/white.png</texture>
             </control>
             <include>Arrow</include>

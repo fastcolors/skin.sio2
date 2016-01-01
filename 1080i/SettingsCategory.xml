@@ -1,99 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="12">
     <defaultcontrol always="true">3</defaultcontrol>
+    <backgroundcolor>aliceblue</backgroundcolor>
     <allowoverlay>no</allowoverlay>
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
-        <control type="image" description="Line Split">
-            <left>0</left>
-            <top>150</top>
-            <width>1920</width>
-            <height>1</height>
-            <aspectratio>stretch</aspectratio>
-            <texture>images/Line.png</texture>
-        </control>
-        <control type="image" description="Line Split">
-            <left>0</left>
-            <top>80</top>
-            <width>1920</width>
-            <height>1</height>
-            <aspectratio>stretch</aspectratio>
-            <texture>images/Line.png</texture>
-        </control>
         <control type="label" id="2" description="Heading">
             <include>Heading</include>
             <label>-</label>
         </control>
-        <control type="grouplist" id="3" description="TopMenu">
-            <left>0</left>
-            <top>78</top>
-            <width>1920</width>
-            <align>center</align>
-            <height>80</height>
-            <itemgap>0</itemgap>
-            <onup>20</onup>
-            <ondown>5</ondown>
-            <orientation>horizontal</orientation>
+        <control type="grouplist" id="3" description="LeftMenu">
+            <left>70</left>
+            <top>120</top>
+            <width>400</width>
+            <height>850</height>
+            <align>left</align>
+            <itemgap>8</itemgap>
+            <onup>noop</onup>
+            <ondown>noop</ondown>
+            <onright>5</onright>
         </control>
         <control type="grouplist" id="5" description="Stage">
-            <left>250</left>
-            <top>200</top>
-            <width>1420</width>
-            <height>860</height>
-            <onright>60</onright>
-            <onup>3</onup>
-            <ondown>5</ondown>
-            <onright>3</onright>
+            <left>450</left>
+            <top>120</top>
+            <width>1400</width>
+            <height>850</height>
+            <align>left</align>
+            <onup>noop</onup>
+            <ondown>noop</ondown>
+            <onright>noop</onright>
             <onleft>3</onleft>
+            <itemgap>8</itemgap>
             <pagecontrol>60</pagecontrol>
-            <orientation>vertical</orientation>
         </control>
         <control type="button" id="7" description="Button">
-            <width>1260</width>
-            <texturenofocus>-</texturenofocus>
-            <texturefocus border="8">images/Buttonselect.png</texturefocus>
             <font>size34</font>
             <align>left</align>
         </control>
         <control type="radiobutton" id="8" description="Radio Button">
-            <width>1260</width>
-            <texturenofocus>-</texturenofocus>
-            <texturefocus border="8">images/Buttonselect.png</texturefocus>
-            <radioleft>1197</radioleft>
             <font>size34</font>
             <align>left</align>
         </control>
         <control type="spincontrolex" id="9" description="Spin control">
-            <width>1260</width>
-            <texturenofocus>-</texturenofocus>
-            <texturefocus border="8">images/Buttonselect.png</texturefocus>
             <align>left</align>
             <font>size34</font>
         </control>
         <control type="button" id="10" description="Category Button">
-            <texturenofocus>-</texturenofocus>
-            <texturefocus border="4">images/backfocus.png</texturefocus>
-            <textoffsetx>20</textoffsetx>
-            <align>center</align>
-            <aligny>center</aligny>
+           <textoffsetx>20</textoffsetx>
             <width>300</width>
             <font>size34</font>
         </control>
         <control type="sliderex" id="13">
             <description>Default Slider</description>
             <font>size34</font>
-            <texturenofocus>-</texturenofocus>
-            <texturefocus border="8">images/Buttonselect.png</texturefocus>
             <aligny>center</aligny>
         </control>
-        <control type="scrollbar" id="60">
-            <left>39r</left>
-            <top>159</top>
-            <height>861</height>
-            <onleft>5</onleft>
-            <onright>noop</onright>
-        </control>
+        <!--<control type="scrollbar" id="60">-->
+            <!--<left>39r</left>-->
+            <!--<top>159</top>-->
+            <!--<height>861</height>-->
+            <!--<onleft>5</onleft>-->
+            <!--<onright>noop</onright>-->
+        <!--</control>-->
         <control type="button" id="20">
             <description>Settings Level</description>
             <width>350</width>

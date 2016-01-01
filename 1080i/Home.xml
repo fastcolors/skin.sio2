@@ -25,8 +25,8 @@
         </control>
         <control type="button" id="9009">
             <visible allowhiddenfocus="true">Control.HasFocus(9009)</visible>
-            <left>50</left>
-            <top>35</top>
+            <left>0</left>
+            <top>15</top>
             <width>34</width>
             <height>34</height>
             <texturefocus aspectratio="keep">images/hometoggle.png</texturefocus>
@@ -217,7 +217,6 @@
                     <onclick>ActivateWindow(1718)</onclick>
                     <visible>Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
                 </item>
-
                 <!--item id="356">
                  <visible>Skin.HasSetting(3dmovs)</visible>
                  <thumb>icons/3d.png</thumb>
@@ -397,30 +396,30 @@
                     <label>5</label>
                     <onclick>ActivateWindow(1120)</onclick>
                 </item>
+                <!--<item id="349">-->
+                    <!--<visible>Player.HasMedia</visible>-->
+                    <!--<thumb>icons/full.png</thumb>-->
+                    <!--<label>31064</label>-->
+                    <!--<property name="color">icons/green3.png</property>-->
+                    <!--<onclick condition="Player.HasMedia">Fullscreen</onclick>-->
+                <!--</item>-->
+                <!--<item id="349">-->
+                    <!--<visible>!Player.HasMedia + Skin.HasSetting(quitter)</visible>-->
+                    <!--<thumb>icons/quits.png</thumb>-->
+                    <!--<label>351</label>-->
+                    <!--<property name="color">icons/darkblue.png</property>-->
+                    <!--<onclick condition="StringCompare(Skin.String(shutdown),quit)">XBMC.quit()</onclick>-->
+                    <!--<onclick condition="StringCompare(Skin.String(shutdown),powerdown)">XBMC.powerdown()</onclick>-->
+                    <!--<onclick condition="StringCompare(Skin.String(shutdown),hibernate)">XBMC.hibernate()</onclick>-->
+                    <!--<onclick condition="StringCompare(Skin.String(shutdown),suspend)">XBMC.suspend()</onclick>-->
+                    <!--<onclick condition="StringCompare(Skin.String(shutdown),reboot)">XBMC.reboot()</onclick>-->
+                <!--</item>-->
                 <item id="349">
-                    <visible>Player.HasMedia</visible>
-                    <thumb>icons/full.png</thumb>
-                    <label>31064</label>
-                    <property name="color">icons/green3.png</property>
-                    <onclick condition="Player.HasMedia">Fullscreen</onclick>
-                </item>
-                <item id="349">
-                    <visible>!Player.HasMedia + Skin.HasSetting(quitter)</visible>
+                    <!--<visible>!Player.HasMedia + !Skin.HasSetting(quitter)</visible>-->
                     <thumb>icons/quits.png</thumb>
                     <label>351</label>
                     <property name="color">icons/darkblue.png</property>
-                    <onclick condition="StringCompare(Skin.String(shutdown),quit)">XBMC.quit()</onclick>
-                    <onclick condition="StringCompare(Skin.String(shutdown),powerdown)">XBMC.powerdown()</onclick>
-                    <onclick condition="StringCompare(Skin.String(shutdown),hibernate)">XBMC.hibernate()</onclick>
-                    <onclick condition="StringCompare(Skin.String(shutdown),suspend)">XBMC.suspend()</onclick>
-                    <onclick condition="StringCompare(Skin.String(shutdown),reboot)">XBMC.reboot()</onclick>
-                </item>
-                <item id="349">
-                    <visible>!Player.HasMedia + !Skin.HasSetting(quitter)</visible>
-                    <thumb>icons/quits.png</thumb>
-                    <label>351</label>
-                    <property name="color">icons/darkblue.png</property>
-                    <onclick>ActivateWindow(DialogButtonMenu.xml)</onclick>
+                    <onclick>ActivateWindow(ShutdownMenu)</onclick>
                 </item>
             </content>
         </control>
