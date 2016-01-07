@@ -15,7 +15,7 @@
         <control type="group" description="Slider and List">
           <include>LargeListItemCount</include>
           <left>1020</left>
-      <top>131</top>
+          <top>131</top>
           <control type="fixedlist" id="50">
             <left>0</left>
             <top>0</top>
@@ -32,7 +32,7 @@
             <preloaditems>4</preloaditems>
             <scrolltime tween="sine" easing="inout">280</scrolltime>
             <itemlayout width="802" height="111">
-              
+
               <control type="image">
                 <left>0</left>
                 <top>0</top>
@@ -70,7 +70,7 @@
               </control>
             </itemlayout>
             <focusedlayout width="802" height="111">
-              
+
               <control type="image">
                 <left>0</left>
                 <top>0</top>
@@ -124,12 +124,12 @@
         <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
         <include>DialogOpenCloseVisible</include>
         <control type="image" description="List back">
-          <left>459</left>
-          <top>168</top>
-          <width>1002</width>
-          <height>762</height>
+          <centerleft>960</centerleft>
+          <centertop>540</centertop>
+          <width>802</width>
+          <height>906</height>
           <aspectratio>stretch</aspectratio>
-          <texture border="150">images/Dialog.png</texture>
+          <texture border="50">images/ContextMenu.png</texture>
         </control>
         <control type="grouplist" id="9000">
           <include>DialogGLs</include>

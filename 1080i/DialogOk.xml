@@ -13,7 +13,7 @@
         <top>-150</top>
         <width>1360</width>
         <height>740</height>
-        <texture border="150">images/Dialog.png</texture>
+        <texture border="50">images/ContextMenu.png</texture>
       </control>
       <control type="label" id="1" description="Heading">
         <width>960</width>

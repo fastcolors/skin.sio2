@@ -11,16 +11,16 @@
       <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
       <include>DialogOpenCloseVisible</include>
       <control type="image" description="List back">
-        <left>459</left>
-        <top>150</top>
-        <width>1002</width>
-        <height>798</height>
+        <centerleft>960</centerleft>
+        <centertop>540</centertop>
+        <width>802</width>
+        <height>906</height>
         <aspectratio>stretch</aspectratio>
-        <texture border="150">images/Dialog.png</texture>
+        <texture border="50">images/ContextMenu.png</texture>
       </control>
       <control type="grouplist" id="9000">
-	  <top>330</top>
-	  <height>678</height>
+        <top>330</top>
+        <height>678</height>
         <include>DialogGLs</include>
         <control type="button" id="2" description="Views">
           <texturenofocus>-</texturenofocus>
@@ -49,7 +49,7 @@
           <altclick>fullscreen</altclick>
           <animation effect="fade" start="100" end="60" time="100" condition="!Player.HasMedia">Conditional</animation>
         </control>
-		<control type="togglebutton" id="20">
+        <control type="togglebutton" id="20">
           <description>Update library</description>
           <include>DialogButt</include>
           <label>653</label>

@@ -9,7 +9,7 @@
       <top>-100</top>
       <width>1420</width>
       <height>1280</height>
-      <texture border="150">images/Dialog.png</texture>
+      <texture border="50">images/ContextMenu.png</texture>
     </control>
     <control type="group">
       <left>0</left>
