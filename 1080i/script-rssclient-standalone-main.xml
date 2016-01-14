@@ -235,7 +235,7 @@
       <control type="image" >
         <width>1920</width>
         <height>254</height>
-        <texture>images/White.png</texture>
+        <texture>images/white.png</texture>
       </control>
       <control type="image" >
         <width>1920</width>
@@ -260,7 +260,6 @@
 				<textcolor>White</textcolor>
 				<width>384</width>
 			</control>
-			
 			<control type="togglebutton" id="39004" description="Sort order">
 				<label>-</label>
 				<width>50</width>

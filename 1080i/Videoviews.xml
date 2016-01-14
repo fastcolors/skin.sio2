@@ -1281,7 +1281,7 @@
                 <top>470</top>
                 <width>1920</width>
                 <height>612</height>
-                <texture colordiffuse="77FFFFFF">images/White.png</texture>
+                <texture colordiffuse="77FFFFFF">images/white.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="list" id="500" description="fanart">
@@ -1338,7 +1338,7 @@
                             <top>79</top>
                             <height>352</height>
                             <width>232</width>
-                            <texture background="true">images/White.png</texture>
+                            <texture background="true">images/white.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="image" description="THUMBNAIL">

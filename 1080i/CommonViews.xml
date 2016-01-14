@@ -37,13 +37,13 @@
         <width>756</width>
         <height>470</height>
         <include>Icon_Fade</include>
-        <texture background="true">$INFO[ListItem.Icon]</texture>
+        <texture diffuse="images/Diffuse.png" background="true">$VAR[Locandine]</texture>
         <aspectratio aligny="bottom">keep</aspectratio>
       </control>
       <include>Unwatched</include>
       <control type="grouplist">
         <centerleft>500</centerleft>
-        <top>530</top>
+        <top>560</top>
         <width>750</width>
         <height>50</height>
         <orientation>horizontal</orientation>
@@ -95,28 +95,31 @@
       </control>
       <control type="image" description="Stars">
         <visible>!IsEmpty(ListItem.Rating)</visible>
-        <left>310</left>
-        <top>485</top>
+        <centerleft>500</centerleft>
+        <top>530</top>
         <height>24</height>
         <width>135</width>
         <aspectratio align="right">keep</aspectratio>
         <texture colordiffuse="black">$INFO[ListItem.Rating,badges/,.png]</texture>
       </control>
       <control type="image">
-        <top>570</top>
+        <centerleft>500</centerleft>
+        <top>600</top>
         <width>756</width>
         <height>1</height>
         <texture>images/Line.png</texture>
       </control>
       <control type="textbox" description="plot">
-        <top>570</top>
+        <centerleft>500</centerleft>
+        <top>600</top>
         <width>756</width>
         <height>350</height>
         <align>justify</align>
         <label>$INFO[ListItem.Plot]</label>
       </control>
       <control type="image">
-        <top>920</top>
+        <centerleft>500</centerleft>
+        <top>950</top>
         <width>756</width>
         <height>1</height>
         <texture>images/Line.png</texture>
