@@ -14,16 +14,15 @@
         <centerleft>960</centerleft>
         <centertop>540</centertop>
         <width>802</width>
-        <height>906</height>
+        <height>706</height>
         <aspectratio>stretch</aspectratio>
         <texture border="50">images/ContextMenu.png</texture>
       </control>
       <control type="grouplist" id="9000">
-        <top>330</top>
+        <top>310</top>
         <height>678</height>
         <include>DialogGLs</include>
         <control type="button" id="2" description="Views">
-          <texturenofocus>-</texturenofocus>
           <include>DialogButt</include>
         </control>
         <control type="button" id="3" description="Sort">

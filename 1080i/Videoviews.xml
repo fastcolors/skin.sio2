@@ -343,7 +343,7 @@
                     <control type="image">
                         <visible>container.content(episodes)</visible>
                         <centerleft>227</centerleft>
-                        <top>24</top>
+                        <top>44</top>
                         <width>410</width>
                         <height>280</height>
                         <texture background="true">$INFO[ListItem.Icon]</texture>
@@ -351,7 +351,7 @@
                     </control>
                     <control type="image" description="WatchStatus">
                         <left>18</left>
-                        <top>276</top>
+                        <top>296</top>
                         <height>32</height>
                         <width>60</width>
                         <aspectratio align="left">keep</aspectratio>
@@ -359,7 +359,7 @@
                     </control>
                     <control type="label">
                         <centerleft>227</centerleft>
-                        <top>300</top>
+                        <top>320</top>
                         <width>410</width>
                         <height>45</height>
                         <font>size24</font>
@@ -370,8 +370,8 @@
                 </itemlayout>
                 <focusedlayout condition="Container.Content(Episodes)" height="375" width="454">
                     <control type="group">
-                        <animation effect="zoom" time="120" start="100" end="120" center="auto" tween="Back" easing="Out">Focus</animation>
-                        <animation effect="zoom" start="120" end="100" time="120" center="auto">unFocus</animation>
+                        <animation effect="zoom" time="120" start="100" end="124" center="auto" tween="Back" easing="Out">Focus</animation>
+                        <animation effect="zoom" start="120" end="100" time="124" center="auto">unFocus</animation>
                         <control type="image">
                             <visible>!StringCompare(ListItem.Label,..)</visible>
                             <animation effect="fade" start="0" end="100" time="150">Focus</animation>
@@ -385,7 +385,7 @@
                         <control type="image">
                             <visible>container.content(episodes)</visible>
                             <centerleft>227</centerleft>
-                            <top>24</top>
+                            <top>44</top>
                             <width>410</width>
                             <height>280</height>
                             <texture background="true">$INFO[ListItem.Icon]</texture>
@@ -393,7 +393,7 @@
                         </control>
                         <control type="label">
                             <centerleft>227</centerleft>
-                            <top>300</top>
+                            <top>320</top>
                             <width>410</width>
                             <height>45</height>
                             <font>size24</font>
@@ -403,7 +403,7 @@
                         </control>
                         <control type="image" description="WatchStatus">
                             <left>18</left>
-                            <top>276</top>
+                            <top>296</top>
                             <height>32</height>
                             <width>60</width>
                             <aspectratio align="left">keep</aspectratio>
