@@ -63,18 +63,6 @@
         <include>HeadingR</include>
         <label>2</label>
       </control>
-      <control type="label" description="Clock">
-        <visible>Skin.HasSetting(ShowClock)</visible>
-        <right>50</right>
-        <top>3</top>
-        <width>500</width>
-        <height>75</height>
-        <align>right</align>
-        <aligny>center</aligny>
-        <font>size33B</font>
-        <textcolor>White</textcolor>
-        <label>$INFO[System.Time]</label>
-      </control>
     </control>
   </controls>
 </window>

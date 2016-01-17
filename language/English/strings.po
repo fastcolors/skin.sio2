@@ -94,10 +94,6 @@ msgctxt "#31018"
 msgid "Choose Addon for Lyrics Search & Download"
 msgstr "Choose Addon for Lyrics Search & Download"
 
-msgctxt "#31019"
-msgid "Enable or Disable Clock On top right of All Pages (not while watching Movies).[CR]Home Menu Will show Time and date."
-msgstr "Enable or Disable Clock On top right of All Pages (not while watching Movies).[CR]Home Menu Will show Time and date."
-
 msgctxt "#31020"
 msgid "Enable or Disable Vinyl Record Animation from Home Shelf Albums."
 msgstr "Enable or Disable Vinyl Record Animation from Home Shelf Albums."
@@ -197,10 +193,6 @@ msgstr "Recent/Recommended Inverted First Item"
 msgctxt "#31046"
 msgid "Customize What Is Displayed On Home Shelf."
 msgstr "Customize What Is Displayed On Home Shelf."
-
-msgctxt "#31047"
-msgid "Show Clock"
-msgstr "Show Clock"
 
 msgctxt "#31048"
 msgid "Recommended"

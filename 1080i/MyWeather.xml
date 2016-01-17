@@ -12,7 +12,6 @@
             <texture>images/weatherback.png</texture>
             <aspectratio>stretch</aspectratio>
         </control>
-        <include>Clock</include>
         <control type="group" description="Bottom">
             <control type="label" description="last updated label">
                 <left>1400</left>

@@ -10,18 +10,6 @@
       <include>HeadingL</include>
       <label>10503</label>
     </control>
-    <control type="label" description="Clock">
-      <visible>Skin.HasSetting(ShowClock)</visible>
-      <left>50</left>
-      <top>3</top>
-      <width>195</width>
-      <height>75</height>
-      <align>right</align>
-      <aligny>center</aligny>
-      <font>size33B</font>
-      <textcolor>White</textcolor>
-      <label>$INFO[System.Time]</label>
-    </control>
     <control type="group">
       <description>Left panel</description>
       <left>20</left>

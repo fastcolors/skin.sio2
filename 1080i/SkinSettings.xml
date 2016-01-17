@@ -6,7 +6,6 @@
   <include>OpenClose</include>
   <controls>
     <include>BlackBackground</include>
-    <include>SettingsClock</include>
     <control type="group">
       <left>1020</left>
       <top>131</top>
@@ -118,18 +117,6 @@
             <label2 fallback="33061">$VAR[QuitLabel]</label2>
             <onclick>ActivateWindow(1114)</onclick>
           </item>
-          <item id="11" description="Show Clock">
-            <visible>Skin.HasSetting(ShowClock)</visible>
-            <label>$LOCALIZE[31047]</label>
-            <label2>107</label2>
-            <onclick>Skin.ToggleSetting(ShowClock)</onclick>
-          </item>
-          <item id="11" description="Show Clock">
-            <visible>!Skin.HasSetting(ShowClock)</visible>
-            <label>$LOCALIZE[31047]</label>
-            <label2>106</label2>
-            <onclick>Skin.ToggleSetting(ShowClock)</onclick>
-          </item>
           <item id="14" description="Music Default">
             <label>$LOCALIZE[31053]</label>
             <label2>$INFO[Skin.String(MusicLink)]</label2>
@@ -220,16 +207,6 @@
         <visible>Container(50).HasFocus(9)</visible>
         <include>Help_Panel</include>
         <texture>icons/Quits.png</texture>
-      </control>
-      <control type="image" description="clock">
-        <visible>Container(50).HasFocus(11)</visible>
-        <include>Help_Panel</include>
-        <texture>help/Clock.jpg</texture>
-      </control>
-      <control type="image" description="clock">
-        <visible>Container(50).HasFocus(11) + !Skin.HasSetting(ShowClock)</visible>
-        <include>Help_Panel</include>
-        <texture>help/off.png</texture>
       </control>
       <control type="image" description="reset">
         <visible>Container(50).HasFocus(12) | Container(50).HasFocus(17)</visible>

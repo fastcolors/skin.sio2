@@ -100,12 +100,6 @@ msgctxt "#31018"
 msgid "Choose Addon for Lyrics Search & Download"
 msgstr "Valitse lisäosa laulun sanoituksille"
 
-msgctxt "#31019"
-msgid ""
-"Enable or Disable Clock On top right of All Pages (not while watching "
-"Movies).[CR]Home Menu Will show Time and date."
-msgstr "Näytä kellonaika kaikkialla (ei videota toistettaessa).\n[CR]Kotivalikko näyttää kellonajan sekä päivämäärän."
-
 msgctxt "#31020"
 msgid "Enable or Disable Vinyl Record Animation from Home Shelf Albums."
 msgstr "Vinyylianimaatio"

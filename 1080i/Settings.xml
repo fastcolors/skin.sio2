@@ -6,7 +6,6 @@
   <include>OpenClose</include>
   <controls>
     <include>BlackBackground</include>
-    <include>SettingsClock</include>
     <control type="group">
       <left>1020</left>
       <top>131</top>
