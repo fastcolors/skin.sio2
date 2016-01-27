@@ -1109,32 +1109,6 @@
       </control>
     </control>
   </include>
-  <include name="statusbiglist">
-    <control type="image">
-      <left>710</left>
-      <top>15</top>
-      <width>81</width>
-      <height>81</height>
-      <texture>$INFO[ListItem.Icon]</texture>
-      <visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
-    </control>
-    <control type="image" description="rec">
-      <left>720</left>
-      <top>15</top>
-      <height>81</height>
-      <width>81</width>
-      <texture>pvr/rec.png</texture>
-      <visible>ListItem.IsRecording</visible>
-    </control>
-    <control type="image" description="timer">
-      <left>720</left>
-      <top>15</top>
-      <height>81</height>
-      <width>81</width>
-      <texture>pvr/timer.png</texture>
-      <visible>!ListItem.IsRecording + ListItem.HasTimer</visible>
-    </control>
-  </include>
   <include name="SlimListLayout">
     <itemlayout width="802" height="81">
       <control type="image">

@@ -125,29 +125,17 @@
                         <preloaditems>4</preloaditems>
                         <scrolltime>250</scrolltime>
                         <itemlayout width="802" height="111">
+                            <control type="image">
+                                <height>100</height>
+                                <width>805</width>
+                                <texture colordiffuse="77FFFFFF">images/white.png</texture>
+                            </control>
                             <control type="label">
                                 <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
                                 <left>40</left>
-                                <width>40</width>
-                                <height>75</height>
-                                <font>font12</font>
-                                <align>right</align>
-                                <aligny>center</aligny>
-                                <textcolor>gray</textcolor>
-                                <selectedcolor>gray</selectedcolor>
-                                <info>ListItem.ChannelNumber</info>
-                            </control>
-                            <control type="label">
-                                <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional </animation>
-                                <left>45</left>
-                                <selectedcolor>red</selectedcolor>
-                                <align>left</align>
-                                <top>12</top>
-                                <height>50</height>
-                                <width>1320</width>
-                                <aligny>center</aligny>
-                                <font>size30</font>
-                                <label>$INFO[ListItem.Label]</label>
+                                <width>700</width>
+                                <include>50Title</include>
+                                <label>$INFO[ListItem.ChannelNumber] • $INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
                                 <description>Label 2 Title</description>
@@ -161,52 +149,90 @@
                                 <scroll>false</scroll>
                                 <info>ListItem.Title</info>
                             </control>
-                            <include>statusbiglist</include>
+                            <control type="image">
+                                <left>710</left>
+                                <top>15</top>
+                                <width>81</width>
+                                <height>81</height>
+                                <texture>$INFO[ListItem.Icon]</texture>
+                                <visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
+                            </control>
+                            <control type="image" description="rec">
+                                <left>720</left>
+                                <top>15</top>
+                                <height>81</height>
+                                <width>81</width>
+                                <texture>pvr/rec.png</texture>
+                                <visible>ListItem.IsRecording</visible>
+                            </control>
+                            <control type="image" description="timer">
+                                <left>720</left>
+                                <top>15</top>
+                                <height>81</height>
+                                <width>81</width>
+                                <texture>pvr/timer.png</texture>
+                                <visible>!ListItem.IsRecording + ListItem.HasTimer</visible>
+                            </control>
                         </itemlayout>
                         <focusedlayout height="111" width="802">
-                            <control type="image" description="selector">
-                                <animation effect="fade" end="0" time="30">UnFocus</animation>
-                                <width>802</width>
-                                <height>111</height>
-                                <texture border="20">images/Buttonselect.png</texture>
+                            <control type="group">
+                                <animation effect="zoom" time="120" start="100" end="105" center="auto" tween="Back" easing="Out">Focus</animation>
+                                <control type="image">
+                                    <top>22</top>
+                                    <left>-50</left>
+                                    <height>100</height>
+                                    <width>905</width>
+                                    <texture>shadow.png</texture>
+                                </control>
+                                <control type="image">
+                                    <height>100</height>
+                                    <width>805</width>
+                                    <texture>images/white.png</texture>
+                                </control>
+                                <control type="label">
+                                    <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
+                                    <left>40</left>
+                                    <width>700</width>
+                                    <include>50Title</include>
+                                    <label>$INFO[ListItem.ChannelNumber] • $INFO[ListItem.Label]</label>
+                                </control>
+                                <control type="label">
+                                    <description>Label 2 Title</description>
+                                    <left>45</left>
+                                    <width>640</width>
+                                    <left>128</left>
+                                    <top>63</top>
+                                    <height>33</height>
+                                    <width>1320</width>
+                                    <font>size27</font>
+                                    <scroll>false</scroll>
+                                    <label>$INFO[ListItem.Title]</label>
+                                </control>
+                                <control type="image">
+                                    <left>710</left>
+                                    <top>15</top>
+                                    <width>81</width>
+                                    <height>81</height>
+                                    <texture>$INFO[ListItem.Icon]</texture>
+                                    <visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
+                                </control>
+                                <control type="image" description="rec">
+                                    <left>720</left>
+                                    <top>15</top>
+                                    <height>81</height>
+                                    <width>81</width>
+                                    <texture>pvr/rec.png</texture>
+                                    <visible>ListItem.IsRecording</visible>
+                                </control>
+                                <control type="image" description="timer">
+                                    <left>720</left>
+                                    <top>15</top>
+                                    <height>81</height>
+                                    <width>81</width>
+                                    <texture>pvr/timer.png</texture>
+                                    <visible>!ListItem.IsRecording + ListItem.HasTimer</visible>
+                                </control>
                             </control>
-                            <control type="label">
-                                <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
-                                <left>40</left>
-                                <width>40</width>
-                                <height>75</height>
-                                <font>font12</font>
-                                <align>right</align>
-                                <aligny>center</aligny>
-                                <textcolor>gray</textcolor>
-                                <selectedcolor>gray</selectedcolor>
-                                <info>ListItem.ChannelNumber</info>
-                            </control>
-                            <control type="label">
-                                <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional </animation>
-                                <left>45</left>
-                                <selectedcolor>red</selectedcolor>
-                                <align>left</align>
-                                <top>12</top>
-                                <height>50</height>
-                                <width>1320</width>
-                                <aligny>center</aligny>
-                                <font>size30</font>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                            <control type="label">
-                                <description>Label 2 Title</description>
-                                <left>45</left>
-                                <width>640</width>
-                                <left>128</left>
-                                <top>63</top>
-                                <height>33</height>
-                                <width>1320</width>
-                                <font>size27</font>
-                                <scroll>false</scroll>
-                                <label>$INFO[ListItem.Title]</label>
-                            </control>
-                            <include>statusbiglist</include>
                         </focusedlayout>
                     </control>
                 </control>
@@ -239,9 +265,6 @@
             </control>
         </control>
         <include>WindowsTopInfos</include>
-
-
         <include>PVRsidemenu</include>
-
     </controls>
 </window>

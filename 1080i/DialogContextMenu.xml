@@ -5,33 +5,30 @@
   <include>DialogOpenClose</include>
   <coordinates>
     <system>1</system>
-    <origin x="0" y="50" />
+    <origin x="0" y="0" />
   </coordinates>
   <controls>
     <control type="image" id="999" description="Background image">
       <centerleft>960</centerleft>
       <height>1080</height>
-      <width>620</width>
+      <width>750</width>
       <texture border="50">images/ContextMenu.png</texture>
     </control>
     <control type="grouplist" id="996" description="Context menu container">
       <centerleft>960</centerleft>
       <centertop>540</centertop>
-      <width>480</width>
       <height>960</height>
-      <itemgap>10</itemgap>
+      <include>DialogGLs</include>
 	  <control type="button" id="1500">
 	  <visible>System.HasAddon(script.cinema.experience) + Container.Content(Movies)</visible>
-      <width>480</width>
-      <height>60</height>
+      <include>DialogButt</include>
 	<label>31061</label>
 	<onclick>XBMC.RunScript(script.cinema.experience)</onclick>
 	</control>
     </control>
     <control type="button" id="1000" description="Buttons">
       <animation effect="zoom" time="120" start="100" end="110" center="auto" tween="Back" easing="Out">Focus</animation>
-      <width>480</width>
-      <height>60</height>
+      <include>DialogButt</include>
     </control>
   </controls>
 </window>
