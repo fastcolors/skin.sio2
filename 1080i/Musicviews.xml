@@ -203,25 +203,26 @@
                 <texture background="true">$INFO[ListItem.Icon]</texture>
                 <aspectratio>stretch</aspectratio>
               </control>
-              <control type="image" description="Rating">
-                <animation effect="fade" start="0" end="100" time="150">Focus</animation>
-                <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
-                <visible>!IsEmpty(ListItem.StarRating)</visible>
-                <centerleft>227</centerleft>
-                <top>436</top>
-                <include>MusicRating</include>
-              </control>
               <control type="label">
                 <animation effect="fade" start="0" end="100" time="150">Focus</animation>
                 <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
                 <centerleft>227</centerleft>
                 <top>414</top>
-                <width>400</width>
+                <width>600</width>
                 <height>20</height>
                 <font>size24</font>
                 <textcolor>white</textcolor>
                 <align>center</align>
                 <label>[B]$INFO[ListItem.Label][/B]</label>
+              </control>
+               <control type="image" description="Rating">
+                <animation effect="fade" start="0" end="100" time="150">Focus</animation>
+                <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
+                <visible>!IsEmpty(ListItem.StarRating)</visible>
+                <centerleft>227</centerleft>
+                <top>436</top>
+                 <width>100</width>
+                <include>MusicRating</include>
               </control>
             </control>
           </focusedlayout>
