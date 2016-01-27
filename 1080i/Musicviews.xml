@@ -15,7 +15,7 @@
       <control type="group" description="Slider and List">
         <include>LargeListItemCount</include>
         <left>1020</left>
-      <top>131</top>
+        <top>131</top>
         <control type="fixedlist" id="50">
           <visible>!Container.content(songs)</visible>
           <width>802</width>
@@ -54,7 +54,7 @@
       <control type="group" description="Slider and List">
         <include>SlimListItemCount</include>
         <left>1020</left>
-      <top>131</top>
+        <top>131</top>
         <include>SlimListSlider</include>
         <control type="fixedlist" id="52">
           <visible>container.content(songs)</visible>
@@ -139,146 +139,102 @@
           <visible>Container.Content(Albums) | Container.Content(Addons)</visible>
           <visible>!Container.content(songs)</visible>
           <viewtype label="536">Icons</viewtype>
-          <left>60</left>
-          <top>140</top>
-          <width>1800</width>
-          <height>897</height>
-          <orientation>vertical</orientation>
-          <onup>noop</onup>
-          <ondown>noop</ondown>
+          <left>50</left>
+          <width>1820</width>
+          <height>1080</height>
           <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+          <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onright condition="!Skin.HasSetting(Scrollbars_Active)">noop</onright>
+          <onup>53</onup>
+          <ondown>53</ondown>
           <preloaditems>4</preloaditems>
           <pagecontrol>60</pagecontrol>
           <scrolltime>400</scrolltime>
-          <itemlayout height="345" width="300">
+          <itemlayout height="455" width="455">
             <control type="image">
               <visible>container.content(albums)</visible>
-              <left>22</left>
-              <top>24</top>
-              <width>255</width>
-              <height>255</height>
+              <centerleft>227</centerleft>
+              <centertop>227</centertop>
+              <width>360</width>
+              <height>360</height>
               <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
               <visible>!container.content(albums)</visible>
-              <left>22</left>
-              <top>24</top>
-              <width>255</width>
-              <height>255</height>
+              <centerleft>227</centerleft>
+              <centertop>227</centertop>
+              <width>360</width>
+              <height>360</height>
               <texture background="true">$INFO[ListItem.Icon]</texture>
               <aspectratio>stretch</aspectratio>
             </control>
           </itemlayout>
-          <focusedlayout height="345" width="300">
+          <focusedlayout height="455" width="455">
             <control type="image">
-              <visible>container.content(albums)</visible>
-              <left>22</left>
-              <top>24</top>
-              <width>255</width>
-              <height>255</height>
-              <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>stretch</aspectratio>
+              <animation effect="fade" start="0" end="100" time="150">Focus</animation>
+              <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
+              <visible>!StringCompare(ListItem.Label,..)</visible>
+              <centerleft>227</centerleft>
+              <centertop>227</centertop>
+              <width>455</width>
+              <height>455</height>
+              <texture>shadow.png</texture>
             </control>
-            <control type="image">
-              <visible>!container.content(albums)</visible>
-              <left>22</left>
-              <top>24</top>
-              <width>255</width>
-              <height>255</height>
-              <texture background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="label">
-              <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-              <centerleft>150</centerleft>
-              <top>300</top>
-              <width>270</width>
-              <height>45</height>
-              <font>size27</font>
-              <textcolor>White2</textcolor>
-              <shadowcolor>Black</shadowcolor>
-              <align>center</align>
-              <label>[B]$INFO[ListItem.Label][/B]</label>
+            <control type="group">
+              <animation effect="zoom" time="120" start="100" end="114" center="auto" tween="Back" easing="Out">Focus</animation>
+              <animation effect="zoom" start="114" end="100" time="120" center="auto">unFocus</animation>
+              <control type="image">
+                <visible>container.content(albums)</visible>
+                <centerleft>227</centerleft>
+                <centertop>227</centertop>
+                <width>360</width>
+                <height>360</height>
+                <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
+                <aspectratio>stretch</aspectratio>
+              </control>
+              <control type="image">
+                <visible>!container.content(albums)</visible>
+                <centerleft>227</centerleft>
+                <centertop>227</centertop>
+                <width>360</width>
+                <height>360</height>
+                <texture background="true">$INFO[ListItem.Icon]</texture>
+                <aspectratio>stretch</aspectratio>
+              </control>
+              <control type="image" description="Rating">
+                <animation effect="fade" start="0" end="100" time="150">Focus</animation>
+                <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
+                <visible>!IsEmpty(ListItem.StarRating)</visible>
+                <centerleft>227</centerleft>
+                <top>436</top>
+                <include>MusicRating</include>
+              </control>
+              <control type="label">
+                <animation effect="fade" start="0" end="100" time="150">Focus</animation>
+                <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
+                <centerleft>227</centerleft>
+                <top>414</top>
+                <width>400</width>
+                <height>20</height>
+                <font>size24</font>
+                <textcolor>white</textcolor>
+                <align>center</align>
+                <label>[B]$INFO[ListItem.Label][/B]</label>
+              </control>
             </control>
           </focusedlayout>
         </control>
-        <control type="group" description="Slider">
-          <include>Scrollanim</include>
-          <control type="image">
-            <left>69</left>
-            <top>151</top>
-            <width>281</width>
-            <height>281</height>
-            <texture border="20">images/GeneralSlider.png</texture>
-            <aspectratio>stretch</aspectratio>
-            <animation condition="Container.Column(0)" effect="slide" start="0,0" end="0,0" time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(1)" effect="slide" start="0,0" end="300,0" time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(2)" effect="slide" start="0,0" end="600,0" time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(3)" effect="slide" start="0,0" end="900,0" time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(4)" effect="slide" start="0,0" end="1200,0" time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(5)" effect="slide" start="0,0" end="1500,0" time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Row(0)" effect="slide" start="0,0" end="0,0" time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Row(1)" effect="slide" start="0,0" end="0,345" time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Row(2)" effect="slide" start="0,0" end="0,345" time="200" reversible="true">Conditional</animation>
-          </control>
-        </control>
-      </control>
-      <control type="image" description="Line Split">
-        <left>82</left>
-        <top>139</top>
-        <width>1748</width>
-        <height>1</height>
-        <texture>images/LineL.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
-      <control type="grouplist" description="Media Header">
-        <left>82</left>
-        <top>15</top>
-        <width>930</width>
-        <height>75</height>
-        <align>left</align>
-        <aligny>bottom</aligny>
-        <orientation>horizontal</orientation>
-        <control type="label" id="7777" description="Heading">
-          <width min="60" max="930">auto</width>
-          <height>75</height>
-          <textcolor>White2</textcolor>
-          <font>size42</font>
-          <label>$VAR[RootLabel]</label>
-        </control>
-        <control type="label" description="Number of files">
-          <visible>!IsEmpty(Control.GetLabel(7777))</visible>
-          <width min="60" max="120">auto</width>
-          <height>81</height>
-          <font>size26</font>
-          <textcolor>Grey</textcolor>
-          <label>$INFO[Container.NumItems,  (,)]</label>
-        </control>
-      </control>
-      <control type="label" description="Media details">
-        <left>82</left>
-        <top>90</top>
-        <width>1200</width>
-        <textcolor>Silver</textcolor>
-        <include>Genre51Commons</include>
-        <label>$INFO[ListItem.label][COLOR=Grey]  $INFO[ListItem.Artist]$INFO[ListItem.Property(Addon.Creator)][/COLOR]</label>
       </control>
       <control type="grouplist">
-        <left>304r</left>
+        <left>0</left>
         <top>106</top>
         <height>24</height>
         <width>195</width>
         <itemgap>15</itemgap>
         <align>right</align>
         <orientation>horizontal</orientation>
-        <control type="image" description="Rating">
-          <visible>!IsEmpty(ListItem.StarRating)</visible>
-          <left>1590</left>
-          <top>0</top>
-          <include>MusicRating</include>
-        </control>
         <control type="label" description="Media details">
           <visible>container.content(addons)</visible>
           <height>24</height>
@@ -288,12 +244,6 @@
           <textcolor>Silver</textcolor>
           <label>$INFO[ListItem.Label2]</label>
         </control>
-      </control>
-      <control type="image" description="shade">
-	  <top>100</top>
-        <width>1920</width>
-        <height>1080</height>
-        <texture>Shades/iconvshade.png</texture>
       </control>
       <control type="scrollbar" id="60">
         <left>45r</left>
@@ -522,7 +472,7 @@
           </item>
         </content>
       </control>
-	  <control type="scrollbar" id="60">
+      <control type="scrollbar" id="60">
         <animation effect="fade" delay="200" time="300">VisibleChange</animation>
         <left>198</left>
         <top>1038</top>
@@ -537,7 +487,7 @@
         <showonepage>false</showonepage>
       </control>
     </control>
-	<control type="label">
+    <control type="label">
       <description>Page Count Label</description>
       <left>40r</left>
       <top>50r</top>
