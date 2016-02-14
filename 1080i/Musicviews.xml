@@ -228,24 +228,6 @@
           </focusedlayout>
         </control>
       </control>
-      <control type="grouplist">
-        <left>0</left>
-        <top>106</top>
-        <height>24</height>
-        <width>195</width>
-        <itemgap>15</itemgap>
-        <align>right</align>
-        <orientation>horizontal</orientation>
-        <control type="label" description="Media details">
-          <visible>container.content(addons)</visible>
-          <height>24</height>
-          <width>195</width>
-          <font>size27</font>
-          <align>right</align>
-          <textcolor>Silver</textcolor>
-          <label>$INFO[ListItem.Label2]</label>
-        </control>
-      </control>
       <control type="scrollbar" id="60">
         <left>45r</left>
         <top>219</top>
