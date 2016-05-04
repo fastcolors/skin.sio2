@@ -169,4 +169,23 @@
         <value condition="StringCompare(ListItem.AudioChannels,2)">STEREO</value>
         <value>$INFO[ListItem.AudioChannels]</value>
     </variable>
+
+    <variable name="infosuggestions">
+        <value condition="Container.Content(movies)">special://skin/resources/random.xsp</value>
+        <value condition="Container.Content(tvshows) | Container.Content(episodes)">special://skin/resources/randomTV.xsp</value>
+    </variable>
+    
+    <variable name="locandine">
+        <!--<value condition="Container.Content(countries)">$INFO[ListItem.Label,flags/,.png]</value>-->
+        <value condition="Container.Content(episodes) + !String.IsEmpty(ListItem.Art(season.poster))">$INFO[ListItem.Art(season.poster)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+        <value condition="StringCompare(ListItem.Label,..)">DefaultFolderBack.png</value>
+        <value condition="Container.Content(studios)">$INFO[ListItem.Label,special://home/addons/sio2x.extrapack/studios_extrapack/,.png]</value>
+        <value condition="Container.Content(years)">DefaultYear_Blank.png</value>
+        <value condition="Container.Content(countries)">DefaultCountry_.png</value>
+        <value condition="Container.Content(genres) + Window.IsActive(musiclibrary)">special://home/addons/sio2x.extrapack/music_extrapack/$INFO[ListItem.Label].jpg</value>
+        <value condition="Container.Content(genres) + Window.IsActive(videolibrary)">$VAR[genrefix]</value>
+        <value>$INFO[ListItem.Icon]</value>
+    </variable>
+
 </includes>

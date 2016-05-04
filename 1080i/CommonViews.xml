@@ -282,14 +282,6 @@
           <scroll>false</scroll>
           <label>[B]$INFO[ListItem.Title][/B]</label>
         </control>
-        <control type="image" description="Rating">
-          <top>-45</top>
-          <height>27</height>
-          <width>150</width>
-          <colordiffuse>White2</colordiffuse>
-          <aspectratio align="left">keep</aspectratio>
-          <texture>$INFO[ListItem.StarRating]</texture>
-        </control>
         <control type="image" description="Separator">
           <left>0</left>
           <height>1</height>
@@ -342,12 +334,6 @@
         </control>
       </control>
     </control>
-  </include>
-  <include name="MusicRating">
-    <height>24</height>
-    <width>135</width>
-    <aspectratio align="right">keep</aspectratio>
-    <texture>$INFO[ListItem.StarRating]</texture>
   </include>
   <include name="slider">
     <control type="image">
@@ -876,15 +862,6 @@
         <orientation>horizontal</orientation>
         <align>left</align>
         <aligny>center</aligny>
-        <control type="image" description="Rating">
-          <left>102</left>
-          <top>1035</top>
-          <height>36</height>
-          <width>150</width>
-          <colordiffuse>Silver</colordiffuse>
-          <aspectratio align="left">keep</aspectratio>
-          <texture>$INFO[ListItem.StarRating]</texture>
-        </control>
         <control type="image">
           <visible>Container.content(songs) + !String.IsEmpty(ListItem.FileExtension)</visible>
           <left>777</left>

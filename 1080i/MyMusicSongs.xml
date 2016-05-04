@@ -188,30 +188,6 @@
         <include>Genre51Commons</include>
         <label>$INFO[ListItem.label][COLOR=Grey]$VAR[TopLabel, - ][/COLOR]</label>
       </control>
-      <control type="grouplist">
-        <left>304r</left>
-        <top>126</top>
-        <height>24</height>
-        <width>195</width>
-        <itemgap>15</itemgap>
-        <align>right</align>
-        <orientation>horizontal</orientation>
-        <control type="label" description="Media details">
-          <visible>!String.IsEmpty(ListItem.Label2) + String.IsEmpty(ListItem.StarRating)</visible>
-          <height>24</height>
-          <width max="195">auto</width>
-          <font>size27</font>
-          <align>right</align>
-          <textcolor>Silver</textcolor>
-          <label>$INFO[ListItem.Label2]</label>
-        </control>
-        <control type="image" description="Rating">
-          <visible>!String.IsEmpty(ListItem.StarRating)</visible>
-          <left>1590</left>
-          <top>0</top>
-          <include>MusicRating</include>
-        </control>
-      </control>
       <control type="image" description="Bottom fade">
         <left>0</left>
         <top>990</top>

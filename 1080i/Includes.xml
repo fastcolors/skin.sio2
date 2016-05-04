@@ -546,4 +546,28 @@
         <font>size27</font>
         <scroll>false</scroll>
     </include>
+    <include name="selection">
+        <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+        <animation effect="zoom" start="120" end="100" time="120" center="auto">unFocus</animation>
+    </include>
+    <include name="diavidinfobuttons">
+        <animation effect="zoom" start="100" end="110" time="120" center="320,50" tween="Back" easing="Out">Focus</animation>
+        <animation effect="zoom" start="110" end="100" time="120" center="320,50">unFocus</animation>
+        <width>320</width>
+        <height>70</height>
+        <font>size21</font>
+        <align>right</align>
+        <aligny>top</aligny>
+        <wrapmultiline>true</wrapmultiline>
+        <textoffsetx>10</textoffsetx>
+        <onclick>noop</onclick>
+    </include>
+    <include name="diavidinfolabels">
+        <width>320</width>
+        <height>24</height>
+        <font>size21</font>
+        <textoffsetx>10</textoffsetx>
+        <align>right</align>
+        <aligny>bottom</aligny>
+    </include>
 </includes>

@@ -232,12 +232,6 @@
         <itemgap>15</itemgap>
         <align>right</align>
         <orientation>horizontal</orientation>
-        <control type="image" description="Rating">
-          <visible>!String.IsEmpty(ListItem.StarRating)</visible>
-          <left>1590</left>
-          <top>0</top>
-          <include>MusicRating</include>
-        </control>
         <control type="label" description="Media details">
           <visible>container.content(addons)</visible>
           <height>24</height>
