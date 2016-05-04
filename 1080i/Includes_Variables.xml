@@ -174,7 +174,7 @@
         <value condition="Container.Content(movies)">special://skin/resources/random.xsp</value>
         <value condition="Container.Content(tvshows) | Container.Content(episodes)">special://skin/resources/randomTV.xsp</value>
     </variable>
-    
+
     <variable name="locandine">
         <!--<value condition="Container.Content(countries)">$INFO[ListItem.Label,flags/,.png]</value>-->
         <value condition="Container.Content(episodes) + !String.IsEmpty(ListItem.Art(season.poster))">$INFO[ListItem.Art(season.poster)]</value>

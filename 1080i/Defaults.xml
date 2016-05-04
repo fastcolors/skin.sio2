@@ -33,7 +33,7 @@
   </default>
   <default type="textbox">
     <label>-</label>
-    <font>size30</font>
+    <font>size28</font>
     <textcolor>White</textcolor>
     <shadowcolor>-</shadowcolor>
     <focusedcolor>White2</focusedcolor>
