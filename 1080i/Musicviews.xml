@@ -236,6 +236,7 @@
         <onright>9000</onright>
       </control>
     </control>
+     <!--FANART-->
     <control type="group">
       <visible>Control.IsVisible(500)</visible>
       <control type="image">
