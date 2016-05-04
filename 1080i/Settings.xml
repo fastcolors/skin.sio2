@@ -57,29 +57,21 @@
           </control>
         </focusedlayout>
         <content>
-          <item id="0" description="Appearance">
+          <item id="0" description="Interface settings">
             <label>480</label>
-            <onclick>activatewindow(AppearanceSettings)</onclick>
+            <onclick>activatewindow(InterfaceSettings)</onclick>
           </item>
-          <item id="1" description="Skin Settings">
+          <item id="1" description="Library Settings">
             <label>20077</label>
-            <onclick>activatewindow(SkinSettings)</onclick>
+            <onclick>activatewindow(LibrarySettings)</onclick>
           </item>
-          <item id="3" description="Videos">
+          <item id="3" description="Player">
             <label>3</label>
-            <onclick>activatewindow(VideosSettings)</onclick>
-          </item>
-          <item id="4" description="Music">
-            <label>2</label>
-            <onclick>activatewindow(MusicSettings)</onclick>
+            <onclick>activatewindow(PlayerSettings)</onclick>
           </item>
           <item id="14" description="LiveTV">
             <label>31059</label>
             <onclick>activatewindow(PVRSettings)</onclick>
-          </item>
-          <item id="5" description="Pictures">
-            <label>1</label>
-            <onclick>activatewindow(PicturesSettings)</onclick>
           </item>
           <item id="6" description="Addons">
             <label>24001</label>
