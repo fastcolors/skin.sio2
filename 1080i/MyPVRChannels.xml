@@ -82,7 +82,7 @@
                         <textcolor>gray</textcolor>
                         <align>center</align>
                         <scroll>false</scroll>
-                        <visible>!IsEmpty(Container(11).ListItem.NextTitle)</visible>
+                        <visible>!String.IsEmpty(Container(11).ListItem.NextTitle)</visible>
                         <label>$LOCALIZE[19031]: $INFO[Container(11).ListItem.NextTitle]</label>
                     </control>
                     <control type="progress">
@@ -131,7 +131,7 @@
                                 <texture colordiffuse="77FFFFFF">images/white.png</texture>
                             </control>
                             <control type="label">
-                                <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
+                                <animation condition="String.IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
                                 <left>40</left>
                                 <width>700</width>
                                 <include>50Title</include>
@@ -190,7 +190,7 @@
                                     <texture>images/white.png</texture>
                                 </control>
                                 <control type="label">
-                                    <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
+                                    <animation condition="String.IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
                                     <left>40</left>
                                     <width>700</width>
                                     <include>50Title</include>

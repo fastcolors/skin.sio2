@@ -140,7 +140,7 @@
                 <top>131</top>
                 <control type="fixedlist" id="51">
                     <visible>!container.content(Sets)</visible>
-                    <visible>!IsEmpty(Container.FolderPath)</visible>
+                    <visible>!String.IsEmpty(Container.FolderPath)</visible>
                     <width>802</width>
                     <height>888</height>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
@@ -442,7 +442,7 @@
             <control type="image" description="Stars">
                 <left>50</left>
                 <top>1010</top>
-                <visible>!IsEmpty(ListItem.Rating)</visible>
+                <visible>!String.IsEmpty(ListItem.Rating)</visible>
                 <height>24</height>
                 <width>135</width>
                 <aspectratio align="right">keep</aspectratio>
@@ -463,7 +463,7 @@
                     <texture colordiffuse="black">badges/setsFO.png</texture>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                    <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
                     <height>25</height>
                     <width>auto</width>
                     <font>size24</font>
@@ -471,7 +471,7 @@
                     <label>[UPPERCASE]$INFO[ListItem.VideoResolution][/UPPERCASE]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+                    <visible>!String.IsEmpty(ListItem.AudioChannels)</visible>
                     <height>25</height>
                     <width>auto</width>
                     <font>size24</font>
@@ -479,7 +479,7 @@
                     <label>[UPPERCASE]$VAR[audiochannels,• ][/UPPERCASE]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+                    <visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
                     <height>25</height>
                     <width>auto</width>
                     <font>size24</font>
@@ -487,7 +487,7 @@
                     <label>[UPPERCASE]$INFO[ListItem.AudioCodec,• ][/UPPERCASE]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.VideoCodec)</visible>
+                    <visible>!String.IsEmpty(ListItem.VideoCodec)</visible>
                     <height>25</height>
                     <width>auto</width>
                     <font>size24</font>
@@ -495,7 +495,7 @@
                     <label>[UPPERCASE]$INFO[ListItem.VideoCodec,• ][/UPPERCASE]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.FileExtension)</visible>
+                    <visible>!String.IsEmpty(ListItem.FileExtension)</visible>
                     <height>25</height>
                     <width>auto</width>
                     <font>size24</font>
@@ -524,7 +524,7 @@
                 </control>
                 <control type="fixedlist" id="55" description="bannerlist">
                     <visible>container.content(tvshows)</visible>
-                    <visible>!IsEmpty(Container.FolderPath)</visible>
+                    <visible>!String.IsEmpty(Container.FolderPath)</visible>
                     <viewtype label="539">Banners</viewtype>
                     <left>60</left>
                     <top>140</top>
@@ -676,7 +676,7 @@
                     <label>$VAR[RootLabel]</label>
                 </control>
                 <control type="label" description="Number of files">
-                    <visible>!IsEmpty(Control.GetLabel(7777))</visible>
+                    <visible>!String.IsEmpty(Control.GetLabel(7777))</visible>
                     <width min="60" max="120">auto</width>
                     <height>81</height>
                     <font>size26</font>
@@ -693,7 +693,7 @@
                 <label>$INFO[ListItem.Label]  [COLOR=Grey]$VAR[TopLabel][/COLOR]</label>
             </control>
             <control type="image" description="Rating">
-                <visible>!IsEmpty(ListItem.Rating)</visible>
+                <visible>!String.IsEmpty(ListItem.Rating)</visible>
                 <left>240r</left>
                 <top>90</top>
                 <height>24</height>
@@ -882,21 +882,21 @@
                             <label>[UPPERCASE]$INFO[ListItem.VideoResolution][/UPPERCASE]</label>
                         </control>
                         <control type="label">
-                            <visible>!IsEmpty(ListItem.VideoCodec)</visible>
+                            <visible>!String.IsEmpty(ListItem.VideoCodec)</visible>
                             <height>50</height>
                             <width>auto</width>
                             <bordersize>3</bordersize>
                             <label>[UPPERCASE]$INFO[ListItem.VideoCodec, • ][/UPPERCASE]</label>
                         </control>
                         <control type="label">
-                            <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+                            <visible>!String.IsEmpty(ListItem.AudioChannels)</visible>
                             <height>50</height>
                             <width>auto</width>
                             <bordersize>3</bordersize>
                             <label>[UPPERCASE]$VAR[audiochannels, • ][/UPPERCASE]</label>
                         </control>
                         <control type="label">
-                            <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+                            <visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
                             <height>50</height>
                             <width>auto</width>
                             <bordersize>3</bordersize>

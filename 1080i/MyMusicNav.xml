@@ -59,7 +59,7 @@
     </control>
     <control type="group">
       <control type="label" description="Heading">
-        <visible>IsEmpty(Container.FolderName) + !Control.IsVisible(500)</visible>
+        <visible>String.IsEmpty(Container.FolderName) + !Control.IsVisible(500)</visible>
         <include>HeadingR</include>
         <label>2</label>
       </control>

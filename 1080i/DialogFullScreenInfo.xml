@@ -101,13 +101,13 @@
           <texture>$INFO[VideoPlayer.VideoResolution,badges/video/,.png]</texture>
         </control>
         <control type="image">
-          <visible>!IsEmpty(VideoPlayer.VideoCodec)</visible>
+          <visible>!String.IsEmpty(VideoPlayer.VideoCodec)</visible>
           <height>50</height>
           <width>130</width>
           <texture>$INFO[VideoPlayer.VideoCodec,badges/video/,.png]</texture>
         </control>
         <control type="image">
-          <visible>!IsEmpty(VideoPlayer.AudioChannels)</visible>
+          <visible>!String.IsEmpty(VideoPlayer.AudioChannels)</visible>
           <height>50</height>
           <width>130</width>
           <texture>$INFO[VideoPlayer.AudioChannels,badges/channels,.png]</texture>

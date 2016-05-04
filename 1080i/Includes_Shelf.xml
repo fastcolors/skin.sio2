@@ -27,7 +27,7 @@
         <scrolltime>400</scrolltime>
         <itemlayout height="600" width="380">
             <control type="image">
-                <visible>IsEmpty(ListItem.Art(tvshow.poster))</visible>
+                <visible>String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
                 <left>100</left>
                 <top>16</top>
                 <width>340</width>
@@ -36,7 +36,7 @@
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
-                <visible>!IsEmpty(ListItem.Art(tvshow.poster))</visible>
+                <visible>!String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
                 <left>100</left>
                 <top>16</top>
                 <width>340</width>
@@ -59,7 +59,7 @@
                     <texture>shadow.png</texture>
                 </control>
                 <control type="image">
-                    <visible>IsEmpty(ListItem.Art(tvshow.poster))</visible>
+                    <visible>String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
                     <left>100</left>
                     <top>16</top>
                     <width>340</width>
@@ -68,7 +68,7 @@
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image">
-                    <visible>!IsEmpty(ListItem.Art(tvshow.poster))</visible>
+                    <visible>!String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
                     <left>100</left>
                     <top>16</top>
                     <width>340</width>
@@ -199,7 +199,7 @@
                 <content>
                     <item id="1" description="Addons">
                         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfAddons.1.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfAddons.1.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfAddons.1.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.1.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfAddons.1.Label)])</onclick>
@@ -207,7 +207,7 @@
                     </item>
                     <item id="2" description="Addons">
                         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfAddons.2.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfAddons.2.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfAddons.2.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.2.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfAddons.2.Label)])</onclick>
@@ -215,7 +215,7 @@
                     </item>
                     <item id="3" description="Addons">
                         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfAddons.3.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfAddons.3.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfAddons.3.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.3.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfAddons.3.Label)])</onclick>
@@ -223,7 +223,7 @@
                     </item>
                     <item id="4" description="Addons">
                         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfAddons.4.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfAddons.4.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfAddons.4.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.4.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfAddons.4.Label)])</onclick>
@@ -231,7 +231,7 @@
                     </item>
                     <item id="5" description="Addons">
                         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfAddons.5.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfAddons.5.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfAddons.5.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.5.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfAddons.5.Label)])</onclick>
@@ -239,7 +239,7 @@
                     </item>
                     <item id="6" description="Addons">
                         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfAddons.6.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfAddons.6.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfAddons.6.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.6.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfAddons.6.Label)])</onclick>
@@ -247,7 +247,7 @@
                     </item>
                     <item id="7" description="Addons">
                         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfAddons.7.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfAddons.7.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfAddons.7.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.7.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfAddons.7.Label)])</onclick>
@@ -255,7 +255,7 @@
                     </item>
                     <item id="8" description="Addons">
                         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfAddons.8.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfAddons.8.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfAddons.8.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.8.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfAddons.8.Label)])</onclick>
@@ -263,7 +263,7 @@
                     </item>
                     <item id="9" description="Addons">
                         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfAddons.9.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfAddons.9.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfAddons.9.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.9.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfAddons.9.Label)])</onclick>
@@ -271,7 +271,7 @@
                     </item>
                     <item id="10" description="Addons">
                         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfAddons.10.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfAddons.10.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfAddons.10.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.10.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfAddons.10.Label)])</onclick>
@@ -279,7 +279,7 @@
                     </item>
                     <item id="11" description="Addons">
                         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfAddons.11.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfAddons.11.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfAddons.11.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.11.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfAddons.11.Label)])</onclick>
@@ -287,7 +287,7 @@
                     </item>
                     <item id="12" description="Addons">
                         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfAddons.12.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfAddons.12.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfAddons.12.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.12.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfAddons.12.Label)])</onclick>
@@ -295,7 +295,7 @@
                     </item>
                     <item id="13" description="Addons">
                         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfAddons.13.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfAddons.13.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfAddons.13.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.13.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfAddons.13.Label)])</onclick>
@@ -303,7 +303,7 @@
                     </item>
                     <item id="14" description="Addons">
                         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfAddons.14.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfAddons.14.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfAddons.14.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.14.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfAddons.14.Label)])</onclick>
@@ -311,7 +311,7 @@
                     </item>
                     <item id="15" description="Addons">
                         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfAddons.15.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfAddons.15.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfAddons.15.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.15.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfAddons.15.Label)])</onclick>
@@ -319,7 +319,7 @@
                     </item>
                     <item id="16" description="Fav">
                         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfAddons.16.Path))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfAddons.16.Path))</visible>
                         <label>$INFO[Skin.String(ShelfAddons.16.Label)]</label>
                         <thumb>$INFO[Skin.String(ShelfAddons.16.Icon)]</thumb>
                         <onclick>$INFO[Skin.String(ShelfAddons.16.Path)]</onclick>
@@ -327,7 +327,7 @@
                     </item>
                     <item id="17" description="Fav">
                         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfAddons.17.Path))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfAddons.17.Path))</visible>
                         <label>$INFO[Skin.String(ShelfAddons.17.Label)]</label>
                         <thumb>$INFO[Skin.String(ShelfAddons.17.Icon)]</thumb>
                         <onclick>$INFO[Skin.String(ShelfAddons.17.Path)]</onclick>
@@ -335,7 +335,7 @@
                     </item>
                     <item id="18" description="Fav">
                         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfAddons.18.Path))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfAddons.18.Path))</visible>
                         <label>$INFO[Skin.String(ShelfAddons.18.Label)]</label>
                         <thumb>$INFO[Skin.String(ShelfAddons.18.Icon)]</thumb>
                         <onclick>$INFO[Skin.String(ShelfAddons.18.Path)]</onclick>
@@ -343,7 +343,7 @@
                     </item>
                     <item id="19" description="Fav">
                         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfAddons.19.Path))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfAddons.19.Path))</visible>
                         <label>$INFO[Skin.String(ShelfAddons.19.Label)]</label>
                         <thumb>$INFO[Skin.String(ShelfAddons.19.Icon)]</thumb>
                         <onclick>$INFO[Skin.String(ShelfAddons.19.Path)]</onclick>
@@ -351,7 +351,7 @@
                     </item>
                     <item id="20" description="Fav">
                         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfAddons.20.Path))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfAddons.20.Path))</visible>
                         <label>$INFO[Skin.String(ShelfAddons.20.Label)]</label>
                         <thumb>$INFO[Skin.String(ShelfAddons.20.Icon)]</thumb>
                         <onclick>$INFO[Skin.String(ShelfAddons.20.Path)]</onclick>
@@ -378,105 +378,105 @@
                 <include>SquareShortcutsCommons</include>
                 <content>
                     <item id="1" description="Addons">
-                        <visible>!IsEmpty(Skin.String(ShelfVAddons.1.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfVAddons.1.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfVAddons.1.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfVAddons.1.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfVAddons.1.Label)])</onclick>
                         <property name="ItemType">$LOCALIZE[111]</property>
                     </item>
                     <item id="2" description="Addons">
-                        <visible>!IsEmpty(Skin.String(ShelfVAddons.2.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfVAddons.2.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfVAddons.2.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfVAddons.2.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfVAddons.2.Label)])</onclick>
                         <property name="ItemType">$LOCALIZE[111]</property>
                     </item>
                     <item id="3" description="Addons">
-                        <visible>!IsEmpty(Skin.String(ShelfVAddons.3.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfVAddons.3.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfVAddons.3.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfVAddons.3.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfVAddons.3.Label)])</onclick>
                         <property name="ItemType">$LOCALIZE[111]</property>
                     </item>
                     <item id="4" description="Addons">
-                        <visible>!IsEmpty(Skin.String(ShelfVAddons.4.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfVAddons.4.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfVAddons.4.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfVAddons.4.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfVAddons.4.Label)])</onclick>
                         <property name="ItemType">$LOCALIZE[111]</property>
                     </item>
                     <item id="5" description="Addons">
-                        <visible>!IsEmpty(Skin.String(ShelfVAddons.5.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfVAddons.5.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfVAddons.5.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfVAddons.5.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfVAddons.5.Label)])</onclick>
                         <property name="ItemType">$LOCALIZE[111]</property>
                     </item>
                     <item id="6" description="Addons">
-                        <visible>!IsEmpty(Skin.String(ShelfVAddons.6.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfVAddons.6.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfVAddons.6.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfVAddons.6.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfVAddons.6.Label)])</onclick>
                         <property name="ItemType">$LOCALIZE[111]</property>
                     </item>
                     <item id="7" description="Addons">
-                        <visible>!IsEmpty(Skin.String(ShelfVAddons.7.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfVAddons.7.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfVAddons.7.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfVAddons.7.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfVAddons.7.Label)])</onclick>
                         <property name="ItemType">$LOCALIZE[111]</property>
                     </item>
                     <item id="8" description="Addons">
-                        <visible>!IsEmpty(Skin.String(ShelfVAddons.8.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfVAddons.8.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfVAddons.8.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfVAddons.8.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfVAddons.8.Label)])</onclick>
                         <property name="ItemType">$LOCALIZE[111]</property>
                     </item>
                     <item id="9" description="Addons">
-                        <visible>!IsEmpty(Skin.String(ShelfVAddons.9.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfVAddons.9.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfVAddons.9.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfVAddons.9.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfVAddons.9.Label)])</onclick>
                         <property name="ItemType">$LOCALIZE[111]</property>
                     </item>
                     <item id="10" description="Addons">
-                        <visible>!IsEmpty(Skin.String(ShelfVAddons.10.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfVAddons.10.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfVAddons.10.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfVAddons.10.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfVAddons.10.Label)])</onclick>
                         <property name="ItemType">$LOCALIZE[111]</property>
                     </item>
                     <item id="11" description="Addons">
-                        <visible>!IsEmpty(Skin.String(ShelfVAddons.11.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfVAddons.11.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfVAddons.11.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfVAddons.11.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfVAddons.11.Label)])</onclick>
                         <property name="ItemType">$LOCALIZE[111]</property>
                     </item>
                     <item id="12" description="Addons">
-                        <visible>!IsEmpty(Skin.String(ShelfVAddons.12.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfVAddons.12.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfVAddons.12.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfVAddons.12.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfVAddons.12.Label)])</onclick>
                         <property name="ItemType">$LOCALIZE[111]</property>
                     </item>
                     <item id="13" description="Addons">
-                        <visible>!IsEmpty(Skin.String(ShelfVAddons.13.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfVAddons.13.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfVAddons.13.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfVAddons.13.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfVAddons.13.Label)])</onclick>
                         <property name="ItemType">$LOCALIZE[111]</property>
                     </item>
                     <item id="14" description="Addons">
-                        <visible>!IsEmpty(Skin.String(ShelfVAddons.14.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfVAddons.14.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfVAddons.14.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfVAddons.14.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfVAddons.14.Label)])</onclick>
                         <property name="ItemType">$LOCALIZE[111]</property>
                     </item>
                     <item id="15" description="Addons">
-                        <visible>!IsEmpty(Skin.String(ShelfVAddons.15.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfVAddons.15.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfVAddons.15.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfVAddons.15.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfVAddons.15.Label)])</onclick>
@@ -504,7 +504,7 @@
                 <content>
                     <item id="1" description="Addons">
                         <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfPictures.1.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfPictures.1.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfPictures.1.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.1.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfPictures.1.Label)])</onclick>
@@ -512,7 +512,7 @@
                     </item>
                     <item id="2" description="Addons">
                         <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfPictures.2.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfPictures.2.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfPictures.2.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.2.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfPictures.2.Label)])</onclick>
@@ -520,7 +520,7 @@
                     </item>
                     <item id="3" description="Addons">
                         <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfPictures.3.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfPictures.3.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfPictures.3.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.3.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfPictures.3.Label)])</onclick>
@@ -528,7 +528,7 @@
                     </item>
                     <item id="4" description="Addons">
                         <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfPictures.4.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfPictures.4.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfPictures.4.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.4.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfPictures.4.Label)])</onclick>
@@ -536,7 +536,7 @@
                     </item>
                     <item id="5" description="Addons">
                         <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfPictures.5.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfPictures.5.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfPictures.5.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.5.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfPictures.5.Label)])</onclick>
@@ -544,7 +544,7 @@
                     </item>
                     <item id="6" description="Script">
                         <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfPictures.6.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfPictures.6.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfPictures.6.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.6.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfPictures.6.Label)])</onclick>
@@ -552,7 +552,7 @@
                     </item>
                     <item id="7" description="Script">
                         <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfPictures.7.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfPictures.7.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfPictures.7.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.7.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfPictures.7.Label)])</onclick>
@@ -560,7 +560,7 @@
                     </item>
                     <item id="8" description="Script">
                         <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfPictures.8.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfPictures.8.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfPictures.8.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.8.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfPictures.8.Label)])</onclick>
@@ -568,14 +568,14 @@
                     </item>
                     <item id="9" description="Script">
                         <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfPictures.9.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfPictures.9.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfPictures.9.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.9.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfPictures.9.Label)])</onclick>
                         <property name="ItemType">$LOCALIZE[111]</property>
                     </item>
                     <item id="10" description="Script">
-                        <visible>!IsEmpty(Skin.String(ShelfPictures.10.Label))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfPictures.10.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfPictures.10.Label))]</label>
                         <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.10.Label))]</thumb>
                         <onclick>RunAddon($INFO[Skin.String(ShelfPictures.10.Label)])</onclick>
@@ -583,7 +583,7 @@
                     </item>
                     <item id="11" description="Fav">
                         <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfPictures.11.Path))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfPictures.11.Path))</visible>
                         <label>$INFO[Skin.String(ShelfPictures.11.Label)]</label>
                         <thumb>$INFO[Skin.String(ShelfPictures.11.Icon)]</thumb>
                         <onclick>$INFO[Skin.String(ShelfPictures.11.Path)]</onclick>
@@ -591,7 +591,7 @@
                     </item>
                     <item id="12" description="Fav">
                         <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfPictures.12.Path))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfPictures.12.Path))</visible>
                         <label>$INFO[Skin.String(ShelfPictures.12.Label)]</label>
                         <thumb>$INFO[Skin.String(ShelfPictures.12.Icon)]</thumb>
                         <onclick>$INFO[Skin.String(ShelfPictures.12.Path)]</onclick>
@@ -599,7 +599,7 @@
                     </item>
                     <item id="13" description="Fav">
                         <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfPictures.13.Path))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfPictures.13.Path))</visible>
                         <label>$INFO[Skin.String(ShelfPictures.13.Label)]</label>
                         <thumb>$INFO[Skin.String(ShelfPictures.13.Icon)]</thumb>
                         <onclick>$INFO[Skin.String(ShelfPictures.13.Path)]</onclick>
@@ -607,7 +607,7 @@
                     </item>
                     <item id="14" description="Fav">
                         <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfPictures.14.Path))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfPictures.14.Path))</visible>
                         <label>$INFO[Skin.String(ShelfPictures.14.Label)]</label>
                         <thumb>$INFO[Skin.String(ShelfPictures.14.Icon)]</thumb>
                         <onclick>$INFO[Skin.String(ShelfPictures.14.Path)]</onclick>
@@ -615,7 +615,7 @@
                     </item>
                     <item id="15" description="Fav">
                         <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
-                        <visible>!IsEmpty(Skin.String(ShelfPictures.15.Path))</visible>
+                        <visible>!String.IsEmpty(Skin.String(ShelfPictures.15.Path))</visible>
                         <label>$INFO[Skin.String(ShelfPictures.15.Label)]</label>
                         <thumb>$INFO[Skin.String(ShelfPictures.15.Icon)]</thumb>
                         <onclick>$INFO[Skin.String(ShelfPictures.15.Path)]</onclick>
@@ -803,13 +803,13 @@
                 <include>MoviesShortcutsCommons</include>
                 <content>
                     <item id="0" description="Movies">
-                        <visible>Player.HasVideo + IsEmpty(Player.Art(tvshow.poster))</visible>
+                        <visible>Player.HasVideo + String.IsEmpty(Player.Art(tvshow.poster))</visible>
                         <label>$INFO[VideoPlayer.Title]</label>
                         <thumb>$INFO[VideoPlayer.Cover]</thumb>
                         <onclick>fullscreen</onclick>
                     </item>
                     <item id="0" description="Movies">
-                        <visible>Player.HasVideo + !IsEmpty(Player.Art(tvshow.poster))</visible>
+                        <visible>Player.HasVideo + !String.IsEmpty(Player.Art(tvshow.poster))</visible>
                         <label>$INFO[VideoPlayer.Title]</label>
                         <thumb>$INFO[Player.Art(tvshow.poster)]</thumb>
                         <onclick>fullscreen</onclick>

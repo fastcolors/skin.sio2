@@ -39,7 +39,7 @@
             <onclick>Skin.Reset(shutdown)</onclick>
             <onclick>Skin.Reset(quitter)</onclick>
             <onclick>Close</onclick>
-            <selected>IsEmpty(Skin.String(shutdown))</selected>
+            <selected>String.IsEmpty(Skin.String(shutdown))</selected>
           </control>
           <control type="radiobutton" id="702" description="Suspend">
             <width>525</width>

@@ -42,7 +42,7 @@
         <onright>noop</onright>
       </control>
       <control type="label" description="Heading">
-        <visible>!IsEmpty(Container.FolderName)</visible>
+        <visible>!String.IsEmpty(Container.FolderName)</visible>
         <include>HeadingR</include>
         <label>$VAR[RootLabel]</label>
       </control>
@@ -126,7 +126,7 @@
         <onright>noop</onright>
       </control>
       <control type="label" description="Heading">
-        <visible>!IsEmpty(Container.FolderName)</visible>
+        <visible>!String.IsEmpty(Container.FolderName)</visible>
         <include>HeadingR</include>
         <label>$VAR[RootLabel]</label>
       </control>
@@ -218,7 +218,7 @@
                <control type="image" description="Rating">
                 <animation effect="fade" start="0" end="100" time="150">Focus</animation>
                 <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
-                <visible>!IsEmpty(ListItem.StarRating)</visible>
+                <visible>!String.IsEmpty(ListItem.StarRating)</visible>
                 <centerleft>227</centerleft>
                 <top>436</top>
                  <width>100</width>
@@ -424,31 +424,31 @@
         </focusedlayout>
         <content>
           <item>
-            <visible>!IsEmpty(ListItem.Property(Artist_Genre))</visible>
+            <visible>!String.IsEmpty(ListItem.Property(Artist_Genre))</visible>
             <label>515</label>
             <label2>$INFO[ListItem.Property(Artist_Genre)]</label2>
             <onclick>noop</onclick>
           </item>
           <item>
-            <visible>!IsEmpty(ListItem.Property(Artist_Formed))</visible>
+            <visible>!String.IsEmpty(ListItem.Property(Artist_Formed))</visible>
             <label>21894</label>
             <label2>$INFO[ListItem.Property(Artist_Formed)]</label2>
             <onclick>noop</onclick>
           </item>
           <item>
-            <visible>!IsEmpty(ListItem.Property(Artist_Disbanded))</visible>
+            <visible>!String.IsEmpty(ListItem.Property(Artist_Disbanded))</visible>
             <label>21896</label>
             <label2>$INFO[ListItem.Property(Artist_Disbanded)]</label2>
             <onclick>noop</onclick>
           </item>
           <item>
-            <visible>!IsEmpty(ListItem.Property(Artist_Born))</visible>
+            <visible>!String.IsEmpty(ListItem.Property(Artist_Born))</visible>
             <label>21893</label>
             <label2>$INFO[ListItem.Property(Artist_Born)]</label2>
             <onclick>noop</onclick>
           </item>
           <item>
-            <visible>!IsEmpty(ListItem.Property(Artist_Died))</visible>
+            <visible>!String.IsEmpty(ListItem.Property(Artist_Died))</visible>
             <label>21897</label>
             <label2>$INFO[ListItem.Property(Artist_Died)]</label2>
             <onclick>noop</onclick>

@@ -49,7 +49,7 @@
                     <font>size26</font>
                 </control>
                 <control type="label" description="Next item">
-                    <visible>!IsEmpty(VideoPlayer.NextTitle)</visible>
+                    <visible>!String.IsEmpty(VideoPlayer.NextTitle)</visible>
                     <left>300</left>
                     <top>1</top>
                     <width>1320</width>

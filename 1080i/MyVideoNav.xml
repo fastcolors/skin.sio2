@@ -11,7 +11,7 @@
         <control type="group">
             <include>WindowsTopInfos</include>
             <control type="label" description="Heading">
-                <visible>IsEmpty(Container.FolderName)</visible>
+                <visible>String.IsEmpty(Container.FolderName)</visible>
                 <include>HeadingR</include>
                 <label>3</label>
             </control>

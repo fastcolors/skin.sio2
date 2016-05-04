@@ -120,7 +120,7 @@
                         <left>1610</left>
                         <top>600</top>
                         <control type="image" description="CoverReal">
-                            <visible>IsEmpty(Player.Art(tvshow.poster)) + !Window.IsActive(610)</visible>
+                            <visible>String.IsEmpty(Player.Art(tvshow.poster)) + !Window.IsActive(610)</visible>
                             <height>300</height>
                             <width>220</width>
                             <aspectratio>keep</aspectratio>

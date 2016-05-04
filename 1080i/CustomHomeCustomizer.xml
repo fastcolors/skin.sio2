@@ -34,7 +34,7 @@
                     <scrolltime tween="sine" easing="inout">280</scrolltime>
                     <itemlayout height="230" width="300">
                         <control type="Image" description="THUMB">
-                            <visible>!IsEmpty(Listitem.thumb)</visible>
+                            <visible>!String.IsEmpty(Listitem.thumb)</visible>
                             <left>20</left>
                             <top>48</top>
                             <height>168</height>
@@ -43,7 +43,7 @@
                             <aspectratio scalediffuse="false">scale</aspectratio>
                         </control>
                         <control type="Image" description="THUMB">
-                            <visible>IsEmpty(Listitem.thumb)</visible>
+                            <visible>String.IsEmpty(Listitem.thumb)</visible>
                             <left>20</left>
                             <top>48</top>
                             <height>168</height>
@@ -71,7 +71,7 @@
                                 <texture>images/atvslider.png</texture>
                             </control>
                             <control type="Image" description="THUMB">
-                                <visible>!IsEmpty(Listitem.thumb)</visible>
+                                <visible>!String.IsEmpty(Listitem.thumb)</visible>
                                 <left>20</left>
                                 <top>48</top>
                                 <height>168</height>
@@ -80,7 +80,7 @@
                                 <aspectratio scalediffuse="false">scale</aspectratio>
                             </control>
                             <control type="Image" description="THUMB">
-                                <visible>IsEmpty(Listitem.thumb)</visible>
+                                <visible>String.IsEmpty(Listitem.thumb)</visible>
                                 <left>20</left>
                                 <top>48</top>
                                 <height>168</height>
@@ -226,235 +226,235 @@
                             <onclick>ActivateWindow(pvrsettings)</onclick>
                         </item>
                         <item id="601" description="HomeFav">
-                            <visible>!IsEmpty(Skin.String(HomeFav.1.Label))</visible>
+                            <visible>!String.IsEmpty(Skin.String(HomeFav.1.Label))</visible>
                             <label>$INFO[Skin.String(HomeFav.1.Label)]</label>
                             <label2>+ $LOCALIZE[1036]</label2>
                             <thumb>$INFO[Skin.String(HomeFav.1.Icon)]</thumb>
                             <onclick>SetFocus(9000)</onclick>
                         </item>
                         <item id="601" description="HomeFav">
-                            <visible>IsEmpty(Skin.String(HomeFav.1.Label))</visible>
+                            <visible>String.IsEmpty(Skin.String(HomeFav.1.Label))</visible>
                             <thumb>DefaultAddon.png</thumb>
                             <label>+ $LOCALIZE[1036]</label>
                             <onclick>RunScript(script.favourites,property=HomeFav.1)</onclick>
                         </item>
                         <item id="602" description="HomeFav">
-                            <visible>!IsEmpty(Skin.String(HomeFav.2.Label))</visible>
+                            <visible>!String.IsEmpty(Skin.String(HomeFav.2.Label))</visible>
                             <label>$INFO[Skin.String(HomeFav.2.Label)]</label>
                             <label2>+ $LOCALIZE[1036]</label2>
                             <thumb>$INFO[Skin.String(HomeFav.2.Icon)]</thumb>
                             <onclick>SetFocus(9000)</onclick>
                         </item>
                         <item id="602" description="HomeFav">
-                            <visible>IsEmpty(Skin.String(HomeFav.2.Label))</visible>
+                            <visible>String.IsEmpty(Skin.String(HomeFav.2.Label))</visible>
                             <thumb>DefaultAddon.png</thumb>
                             <label>+ $LOCALIZE[1036]</label>
                             <onclick>RunScript(script.favourites,property=HomeFav.2)</onclick>
                         </item>
                         <item id="603" description="HomeFav">
-                            <visible>!IsEmpty(Skin.String(HomeFav.3.Label))</visible>
+                            <visible>!String.IsEmpty(Skin.String(HomeFav.3.Label))</visible>
                             <label>$INFO[Skin.String(HomeFav.3.Label)]</label>
                             <label2>+ $LOCALIZE[1036]</label2>
                             <thumb>$INFO[Skin.String(HomeFav.3.Icon)]</thumb>
                             <onclick>SetFocus(9000)</onclick>
                         </item>
                         <item id="603" description="HomeFav">
-                            <visible>IsEmpty(Skin.String(HomeFav.3.Label))</visible>
+                            <visible>String.IsEmpty(Skin.String(HomeFav.3.Label))</visible>
                             <thumb>DefaultAddon.png</thumb>
                             <label>+ $LOCALIZE[1036]</label>
                             <onclick>RunScript(script.favourites,property=HomeFav.3)</onclick>
                         </item>
                         <item id="604" description="HomeFav">
-                            <visible>!IsEmpty(Skin.String(HomeFav.4.Label))</visible>
+                            <visible>!String.IsEmpty(Skin.String(HomeFav.4.Label))</visible>
                             <label>$INFO[Skin.String(HomeFav.4.Label)]</label>
                             <label2>+ $LOCALIZE[1036]</label2>
                             <thumb>$INFO[Skin.String(HomeFav.4.Icon)]</thumb>
                             <onclick>SetFocus(9000)</onclick>
                         </item>
                         <item id="604" description="HomeFav">
-                            <visible>IsEmpty(Skin.String(HomeFav.4.Label))</visible>
+                            <visible>String.IsEmpty(Skin.String(HomeFav.4.Label))</visible>
                             <thumb>DefaultAddon.png</thumb>
                             <label>+ $LOCALIZE[1036]</label>
                             <onclick>RunScript(script.favourites,property=HomeFav.4)</onclick>
                         </item>
                         <item id="605" description="HomeFav">
-                            <visible>!IsEmpty(Skin.String(HomeFav.5.Label))</visible>
+                            <visible>!String.IsEmpty(Skin.String(HomeFav.5.Label))</visible>
                             <label>$INFO[Skin.String(HomeFav.5.Label)]</label>
                             <label2>+ $LOCALIZE[1036]</label2>
                             <thumb>$INFO[Skin.String(HomeFav.5.Icon)]</thumb>
                             <onclick>SetFocus(9000)</onclick>
                         </item>
                         <item id="605" description="HomeFav">
-                            <visible>IsEmpty(Skin.String(HomeFav.5.Label))</visible>
+                            <visible>String.IsEmpty(Skin.String(HomeFav.5.Label))</visible>
                             <thumb>DefaultAddon.png</thumb>
                             <label>+ $LOCALIZE[1036]</label>
                             <onclick>RunScript(script.favourites,property=HomeFav.5)</onclick>
                         </item>
                         <item id="606" description="HomeFav">
-                            <visible>!IsEmpty(Skin.String(HomeFav.6.Label))</visible>
+                            <visible>!String.IsEmpty(Skin.String(HomeFav.6.Label))</visible>
                             <label>$INFO[Skin.String(HomeFav.6.Label)]</label>
                             <label2>+ $LOCALIZE[1036]</label2>
                             <thumb>$INFO[Skin.String(HomeFav.6.Icon)]</thumb>
                             <onclick>SetFocus(9000)</onclick>
                         </item>
                         <item id="606" description="HomeFav">
-                            <visible>IsEmpty(Skin.String(HomeFav.6.Label))</visible>
+                            <visible>String.IsEmpty(Skin.String(HomeFav.6.Label))</visible>
                             <thumb>DefaultAddon.png</thumb>
                             <label>+ $LOCALIZE[1036]</label>
                             <onclick>RunScript(script.favourites,property=HomeFav.6)</onclick>
                         </item>
                         <item id="401" description="AddonCustom">
-                            <visible>!IsEmpty(Skin.String(HomeAddon.1.Label))</visible>
+                            <visible>!String.IsEmpty(Skin.String(HomeAddon.1.Label))</visible>
                             <thumb>$INFO[Skin.String(HomeAddon.1.Icon)]</thumb>
                             <label2>$INFO[system.addonicon(Skin.String(HomeAddon.1.Label))]</label2>
                             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.1.Label))]</label>
                             <onclick>SetFocus(9000)</onclick>
                         </item>
                         <item id="401" description="AddonCustom">
-                            <visible>IsEmpty(Skin.String(HomeAddon.1.Label))</visible>
+                            <visible>String.IsEmpty(Skin.String(HomeAddon.1.Label))</visible>
                             <thumb>DefaultAddon.png</thumb>
                             <label>+ $LOCALIZE[24000]</label>
                             <onclick>Skin.SetAddon(HomeAddon.1.Label,xbmc.python.pluginsource)</onclick>
                             <onclick>Skin.Reset(HomeAddon.1.Icon)</onclick>
                         </item>
                         <item id="402" description="AddonCustom">
-                            <visible>!IsEmpty(Skin.String(HomeAddon.2.Label))</visible>
+                            <visible>!String.IsEmpty(Skin.String(HomeAddon.2.Label))</visible>
                             <thumb>$INFO[Skin.String(HomeAddon.2.Icon)]</thumb>
                             <label2>$INFO[system.addonicon(Skin.String(HomeAddon.2.Label))]</label2>
                             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.2.Label))]</label>
                             <onclick>SetFocus(9000)</onclick>
                         </item>
                         <item id="402" description="AddonCustom">
-                            <visible>IsEmpty(Skin.String(HomeAddon.2.Label))</visible>
+                            <visible>String.IsEmpty(Skin.String(HomeAddon.2.Label))</visible>
                             <thumb>DefaultAddon.png</thumb>
                             <label>+ $LOCALIZE[24000]</label>
                             <onclick>Skin.SetAddon(HomeAddon.2.Label,xbmc.python.pluginsource)</onclick>
                             <onclick>Skin.Reset(HomeAddon.2.Icon)</onclick>
                         </item>
                         <item id="403" description="AddonCustom">
-                            <visible>!IsEmpty(Skin.String(HomeAddon.3.Label))</visible>
+                            <visible>!String.IsEmpty(Skin.String(HomeAddon.3.Label))</visible>
                             <thumb>$INFO[Skin.String(HomeAddon.3.Icon)]</thumb>
                             <label2>$INFO[system.addonicon(Skin.String(HomeAddon.3.Label))]</label2>
                             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.3.Label))]</label>
                             <onclick>SetFocus(9000)</onclick>
                         </item>
                         <item id="403" description="AddonCustom">
-                            <visible>IsEmpty(Skin.String(HomeAddon.3.Label))</visible>
+                            <visible>String.IsEmpty(Skin.String(HomeAddon.3.Label))</visible>
                             <thumb>DefaultAddon.png</thumb>
                             <label>+ $LOCALIZE[24000]</label>
                             <onclick>Skin.SetAddon(HomeAddon.3.Label,xbmc.python.pluginsource)</onclick>
                             <onclick>Skin.Reset(HomeAddon.3.Icon)</onclick>
                         </item>
                         <item id="404" description="AddonCustom">
-                            <visible>!IsEmpty(Skin.String(HomeAddon.4.Label))</visible>
+                            <visible>!String.IsEmpty(Skin.String(HomeAddon.4.Label))</visible>
                             <thumb>$INFO[Skin.String(HomeAddon.4.Icon)]</thumb>
                             <label2>$INFO[system.addonicon(Skin.String(HomeAddon.4.Label))]</label2>
                             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.4.Label))]</label>
                             <onclick>SetFocus(9000)</onclick>
                         </item>
                         <item id="404" description="AddonCustom">
-                            <visible>IsEmpty(Skin.String(HomeAddon.4.Label))</visible>
+                            <visible>String.IsEmpty(Skin.String(HomeAddon.4.Label))</visible>
                             <thumb>DefaultAddon.png</thumb>
                             <label>+ $LOCALIZE[24000]</label>
                             <onclick>Skin.SetAddon(HomeAddon.4.Label,xbmc.python.pluginsource)</onclick>
                             <onclick>Skin.Reset(HomeAddon.4.Icon)</onclick>
                         </item>
                         <item id="405" description="AddonCustom">
-                            <visible>!IsEmpty(Skin.String(HomeAddon.5.Label))</visible>
+                            <visible>!String.IsEmpty(Skin.String(HomeAddon.5.Label))</visible>
                             <thumb>$INFO[Skin.String(HomeAddon.5.Icon)]</thumb>
                             <label2>$INFO[system.addonicon(Skin.String(HomeAddon.5.Label))]</label2>
                             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.5.Label))]</label>
                             <onclick>SetFocus(9000)</onclick>
                         </item>
                         <item id="405" description="AddonCustom">
-                            <visible>IsEmpty(Skin.String(HomeAddon.5.Label))</visible>
+                            <visible>String.IsEmpty(Skin.String(HomeAddon.5.Label))</visible>
                             <thumb>DefaultAddon.png</thumb>
                             <label>+ $LOCALIZE[24000]</label>
                             <onclick>Skin.SetAddon(HomeAddon.5.Label,xbmc.python.pluginsource)</onclick>
                             <onclick>Skin.Reset(HomeAddon.5.Icon)</onclick>
                         </item>
                         <item id="406" description="AddonCustom">
-                            <visible>!IsEmpty(Skin.String(HomeAddon.6.Label))</visible>
+                            <visible>!String.IsEmpty(Skin.String(HomeAddon.6.Label))</visible>
                             <thumb>$INFO[Skin.String(HomeAddon.6.Icon)]</thumb>
                             <label2>$INFO[system.addonicon(Skin.String(HomeAddon.6.Label))]</label2>
                             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.6.Label))]</label>
                             <onclick>SetFocus(9000)</onclick>
                         </item>
                         <item id="406" description="AddonCustom">
-                            <visible>IsEmpty(Skin.String(HomeAddon.6.Label))</visible>
+                            <visible>String.IsEmpty(Skin.String(HomeAddon.6.Label))</visible>
                             <thumb>DefaultAddon.png</thumb>
                             <label>+ $LOCALIZE[24000]</label>
                             <onclick>Skin.SetAddon(HomeAddon.6.Label,xbmc.python.pluginsource)</onclick>
                             <onclick>Skin.Reset(HomeAddon.6.Icon)</onclick>
                         </item>
                         <item id="501" description="ScriptCustom">
-                            <visible>!IsEmpty(Skin.String(HomeAddon.7.Label))</visible>
+                            <visible>!String.IsEmpty(Skin.String(HomeAddon.7.Label))</visible>
                             <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.7.Label))]</thumb>
                             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.7.Label))]</label>
                             <onclick>Skin.SetAddon(HomeAddon.7.Label,xbmc.python.script)</onclick>
                         </item>
                         <item id="501" description="ScriptCustom">
-                            <visible>IsEmpty(Skin.String(HomeAddon.7.Label))</visible>
+                            <visible>String.IsEmpty(Skin.String(HomeAddon.7.Label))</visible>
                             <thumb>DefaultAddon.png</thumb>
                             <label>+ $LOCALIZE[24009]</label>
                             <onclick>Skin.SetAddon(HomeAddon.7.Label,xbmc.python.script)</onclick>
                         </item>
                         <item id="502" description="ScriptCustom">
-                            <visible>!IsEmpty(Skin.String(HomeAddon.8.Label))</visible>
+                            <visible>!String.IsEmpty(Skin.String(HomeAddon.8.Label))</visible>
                             <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.8.Label))]</thumb>
                             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.8.Label))]</label>
                             <onclick>Skin.SetAddon(HomeAddon.8.Label,xbmc.python.script)</onclick>
                         </item>
                         <item id="502" description="ScriptCustom">
-                            <visible>IsEmpty(Skin.String(HomeAddon.8.Label))</visible>
+                            <visible>String.IsEmpty(Skin.String(HomeAddon.8.Label))</visible>
                             <thumb>DefaultAddon.png</thumb>
                             <label>+ $LOCALIZE[24009]</label>
                             <onclick>Skin.SetAddon(HomeAddon.8.Label,xbmc.python.script)</onclick>
                         </item>
                         <item id="503" description="ScriptCustom">
-                            <visible>!IsEmpty(Skin.String(HomeAddon.9.Label))</visible>
+                            <visible>!String.IsEmpty(Skin.String(HomeAddon.9.Label))</visible>
                             <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.9.Label))]</thumb>
                             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.9.Label))]</label>
                             <onclick>Skin.SetAddon(HomeAddon.9.Label,xbmc.python.script)</onclick>
                         </item>
                         <item id="503" description="ScriptCustom">
-                            <visible>IsEmpty(Skin.String(HomeAddon.9.Label))</visible>
+                            <visible>String.IsEmpty(Skin.String(HomeAddon.9.Label))</visible>
                             <thumb>DefaultAddon.png</thumb>
                             <label>+ $LOCALIZE[24009]</label>
                             <onclick>Skin.SetAddon(HomeAddon.9.Label,xbmc.python.script)</onclick>
                         </item>
                         <item id="504" description="ScriptCustom">
-                            <visible>!IsEmpty(Skin.String(HomeAddon.10.Label))</visible>
+                            <visible>!String.IsEmpty(Skin.String(HomeAddon.10.Label))</visible>
                             <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.10.Label))]</thumb>
                             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.10.Label))]</label>
                             <onclick>Skin.SetAddon(HomeAddon.10.Label,xbmc.python.script)</onclick>
                         </item>
                         <item id="504" description="ScriptCustom">
-                            <visible>IsEmpty(Skin.String(HomeAddon.10.Label))</visible>
+                            <visible>String.IsEmpty(Skin.String(HomeAddon.10.Label))</visible>
                             <thumb>DefaultAddon.png</thumb>
                             <label>+ $LOCALIZE[24009]</label>
                             <onclick>Skin.SetAddon(HomeAddon.10.Label,xbmc.python.script)</onclick>
                         </item>
                         <item id="505" description="ScriptCustom">
-                            <visible>!IsEmpty(Skin.String(HomeAddon.11.Label))</visible>
+                            <visible>!String.IsEmpty(Skin.String(HomeAddon.11.Label))</visible>
                             <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.11.Label))]</thumb>
                             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.11.Label))]</label>
                             <onclick>Skin.SetAddon(HomeAddon.11.Label,xbmc.python.script)</onclick>
                         </item>
                         <item id="505" description="ScriptCustom">
-                            <visible>IsEmpty(Skin.String(HomeAddon.11.Label))</visible>
+                            <visible>String.IsEmpty(Skin.String(HomeAddon.11.Label))</visible>
                             <thumb>DefaultAddon.png</thumb>
                             <label>+ $LOCALIZE[24009]</label>
                             <onclick>Skin.SetAddon(HomeAddon.11.Label,xbmc.python.script)</onclick>
                         </item>
                         <item id="506" description="ScriptCustom">
-                            <visible>!IsEmpty(Skin.String(HomeAddon.12.Label))</visible>
+                            <visible>!String.IsEmpty(Skin.String(HomeAddon.12.Label))</visible>
                             <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.12.Label))]</thumb>
                             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.12.Label))]</label>
                             <onclick>Skin.SetAddon(HomeAddon.12.Label,xbmc.python.script)</onclick>
                         </item>
                         <item id="506" description="ScriptCustom">
-                            <visible>IsEmpty(Skin.String(HomeAddon.12.Label))</visible>
+                            <visible>String.IsEmpty(Skin.String(HomeAddon.12.Label))</visible>
                             <thumb>DefaultAddon.png</thumb>
                             <label>+ $LOCALIZE[24009]</label>
                             <onclick>Skin.SetAddon(HomeAddon.12.Label,xbmc.python.script)</onclick>
@@ -1046,7 +1046,7 @@
             </content>
         </control>
         <control type="group" description="ADDONS">
-            <visible>[Container(50).HasFocus(601) + IsEmpty(Skin.String(HomeFav.1.Label))] | [Container(50).HasFocus(602) + IsEmpty(Skin.String(HomeFav.2.Label))] | [Container(50).HasFocus(603) + IsEmpty(Skin.String(HomeFav.3.Label))] | [Container(50).HasFocus(604) + IsEmpty(Skin.String(HomeFav.4.Label))] | [Container(50).HasFocus(605) + IsEmpty(Skin.String(HomeFav.5.Label))] | [Container(50).HasFocus(606) + IsEmpty(Skin.String(HomeFav.6.Label))]</visible>
+            <visible>[Container(50).HasFocus(601) + String.IsEmpty(Skin.String(HomeFav.1.Label))] | [Container(50).HasFocus(602) + String.IsEmpty(Skin.String(HomeFav.2.Label))] | [Container(50).HasFocus(603) + String.IsEmpty(Skin.String(HomeFav.3.Label))] | [Container(50).HasFocus(604) + String.IsEmpty(Skin.String(HomeFav.4.Label))] | [Container(50).HasFocus(605) + String.IsEmpty(Skin.String(HomeFav.5.Label))] | [Container(50).HasFocus(606) + String.IsEmpty(Skin.String(HomeFav.6.Label))]</visible>
             <top>30</top>
             <left>40</left>
             <control type="label">
@@ -1059,7 +1059,7 @@
             </control>
         </control>
         <control type="group" description="CUSTOM ICONS FAVS">
-            <visible>[Container(50).HasFocus(601) + !IsEmpty(Skin.String(HomeFav.1.Label))] | [Container(50).HasFocus(602) + !IsEmpty(Skin.String(HomeFav.2.Label))] | [Container(50).HasFocus(603) + !IsEmpty(Skin.String(HomeFav.3.Label))] | [Container(50).HasFocus(604) + !IsEmpty(Skin.String(HomeFav.4.Label))] | [Container(50).HasFocus(605) + !IsEmpty(Skin.String(HomeFav.5.Label))] | [Container(50).HasFocus(606) + !IsEmpty(Skin.String(HomeFav.6.Label))]</visible>
+            <visible>[Container(50).HasFocus(601) + !String.IsEmpty(Skin.String(HomeFav.1.Label))] | [Container(50).HasFocus(602) + !String.IsEmpty(Skin.String(HomeFav.2.Label))] | [Container(50).HasFocus(603) + !String.IsEmpty(Skin.String(HomeFav.3.Label))] | [Container(50).HasFocus(604) + !String.IsEmpty(Skin.String(HomeFav.4.Label))] | [Container(50).HasFocus(605) + !String.IsEmpty(Skin.String(HomeFav.5.Label))] | [Container(50).HasFocus(606) + !String.IsEmpty(Skin.String(HomeFav.6.Label))]</visible>
             <top>30</top>
             <left>40</left>
             <control type="label">

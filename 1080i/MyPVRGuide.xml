@@ -371,7 +371,7 @@
                         <scrolltime>250</scrolltime>
                         <itemlayout width="802" height="111">
                             <control type="label">
-                                <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
+                                <animation condition="String.IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
                                 <left>40</left>
                                 <width>40</width>
                                 <height>75</height>
@@ -383,7 +383,7 @@
                                 <info>ListItem.ChannelNumber</info>
                             </control>
                             <control type="label">
-                                <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional </animation>
+                                <animation condition="String.IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional </animation>
                                 <left>45</left>
                                 <selectedcolor>red</selectedcolor>
                                 <align>left</align>
@@ -416,7 +416,7 @@
                                 <texture border="20">images/buttonselect.png</texture>
                             </control>
                             <control type="label">
-                                <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
+                                <animation condition="String.IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
                                 <left>40</left>
                                 <width>40</width>
                                 <height>75</height>
@@ -428,7 +428,7 @@
                                 <info>ListItem.ChannelNumber</info>
                             </control>
                             <control type="label">
-                                <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional </animation>
+                                <animation condition="String.IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional </animation>
                                 <left>45</left>
                                 <selectedcolor>red</selectedcolor>
                                 <align>left</align>
@@ -507,7 +507,7 @@
                         <scrolltime>250</scrolltime>
                         <itemlayout width="802" height="111">
                             <control type="label">
-                                <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
+                                <animation condition="String.IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
                                 <left>40</left>
                                 <width>40</width>
                                 <height>75</height>
@@ -519,7 +519,7 @@
                                 <info>ListItem.ChannelNumber</info>
                             </control>
                             <control type="label">
-                                <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional </animation>
+                                <animation condition="String.IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional </animation>
                                 <left>45</left>
                                 <selectedcolor>red</selectedcolor>
                                 <align>left</align>
@@ -552,7 +552,7 @@
                                 <texture border="20">images/buttonselect.png</texture>
                             </control>
                             <control type="label">
-                                <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
+                                <animation condition="String.IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
                                 <left>40</left>
                                 <width>40</width>
                                 <height>75</height>
@@ -564,7 +564,7 @@
                                 <info>ListItem.ChannelNumber</info>
                             </control>
                             <control type="label">
-                                <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional </animation>
+                                <animation condition="String.IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional </animation>
                                 <left>45</left>
                                 <selectedcolor>red</selectedcolor>
                                 <align>left</align>

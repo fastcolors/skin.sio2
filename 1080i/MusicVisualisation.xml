@@ -20,7 +20,7 @@
         <visible>true</visible>
       </control>
       <control type="multiimage" description="Slideshow">
-        <visible>Skin.HasSetting(MusicPlayingFanart) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+        <visible>Skin.HasSetting(MusicPlayingFanart) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
         <include>Dimensions_Fullscreen</include>
         <fadetime>400</fadetime>
         <imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
@@ -35,7 +35,7 @@
         </animation>
       </control>
       <control type="image" description="Fanart only">
-        <visible>Skin.HasSetting(MusicPlayingFanart) + IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+        <visible>Skin.HasSetting(MusicPlayingFanart) + String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
         <include>Dimensions_Fullscreen</include>
         <fadetime>400</fadetime>
         <aspectratio>scale</aspectratio>

@@ -188,7 +188,7 @@
           <label>$VAR[RootLabel]</label>
         </control>
         <control type="label" description="Number of files">
-          <visible>!IsEmpty(Control.GetLabel(7777))</visible>
+          <visible>!String.IsEmpty(Control.GetLabel(7777))</visible>
           <width min="60" max="120">auto</width>
           <height>81</height>
           <font>size26</font>

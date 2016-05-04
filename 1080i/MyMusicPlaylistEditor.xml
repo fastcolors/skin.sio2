@@ -234,7 +234,7 @@
         <label>-</label>
       </control>
       <control type="image" description="Slider 100">
-        <visible>!IsEmpty(Container(100).ListItem.Label) + Control.IsVisible(100)</visible>
+        <visible>!String.IsEmpty(Container(100).ListItem.Label) + Control.IsVisible(100)</visible>
         <left>0</left>
         <top>96</top>
         <width>600</width>
@@ -257,7 +257,7 @@
         <animation condition="Container(100).Position(11)" effect="slide" start="0,0" end="0,660" time="180" reversible="true">Conditional</animation>
       </control>
       <control type="fixedlist" id="100">
-        <visible>!IsEmpty(Container(100).ListItem.Label)</visible>
+        <visible>!String.IsEmpty(Container(100).ListItem.Label)</visible>
         <left>-15</left>
         <top>93</top>
         <width>630</width>

@@ -124,7 +124,7 @@
                 <label>$VAR[RootLabel]</label>
             </control>
             <control type="label" description="Number of files">
-                <visible>!IsEmpty(Control.GetLabel(7777))</visible>
+                <visible>!String.IsEmpty(Control.GetLabel(7777))</visible>
                 <width min="60" max="120">auto</width>
                 <height>81</height>
                 <font>size26</font>
@@ -149,7 +149,7 @@
                 <label>$VAR[RootLabel]</label>
             </control>
             <control type="label" description="Number of files">
-                <visible>!IsEmpty(Control.GetLabel(7777))</visible>
+                <visible>!String.IsEmpty(Control.GetLabel(7777))</visible>
                 <width min="60" max="120">auto</width>
                 <height>81</height>
                 <font>size26</font>
@@ -464,37 +464,37 @@
                     <description>TV Guide</description>
                     <include>DialogButt</include>
                     <onclick condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">noop</onclick>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
                     <label>22020</label>
                 </control>
                 <control type="button" id="32">
                     <description>TV Channels</description>
                     <include>DialogButt</include>
                     <onclick condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)">noop</onclick>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
                     <label>19023</label>
                 </control>
                 <control type="button" id="34">
                     <description>Recordings</description>
                     <include>DialogButt</include>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
                     <label>19163</label>
                 </control>
                 <control type="button" id="35">
                     <description>Timers</description>
                     <include>DialogButt</include>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
                     <label>19040</label>
                 </control>
                 <control type="button" id="36">
                     <description>Search</description>
                     <include>DialogButt</include>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
                     <label>137</label>
                 </control>
                 <control type="button" id="28">

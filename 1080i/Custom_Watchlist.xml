@@ -227,7 +227,7 @@
             </focusedlayout>
             <content>
               <item id="1" description="Movies">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.1.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.1.Title))</visible>
                 <property name="Rating">$INFO[Window(Home).Property(RecommendedMovie.1.Rating)]</property>
                 <label>$INFO[Window(Home).Property(RecommendedMovie.1.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(RecommendedMovie.1.Art(poster))]</thumb>
@@ -240,7 +240,7 @@
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.1.File)])</onclick>
               </item>
               <item id="2" description="Movies">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.2.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.2.Title))</visible>
                 <property name="Rating">$INFO[Window(Home).Property(RecommendedMovie.2.Rating)]</property>
                 <label>$INFO[Window(Home).Property(RecommendedMovie.2.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(RecommendedMovie.2.Art(poster))]</thumb>
@@ -253,7 +253,7 @@
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.2.File)])</onclick>
               </item>
               <item id="3" description="Movies">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.3.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.3.Title))</visible>
                 <property name="Rating">$INFO[Window(Home).Property(RecommendedMovie.3.Rating)]</property>
                 <label>$INFO[Window(Home).Property(RecommendedMovie.3.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(RecommendedMovie.3.Art(poster))]</thumb>
@@ -266,7 +266,7 @@
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.3.File)])</onclick>
               </item>
               <item id="4" description="Movies">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.4.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.4.Title))</visible>
                 <property name="Rating">$INFO[Window(Home).Property(RecommendedMovie.4.Rating)]</property>
                 <label>$INFO[Window(Home).Property(RecommendedMovie.4.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(RecommendedMovie.4.Art(poster))]</thumb>
@@ -279,7 +279,7 @@
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.4.File)])</onclick>
               </item>
               <item id="5" description="Movies">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.5.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.5.Title))</visible>
                 <property name="Rating">$INFO[Window(Home).Property(RecommendedMovie.5.Rating)]</property>
                 <label>$INFO[Window(Home).Property(RecommendedMovie.5.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(RecommendedMovie.5.Art(poster))]</thumb>
@@ -292,7 +292,7 @@
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.5.File)])</onclick>
               </item>
               <item id="6" description="Movies">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.6.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.6.Title))</visible>
                 <property name="Rating">$INFO[Window(Home).Property(RecommendedMovie.6.Rating)]</property>
                 <label>$INFO[Window(Home).Property(RecommendedMovie.6.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(RecommendedMovie.6.Art(poster))]</thumb>
@@ -305,7 +305,7 @@
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.6.File)])</onclick>
               </item>
               <item id="7" description="Movies">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.7.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.7.Title))</visible>
                 <property name="Rating">$INFO[Window(Home).Property(RecommendedMovie.7.Rating)]</property>
                 <label>$INFO[Window(Home).Property(RecommendedMovie.7.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(RecommendedMovie.7.Art(poster))]</thumb>
@@ -318,7 +318,7 @@
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.7.File)])</onclick>
               </item>
               <item id="8" description="Movies">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.8.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.8.Title))</visible>
                 <property name="Rating">$INFO[Window(Home).Property(RecommendedMovie.8.Rating)]</property>
                 <label>$INFO[Window(Home).Property(RecommendedMovie.8.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(RecommendedMovie.8.Art(poster))]</thumb>
@@ -331,7 +331,7 @@
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.8.File)])</onclick>
               </item>
               <item id="9" description="Movies">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.9.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.9.Title))</visible>
                 <property name="Rating">$INFO[Window(Home).Property(RecommendedMovie.9.Rating)]</property>
                 <label>$INFO[Window(Home).Property(RecommendedMovie.9.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(RecommendedMovie.9.Art(poster))]</thumb>
@@ -344,7 +344,7 @@
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.9.File)])</onclick>
               </item>
               <item id="10" description="Movies">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.10.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.10.Title))</visible>
                 <property name="Rating">$INFO[Window(Home).Property(RecommendedMovie.10.Rating)]</property>
                 <label>$INFO[Window(Home).Property(RecommendedMovie.10.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(RecommendedMovie.10.Art(poster))]</thumb>
@@ -531,7 +531,7 @@
           </focusedlayout>
           <content>
             <item id="1" description="Episodes">
-              <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.1.Title))</visible>
+              <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.1.Title))</visible>
               <property name="Rating">$INFO[Window(Home).Property(RecommendedEpisode.1.Rating)]</property>
               <property name="Label3">S $INFO[Window(Home).Property(RecommendedEpisode.1.Season)] • E $INFO[Window(Home).Property(RecommendedEpisode.1.Episode)]</property>
               <label>$INFO[Window(Home).Property(RecommendedEpisode.1.Title)]</label>
@@ -548,7 +548,7 @@
               <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.1.File)])</onclick>
             </item>
             <item id="2" description="Episodes">
-              <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.2.Title))</visible>
+              <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.2.Title))</visible>
               <property name="Rating">$INFO[Window(Home).Property(RecommendedEpisode.2.Rating)]</property>
               <property name="Label3">S $INFO[Window(Home).Property(RecommendedEpisode.2.Season)] • E $INFO[Window(Home).Property(RecommendedEpisode.2.Episode)]</property>
               <label>$INFO[Window(Home).Property(RecommendedEpisode.2.Title)]</label>
@@ -565,7 +565,7 @@
               <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.2.File)])</onclick>
             </item>
             <item id="3" description="Episodes">
-              <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.3.Title))</visible>
+              <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.3.Title))</visible>
               <property name="Rating">$INFO[Window(Home).Property(RecommendedEpisode.3.Rating)]</property>
               <property name="Label3">S $INFO[Window(Home).Property(RecommendedEpisode.3.Season)] • E $INFO[Window(Home).Property(RecommendedEpisode.3.Episode)]</property>
               <label>$INFO[Window(Home).Property(RecommendedEpisode.3.Title)]</label>
@@ -581,7 +581,7 @@
               <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.3.File)])</onclick>
             </item>
             <item id="4" description="Episodes">
-              <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.4.Title))</visible>
+              <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.4.Title))</visible>
               <property name="Rating">$INFO[Window(Home).Property(RecommendedEpisode.4.Rating)]</property>
               <property name="Label3">S $INFO[Window(Home).Property(RecommendedEpisode.4.Season)] • E $INFO[Window(Home).Property(RecommendedEpisode.4.Episode)]</property>
               <label>$INFO[Window(Home).Property(RecommendedEpisode.4.Title)]</label>
@@ -597,7 +597,7 @@
               <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.4.File)])</onclick>
             </item>
             <item id="5" description="Episodes">
-              <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.5.Title))</visible>
+              <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.5.Title))</visible>
               <property name="Rating">$INFO[Window(Home).Property(RecommendedEpisode.5.Rating)]</property>
               <property name="Label3">S $INFO[Window(Home).Property(RecommendedEpisode.5.Season)] • E $INFO[Window(Home).Property(RecommendedEpisode.5.Episode)]</property>
               <label>$INFO[Window(Home).Property(RecommendedEpisode.5.Title)]</label>
@@ -613,7 +613,7 @@
               <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.5.File)])</onclick>
             </item>
             <item id="6" description="Episodes">
-              <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.6.Title))</visible>
+              <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.6.Title))</visible>
               <property name="Rating">$INFO[Window(Home).Property(RecommendedEpisode.6.Rating)]</property>
               <property name="Label3">S $INFO[Window(Home).Property(RecommendedEpisode.6.Season)] • E $INFO[Window(Home).Property(RecommendedEpisode.6.Episode)]</property>
               <label>$INFO[Window(Home).Property(RecommendedEpisode.6.Title)]</label>
@@ -629,7 +629,7 @@
               <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.6.File)])</onclick>
             </item>
             <item id="7" description="Episodes">
-              <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.7.Title))</visible>
+              <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.7.Title))</visible>
               <property name="Rating">$INFO[Window(Home).Property(RecommendedEpisode.7.Rating)]</property>
               <property name="Label3">S $INFO[Window(Home).Property(RecommendedEpisode.7.Season)] • E $INFO[Window(Home).Property(RecommendedEpisode.7.Episode)]</property>
               <label>$INFO[Window(Home).Property(RecommendedEpisode.7.Title)]</label>
@@ -645,7 +645,7 @@
               <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.7.File)])</onclick>
             </item>
             <item id="8" description="Episodes">
-              <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.8.Title))</visible>
+              <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.8.Title))</visible>
               <property name="Rating">$INFO[Window(Home).Property(RecommendedEpisode.8.Rating)]</property>
               <property name="Label3">S $INFO[Window(Home).Property(RecommendedEpisode.8.Season)] • E $INFO[Window(Home).Property(RecommendedEpisode.8.Episode)]</property>
               <label>$INFO[Window(Home).Property(RecommendedEpisode.8.Title)]</label>
@@ -663,7 +663,7 @@
             
             <!-- ADD MORE ITEMS USING THIS REPLACE %d WITH FOLLOWING NUMBER
 <item id="%d" description="Episodes">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.%d.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.%d.Title))</visible>
                 <property name="Rating">$INFO[Window(Home).Property(RecommendedEpisode.%d.Rating)]</property>
                 <property name="Label3">S $INFO[Window(Home).Property(RecommendedEpisode.%d.Season)] • E $INFO[Window(Home).Property(RecommendedEpisode.%d.Episode)]</property>
                 <label>$INFO[Window(Home).Property(RecommendedEpisode.%d.Title)]</label>
@@ -777,7 +777,7 @@
             </focusedlayout>
             <content>
               <item id="1" description="Albums">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title))</visible>
                 <label>$INFO[Window(Home).Property(RecommendedAlbum.1.Title)]</label>
                 <label2>$INFO[Window(Home).Property(RecommendedAlbum.1.Artist)]</label2>
                 <property name="Genre">$INFO[Window(Home).Property(RecommendedAlbum.1.Genre)]</property>
@@ -790,7 +790,7 @@
                 <onclick>$INFO[Window(Home).Property(RecommendedAlbum.1.Play)]</onclick>
               </item>
               <item id="2" description="Albums">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.2.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.2.Title))</visible>
                 <label>$INFO[Window(Home).Property(RecommendedAlbum.2.Title)]</label>
                 <label2>$INFO[Window(Home).Property(RecommendedAlbum.2.Artist)]</label2>
                 <property name="Genre">$INFO[Window(Home).Property(RecommendedAlbum.2.Genre)]</property>
@@ -803,7 +803,7 @@
                 <onclick>$INFO[Window(Home).Property(RecommendedAlbum.2.Play)]</onclick>
               </item>
               <item id="3" description="Albums">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.3.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.3.Title))</visible>
                 <label>$INFO[Window(Home).Property(RecommendedAlbum.3.Title)]</label>
                 <label2>$INFO[Window(Home).Property(RecommendedAlbum.3.Artist)]</label2>
                 <property name="Genre">$INFO[Window(Home).Property(RecommendedAlbum.3.Genre)]</property>
@@ -816,7 +816,7 @@
                 <onclick>$INFO[Window(Home).Property(RecommendedAlbum.3.Play)]</onclick>
               </item>
               <item id="4" description="Albums">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.4.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.4.Title))</visible>
                 <label>$INFO[Window(Home).Property(RecommendedAlbum.4.Title)]</label>
                 <label2>$INFO[Window(Home).Property(RecommendedAlbum.4.Artist)]</label2>
                 <property name="Genre">$INFO[Window(Home).Property(RecommendedAlbum.4.Genre)]</property>
@@ -829,7 +829,7 @@
                 <onclick>$INFO[Window(Home).Property(RecommendedAlbum.4.Play)]</onclick>
               </item>
               <item id="5" description="Albums">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.5.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.5.Title))</visible>
                 <label>$INFO[Window(Home).Property(RecommendedAlbum.5.Title)]</label>
                 <label2>$INFO[Window(Home).Property(RecommendedAlbum.5.Artist)]</label2>
                 <property name="Genre">$INFO[Window(Home).Property(RecommendedAlbum.5.Genre)]</property>
@@ -842,7 +842,7 @@
                 <onclick>$INFO[Window(Home).Property(RecommendedAlbum.5.Play)]</onclick>
               </item>
               <item id="6" description="Albums">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.6.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.6.Title))</visible>
                 <label>$INFO[Window(Home).Property(RecommendedAlbum.6.Title)]</label>
                 <label2>$INFO[Window(Home).Property(RecommendedAlbum.6.Artist)]</label2>
                 <property name="Genre">$INFO[Window(Home).Property(RecommendedAlbum.6.Genre)]</property>
@@ -855,7 +855,7 @@
                 <onclick>$INFO[Window(Home).Property(RecommendedAlbum.6.Play)]</onclick>
               </item>
               <item id="7" description="Albums">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.7.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.7.Title))</visible>
                 <label>$INFO[Window(Home).Property(RecommendedAlbum.7.Title)]</label>
                 <label2>$INFO[Window(Home).Property(RecommendedAlbum.7.Artist)]</label2>
                 <property name="Genre">$INFO[Window(Home).Property(RecommendedAlbum.7.Genre)]</property>
@@ -868,7 +868,7 @@
                 <onclick>$INFO[Window(Home).Property(RecommendedAlbum.7.Play)]</onclick>
               </item>
               <item id="8" description="Albums">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.8.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.8.Title))</visible>
                 <label>$INFO[Window(Home).Property(RecommendedAlbum.8.Title)]</label>
                 <label2>$INFO[Window(Home).Property(RecommendedAlbum.8.Artist)]</label2>
                 <property name="Genre">$INFO[Window(Home).Property(RecommendedAlbum.8.Genre)]</property>
@@ -881,7 +881,7 @@
                 <onclick>$INFO[Window(Home).Property(RecommendedAlbum.9.Play)]</onclick>
               </item>
               <item id="9" description="Albums">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.9.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.9.Title))</visible>
                 <label>$INFO[Window(Home).Property(RecommendedAlbum.9.Title)]</label>
                 <label2>$INFO[Window(Home).Property(RecommendedAlbum.9.Artist)]</label2>
                 <property name="Genre">$INFO[Window(Home).Property(RecommendedAlbum.9.Genre)]</property>
@@ -894,7 +894,7 @@
                 <onclick>$INFO[Window(Home).Property(RecommendedAlbum.9.Play)]</onclick>
               </item>
               <item id="10" description="Albums">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.10.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.10.Title))</visible>
                 <label>$INFO[Window(Home).Property(RecommendedAlbum.10.Title)]</label>
                 <label2>$INFO[Window(Home).Property(RecommendedAlbum.10.Artist)]</label2>
                 <property name="Genre">$INFO[Window(Home).Property(RecommendedAlbum.10.Genre)]</property>
@@ -908,7 +908,7 @@
               </item>
               <!-- ADD MORE ITEMS USING THIS REPLACE %d WITH FOLLOWING NUMBER
 <item id="%d" description="Albums">
-                <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.%d.Title))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.%d.Title))</visible>
                 <label>$INFO[Window(Home).Property(RecommendedAlbum.%d.Title)]</label>
 				<label2>$INFO[Window(Home).Property(RecommendedAlbum.%d.Artist)]</label2>
 				<property name="Genre">$INFO[Window(Home).Property(RecommendedAlbum.%d.Genre)]</property>

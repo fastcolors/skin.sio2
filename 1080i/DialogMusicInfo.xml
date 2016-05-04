@@ -34,7 +34,7 @@
           <label>$INFO[ListItem.Property(Album_Description)]</label>
         </control>
         <control type="textbox" description="Plot">
-          <visible>IsEmpty(ListItem.Property(Album_Description))</visible>
+          <visible>String.IsEmpty(ListItem.Property(Album_Description))</visible>
           <left>90</left>
           <top>1068</top>
           <width>1050</width>
