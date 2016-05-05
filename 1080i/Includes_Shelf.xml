@@ -93,17 +93,17 @@
         <height>610</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
-        <itemlayout height="600" width="550">
+        <itemlayout height="600" width="500">
             <control type="image">
                 <left>99</left>
                 <top>27</top>
-                <width>500</width>
-                <height>500</height>
+                <width>450</width>
+                <height>450</height>
                 <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Thumb]</texture>
                 <aspectratio>scale</aspectratio>
             </control>
         </itemlayout>
-        <focusedlayout height="600" width="550">
+        <focusedlayout height="600" width="500">
             <control type="group">
                 <animation effect="zoom" start="100" end="110" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
                 <animation effect="zoom" start="110" end="100" time="120" center="auto" easing="">unFocus</animation>
@@ -112,15 +112,15 @@
                     <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
                     <left>40</left>
                     <top>46</top>
-                    <width>580</width>
-                    <height>580</height>
+                    <width>530</width>
+                    <height>530</height>
                     <texture>shadow.png</texture>
                 </control>
                 <control type="image">
                     <left>99</left>
                     <top>27</top>
-                    <width>500</width>
-                    <height>500</height>
+                    <width>450</width>
+                    <height>450</height>
                     <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Thumb]</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
@@ -129,14 +129,14 @@
                 <visible>ControlGroup(700).HasFocus()</visible>
                 <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
                 <animation effect="fade" start="100" end="0" time="80">unFocus</animation>
-                <left>79</left>
-                <top>550</top>
+                <centerleft>330</centerleft>
+                <top>520</top>
                 <width>540</width>
                 <height>150</height>
                 <font>size26</font>
                 <textcolor>White2</textcolor>
                 <align>center</align>
-                <label>[B]$INFO[ListItem.Label][/B]</label>
+                <label>$INFO[ListItem.Label]</label>
             </control>
         </focusedlayout>
     </include>
