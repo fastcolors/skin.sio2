@@ -112,7 +112,7 @@
                     <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
                     <left>40</left>
                     <top>46</top>
-                    <width>530</width>
+                    <width>570</width>
                     <height>530</height>
                     <texture>shadow.png</texture>
                 </control>
@@ -176,6 +176,14 @@
             <include>SquareShortcutsCommons</include>
             <content target="music">special://skin/resources/rcntalbums.xsp</content>
         </control>
+    </include>
+    <include name="Addons_Auto">
+            <control type="panel" id="315" description="TOP Shortcuts">
+                <visible>Container(9000).HasFocus(343) | Control.HasFocus(315)</visible>
+                <ondown>9000</ondown>
+                <include>SquareShortcutsCommons</include>
+                <content>addons://sources/video/</content>
+            </control>
     </include>
     <include name="Addons_Shortcuts">
         <control type="group">
