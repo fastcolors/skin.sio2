@@ -20,7 +20,7 @@
                 <width>1920</width>
                 <height>286</height>
                 <aspectratio>stretch</aspectratio>
-                <texture colordiffuse="66FFFFFF">images/white.png</texture>
+                <texture colordiffuse="66FFFFFF">images/White.png</texture>
             </control>
         </control>
         <control type="button" id="9009">
@@ -193,7 +193,7 @@
                     <visible>!Skin.HasSetting(hidewtr)</visible>
                     <property name="weatherthumb">$INFO[Weather.Conditions]</property>
                     <label>$INFO[Weather.Temperature]</label>
-                    <property name="color">images/white.png</property>
+                    <property name="color">images/White.png</property>
                     <onclick>ActivateWindow(MyWeather)</onclick>
                 </item>
                 <item id="352">

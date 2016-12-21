@@ -66,8 +66,8 @@
     <focusedcolor>black</focusedcolor>
     <selectedcolor>yellow</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <texturefocus>images/white.png</texturefocus>
-    <texturenofocus colordiffuse="77FFFFFF">images/white.png</texturenofocus>
+    <texturefocus>images/White.png</texturefocus>
+    <texturenofocus colordiffuse="77FFFFFF">images/White.png</texturenofocus>
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="edit">
@@ -103,8 +103,8 @@
     <selectedcolor>orange</selectedcolor>
     <altselectedcolor>orange</altselectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <texturefocus>images/white.png</texturefocus>
-    <texturenofocus colordiffuse="77FFFFFF">images/white.png</texturenofocus>
+    <texturefocus>images/White.png</texturefocus>
+    <texturenofocus colordiffuse="77FFFFFF">images/White.png</texturenofocus>
     <align>center</align>
     <aligny>center</aligny>
     <pulseonselect>false</pulseonselect>
@@ -125,8 +125,8 @@
     <disabledcolor>Disabled</disabledcolor>
     <radiowidth>30</radiowidth>
     <radioheight>30</radioheight>
-    <texturefocus>images/white.png</texturefocus>
-    <texturenofocus colordiffuse="77FFFFFF">images/white.png</texturenofocus>
+    <texturefocus>images/White.png</texturefocus>
+    <texturenofocus colordiffuse="77FFFFFF">images/White.png</texturenofocus>
     <textureradiofocus>images/RadioON.png</textureradiofocus>
     <textureradionofocus>-</textureradionofocus>
     <textoffsetx>20</textoffsetx>
@@ -166,8 +166,8 @@
     <textureupfocus>images/ArrowUpFO.png</textureupfocus>
     <texturedown>images/ArrowDownNF.png</texturedown>
     <texturedownfocus>images/ArrowDownFO.png</texturedownfocus>
-    <texturefocus>images/white.png</texturefocus>
-    <texturenofocus colordiffuse="77FFFFFF">images/white.png</texturenofocus>
+    <texturefocus>images/White.png</texturefocus>
+    <texturenofocus colordiffuse="77FFFFFF">images/White.png</texturenofocus>
     <spinwidth>18</spinwidth>
     <spinheight>18</spinheight>
     <textcolor>black</textcolor>

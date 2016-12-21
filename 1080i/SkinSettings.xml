@@ -24,7 +24,7 @@
           <control type="image">
             <height>70</height>
             <width>840</width>
-            <texture colordiffuse="77FFFFFF">images/white.png</texture>
+            <texture colordiffuse="77FFFFFF">images/White.png</texture>
           </control>
           <control type="label" description="Main Label">
             <include>52MainLabel</include>
@@ -57,7 +57,7 @@
             <control type="image">
               <height>70</height>
               <width>840</width>
-              <texture>images/white.png</texture>
+              <texture>images/White.png</texture>
             </control>
             <control type="label" description="Main Label">
               <include>52MainLabelFO</include>

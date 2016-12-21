@@ -128,7 +128,7 @@
                             <control type="image">
                                 <height>100</height>
                                 <width>805</width>
-                                <texture colordiffuse="77FFFFFF">images/white.png</texture>
+                                <texture colordiffuse="77FFFFFF">images/White.png</texture>
                             </control>
                             <control type="label">
                                 <animation condition="String.IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
@@ -187,7 +187,7 @@
                                 <control type="image">
                                     <height>100</height>
                                     <width>805</width>
-                                    <texture>images/white.png</texture>
+                                    <texture>images/White.png</texture>
                                 </control>
                                 <control type="label">
                                     <animation condition="String.IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>

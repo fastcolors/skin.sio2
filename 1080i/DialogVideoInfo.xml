@@ -195,7 +195,7 @@
                 <top>690</top>
                 <height>1920</height>
                 <width>1920</width>
-                <texture colordiffuse="80ffffff">images/white.png</texture>
+                <texture colordiffuse="80ffffff">images/White.png</texture>
             </control>
             <control type="list" id="999">
                 <top>780</top>

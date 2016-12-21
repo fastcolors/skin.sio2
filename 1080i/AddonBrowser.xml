@@ -27,7 +27,7 @@
                     <control type="image">
                         <height>70</height>
                         <width>805</width>
-                        <texture colordiffuse="77FFFFFF">images/white.png</texture>
+                        <texture colordiffuse="77FFFFFF">images/White.png</texture>
                     </control>
                     <include>Arrow</include>
                     <control type="label" description="Main Label">
@@ -61,7 +61,7 @@
                         <control type="image">
                             <height>70</height>
                             <width>805</width>
-                            <texture>images/white.png</texture>
+                            <texture>images/White.png</texture>
                         </control>
                         <include>Arrow</include>
                         <control type="label" description="Main Label">

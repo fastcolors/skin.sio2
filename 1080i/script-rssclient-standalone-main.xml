@@ -235,7 +235,7 @@
       <control type="image" >
         <width>1920</width>
         <height>254</height>
-        <texture>images/white.png</texture>
+        <texture>images/White.png</texture>
       </control>
       <control type="image" >
         <width>1920</width>

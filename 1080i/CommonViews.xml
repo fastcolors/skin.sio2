@@ -637,7 +637,7 @@
       <control type="image">
         <height>100</height>
         <width>805</width>
-        <texture colordiffuse="77FFFFFF">images/white.png</texture>
+        <texture colordiffuse="77FFFFFF">images/White.png</texture>
       </control>
       <include>Watched_Marks</include>
       <include>HD_BadgeLW</include>
@@ -703,7 +703,7 @@
         <control type="image">
           <height>100</height>
           <width>805</width>
-          <texture>images/white.png</texture>
+          <texture>images/White.png</texture>
         </control>
         <include>Watched_Marks</include>
         <include>HD_BadgeLW</include>
@@ -797,9 +797,9 @@
     <aligny>center</aligny>
     <font>size36</font>
     <disabledcolor>Grey</disabledcolor>
-    <alttexturenofocus colordiffuse="77FFFFFF">images/white.png</alttexturenofocus>
-    <texturefocus>images/white.png</texturefocus>
-    <alttexturefocus>images/white.png</alttexturefocus>
+    <alttexturenofocus colordiffuse="77FFFFFF">images/White.png</alttexturenofocus>
+    <texturefocus>images/White.png</texturefocus>
+    <alttexturefocus>images/White.png</alttexturefocus>
   </include>
   <include name="Plot51Commons">
     <left>0</left>
@@ -1091,7 +1091,7 @@
       <control type="image">
         <height>70</height>
         <width>805</width>
-        <texture colordiffuse="77FFFFFF">images/white.png</texture>
+        <texture colordiffuse="77FFFFFF">images/White.png</texture>
       </control>
       <include>Watched_Marks</include>
       <include>HD_Badge</include>
@@ -1126,7 +1126,7 @@
         <control type="image">
           <height>70</height>
           <width>805</width>
-          <texture>images/white.png</texture>
+          <texture>images/White.png</texture>
         </control>
         <include>Watched_Marks</include>
         <include>HD_Badge</include>
