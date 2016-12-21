@@ -10,20 +10,20 @@
   <controls>
     <control type="image" id="999" description="Background image">
       <centerleft>960</centerleft>
+      <centertop>540</centertop>
       <height>1080</height>
       <width>750</width>
       <texture border="50">images/ContextMenu.png</texture>
     </control>
     <control type="grouplist" id="996" description="Context menu container">
       <centerleft>960</centerleft>
-      <centertop>540</centertop>
       <height>960</height>
       <include>DialogGLs</include>
 	  <control type="button" id="1500">
 	  <visible>System.HasAddon(script.cinema.experience) + Container.Content(Movies)</visible>
       <include>DialogButt</include>
 	<label>31061</label>
-	<onclick>XBMC.RunScript(script.cinema.experience)</onclick>
+	<onclick>RunScript(script.cinema.experience)</onclick>
 	</control>
     </control>
     <control type="button" id="1000" description="Buttons">

@@ -14,27 +14,6 @@
         <control type="group">
           <top>142</top>
           <left>1020</left>
-          <control type="group" description="Slider">
-            <include>Scrollanim</include>
-            <control type="group">
-              <visible>Container(450).HasFocus()</visible>
-              <include>slider</include>
-            </control>
-            <animation type="Conditional" condition="ControlGroup(9000).HasFocus()">
-              <effect type="fade" start="100" end="40" time="0" reversible="true" />
-            </animation>
-            <animation condition="Container(450).Position(0)" effect="slide" start="0,0" end="0,-405" time="140" reversible="true">Conditional</animation>
-            <animation condition="Container(450).Position(1)" effect="slide" start="0,0" end="0,-324" time="140" reversible="true">Conditional</animation>
-            <animation condition="Container(450).Position(2)" effect="slide" start="0,0" end="0,-243" time="140" reversible="true">Conditional</animation>
-            <animation condition="Container(450).Position(3)" effect="slide" start="0,0" end="0,-162" time="140" reversible="true">Conditional</animation>
-            <animation condition="Container(450).Position(4)" effect="slide" start="0,0" end="0,-81" time="140" reversible="true">Conditional</animation>
-            <animation condition="Container(450).Position(5)" effect="slide" start="0,0" end="0,0" time="140" reversible="true">Conditional</animation>
-            <animation condition="Container(450).Position(6)" effect="slide" start="0,0" end="0,81" time="140" reversible="true">Conditional</animation>
-            <animation condition="Container(450).Position(7)" effect="slide" start="0,0" end="0,162" time="140" reversible="true">Conditional</animation>
-            <animation condition="Container(450).Position(8)" effect="slide" start="0,0" end="0,243" time="140" reversible="true">Conditional</animation>
-            <animation condition="Container(450).Position(9)" effect="slide" start="0,0" end="0,324" time="140" reversible="true">Conditional</animation>
-            <animation condition="Container(450).Position(10)" effect="slide" start="0,0" end="0,405" time="140" reversible="true">Conditional</animation>
-          </control>
           <control type="list" id="450">
             <width>802</width>
             <height>830</height>
@@ -45,34 +24,27 @@
             <pagecontrol>60</pagecontrol>
             <scrolltime tween="sine" easing="inout">280</scrolltime>
             <itemlayout width="802" height="81">
-              <control type="image" description="arrow">
-                <visible>![StringCompare(ListItem.Label,..) | SubString(Container.FolderPath,plugin://,left)]</visible>
-                <top>5</top>
-                <left>75r</left>
-                <height>81</height>
-                <width>42</width>
-                <aspectratio>keep</aspectratio>
-                <texture>images/Arrow.png</texture>
-              </control>
+              <include>Arrow</include>
               <control type="label" description="Main Label">
-                <top>5</top>
                 <include>52MainLabel</include>
                 <label>$INFO[ListItem.Label]</label>
               </control>
             </itemlayout>
             <focusedlayout width="802" height="81">
-              <control type="image" description="arrow">
-                <visible>![StringCompare(ListItem.Label,..) | SubString(Container.FolderPath,plugin://,left)]</visible>
-                <animation effect="fade" start="30" end="100" time="150" delay="250">Focus</animation>
-                <top>5</top>
-                <left>75r</left>
-                <height>81</height>
-                <width>42</width>
-                <aspectratio>keep</aspectratio>
-                <texture>images/Arrow.png</texture>
+              <control type="image">
+                <top>12</top>
+                <left>-50</left>
+                <height>70</height>
+                <width>905</width>
+                <texture>shadow.png</texture>
               </control>
+              <control type="image">
+                <height>70</height>
+                <width>805</width>
+                <texture>images/White.png</texture>
+              </control>
+              <include>Arrow</include>
               <control type="label" description="Main Label">
-                <top>5</top>
                 <include>52MainLabelFO</include>
                 <label>$INFO[ListItem.Label]</label>
               </control>

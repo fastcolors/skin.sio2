@@ -57,7 +57,8 @@
             <itemlayout height="290" width="360">
                 <control type="image" description="shade_base">
                     <centerleft>180</centerleft>
-                    <width>360</width>
+                    <top>10</top>
+                    <width>350</width>
                     <height>250</height>
                     <texture>icons/iconbase.png</texture>
                 </control>
@@ -99,7 +100,8 @@
                     <animation effect="zoom" start="130" end="100" time="120" center="auto">unFocus</animation>
                     <control type="image" description="shade_base">
                         <centerleft>180</centerleft>
-                        <width>360</width>
+                        <top>10</top>
+                        <width>350</width>
                         <height>250</height>
                         <texture>icons/iconbase.png</texture>
                     </control>
@@ -397,22 +399,22 @@
                     <onclick>ActivateWindow(1120)</onclick>
                 </item>
                 <!--<item id="349">-->
-                    <!--<visible>Player.HasMedia</visible>-->
-                    <!--<thumb>icons/full.png</thumb>-->
-                    <!--<label>31064</label>-->
-                    <!--<property name="color">icons/green3.png</property>-->
-                    <!--<onclick condition="Player.HasMedia">Fullscreen</onclick>-->
+                <!--<visible>Player.HasMedia</visible>-->
+                <!--<thumb>icons/full.png</thumb>-->
+                <!--<label>31064</label>-->
+                <!--<property name="color">icons/green3.png</property>-->
+                <!--<onclick condition="Player.HasMedia">Fullscreen</onclick>-->
                 <!--</item>-->
                 <!--<item id="349">-->
-                    <!--<visible>!Player.HasMedia + Skin.HasSetting(quitter)</visible>-->
-                    <!--<thumb>icons/quits.png</thumb>-->
-                    <!--<label>351</label>-->
-                    <!--<property name="color">icons/darkblue.png</property>-->
-                    <!--<onclick condition="StringCompare(Skin.String(shutdown),quit)">XBMC.quit()</onclick>-->
-                    <!--<onclick condition="StringCompare(Skin.String(shutdown),powerdown)">XBMC.powerdown()</onclick>-->
-                    <!--<onclick condition="StringCompare(Skin.String(shutdown),hibernate)">XBMC.hibernate()</onclick>-->
-                    <!--<onclick condition="StringCompare(Skin.String(shutdown),suspend)">XBMC.suspend()</onclick>-->
-                    <!--<onclick condition="StringCompare(Skin.String(shutdown),reboot)">XBMC.reboot()</onclick>-->
+                <!--<visible>!Player.HasMedia + Skin.HasSetting(quitter)</visible>-->
+                <!--<thumb>icons/quits.png</thumb>-->
+                <!--<label>351</label>-->
+                <!--<property name="color">icons/darkblue.png</property>-->
+                <!--<onclick condition="StringCompare(Skin.String(shutdown),quit)">XBMC.quit()</onclick>-->
+                <!--<onclick condition="StringCompare(Skin.String(shutdown),powerdown)">XBMC.powerdown()</onclick>-->
+                <!--<onclick condition="StringCompare(Skin.String(shutdown),hibernate)">XBMC.hibernate()</onclick>-->
+                <!--<onclick condition="StringCompare(Skin.String(shutdown),suspend)">XBMC.suspend()</onclick>-->
+                <!--<onclick condition="StringCompare(Skin.String(shutdown),reboot)">XBMC.reboot()</onclick>-->
                 <!--</item>-->
                 <item id="349">
                     <!--<visible>!Player.HasMedia + !Skin.HasSetting(quitter)</visible>-->

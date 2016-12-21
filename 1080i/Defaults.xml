@@ -123,12 +123,12 @@
     <focusedcolor>black</focusedcolor>
     <selectedcolor>orange</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <radiowidth>30</radiowidth>
-    <radioheight>30</radioheight>
+    <radiowidth>50</radiowidth>
+    <radioheight>50</radioheight>
     <texturefocus>images/White.png</texturefocus>
     <texturenofocus colordiffuse="77FFFFFF">images/White.png</texturenofocus>
     <textureradiofocus>images/RadioON.png</textureradiofocus>
-    <textureradionofocus>-</textureradionofocus>
+    <textureradionofocus>images/RadioOFF.png</textureradionofocus>
     <textoffsetx>20</textoffsetx>
     <!--<radioleft>262</radioleft>-->
     <pulseonselect>false</pulseonselect>
