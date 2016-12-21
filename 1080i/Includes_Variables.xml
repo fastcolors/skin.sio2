@@ -132,6 +132,21 @@
     <variable name="shelfmovies">
         <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),WL)">special://skin/resources/laststarted.xsp</value>
         <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),RND)">special://skin/resources/random.xsp</value>
+        <value condition="Container(9000).HasFocus(601)">$INFO[Skin.String(HomeFav.1.List)]</value>
+        <value condition="Container(9000).HasFocus(602)">$INFO[Skin.String(HomeFav.2.List)]</value>
+        <value condition="Container(9000).HasFocus(603)">$INFO[Skin.String(HomeFav.3.List)]</value>
+        <value condition="Container(9000).HasFocus(604)">$INFO[Skin.String(HomeFav.4.List)]</value>
+        <value condition="Container(9000).HasFocus(605)">$INFO[Skin.String(HomeFav.5.List)]</value>
+        <value condition="Container(9000).HasFocus(606)">$INFO[Skin.String(HomeFav.6.List)]</value>
+        <value condition="Container(9000).HasFocus(607)">$INFO[Skin.String(HomeFav.7.List)]</value>
+        <value condition="Container(9000).HasFocus(608)">$INFO[Skin.String(HomeFav.8.List)]</value>
+        <value condition="Container(9000).HasFocus(357)">special://skin/resources/3d.xsp</value>
+        <!--<value condition="Container(9000).HasFocus(359)">plugin://script.extendedinfo?info=newdvdreleases&amp;&amp;limit=18</value>-->
+        <value condition="Container(9000).HasFocus(359)">plugin://script.extendedinfo?info=upcoming&amp;&amp;limit=18</value>
+        <!--<value condition="Container(9000).HasFocus(359)">plugin://script.extendedinfo?info=incinemas&amp;&amp;limit=18</value>-->
+        <!--<value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),)">plugin://script.extendedinfo?info=topratedtvshows&amp;&amp;limit=18</value>-->
+        <value condition="Container(9000).HasFocus(360)">plugin://script.extendedinfo?info=trendingshows&amp;&amp;limit=18</value>
+        <!--<value condition="Container(9000).HasFocus(360)">plugin://script.extendedinfo?info=airingshows&amp;&amp;limit=18</value>-->
         <value condition="Container(9000).HasFocus(340)">videodb://recentlyaddedmovies/</value>
         <value>-</value>
     </variable>

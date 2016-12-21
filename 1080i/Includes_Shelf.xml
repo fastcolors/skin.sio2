@@ -48,7 +48,7 @@
         <focusedlayout height="600" width="380">
             <control type="group">
                 <animation effect="zoom" start="100" end="110" time="120" center="270,300" tween="Back" easing="Out">Focus</animation>
-        <animation effect="zoom" start="110" end="100" time="120" center="270,300">unFocus</animation>
+                <animation effect="zoom" start="110" end="100" time="120" center="270,300">unFocus</animation>
                 <control type="image">
                     <animation effect="fade" start="0" end="100" time="150">Focus</animation>
                     <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
@@ -141,16 +141,34 @@
         </focusedlayout>
     </include>
     <include name="Movies">
-        <control type="panel" id="311" description="TOP Shortcuts">
-            <visible>Library.HasContent(Movies) + [Container(9000).HasFocus(340) | Control.HasFocus(311)]</visible>
-            <onup>9009</onup>
+        <control type="panel" id="311" description="Movies Shelf Shortcuts">
+            <visible>
+                Library.HasContent(Movies) +
+                [Container(9000).HasFocus(340)
+                | Container(9000).HasFocus(357)
+                | Container(9000).HasFocus(359)
+                | Container(9000).HasFocus(360)
+                | Control.HasFocus(311)
+                | [Container(9000).HasFocus(601) + !String.IsEmpty(Skin.String(HomeFav.1.List))]
+                | [Container(9000).HasFocus(602) + !String.IsEmpty(Skin.String(HomeFav.2.List))]
+                | [Container(9000).HasFocus(603) + !String.IsEmpty(Skin.String(HomeFav.3.List))]
+                | [Container(9000).HasFocus(604) + !String.IsEmpty(Skin.String(HomeFav.4.List))]
+                | [Container(9000).HasFocus(605) + !String.IsEmpty(Skin.String(HomeFav.5.List))]
+                | [Container(9000).HasFocus(606) + !String.IsEmpty(Skin.String(HomeFav.6.List))]
+                | [Container(9000).HasFocus(607) + !String.IsEmpty(Skin.String(HomeFav.7.List))]
+                | [Container(9000).HasFocus(608) + !String.IsEmpty(Skin.String(HomeFav.8.List))]]
+            </visible>
+            <!--todo better way to know when to go up-->
+            <onup condition="[!String.IsEmpty(Container(311).ListItem.Trailer) + Container(9000).HasFocus(340)] | [Container(9000).HasFocus(359) + System.HasAddon(plugin.video.couchpotato_manager)] | [Container(9000).HasFocus(360) + System.HasAddon(plugin.video.sickrage)]">9010</onup>
+            <onup condition="String.IsEmpty(Container(311).ListItem.Trailer)">9009</onup>
             <ondown>9000</ondown>
-            <onleft>noop</onleft>
-            <onright>noop</onright>
+            <onleft>311</onleft>
+            <onright>311</onright>
             <include>MoviesShortcutsCommons</include>
             <content target="video">$VAR[shelfmovies]</content>
         </control>
     </include>
+
     <include name="TV">
         <control type="group">
             <visible>Library.HasContent(TVShows)</visible>
@@ -178,12 +196,12 @@
         </control>
     </include>
     <include name="Addons_Auto">
-            <control type="panel" id="315" description="TOP Shortcuts">
-                <visible>Container(9000).HasFocus(343) | Control.HasFocus(315)</visible>
-                <ondown>9000</ondown>
-                <include>SquareShortcutsCommons</include>
-                <content>addons://sources/video/</content>
-            </control>
+        <control type="panel" id="315" description="TOP Shortcuts">
+            <visible>Container(9000).HasFocus(343) | Control.HasFocus(315)</visible>
+            <ondown>9000</ondown>
+            <include>SquareShortcutsCommons</include>
+            <content>addons://sources/video/</content>
+        </control>
     </include>
     <include name="Addons_Shortcuts">
         <control type="group">
@@ -876,4 +894,5 @@
             </control>
         </control>
     </include>
+
 </includes>

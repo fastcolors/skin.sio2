@@ -269,3 +269,11 @@ msgstr "Top Albums"
 msgctxt "#31068"
 msgid "Toggle Debug"
 msgstr "Toggle Debug"
+
+msgctxt "#31422"
+msgid "Movie Releases"
+msgstr "Movie Releases"
+
+msgctxt "#31423"
+msgid "TV Releases"
+msgstr "TV Releases"

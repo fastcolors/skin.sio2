@@ -280,3 +280,11 @@ msgstr "Episodi Raccomandati"
 msgctxt "#31067"
 msgid "Top Albums"
 msgstr "Top Album"
+
+msgctxt "#31422"
+msgid "Movie Releases"
+msgstr "Movie Releases"
+
+msgctxt "#31423"
+msgid "TV Releases"
+msgstr "TV Releases"
