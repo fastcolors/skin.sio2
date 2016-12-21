@@ -12,7 +12,7 @@
         <include>left_Panel_square</include>
         <include>MusicInfo</include>
       </control>
-      <control type="group" description="Slider and List">
+      <control type="group" description="List">
         <include>LargeListItemCount</include>
         <left>1020</left>
         <top>131</top>
@@ -32,7 +32,6 @@
           <scrolltime tween="sine" easing="inout">280</scrolltime>
           <include>LargeListLayout</include>
         </control>
-        <include>LargeListSlider</include>
       </control>
       <control type="scrollbar" id="60">
         <left>51r</left>
@@ -47,15 +46,14 @@
         <label>$VAR[RootLabel]</label>
       </control>
     </control>
-    <control type="group" description="52 List base">
+    <control type="group" description="List base">
       <visible>Control.IsVisible(52)</visible>
       <include>left_Panel_square</include>
       <include>MusicInfo</include>
-      <control type="group" description="Slider and List">
+      <control type="group" description="List">
         <include>SlimListItemCount</include>
         <left>1020</left>
         <top>131</top>
-        <include>SlimListSlider</include>
         <control type="fixedlist" id="52">
           <visible>container.content(songs)</visible>
           <left>0</left>
@@ -95,25 +93,40 @@
             </control>
           </itemlayout>
           <focusedlayout width="802" height="81">
-            <control type="label" description="Main Label">
-              <width max="609">auto</width>
-              <include>52MainLabelFO</include>
-              <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="label" description="Label2">
-              <visible>![Player.HasAudio + ListItem.IsPlaying]</visible>
-              <include>52Label2FO</include>
-              <label>$INFO[ListItem.Duration]</label>
-            </control>
-            <control type="image" description="playing">
-              <visible>[Player.HasAudio + ListItem.IsPlaying]</visible>
-              <animation effect="fade" start="50" end="100" time="100" delay="200">Focus</animation>
-              <left>99r</left>
-              <top>0</top>
-              <height>81</height>
-              <width>36</width>
-              <aspectratio>keep</aspectratio>
-              <texture>images/NowPlayingFO.png</texture>
+            <control type="group">
+              <animation effect="zoom" time="120" start="100" end="105" center="auto" tween="Back" easing="Out">Focus</animation>
+              <control type="image">
+                <top>12</top>
+                <left>-50</left>
+                <height>70</height>
+                <width>905</width>
+                <texture>shadow.png</texture>
+              </control>
+              <control type="image">
+                <height>70</height>
+                <width>805</width>
+                <texture>images/White.png</texture>
+              </control>
+              <control type="label" description="Main Label">
+                <width max="609">auto</width>
+                <include>52MainLabelFO</include>
+                <label>$INFO[ListItem.Label]</label>
+              </control>
+              <control type="label" description="Label2">
+                <visible>![Player.HasAudio + ListItem.IsPlaying]</visible>
+                <include>52Label2FO</include>
+                <label>$INFO[ListItem.Duration]</label>
+              </control>
+              <control type="image" description="playing">
+                <visible>[Player.HasAudio + ListItem.IsPlaying]</visible>
+                <animation effect="fade" start="50" end="100" time="100" delay="200">Focus</animation>
+                <left>99r</left>
+                <top>0</top>
+                <height>81</height>
+                <width>36</width>
+                <aspectratio>keep</aspectratio>
+                <texture>images/NowPlayingFO.png</texture>
+              </control>
             </control>
           </focusedlayout>
         </control>
@@ -227,7 +240,7 @@
         <onright>9000</onright>
       </control>
     </control>
-     <!--FANART-->
+    <!--FANART-->
     <control type="group">
       <visible>Control.IsVisible(500)</visible>
       <control type="image">
