@@ -447,7 +447,7 @@
             <include>Favsshelf</include>
             <include>weather_shelf</include>
             <control type="image" description="Logo">
-                <visible>![[Container(9000).HasFocus(340) + Library.HasContent(Movies)] | [Container(9000).HasFocus(341) + Library.HasContent(TVShows)] | [Container(9000).HasFocus(342) + Library.HasContent(Music)] | [Container(9000).HasFocus(342) + Control.IsVisible(313)] | [Container(9000).HasFocus(343)] | [Container(9000).HasFocus(344) + Control.IsVisible(314)] | [Container(9000).HasFocus(349) + Player.HasMedia] | Container(9000).HasFocus(345) | Control.IsVisible(317) | [Container(9000).HasFocus(352) + Container(9000).Row(0) + IntegerGreaterThan(Window.Property(favourite.count),0)]]</visible>
+                <visible>![Control.IsVisible(311) | Control.IsVisible(312) | Control.IsVisible(313) | Control.IsVisible(314) | Control.IsVisible(315) | Control.IsVisible(317) | Control.IsVisible(319) | Control.IsVisible(414)]</visible>
                 <include>ShelfFade</include>
                 <width>1920</width>
                 <height>500</height>
