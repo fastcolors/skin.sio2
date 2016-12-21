@@ -59,94 +59,40 @@
       <scroll>true</scroll>
       <label>$INFO[ListItem.FilenameAndPath]</label>
     </control>
-    <control type="image">
-      <left>0</left>
-      <top>1023</top>
-      <height>60</height>
-      <width>1920</width>
-      <aspectratio>stretch</aspectratio>
-      <texture>images/BlackT.png</texture>
-    </control>
-    <control type="image" description="Navbar">
-      <left>-82</left>
-      <top>1028</top>
-      <width>2085</width>
-      <height>1</height>
-      <aspectratio>stretch</aspectratio>
-      <texture>images/Line1.png</texture>
-    </control>
     <control type="group" description="Options">
-      <top>0</top>
-      <left>0</left>
       <control type="grouplist" id="300">
         <left>15</left>
-        <top>1026</top>
+        <top>1000</top>
         <width>1890</width>
-        <height>58</height>
-        <itemgap>0</itemgap>
+        <height>80</height>
+        <itemgap>20</itemgap>
         <aligny>bottom</aligny>
         <align>center</align>
         <onup>50</onup>
         <orientation>horizontal</orientation>
-        <control type="button" id="12" description="Album Info">
+        <control type="button" id="6" description="Album Info">
           <height>60</height>
           <width>270</width>
-          <label>10523</label>
+          <label>-</label>
           <font>size27</font>
-          <texturefocus>images/backfocus.png</texturefocus>
-          <alttexturefocus>images/backfocus.png</alttexturefocus>
         </control>
-        <control type="button" id="13" description="Get Thumb">
+        <control type="button" id="7" description="User Rating">
+          <height>60</height>
+          <width>270</width>
+          <label>-</label>
+          <font>size27</font>
+        </control>
+        <control type="button" id="10" description="Get artist thumbnail / Get album thumbnail">
+          <height>60</height>
+          <width>270</width>
+          <label>-</label>
+          <font>size27</font>
+        </control>
+        <control type="button" id="12" description="Get artist fanart image">
           <height>60</height>
           <width>270</width>
           <label>13405</label>
           <font>size27</font>
-          <texturefocus>images/backfocus.png</texturefocus>
-          <alttexturefocus>images/backfocus.png</alttexturefocus>
-        </control>
-        <control type="button" id="14" description="Decrease Rating">
-          <height>60</height>
-          <width>270</width>
-          <label>-  $LOCALIZE[563]</label>
-          <onclick>DecreaseRating</onclick>
-          <font>size27</font>
-          <texturefocus>images/backfocus.png</texturefocus>
-          <alttexturefocus>images/backfocus.png</alttexturefocus>
-        </control>
-        <control type="button" id="15" description="Increase Rating">
-          <height>60</height>
-          <width>270</width>
-          <label>+ $LOCALIZE[563]</label>
-          <onclick>IncreaseRating</onclick>
-          <font>size27</font>
-          <texturefocus>images/backfocus.png</texturefocus>
-          <alttexturefocus>images/backfocus.png</alttexturefocus>
-        </control>
-        <control type="button" id="10" description="Save rating">
-          <height>60</height>
-          <width>270</width>
-          <label>186</label>
-          <font>size27</font>
-          <texturefocus>images/backfocus.png</texturefocus>
-          <alttexturefocus>images/backfocus.png</alttexturefocus>
-        </control>
-        <!--<control type="button" id="11" description="Cancel">
-					<height>40</height>
-					<width>180</width>
-					<label>222</label>
-					<font>size27</font>
-					<texturefocus>images/backfocus.png</texturefocus>
-					<alttexturefocus>images/backfocus.png</alttexturefocus>
-				</control>-->
-        <control type="togglebutton" id="8999" description="Path">
-          <height>60</height>
-          <width>270</width>
-          <align>center</align>
-          <font>size27</font>
-          <label>35500</label>
-          <onclick>Skin.ToggleSetting(ShowFileInfo)</onclick>
-          <texturefocus>images/backfocus.png</texturefocus>
-          <alttexturefocus>images/backfocus.png</alttexturefocus>
         </control>
       </control>
     </control>

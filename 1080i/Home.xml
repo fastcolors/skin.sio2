@@ -235,7 +235,6 @@
                     <property name="color">icons/green3.png</property>
                     <onclick>SetFocus(700)</onclick>
                 </item>
-
                 <item id="601" description="Custom Fvourite">
                     <visible>!String.IsEmpty(Skin.String(HomeFav.1.Label))</visible>
                     <thumb>$INFO[Skin.String(HomeFav.1.Icon)]</thumb>
@@ -387,45 +386,11 @@
                     <label>search</label>
                     <onclick>RunScript(script.globalsearch)</onclick>
                 </item>
-                <item id="353">
-                    <visible>!Skin.HasSetting(hidebro)</visible>
-                    <thumb>icons/browser.png</thumb>
-                    <label>7</label>
-                    <property name="color">icons/lightyellow.png</property>
-                    <onclick>ActivateWindow(3)</onclick>
-                </item>
-                <item id="354">
-                    <visible>![System.Platform.ios | System.Platform.atv2]</visible>
-                    <visible>!Skin.HasSetting(XBMC3)</visible>
-                    <visible>System.HasMediadvd</visible>
-                    <thumb>icons/DVD.png</thumb>
-                    <label>$INFO[System.DVDLabel]</label>
-                    <property name="color">icons/dvdcolor.png</property>
-                    <onclick>ActivateWindow(1112)</onclick>
-                </item>
                 <item id="348">
                     <thumb>icons/settings.png</thumb>
                     <label>5</label>
                     <onclick>ActivateWindow(1120)</onclick>
                 </item>
-                <!--<item id="349">-->
-                <!--<visible>Player.HasMedia</visible>-->
-                <!--<thumb>icons/full.png</thumb>-->
-                <!--<label>31064</label>-->
-                <!--<property name="color">icons/green3.png</property>-->
-                <!--<onclick condition="Player.HasMedia">Fullscreen</onclick>-->
-                <!--</item>-->
-                <!--<item id="349">-->
-                <!--<visible>!Player.HasMedia + Skin.HasSetting(quitter)</visible>-->
-                <!--<thumb>icons/quits.png</thumb>-->
-                <!--<label>351</label>-->
-                <!--<property name="color">icons/darkblue.png</property>-->
-                <!--<onclick condition="StringCompare(Skin.String(shutdown),quit)">XBMC.quit()</onclick>-->
-                <!--<onclick condition="StringCompare(Skin.String(shutdown),powerdown)">XBMC.powerdown()</onclick>-->
-                <!--<onclick condition="StringCompare(Skin.String(shutdown),hibernate)">XBMC.hibernate()</onclick>-->
-                <!--<onclick condition="StringCompare(Skin.String(shutdown),suspend)">XBMC.suspend()</onclick>-->
-                <!--<onclick condition="StringCompare(Skin.String(shutdown),reboot)">XBMC.reboot()</onclick>-->
-                <!--</item>-->
                 <item id="349">
                     <!--<visible>!Player.HasMedia + !Skin.HasSetting(quitter)</visible>-->
                     <thumb>icons/quits.png</thumb>

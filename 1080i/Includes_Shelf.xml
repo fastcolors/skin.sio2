@@ -59,11 +59,21 @@
                     <texture>shadow.png</texture>
                 </control>
                 <control type="image">
+                    <visible>String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
                     <left>100</left>
                     <top>16</top>
                     <width>340</width>
                     <height>500</height>
-                    <texture fallback="DefaultVideoCover.png" background="true">$VAR[locandine]</texture>
+                    <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
+                    <aspectratio>scale</aspectratio>
+                </control>
+                <control type="image">
+                    <visible>!String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
+                    <left>100</left>
+                    <top>16</top>
+                    <width>340</width>
+                    <height>500</height>
+                    <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
             </control>
@@ -168,7 +178,6 @@
             <content target="video">$VAR[shelfmovies]</content>
         </control>
     </include>
-
     <include name="TV">
         <control type="group">
             <visible>Library.HasContent(TVShows)</visible>
