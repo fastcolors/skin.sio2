@@ -109,7 +109,7 @@
                   <top>80</top>
                   <height>350</height>
                   <width>230</width>
-                  <texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
+                  <texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Art(thumb)]</texture>
                   <aspectratio>scale</aspectratio>
                 </control>
               </control>
@@ -220,7 +220,7 @@
                   <top>80</top>
                   <height>350</height>
                   <width>230</width>
-                  <texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
+                  <texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Art(thumb)]</texture>
                   <aspectratio>scale</aspectratio>
                 </control>
               </control>
@@ -384,7 +384,7 @@
                 <left>60</left>
                 <height>169</height>
                 <width>300</width>
-                <texture background="true" diffuse="images/EpisodesBottom.png">$INFO[ListItem.Thumb]</texture>
+                <texture background="true" diffuse="images/EpisodesBottom.png">$INFO[ListItem.Art(thumb)]</texture>
                 <aspectratio scalediffuse="false">scale</aspectratio>
               </control>
               <control type="image">
@@ -439,7 +439,7 @@
                 <left>60</left>
                 <height>169</height>
                 <width>300</width>
-                <texture background="true" diffuse="images/EpisodesBottom.png">$INFO[ListItem.Thumb]</texture>
+                <texture background="true" diffuse="images/EpisodesBottom.png">$INFO[ListItem.Art(thumb)]</texture>
                 <aspectratio scalediffuse="false">scale</aspectratio>
               </control>
               <control type="image" description="STARTED">
@@ -708,7 +708,7 @@
                   <top>10</top>
                   <height>280</height>
                   <width>280</width>
-                  <texture background="true" fallback="Defaultalbumcover.png">$INFO[ListItem.thumb]</texture>
+                  <texture background="true" fallback="Defaultalbumcover.png">$INFO[ListItem.Art(thumb)]</texture>
                   <aspectratio>stretch</aspectratio>
                 </control>
               </control>
@@ -770,7 +770,7 @@
                   <top>10</top>
                   <height>280</height>
                   <width>280</width>
-                  <texture background="true" fallback="Defaultalbumcover.png">$INFO[ListItem.thumb]</texture>
+                  <texture background="true" fallback="Defaultalbumcover.png">$INFO[ListItem.Art(thumb)]</texture>
                   <aspectratio>stretch</aspectratio>
                 </control>
               </control>

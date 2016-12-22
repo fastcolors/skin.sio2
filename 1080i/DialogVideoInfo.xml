@@ -260,7 +260,7 @@
                         <height>205</height>
                         <width>205</width>
                         <aspectratio scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="images/LoginDiffuse.png" fallback="defaultsilo.png">$INFO[ListItem.Thumb]</texture>
+                        <texture diffuse="images/LoginDiffuse.png" fallback="defaultsilo.png">$INFO[ListItem.Art(thumb)]</texture>
                     </control>
                     <control type="textbox" description="actors-roles">
                         <top>270</top>
@@ -280,7 +280,7 @@
                             <height>205</height>
                             <width>205</width>
                             <aspectratio scalediffuse="false">scale</aspectratio>
-                            <texture diffuse="images/LoginDiffuse.png" fallback="defaultsilo.png">$INFO[ListItem.Thumb]</texture>
+                            <texture diffuse="images/LoginDiffuse.png" fallback="defaultsilo.png">$INFO[ListItem.Art(thumb)]</texture>
                         </control>
                         <control type="textbox" description="actors-roles">
                             <animation effect="slide" end="0,22" time="120" tween="Back" easing="Out">Focus</animation>

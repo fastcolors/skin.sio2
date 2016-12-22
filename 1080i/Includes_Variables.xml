@@ -53,6 +53,7 @@
         <value condition="Window.IsActive(DialogAddonInfo.xml)">$LOCALIZE[24003]</value>
         <value condition="Window.IsActive(weather)">$INFO[Window(Weather)]</value>
         <value condition="Window.IsActive(MyPics.xml)">$LOCALIZE[1]</value>
+        <value condition="Window.IsActive(MyPrograms.xml)">$LOCALIZE[0]</value>
         <value condition="Window.IsActive(MyPVR.xml) + [Control.HasFocus(13) | Control.HasFocus(34) | Control.HasFocus(14) | Control.HasFocus(35) | Control.HasFocus(17) | Control.HasFocus(36)]">$INFO[Control.GetLabel(29)]</value>
         <value condition="Window.IsActive(MyPVR.xml)">$INFO[Control.GetLabel(30)]</value>
         <value>$INFO[Container.FolderName]</value>
@@ -80,7 +81,7 @@
         <value>NA</value>
     </variable>
     <variable name="Plots">
-        <value condition="Container.content(addons) + !String.IsEmpty(ListItem.Property(Addon.Description))">$INFO[ListItem.Property(Addon.Description)]</value>
+        <value condition="Container.Content(Addons) + !String.IsEmpty(ListItem.AddonDescription)">$INFO[ListItem.AddonDescription]</value>
         <value condition="SubString(ListItem.IsCollection)">$LOCALIZE[20457]</value>
         <value condition="[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes)] + !String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
         <value condition="Container.Content(Seasons) + !String.IsEmpty(Container.ShowPlot)">$INFO[Container.ShowPlot]</value>

@@ -161,7 +161,7 @@
                     <top>122</top>
                     <height>220</height>
                     <width>220</width>
-                    <texture>$INFO[ListItem.thumb]</texture>
+                    <texture>$INFO[ListItem.Art(thumb)]</texture>
                     <aspectratio align="center">keep</aspectratio>
                 </control>
                 <control type="image">
@@ -205,7 +205,7 @@
                     <top>122</top>
                     <height>220</height>
                     <width>220</width>
-                    <texture>$INFO[ListItem.thumb]</texture>
+                    <texture>$INFO[ListItem.Art(thumb)]</texture>
                     <aspectratio align="center">keep</aspectratio>
                 </control>
                 <control type="image">

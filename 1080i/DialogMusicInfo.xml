@@ -16,7 +16,7 @@
           <width>570</width>
           <height>570</height>
           <aspectratio align="right" aligny="top">keep</aspectratio>
-          <texture fallback="DefaultVideo.png">$INFO[ListItem.Thumb]</texture>
+          <texture fallback="DefaultVideo.png">$INFO[ListItem.Art(thumb)]</texture>
         </control>
       </control>
       <control type="group" description="Top info">

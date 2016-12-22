@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-  <include name="Programviews">
-    <control type="group" description="BigList">
+    <include name="Programviews">
+        <!--LIST-->
+        <control type="group" description="List">
             <visible>Control.IsVisible(50)</visible>
-            <include>left_Panel</include>
+            <include>Left_Panel_Addons</include>
             <control type="group">
                 <include>LargeListItemCount</include>
                 <left>1020</left>
-                <top>131</top>
+                <top>120</top>
                 <control type="fixedlist" id="50">
                     <visible>!container.content(Sets)</visible>
                     <visible>!String.IsEmpty(Container.FolderPath)</visible>
                     <width>802</width>
-                    <height>888</height>
+                    <height>960</height>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                     <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
                     <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
@@ -20,12 +21,12 @@
                     <onup>50</onup>
                     <ondown>50</ondown>
                     <pagecontrol>60</pagecontrol>
-                    <viewtype label="537">Big List 50</viewtype>
+                    <viewtype label="535">List 50</viewtype>
                     <focusposition>3</focusposition>
                     <movement>4</movement>
                     <preloaditems>4</preloaditems>
                     <scrolltime>250</scrolltime>
-                    <include>LargeListLayout</include>
+                    <include>SlimListLayout</include>
                 </control>
             </control>
             <control type="scrollbar" id="60">
@@ -36,101 +37,101 @@
                 <onright>noop</onright>
             </control>
         </control>
-    <!--ICONE-->
-    <control type="group">
-      <visible>Control.IsVisible(53)</visible>
-      <control type="group" description="Container and frame">
-        <control type="panel" id="53" description="Panel">
-          <visible>Container.Content(Albums) | Container.Content(Addons)</visible>
-          <visible>!Container.content(songs)</visible>
-          <viewtype label="536">Icons</viewtype>
-          <left>50</left>
-          <width>1820</width>
-          <height>1080</height>
-          <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-          <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
-          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">noop</onright>
-          <onup>53</onup>
-          <ondown>53</ondown>
-          <preloaditems>4</preloaditems>
-          <pagecontrol>60</pagecontrol>
-          <scrolltime>400</scrolltime>
-          <itemlayout height="455" width="455">
-            <control type="image">
-              <visible>container.content(albums)</visible>
-              <centerleft>227</centerleft>
-              <centertop>227</centertop>
-              <width>360</width>
-              <height>360</height>
-              <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>stretch</aspectratio>
+        <!--ICONE-->
+        <control type="group">
+            <visible>Control.IsVisible(53)</visible>
+            <control type="group" description="Container and frame">
+                <control type="panel" id="53" description="Panel">
+                    <visible>Container.Content(Albums) | Container.Content(Addons)</visible>
+                    <visible>!Container.content(songs)</visible>
+                    <viewtype label="536">Icons</viewtype>
+                    <left>50</left>
+                    <width>1820</width>
+                    <height>1080</height>
+                    <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+                    <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
+                    <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+                    <onright condition="!Skin.HasSetting(Scrollbars_Active)">noop</onright>
+                    <onup>53</onup>
+                    <ondown>53</ondown>
+                    <preloaditems>4</preloaditems>
+                    <pagecontrol>60</pagecontrol>
+                    <scrolltime>400</scrolltime>
+                    <itemlayout height="455" width="455">
+                        <control type="image">
+                            <visible>container.content(albums)</visible>
+                            <centerleft>227</centerleft>
+                            <centertop>227</centertop>
+                            <width>360</width>
+                            <height>360</height>
+                            <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <visible>!container.content(albums)</visible>
+                            <centerleft>227</centerleft>
+                            <centertop>227</centertop>
+                            <width>360</width>
+                            <height>360</height>
+                            <texture background="true">$INFO[ListItem.Icon]</texture>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="455" width="455">
+                        <control type="image">
+                            <animation effect="fade" start="0" end="100" time="150">Focus</animation>
+                            <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
+                            <visible>!StringCompare(ListItem.Label,..)</visible>
+                            <centerleft>227</centerleft>
+                            <centertop>227</centertop>
+                            <width>455</width>
+                            <height>455</height>
+                            <texture>shadow.png</texture>
+                        </control>
+                        <control type="group">
+                            <animation effect="zoom" time="120" start="100" end="114" center="auto" tween="Back" easing="Out">Focus</animation>
+                            <animation effect="zoom" start="114" end="100" time="120" center="auto">unFocus</animation>
+                            <control type="image">
+                                <visible>container.content(albums)</visible>
+                                <centerleft>227</centerleft>
+                                <centertop>227</centertop>
+                                <width>360</width>
+                                <height>360</height>
+                                <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
+                                <aspectratio>stretch</aspectratio>
+                            </control>
+                            <control type="image">
+                                <visible>!container.content(albums)</visible>
+                                <centerleft>227</centerleft>
+                                <centertop>227</centertop>
+                                <width>360</width>
+                                <height>360</height>
+                                <texture background="true">$INFO[ListItem.Icon]</texture>
+                                <aspectratio>stretch</aspectratio>
+                            </control>
+                            <control type="label">
+                                <animation effect="fade" start="0" end="100" time="150">Focus</animation>
+                                <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
+                                <centerleft>227</centerleft>
+                                <top>414</top>
+                                <width>600</width>
+                                <height>20</height>
+                                <font>size24</font>
+                                <textcolor>white</textcolor>
+                                <align>center</align>
+                                <label>[B]$INFO[ListItem.Label][/B]</label>
+                            </control>
+                        </control>
+                    </focusedlayout>
+                </control>
             </control>
-            <control type="image">
-              <visible>!container.content(albums)</visible>
-              <centerleft>227</centerleft>
-              <centertop>227</centertop>
-              <width>360</width>
-              <height>360</height>
-              <texture background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>stretch</aspectratio>
+            <control type="scrollbar" id="60">
+                <right>40</right>
+                <top>40</top>
+                <height>1000</height>
+                <onleft>53</onleft>
+                <onright>9000</onright>
             </control>
-          </itemlayout>
-          <focusedlayout height="455" width="455">
-            <control type="image">
-              <animation effect="fade" start="0" end="100" time="150">Focus</animation>
-              <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
-              <visible>!StringCompare(ListItem.Label,..)</visible>
-              <centerleft>227</centerleft>
-              <centertop>227</centertop>
-              <width>455</width>
-              <height>455</height>
-              <texture>shadow.png</texture>
-            </control>
-            <control type="group">
-              <animation effect="zoom" time="120" start="100" end="114" center="auto" tween="Back" easing="Out">Focus</animation>
-              <animation effect="zoom" start="114" end="100" time="120" center="auto">unFocus</animation>
-              <control type="image">
-                <visible>container.content(albums)</visible>
-                <centerleft>227</centerleft>
-                <centertop>227</centertop>
-                <width>360</width>
-                <height>360</height>
-                <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
-                <aspectratio>stretch</aspectratio>
-              </control>
-              <control type="image">
-                <visible>!container.content(albums)</visible>
-                <centerleft>227</centerleft>
-                <centertop>227</centertop>
-                <width>360</width>
-                <height>360</height>
-                <texture background="true">$INFO[ListItem.Icon]</texture>
-                <aspectratio>stretch</aspectratio>
-              </control>
-              <control type="label">
-                <animation effect="fade" start="0" end="100" time="150">Focus</animation>
-                <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
-                <centerleft>227</centerleft>
-                <top>414</top>
-                <width>600</width>
-                <height>20</height>
-                <font>size24</font>
-                <textcolor>white</textcolor>
-                <align>center</align>
-                <label>[B]$INFO[ListItem.Label][/B]</label>
-              </control>
-            </control>
-          </focusedlayout>
         </control>
-      </control>
-      <control type="scrollbar" id="60">
-        <left>45r</left>
-        <top>219</top>
-        <height>660</height>
-        <onleft>53</onleft>
-        <onright>9000</onright>
-      </control>
-    </control>
-  </include>
+    </include>
 </includes>

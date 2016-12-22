@@ -36,7 +36,7 @@
             <top>0</top>
             <width>90</width>
             <height>98</height>
-            <texture>$INFO[ListItem.thumb]</texture>
+            <texture>$INFO[ListItem.Art(thumb)]</texture>
           </control>
         </itemlayout>
         <focusedlayout width="90">

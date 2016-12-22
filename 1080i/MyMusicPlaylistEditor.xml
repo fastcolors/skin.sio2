@@ -131,7 +131,7 @@
           <height>360</height>
           <aligny>bottom</aligny>
           <aspectratio>keep</aspectratio>
-          <texture fallback="defaultalbumcover.png">$INFO[Container(50).ListItem.Thumb]</texture>
+          <texture fallback="defaultalbumcover.png">$INFO[Container(50).ListItem.Art(thumb)]</texture>
           <bordersize>2</bordersize>
         </control>
         <control type="image">
@@ -165,7 +165,7 @@
           <width>360</width>
           <height>360</height>
           <aspectratio>keep</aspectratio>
-          <texture fallback="defaultalbumcover.png">$INFO[Container(100).ListItem.Thumb]</texture>
+          <texture fallback="defaultalbumcover.png">$INFO[Container(100).ListItem.Art(thumb)]</texture>
           <bordersize>2</bordersize>
         </control>
         <control type="textbox">

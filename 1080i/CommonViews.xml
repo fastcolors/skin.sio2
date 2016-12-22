@@ -233,7 +233,7 @@
           <width>600</width>
           <height>600</height>
           <include>Icon_Fade</include>
-          <texture background="true" fallback="defaultalbumcover.png">$INFO[ListItem.Thumb]</texture>
+          <texture background="true" fallback="defaultalbumcover.png">$INFO[ListItem.Art(thumb)]</texture>
           <aspectratio aligny="bottom">keep</aspectratio>
         </control>
       </control>
@@ -925,7 +925,7 @@
         <top>27</top>
         <width>303</width>
         <height>303</height>
-        <texture background="true">$INFO[ListItem.Thumb]</texture>
+        <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
         <aspectratio>scale</aspectratio>
       </control>
     </itemlayout>
@@ -954,7 +954,7 @@
         <top>27</top>
         <width>303</width>
         <height>303</height>
-        <texture background="true">$INFO[ListItem.Thumb]</texture>
+        <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
         <aspectratio>scale</aspectratio>
       </control>
       <control type="image">
@@ -974,114 +974,45 @@
     </focusedlayout>
   </include>
   <include name="Left_Panel_Addons">
-    <control type="group" description="Stage">
-      <visible>String.IsEmpty(Container.FolderPath)</visible>
-      <control type="image" description="Thumb">
-        <left>262</left>
-        <top>180</top>
-        <width>495</width>
-        <height>495</height>
-        <include>Icon_Fade</include>
-        <texture background="true">DefaultAddon.png</texture>
-        <aspectratio scalediffuse="false">scale</aspectratio>
-      </control>
-      <control type="image">
-        <left>165</left>
-        <top>630</top>
-        <width>682</width>
-        <height>1</height>
-        <texture>images/Line.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
-      <control type="label" description="Updates">
-        <left>135</left>
-        <top>675</top>
-        <width>750</width>
-        <height>81</height>
-        <align>center</align>
-        <textcolor>Yellow</textcolor>
-        <label>$INFO[Control.GetLabel(5)]</label>
-      </control>
-      <control type="label" description="Notifications">
-        <left>135</left>
-        <top>765</top>
-        <width>750</width>
-        <height>81</height>
-        <align>center</align>
-        <textcolor>Yellow</textcolor>
-        <label>$INFO[Control.GetLabel(6)]</label>
-      </control>
-    </control>
-    <control type="group" description="Thumbs no info">
-      <top>240</top>
-      <visible>ListItem.IsFolder + !String.IsEmpty(Container.FolderPath)</visible>
+    <control type="group" description="Info thumbs">
       <animation effect="fade" time="400">Visible</animation>
-      <animation effect="fade" time="0">Hidden</animation>
+      <animation effect="fade" time="10">Hidden</animation>
       <control type="image" description="Thumb">
-        <left>180</left>
-        <top>0</top>
-        <width>621</width>
-        <height>621</height>
+        <top>80</top>
+        <centerleft>480</centerleft>
+        <width>250</width>
+        <height>250</height>
         <include>Icon_Fade</include>
-        <texture background="true">$INFO[ListItem.Icon]</texture>
+        <texture background="true" fallback="DefaultAddon.png">$INFO[ListItem.Art(thumb)]</texture>
         <aspectratio aligny="bottom">keep</aspectratio>
       </control>
-    </control>
-    <control type="group" description="Faded Info thumbs">
-      <visible>!ListItem.IsFolder</visible>
-      <animation effect="fade" time="400">Visible</animation>
-      <animation effect="fade" time="10">Hidden</animation>
-      <control type="group">
-        <left>260</left>
-        <top>80</top>
-        <control type="image" description="Thumb">
-          <width>500</width>
-          <height>500</height>
-          <include>Icon_Fade</include>
-          <texture background="true">$INFO[ListItem.Icon]</texture>
-          <aspectratio aligny="bottom">keep</aspectratio>
-        </control>
-      </control>
-    </control>
-    <control type="group" description="Addon Description">
-      <visible>!ListItem.IsFolder</visible>
-      <animation effect="fade" delay="100" time="300">Visible</animation>
-      <animation effect="fade" time="10">Hidden</animation>
-      <left>110</left>
-      <top>27</top>
-      <control type="group">
-        <left>20</left>
-        <top>610</top>
-        <control type="label">
-          <left>-20</left>
-          <width>640</width>
-          <font>size33B</font>
-          <textcolor>White2</textcolor>
-          <include>Genre51Commons</include>
-          <label>$INFO[ListItem.Label]</label>
-        </control>
-        <control type="textbox">
-          <top>45</top>
-          <height>210</height>
-          <include>Plot51Commons</include>
-          <label>$VAR[Plots]</label>
-        </control>
-        <control type="label" description="Bottom Label">
-          <top>260</top>
-          <include>Genre51Commons</include>
-          <label>$INFO[ListItem.Genre]</label>
-        </control>
-        <control type="label" description="Bottom Label">
-          <visible>container.content(addons)</visible>
-          <top>260</top>
-          <scroll>true</scroll>
-          <include>Genre51Commons</include>
-          <label>$INFO[ListItem.Property(Addon.Disclaimer)]</label>
-        </control>
-        <control type="label" description="More Info">
-          <top>300</top>
-          <include>Genre51Commons</include>
-          <label>$INFO[ListItem.Property(Addon.Version),$LOCALIZE[24051] ]$VAR[TopLabel, • ]</label>
+      <control type="group" description="Addon Description">
+        <animation effect="fade" delay="100" time="300">Visible</animation>
+        <animation effect="fade" time="10">Hidden</animation>
+        <control type="grouplist">
+          <centerleft>480</centerleft>
+          <width>760</width>
+          <top>360</top>
+          <control type="label">
+            <font>size33B</font>
+            <align>center</align>
+            <textcolor>black</textcolor>
+            <label>$INFO[ListItem.Label]$INFO[ListItem.AddonVersion,  •  ]</label>
+          </control>
+          <control type="textbox">
+            <top>45</top>
+            <height>460</height>
+            <font>Size24</font>
+            <label>$VAR[Plots]</label>
+          </control>
+          <control type="textbox" description="Bottom Label">
+            <height>120</height>
+            <font>Size22</font>
+            <textcolor>red</textcolor>
+            <align>justify</align>
+            <scroll>true</scroll>
+            <label>$INFO[ListItem.AddonDisclaimer]</label>
+          </control>
         </control>
       </control>
     </control>

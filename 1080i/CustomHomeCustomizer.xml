@@ -34,16 +34,16 @@
                     <scrolltime tween="sine" easing="inout">280</scrolltime>
                     <itemlayout height="230" width="300">
                         <control type="Image" description="THUMB">
-                            <visible>!String.IsEmpty(Listitem.thumb)</visible>
+                            <visible>!String.IsEmpty(ListItem.Art(thumb))</visible>
                             <left>20</left>
                             <top>48</top>
                             <height>168</height>
                             <width>260</width>
-                            <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
+                            <texture diffuse="images/diffusehome.png">$INFO[ListItem.Art(thumb)]</texture>
                             <aspectratio scalediffuse="false">scale</aspectratio>
                         </control>
                         <control type="Image" description="THUMB">
-                            <visible>String.IsEmpty(Listitem.thumb)</visible>
+                            <visible>String.IsEmpty(ListItem.Art(thumb))</visible>
                             <left>20</left>
                             <top>48</top>
                             <height>168</height>
@@ -71,16 +71,16 @@
                                 <texture>images/atvslider.png</texture>
                             </control>
                             <control type="Image" description="THUMB">
-                                <visible>!String.IsEmpty(Listitem.thumb)</visible>
+                                <visible>!String.IsEmpty(ListItem.Art(thumb))</visible>
                                 <left>20</left>
                                 <top>48</top>
                                 <height>168</height>
                                 <width>260</width>
-                                <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
+                                <texture diffuse="images/diffusehome.png">$INFO[ListItem.Art(thumb)]</texture>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
                             </control>
                             <control type="Image" description="THUMB">
-                                <visible>String.IsEmpty(Listitem.thumb)</visible>
+                                <visible>String.IsEmpty(ListItem.Art(thumb))</visible>
                                 <left>20</left>
                                 <top>48</top>
                                 <height>168</height>

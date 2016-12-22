@@ -70,15 +70,15 @@
                     <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Property(color)]</texture>
                 </control>
                 <control type="image" description="THMBSICONS">
-                    <visible>!String.IsEmpty(Listitem.thumb)</visible>
+                    <visible>!String.IsEmpty(ListItem.Art(thumb))</visible>
                     <centerleft>180</centerleft>
                     <top>27</top>
                     <width>287</width>
                     <height>179</height>
-                    <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.thumb]</texture>
+                    <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Art(thumb)]</texture>
                 </control>
                 <control type="image" description="THMBSICONS">
-                    <visible>String.IsEmpty(Listitem.thumb)</visible>
+                    <visible>String.IsEmpty(ListItem.Art(thumb))</visible>
                     <centerleft>180</centerleft>
                     <top>27</top>
                     <width>287</width>
@@ -113,15 +113,15 @@
                         <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Property(color)]</texture>
                     </control>
                     <control type="image" description="THMBSICONS">
-                        <visible>!String.IsEmpty(Listitem.thumb)</visible>
+                        <visible>!String.IsEmpty(ListItem.Art(thumb))</visible>
                         <centerleft>180</centerleft>
                         <top>27</top>
                         <width>287</width>
                         <height>179</height>
-                        <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.thumb]</texture>
+                        <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Art(thumb)]</texture>
                     </control>
                     <control type="image" description="THMBSICONS">
-                        <visible>String.IsEmpty(Listitem.thumb)</visible>
+                        <visible>String.IsEmpty(ListItem.Art(thumb))</visible>
                         <centerleft>180</centerleft>
                         <top>27</top>
                         <width>287</width>

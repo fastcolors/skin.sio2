@@ -766,6 +766,7 @@
                 <onright>9000</onright>
             </control>
         </control>
+        <!--END OF VIEWS-->
         <control type="label">
             <description>Page Count Label</description>
             <right>40</right>

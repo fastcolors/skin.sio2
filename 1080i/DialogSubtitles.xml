@@ -82,7 +82,7 @@
                         <width>33</width>
                         <height>54</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>flags/$INFO[ListItem.Thumb].png</texture>
+                        <texture>flags/$INFO[ListItem.Art(thumb)].png</texture>
                     </control>
                     <control type="label">
                         <left>54</left>
@@ -143,7 +143,7 @@
                         <width>33</width>
                         <height>54</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>flags/$INFO[ListItem.Thumb].png</texture>
+                        <texture>flags/$INFO[ListItem.Art(thumb)].png</texture>
                     </control>
                     <control type="label">
                         <left>54</left>

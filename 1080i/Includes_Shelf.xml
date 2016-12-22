@@ -32,7 +32,7 @@
                 <top>16</top>
                 <width>340</width>
                 <height>500</height>
-                <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
+                <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
@@ -64,7 +64,7 @@
                     <top>16</top>
                     <width>340</width>
                     <height>500</height>
-                    <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
+                    <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image">
@@ -109,7 +109,7 @@
                 <top>27</top>
                 <width>450</width>
                 <height>450</height>
-                <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Thumb]</texture>
+                <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
                 <aspectratio>scale</aspectratio>
             </control>
         </itemlayout>
@@ -131,7 +131,7 @@
                     <top>27</top>
                     <width>450</width>
                     <height>450</height>
-                    <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Thumb]</texture>
+                    <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
             </control>
@@ -711,7 +711,7 @@
                     <control type="image" description="Dayicon">
                         <height>150</height>
                         <width>250</width>
-                        <texture>$INFO[ListItem.thumb]</texture>
+                        <texture>$INFO[ListItem.Art(thumb)]</texture>
                         <aspectratio align="center">keep</aspectratio>
                     </control>
                 </itemlayout>
@@ -745,7 +745,7 @@
                     <control type="image" description="Dayicon">
                         <height>150</height>
                         <width>250</width>
-                        <texture>$INFO[ListItem.thumb]</texture>
+                        <texture>$INFO[ListItem.Art(thumb)]</texture>
                         <aspectratio align="center">keep</aspectratio>
                     </control>
                 </focusedlayout>
