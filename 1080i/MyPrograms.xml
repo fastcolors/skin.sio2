@@ -12,11 +12,13 @@
         <centerleft>960</centerleft>
         <centertop>540</centertop>
         <width>802</width>
-        <height>906</height>
+        <height>506</height>
         <aspectratio>stretch</aspectratio>
         <texture border="50">images/ContextMenu.png</texture>
       </control>
       <control type="grouplist" id="9000">
+        <height>678</height>
+        <align>center</align>
         <include>DialogGLs</include>
         <control type="button" id="2" description="Views">
           <include>DialogButt</include>

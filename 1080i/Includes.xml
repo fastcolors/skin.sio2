@@ -61,27 +61,7 @@
         <aligny>center</aligny>
         <width>1260</width>
         <height>75</height>
-        <textcolor>dimgray</textcolor>
-        <font>size42</font>
-    </include>
-    <include name="HeadingL">
-        <left>60</left>
-        <top>20</top>
-        <align>left</align>
-        <aligny>center</aligny>
-        <width>1260</width>
-        <height>45</height>
-        <textcolor>dimgray</textcolor>
-        <font>size42</font>
-    </include>
-    <include name="HeadingR">
-        <left>960</left>
-        <top>60</top>
-        <width>930</width>
-        <height>75</height>
-        <align>center</align>
-        <aligny>bottom</aligny>
-        <textcolor>dimgray</textcolor>
+        <textcolor>white</textcolor>
         <font>size42</font>
     </include>
     <include name="Dimensions_Fullscreen">

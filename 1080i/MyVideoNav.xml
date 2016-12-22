@@ -9,11 +9,10 @@
         <include>BlackBackground</include>
         <include>Videoviews</include>
         <control type="group">
-            <include>WindowsTopInfos</include>
             <control type="label" description="Heading">
-                <visible>String.IsEmpty(Container.FolderName)</visible>
-                <include>HeadingR</include>
-                <label>3</label>
+                <visible>!Control.IsVisible(53)</visible>
+                <include>Heading</include>
+                <label>$VAR[RootLabel][COLOR=gray]$INFO[Container.NumItems,  (,)][/COLOR]</label>
             </control>
         </control>
         <control type="group" description="Side menu 9000 group">
@@ -29,7 +28,7 @@
             </control>
             <control type="grouplist" id="9000">
                 <height>878</height>
-                <top>180</top>
+                <align>center</align>
                 <include>DialogGLs</include>
                 <control type="button" id="2" description="Views">
                     <include>DialogButt</include>

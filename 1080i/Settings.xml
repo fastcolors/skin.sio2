@@ -7,9 +7,10 @@
   <controls>
     <include>BlackBackground</include>
     <control type="label">
-      <left>1060</left>
-      <top>30</top>
+      <centerleft>960</centerleft>
       <height>81</height>
+      <width>800</width>
+      <align>center</align>
       <font>size42</font>
       <label>5</label>
     </control>
@@ -111,7 +112,6 @@
           <item>
             <label>$LOCALIZE[10003]</label>
             <onclick>ActivateWindow(filemanager)</onclick>
-            <icon>icons/settings/filemanager.png</icon>
           </item>
         </content>
       </control>
