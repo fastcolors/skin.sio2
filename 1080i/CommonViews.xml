@@ -877,9 +877,9 @@
     </control>
   </include>
   <include name="SettingsSubmenuButtons">
-    <width>720</width>
+    <width>800</width>
     <textoffsetx>22</textoffsetx>
-    <height>54</height>
+    <height>75</height>
     <align>left</align>
     <font>size30</font>
     <disabledcolor>Grey</disabledcolor>
