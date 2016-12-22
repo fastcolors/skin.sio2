@@ -31,8 +31,8 @@ msgid "Karaoke Song"
 msgstr "Karaoke Song"
 
 msgctxt "#31003"
-msgid "Choose Shortcut function for Music Icon : Albums  Artists Genres Songs"
-msgstr "Choose Shortcut function for Music Icon : Albums  Artists Genres Songs"
+msgid "Gives the option to go directly to a Music Library node when Music Icon is pressed: [CR][CR]• Albums[CR]• Artists[CR]• Genres[CR]• Songs"
+msgstr "Gives the option to go directly to a Music Library node when Music Icon is pressed: [CR][CR]• Albums[CR]• Artists[CR]• Genres[CR]• Songs"
 
 msgctxt "#31004"
 msgid "Visualization Presets"
@@ -49,10 +49,6 @@ msgstr "Last Added"
 msgctxt "#31007"
 msgid "Last Started"
 msgstr "Last Started"
-
-msgctxt "#31008"
-msgid "Enable/Disable Always Colored Icons on Home Screen, when Disabled Icons will only become colored when Focused"
-msgstr "Enable/Disable Always Colored Icons on Home Screen, when Disabled Icons will only become colored when Focused"
 
 msgctxt "#31009"
 msgid "Recently Added Episodes"
@@ -86,25 +82,17 @@ msgctxt "#31016"
 msgid "Last Updated"
 msgstr "Last Updated"
 
-msgctxt "#31017"
-msgid "Choose Addon for Subtitles Search & Download"
-msgstr "Choose Addon for Subtitles Search & Download"
-
 msgctxt "#31018"
-msgid "Choose Addon for Lyrics Search & Download"
-msgstr "Choose Addon for Lyrics Search & Download"
-
-msgctxt "#31020"
-msgid "Enable or Disable Vinyl Record Animation from Home Shelf Albums."
-msgstr "Enable or Disable Vinyl Record Animation from Home Shelf Albums."
+msgid "Choose which Addon is to be used to Search & Download Lyrics"
+msgstr "Choose which Addon is to be used to Search & Download Lyrics"
 
 msgctxt "#31021"
 msgid "Memory Used:"
 msgstr "Memory Used:"
 
 msgctxt "#31022"
-msgid "Specify Action for Power Icon in Menu"
-msgstr "Specify Action for Power Icon in Menu"
+msgid "Specify an Action to be executed when The Power Icon in Menu is pressed"
+msgstr "Specify an Action to be executed when The Power Icon in Menu is pressed"
 
 msgctxt "#31023"
 msgid "Fanart image[CR][CR]Unavailable[CR][CR] Click button to set"
@@ -139,8 +127,8 @@ msgid "Custom Shelf Icon"
 msgstr "Custom Shelf Icon"
 
 msgctxt "#31031"
-msgid "Replace SiO2 Icon on Shelf with A Picture of Your choice."
-msgstr "Replace SiO2 Icon on Shelf with A Picture of Your choice."
+msgid "Replace the SiO2 default shelf icon with a picture of your choice."
+msgstr "Replace the SiO2 default shelf icon with a picture of your choice."
 
 msgctxt "#31032"
 msgid "Log Off"
@@ -169,10 +157,6 @@ msgstr "Add-ons manager"
 msgctxt "#31038"
 msgid "min"
 msgstr "min"
-
-msgctxt "#31039"
-msgid "Record Animation on Shelf"
-msgstr "Record Animation on Shelf"
 
 msgctxt "#31040"
 msgid "Shelf items"

@@ -9,13 +9,14 @@
         <centerleft>960</centerleft>
         <centertop>540</centertop>
         <width>802</width>
-        <height>600</height>
+        <height>450</height>
         <aspectratio>stretch</aspectratio>
         <texture border="50">images/ContextMenu.png</texture>
       </control>
       <control type="grouplist" id="9000">
         <height>400</height>
-        <top>345</top>
+        <centertop>540</centertop>
+        <align>center</align>
         <include>DialogGLs</include>
         <control type="button" id="701" description="Video">
           <include>DialogButt</include>
@@ -28,12 +29,6 @@
           <label>$LOCALIZE[2]</label>
           <onclick>Close</onclick>
           <onclick>ActivateWindow(MusicFiles,root)</onclick>
-        </control>
-        <control type="button" id="703" description="Addons">
-          <include>DialogButt</include>
-          <label>$LOCALIZE[24001]</label>
-          <onclick>Close</onclick>
-          <onclick>ActivateWindow(AddonBrowser,root)</onclick>
         </control>
         <control type="button" id="704" description="Update Library">
           <enable>Library.HasContent(Movies) | Library.HasContent(TVShows)</enable>

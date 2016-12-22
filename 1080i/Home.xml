@@ -371,7 +371,7 @@
                     <visible>!Skin.HasSetting(hideprog)</visible>
                     <thumb>icons/program.png</thumb>
                     <label>0</label>
-                    <onclick>ActivateWindow(Programs)</onclick>
+                    <onclick>ActivateWindow(Programs,Addons,return)</onclick>
                 </item>
                 <item id="347">
                     <visible>!Skin.HasSetting(hideSources)</visible>

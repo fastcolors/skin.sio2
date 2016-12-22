@@ -94,20 +94,15 @@
         <value >$LOCALIZE[19019]</value>
     </variable>
     <variable name="helptext">
-        <value condition="Container(50).HasFocus(1)">$LOCALIZE[31008]</value>
-        <value condition="Container(50).HasFocus(2)">$LOCALIZE[31018]</value>
-        <value condition="Container(50).HasFocus(3)">$LOCALIZE[31017]</value>
-        <value condition="Container(50).HasFocus(4)">$LOCALIZE[21383]</value>
-        <value condition="Container(50).HasFocus(5)">$LOCALIZE[31054]</value>
-        <value condition="Container(50).HasFocus(6)">$LOCALIZE[31058]</value>
-        <value condition="Container(50).HasFocus(8)">$LOCALIZE[31046]</value>
-        <value condition="Container(50).HasFocus(9)">$LOCALIZE[31022]</value>
-        <value condition="Container(50).HasFocus(11)">$LOCALIZE[31019]</value>
-        <value condition="Container(50).HasFocus(13)">$LOCALIZE[31020]</value>
-        <value condition="Container(50).HasFocus(14)">$LOCALIZE[31003]</value>
-        <value condition="Container(50).HasFocus(15)">$LOCALIZE[31029]</value>
-        <value condition="Container(50).HasFocus(16)">$LOCALIZE[31031]</value>
-        <value condition="Container(50).HasFocus(17)">$LOCALIZE[31068]</value>
+        <value condition="ControlGroup(50).HasFocus(1)"></value>
+        <value condition="ControlGroup(50).HasFocus(2)">$LOCALIZE[31018]</value>
+        <value condition="ControlGroup(50).HasFocus(3)"></value>
+        <value condition="ControlGroup(50).HasFocus(4)">$LOCALIZE[31054]</value>
+        <value condition="ControlGroup(50).HasFocus(5)">$LOCALIZE[31022]</value>
+        <value condition="ControlGroup(50).HasFocus(6)">$LOCALIZE[31003]</value>
+        <value condition="ControlGroup(50).HasFocus(7)">$LOCALIZE[31031]</value>
+        <value condition="ControlGroup(50).HasFocus(8)">$LOCALIZE[31036]</value>
+        <value condition="ControlGroup(50).HasFocus(9)"></value>
     </variable>
     <variable name="nowplay">
         <value condition="Pvr.IsPlayingTV">$INFO[]</value>
@@ -123,11 +118,6 @@
     <variable name="fanart">
         <value condition="String.IsEmpty(ListItem.Art(fanart)) | Container.Content(Albums) | Container.Content(episodes)">$INFO[ListItem.Icon]</value>
         <value>$INFO[ListItem.Art(fanart)]</value>
-    </variable>
-
-    <variable name="dvdbox">
-        <value condition="ListItem.IsStereoscopic">images/dvdbox3d.png</value>
-        <value>images/dvdbox.png</value>
     </variable>
 
     <variable name="shelfmovies">
