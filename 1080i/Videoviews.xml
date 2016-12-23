@@ -767,7 +767,7 @@
                 <right>0</right>
                 <width>488</width>
                 <height>1080</height>
-                <texture>images/black.png</texture>
+                <texture>images/Black.png</texture>
                 <colordiffuse>aaffffff</colordiffuse>
             </control>
             <control type="grouplist">
@@ -1020,7 +1020,7 @@
                     <width>750</width>
                     <height>630</height>
                     <align>justify</align>
-                    <shadowcolor>inverted</shadowcolor>
+                    <shadowcolor>-</shadowcolor>
                     <label>[B]$VAR[Plots][/B]</label>
                 </control>
                 <control type="group" description="icon+overlay">
@@ -1072,9 +1072,9 @@
                 <visible>ListItem.IsCollection</visible>
                 <control type="panel" id="990">
                     <centerleft>705</centerleft>
-                    <top>100</top>
+                    <top>120</top>
                     <width>1320</width>
-                    <height>980</height>
+                    <height>960</height>
                     <onup>noop</onup>
                     <ondown>noop</ondown>
                     <onright>500</onright>

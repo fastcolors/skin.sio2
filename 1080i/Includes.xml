@@ -352,7 +352,7 @@
             <align>center</align>
             <aligny>center</aligny>
             <textcolor>Yellow</textcolor>
-            <shadowcolor>black</shadowcolor>
+            <shadowcolor>-</shadowcolor>
         </control>
         <control type="label">
             <description>Start time</description>

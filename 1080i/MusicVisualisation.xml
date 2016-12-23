@@ -113,7 +113,7 @@
               <align>left</align>
               <font>size42B</font>
               <textcolor>White2</textcolor>
-              <shadowcolor>Black</shadowcolor>
+              <shadowcolor>-</shadowcolor>
               <animation effect="fade" time="200">VisibleChange</animation>
               <label>$INFO[MusicPlayer.Title]</label>
             </control>
@@ -281,7 +281,7 @@
               <animation effect="fade" time="200">VisibleChange</animation>
               <label>[B]$INFO[MusicPlayer.PlaylistPosition] $LOCALIZE[20163] $INFO[MusicPlayer.PlaylistLength][/B]</label>
               <font>size26</font>
-              <shadowcolor>Black</shadowcolor>
+              <shadowcolor>-</shadowcolor>
             </control>
             <control type="group">
               <top>756</top>
@@ -379,7 +379,7 @@
           <label>$LOCALIZE[210]</label>
           <font>size22</font>
           <textcolor>Grey</textcolor>
-          <shadowcolor>Black</shadowcolor>
+          <shadowcolor>-</shadowcolor>
         </control>
         <control type="label" description="Previous">
           <left>30</left>
@@ -389,7 +389,7 @@
           <label>$INFO[MusicPlayer.offset(-1).Title]</label>
           <font>size33</font>
           <textcolor>Grey3</textcolor>
-          <shadowcolor>Black</shadowcolor>
+          <shadowcolor>-</shadowcolor>
         </control>
       </control>
       <control type="group">
@@ -401,7 +401,7 @@
           <label>$LOCALIZE[209]</label>
           <font>size22</font>
           <textcolor>Grey</textcolor>
-          <shadowcolor>Black</shadowcolor>
+          <shadowcolor>-</shadowcolor>
         </control>
         <control type="label" description="Next">
           <left>70r</left>
@@ -412,7 +412,7 @@
           <label>$INFO[MusicPlayer.offset(1).Title]</label>
           <font>size33</font>
           <textcolor>Grey3</textcolor>
-          <shadowcolor>Black</shadowcolor>
+          <shadowcolor>-</shadowcolor>
         </control>
       </control>
     </control>

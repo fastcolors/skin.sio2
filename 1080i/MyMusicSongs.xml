@@ -141,7 +141,7 @@
               <height>45</height>
               <font>size27</font>
               <textcolor>White2</textcolor>
-              <shadowcolor>Black</shadowcolor>
+              <shadowcolor>-</shadowcolor>
               <align>center</align>
               <label>[B]$INFO[ListItem.Label][/B]</label>
             </control>

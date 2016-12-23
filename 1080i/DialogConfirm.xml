@@ -18,7 +18,7 @@
         <width>960</width>
         <label>-</label>
         <font>size28</font>
-        <shadowcolor>black</shadowcolor>
+        <shadowcolor>-</shadowcolor>
         <align>center</align>
       </control>
       <control type="textbox" id="9" description="content">

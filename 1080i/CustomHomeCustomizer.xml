@@ -1090,7 +1090,7 @@
                 <aligny>center</aligny>
                 <font>size36</font>
                 <textcolor>White</textcolor>
-                <shadowcolor>Black</shadowcolor>
+                <shadowcolor>-</shadowcolor>
             </control>
             <control type="group">
                 <left>442</left>

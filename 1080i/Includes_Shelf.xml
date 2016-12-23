@@ -688,7 +688,7 @@
                         <height>45</height>
                         <width>250</width>
                         <align>center</align>
-                        <shadowcolor>Black</shadowcolor>
+                        <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
                     <control type="label" description="temps">
@@ -722,7 +722,7 @@
                         <height>45</height>
                         <width>250</width>
                         <align>center</align>
-                        <shadowcolor>Black</shadowcolor>
+                        <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
                     <control type="label" description="temps">
