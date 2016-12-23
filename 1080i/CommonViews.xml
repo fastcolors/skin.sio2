@@ -33,7 +33,7 @@
       <animation effect="fade" time="0">Hidden</animation>
       <control type="image" description="Thumb">
         <centerleft>500</centerleft>
-        <bottom>560</bottom>
+        <bottom>500</bottom>
         <width>756</width>
         <height>470</height>
         <include>Icon_Fade</include>
@@ -43,7 +43,7 @@
       <include>Unwatched</include>
       <control type="grouplist">
         <centerleft>500</centerleft>
-        <top>560</top>
+        <top>620</top>
         <width>750</width>
         <height>50</height>
         <orientation>horizontal</orientation>
@@ -87,7 +87,7 @@
         <visible>!String.IsEmpty(ListItem.Mpaa) + !Container.Content(Movies)</visible>
         <animation condition="!Container.Content(Episodes)" effect="slide" end="450,320">Conditional</animation>
         <left>60</left>
-        <top>100</top>
+        <top>150</top>
         <height>120</height>
         <width>120</width>
         <aspectratio>keep</aspectratio>
@@ -96,7 +96,7 @@
       <control type="image" description="Stars">
         <visible>!String.IsEmpty(ListItem.Rating)</visible>
         <centerleft>500</centerleft>
-        <top>530</top>
+        <top>590</top>
         <height>24</height>
         <width>135</width>
         <aspectratio align="right">keep</aspectratio>
@@ -104,23 +104,23 @@
       </control>
       <control type="image">
         <centerleft>500</centerleft>
-        <top>600</top>
+        <top>660</top>
         <width>756</width>
         <height>1</height>
         <texture>images/Line.png</texture>
       </control>
       <control type="textbox" description="plot">
         <centerleft>500</centerleft>
-        <top>600</top>
+        <top>660</top>
         <width>756</width>
         <height>350</height>
         <align>justify</align>
         <label>$INFO[ListItem.Plot]</label>
       </control>
       <control type="image">
-        <centerleft>500</centerleft>
-        <top>950</top>
-        <width>756</width>
+        <centerleft>960</centerleft>
+        <top>1010</top>
+        <width>1920</width>
         <height>1</height>
         <texture>images/Line.png</texture>
       </control>
@@ -442,53 +442,25 @@
     </control>
   </include>
   <include name="HD_Badge">
-    <control type="image">
-      <animation effect="slide" end="0,-16" condition="ListItem.IsStereoscopic | Control.Isvisible(50) | !String.IsEmpty(ListItem.Premiered)">Conditional</animation>
-      <animation effect="slide" end="0,-14" condition="ListItem.IsStereoscopic + Control.Isvisible(50)">Conditional</animation>
-
-      <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
-      <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
-      <left>81r</left>
-      <height>111</height>
-      <width>42</width>
-      <aspectratio>keep</aspectratio>
-      <texture>badges/720.png</texture>
-    </control>
-    <control type="image">
-      <visible>ListItem.IsStereoscopic</visible>
-      <animation effect="slide" end="0,-14" condition="ListItem.IsStereoscopic + Control.Isvisible(50)">Conditional</animation>
-      <top>30</top>
-      <left>81r</left>
-      <height>80</height>
-      <width>42</width>
-      <aspectratio>keep</aspectratio>
-      <texture>badges/3d.png</texture>
-    </control>
-  </include>
-  <include name="HD_BadgeLW">
-    <control type="image">
-      <animation effect="slide" end="0,-16" condition="ListItem.IsStereoscopic | Control.Isvisible(50) | !String.IsEmpty(ListItem.Premiered)">Conditional</animation>
-      <animation effect="slide" end="0,-14" condition="ListItem.IsStereoscopic + Control.Isvisible(50)">Conditional</animation>
-
-      <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
-      <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
-      <left>81r</left>
-      <height>111</height>
-      <width>42</width>
-      <aspectratio>keep</aspectratio>
-      <texture>badges/720.png</texture>
-    </control>
-    <control type="image">
-      <visible>ListItem.IsStereoscopic</visible>
-      <animation effect="slide" end="0,-14" condition="ListItem.IsStereoscopic + Control.Isvisible(50)">Conditional</animation>
-      <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
-      <top>30</top>
-      <left>81r</left>
-      <height>80</height>
-      <width>42</width>
-      <aspectratio>keep</aspectratio>
-      <texture>badges/3d.png</texture>
-    </control>
+      <control type="label">
+        <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
+        <right>10</right>
+        <align>right</align>
+        <height>40</height>
+        <width>60</width>
+        <font>size21</font>
+        <info>ListItem.VideoResolution</info>
+      </control>
+      <control type="label">
+        <visible>ListItem.IsStereoscopic</visible>
+        <top>30</top>
+        <right>10</right>
+        <align>right</align>
+        <height>40</height>
+        <width>60</width>
+         <font>size21</font>
+        <label>3D</label>
+      </control>
   </include>
   <include name="Unwatched">
     <control type="group">
@@ -640,7 +612,7 @@
         <texture colordiffuse="77FFFFFF">images/White.png</texture>
       </control>
       <include>Watched_Marks</include>
-      <include>HD_BadgeLW</include>
+      <!--<include>HD_Badge</include>-->
       <include>SetsLW</include>
       <control type="group">
         <animation condition="String.IsEmpty(ListItem.Label2) + String.IsEmpty(ListItem.Duration) + String.IsEmpty(ListItem.Year) + String.IsEmpty(ListItem.Artist)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
@@ -706,7 +678,7 @@
           <texture>images/White.png</texture>
         </control>
         <include>Watched_Marks</include>
-        <include>HD_BadgeLW</include>
+        <!--<include>HD_Badge</include>-->
         <include>SetsFOLW</include>
         <control type="group">
           <animation condition="String.IsEmpty(ListItem.Label2) + String.IsEmpty(ListItem.Duration) + String.IsEmpty(ListItem.Year)  + String.IsEmpty(ListItem.Artist)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>

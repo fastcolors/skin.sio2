@@ -7,11 +7,7 @@
     <controls>
         <include>BlackBackground</include>
         <control type="label">
-            <centerleft>960</centerleft>
-            <height>81</height>
-            <width>800</width>
-            <align>center</align>
-            <font>size42</font>
+            <include>Heading</include>
             <label>5</label>
         </control>
         <control type="group">
@@ -37,12 +33,13 @@
                     <label>$LOCALIZE[14212]</label>
                     <onclick>ActivateWindow(MediaSettings)</onclick>
                 </control>
-                <control type="radiobutton" id="3">
+                <control type="button" id="3">
                     <width>840</width>
+                    <align>left</align>
                     <label>$LOCALIZE[14205]</label>
                     <onclick>ActivateWindow(PVRSettings)</onclick>
                 </control>
-                <control type="radiobutton" id="4">
+                <control type="button" id="4">
                     <width>840</width>
                     <align>left</align>
                     <label>$LOCALIZE[14208]</label>

@@ -14,7 +14,7 @@
       <top>150</top>
       <width>802</width>
       <height>888</height>
-      <onleft>5</onleft>
+      <onleft>666</onleft>
       <onright>60</onright>
       <onup>3</onup>
       <ondown>3</ondown>
@@ -27,7 +27,7 @@
       <top>140</top>
       <width>802</width>
       <height>886</height>
-      <onleft>5</onleft>
+      <onleft>666</onleft>
       <onright>60</onright>
       <onup>6</onup>
       <ondown>6</ondown>
@@ -45,7 +45,7 @@
       <texture>$INFO[Container(6).ListItem.Icon]</texture>
       <aspectratio>keep</aspectratio>
     </control>
-    <control type="grouplist">
+    <control type="grouplist" id="666">
       <centerleft>520</centerleft>
       <bottom>60</bottom>
       <height>100</height>

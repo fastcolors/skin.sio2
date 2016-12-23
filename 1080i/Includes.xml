@@ -55,8 +55,8 @@
         <texturefocus>-</texturefocus>
     </include>
     <include name="Heading">
-        <left>330</left>
-        <top>0</top>
+        <centerleft>960</centerleft>
+        <top>10</top>
         <align>center</align>
         <aligny>center</aligny>
         <width>1260</width>

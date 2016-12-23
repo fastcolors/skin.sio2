@@ -7,14 +7,20 @@
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
-        <include>Videoviews</include>
-        <control type="group">
-            <control type="label" description="Heading">
-                <visible>!Control.IsVisible(53)</visible>
-                <include>Heading</include>
-                <label>$VAR[RootLabel][COLOR=gray]$INFO[Container.NumItems,  (,)][/COLOR]</label>
-            </control>
+        <control type="image">
+            <visible>Control.IsVisible(500)</visible>
+            <include>Dimensions_Fullscreen</include>
+            <include>Fanart_Fade</include>
+            <texture background="true">$INFO[ListItem.Property(fanart_image)]</texture>
+            <colordiffuse>30ffffff</colordiffuse>
+            <aspectratio>stretch</aspectratio>
         </control>
+        <control type="label" description="Heading">
+            <visible>!Control.IsVisible(53)</visible>
+            <include>Heading</include>
+            <label>$VAR[RootLabel][COLOR=gray]$INFO[Container.NumItems,  (,)][/COLOR]</label>
+        </control>
+        <include>Videoviews</include>
         <control type="group" description="Side menu 9000 group">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
             <include>DialogOpenCloseVisible</include>
@@ -78,6 +84,17 @@
                     <altlabel>13353</altlabel>
                     <usealttexture>library.isscanningvideo</usealttexture>
                 </control>
+                <control type="button" id="598">
+                    <include>DialogButt</include>
+                    <label>Artwork</label>
+                    <onclick condition="!system.hasaddon(script.artwork.downloader)">InstallAddon(script.artwork.downloader)</onclick>
+                    <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, dbid=$INFO[ListItem.DBID], clearlogo, discart)</onclick>
+                    <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, dbid=$INFO[ListItem.DBID], clearlogo, discart)</onclick>
+                    <onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=musicvideos, dbid=$INFO[ListItem.DBID], clearlogo, discart)</onclick>
+                    <visible>[Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)]</visible>
+                    <onclick>right</onclick>
+                </control>
+
             </control>
         </control>
     </controls>

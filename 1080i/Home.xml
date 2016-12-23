@@ -497,7 +497,7 @@
             <font>size27</font>
             <shadowcolor>-</shadowcolor>
             <textcolor>White</textcolor>
-            <label>$INFO[System.Date] • $INFO[System.Time]</label>
+            <label>$INFO[System.Date(ddd d mmm)] • $INFO[System.Time]</label>
         </control>
         <control type="label" description="Top Label">
             <include>ShelfFade</include>

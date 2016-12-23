@@ -17,7 +17,7 @@
             <height>850</height>
             <align>left</align>
             <itemgap>8</itemgap>
-            <onup>noop</onup>
+            <onup>20</onup>
             <ondown>noop</ondown>
             <onright>5</onright>
         </control>
