@@ -1300,7 +1300,7 @@
                 </control>
             </control>
             <control type="fixedlist" id="500">
-                <visible>!String.IsEmpty(Container.FolderPath) + !Container.Content(Addons)</visible>
+                <visible>!String.IsEmpty(Container.FolderPath) + Container.Content(Movies)</visible>
                 <top>0</top>
                 <left>1433</left>
                 <width>502</width>
