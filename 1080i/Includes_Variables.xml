@@ -189,8 +189,7 @@
         <value condition="Container.Content(studios)">$INFO[ListItem.Label,special://home/addons/sio2x.extrapack/studios_extrapack/,.png]</value>
         <value condition="Container.Content(years)">DefaultYear_Blank.png</value>
         <value condition="Container.Content(countries)">DefaultCountry_.png</value>
-        <value condition="Container.Content(genres) + Window.IsActive(musiclibrary)">special://home/addons/sio2x.extrapack/music_extrapack/$INFO[ListItem.Label].jpg</value>
-        <value condition="Container.Content(genres) + Window.IsActive(videolibrary)">$VAR[genrefix]</value>
+        <value condition="Container.Content(genres) + Window.IsActive(Music)">special://home/addons/sio2x.extrapack/music_extrapack/$INFO[ListItem.Label].jpg</value>
         <value>$INFO[ListItem.Icon]</value>
     </variable>
 

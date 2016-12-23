@@ -1204,7 +1204,7 @@
                             <top>341</top>
                             <height>8</height>
                             <texturebg>images/transparent.png</texturebg>
-                            <midtexture border="1">images/white.png</midtexture>
+                            <midtexture border="1">images/White.png</midtexture>
                             <width>400</width>
                             <info>ListItem.PercentPlayed</info>
                         </control>
@@ -1254,7 +1254,7 @@
                             <top>341</top>
                             <height>8</height>
                             <texturebg>images/transparent.png</texturebg>
-                            <midtexture border="1">images/white.png</midtexture>
+                            <midtexture border="1">images/White.png</midtexture>
                             <width>400</width>
                             <info>ListItem.PercentPlayed</info>
                         </control>
@@ -1279,7 +1279,7 @@
                     <control type="image">
                         <width>1432</width>
                         <height>1080</height>
-                        <texture colordiffuse="inverted">images/white.png</texture>
+                        <texture>HomeBG.png</texture>
                     </control>
                     <control type="image">
                         <fadetime>200</fadetime>
@@ -1331,7 +1331,7 @@
                         <left>94</left>
                         <width>1</width>
                         <height>135</height>
-                        <texture colordiffuse="main">lines/LineV.png</texture>
+                        <texture colordiffuse="main">images/LineV.png</texture>
                     </control>
                     <control type="image">
                         <top>2</top>
@@ -1403,7 +1403,7 @@
                     <control type="image">
                         <width>447</width>
                         <height>1</height>
-                        <texture colordiffuse="main">lines/LineL.png</texture>
+                        <texture colordiffuse="main">images/LineL.png</texture>
                     </control>
                 </itemlayout>
                 <focusedlayout height="135">
@@ -1429,7 +1429,7 @@
                             <left>94</left>
                             <width>1</width>
                             <height>135</height>
-                            <texture colordiffuse="main">lines/LineV.png</texture>
+                            <texture colordiffuse="main">images/LineV.png</texture>
                         </control>
                         <control type="image">
                             <top>2</top>
@@ -1501,7 +1501,7 @@
                         <control type="image">
                             <width>447</width>
                             <height>1</height>
-                            <texture colordiffuse="main">lines/LineL.png</texture>
+                            <texture colordiffuse="main">images/LineL.png</texture>
                         </control>
                     </control>
                 </focusedlayout>

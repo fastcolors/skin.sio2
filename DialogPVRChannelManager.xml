@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">20</defaultcontrol>
+    <backgroundcolor>background</backgroundcolor>
+    <include>OpenClose</include>
+    <controls>
+        <include>BlackBackground</include>
+        <control type="image">
+            <top>108</top>
+            <left>960</left>
+            <width>1</width>
+            <height>890</height>
+            <texture>lines/LineV.png</texture>
+        </control>
+        <control type="image">
+            <top>107</top>
+            <width>1920</width>
+            <height>1</height>
+            <texture>lines/Line.png</texture>
+        </control>
+        <control type="image">
+            <left>960</left>
+            <top>222</top>
+            <width>960</width>
+            <height>1</height>
+            <texture>lines/Line.png</texture>
+        </control>
+        <control type="image">
+            <top>998</top>
+            <width>1920</width>
+            <height>1</height>
+            <texture>lines/Line.png</texture>
+        </control>
+        <control type="label">
+            <description>header label</description>
+            <left>155</left>
+            <top>30</top>
+            <width>1600</width>
+            <height>30</height>
+            <font>size36</font>
+            <textcolor>main</textcolor>
+            <label>$LOCALIZE[19199] - $LOCALIZE[19023]/$LOCALIZE[19024]</label>
+            <align>center</align>
+            <aligny>center</aligny>
+        </control>
+        <control type="scrollbar" id="60">
+            <left>40</left>
+            <centertop>550</centertop>
+            <width>8</width>
+            <height>780</height>
+            <onleft>noop</onleft>
+            <onright>20</onright>
+            <showonepage>false</showonepage>
+            <orientation>vertical</orientation>
+        </control>
+        <control type="group">
+            <left>80</left>
+            <top>107</top>
+            <control type="list" id="20">
+                <width>830</width>
+                <height>891</height>
+                <onright>9002</onright>
+                <onleft condition="Skin.HasSetting(Scrollbars_Active)">60</onleft>
+                <onleft condition="!Skin.HasSetting(Scrollbars_Active)">noop</onleft>
+                <onup>20</onup>
+                <ondown>9000</ondown>
+                <pagecontrol>60</pagecontrol>
+                <scrolltime>250</scrolltime>
+                <itemlayout width="802" height="81">
+                    <control type="label" description="Main Label">
+                        <width>830</width>
+                        <include>SmallListMainLabel</include>
+                        <label>$INFO[ListItem.Channelnumber] • $INFO[ListItem.Label]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="802" height="81">
+                    <control type="image">
+                        <animation effect="fade" time="100">VisibleChange</animation>
+                        <top>0</top>
+                        <width>830</width>
+                        <height>81</height>
+                        <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                    <control type="label" description="Main Label">
+                        <width>830</width>
+                        <textcolor>main</textcolor>
+                        <include>SmallListMainLabel</include>
+                        <label>$INFO[ListItem.Channelnumber] • $INFO[ListItem.Label]</label>
+                    </control>
+                </focusedlayout>
+            </control>
+        </control>
+        <control type="label">
+                    <description>channel options Header</description>
+            <left>960</left>
+            <top>107</top>
+                    <width>900</width>
+                    <height>120</height>
+                    <font>size36B</font>
+                    <label>$LOCALIZE[33063]</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <textcolor>orange</textcolor>
+                </control>
+        <control type="group" id="9002">
+            <control type="grouplist">
+                <left>960</left>
+                <top>223</top>
+                <height>900</height>
+                <width>960</width>
+                <onright>noop</onright>
+                <onleft>20</onleft>
+                <ondown>9000</ondown>
+                <aligny>center</aligny>
+                <control type="radiobutton" id ="7">
+                    <description>Channel activated</description>
+                    <width>900</width>
+                    <height>60</height>
+                    <font>size26</font>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/ButtonSelect1.png</texturefocus>
+                    <label>19074</label>
+                </control>
+                <control type="edit" id ="8">
+                    <description>Channel name</description>
+                    <width>900</width>
+                    <height>60</height>
+                    <font>size26</font>
+                    <label>19201</label>
+                </control>
+                <control type="button" id ="9">
+                    <description>Channel logo Button</description>
+                    <width>900</width>
+                    <height>60</height>
+                    <font>size26</font>
+                    <label>19202</label>
+                </control>
+                <control type="image" id ="10">
+                    <description>Current Channel Icon</description>
+                    <width>900</width>
+                    <height>60</height>
+                    <aspectratio>keep</aspectratio>
+                    <info>ListItem.Property(Icon)</info>
+                </control>
+                <control type="radiobutton" id ="12">
+                    <description>EPG activated</description>
+                    <width>900</width>
+                    <height>60</height>
+                    <font>size26</font>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <pulseonselect>no</pulseonselect>
+                    <label>19206</label>
+                </control>
+                <control type="spincontrolex" id ="13">
+                    <description>EPG source</description>
+                    <width>920</width>
+                    <height>60</height>
+                    <font>size26</font>
+                    <label>19200</label>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/ButtonSelect1.png</texturefocus>
+                </control>
+                <control type="radiobutton" id ="14">
+                    <description>Parental locked</description>
+                    <width>900</width>
+                    <height>60</height>
+                    <font>size26</font>
+                    <aligny>center</aligny>
+                    <label>19267</label>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/ButtonSelect1.png</texturefocus>
+                </control>
+                <control type="button" id ="30">
+                    <description>Group Manager Button</description>
+                    <width>900</width>
+                    <height>60</height>
+                    <font>size26</font>
+                    <label>19205</label>
+                    <align>left</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/ButtonSelect1.png</texturefocus>
+                </control>
+                <control type="button" id ="34">
+                    <description>TV/Radio Button</description>
+                    <width>900</width>
+                    <height>60</height>
+                    <font>size26</font>
+                    <align>left</align>
+                    <label>$LOCALIZE[19023] / $LOCALIZE[19024]</label>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/ButtonSelect1.png</texturefocus>
+                </control>
+                <control type="button" id ="31">
+                    <description>New channel Button</description>
+                    <width>900</width>
+                    <height>60</height>
+                    <font>size26</font>
+                    <align>left</align>
+                    <label>19204</label>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/ButtonSelect1.png</texturefocus>
+                </control>
+            </control>
+        </control>
+        <control type="grouplist" id="9000">
+            <top>999</top>
+            <width>1920</width>
+            <align>center</align>
+            <orientation>Horizontal</orientation>
+            <onup>9002</onup>
+            <control type="button" id ="4">
+                <description>OK Button</description>
+                <width>400</width>
+                <height>81</height>
+                <label>186</label>
+                <font>size26</font>
+                <align>center</align>
+                <aligny>center</aligny>
+            </control>
+            <control type="button" id ="5">
+                <description>Apply changes Button</description>
+                <width>400</width>
+                <height>81</height>
+                <label>14070</label>
+                <font>size26</font>
+                <align>center</align>
+                <aligny>center</aligny>
+            </control>
+            <control type="button" id ="6">
+                <description>Cancel Button</description>
+                <width>400</width>
+                <height>81</height>
+                <label>222</label>
+                <font>size26</font>
+                <align>center</align>
+                <aligny>center</aligny>
+
+            </control>
+        </control>
+    </controls>
+</window>

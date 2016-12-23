@@ -7,7 +7,7 @@
     <control type="group">
       <include>BlackBackground</include>
       <control type="label" id="411" description="Heading">
-        <include>HeadingR</include>
+        <include>Heading</include>
         <label>-</label>
       </control>
       <control type="group" description="Group 450 No Thumbs">

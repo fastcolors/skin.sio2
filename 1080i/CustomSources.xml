@@ -28,7 +28,7 @@
           <include>DialogButt</include>
           <label>$LOCALIZE[2]</label>
           <onclick>Close</onclick>
-          <onclick>ActivateWindow(MusicFiles,root)</onclick>
+          <onclick>ActivateWindow(Music,files)</onclick>
         </control>
         <control type="button" id="704" description="Update Library">
           <enable>Library.HasContent(Movies) | Library.HasContent(TVShows)</enable>

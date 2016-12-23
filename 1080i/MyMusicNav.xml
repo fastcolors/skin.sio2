@@ -36,7 +36,7 @@
         <control type="button" id="698" description="Files">
           <include>DialogButt</include>
           <label>$LOCALIZE[1024] $LOCALIZE[744]</label>
-          <onclick>ActivateWindow(MusicFiles,root)</onclick>
+          <onclick>ActivateWindow(Music,Files)</onclick>
         </control>
         <control type="togglebutton" id="699" description="Playing">
           <enable>Player.HasMedia</enable>
@@ -60,7 +60,7 @@
     <control type="group">
       <control type="label" description="Heading">
         <visible>String.IsEmpty(Container.FolderName) + !Control.IsVisible(500)</visible>
-        <include>HeadingR</include>
+        <include>Heading</include>
         <label>2</label>
       </control>
     </control>

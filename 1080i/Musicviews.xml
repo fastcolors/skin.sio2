@@ -42,7 +42,7 @@
       </control>
       <control type="label" description="Heading">
         <visible>!String.IsEmpty(Container.FolderName)</visible>
-        <include>HeadingR</include>
+        <include>Heading</include>
         <label>$VAR[RootLabel]</label>
       </control>
     </control>
@@ -140,7 +140,7 @@
       </control>
       <control type="label" description="Heading">
         <visible>!String.IsEmpty(Container.FolderName)</visible>
-        <include>HeadingR</include>
+        <include>Heading</include>
         <label>$VAR[RootLabel]</label>
       </control>
     </control>

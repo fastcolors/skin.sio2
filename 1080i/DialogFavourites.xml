@@ -7,7 +7,7 @@
   <controls>
     <include>BlackBackground</include>
     <control type="label" description="Header label">
-      <include>HeadingR</include>
+      <include>Heading</include>
       <label>1036</label>
     </control>
     <control type="group">

@@ -6,7 +6,7 @@
   <controls>
     <include>BlackBackground</include>
     <control type="label" id="1" description="Header label">
-      <include>HeadingR</include>
+      <include>Heading</include>
       <label>13406</label>
     </control>
     <control type="group" description="Group 3 Plain list">
