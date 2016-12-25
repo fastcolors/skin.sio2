@@ -6,32 +6,18 @@
   <controls>
     <include>BlackBackground</include>
     <control type="image" description="Line top">
-      <top>150</top>
+      <top>165</top>
       <width>1920</width>
       <height>1</height>
       <aspectratio>stretch</aspectratio>
       <texture>images/Line.png</texture>
     </control>
-    <control type="image" description="Line top">
-      <top>80</top>
-      <width>1920</width>
-      <height>1</height>
-      <aspectratio>stretch</aspectratio>
-      <texture>images/Line.png</texture>
-    </control>
-    <control type="image" description="Line bott">
-      <top>1002</top>
-      <width>1920</width>
-      <height>1</height>
-      <aspectratio>stretch</aspectratio>
-      <texture>images/Line.png</texture>
-    </control>
-    <control type="label" description="Heading">
+    <control type="label" id="20" description="Heading">
       <include>Heading</include>
-      <label>1045</label>
+      <label>-</label>
     </control>
     <control type="grouplist" id="9" description="TopHat">
-      <top>78</top>
+      <top>90</top>
       <width>auto</width>
       <align>center</align>
       <height>80</height>
@@ -47,7 +33,7 @@
       <width>auto</width>
       <align>center</align>
       <height>80</height>
-      <itemgap>9</itemgap>
+      <itemgap>20</itemgap>
       <onleft>noop</onleft>
       <onright>noop</onright>
       <onup>2</onup>
@@ -55,31 +41,23 @@
       <orientation>horizontal</orientation>
       <control type="button" id="10" description="OK">
         <label>186</label>
-        <texturenofocus>-</texturenofocus>
-        <texturefocus border="5">images/backfocus.png</texturefocus>
       </control>
       <control type="button" id="12" description="Default">
         <label>409</label>
-        <texturenofocus>-</texturenofocus>
-        <texturefocus border="5">images/backfocus.png</texturefocus>
       </control>
       <control type="button" id="11" description="Cancel">
         <label>222</label>
-        <texturenofocus>-</texturenofocus>
-        <texturefocus border="5">images/backfocus.png</texturefocus>
       </control>
     </control>
     <control type="button" id="13" description="Button Template">
       <font>size33</font>
-      <texturenofocus>-</texturenofocus>
-      <texturefocus border="5">images/backfocus.png</texturefocus>
     </control>
     <control type="grouplist" id="2" description="Stage">
       <left>300</left>
-      <top>165</top>
+      <top>180</top>
       <width>1320</width>
-      <height>825</height>
-      <itemgap>0</itemgap>
+      <height>800</height>
+      <itemgap>15</itemgap>
       <onup>9</onup>
       <ondown>8999</ondown>
       <onleft>0</onleft>

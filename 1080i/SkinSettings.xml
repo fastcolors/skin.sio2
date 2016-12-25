@@ -47,7 +47,7 @@
                     <width>840</width>
                     <align>left</align>
                     <label>$LOCALIZE[31049]</label>
-                    <label2 fallback="33061">$VAR[QuitLabel]</label2>
+                    <label2>$VAR[QuitLabel]</label2>
                     <onclick>ActivateWindow(1114)</onclick>
                 </control>
                 <control type="button" id="6">

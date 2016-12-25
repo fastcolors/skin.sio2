@@ -191,22 +191,25 @@
     <texturesliderbar>OSD/SliderBackground2.png</texturesliderbar>
   </default>
   <default type="sliderex" description="Default Slider">
+    <animation effect="zoom" start="100" end="105" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+    <animation effect="zoom" start="105" end="100" time="120" center="auto">unFocus</animation>
+    <texturefocus>images/White.png</texturefocus>
+    <texturenofocus colordiffuse="77FFFFFF">images/White.png</texturenofocus>
     <left>795</left>
     <top>225</top>
     <height>70</height>
     <width>450</width>
-    <sliderwidth>100</sliderwidth>
-    <sliderheight>24</sliderheight>
-    <texturesliderbar>OSD/SliderBackground.png</texturesliderbar>
-    <textureslidernib>OSD/SliderNibNF.png</textureslidernib>
-    <textureslidernibfocus>OSD/SliderNibFO.png</textureslidernibfocus>
-    <texturefocus border="8">images/Buttonselect.png</texturefocus>
-    <texturenofocus>-</texturenofocus>
+    <sliderwidth>400</sliderwidth>
+    <sliderheight>40</sliderheight>
+    <texturesliderbar>images/slider_bg.png</texturesliderbar>
+    <textureslidernib>images/slider_nib_nf.png</textureslidernib>
+    <textureslidernibfocus>images/slider_nib.png</textureslidernibfocus>
     <font>size33</font>
-    <textcolor>White</textcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
+    <textcolor>black</textcolor>
+    <focusedcolor>black</focusedcolor>
+    <selectedcolor>yellow</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
+    <aligny>center</aligny>
     <textoffsetx>20</textoffsetx>
   </default>
   <default type="scrollbar">

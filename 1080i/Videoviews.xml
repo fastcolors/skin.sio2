@@ -1119,9 +1119,11 @@
                             <animation effect="fade" start="100" end="0" time="150">Unfocus</animation>
                             <control type="image">
                                 <centerleft>175</centerleft>
-                                <width>288</width>
-                                <height>420</height>
-                                <texture border="9">images/SetsOver.png</texture>
+                                <top>10</top>
+                                <width>267</width>
+                                <height>400</height>
+                                <texture border="9">images/White.png</texture>
+                                <colordiffuse>ccffffff</colordiffuse>
                             </control>
                             <control type="textbox">
                                 <centerleft>175</centerleft>
@@ -1302,8 +1304,8 @@
             <control type="fixedlist" id="500">
                 <visible>!String.IsEmpty(Container.FolderPath) + Container.Content(Movies)</visible>
                 <top>0</top>
-                <left>1433</left>
-                <width>502</width>
+                <right>0</right>
+                <width>504</width>
                 <height>1080</height>
                 <onleft condition="ListItem.IsCollection + !Control.IsVisible(1234)">990</onleft>
                 <onleft condition="Container.Content(seasons)">990</onleft>
@@ -1323,19 +1325,14 @@
                     <control type="image">
                         <width>94</width>
                         <top>1</top>
+                        <left>2</left>
                         <height>134</height>
                         <texture background="true">$VAR[locandine]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image">
-                        <left>94</left>
-                        <width>1</width>
-                        <height>135</height>
-                        <texture colordiffuse="main">images/LineV.png</texture>
-                    </control>
-                    <control type="image">
                         <top>2</top>
-                        <left>98</left>
+                        <left>100</left>
                         <width>348</width>
                         <height>131</height>
                         <aspectratio>keep</aspectratio>
@@ -1343,7 +1340,7 @@
                     </control>
                     <control type="image">
                         <visible>![container.content(TVshows) | container.content(seasons)]</visible>
-                        <left>89</left>
+                        <left>91</left>
                         <top>101</top>
                         <width>40</width>
                         <height>40</height>
@@ -1351,7 +1348,7 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="textbox">
-                        <left>95</left>
+                        <left>97</left>
                         <visible>String.IsEmpty(ListItem.Art(clearlogo))</visible>
                         <width>340</width>
                         <height>135</height>
@@ -1361,7 +1358,7 @@
                     </control>
                     <control type="image">
                         <visible>ListItem.IsCollection</visible>
-                        <left>435</left>
+                        <left>437</left>
                         <top>101</top>
                         <width>40</width>
                         <height>40</height>
@@ -1370,7 +1367,7 @@
                     </control>
                     <control type="image">
                         <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
-                        <left>440</left>
+                        <left>442</left>
                         <top>100</top>
                         <width>30</width>
                         <height>30</height>
@@ -1380,7 +1377,7 @@
                     <control type="group" description="unwatched">
                         <visible>!String.IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
                         <top>80</top>
-                        <left>65</left>
+                        <left>67</left>
                         <control type="image">
                             <centerleft>30</centerleft>
                             <height>50</height>
@@ -1412,8 +1409,7 @@
                         <animation effect="zoom" start="110" end="100" time="120" center="412,auto">unFocus</animation>
                         <control type="image">
                             <animation effect="fade" end="0" time="30">UnFocus</animation>
-                            <left>95</left>
-                            <width>412</width>
+                            <width>504</width>
                             <height>135</height>
                             <texture colordiffuse="$VAR[diffuseselect]">images/White.png</texture>
                         </control>
@@ -1421,19 +1417,14 @@
                         <control type="image">
                             <width>94</width>
                             <top>1</top>
-                            <height>134</height>
+                            <left>2</left>
+                            <height>132</height>
                             <texture background="true">$VAR[locandine]</texture>
                             <aspectratio>scale</aspectratio>
                         </control>
                         <control type="image">
-                            <left>94</left>
-                            <width>1</width>
-                            <height>135</height>
-                            <texture colordiffuse="main">images/LineV.png</texture>
-                        </control>
-                        <control type="image">
                             <top>2</top>
-                            <left>98</left>
+                            <left>100</left>
                             <width>348</width>
                             <height>131</height>
                             <aspectratio>keep</aspectratio>
@@ -1441,7 +1432,7 @@
                         </control>
                         <control type="image">
                             <visible>![container.content(TVshows) | container.content(seasons)]</visible>
-                            <left>89</left>
+                            <left>91</left>
                             <top>101</top>
                             <width>40</width>
                             <height>40</height>
@@ -1449,7 +1440,7 @@
                             <aspectratio>keep</aspectratio>
                         </control>
                         <control type="textbox">
-                            <left>95</left>
+                            <left>97</left>
                             <visible>String.IsEmpty(ListItem.Art(clearlogo))</visible>
                             <width>340</width>
                             <height>135</height>
@@ -1459,7 +1450,7 @@
                         </control>
                         <control type="image">
                             <visible>ListItem.IsCollection</visible>
-                            <left>435</left>
+                            <left>437</left>
                             <top>101</top>
                             <width>40</width>
                             <height>40</height>
@@ -1468,7 +1459,7 @@
                         </control>
                         <control type="image">
                             <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
-                            <left>440</left>
+                            <left>442</left>
                             <top>100</top>
                             <width>30</width>
                             <height>30</height>
@@ -1478,7 +1469,7 @@
                         <control type="group" description="unwatched">
                             <visible>!String.IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
                             <top>80</top>
-                            <left>65</left>
+                            <left>67</left>
                             <control type="image">
                                 <centerleft>30</centerleft>
                                 <height>50</height>

@@ -64,7 +64,7 @@
                 </control>
                 <control type="image" description="color base">
                     <centerleft>180</centerleft>
-                    <top>27</top>
+                    <centertop>130</centertop>
                     <width>287</width>
                     <height>179</height>
                     <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Property(color)]</texture>
@@ -72,14 +72,14 @@
                 <control type="image" description="THMBSICONS">
                     <visible>!String.IsEmpty(ListItem.Art(thumb))</visible>
                     <centerleft>180</centerleft>
-                    <top>27</top>
+                    <centertop>130</centertop>
                     <width>287</width>
                     <height>179</height>
                     <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Art(thumb)]</texture>
                 </control>
                 <control type="image" description="THMBSICONS">
                     <visible>String.IsEmpty(ListItem.Art(thumb))</visible>
-                    <centerleft>180</centerleft>
+                    <centertop>130</centertop>
                     <top>27</top>
                     <width>287</width>
                     <height>179</height>
@@ -87,7 +87,7 @@
                 </control>
                 <control type="image" description="THMBS weather">
                     <centerleft>180</centerleft>
-                    <top>27</top>
+                    <centertop>130</centertop>
                     <width>287</width>
                     <height>179</height>
                     <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
@@ -96,10 +96,11 @@
             </itemlayout>
             <focusedlayout height="290" width="360">
                 <control type="group">
-                    <animation effect="zoom" start="100" end="130" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
-                    <animation effect="zoom" start="130" end="100" time="120" center="auto">unFocus</animation>
+                    <animation effect="zoom" start="100" end="130" time="120" center="180,210" tween="Back" easing="Out">Focus</animation>
+                    <animation effect="zoom" start="130" end="100" time="120" center="180,210">unFocus</animation>
                     <control type="image" description="shade_base">
                         <centerleft>180</centerleft>
+                        <animation effect="slide" start="0,0" end="0,34" time="240" reversible="true" tween="Back" easing="Out">Focus</animation>
                         <top>10</top>
                         <width>350</width>
                         <height>250</height>
@@ -107,7 +108,7 @@
                     </control>
                     <control type="image" description="color base">
                         <centerleft>180</centerleft>
-                        <top>27</top>
+                        <centertop>130</centertop>
                         <width>287</width>
                         <height>179</height>
                         <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Property(color)]</texture>
@@ -115,7 +116,7 @@
                     <control type="image" description="THMBSICONS">
                         <visible>!String.IsEmpty(ListItem.Art(thumb))</visible>
                         <centerleft>180</centerleft>
-                        <top>27</top>
+                        <centertop>130</centertop>
                         <width>287</width>
                         <height>179</height>
                         <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Art(thumb)]</texture>
@@ -123,14 +124,14 @@
                     <control type="image" description="THMBSICONS">
                         <visible>String.IsEmpty(ListItem.Art(thumb))</visible>
                         <centerleft>180</centerleft>
-                        <top>27</top>
+                        <centertop>130</centertop>
                         <width>287</width>
                         <height>179</height>
                         <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
                     </control>
                     <control type="image" description="THMBS weather">
                         <centerleft>180</centerleft>
-                        <top>27</top>
+                        <centertop>130</centertop>
                         <width>287</width>
                         <height>179</height>
                         <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
@@ -138,7 +139,7 @@
                     </control>
                 </control>
                 <control type="label" description="label">
-                    <animation effect="fade" start="0" end="100" time="150" delay="50">Focus</animation>
+                    <animation effect="fade" start="0" end="100" time="180">Focus</animation>
                     <animation effect="fade" start="100" end="0" time="100">unFocus</animation>
                     <centerleft>180</centerleft>
                     <top>234</top>

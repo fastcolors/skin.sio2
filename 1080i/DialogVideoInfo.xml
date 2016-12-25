@@ -133,11 +133,14 @@
                 <onleft>190</onleft>
                 <ondown>999</ondown>
                 <onright>noop</onright>
-                <itemgap>20</itemgap>
+                <itemgap>30</itemgap>
                 <aligny>bottom</aligny>
                 <align>left</align>
                 <orientation>horizontal</orientation>
                 <control type="button" id="11" description="Trailer">
+                    <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+                    <animation effect="zoom" start="120" end="100" time="120" center="auto">unFocus</animation>
+
                     <height>100</height>
                     <width>150</width>
                     <texturefocus>images/diffuserounded.png</texturefocus>
@@ -148,8 +151,8 @@
                     <label>20410</label>
                 </control>
                 <control type="togglebutton" id="8" description="Play/browse to Show">
-                    <animation effect="zoom" start="100" end="110" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
-                    <animation effect="zoom" start="110" end="100" time="120" center="auto">unFocus</animation>
+                    <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+                    <animation effect="zoom" start="120" end="100" time="120" center="auto">unFocus</animation>
                     <height>100</height>
                     <width>150</width>
                     <texturefocus>images/diffuserounded.png</texturefocus>
@@ -160,6 +163,8 @@
                     <label>208</label>
                 </control>
                 <control type="button" id="299" description="Cinema">
+                    <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+                    <animation effect="zoom" start="120" end="100" time="120" center="auto">unFocus</animation>
                     <visible>Container.Content(Movies) + system.hasaddon(script.cinema.experience)</visible>
                     <height>100</height>
                     <width>150</width>
@@ -173,6 +178,8 @@
                     <label>Cinema</label>
                 </control>
                 <control type="button" id="6" description="Refresh">
+                    <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+                    <animation effect="zoom" start="120" end="100" time="120" center="auto">unFocus</animation>
                     <height>100</height>
                     <width>150</width>
                     <texturefocus>images/diffuserounded.png</texturefocus>
@@ -182,6 +189,8 @@
                     <label>184</label>
                 </control>
                 <control type="button" id="10" description="Get Art">
+                    <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+                    <animation effect="zoom" start="120" end="100" time="120" center="auto">unFocus</animation>
                     <height>100</height>
                     <width>150</width>
                     <texturefocus>images/diffuserounded.png</texturefocus>

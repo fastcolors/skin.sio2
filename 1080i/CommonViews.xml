@@ -442,25 +442,25 @@
     </control>
   </include>
   <include name="HD_Badge">
-      <control type="label">
-        <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
-        <right>10</right>
-        <align>right</align>
-        <height>40</height>
-        <width>60</width>
-        <font>size21</font>
-        <info>ListItem.VideoResolution</info>
-      </control>
-      <control type="label">
-        <visible>ListItem.IsStereoscopic</visible>
-        <top>30</top>
-        <right>10</right>
-        <align>right</align>
-        <height>40</height>
-        <width>60</width>
-         <font>size21</font>
-        <label>3D</label>
-      </control>
+    <control type="label">
+      <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
+      <right>10</right>
+      <align>right</align>
+      <height>40</height>
+      <width>60</width>
+      <font>size21</font>
+      <info>ListItem.VideoResolution</info>
+    </control>
+    <control type="label">
+      <visible>ListItem.IsStereoscopic</visible>
+      <top>30</top>
+      <right>10</right>
+      <align>right</align>
+      <height>40</height>
+      <width>60</width>
+      <font>size21</font>
+      <label>3D</label>
+    </control>
   </include>
   <include name="Unwatched">
     <control type="group">
@@ -902,46 +902,43 @@
       </control>
     </itemlayout>
     <focusedlayout height="357" width="354">
-      <control type="label">
-        <centerleft>178</centerleft>
-        <top>178</top>
-        <width>345</width>
-        <height>30</height>
-        <font>size26</font>
-        <textcolor>White2</textcolor>
-        <label>+ $INFO[ListItem.Label2]</label>
-        <align>center</align>
-      </control>
-      <control type="image">
-        <left>27</left>
-        <top>27</top>
-        <width>303</width>
-        <height>303</height>
-        <texture background="true">default$INFO[ListItem.label2].png</texture>
-        <colordiffuse>33FFFFFF</colordiffuse>
-        <aspectratio>scale</aspectratio>
-      </control>
-      <control type="image">
-        <left>27</left>
-        <top>27</top>
-        <width>303</width>
-        <height>303</height>
-        <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
-        <aspectratio>scale</aspectratio>
-      </control>
-      <control type="image">
-        <left>17</left>
-        <top>17</top>
-        <width>323</width>
-        <height>323</height>
-        <texture border="10">images/generalslider.png</texture>
-      </control>
-      <control type="label" description="title">
-        <centerleft>177</centerleft>
-        <top>310</top>
-        <width>360</width>
-        <align>center</align>
-        <label>$INFO[ListItem.label]</label>
+      <control type="group">
+        <animation effect="zoom" start="100" end="130" time="120" center="150,216" tween="Back" easing="Out">Focus</animation>
+        <animation effect="zoom" start="130" end="100" time="120" center="150,216">unFocus</animation>
+        <control type="label">
+          <centerleft>178</centerleft>
+          <top>178</top>
+          <width>345</width>
+          <height>30</height>
+          <font>size26</font>
+          <textcolor>White2</textcolor>
+          <label>+ $INFO[ListItem.Label2]</label>
+          <align>center</align>
+        </control>
+        <control type="image">
+          <left>27</left>
+          <top>27</top>
+          <width>303</width>
+          <height>303</height>
+          <texture background="true">default$INFO[ListItem.label2].png</texture>
+          <colordiffuse>33FFFFFF</colordiffuse>
+          <aspectratio>scale</aspectratio>
+        </control>
+        <control type="image">
+          <left>27</left>
+          <top>27</top>
+          <width>303</width>
+          <height>303</height>
+          <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
+          <aspectratio>scale</aspectratio>
+        </control>
+        <control type="label" description="title">
+          <centerleft>177</centerleft>
+          <top>310</top>
+          <width>360</width>
+          <align>center</align>
+          <label>$INFO[ListItem.label]</label>
+        </control>
       </control>
     </focusedlayout>
   </include>
