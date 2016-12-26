@@ -84,7 +84,7 @@
         <height>450</height>
         <itemgap>20</itemgap>
         <onup>noop</onup>
-        <ondown>30</ondown>
+        <ondown>9000</ondown>
         <onleft>noop</onleft>
         <onright>noop</onright>
         <orientation>vertical</orientation>
@@ -98,7 +98,7 @@
         <align>left</align>
         <radioleft>1020</radioleft>
       </control>
-      <control type="group">
+      <control type="group" id="9000">
         <top>72</top>
         <control type="button" id="30" description="Settings">
           <left>435</left>

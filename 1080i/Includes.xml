@@ -550,4 +550,14 @@
         <align>right</align>
         <aligny>bottom</aligny>
     </include>
+    <include name="osdtopbutton">
+        <animation>Focus</animation>
+        <animation>unFocus</animation>
+        <font>font10</font>
+        <width>auto</width>
+        <textcolor>dimgray</textcolor>
+        <focusedcolor>white</focusedcolor>
+        <texturenofocus>-</texturenofocus>
+        <texturefocus>-</texturefocus>
+    </include>
 </includes>

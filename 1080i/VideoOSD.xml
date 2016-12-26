@@ -6,83 +6,130 @@
     <controls>
         <control type="group">
             <control type="group" id="101" description="Options content">
+                <top>-400</top>
                 <visible>!Window.IsVisible(10123) + !Window.IsVisible(10124) + !Window.IsVisible(10125)</visible>
-                <left>630</left>
-                <top>865</top>
                 <animation type="Focus">
-                    <effect type="slide" tween="Cubic" easing="out" start="0,0" end="0,-800" time="800" />
+                    <effect type="slide" tween="Cubic" easing="out" start="0,0" end="0,400" time="800" />
                 </animation>
                 <animation type="unFocus">
-                    <effect type="slide" tween="Cubic" easing="in" start="0,-800" end="0,0" time="500" />
+                    <effect type="slide" start="0,400" end="0,0" />
                 </animation>
                 <control type="image">
-                    <left>430</left>
-                    <top>46</top>
-                    <width>900</width>
-                    <height>820</height>
-                    <aspectratio>stretch</aspectratio>
-                    <texture border="150">images/Dialog.png</texture>
+                    <width>1920</width>
+                    <height>400</height>
+                    <colordiffuse>ee999999</colordiffuse>
+                    <texture border="150">images/White.png</texture>
+                </control>
+                <control type="image">
+                    <top>110</top>
+                    <width>1920</width>
+                    <height>1</height>
+                    <texture>images/Line1.png</texture>
+                    <colordiffuse>dimgray</colordiffuse>
                 </control>
                 <control type="grouplist" id="101" description="OSD Options">
-                    <left>600</left>
-                    <top>192</top>
-                    <width>720</width>
+                    <top>20</top>
+                    <width>1920</width>
                     <height>720</height>
                     <itemgap>0</itemgap>
-                    <onleft>100</onleft>
-                    <onright>100</onright>
-                    <onup>101</onup>
+                    <onleft>noop</onleft>
+                    <onright>noop</onright>
+                    <onup>100</onup>
                     <ondown>101</ondown>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
                     <scrolltime>240</scrolltime>
                     <control type="togglebutton" id="701" description="Subtitles">
-                        <include>DialogButt</include>
-                        <label>$LOCALIZE[33003] $LOCALIZE[287]</label>
+                        <include>osdtopbutton</include>
+                        <label>$LOCALIZE[287]</label>
                         <onclick>SetFocus(100,2)</onclick>
-                        <onclick>Dialog.Close(VideoOSD)</onclick>
+                        <onclick>Close</onclick>
                         <onclick>ActivateWindow(SubtitleSearch)</onclick>
                     </control>
                     <control type="button" id="703">
-                        <include>DialogButt</include>
+                        <include>osdtopbutton</include>
                         <label>13395</label>
                         <onclick>SetFocus(100,2)</onclick>
+                        <onclick>Close</onclick>
                         <onclick>ActivateWindow(OSDVideoSettings)</onclick>
                     </control>
                     <control type="button" id="704">
-                        <include>DialogButt</include>
+                        <include>osdtopbutton</include>
                         <label>$LOCALIZE[292] &amp; $LOCALIZE[287]</label>
                         <onclick>SetFocus(100,2)</onclick>
+                        <onclick>Close</onclick>
                         <onclick>ActivateWindow(OSDAudioSettings)</onclick>
                     </control>
                     <control type="button" id="705">
-                        <include>DialogButt</include>
+                        <include>osdtopbutton</include>
                         <label>298</label>
                         <onclick>SetFocus(100,2)</onclick>
+                        <onclick>Close</onclick>
                         <onclick>ActivateWindow(VideoBookmarks)</onclick>
                     </control>
-                    <control type="togglebutton" id="706" description="Info">
-                        <include>DialogButt</include>
+                    <control type="button" id="706" description="Info">
+                        <include>osdtopbutton</include>
                         <label>20176</label>
                         <onclick>SetFocus(100,2)</onclick>
                         <onclick>close</onclick>
                         <onclick>ActivateWindow(142)</onclick>
-                        <altclick>SetFocus(100,2)</altclick>
-                        <altclick>close</altclick>
-                        <altclick>Dialog.Close(142)</altclick>
-                        <usealttexture>Window.IsActive(142)</usealttexture>
                     </control>
                     <control type="button" id="707">
-                        <include>DialogButt</include>
+                        <include>osdtopbutton</include>
                         <label>21445</label>
-                        <onclick>CodecInfo</onclick>
+                        <onfocus>PlayerProcessInfo</onfocus>
+                        <!--<onclick>PlayerProcessInfo</onclick>-->
                     </control>
                     <control type="button" id="708">
-                        <include>DialogButt</include>
+                        <!--<visible>VideoPlayer.HasMenu</visible>-->
+                        <include>osdtopbutton</include>
                         <label>25003</label>
                         <onclick>SetFocus(100,2)</onclick>
                         <onclick>PlayerControl(ShowVideoMenu)</onclick>
-                        <enable>VideoPlayer.HasMenu</enable>
-                        <animation effect="fade" start="100" end="50" time="100" condition="!VideoPlayer.HasMenu">Conditional</animation>
                     </control>
+                </control>
+                <control type="list">
+                    <left>110</left>
+                    <top>160</top>
+                    <width>1700</width>
+                    <height>600</height>
+                    <onup>101</onup>
+                    <ondown>noop</ondown>
+                    <onleft>noop</onleft>
+                    <onright>noop</onright>
+                    <viewtype label="354">list</viewtype>
+                    <itemlayout width="500" height="30">
+                        <control type="label">
+                            <left>30</left>
+                            <top>3</top>
+                            <width>430</width>
+                            <height>22</height>
+                            <aligny>center</aligny>
+                            <textcolor>dimgray</textcolor>
+                            <selectedcolor>orange</selectedcolor>
+                            <align>left</align>
+                            <label>ListItem.Label</label>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout width="500" height="30">
+                        <control type="label">
+                            <left>30</left>
+                            <top>3</top>
+                            <width>430</width>
+                            <height>22</height>
+                            <aligny>center</aligny>
+                            <textcolor>white</textcolor>
+                            <selectedcolor>orange</selectedcolor>
+                            <align>left</align>
+                            <info>ListItem.Label</info>
+                        </control>
+                    </focusedlayout>
+                    <!--<content>$VAR[osdtop]</content>-->
+                    <item>
+                        <label>21894</label>
+                        <label2>$INFO[ListItem.Property(Artist_Formed)]</label2>
+                        <onclick>noop</onclick>
+                    </item>
                 </control>
             </control>
             <control type="group">
@@ -94,7 +141,7 @@
                         <visible>Window.IsVisible(videoosd.xml) + Window.IsActive(dialogseekbar.xml)</visible>
                         <control type="image">
                             <left>35</left>
-                            <top>873</top>
+                            <top>888</top>
                             <width>1850</width>
                             <height>150</height>
                             <aspectratio>stretch</aspectratio>
@@ -103,7 +150,7 @@
                     </control>
                     <control type="label" description="Title">
                         <left>120</left>
-                        <top>880</top>
+                        <bottom>120</bottom>
                         <height>60</height>
                         <width>840</width>
                         <scroll>true</scroll>
@@ -113,12 +160,9 @@
                         <label>[B]$INFO[VideoPlayer.Title][/B]</label>
                     </control>
                     <control type="group" description="Cover">
-                        <camera x="1720" y="720" />
-                        <animation effect="fade" start="0" end="100" time="600">VisibleChange</animation>
-                        <animation effect="rotatey" end="20" center="1720,0" reversible="false" condition="true">Conditional</animation>
                         <visible>!ControlGroup(101).HasFocus()</visible>
-                        <left>1610</left>
-                        <top>600</top>
+                        <left>1580</left>
+                        <top>620</top>
                         <control type="image" description="CoverReal">
                             <visible>String.IsEmpty(Player.Art(tvshow.poster)) + !Window.IsActive(610)</visible>
                             <height>300</height>
@@ -162,7 +206,7 @@
                 </control>
                 <control type="list" id="100">
                     <left>1000</left>
-                    <top>220r</top>
+                    <bottom>100</bottom>
                     <onright>100</onright>
                     <onleft>100</onleft>
                     <onup>101</onup>
@@ -278,18 +322,18 @@
                     </content>
                 </control>
             </control>
-            <control type="image">
-                <visible>!ControlGroup(101).HasFocus()</visible>
-                <visible>!Window.IsVisible(10123) + !Window.IsVisible(10124) + !Window.IsVisible(10125)</visible>
-                <animation type="Visible">
-                    <effect type="fade" tween="circle" easing="in" start="0" end="100" time="800" />
-                </animation>
-                <left>1500</left>
-                <top>1030</top>
-                <width>48</width>
-                <height>48</height>
-                <texture>images/Dialogpull.png</texture>
-            </control>
+        </control>
+        <control type="image">
+            <visible>!ControlGroup(101).HasFocus()</visible>
+            <visible>!Window.IsVisible(10123) + !Window.IsVisible(10124) + !Window.IsVisible(10125)</visible>
+            <animation type="Visible">
+                <effect type="fade" tween="circle" easing="in" start="0" end="100" time="800" />
+            </animation>
+            <centerleft>960</centerleft>
+            <top>20</top>
+            <width>60</width>
+            <height>40</height>
+            <texture>images/Dialogpull.png</texture>
         </control>
         <control type="group">
             <visible>VideoPlayer.IsStereoscopic + ![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
@@ -360,6 +404,53 @@
                 </control>
             </control>
         </control>
-        <!-- 3D -->
+        <control type="grouplist" description="Video Stream Infos">
+            <visible>Control.HasFocus(707)</visible>
+            <left>110</left>
+            <top>120</top>
+            <control type="label">
+                <width>1600</width>
+                <height>50</height>
+                <aligny>bottom</aligny>
+                <label>$INFO[Player.Process(videodecoder),Video Decoder: ] $INFO[Player.Process(pixformat),Pixel Format: ]</label>
+                <font>font13</font>
+                <textcolor>lightgray</textcolor>
+                <visible>Player.HasVideo</visible>
+            </control>
+            <control type="label">
+                <width>1600</width>
+                <height>50</height>
+                <aligny>bottom</aligny>
+                <label>$INFO[Player.Process(deintmethod),Deinterlace Method: ]</label>
+                <font>font13</font>
+                <textcolor>lightgray</textcolor>
+                <visible>Player.HasVideo</visible>
+            </control>
+            <control type="label">
+                <width>1600</width>
+                <height>50</height>
+                <aligny>bottom</aligny>
+                <label>$INFO[Player.Process(videowidth),Video : ,x]$INFO[Player.Process(videoheight),, px]$INFO[Player.Process(videodar),$COMMA , AR]$INFO[Player.Process(videofps),$COMMA , FPS]</label>
+                <font>font13</font>
+                <textcolor>lightgray</textcolor>
+                <visible>Player.HasVideo</visible>
+            </control>
+            <control type="label">
+                <width>1600</width>
+                <height>50</height>
+                <aligny>bottom</aligny>
+                <label>Audio Channels: $INFO[Player.Process(audiochannels),,$COMMA ]$INFO[Player.Process(audiodecoder)]$INFO[Player.Process(audiobitspersample),$COMMA , bits]$INFO[Player.Process(audiosamplerate),$COMMA , Hz]</label>
+                <font>font13</font>
+                <textcolor>lightgray</textcolor>
+            </control>
+            <control type="label">
+                <width>1600</width>
+                <height>50</height>
+                <aligny>bottom</aligny>
+                <label>$INFO[System.Memory(used.percent),Memory in Use: ,       ]$INFO[System.CpuUsage,$LOCALIZE[13271]]</label>
+                <font>font13</font>
+                <textcolor>lightgray</textcolor>
+            </control>
+        </control>
     </controls>
 </window>

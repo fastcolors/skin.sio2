@@ -193,4 +193,8 @@
         <value>$INFO[ListItem.Icon]</value>
     </variable>
 
+    <variable name="osdtop">
+        <value condition="ControlGroup(101).Hasfocus(1)">videodb://recentlyaddedepisodes/</value>
+        <value condition="Container(101).Position(2)">special://skin/resources/randomTV.xsp</value>
+    </variable>
 </includes>

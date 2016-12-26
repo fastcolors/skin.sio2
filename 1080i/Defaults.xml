@@ -6,11 +6,11 @@
     <align>left</align>
     <aligny>center</aligny>
     <font>size33</font>
-    <textcolor>black</textcolor>
+    <textcolor>white</textcolor>
     <shadowcolor>-</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
-    <disabledcolor>Disabled</disabledcolor>
+    <focusedcolor>white</focusedcolor>
+    <selectedcolor>orange</selectedcolor>
+    <disabledcolor>slategray</disabledcolor>
     <scroll>false</scroll>
     <scrollspeed>50</scrollspeed>
     <scrollsuffix>  •  </scrollsuffix>
@@ -34,10 +34,10 @@
   <default type="textbox">
     <label>-</label>
     <font>size28</font>
-    <textcolor>White</textcolor>
+    <textcolor>white</textcolor>
     <shadowcolor>-</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
+    <focusedcolor>white</focusedcolor>
+    <selectedcolor>white</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
     <pagecontrol>61</pagecontrol>
     <pulseonselect></pulseonselect>
