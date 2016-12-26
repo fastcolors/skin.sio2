@@ -147,6 +147,12 @@
             <size>142</size>
             <style>bold</style>
         </font>
+         <font>
+            <name>sizescroll</name>
+            <filename>arial.ttf</filename>
+            <size>500</size>
+            <style>bold</style>
+        </font>
         <font>
             <name>XS</name>
             <filename>arial.ttf</filename>

@@ -17,7 +17,7 @@
       <top>80</top>
       <width>950</width>
       <height>1000</height>
-      <texture colordiffuse="77FFFFFF">images/White.png</texture>
+      <texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>
     </control>
     <control type="grouplist">
       <top>100</top>
@@ -68,7 +68,7 @@
       <top>80</top>
       <width>250</width>
       <height>250</height>
-      <texture colordiffuse="77FFFFFF">images/White.png</texture>
+      <texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>
     </control>
     <control type="label">
       <centerleft>1470</centerleft>

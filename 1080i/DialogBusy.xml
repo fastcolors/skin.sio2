@@ -6,14 +6,6 @@
   </coordinates>
   <include>OpenClose</include>
   <controls>
-    <control type="image" description="Busy BG">
-      <left>0</left>
-      <top>0</top>
-      <width>1920</width>
-      <height>1080</height>
-      <texture>busy/BusyBG.png</texture>
-      <aspectratio>stretch</aspectratio>
-    </control>
     <control type="group">
       <left>832</left>
       <top>412</top>

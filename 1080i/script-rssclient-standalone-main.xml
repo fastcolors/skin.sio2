@@ -92,7 +92,7 @@
             <aligny>top</aligny>
             <align>justify</align>
             <label>$INFO[ListItem.Property(desc)]</label>
-            <visible>StringCompare(ListItem.Property(image),)</visible>
+            <visible>String.IsEqual(ListItem.Property(image),)</visible>
             <textcolor>white</textcolor>
           </control>
           <control type="textbox">
@@ -103,7 +103,7 @@
             <aligny>top</aligny>
             <align>justify</align>
             <label>$INFO[ListItem.Property(desc)]</label>
-            <visible>!StringCompare(ListItem.Property(image),)</visible>
+            <visible>!String.IsEqual(ListItem.Property(image),)</visible>
             <textcolor>white</textcolor>
           </control>
           <control type="image">
@@ -114,7 +114,7 @@
           </control>
         </control>
         <control type="group" description="Imagefeed">
-          <visible>!StringCompare(ListItem.Property(image),)</visible>
+          <visible>!String.IsEqual(ListItem.Property(image),)</visible>
           <control type="image" id="30011">
             <left>0</left>
             <top>100</top>
@@ -171,7 +171,7 @@
           <width>375</width>
           <textoffsetx>15</textoffsetx>
           <textwidth>352</textwidth>
-          <visible>!StringCompare(Container(30050).ListItem.Property(video),)</visible>
+          <visible>!String.IsEqual(Container(30050).ListItem.Property(video),)</visible>
         </control>
       </control>
     </control>

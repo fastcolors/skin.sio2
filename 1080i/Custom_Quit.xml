@@ -48,7 +48,7 @@
             <onclick>Skin.SetString(shutdown,suspend)</onclick>
             <onclick condition="!Skin.HasSetting(quitter)">Skin.ToggleSetting(quitter)</onclick>
             <onclick>Close</onclick>
-            <selected>StringCompare(Skin.String(shutdown),suspend)</selected>
+            <selected>String.IsEqual(Skin.String(shutdown),suspend)</selected>
           </control>
           <control type="radiobutton" id="703" description="Hibernate">
             <width>525</width>
@@ -57,7 +57,7 @@
             <onclick>Skin.SetString(shutdown,hibernate)</onclick>
             <onclick condition="!Skin.HasSetting(quitter)">Skin.ToggleSetting(quitter)</onclick>
             <onclick>Close</onclick>
-            <selected>StringCompare(Skin.String(shutdown),hibernate)</selected>
+            <selected>String.IsEqual(Skin.String(shutdown),hibernate)</selected>
           </control>
           <control type="radiobutton" id="704" description="Shutdown">
             <width>525</width>
@@ -66,7 +66,7 @@
             <onclick>Skin.SetString(shutdown,powerdown)</onclick>
             <onclick condition="!Skin.HasSetting(quitter)">Skin.ToggleSetting(quitter)</onclick>
             <onclick>Close</onclick>
-            <selected>StringCompare(Skin.String(shutdown),powerdown)</selected>
+            <selected>String.IsEqual(Skin.String(shutdown),powerdown)</selected>
           </control>
           <control type="radiobutton" id="705" description="Reboot">
             <width>525</width>
@@ -75,7 +75,7 @@
             <onclick>Skin.SetString(shutdown,reboot)</onclick>
             <onclick condition="!Skin.HasSetting(quitter)">Skin.ToggleSetting(quitter)</onclick>
             <onclick>Close</onclick>
-            <selected>StringCompare(Skin.String(shutdown),reboot)</selected>
+            <selected>String.IsEqual(Skin.String(shutdown),reboot)</selected>
           </control>
           <control type="radiobutton" id="706" description="Quit">
             <width>525</width>
@@ -83,7 +83,7 @@
             <onclick>Skin.SetString(shutdown,quit)</onclick>
             <onclick condition="!Skin.HasSetting(quitter)">Skin.ToggleSetting(quitter)</onclick>
             <onclick>Close</onclick>
-            <selected>StringCompare(Skin.String(shutdown),quit)</selected>
+            <selected>String.IsEqual(Skin.String(shutdown),quit)</selected>
           </control>
         </control>
       </control>

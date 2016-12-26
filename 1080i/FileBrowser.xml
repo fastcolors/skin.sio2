@@ -26,7 +26,7 @@
             <itemlayout width="802" height="81">
               <include>Arrow</include>
               <control type="label" description="Main Label">
-                <include>52MainLabel</include>
+                <include>50Label</include>
                 <label>$INFO[ListItem.Label]</label>
               </control>
             </itemlayout>
@@ -45,7 +45,7 @@
               </control>
               <include>Arrow</include>
               <control type="label" description="Main Label">
-                <include>52MainLabelFO</include>
+                <include>50LabelFO</include>
                 <label>$INFO[ListItem.Label]</label>
               </control>
             </focusedlayout>
@@ -81,7 +81,7 @@
               <aspectratio>keep</aspectratio>
             </control>
             <control type="label" description="Main Label">
-              <visible>!StringCompare(ListItem.Label,..)</visible>
+              <visible>!ListItem.IsParentFolder</visible>
               <scroll>false</scroll>
               <textcolor>White</textcolor>
               <left>135</left>

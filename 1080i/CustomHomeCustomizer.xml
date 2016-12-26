@@ -516,21 +516,21 @@
             <control type="radiobutton" id="100" description="Auto">
                 <include>SettingsSubmenuButtons</include>
                 <label>$LOCALIZE[20386]</label>
-                <selected>StringCompare(Skin.String(moviesshelf),)</selected>
+                <selected>String.IsEqual(Skin.String(moviesshelf),)</selected>
                 <enable>!Skin.HasSetting(hidemovie)</enable>
                 <onclick>Skin.SetString(moviesshelf,)</onclick>
             </control>
             <control type="radiobutton" id="102" description="Random">
                 <include>SettingsSubmenuButtons</include>
                 <label>$LOCALIZE[590]</label>
-                <selected>StringCompare(Skin.String(moviesshelf),RND)</selected>
+                <selected>String.IsEqual(Skin.String(moviesshelf),RND)</selected>
                 <enable>!Skin.HasSetting(hidemovie)</enable>
                 <onclick>Skin.SetString(moviesshelf,RND)</onclick>
             </control>
             <control type="radiobutton" id="103" description="Movie Watchlist">
                 <include>SettingsSubmenuButtons</include>
                 <label>$LOCALIZE[31048]</label>
-                <selected>StringCompare(Skin.String(moviesshelf),WL)</selected>
+                <selected>String.IsEqual(Skin.String(moviesshelf),WL)</selected>
                 <enable>!Skin.HasSetting(hidemovie)</enable>
                 <onclick>Skin.SetString(moviesshelf,WL)</onclick>
             </control>

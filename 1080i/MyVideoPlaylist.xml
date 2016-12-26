@@ -56,7 +56,7 @@
                 <visible>!String.IsEmpty(ListItem.Artist) | !String.IsEmpty(ListItem.Label2)</visible>
                 <left>195</left>
                 <width>570</width>
-                <include>50Title</include>
+                <include>BigListTitle</include>
                 <label>$INFO[ListItem.Label]</label>
               </control>
               <control type="label" description="Main Label">
@@ -64,18 +64,18 @@
                 <top>27</top>
                 <left>195</left>
                 <width>570</width>
-                <include>50Title</include>
+                <include>BigListTitle</include>
                 <label>$INFO[ListItem.Label]</label>
               </control>
               <control type="label" description="Label2">
                 <left>195</left>
-                <include>50details</include>
+                <include>BigListDetails</include>
                 <label>$INFO[ListItem.Artist]</label>
               </control>
               <control type="label" description="Label2">
                 <visible>String.IsEmpty(ListItem.Artist)</visible>
                 <left>195</left>
-                <include>50details</include>
+                <include>BigListDetails</include>
                 <label>$INFO[ListItem.Label2]</label>
               </control>
             </itemlayout>
@@ -94,7 +94,7 @@
                 <visible>!String.IsEmpty(ListItem.Artist) | !String.IsEmpty(ListItem.Label2)</visible>
                 <left>195</left>
                 <width>570</width>
-                <include>50TitleFO</include>
+                <include>BigListTitleFO</include>
                 <label>$INFO[ListItem.Label]</label>
               </control>
               <control type="label" description="Main Label">
@@ -102,18 +102,18 @@
                 <top>27</top>
                 <left>195</left>
                 <width>570</width>
-                <include>50TitleFO</include>
+                <include>BigListTitleFO</include>
                 <label>$INFO[ListItem.Label]</label>
               </control>
               <control type="label" description="Label2">
                 <left>195</left>
-                <include>50detailsFO</include>
+                <include>BigListDetailsFO</include>
                 <label>$INFO[ListItem.Artist]</label>
               </control>
               <control type="label" description="Label2">
                 <visible>String.IsEmpty(ListItem.Artist)</visible>
                 <left>195</left>
-                <include>50detailsFO</include>
+                <include>BigListDetailsFO</include>
                 <label>$INFO[ListItem.Label2]</label>
               </control>
             </focusedlayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1177">
+    <backgroundcolor>aliceblue</backgroundcolor>
+    <defaultcontrol always="true">555</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <controls>
+        <include>BlackBackground</include>
+        <control type="group">
+            <animation condition="!ControlGroup(666).HasFocus" effect="slide" start="0,0" end="0,200" time="220">Conditonal</animation>
+            <control type="grouplist" id="555">
+                <orientation>horizontal</orientation>
+                <width>100%</width>
+                <align>center</align>
+                <top>-100</top>
+                <itemgap>20</itemgap>
+                <ondown>666</ondown>
+                <control type="button" id="1">
+                    <width>auto</width>
+                    <label>Party Mode</label>
+                    <onclick>PlayerControl(Partymode(music))</onclick>
+                </control>
+                <control type="button" id="2">
+                    <width>auto</width>
+                    <label>Other function</label>
+                    <onclick>noop</onclick>
+                </control>
+                <control type="button" id="3">
+                    <width>auto</width>
+                    <label>Update Library</label>
+                    <onclick>UpdateLibrary(music,,true)</onclick>
+                </control>
+            </control>
+            <control type="grouplist" id="666" description="list of available stuff">
+                <onup>555</onup>
+                <control type="label" id="62">
+                    <height>64</height>
+                    <aligny>top</aligny>
+                    <textoffsetx>160</textoffsetx>
+                    <label>[B]Recently Played Albums[/B]</label>
+                </control>
+                <control type="list" id="50" description="list">
+                    <include>iconmusiclist</include>
+                    <content target="music">musicdb://recentlyplayedalbums/</content>
+                </control>
+                <control type="label" id="61">
+                    <height>64</height>
+                    <textoffsetx>160</textoffsetx>
+                    <label>[B]Artists[/B]</label>
+                </control>
+                <control type="list" id="51" description="list">
+                    <include>iconmusiclist</include>
+                    <content target="music">musicdb://artists/</content>
+                </control>
+                <control type="label" id="60">
+                    <height>64</height>
+                    <textoffsetx>160</textoffsetx>
+                    <label>[B]Albums[/B]</label>
+                </control>
+                <control type="list" id="52" description="list">
+                    <include>iconmusiclist</include>
+                    <content target="music">musicdb://albums/</content>
+                </control>
+            </control>
+            <control type="label">
+                <top>-190</top>
+                <include>Heading</include>
+                <label>2</label>
+            </control>
+        </control>
+        <include>WindowsTopInfos</include>
+    </controls>
+</window>

@@ -32,7 +32,7 @@
                 <textcolor>dimgray</textcolor>
             </control>
             <control type="spincontrolex" id="3">
-                <visible>!StringCompare(Weather.Plugin,weather.weatherplus)</visible>
+                <visible>!String.IsEqual(Weather.Plugin,weather.weatherplus)</visible>
                 <description>Location</description>
                 <colordiffuse>FFFFAA00</colordiffuse>
                 <left>200</left>
@@ -60,7 +60,7 @@
             <align>center</align>
         </control>
         <control type="group" id="51">
-            <visible>!StringCompare(Weather.Plugin,weather.weatherplus)</visible>
+            <visible>!String.IsEqual(Weather.Plugin,weather.weatherplus)</visible>
             <left>200</left>
             <top>160</top>
             <control type="label" description="Temp value">

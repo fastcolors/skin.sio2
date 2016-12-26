@@ -56,7 +56,7 @@
             <effect type="zoom" tween="quadratic" start="0" end="100" time="800" center="640,360" />
             <effect type="fade" start="0" end="100" time="800" center="640,360" />
           </animation>
-          <animation type="Conditional" condition="StringCompare(Control.GetLabel(23),100)" reversible="false">
+          <animation type="Conditional" condition="String.IsEqual(Control.GetLabel(23),100)" reversible="false">
             <effect type="zoom" tween="quadratic" easing="in" start="100" end="260" time="300" center="640,360" />
             <effect type="fade" start="100" end="0" easing="out" time="300" />
           </animation>

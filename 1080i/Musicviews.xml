@@ -71,15 +71,20 @@
           <preloaditems>4</preloaditems>
           <scrolltime tween="sine" easing="inout">280</scrolltime>
           <itemlayout width="802" height="81">
+            <control type="image">
+                <height>70</height>
+                <width>805</width>
+                <texture border="8" colordiffuse="80ffffff">images/White.png</texture>
+              </control>
             <control type="label" description="Main Label">
               <width max="609">auto</width>
-              <include>52MainLabel</include>
+              <include>50Label</include>
               <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label" description="Label2">
               <visible>![Player.HasAudio + ListItem.IsPlaying]</visible>
               <visible>container.content(songs)</visible>
-              <include>52Label2</include>
+              <include>50Label2</include>
               <label>$INFO[ListItem.Duration]</label>
             </control>
             <control type="image" description="playing">
@@ -105,16 +110,16 @@
               <control type="image">
                 <height>70</height>
                 <width>805</width>
-                <texture>images/White.png</texture>
+                <texture border="8">images/White.png</texture>
               </control>
               <control type="label" description="Main Label">
                 <width max="609">auto</width>
-                <include>52MainLabelFO</include>
+                <include>50LabelFO</include>
                 <label>$INFO[ListItem.Label]</label>
               </control>
               <control type="label" description="Label2">
                 <visible>![Player.HasAudio + ListItem.IsPlaying]</visible>
-                <include>52Label2FO</include>
+                <include>50Label2FO</include>
                 <label>$INFO[ListItem.Duration]</label>
               </control>
               <control type="image" description="playing">
@@ -188,7 +193,7 @@
             <control type="image">
               <animation effect="fade" start="0" end="100" time="150">Focus</animation>
               <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
-              <visible>!StringCompare(ListItem.Label,..)</visible>
+              <visible>!ListItem.IsParentFolder</visible>
               <centerleft>227</centerleft>
               <centertop>227</centertop>
               <width>455</width>

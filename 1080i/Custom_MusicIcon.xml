@@ -43,28 +43,28 @@
             <label>$LOCALIZE[132]</label>
             <onclick>Skin.SetString(MusicLink,Albums)</onclick>
             <onclick>back</onclick>
-            <selected>StringCompare(Skin.String(MusicLink),Albums)</selected>
+            <selected>String.IsEqual(Skin.String(MusicLink),Albums)</selected>
           </control>
           <control type="radiobutton" id="702" description="Artists">
             <width>525</width>
             <label>$LOCALIZE[133]</label>
             <onclick>Skin.SetString(MusicLink,Artists)</onclick>
             <onclick>back</onclick>
-            <selected>StringCompare(Skin.String(MusicLink),Artists)</selected>
+            <selected>String.IsEqual(Skin.String(MusicLink),Artists)</selected>
           </control>
           <control type="radiobutton" id="703" description="Genres">
             <width>525</width>
             <label>$LOCALIZE[135]</label>
             <onclick>Skin.SetString(MusicLink,Genres)</onclick>
             <onclick>back</onclick>
-            <selected>StringCompare(Skin.String(MusicLink),Genres)</selected>
+            <selected>String.IsEqual(Skin.String(MusicLink),Genres)</selected>
           </control>
           <control type="radiobutton" id="704" description="Songs">
             <width>525</width>
             <label>$LOCALIZE[134]</label>
             <onclick>Skin.SetString(MusicLink,Songs)</onclick>
             <onclick>back</onclick>
-            <selected>StringCompare(Skin.String(MusicLink),Songs)</selected>
+            <selected>String.IsEqual(Skin.String(MusicLink),Songs)</selected>
           </control>
         </control>
       </control>

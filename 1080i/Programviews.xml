@@ -81,7 +81,7 @@
                         <control type="image">
                             <animation effect="fade" start="0" end="100" time="150">Focus</animation>
                             <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
-                            <visible>!StringCompare(ListItem.Label,..)</visible>
+                            <visible>!ListItem.IsParentFolder</visible>
                             <centerleft>227</centerleft>
                             <centertop>227</centertop>
                             <width>455</width>

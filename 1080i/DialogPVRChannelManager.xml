@@ -71,7 +71,7 @@
               <control type="label" description="Main Label">
 			  <top>6</top>
                 <width>750</width>
-                <include>52MainLabel</include>
+                <include>50Label</include>
                 <label>$INFO[ListItem.Label]</label>
               </control>
             </itemlayout>
@@ -87,7 +87,7 @@
               <control type="label" description="Main Label">
 			  <top>6</top>
                 <width>750</width>
-                <include>52MainLabelFO</include>
+                <include>50LabelFO</include>
                 <label>$INFO[ListItem.Label]</label>
 				</control>
             </focusedlayout>

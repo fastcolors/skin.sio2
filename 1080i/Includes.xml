@@ -61,7 +61,6 @@
         <aligny>center</aligny>
         <width>1260</width>
         <height>70</height>
-        <textcolor>white</textcolor>
         <font>size42</font>
     </include>
     <include name="Dimensions_Fullscreen">
@@ -87,120 +86,27 @@
         </control>
     </include>
     <include name="WindowsTopInfos">
-        <control type="grouplist">
-            <visible>![Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(58) | Control.IsVisible(500) | Control.IsVisible(510) | Control.IsVisible(501) | Control.IsVisible(502) | [Window.IsActive(myPVR) + Control.IsVisible(10)] | [Window.IsActive(myPVR) + Control.IsVisible(14)]]</visible>
-            <left>990</left>
-            <top>40</top>
-            <width>870</width>
-            <height>75</height>
-            <align>center</align>
-            <aligny>bottom</aligny>
-            <orientation>horizontal</orientation>
-            <control type="label" id="7777" description="Heading">
-                <width min="60" max="750">auto</width>
-                <height>75</height>
-                <font>Size42</font>
-                <scroll>false</scroll>
-                <label>$VAR[RootLabel]</label>
-            </control>
-            <control type="label" description="Number of files">
-                <visible>!String.IsEmpty(Control.GetLabel(7777))</visible>
-                <width min="60" max="120">auto</width>
-                <height>81</height>
-                <font>size26</font>
-                <textcolor>dimgray</textcolor>
-                <label>$INFO[Container.NumItems,  (,)]</label>
-            </control>
-        </control>
-        <control type="grouplist">
-            <visible>Control.IsVisible(52) | Control.IsVisible(58) | Control.IsVisible(500) | Control.IsVisible(501) | Control.IsVisible(510) | Control.IsVisible(502) | [Window.IsActive(myPVR) + Control.IsVisible(10)] | [Window.IsActive(myPVR) + Control.IsVisible(14)]</visible>
-            <left>33</left>
-            <top>0</top>
-            <width>1230</width>
-            <height>75</height>
-            <align>left</align>
-            <aligny>bottom</aligny>
-            <orientation>horizontal</orientation>
-            <control type="label" id="7777" description="Heading">
-                <width min="60" max="1080">auto</width>
-                <height>75</height>
-                <font>size42</font>
-                <scroll>false</scroll>
-                <label>$VAR[RootLabel]</label>
-            </control>
-            <control type="label" description="Number of files">
-                <visible>!String.IsEmpty(Control.GetLabel(7777))</visible>
-                <width min="60" max="120">auto</width>
-                <height>81</height>
-                <font>size26</font>
-                <textcolor>dimgray</textcolor>
-                <label>$INFO[Container.NumItems,  (,)]</label>
-            </control>
-        </control>
         <control type="group" description="Scroll letter">
-            <visible>Container.Scrolling + !Control.IsVisible(53) + !Control.IsVisible(500)</visible>
+            <visible>Container.Scrolling</visible>
             <animation effect="fade" start="0" end="100" time="50" delay="0" reversible="false">Visible</animation>
             <animation effect="fade" start="100" end="0" time="150" delay="250" reversible="false">Hidden</animation>
-            <control type="image">
-                <left>1388</left>
-                <top>975</top>
-                <width>81</width>
-                <height>81</height>
-                <texture border="12">images/SortLetterBG.png</texture>
-            </control>
+            <!--<control type="image">-->
+                <!--<left>1388</left>-->
+                <!--<top>975</top>-->
+                <!--<width>81</width>-->
+                <!--<height>81</height>-->
+                <!--<texture border="8">images/White.png</texture>-->
+            <!--</control>-->
             <control type="label">
-                <left>1388</left>
-                <top>975</top>
-                <width>81</width>
-                <height>81</height>
+                <centerleft>960</centerleft>
+                <centertop>540</centertop>
+                <width>1920</width>
+                <height>1080</height>
                 <align>center</align>
-                <font>size38</font>
+                <font>sizescroll</font>
                 <label>$INFO[ListItem.SortLetter]</label>
             </control>
         </control>
-        <control type="group" description="Scroll letter">
-            <visible>Container.Scrolling + Control.IsVisible(500) + Control.HasFocus(60)</visible>
-            <animation effect="fade" start="0" end="100" time="50" delay="0" reversible="false">Visible</animation>
-            <animation effect="fade" start="100" end="0" time="150" delay="250" reversible="false">Hidden</animation>
-            <control type="image">
-                <left>920</left>
-                <top>975</top>
-                <width>81</width>
-                <height>81</height>
-                <texture border="12">images/SortLetterBG.png</texture>
-            </control>
-            <control type="label">
-                <left>920</left>
-                <top>975</top>
-                <width>81</width>
-                <height>81</height>
-                <align>center</align>
-                <font>size38</font>
-                <label>$INFO[ListItem.SortLetter]</label>
-            </control>
-        </control>
-        <control type="group" description="Scroll letter">
-            <visible>Container.Scrolling + Control.IsVisible(53)</visible>
-            <animation effect="fade" start="0" end="100" time="50" delay="0" reversible="false">Visible</animation>
-            <animation effect="fade" start="100" end="0" time="150" delay="250" reversible="false">Hidden</animation>
-            <control type="image">
-                <left>1800</left>
-                <top>499</top>
-                <width>81</width>
-                <height>81</height>
-                <texture border="12">images/SortLetterBG.png</texture>
-            </control>
-            <control type="label">
-                <left>1800</left>
-                <top>499</top>
-                <width>81</width>
-                <height>81</height>
-                <align>center</align>
-                <font>size38</font>
-                <label>$INFO[ListItem.SortLetter]</label>
-            </control>
-        </control>
-
         <!--DA FARE-->
         <control type="group" description="Player Info">
             <visible>!Control.HasFocus(340) + Player.HasMedia + ![Window.IsActive(DialogBusy.xml) | Window.IsActive(VideoFullscreen.xml) | Window.IsActive(myPVR.xml)]</visible>
@@ -211,7 +117,7 @@
             <control type="image" description="Playing BG">
                 <width>390</width>
                 <height>105</height>
-                <texture border="14">musicOSD/back.png</texture>
+                <texture border="8">images/White.png</texture>
             </control>
             <control type="group">
                 <control type="image">
@@ -237,7 +143,7 @@
                     <width>261</width>
                     <height>36</height>
                     <font>size24</font>
-                    <textcolor>White2</textcolor>
+                    <textcolor>black</textcolor>
                     <label>$INFO[MusicPlayer.Title]</label>
                 </control>
                 <control type="label">
@@ -247,6 +153,7 @@
                     <width>261</width>
                     <height>36</height>
                     <font>size21</font>
+                    <textcolor>black</textcolor>
                     <label>$INFO[MusicPlayer.Artist]</label>
                 </control>
                 <control type="label">
@@ -256,6 +163,7 @@
                     <width>261</width>
                     <height>36</height>
                     <font>size21</font>
+                    <textcolor>black</textcolor>
                     <label>$INFO[MusicPlayer.Album]</label>
                 </control>
                 <control type="label">
@@ -265,7 +173,7 @@
                     <width>261</width>
                     <height>36</height>
                     <font>size24</font>
-                    <textcolor>White2</textcolor>
+                    <textcolor>black</textcolor>
                     <label>$INFO[VideoPlayer.Title]</label>
                 </control>
                 <control type="label">
@@ -275,6 +183,7 @@
                     <width>261</width>
                     <height>36</height>
                     <font>size21</font>
+                    <textcolor>black</textcolor>
                     <label>$INFO[VideoPlayer.Artist]</label>
                 </control>
                 <control type="label">
@@ -284,6 +193,7 @@
                     <width>261</width>
                     <height>36</height>
                     <font>size21</font>
+                    <textcolor>black</textcolor>
                     <label>$INFO[VideoPlayer.Album]</label>
                 </control>
             </control>
@@ -559,5 +469,82 @@
         <focusedcolor>white</focusedcolor>
         <texturenofocus>-</texturenofocus>
         <texturefocus>-</texturefocus>
+    </include>
+    <include name="iconmusiclist">
+        <viewtype label="536">Icons</viewtype>
+        <width>1920</width>
+        <height>355</height>
+        <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+        <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
+        <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+        <onright condition="!Skin.HasSetting(Scrollbars_Active)">noop</onright>
+        <orientation>horizontal</orientation>
+        <preloaditems>4</preloaditems>
+        <pagecontrol>60</pagecontrol>
+        <scrolltime>400</scrolltime>
+        <itemlayout height="300" width="320">
+            <control type="image">
+                <visible>!String.IsEmpty(ListItem.Thumb)</visible>
+                <centerleft>300</centerleft>
+                <centertop>170</centertop>
+                <width>380</width>
+                <height>300</height>
+                <texture>shadow.png</texture>
+            </control>
+            <control type="image">
+                <centerleft>300</centerleft>
+                <centertop>150</centertop>
+                <width>280</width>
+                <height>280</height>
+                <texture background="true">$INFO[ListItem.Icon]</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="textbox">
+                <centerleft>300</centerleft>
+                <top>290</top>
+                <width>300</width>
+                <height>64</height>
+                <font>size24</font>
+                <textcolor>white</textcolor>
+                <align>center</align>
+                <autoscroll>false</autoscroll>
+                <label>[B]$INFO[ListItem.Label][/B][CR]$INFO[ListItem.Label2]</label>
+            </control>
+        </itemlayout>
+        <focusedlayout height="300" width="320">
+            <control type="image">
+                <animation effect="fade" start="0" end="100" time="150">Focus</animation>
+                <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
+                <visible>!String.IsEmpty(ListItem.Thumb)</visible>
+                <centerleft>300</centerleft>
+                <centertop>200</centertop>
+                <width>380</width>
+                <height>300</height>
+                <texture>shadow.png</texture>
+            </control>
+            <control type="group">
+                <animation effect="zoom" time="120" start="100" end="110" center="300,300" tween="Back" easing="Out">Focus</animation>
+                <animation effect="zoom" start="110" end="100" time="120" center="300,300">unFocus</animation>
+                <control type="image">
+                    <centerleft>300</centerleft>
+                    <centertop>150</centertop>
+                    <width>280</width>
+                    <height>280</height>
+                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+            </control>
+            <control type="textbox">
+                <centerleft>300</centerleft>
+                <top>290</top>
+                <width>300</width>
+                <height>64</height>
+                <font>size24</font>
+                <textcolor>white</textcolor>
+                <align>center</align>
+                <autoscroll>false</autoscroll>
+                <label>[B]$INFO[ListItem.Label][/B][CR]$INFO[ListItem.Label2]</label>
+            </control>
+        </focusedlayout>
     </include>
 </includes>

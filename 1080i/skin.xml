@@ -248,7 +248,7 @@
                 </control>
                 <control type="label">
                     <width>600</width>
-                    <include>50TitleFO</include>
+                    <include>BigListTitleFO</include>
                     <selectedcolor>FFe2ff43</selectedcolor>
                     <textcolor>FFFFFFFF</textcolor>
                     <align>left</align>
@@ -283,7 +283,7 @@
                 </control>
                 <control type="label">
                     <width>600</width>
-                    <include>50TitleFO</include>
+                    <include>BigListTitleFO</include>
                     <selectedcolor>FFe2ff43</selectedcolor>
                     <textcolor>FFFFFFFF</textcolor>
                     <align>left</align>
@@ -324,7 +324,7 @@
                 <control type="label">
                     <width>600</width>
                     <scroll>false</scroll>
-                    <include>50TitleFO</include>
+                    <include>BigListTitleFO</include>
                     <selectedcolor>FFe2ff43</selectedcolor>
                     <textcolor>FFFFFFFF</textcolor>
                     <align>left</align>
@@ -359,7 +359,7 @@
                 </control>
                 <control type="label">
                     <width>600</width>
-                    <include>50TitleFO</include>
+                    <include>BigListTitleFO</include>
                     <textcolor>FFFFFFFF</textcolor>
                     <align>left</align>
                     <info>ListItem.Label</info>

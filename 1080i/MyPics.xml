@@ -50,11 +50,11 @@
             <control type="image">
               <height>70</height>
               <width>805</width>
-              <texture colordiffuse="77FFFFFF">images/White.png</texture>
+              <texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>
             </control>
             <include>Arrow</include>
             <control type="label" description="Main Label">
-              <include>52MainLabel</include>
+              <include>50Label</include>
               <label>$INFO[ListItem.Label]</label>
             </control>
           </itemlayout>
@@ -75,7 +75,7 @@
               </control>
               <include>Arrow</include>
               <control type="label" description="Main Label">
-                <include>52MainLabelFO</include>
+                <include>50LabelFO</include>
                 <label>$INFO[ListItem.Label]</label>
               </control>
             </control>
@@ -109,7 +109,7 @@
           <scrolltime>400</scrolltime>
           <itemlayout height="345" width="300">
             <control type="image">
-              <visible>!StringCompare(ListItem.Label,..)</visible>
+              <visible>!ListItem.IsParentFolder</visible>
               <left>9</left>
               <top>11</top>
               <width>281</width>
@@ -118,7 +118,7 @@
               <aspectratio scalediffuse="false">scale</aspectratio>
             </control>
             <control type="image">
-              <visible>StringCompare(ListItem.Label,..)</visible>
+              <visible>ListItem.IsParentFolder</visible>
               <left>9</left>
               <top>11</top>
               <width>281</width>
@@ -131,7 +131,7 @@
             <control type="group">
               <animation effect="zoom" time="120" start="100" end="120" center="auto" tween="Back" easing="Out">Focus</animation>
               <control type="image">
-                <visible>!StringCompare(ListItem.Label,..)</visible>
+                <visible>!ListItem.IsParentFolder</visible>
                 <left>9</left>
                 <top>11</top>
                 <width>281</width>
@@ -140,7 +140,7 @@
                 <aspectratio scalediffuse="false">scale</aspectratio>
               </control>
               <control type="image">
-                <visible>StringCompare(ListItem.Label,..)</visible>
+                <visible>ListItem.IsParentFolder</visible>
                 <left>9</left>
                 <top>11</top>
                 <width>281</width>

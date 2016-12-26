@@ -4,7 +4,6 @@
     <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <onload>RunScript(script.favourites)</onload>
-    <onload>SetProperty(SkinWidgets_RandomItems_Update,true)</onload>
     <include>OpenClose</include>
     <controls>
         <control type="group" description="Furniture">
@@ -31,9 +30,9 @@
             <height>34</height>
             <texturefocus aspectratio="keep">images/hometoggle.png</texturefocus>
             <!--MOVIES-->
-            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
-            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
-            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
+            <onclick  condition="Control.IsVisible(311) + String.IsEqual(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
+            <onclick  condition="Control.IsVisible(311) + String.IsEqual(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
+            <onclick  condition="Control.IsVisible(311) + String.IsEqual(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
             <!--TVSHOWS-->
             <onclick  condition="Control.IsVisible(312)">Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
             <onup>noop</onup>
@@ -177,7 +176,7 @@
                     <visible>!Skin.HasSetting(hidemusic)</visible>
                     <label>2</label>
                     <thumb>icons/music.png</thumb>
-                    <onclick>ActivateWindow(502,$INFO[Skin.String(MusicLink)])</onclick>
+                    <onclick>ActivateWindow(1177)</onclick>
                     <onclick condition="!Library.HasContent(Music)">ActivateWindow(501,root)</onclick>
                 </item>
                 <item id="343">
@@ -497,7 +496,7 @@
             <align>right</align>
             <font>size27</font>
             <shadowcolor>-</shadowcolor>
-            <textcolor>White</textcolor>
+            <textcolor>white</textcolor>
             <label>$INFO[System.Date(ddd d mmm)] • $INFO[System.Time]</label>
         </control>
         <control type="label" description="Top Label">

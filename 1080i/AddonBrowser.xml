@@ -27,12 +27,12 @@
                     <control type="image">
                         <height>70</height>
                         <width>805</width>
-                        <texture colordiffuse="77FFFFFF">images/White.png</texture>
+                        <texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>
                     </control>
                     <include>Arrow</include>
                     <control type="label" description="Main Label">
                         <width max="720">auto</width>
-                        <include>52MainLabel</include>
+                        <include>50Label</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label" description="Label2">
@@ -44,7 +44,7 @@
                         <align>right</align>
                         <font>size27</font>
                         <scroll>false</scroll>
-                        <textcolor>Grey</textcolor>
+                        <textcolor>black</textcolor>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                 </itemlayout>
@@ -61,12 +61,12 @@
                         <control type="image">
                             <height>70</height>
                             <width>805</width>
-                            <texture>images/White.png</texture>
+                            <texture border="8">images/White.png</texture>
                         </control>
                         <include>Arrow</include>
                         <control type="label" description="Main Label">
                             <width max="720">auto</width>
-                            <include>52MainLabelFO</include>
+                            <include>50LabelFO</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label" description="Label2">
@@ -78,7 +78,7 @@
                             <width>300</width>
                             <align>right</align>
                             <font>size27</font>
-                            <textcolor>White2</textcolor>
+                            <textcolor>black</textcolor>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                     </control>

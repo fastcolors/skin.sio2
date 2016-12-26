@@ -66,8 +66,8 @@
     <focusedcolor>black</focusedcolor>
     <selectedcolor>yellow</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <texturefocus>images/White.png</texturefocus>
-    <texturenofocus colordiffuse="77FFFFFF">images/White.png</texturenofocus>
+    <texturefocus border="8">images/White.png</texturefocus>
+    <texturenofocus border="8" colordiffuse="77FFFFFF">images/White.png</texturenofocus>
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="edit">
@@ -103,8 +103,8 @@
     <selectedcolor>orange</selectedcolor>
     <altselectedcolor>orange</altselectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <texturefocus>images/White.png</texturefocus>
-    <texturenofocus colordiffuse="77FFFFFF">images/White.png</texturenofocus>
+    <texturefocus border="8">images/White.png</texturefocus>
+    <texturenofocus border="8" colordiffuse="77FFFFFF">images/White.png</texturenofocus>
     <align>center</align>
     <aligny>center</aligny>
     <pulseonselect>false</pulseonselect>
@@ -125,8 +125,8 @@
     <disabledcolor>Disabled</disabledcolor>
     <radiowidth>50</radiowidth>
     <radioheight>50</radioheight>
-    <texturefocus>images/White.png</texturefocus>
-    <texturenofocus colordiffuse="77FFFFFF">images/White.png</texturenofocus>
+    <texturefocus border="8">images/White.png</texturefocus>
+    <texturenofocus border="8" colordiffuse="77FFFFFF">images/White.png</texturenofocus>
     <textureradiofocus>images/RadioON.png</textureradiofocus>
     <textureradionofocus>images/RadioOFF.png</textureradionofocus>
     <textoffsetx>20</textoffsetx>
@@ -166,7 +166,7 @@
     <textureupfocus>images/ArrowUpFO.png</textureupfocus>
     <texturedown>images/ArrowDownNF.png</texturedown>
     <texturedownfocus>images/ArrowDownFO.png</texturedownfocus>
-    <texturefocus>images/White.png</texturefocus>
+    <texturefocus border="8">images/White.png</texturefocus>
     <texturenofocus colordiffuse="77FFFFFF">images/White.png</texturenofocus>
     <spinwidth>18</spinwidth>
     <spinheight>18</spinheight>
@@ -193,8 +193,8 @@
   <default type="sliderex" description="Default Slider">
     <animation effect="zoom" start="100" end="105" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
     <animation effect="zoom" start="105" end="100" time="120" center="auto">unFocus</animation>
-    <texturefocus>images/White.png</texturefocus>
-    <texturenofocus colordiffuse="77FFFFFF">images/White.png</texturenofocus>
+    <texturefocus border="8">images/White.png</texturefocus>
+    <texturenofocus border="8" colordiffuse="77FFFFFF">images/White.png</texturenofocus>
     <left>795</left>
     <top>225</top>
     <height>70</height>

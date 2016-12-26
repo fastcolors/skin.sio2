@@ -48,7 +48,7 @@
             <control type="image">
               <height>60</height>
               <width>840</width>
-              <texture colordiffuse="77FFFFFF">images/White.png</texture>
+              <texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>
             </control>
             <control type="label">
               <right>200</right>
@@ -153,7 +153,7 @@
             <control type="image">
               <height>60</height>
               <width>840</width>
-              <texture colordiffuse="77FFFFFF">images/White.png</texture>
+              <texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>
             </control>
             <control type="label">
               <left>170</left>

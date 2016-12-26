@@ -128,13 +128,13 @@
                             <control type="image">
                                 <height>100</height>
                                 <width>805</width>
-                                <texture colordiffuse="77FFFFFF">images/White.png</texture>
+                                <texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>
                             </control>
                             <control type="label">
                                 <animation condition="String.IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
                                 <left>40</left>
                                 <width>700</width>
-                                <include>50Title</include>
+                                <include>BigListTitle</include>
                                 <label>$INFO[ListItem.ChannelNumber] • $INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
@@ -193,7 +193,7 @@
                                     <animation condition="String.IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
                                     <left>40</left>
                                     <width>700</width>
-                                    <include>50Title</include>
+                                    <include>BigListTitle</include>
                                     <label>$INFO[ListItem.ChannelNumber] • $INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">

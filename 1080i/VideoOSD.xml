@@ -399,7 +399,7 @@
                     <font>Size33</font>
                     <label>Force 2D</label>
                     <onclick>StereoModeToMono</onclick>
-                    <selected>StringCompare(System.StereoscopicMode,7)</selected>
+                    <selected>String.IsEqual(System.StereoscopicMode,7)</selected>
                     <pulseonselect>false</pulseonselect>
                 </control>
             </control>
