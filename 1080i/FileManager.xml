@@ -88,7 +88,7 @@
               <visible>Control.HasFocus(20)</visible>
               <height>60</height>
               <width>830</width>
-              <texture>images/White.png</texture>
+              <texture border="8">images/White.png</texture>
             </control>
             <control type="label">
               <right>200</right>
@@ -192,7 +192,7 @@
               <visible>Control.HasFocus(21)</visible>
               <height>60</height>
               <width>830</width>
-              <texture>images/White.png</texture>
+              <texture border="8">images/White.png</texture>
             </control>
             <control type="label">
               <left>170</left>

@@ -16,16 +16,22 @@
                 <ondown>666</ondown>
                 <control type="button" id="1">
                     <width>auto</width>
+                    <animation>Focus</animation>
+                    <animation>unFocus</animation>
                     <label>Party Mode</label>
                     <onclick>PlayerControl(Partymode(music))</onclick>
                 </control>
                 <control type="button" id="2">
                     <width>auto</width>
+                    <animation>Focus</animation>
+                    <animation>unFocus</animation>
                     <label>Other function</label>
                     <onclick>noop</onclick>
                 </control>
                 <control type="button" id="3">
                     <width>auto</width>
+                    <animation>Focus</animation>
+                    <animation>unFocus</animation>
                     <label>Update Library</label>
                     <onclick>UpdateLibrary(music,,true)</onclick>
                 </control>
@@ -33,14 +39,26 @@
             <control type="grouplist" id="666" description="list of available stuff">
                 <onup>555</onup>
                 <control type="label" id="62">
+                    <visible>Control.IsVisible(50)</visible>
                     <height>64</height>
                     <aligny>top</aligny>
                     <textoffsetx>160</textoffsetx>
                     <label>[B]Recently Played Albums[/B]</label>
                 </control>
                 <control type="list" id="50" description="list">
+                    <visible>!String.IsEqual(Container.NumItems,0)</visible>
                     <include>iconmusiclist</include>
                     <content target="music">musicdb://recentlyplayedalbums/</content>
+                </control>
+                <control type="label" id="63">
+                    <height>64</height>
+                    <aligny>top</aligny>
+                    <textoffsetx>160</textoffsetx>
+                    <label>[B]Recently Added Albums[/B]</label>
+                </control>
+                <control type="list" id="53" description="list">
+                    <include>iconmusiclist</include>
+                    <content target="music">musicdb://recentlyaddedalbums/</content>
                 </control>
                 <control type="label" id="61">
                     <height>64</height>

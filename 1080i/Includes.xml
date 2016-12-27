@@ -486,10 +486,10 @@
             <control type="image">
                 <visible>!String.IsEmpty(ListItem.Thumb)</visible>
                 <centerleft>300</centerleft>
-                <centertop>170</centertop>
+                <centertop>190</centertop>
                 <width>380</width>
                 <height>300</height>
-                <texture>shadow.png</texture>
+                <texture colordiffuse="bbffffff">shadow.png</texture>
             </control>
             <control type="image">
                 <centerleft>300</centerleft>
@@ -512,9 +512,12 @@
             </control>
         </itemlayout>
         <focusedlayout height="300" width="320">
-            <control type="image">
-                <animation effect="fade" start="0" end="100" time="150">Focus</animation>
-                <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
+            <control type="group">
+                <animation effect="zoom" time="120" start="100" end="110" center="300,300" tween="Back" easing="Out">Focus</animation>
+                <animation effect="zoom" start="110" end="100" time="120" center="300,300">unFocus</animation>
+                <control type="image">
+                <animation effect="slide" start="0,0" end="0,10" time="120">Focus</animation>-->
+                <animation effect="slide" start="0,10" end="0,0" time="120">unFocus</animation>-->
                 <visible>!String.IsEmpty(ListItem.Thumb)</visible>
                 <centerleft>300</centerleft>
                 <centertop>200</centertop>
@@ -522,9 +525,6 @@
                 <height>300</height>
                 <texture>shadow.png</texture>
             </control>
-            <control type="group">
-                <animation effect="zoom" time="120" start="100" end="110" center="300,300" tween="Back" easing="Out">Focus</animation>
-                <animation effect="zoom" start="110" end="100" time="120" center="300,300">unFocus</animation>
                 <control type="image">
                     <centerleft>300</centerleft>
                     <centertop>150</centertop>

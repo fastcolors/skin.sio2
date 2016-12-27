@@ -13,27 +13,6 @@
       <control type="group">
         <left>1020</left>
         <top>150</top>
-        <control type="group" description="Slider">
-          <include>Scrollanim</include>
-          <control type="group">
-            <visible>Container(3).HasFocus() + !Control.HasFocus(5)</visible>
-            <include>slider</include>
-          </control>
-          <animation type="Conditional" condition="Control.HasFocus(9001) | ControlGroup(9000).HasFocus()">
-            <effect type="fade" start="100" end="40" time="0" reversible="true" />
-          </animation>
-          <animation condition="Container(3).Position(0)" effect="slide" start="0,0" end="0,-405" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(1)" effect="slide" start="0,0" end="0,-324" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(2)" effect="slide" start="0,0" end="0,-243" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(3)" effect="slide" start="0,0" end="0,-162" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(4)" effect="slide" start="0,0" end="0,-81" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(5)" effect="slide" start="0,0" end="0,0" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(6)" effect="slide" start="0,0" end="0,81" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(7)" effect="slide" start="0,0" end="0,162" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(8)" effect="slide" start="0,0" end="0,243" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(9)" effect="slide" start="0,0" end="0,324" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(10)" effect="slide" start="0,0" end="0,405" time="140" reversible="true">Conditional</animation>
-        </control>
         <control type="list" id="3">
           <width>802</width>
           <height>888</height>

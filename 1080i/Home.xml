@@ -175,7 +175,7 @@
                     <visible>!Skin.HasSetting(hidemusic)</visible>
                     <label>2</label>
                     <thumb>icons/music.png</thumb>
-                    <onclick>ActivateWindow(1177)</onclick>
+                    <onclick>ActivateWindow(1177,return)</onclick>
                     <onclick condition="!Library.HasContent(Music)">ActivateWindow(501,root)</onclick>
                 </item>
                 <item id="343">
@@ -194,7 +194,7 @@
                     <visible>!Skin.HasSetting(hidewtr)</visible>
                     <property name="weatherthumb">$INFO[Weather.Conditions]</property>
                     <label>$INFO[Weather.Temperature]</label>
-                    <property name="color">images/White.png</property>
+                    <property name="color">icons/white.png</property>
                     <onclick>ActivateWindow(MyWeather)</onclick>
                 </item>
                 <item id="352">

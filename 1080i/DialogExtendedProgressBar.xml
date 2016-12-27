@@ -24,13 +24,12 @@
             </control>
             <control type="textbox" id="31" description="line 1 Label">
                 <left>22</left>
-                <top>30</top>
+                <top>40</top>
                 <width>655</width>
                 <height>60</height>
                 <font>size21</font>
                 <align>left</align>
                 <textcolor>black</textcolor>
-                <aligny>center</aligny>
             </control>
             <control type="progress" id="32" description="Progress bar">
                 <left>22</left>
