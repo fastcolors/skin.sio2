@@ -87,7 +87,7 @@
               <align>center</align>
               <aligny>center</aligny>
               <textcolor>Grey</textcolor>
-              <selectedcolor>Yellow</selectedcolor>
+              <selectedcolor>orange</selectedcolor>
               <info>ListItem.Date</info>
             </control>
             <control type="label">
@@ -99,7 +99,7 @@
               <align>left</align>
               <aligny>center</aligny>
               <textcolor>Grey</textcolor>
-              <selectedcolor>Yellow</selectedcolor>
+              <selectedcolor>orange</selectedcolor>
               <info>ListItem.Label</info>
             </control>
             <control type="image">
@@ -119,7 +119,7 @@
               <align>left</align>
               <aligny>center</aligny>
               <textcolor>Grey</textcolor>
-              <selectedcolor>Yellow</selectedcolor>
+              <selectedcolor>orange</selectedcolor>
               <label>19043</label>
               <visible>ListItem.IsRecording</visible>
             </control>
@@ -139,7 +139,7 @@
               <align>left</align>
               <aligny>center</aligny>
               <textcolor>White</textcolor>
-              <selectedcolor>Yellow</selectedcolor>
+              <selectedcolor>orange</selectedcolor>
               <label>31510</label>
               <visible>ListItem.HasTimer</visible>
             </control>
@@ -160,7 +160,7 @@
               <align>center</align>
               <aligny>center</aligny>
               <textcolor>White</textcolor>
-              <selectedcolor>Yellow</selectedcolor>
+              <selectedcolor>orange</selectedcolor>
               <info>ListItem.Date</info>
             </control>
             <control type="label">
@@ -172,7 +172,7 @@
               <align>left</align>
               <aligny>center</aligny>
               <textcolor>White</textcolor>
-              <selectedcolor>Yellow</selectedcolor>
+              <selectedcolor>orange</selectedcolor>
               <info>ListItem.Label</info>
             </control>
             <control type="textbox">
@@ -203,7 +203,7 @@
               <align>left</align>
               <aligny>center</aligny>
               <textcolor>White</textcolor>
-              <selectedcolor>Yellow</selectedcolor>
+              <selectedcolor>orange</selectedcolor>
               <label>19043</label>
               <visible>ListItem.IsRecording</visible>
             </control>
@@ -223,7 +223,7 @@
               <align>left</align>
               <aligny>center</aligny>
               <textcolor>White</textcolor>
-              <selectedcolor>Yellow</selectedcolor>
+              <selectedcolor>orange</selectedcolor>
               <label>31510</label>
               <visible>ListItem.HasTimer</visible>
             </control>

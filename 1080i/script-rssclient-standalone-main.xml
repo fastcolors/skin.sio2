@@ -220,7 +220,7 @@
           <top>0</top>
           <width>400</width>
           <height>60</height>
-          <textcolor>Yellow</textcolor>
+          <textcolor>orange</textcolor>
           <align>center</align>
           <aligny>center</aligny>
           <label>$INFO[ListItem.Label]</label>

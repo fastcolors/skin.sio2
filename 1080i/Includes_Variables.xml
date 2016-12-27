@@ -22,16 +22,11 @@
         <value condition="System.Date(12-25,12-26)">holidays/xmas.png</value>
         <!--<value condition="System.Date(01-14,01-15)">images/davegrohl.png</value>-->
         <value condition="Skin.HasSetting(CustomImage)">$INFO[Skin.String(ShelfCustomImage)]</value>
-        <!--<value>images/XBMCHomeLogo.png</value>-->
         <value>$INFO[Window(Weather).Property(Current.ConditionIcon)]</value>
     </variable>
     <variable name="colormenu" description="Colormenu">
         <value condition="!Skin.HasSetting(colormenu)">$LOCALIZE[16041]</value>
         <value>$LOCALIZE[16039]</value>
-    </variable>
-    <variable name="Fanartdisplaystatus" description="Label2 for music playing FA">
-        <value condition="Skin.HasSetting(MusicPlayingFanart)">$LOCALIZE[449]</value>
-        <value>$LOCALIZE[13113]</value>
     </variable>
     <variable name="WatchStatus">
         <value condition="ListItem.IsResumable + !Control.IsVisible(53)">inprogress.png</value>

@@ -266,7 +266,7 @@
         <scroll>false</scroll>
         <align>center</align>
         <font>size42B</font>
-        <textcolor>Yellow</textcolor>
+        <textcolor>orange</textcolor>
     </include>
     <include name="MusicInfo">
         <control type="group" description="Songs and Music Videos">
@@ -779,7 +779,7 @@
         <width>758</width>
         <height>168</height>
         <font>size30</font>
-        <textcolor>Silver</textcolor>
+        <textcolor>whitesmoke</textcolor>
         <align>justify</align>
         <aligny>bottom</aligny>
         <autoscroll delay="8000" time="4300" repeat="10000"></autoscroll>
@@ -796,7 +796,7 @@
     <include name="TitleCommons">
         <font>size39B</font>
         <textcolor>White</textcolor>
-        <shadowcolor>Black</shadowcolor>
+        <shadowcolor>black</shadowcolor>
     </include>
     <include name="Keyboard">
         <texturefocus border="8">images/Buttonselect.png</texturefocus>
@@ -818,7 +818,7 @@
     <include name="Genre52Commons">
         <top>-24</top>
         <font>size27</font>
-        <textcolor>Silver</textcolor>
+        <textcolor>whitesmoke</textcolor>
         <width>762</width>
         <height>36</height>
         <align>left</align>
@@ -842,7 +842,7 @@
                     <width>90</width>
                     <bordersize>3</bordersize>
                     <aspectratio>keep</aspectratio>
-                    <colordiffuse>Silver</colordiffuse>
+                    <colordiffuse>whitesmoke</colordiffuse>
                     <texture>$INFO[ListItem.FileExtension,badges/audio/,.png]</texture>
                 </control>
             </control>

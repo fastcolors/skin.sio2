@@ -110,7 +110,7 @@
 					<label>$LOCALIZE[33063]</label>
 					<align>center</align>
 					<aligny>center</aligny>
-					<textcolor>Yellow</textcolor>
+					<textcolor>orange</textcolor>
 				</control>
 				<control type="radiobutton" id ="7">
 					<description>Channel activated</description>

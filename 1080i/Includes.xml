@@ -61,7 +61,7 @@
         <aligny>center</aligny>
         <width>1260</width>
         <height>70</height>
-        <font>size42</font>
+        <font>size42B</font>
     </include>
     <include name="Dimensions_Fullscreen">
         <left>0</left>
@@ -261,7 +261,7 @@
             <label>$INFO[ListItem.Title]</label>
             <align>center</align>
             <aligny>center</aligny>
-            <textcolor>Yellow</textcolor>
+            <textcolor>orange</textcolor>
             <shadowcolor>-</shadowcolor>
         </control>
         <control type="label">

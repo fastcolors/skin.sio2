@@ -24,7 +24,7 @@
                     <top>110</top>
                     <width>1920</width>
                     <height>1</height>
-                    <texture>images/Line1.png</texture>
+                    <texture>images/Line.png</texture>
                     <colordiffuse>dimgray</colordiffuse>
                 </control>
                 <control type="grouplist" id="101" description="OSD Options">
@@ -251,8 +251,8 @@
                         <width>840</width>
                         <scroll>true</scroll>
                         <font>size33B</font>
-                        <textcolor>Yellow</textcolor>
-                        <shadowcolor>Black</shadowcolor>
+                        <textcolor>orange</textcolor>
+                        <shadowcolor>black</shadowcolor>
                         <label>[B]$INFO[VideoPlayer.Title][/B]</label>
                     </control>
                     <control type="group" description="Cover">
@@ -281,8 +281,8 @@
                             <scroll>false</scroll>
                             <font>size24</font>
                             <align>right</align>
-                            <textcolor>Yellow</textcolor>
-                            <shadowcolor>Black</shadowcolor>
+                            <textcolor>orange</textcolor>
+                            <shadowcolor>black</shadowcolor>
                             <label>[B]S $INFO[VideoPlayer.Season] E $INFO[VideoPlayer.Episode][/B]</label>
                         </control>
                         <control type="label" description="Channel">
@@ -294,8 +294,8 @@
                             <scroll>false</scroll>
                             <font>size24</font>
                             <align>right</align>
-                            <textcolor>Yellow</textcolor>
-                            <shadowcolor>Black</shadowcolor>
+                            <textcolor>orange</textcolor>
+                            <shadowcolor>black</shadowcolor>
                             <label>[B]$INFO[VideoPlayer.ChannelNumber] - $INFO[VideoPlayer.ChannelName][/B]</label>
                         </control>
                     </control>
@@ -315,104 +315,89 @@
                         <control type="image">
                             <width>90</width>
                             <height>98</height>
-                            <texture>$INFO[ListItem.Art(thumb)]</texture>
+                            <texture colordiffuse="dimgray">$INFO[ListItem.Art(thumb)]</texture>
                         </control>
                     </itemlayout>
                     <focusedlayout width="90">
                         <control type="image">
                             <width>90</width>
                             <height>98</height>
-                            <texture>$INFO[ListItem.label]</texture>
+                            <texture>$INFO[ListItem.Art(thumb)]</texture>
                         </control>
                     </focusedlayout>
                     <content>
                         <item id="7">
                             <visible>!Pvr.IsPlayingTV</visible>
-                            <thumb>Seekbar/OSDPreviousNF.png</thumb>
-                            <label>Seekbar/OSDPreviousFO.png</label>
+                            <thumb>Seekbar/OSDPrevious.png</thumb>
                             <onclick>PlayerControl(Previous)</onclick>
                         </item>
                         <item id="10">
                             <visible>Pvr.IsPlayingTV</visible>
-                            <thumb>Seekbar/OSDupNF.png</thumb>
-                            <label>Seekbar/OSDupFO.png</label>
+                            <thumb>Seekbar/OSDup.png</thumb>
                             <onclick>PlayerControl(Previous)</onclick>
                         </item>
                         <item id="11">
                             <visible>Pvr.IsPlayingTV</visible>
-                            <thumb>Seekbar/OSDdownNF.png</thumb>
-                            <label>Seekbar/OSDdownFO.png</label>
+                            <thumb>Seekbar/OSDdown.png</thumb>
                             <onclick>PlayerControl(Next)</onclick>
                         </item>
                         <item id="1">
                             <visible>!Pvr.IsPlayingTV</visible>
-                            <thumb>Seekbar/OSDRWNF.png</thumb>
-                            <label>Seekbar/OSDRWFO.png</label>
+                            <thumb>Seekbar/OSDRW.png</thumb>
                             <onclick>PlayerControl(Rewind)</onclick>
                         </item>
                         <item id="0">
                             <visible>!Player.Paused + !Player.Forwarding + !Player.Rewinding + !Pvr.IsPlayingTV</visible>
-                            <thumb>Seekbar/OSDPauseNF.png</thumb>
-                            <label>Seekbar/OSDPauseFO.png</label>
+                            <thumb>Seekbar/OSDPause.png</thumb>
                             <onclick>PlayerControl(Play)</onclick>
                         </item>
                         <item id="0">
                             <visible>Player.Paused | Player.Forwarding | Player.Rewinding + !Pvr.IsPlayingTV</visible>
-                            <thumb>Seekbar/OSDPlayNF.png</thumb>
-                            <label>Seekbar/OSDPlayFO.png</label>
+                            <thumb>Seekbar/OSDPlay.png</thumb>
                             <onclick>PlayerControl(Play)</onclick>
                         </item>
                         <item id="4">
-                            <thumb>Seekbar/OSDStopNF.png</thumb>
-                            <label>Seekbar/OSDStopFO.png</label>
+                            <thumb>Seekbar/OSDStop.png</thumb>
                             <onclick>PlayerControl(Stop)</onclick>
                         </item>
                         <item id="0">
                             <visible>Pvr.IsPlayingTv</visible>
-                            <thumb>Seekbar/OSDchnNF.png</thumb>
-                            <label>Seekbar/OSDchnFO.png</label>
+                            <thumb>Seekbar/OSDchn.png</thumb>
                             <onclick>XBMC.ActivateWindow(PVROSDChannels)</onclick>
                         </item>
                         <item id="16">
                             <visible>Pvr.IsPlayingTv</visible>
-                            <thumb>Seekbar/OSDpvrNF.png</thumb>
-                            <label>Seekbar/OSDpvrFO.png</label>
+                            <thumb>Seekbar/OSDpvr.png</thumb>
                             <onclick>XBMC.ActivateWindow(PVROSDGuide)</onclick>
                         </item>
                         <item id="15">
                             <visible>Pvr.IsPlayingTv</visible>
-                            <thumb>Seekbar/OSDtxtNF.png</thumb>
-                            <label>Seekbar/OSDtxtFO.png</label>
+                            <thumb>Seekbar/OSDtxt.png</thumb>
                             <onclick>XBMC.ActivateWindow(Teletext)</onclick>
                         </item>
                         <item id="5">
                             <visible>!Pvr.IsPlayingTV</visible>
-                            <thumb>Seekbar/OSDFWNF.png</thumb>
-                            <label>Seekbar/OSDFWFO.png</label>
+                            <thumb>Seekbar/OSDFW.png</thumb>
                             <onclick>PlayerControl(Forward)</onclick>
                         </item>
                         <item id="6">
                             <visible>!Pvr.IsPlayingTV</visible>
-                            <thumb>Seekbar/OSDNextNF.png</thumb>
-                            <label>Seekbar/OSDNextFO.png</label>
+                            <thumb>Seekbar/OSDNext.png</thumb>
                             <onclick>PlayerControl(Next)</onclick>
                         </item>
                         <item id="8">
                             <visible>Player.CanRecord + !Pvr.IsRecording</visible>
-                            <thumb>Seekbar/OSDrecNF.png</thumb>
-                            <label>Seekbar/OSDrecFO.png</label>
+                            <thumb>Seekbar/OSDrec.png</thumb>
                             <onclick>PlayerControl(Record)</onclick>
                         </item>
                         <item id="8">
                             <visible>Player.CanRecord + Pvr.IsRecording</visible>
-                            <thumb>Seekbar/OSDreconNF.png</thumb>
-                            <label>Seekbar/OSDreconFO.png</label>
+                            <thumb>Seekbar/OSDrecon.png</thumb>
                             <onclick>PlayerControl(Record)</onclick>
                         </item>
                         <item id="255">
                             <visible>VideoPlayer.IsStereoscopic</visible>
-                            <thumb>Seekbar/OSD3DNF.png</thumb>
-                            <label>Seekbar/OSD3DFO.png</label>
+                            <thumb>Seekbar/OSD3D.png</thumb>
                             <onclick>SetFocus(500)</onclick>
                         </item>
                     </content>

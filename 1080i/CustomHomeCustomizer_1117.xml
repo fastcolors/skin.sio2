@@ -19,7 +19,7 @@
                 <top>490</top>
                 <width>1920</width>
                 <height>1</height>
-                <texture>images/Line1.png</texture>
+                <texture>images/Line.png</texture>
             </control>
             <control type="group">
                 <control type="panel" id="50">
@@ -189,18 +189,30 @@
                             <label>$LOCALIZE[1036]</label>
                             <onclick>Skin.ToggleSetting(hidefav)</onclick>
                         </item>
-                        <!--item id="356">
-                          <visible>!Skin.HasSetting(3dmovs)</visible>
+                        <item id="356">
+                          <visible>!Skin.HasSetting(hidetheater)</visible>
                           <thumb>help/off.png</thumb>
-                          <label>3D $LOCALIZE[342]</label>
-                          <onclick>Skin.ToggleSetting(3dmovs)</onclick>
+                          <label>31422</label>
+                          <onclick>Skin.ToggleSetting(hidetheater)</onclick>
                         </item>
                         <item id="356">
-                          <visible>Skin.HasSetting(3dmovs)</visible>
-                          <thumb>icons/3d.png</thumb>
-                          <label>3D $LOCALIZE[342]</label>
-                          <onclick>Skin.ToggleSetting(3dmovs)</onclick>
-                        </item-->
+                          <visible>Skin.HasSetting(hidetheater)</visible>
+                          <thumb>icons/extendedinfotheater.png</thumb>
+                          <label>31422</label>
+                          <onclick>Skin.ToggleSetting(hidetheater)</onclick>
+                        </item>
+                        <item id="357">
+                          <visible>!Skin.HasSetting(hidedvdrel)</visible>
+                          <thumb>help/off.png</thumb>
+                          <label>31423</label>
+                          <onclick>Skin.ToggleSetting(hidedvdrel)</onclick>
+                        </item>
+                        <item id="357">
+                          <visible>Skin.HasSetting(hidedvdrel)</visible>
+                          <thumb>icons/extendedinfodvd.png</thumb>
+                          <label>31423</label>
+                          <onclick>Skin.ToggleSetting(hidedvdrel)</onclick>
+                        </item>
                         <item id="1014">
                             <visible>System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
                             <thumb>icons/LiveTV.png</thumb>

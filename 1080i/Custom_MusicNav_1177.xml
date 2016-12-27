@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1177">
     <backgroundcolor>aliceblue</backgroundcolor>
-    <defaultcontrol always="true">555</defaultcontrol>
+    <defaultcontrol always="false">555</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <controls>
         <include>BlackBackground</include>
@@ -49,6 +49,17 @@
                     <visible>!String.IsEqual(Container.NumItems,0)</visible>
                     <include>iconmusiclist</include>
                     <content target="music">musicdb://recentlyplayedalbums/</content>
+                </control>
+                <control type="label" id="64">
+                    <height>64</height>
+                    <aligny>top</aligny>
+                    <textoffsetx>160</textoffsetx>
+                    <label>[B]Top Played Songs[/B]</label>
+                </control>
+                <control type="list" id="54" description="list">
+                    <visible>!String.IsEqual(Container.NumItems,0)</visible>
+                    <include>iconmusiclist</include>
+                    <content target="music">musicdb://top100/songs/</content>
                 </control>
                 <control type="label" id="63">
                     <height>64</height>

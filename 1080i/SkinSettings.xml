@@ -90,61 +90,20 @@
                 </control>
             </control>
         </control>
-        <control type="group" description="Left panel">
-            <left>270</left>
-            <top>160</top>
-            <control type="image" description=" customize + lyrics">
-                <visible>ControlGroup(50).HasFocus(1) | ControlGroup(50).HasFocus(2)</visible>
-                <include>Help_Panel</include>
-                <texture>DefaultAddon.png</texture>
-            </control>
-            <control type="image" description="ScrollBars">
-                <visible>ControlGroup(50).HasFocus(3)</visible>
-                <include>Help_Panel</include>
-                <texture>help/scrollbars.jpg</texture>
-            </control>
-            <control type="image" description="menuviews">
-                <visible>ControlGroup(50).HasFocus(4)</visible>
-                <include>Help_Panel</include>
-                <texture>help/OptionsMenu.jpg</texture>
-            </control>
-            <control type="image" description="quit">
-                <visible>ControlGroup(50).HasFocus(5)</visible>
-                <include>Help_Panel</include>
-                <texture>icons/Quits.png</texture>
-            </control>
-            <control type="image" description="musiclink">
-                <visible>ControlGroup(50).HasFocus(6)</visible>
-                <include>Help_Panel</include>
-                <texture>icons/music.png</texture>
-            </control>
-            <control type="image" description="shelf">
-                <visible>ControlGroup(50).HasFocus(7)</visible>
-                <include>Help_Panel</include>
-                <texture>$VAR[ShelfLogo]</texture>
-            </control>
-            <control type="image" description="reset">
-                <visible>ControlGroup(50).HasFocus(8) | ControlGroup(50).HasFocus(9)</visible>
-                <include>Help_Panel</include>
-                <texture>help/Warning.png</texture>
-            </control>
-        </control>
-        <control type="textbox" description="HelpDetails">
-            <left>170</left>
-            <top>560</top>
-            <width>660</width>
-            <height>380</height>
-            <font>size33</font>
-            <align>justify</align>
-            <label>$VAR[helptext]</label>
+        <control type="image">
+            <centerleft>500</centerleft>
+            <centertop>530</centertop>
+            <height>520</height>
+            <width>520</width>
+            <texture>images/sio2logo.png</texture>
         </control>
         <control type="label">
-      <centerleft>960</centerleft>
-      <height>81</height>
-      <width>800</width>
-      <align>center</align>
-      <font>size42</font>
-      <label>$LOCALIZE[20077]</label>
-    </control>
+            <centerleft>960</centerleft>
+            <height>81</height>
+            <width>800</width>
+            <align>center</align>
+            <font>size42</font>
+            <label>$LOCALIZE[20077]</label>
+        </control>
     </controls>
 </window>

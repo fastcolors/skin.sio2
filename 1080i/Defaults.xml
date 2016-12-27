@@ -26,7 +26,7 @@
     <shadowcolor>-</shadowcolor>
     <focusedcolor>White2</focusedcolor>
     <selectedcolor>White2</selectedcolor>
-    <disabledcolor>Disabled</disabledcolor>
+    <disabledcolor>dimgray</disabledcolor>
     <scrollout>false</scrollout>
     <pauseatend>3000</pauseatend>
     <scrollsuffix> •  • </scrollsuffix>
@@ -38,7 +38,7 @@
     <shadowcolor>-</shadowcolor>
     <focusedcolor>white</focusedcolor>
     <selectedcolor>white</selectedcolor>
-    <disabledcolor>Disabled</disabledcolor>
+    <disabledcolor>dimgray</disabledcolor>
     <pagecontrol>61</pagecontrol>
     <pulseonselect></pulseonselect>
     <autoscroll delay="6000" time="3000" repeat="10000"></autoscroll>
@@ -64,8 +64,8 @@
     <textcolor>black</textcolor>
     <shadowcolor>-</shadowcolor>
     <focusedcolor>black</focusedcolor>
-    <selectedcolor>yellow</selectedcolor>
-    <disabledcolor>Disabled</disabledcolor>
+    <selectedcolor>orange</selectedcolor>
+    <disabledcolor>dimgray</disabledcolor>
     <texturefocus border="8">images/White.png</texturefocus>
     <!--<texturenofocus border="8" colordiffuse="77FFFFFF">images/White.png</texturenofocus>-->
     <pulseonselect>false</pulseonselect>
@@ -82,7 +82,7 @@
     <shadowcolor>-</shadowcolor>
     <focusedcolor>black</focusedcolor>
     <selectedcolor>orange</selectedcolor>
-    <disabledcolor>Disabled</disabledcolor>
+    <disabledcolor>dimgray</disabledcolor>
     <texturenofocus border="8">images/Black.png</texturenofocus>
     <texturefocus flipy="true" border="8">images/Buttonselect.png</texturefocus>
     <pulseonselect>false</pulseonselect>
@@ -102,7 +102,7 @@
     <focusedcolor>black</focusedcolor>
     <selectedcolor>orange</selectedcolor>
     <altselectedcolor>orange</altselectedcolor>
-    <disabledcolor>Disabled</disabledcolor>
+    <disabledcolor>dimgray</disabledcolor>
     <texturefocus border="8">images/White.png</texturefocus>
     <!--<texturenofocus border="8" colordiffuse="77FFFFFF">images/White.png</texturenofocus>-->
     <align>center</align>
@@ -122,7 +122,7 @@
     <shadowcolor>-</shadowcolor>
     <focusedcolor>black</focusedcolor>
     <selectedcolor>orange</selectedcolor>
-    <disabledcolor>Disabled</disabledcolor>
+    <disabledcolor>dimgray</disabledcolor>
     <radiowidth>50</radiowidth>
     <radioheight>50</radioheight>
     <texturefocus border="8">images/White.png</texturefocus>
@@ -148,7 +148,7 @@
     <shadowcolor>-</shadowcolor>
     <focusedcolor>black</focusedcolor>
     <selectedcolor>orange</selectedcolor>
-    <disabledcolor>Disabled</disabledcolor>
+    <disabledcolor>dimgray</disabledcolor>
     <textoffsetx>20</textoffsetx>
     <align>left</align>
     <aligny>center</aligny>
@@ -174,7 +174,7 @@
     <shadowcolor>-</shadowcolor>
     <focusedcolor>black</focusedcolor>
     <selectedcolor>orange</selectedcolor>
-    <disabledcolor>Disabled</disabledcolor>
+    <disabledcolor>dimgray</disabledcolor>
     <textoffsetx>20</textoffsetx>
     <align>left</align>
     <aligny>center</aligny>
@@ -207,8 +207,8 @@
     <font>size33</font>
     <textcolor>black</textcolor>
     <focusedcolor>black</focusedcolor>
-    <selectedcolor>yellow</selectedcolor>
-    <disabledcolor>Disabled</disabledcolor>
+    <selectedcolor>orange</selectedcolor>
+    <disabledcolor>dimgray</disabledcolor>
     <aligny>center</aligny>
     <textoffsetx>20</textoffsetx>
   </default>

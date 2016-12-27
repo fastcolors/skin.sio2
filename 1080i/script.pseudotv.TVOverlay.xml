@@ -38,7 +38,7 @@
           <scroll>true</scroll>
           <font>size24</font>
           <textcolor>White</textcolor>
-          <shadowcolor>Black</shadowcolor>
+          <shadowcolor>black</shadowcolor>
           <label>Now watching</label>
         </control>
         <control type="label" id="503">
@@ -48,7 +48,7 @@
           <label>Show Name</label>
           <font>Size33B</font>
           <align>left</align>
-          <textcolor>Yellow</textcolor>
+          <textcolor>orange</textcolor>
         </control>
         <control type="label">
           <description>Show Name Label</description>

@@ -17,7 +17,7 @@
         <top>310</top>
         <height>40</height>
         <width>500</width>
-        <textcolor>Yellow</textcolor>
+        <textcolor>orange</textcolor>
         <label>$INFO[VideoPlayer.ChannelGroup]</label>
       </control>
       <control type="group">
@@ -103,7 +103,7 @@
               <font>Size26</font>
               <aligny>center</aligny>
               <textcolor>Grey</textcolor>
-              <selectedcolor>Yellow</selectedcolor>
+              <selectedcolor>orange</selectedcolor>
               <info>ListItem.StartTime</info>
             </control>
             <control type="label">
@@ -115,7 +115,7 @@
               <align>left</align>
               <aligny>center</aligny>
               <textcolor>Grey</textcolor>
-              <selectedcolor>Yellow</selectedcolor>
+              <selectedcolor>orange</selectedcolor>
               <info>ListItem.Label</info>
             </control>
             <control type="label">
@@ -127,7 +127,7 @@
               <align>left</align>
               <aligny>center</aligny>
               <textcolor>Grey</textcolor>
-              <selectedcolor>Yellow</selectedcolor>
+              <selectedcolor>orange</selectedcolor>
               <info>ListItem.Title</info>
             </control>
             <control type="image">
@@ -146,7 +146,7 @@
               <font>Size26</font>
               <aligny>center</aligny>
               <textcolor>Grey</textcolor>
-              <selectedcolor>Yellow</selectedcolor>
+              <selectedcolor>orange</selectedcolor>
               <label>19043</label>
               <visible>ListItem.IsRecording</visible>
             </control>
@@ -166,7 +166,7 @@
               <font>Size26</font>
               <aligny>center</aligny>
               <textcolor>White</textcolor>
-              <selectedcolor>Yellow</selectedcolor>
+              <selectedcolor>orange</selectedcolor>
               <label>19040</label>
               <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
             </control>
@@ -185,7 +185,7 @@
               <font>Size26</font>
               <aligny>center</aligny>
               <textcolor>Grey</textcolor>
-              <selectedcolor>Yellow</selectedcolor>
+              <selectedcolor>orange</selectedcolor>
               <info>ListItem.StartTime</info>
             </control>
             <control type="label">
@@ -197,7 +197,7 @@
               <align>left</align>
               <aligny>center</aligny>
               <textcolor>Grey</textcolor>
-              <selectedcolor>Yellow</selectedcolor>
+              <selectedcolor>orange</selectedcolor>
               <info>ListItem.Label</info>
             </control>
             <control type="label">
@@ -209,7 +209,7 @@
               <align>left</align>
               <aligny>center</aligny>
               <textcolor>Grey</textcolor>
-              <selectedcolor>Yellow</selectedcolor>
+              <selectedcolor>orange</selectedcolor>
               <info>ListItem.Title</info>
             </control>
             <control type="textbox">
@@ -239,7 +239,7 @@
               <font>Size26</font>
               <aligny>center</aligny>
               <textcolor>Grey</textcolor>
-              <selectedcolor>Yellow</selectedcolor>
+              <selectedcolor>orange</selectedcolor>
               <label>19043</label>
               <visible>ListItem.IsRecording</visible>
             </control>
@@ -259,7 +259,7 @@
               <font>Size26</font>
               <aligny>center</aligny>
               <textcolor>White</textcolor>
-              <selectedcolor>Yellow</selectedcolor>
+              <selectedcolor>orange</selectedcolor>
               <label>19040</label>
               <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
             </control>

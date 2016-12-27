@@ -207,7 +207,7 @@
         <left>82</left>
         <top>87</top>
         <width>1200</width>
-        <textcolor>Silver</textcolor>
+        <textcolor>whitesmoke</textcolor>
         <include>Genre51Commons</include>
         <label>$INFO[ListItem.label][COLOR=Grey]$VAR[TopLabel,  ][/COLOR]</label>
       </control>
@@ -240,13 +240,13 @@
           <include>DialogButt</include>
         </control>
         <control type="button" id="6" description="Slideshow">
-          <disabledcolor>Disabled</disabledcolor>
+          <disabledcolor>dimgray</disabledcolor>
           <include>DialogButt</include>
           <label>108</label>
           <visible>!ListItem.IsFolder</visible>
         </control>
         <control type="button" id="7" description="Recursive slideshow">
-          <disabledcolor>Disabled</disabledcolor>
+          <disabledcolor>dimgray</disabledcolor>
           <include>DialogButt</include>
           <label>13318</label>
           <visible>ListItem.IsFolder</visible>

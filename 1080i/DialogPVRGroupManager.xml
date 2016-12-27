@@ -59,7 +59,7 @@
           <label>19143</label>
           <align>center</align>
           <aligny>center</aligny>
-          <textcolor>Yellow</textcolor>
+          <textcolor>orange</textcolor>
         </control>
         <control type="group">
           <description>Group list</description>
@@ -108,7 +108,7 @@
                 <align>left</align>
                 <aligny>center</aligny>
                 <textcolor>White</textcolor>
-                <selectedcolor>Yellow</selectedcolor>
+                <selectedcolor>orange</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
             </itemlayout>
@@ -127,7 +127,7 @@
                 <align>left</align>
                 <aligny>center</aligny>
                 <textcolor>White</textcolor>
-                <selectedcolor>Yellow</selectedcolor>
+                <selectedcolor>orange</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
             </focusedlayout>
@@ -204,7 +204,7 @@
                 <font>size26</font>
                 <align>left</align>
                 <aligny>center</aligny>
-                <textcolor>Yellow</textcolor>
+                <textcolor>orange</textcolor>
                 <label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
               </control>
               <control type="image">
@@ -289,7 +289,7 @@
                 <font>size26</font>
                 <align>left</align>
                 <aligny>center</aligny>
-                <textcolor>Yellow</textcolor>
+                <textcolor>orange</textcolor>
                 <label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
               </control>
               <control type="image">
@@ -303,13 +303,6 @@
           </control>
         </control>
       </control>
-    </control>
-    <control type="image">
-      <left>135</left>
-      <top>800</top>
-      <width>1590</width>
-      <height>80</height>
-      <texture>images/bottomshader.png</texture>
     </control>
     <control type="grouplist" id="9000">
       <left>1560</left>

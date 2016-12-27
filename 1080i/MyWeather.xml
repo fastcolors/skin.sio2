@@ -178,7 +178,7 @@
                     <width>220</width>
                     <align>center</align>
                     <font>size36</font>
-                    <textcolor>Yellow</textcolor>
+                    <textcolor>orange</textcolor>
                     <label>$INFO[ListItem.label]</label>
                 </control>
                 <control type="label" description="temps">

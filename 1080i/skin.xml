@@ -462,7 +462,7 @@
                         <height>60</height>
                         <font>Size30</font>
                         <aligny>center</aligny>
-                        <textcolor>Silver</textcolor>
+                        <textcolor>whitesmoke</textcolor>
                         <align>center</align>
                         <info>ListItem.Label</info>
                     </control>
@@ -523,7 +523,7 @@
                         <height>60</height>
                         <font>Size30</font>
                         <aligny>center</aligny>
-                        <textcolor>Silver</textcolor>
+                        <textcolor>whitesmoke</textcolor>
                         <align>center</align>
                         <info>ListItem.Label</info>
                     </control>

@@ -29,7 +29,7 @@
         <label>Show Name</label>
         <font>Size42B</font>
         <align>center</align>
-        <textcolor>Yellow</textcolor>
+        <textcolor>orange</textcolor>
       </control>
       <control type="label" id="501">
         <description>Show Title Label</description>

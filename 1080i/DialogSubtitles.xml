@@ -33,7 +33,7 @@
                     <width>1400</width>
                     <height>60</height>
                     <font>size27</font>
-                    <textcolor>Silver</textcolor>
+                    <textcolor>whitesmoke</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
                     <wrapmultiline>true</wrapmultiline>
@@ -252,7 +252,7 @@
                         <height>57</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <selectedcolor>Yellow</selectedcolor>
+                        <selectedcolor>orange</selectedcolor>
                         <align>left</align>
                         <info>ListItem.Label</info>
                         <visible>!ListItem.property(man)</visible>
@@ -286,7 +286,7 @@
                         <font>size27</font>
                         <aligny>center</aligny>
                         <textcolor>white</textcolor>
-                        <selectedcolor>Yellow</selectedcolor>
+                        <selectedcolor>orange</selectedcolor>
                         <align>left</align>
                         <info>ListItem.Label</info>
                         <visible>!ListItem.property(man)</visible>
