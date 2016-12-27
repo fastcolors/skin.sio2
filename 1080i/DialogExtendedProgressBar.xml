@@ -14,7 +14,7 @@
             </control>
             <control type="label" id="30" description="Caption Label">
                 <left>22</left>
-                <top>20</top>
+                <top>18</top>
                 <width>755</width>
                 <height>27</height>
                 <font>size21</font>
@@ -22,11 +22,11 @@
                 <textcolor>black</textcolor>
                 <aligny>center</aligny>
             </control>
-            <control type="label" id="31" description="line 1 Label">
+            <control type="textbox" id="31" description="line 1 Label">
                 <left>22</left>
-                <top>64</top>
-                <width>755</width>
-                <height>30</height>
+                <top>30</top>
+                <width>655</width>
+                <height>60</height>
                 <font>size21</font>
                 <align>left</align>
                 <textcolor>black</textcolor>

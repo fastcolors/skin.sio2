@@ -12,13 +12,13 @@
       <colordiffuse>30FFFFFF</colordiffuse>
       <info>ListItem.Art(fanart)</info>
     </control>
-    <control type="image" description="whitback">
-      <centerleft>540</centerleft>
-      <top>80</top>
-      <width>950</width>
-      <height>1000</height>
-      <texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>
-    </control>
+    <!--<control type="image" description="whitback">-->
+    <!--<centerleft>540</centerleft>-->
+    <!--<top>80</top>-->
+    <!--<width>950</width>-->
+    <!--<height>1000</height>-->
+    <!--<texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>-->
+    <!--</control>-->
     <control type="grouplist">
       <top>100</top>
       <centerleft>540</centerleft>
@@ -63,13 +63,13 @@
       <autoscroll delay="6500" time="4000" repeat="10000"></autoscroll>
       <info>ListItem.AddonDescription</info>
     </control>
-    <control type="image">
-      <centerleft>1470</centerleft>
-      <top>80</top>
-      <width>250</width>
-      <height>250</height>
-      <texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>
-    </control>
+    <!--<control type="image">-->
+    <!--<centerleft>1470</centerleft>-->
+    <!--<top>80</top>-->
+    <!--<width>250</width>-->
+    <!--<height>250</height>-->
+    <!--<texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>-->
+    <!--</control>-->
     <control type="label">
       <centerleft>1470</centerleft>
       <top>350</top>

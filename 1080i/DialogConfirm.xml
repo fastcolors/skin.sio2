@@ -18,7 +18,7 @@
         <width>960</width>
         <label>-</label>
         <font>size28</font>
-        <shadowcolor>-</shadowcolor>
+        <textcolor>black</textcolor>
         <align>center</align>
       </control>
       <control type="textbox" id="9" description="content">
@@ -26,6 +26,7 @@
         <width>960</width>
         <height>145</height>
         <align>center</align>
+        <textcolor>black</textcolor>
         <label>-</label>
       </control>
       <control type="progress" id="20" description="Progressbar">

@@ -36,24 +36,29 @@
         </control>
         <control type="button" id="7" description="Button">
             <font>size34</font>
+            <texturenofocus border="8" colordiffuse="66fFFFFF">images/White.png</texturenofocus>
             <align>left</align>
         </control>
         <control type="radiobutton" id="8" description="Radio Button">
             <font>size34</font>
+            <texturenofocus border="8" colordiffuse="66fFFFFF">images/White.png</texturenofocus>
             <align>left</align>
         </control>
         <control type="spincontrolex" id="9" description="Spin control">
             <align>left</align>
+            <texturenofocus border="8" colordiffuse="66fFFFFF">images/White.png</texturenofocus>
             <font>size34</font>
         </control>
         <control type="button" id="10" description="Category Button">
            <textoffsetx>20</textoffsetx>
             <width>300</width>
             <font>size34</font>
+            <texturenofocus border="8" colordiffuse="66fFFFFF">images/White.png</texturenofocus>
         </control>
         <control type="sliderex" id="13">
             <description>Default Slider</description>
             <font>size34</font>
+            <texturenofocus border="8" colordiffuse="66fFFFFF">images/White.png</texturenofocus>
             <aligny>center</aligny>
         </control>
         <!--<control type="scrollbar" id="60">-->
@@ -68,6 +73,7 @@
             <width>350</width>
             <height>80</height>
             <font>Size26</font>
+            <texturenofocus border="8" colordiffuse="66fFFFFF">images/White.png</texturenofocus>
             <onclick>SettingsLevelChange</onclick>
             <ondown>3</ondown>
         </control>

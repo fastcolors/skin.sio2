@@ -45,11 +45,11 @@
         <itemlayout height="70" width="960">
           <control type="group">
             <left>90</left>
-            <control type="image">
-              <height>60</height>
-              <width>840</width>
-              <texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>
-            </control>
+            <!--<control type="image">-->
+              <!--<height>60</height>-->
+              <!--<width>840</width>-->
+              <!--<texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>-->
+            <!--</control>-->
             <control type="label">
               <right>200</right>
               <width>645</width>
@@ -150,11 +150,11 @@
         <itemlayout height="70" width="960">
           <control type="group">
             <left>30</left>
-            <control type="image">
-              <height>60</height>
-              <width>840</width>
-              <texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>
-            </control>
+            <!--<control type="image">-->
+              <!--<height>60</height>-->
+              <!--<width>840</width>-->
+              <!--<texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>-->
+            <!--</control>-->
             <control type="label">
               <left>170</left>
               <width>645</width>

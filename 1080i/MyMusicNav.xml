@@ -3,9 +3,16 @@
     <backgroundcolor>aliceblue</backgroundcolor>
     <defaultcontrol always="true">50</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <views>50,52,53,501,500,510</views>
+    <views>50,53,501,500,510</views>
     <controls>
         <include>BlackBackground</include>
+        <control type="image">
+            <include>Dimensions_Fullscreen</include>
+            <include>Fanart_Fade</include>
+            <texture background="true">$INFO[ListItem.Property(fanart_image)]</texture>
+            <colordiffuse>20ffffff</colordiffuse>
+            <aspectratio>stretch</aspectratio>
+        </control>
         <include>Musicviews</include>
         <control type="group" description="Side menu 9000 group">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>

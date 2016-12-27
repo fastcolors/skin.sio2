@@ -25,30 +25,35 @@
                     <width>840</width>
                     <align>left</align>
                     <label>$LOCALIZE[14201]</label>
+                    <texturenofocus border="8" colordiffuse="66fFFFFF">images/White.png</texturenofocus>
                     <onclick>ActivateWindow(PlayerSettings)</onclick>
                 </control>
                 <control type="button" id="2">
                     <width>840</width>
                     <align>left</align>
                     <label>$LOCALIZE[14212]</label>
+                    <texturenofocus border="8" colordiffuse="66fFFFFF">images/White.png</texturenofocus>
                     <onclick>ActivateWindow(MediaSettings)</onclick>
                 </control>
                 <control type="button" id="3">
                     <width>840</width>
                     <align>left</align>
                     <label>$LOCALIZE[14205]</label>
+                    <texturenofocus border="8" colordiffuse="66fFFFFF">images/White.png</texturenofocus>
                     <onclick>ActivateWindow(PVRSettings)</onclick>
                 </control>
                 <control type="button" id="4">
                     <width>840</width>
                     <align>left</align>
                     <label>$LOCALIZE[14208]</label>
+                    <texturenofocus border="8" colordiffuse="66fFFFFF">images/White.png</texturenofocus>
                     <onclick>ActivateWindow(ServiceSettings)</onclick>
                 </control>
                 <control type="button" id="5">
                     <width>840</width>
                     <align>left</align>
                     <label>$LOCALIZE[15016]</label>
+                    <texturenofocus border="8" colordiffuse="66fFFFFF">images/White.png</texturenofocus>
                     <visible>System.GetBool(gamesgeneral.enable)</visible>
                     <onclick>ActivateWindow(GameSettings)</onclick>
                 </control>
@@ -56,24 +61,28 @@
                     <width>840</width>
                     <align>left</align>
                     <label>$LOCALIZE[14207]</label>
+                    <texturenofocus border="8" colordiffuse="66fFFFFF">images/White.png</texturenofocus>
                     <onclick>ActivateWindow(InterfaceSettings)</onclick>
                 </control>
                 <control type="button" id="7">
                     <width>840</width>
                     <align>left</align>
                     <label>$LOCALIZE[14210]</label>
+                    <texturenofocus border="8" colordiffuse="66fFFFFF">images/White.png</texturenofocus>
                     <onclick>ActivateWindow(Profiles)</onclick>
                 </control>
                 <control type="button" id="8">
                     <width>840</width>
                     <align>left</align>
                     <label>$LOCALIZE[14209]</label>
+                    <texturenofocus border="8" colordiffuse="66fFFFFF">images/White.png</texturenofocus>
                     <onclick>ActivateWindow(SystemSettings)</onclick>
                 </control>
                 <control type="button" id="9">
                     <width>840</width>
                     <align>left</align>
                     <label>LibreELEC</label>
+                    <texturenofocus border="8" colordiffuse="66fFFFFF">images/White.png</texturenofocus>
                     <onclick>RunAddon(service.libreelec.settings)</onclick>
                     <visible>System.HasAddon(service.libreelec.settings)</visible>
                 </control>
@@ -81,6 +90,7 @@
                     <width>840</width>
                     <align>left</align>
                     <label>openELEC</label>
+                    <texturenofocus border="8" colordiffuse="66fFFFFF">images/White.png</texturenofocus>
                     <visible>System.HasAddon(service.openelec.settings)</visible>
                     <onclick>RunAddon(service.openelec.settings)</onclick>
                 </control>
@@ -88,12 +98,14 @@
                     <width>840</width>
                     <align>left</align>
                     <label>$LOCALIZE[138]</label>
+                    <texturenofocus border="8" colordiffuse="66fFFFFF">images/White.png</texturenofocus>
                     <onclick>ActivateWindow(systeminfo)</onclick>
                 </control>
                 <control type="button" id="12">
                     <width>840</width>
                     <align>left</align>
                     <label>$LOCALIZE[10003]</label>
+                    <texturenofocus border="8" colordiffuse="66fFFFFF">images/White.png</texturenofocus>
                     <onclick>ActivateWindow(filemanager)</onclick>
                 </control>
             </control>

@@ -47,11 +47,11 @@
           <preloaditems>2</preloaditems>
           <scrolltime tween="sine" easing="inout">280</scrolltime>
           <itemlayout width="802" height="81">
-            <control type="image">
-              <height>70</height>
-              <width>805</width>
-              <texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>
-            </control>
+            <!--<control type="image">-->
+              <!--<height>70</height>-->
+              <!--<width>805</width>-->
+              <!--<texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>-->
+            <!--</control>-->
             <include>Arrow</include>
             <control type="label" description="Main Label">
               <include>50Label</include>

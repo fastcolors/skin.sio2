@@ -49,7 +49,7 @@
                 </control>
                 <control type="list" id="51" description="list">
                     <include>iconmusiclist</include>
-                    <content target="music">musicdb://artists/</content>
+                    <content target="music" sortby="artist" sortorder="ascending">musicdb://artists/</content>
                 </control>
                 <control type="label" id="60">
                     <height>64</height>
@@ -58,7 +58,7 @@
                 </control>
                 <control type="list" id="52" description="list">
                     <include>iconmusiclist</include>
-                    <content target="music">musicdb://albums/</content>
+                    <content target="music" sortby="title" sortorder="ascending">musicdb://albums/</content>
                 </control>
             </control>
             <control type="label">

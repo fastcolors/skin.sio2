@@ -201,7 +201,8 @@
             <onright>noop</onright>
             <focusposition>2</focusposition>
             <include>SquareShortcutsCommons</include>
-            <content target="music">special://skin/resources/rcntalbums.xsp</content>
+            <onclick>PlayMedia($ESCINFO[ListItem.DBID,musicdb://albums/,/])</onclick>
+            <content>musicdb://recentlyaddedalbums/</content>
         </control>
     </include>
     <include name="Addons_Auto">

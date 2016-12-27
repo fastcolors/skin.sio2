@@ -5,6 +5,13 @@
   <include>OpenClose</include>
   <controls>
     <include>BlackBackground</include>
+      <control type="image">
+        <include>Dimensions_Fullscreen</include>
+        <include>Fanart_Fade</include>
+        <texture background="true">$INFO[ListItem.Property(fanart_image)]</texture>
+        <colordiffuse>30ffffff</colordiffuse>
+        <aspectratio>stretch</aspectratio>
+      </control>
     <include>Header</include>
     <control type="group">
       <control type="group" description="Thumbs">

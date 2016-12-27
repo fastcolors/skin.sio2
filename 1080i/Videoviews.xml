@@ -25,11 +25,11 @@
                     <preloaditems>4</preloaditems>
                     <scrolltime>250</scrolltime>
                     <itemlayout condition="SubString(Container.FolderPath,plugin://,left)" width="802" height="81">
-                        <control type="image">
-                            <height>70</height>
-                            <width>805</width>
-                            <texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>
-                        </control>
+                        <!--<control type="image">-->
+                            <!--<height>70</height>-->
+                            <!--<width>805</width>-->
+                            <!--<texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>-->
+                        <!--</control>-->
                         <control type="label" description="Main Label">
                             <width>720</width>
                             <include>50Label</include>
@@ -59,11 +59,11 @@
                         </control>
                     </focusedlayout>
                     <itemlayout width="802" height="81">
-                        <control type="image">
-                            <height>70</height>
-                            <width>802</width>
-                            <texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>
-                        </control>
+                        <!--<control type="image">-->
+                            <!--<height>70</height>-->
+                            <!--<width>802</width>-->
+                            <!--<texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>-->
+                        <!--</control>-->
                         <include>Watched_Marks</include>
                         <include>HD_Badge</include>
                         <include>Arrow</include>

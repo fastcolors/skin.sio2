@@ -144,10 +144,9 @@
                     <top>234</top>
                     <width>368</width>
                     <height>24</height>
-                    <font>size27</font>
+                    <font>size27B</font>
                     <align>center</align>
-                    <textcolor>White2</textcolor>
-                    <label>[B]$INFO[ListItem.label][/B]</label>
+                    <label>$INFO[ListItem.label]</label>
                 </control>
             </focusedlayout>
             <content>

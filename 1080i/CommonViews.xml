@@ -611,11 +611,6 @@
     </include>
     <include name="LargeListLayout">
         <itemlayout  width="802" height="111">
-            <control type="image">
-                <height>100</height>
-                <width>802</width>
-                <texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>
-            </control>
             <include>Watched_Marks</include>
             <!--<include>HD_Badge</include>-->
             <include>SetsLW</include>
@@ -774,7 +769,7 @@
         <aligny>center</aligny>
         <font>size36</font>
         <disabledcolor>Grey</disabledcolor>
-        <alttexturenofocus border="8" colordiffuse="77FFFFFF">images/White.png</alttexturenofocus>
+        <!--<alttexturenofocus border="8" colordiffuse="77FFFFFF">images/White.png</alttexturenofocus>-->
         <texturefocus border="8">images/White.png</texturefocus>
         <alttexturefocus border="8">images/White.png</alttexturefocus>
     </include>
