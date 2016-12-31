@@ -83,8 +83,8 @@
     <focusedcolor>black</focusedcolor>
     <selectedcolor>orange</selectedcolor>
     <disabledcolor>dimgray</disabledcolor>
-    <texturenofocus border="8">images/Black.png</texturenofocus>
-    <texturefocus flipy="true" border="8">images/Buttonselect.png</texturefocus>
+    <texturenofocus border="8" colordiffuse="99999999">images/White.png</texturenofocus>
+    <texturefocus border="8">images/White.png</texturefocus>
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="togglebutton">

@@ -6,8 +6,8 @@
       <top>310</top>
       <height>760</height>
       <width>1920</width>
-      <texture>images/Black.png</texture>
-      <colordiffuse>77FFFFFF</colordiffuse>
+      <texture>images/White.png</texture>
+      <colordiffuse>99909090</colordiffuse>
     </control>
     <control type="group">
       <description>TV Guide Channel</description>
@@ -78,7 +78,7 @@
           <height>2</height>
           <texture>images/line.png</texture>
         </control>
-        <control type="list" id="11">
+        <control type="fixedlist" id="11">
           <left>0</left>
           <top>60</top>
           <width>1920</width>
@@ -87,22 +87,17 @@
           <ondown>11</ondown>
           <onleft>noop</onleft>
           <onright>60</onright>
-          <pagecontrol>70</pagecontrol>
+          <focusposition>2</focusposition>
+          <pagecontrol>-</pagecontrol>
           <scrolltime>200</scrolltime>
           <itemlayout height="40">
-            <control type="image">
-              <width>1760</width>
-              <height>40</height>
-              <texture border="5">pstvButtonNoFocus.png</texture>
-              <colordiffuse>90FFFFFF</colordiffuse>
-            </control>
             <control type="label">
               <left>10</left>
               <width>220</width>
               <height>40</height>
               <font>Size26</font>
               <aligny>center</aligny>
-              <textcolor>Grey</textcolor>
+              <textcolor>white</textcolor>
               <selectedcolor>orange</selectedcolor>
               <info>ListItem.StartTime</info>
             </control>
@@ -114,7 +109,7 @@
               <font>Size26</font>
               <align>left</align>
               <aligny>center</aligny>
-              <textcolor>Grey</textcolor>
+              <textcolor>white</textcolor>
               <selectedcolor>orange</selectedcolor>
               <info>ListItem.Label</info>
             </control>
@@ -126,7 +121,7 @@
               <font>Size26</font>
               <align>left</align>
               <aligny>center</aligny>
-              <textcolor>Grey</textcolor>
+              <textcolor>white</textcolor>
               <selectedcolor>orange</selectedcolor>
               <info>ListItem.Title</info>
             </control>
@@ -145,7 +140,7 @@
               <height>40</height>
               <font>Size26</font>
               <aligny>center</aligny>
-              <textcolor>Grey</textcolor>
+              <textcolor>white</textcolor>
               <selectedcolor>orange</selectedcolor>
               <label>19043</label>
               <visible>ListItem.IsRecording</visible>
@@ -175,8 +170,7 @@
             <control type="image">
               <width>1760</width>
               <height>120</height>
-              <texture border="5">pstvButtonFocus.png</texture>
-              <colordiffuse>90777777</colordiffuse>
+              <texture border="8">images/White.png</texture>
             </control>
             <control type="label">
               <left>10</left>
@@ -184,7 +178,7 @@
               <height>40</height>
               <font>Size26</font>
               <aligny>center</aligny>
-              <textcolor>Grey</textcolor>
+              <textcolor>black</textcolor>
               <selectedcolor>orange</selectedcolor>
               <info>ListItem.StartTime</info>
             </control>
@@ -196,7 +190,7 @@
               <font>Size26</font>
               <align>left</align>
               <aligny>center</aligny>
-              <textcolor>Grey</textcolor>
+              <textcolor>black</textcolor>
               <selectedcolor>orange</selectedcolor>
               <info>ListItem.Label</info>
             </control>
@@ -208,7 +202,7 @@
               <font>Size26</font>
               <align>left</align>
               <aligny>center</aligny>
-              <textcolor>Grey</textcolor>
+              <textcolor>black</textcolor>
               <selectedcolor>orange</selectedcolor>
               <info>ListItem.Title</info>
             </control>
@@ -220,7 +214,7 @@
               <height>70</height>
               <font>font12</font>
               <align>justify</align>
-              <textcolor>White</textcolor>
+              <textcolor>black</textcolor>
               <label>$INFO[ListItem.Plot]</label>
             </control>
             <control type="image">
@@ -238,7 +232,7 @@
               <height>40</height>
               <font>Size26</font>
               <aligny>center</aligny>
-              <textcolor>Grey</textcolor>
+              <textcolor>black</textcolor>
               <selectedcolor>orange</selectedcolor>
               <label>19043</label>
               <visible>ListItem.IsRecording</visible>
@@ -258,21 +252,12 @@
               <height>40</height>
               <font>Size26</font>
               <aligny>center</aligny>
-              <textcolor>White</textcolor>
+              <textcolor>black</textcolor>
               <selectedcolor>orange</selectedcolor>
               <label>19040</label>
               <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
             </control>
           </focusedlayout>
-        </control>
-        <control type="scrollbar" id="60">
-          <left>1780</left>
-          <top>60</top>
-          <height>480</height>
-          <onleft>11</onleft>
-          <onright>noop</onright>
-          <showonepage>false</showonepage>
-          <orientation>vertical</orientation>
         </control>
       </control>
     </control>

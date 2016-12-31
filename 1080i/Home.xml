@@ -210,14 +210,14 @@
                     <label>31059</label>
                     <property name="color">icons/green3.png</property>
                     <onclick>ActivateWindow(1718)</onclick>
-                    <visible>!Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
+                    <visible>!Pvr.IsRecording + !Skin.HasSetting(PVRhide)</visible>
                 </item>
                 <item id="355">
                     <thumb>icons/LiveTVrec.png</thumb>
                     <label>$INFO[Pvr.NowRecordingTitle]</label>
                     <property name="color">icons/green3.png</property>
                     <onclick>ActivateWindow(1718)</onclick>
-                    <visible>Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
+                    <visible>Pvr.IsRecording + !Skin.HasSetting(PVRhide)</visible>
                 </item>
                 <!--EXTENDEDINFO-->
                 <item id="359">
@@ -434,7 +434,7 @@
                 <shadowcolor>-</shadowcolor>
                 <titlecolor>White</titlecolor>
                 <headlinecolor>White</headlinecolor>
-                <textcolor>Grey</textcolor>
+                <textcolor>gray</textcolor>
             </control>
         </control>
         <control type="group">

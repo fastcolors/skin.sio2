@@ -309,7 +309,7 @@
                         <font>size30</font>
                         <width>750</width>
                         <height>30</height>
-                        <textcolor>Grey</textcolor>
+                        <textcolor>gray</textcolor>
                         <scroll>false</scroll>
                         <label>$LOCALIZE[558]:  [COLOR=White2]$INFO[ListItem.Album][/COLOR]</label>
                     </control>
@@ -317,21 +317,21 @@
                         <font>size30</font>
                         <width>750</width>
                         <height>30</height>
-                        <textcolor>Grey</textcolor>
+                        <textcolor>gray</textcolor>
                         <label>$LOCALIZE[515]:  [COLOR=White2]$INFO[ListItem.Genre][/COLOR]</label>
                     </control>
                     <control type="label" description="Type">
                         <font>size30</font>
                         <width>750</width>
                         <height>30</height>
-                        <textcolor>Grey</textcolor>
+                        <textcolor>gray</textcolor>
                         <label>$LOCALIZE[564]:  [COLOR=White2][UPPERCASE]$INFO[ListItem.FileExtension][/UPPERCASE][/COLOR]</label>
                     </control>
                     <control type="label" description="Duration">
                         <font>size30</font>
                         <width>750</width>
                         <height>30</height>
-                        <textcolor>Grey</textcolor>
+                        <textcolor>gray</textcolor>
                         <label>$LOCALIZE[180]:  [COLOR=White2]$INFO[ListItem.Duration][/COLOR]</label>
                     </control>
                 </control>
@@ -411,7 +411,7 @@
         <height>33</height>
         <width>350</width>
         <font>size27</font>
-        <textcolor>grey</textcolor>
+        <textcolor>gray</textcolor>
         <scroll>false</scroll>
     </include>
     <include name="BigListDetailsFO">
@@ -742,12 +742,14 @@
         <alttexturefocus border="8">images/Buttonselect.png</alttexturefocus>
     </include>
     <include name="SmallButt">
+        <animation>Focus</animation>
+        <animation>unFocus</animation>
         <width>200</width>
         <height>40</height>
         <font>size22</font>
         <align>center</align>
-        <texturefocus border="8">images/Buttonselect.png</texturefocus>
-        <alttexturefocus border="8">images/Buttonselect.png</alttexturefocus>
+        <focusedcolor>white</focusedcolor>
+        <texturefocus>-</texturefocus>
     </include>
     <include name="DialogGLs">
         <centerleft>960</centerleft>
@@ -768,7 +770,7 @@
         <align>center</align>
         <aligny>center</aligny>
         <font>size36</font>
-        <disabledcolor>Grey</disabledcolor>
+        <disabledcolor>gray</disabledcolor>
         <!--<alttexturenofocus border="8" colordiffuse="77FFFFFF">images/White.png</alttexturenofocus>-->
         <texturefocus border="8">images/White.png</texturefocus>
         <alttexturefocus border="8">images/White.png</alttexturefocus>
@@ -787,7 +789,7 @@
     <include name="Genre51Commons">
         <top>-9</top>
         <font>size30</font>
-        <textcolor>Grey</textcolor>
+        <textcolor>gray</textcolor>
         <width>758</width>
         <height>36</height>
         <align>left</align>
@@ -854,7 +856,7 @@
         <height>75</height>
         <align>left</align>
         <font>size30</font>
-        <disabledcolor>Grey</disabledcolor>
+        <disabledcolor>gray</disabledcolor>
     </include>
     <include name="Help_Panel">
         <animation effect="fade" time="200">VisibleChange</animation>

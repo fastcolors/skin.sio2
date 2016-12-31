@@ -90,7 +90,7 @@
                         <height>54</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>Grey</textcolor>
+                        <textcolor>gray</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
                         <info>ListItem.Label</info>
@@ -117,7 +117,7 @@
                         <height>54</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>Grey</textcolor>
+                        <textcolor>gray</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
                         <info>ListItem.Label2</info>
@@ -126,7 +126,7 @@
                         <left>1230</left>
                         <width>120</width>
                         <height>54</height>
-                        <colordiffuse>Grey</colordiffuse>
+                        <colordiffuse>gray</colordiffuse>
                         <aspectratio>keep</aspectratio>
                         <texture>badges/$INFO[ListItem.ActualIcon].0.png</texture>
                     </control>

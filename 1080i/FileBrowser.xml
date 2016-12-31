@@ -174,7 +174,7 @@
       <scroll>false</scroll>
       <haspath>true</haspath>
       <font>size22</font>
-      <textcolor>Grey</textcolor>
+      <textcolor>gray</textcolor>
       <label>$INFO[ListItem.Label]</label>
     </control>
     <control type="scrollbar" id="60">

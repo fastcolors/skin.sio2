@@ -261,7 +261,7 @@
                     <height>250</height>
                     <font>Size24</font>
                     <aligny>top</aligny>
-                    <textcolor>Grey</textcolor>
+                    <textcolor>gray</textcolor>
                     <label>$INFO[ListItem.Label2]</label>
                 </control>
             </itemlayout>
@@ -296,7 +296,7 @@
                     <height>250</height>
                     <font>Size24</font>
                     <aligny>top</aligny>
-                    <textcolor>Grey</textcolor>
+                    <textcolor>gray</textcolor>
                     <label>$INFO[ListItem.Label2]</label>
                 </control>
             </focusedlayout>
@@ -337,7 +337,7 @@
                     <height>250</height>
                     <font>Size24</font>
                     <aligny>top</aligny>
-                    <textcolor>Grey</textcolor>
+                    <textcolor>gray</textcolor>
                     <label>$INFO[ListItem.Label2]</label>
                 </control>
             </itemlayout>
@@ -371,7 +371,7 @@
                     <height>250</height>
                     <font>Size24</font>
                     <aligny>top</aligny>
-                    <textcolor>Grey</textcolor>
+                    <textcolor>gray</textcolor>
                     <label>$INFO[ListItem.Label2]</label>
                 </control>
             </focusedlayout>

@@ -214,13 +214,13 @@
                           <onclick>Skin.ToggleSetting(hidedvdrel)</onclick>
                         </item>
                         <item id="1014">
-                            <visible>System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
+                            <visible>!Skin.HasSetting(PVRhide)</visible>
                             <thumb>icons/LiveTV.png</thumb>
                             <label>31059</label>
                             <onclick>Skin.ToggleSetting(PVRhide)</onclick>
                         </item>
                         <item id="1014">
-                            <visible>System.GetBool(pvrmanager.enabled) + Skin.HasSetting(PVRhide)</visible>
+                            <visible>Skin.HasSetting(PVRhide)</visible>
                             <thumb>help/off.png</thumb>
                             <label>31059</label>
                             <onclick>Skin.ToggleSetting(PVRhide)</onclick>
@@ -1156,7 +1156,7 @@
                 <width>900</width>
                 <height>60</height>
                 <align>center</align>
-                <textcolor>Grey</textcolor>
+                <textcolor>gray</textcolor>
                 <font>Size26</font>
                 <label>$LOCALIZE[35500]:</label>
             </control>

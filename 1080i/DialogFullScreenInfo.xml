@@ -13,14 +13,14 @@
             <top>650</top>
             <width>1800</width>
             <height>300</height>
-            <texture border="50">Seekbar/OSDBackground.png</texture>
+            <texture border="8" colordiffuse="99000000">images/White.png</texture>
         </control>
         <control type="image" description="Background">
             <left>60</left>
             <top>650</top>
             <width>1800</width>
             <height>300</height>
-            <texture border="50">Seekbar/OSDBackground.png</texture>
+            <texture border="8" colordiffuse="99000000">images/White.png</texture>
         </control>
         <control type="group">
             <control type="image">

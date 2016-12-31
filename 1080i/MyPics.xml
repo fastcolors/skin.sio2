@@ -199,7 +199,7 @@
           <width min="60" max="120">auto</width>
           <height>81</height>
           <font>size26</font>
-          <textcolor>Grey</textcolor>
+          <textcolor>gray</textcolor>
           <label>$INFO[Container.NumItems,  (,)]</label>
         </control>
       </control>
@@ -209,7 +209,7 @@
         <width>1200</width>
         <textcolor>whitesmoke</textcolor>
         <include>Genre51Commons</include>
-        <label>$INFO[ListItem.label][COLOR=Grey]$VAR[TopLabel,  ][/COLOR]</label>
+        <label>$INFO[ListItem.label][COLOR=gray]$VAR[TopLabel,  ][/COLOR]</label>
       </control>
       <control type="scrollbar" id="60">
         <left>45r</left>

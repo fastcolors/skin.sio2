@@ -79,7 +79,6 @@
                 <aligny>center</aligny>
                 <width>1920</width>
                 <height>75</height>
-                <textcolor>White2</textcolor>
                 <font>size42</font>
                 <label>$VAR[RootLabel]</label>
             </control>
@@ -216,101 +215,6 @@
             <texture>HomeBG.png</texture>
         </control>
     </include>
-    <include name="PVRinfos">
-        <control type="image">
-            <description>background image</description>
-            <left>-170</left>
-            <top>-150</top>
-            <width>1460</width>
-            <height>800</height>
-            <texture border="150">images/Dialog.png</texture>
-            <visible>![Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)]</visible>
-        </control>
-        <control type="image">
-            <top>110</top>
-            <width>1160</width>
-            <height>1</height>
-            <texture>images/Line.png</texture>
-        </control>
-        <control type="image">
-            <left>0</left>
-            <top>370</top>
-            <width>1160</width>
-            <height>1</height>
-            <texture>images/Line.png</texture>
-        </control>
-        <control type="label">
-            <description>header label</description>
-            <left>20</left>
-            <top>0</top>
-            <width>1100</width>
-            <height>30</height>
-            <font>size26</font>
-            <label>$LOCALIZE[19047]</label>
-            <align>center</align>
-            <aligny>center</aligny>
-            <textcolor>White</textcolor>
-        </control>
-        <control type="label">
-            <description>Title label</description>
-            <left>20</left>
-            <top>40</top>
-            <width>1100</width>
-            <height>30</height>
-            <font>size33B</font>
-            <label>$INFO[ListItem.Title]</label>
-            <align>center</align>
-            <aligny>center</aligny>
-            <textcolor>orange</textcolor>
-            <shadowcolor>-</shadowcolor>
-        </control>
-        <control type="label">
-            <description>Start time</description>
-            <left>20</left>
-            <top>75</top>
-            <width>1100</width>
-            <height>25</height>
-            <align>center</align>
-            <aligny>center</aligny>
-            <font>Size26</font>
-            <textcolor>Grey</textcolor>
-            <label>$LOCALIZE[142] $INFO[ListItem.StartTime]</label>
-        </control>
-        <control type="textbox" id="400">
-            <description>Plot value</description>
-            <left>20</left>
-            <top>110</top>
-            <width>1080</width>
-            <height>260</height>
-            <font>size26</font>
-            <align>justify</align>
-            <textcolor>white</textcolor>
-            <pagecontrol>-</pagecontrol>
-            <label fallback="161">$INFO[ListItem.Plot]</label>
-        </control>
-        <control type="label">
-            <description>Duration</description>
-            <left>60</left>
-            <top>390</top>
-            <width>1000</width>
-            <height>25</height>
-            <align>center</align>
-            <font>size26</font>
-            <textcolor>Grey</textcolor>
-            <label>$LOCALIZE[552]: $INFO[ListItem.StartDate] / $LOCALIZE[19148]: $INFO[ListItem.ChannelName]</label>
-        </control>
-        <control type="label">
-            <description>Duration</description>
-            <left>60</left>
-            <top>420</top>
-            <width>1000</width>
-            <height>25</height>
-            <align>center</align>
-            <font>size26</font>
-            <textcolor>Grey</textcolor>
-            <label>$LOCALIZE[180]: $INFO[ListItem.Duration] / $LOCALIZE[135]: $INFO[ListItem.Genre]</label>
-        </control>
-    </include>
     <include name="PVRsidemenu">
         <control type="group" description="Side menu 9000 group">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
@@ -325,32 +229,30 @@
             </control>
             <control type="grouplist" id="9000">
                 <centerleft>960</centerleft>
-                <top>65</top>
-                <height>1000</height>
+                <centertop>540</centertop>
+                <height>1080</height>
+                <align>center</align>
                 <include>DialogGLs</include>
                 <control type="button" id="3">
-                    <enable>!Window.IsActive(TVGuide)</enable>
                     <description>Sort by button</description>
                     <include>DialogButt</include>
-                    <label>103</label>
+                    <label>-</label>
                 </control>
                 <control type="togglebutton" id="4">
-                    <enable>!Window.IsActive(TVGuide)</enable>
                     <description>Sort asc</description>
                     <include>DialogButt</include>
                     <label>584</label>
                     <altlabel>585</altlabel>
                     <usealttexture>Container.SortDirection(Ascending)</usealttexture>
                 </control>
-                <control type="radiobutton" id="5">
-                    <enable>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</enable>
-                    <description>Group recording items by folder structure</description>
-                    <left>0</left>
-                    <right>40</right>
-                    <include>DialogButt</include>
-                    <label>19270</label>
-                </control>
                 <control type="button" id="31">
+                    <visible>!Window.IsActive(TVGuide)</visible>
+                    <description>Filter</description>
+                    <include>DialogButt</include>
+                    <onclick>-</onclick>
+                    <label>587</label>
+                </control>
+                <control type="button" id="32">
                     <description>TV Guide</description>
                     <include>DialogButt</include>
                     <onclick condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">noop</onclick>
@@ -358,7 +260,7 @@
                     <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
                     <label>22020</label>
                 </control>
-                <control type="button" id="32">
+                <control type="button" id="33">
                     <description>TV Channels</description>
                     <include>DialogButt</include>
                     <onclick condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)">noop</onclick>
@@ -389,27 +291,25 @@
                 </control>
                 <control type="button" id="28">
                     <description>Channel Groups</description>
-                    <left>0</left>
-                    <right>40</right>
                     <include>DialogButt</include>
                     <label>-</label>
                 </control>
                 <control type="radiobutton" id="600" description="EPG">
-                    <enable>Window.IsActive(MyPVRGuide.xml)</enable>
+                    <visible>Window.IsActive(TVGuide)</visible>
                     <include>DialogButt</include>
                     <onclick>Container.SetViewMode(10)</onclick>
                     <selected>Control.IsVisible(10)</selected>
                     <label>EPG</label>
                 </control>
                 <control type="radiobutton" id="602" description="Now">
-                    <enable>Window.IsActive(MyPVRGuide.xml)</enable>
+                    <visible>Window.IsActive(TVGuide)</visible>
                     <include>DialogButt</include>
                     <onclick>Container.SetViewMode(11)</onclick>
                     <selected>Control.IsVisible(11) + !Control.IsVisible(10)</selected>
                     <label>19030</label>
                 </control>
                 <control type="radiobutton" id="603" description="Next">
-                    <enable>Window.IsActive(MyPVRGuide.xml)</enable>
+                    <visible>Window.IsActive(TVGuide)</visible>
                     <include>DialogButt</include>
                     <onclick>Container.SetViewMode(12)</onclick>
                     <selected>Control.IsVisible(12) + !Control.IsVisible(10)</selected>
@@ -417,24 +317,6 @@
                 </control>
             </control>
         </control>
-    </include>
-    <include name="BigListTitle">
-        <left>128</left>
-        <top>12</top>
-        <height>50</height>
-        <width>720</width>
-        <aligny>center</aligny>
-        <font>size30</font>
-        <scroll>false</scroll>
-        <textcolor>gray</textcolor>
-    </include>
-    <include name="BigListDetails">
-        <left>128</left>
-        <top>63</top>
-        <height>33</height>
-        <width>350</width>
-        <font>size27</font>
-        <scroll>false</scroll>
     </include>
     <include name="selection">
         <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>

@@ -33,7 +33,7 @@
             <font>Size42B</font>
             <label>$INFO[ListItem.Label]</label>
             <wrapmultiline>true</wrapmultiline>
-            <textcolor>Grey</textcolor>
+            <textcolor>gray</textcolor>
           </control>
           <control type="label" description="ItemDate">
             <left>600</left>
@@ -43,7 +43,7 @@
             <align>center</align>
             <font>size22</font>
             <label>$INFO[ListItem.Property(date)]</label>
-            <textcolor>Grey</textcolor>
+            <textcolor>gray</textcolor>
           </control>
           <control type="image">
             <top>80</top>
@@ -76,7 +76,7 @@
             <align>center</align>
             <font>size22</font>
             <label>$INFO[ListItem.Property(date)]</label>
-            <textcolor>Grey</textcolor>
+            <textcolor>gray</textcolor>
           </control>
           <control type="image">
             <top>80</top>

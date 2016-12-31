@@ -152,7 +152,7 @@
           <height>420</height>
           <font>size26</font>
           <align>center</align>
-          <label>$INFO[Container(50).ListItem.Artist,[COLOR=Grey]$LOCALIZE[557]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Album,[COLOR=Grey]$LOCALIZE[558]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Duration,[COLOR=Grey]$LOCALIZE[555]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Genre,[COLOR=Grey]$LOCALIZE[515]:[/COLOR] ,[CR]]</label>
+          <label>$INFO[Container(50).ListItem.Artist,[COLOR=gray]$LOCALIZE[557]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Album,[COLOR=gray]$LOCALIZE[558]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Duration,[COLOR=gray]$LOCALIZE[555]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Genre,[COLOR=gray]$LOCALIZE[515]:[/COLOR] ,[CR]]</label>
         </control>
       </control>
       <control type="group">
@@ -175,7 +175,7 @@
           <height>420</height>
           <font>size26</font>
           <align>center</align>
-          <label>$INFO[Container(100).ListItem.Artist,[COLOR=Grey]$LOCALIZE[557]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Album,[COLOR=Grey]$LOCALIZE[558]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Duration,[COLOR=Grey]$LOCALIZE[555]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Genre,[COLOR=Grey]$LOCALIZE[515]:[/COLOR] ,[CR]]</label>
+          <label>$INFO[Container(100).ListItem.Artist,[COLOR=gray]$LOCALIZE[557]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Album,[COLOR=gray]$LOCALIZE[558]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Duration,[COLOR=gray]$LOCALIZE[555]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Genre,[COLOR=gray]$LOCALIZE[515]:[/COLOR] ,[CR]]</label>
         </control>
       </control>
       <control type="image" description="separator Bottom">

@@ -28,7 +28,7 @@
         <top>66</top>
         <width>1080</width>
         <align>center</align>
-        <textcolor>Grey</textcolor>
+        <textcolor>gray</textcolor>
         <label>21422</label>
       </control>
       <control type="group" id="9001">

@@ -146,7 +146,7 @@
             <width>500</width>
             <height>20</height>
             <font>font12</font>
-            <textcolor>Grey</textcolor>
+            <textcolor>gray</textcolor>
             <scroll>false</scroll>
             <align>right</align>
             <aligny>center</aligny>

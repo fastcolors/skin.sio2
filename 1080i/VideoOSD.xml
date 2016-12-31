@@ -241,7 +241,7 @@
                             <width>1850</width>
                             <height>150</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="70">Seekbar/OSDBackground.png</texture>
+                            <texture border="8" colordiffuse="99000000">images/White.png</texture>
                         </control>
                     </control>
                     <control type="label" description="Title">
@@ -251,8 +251,6 @@
                         <width>840</width>
                         <scroll>true</scroll>
                         <font>size33B</font>
-                        <textcolor>orange</textcolor>
-                        <shadowcolor>black</shadowcolor>
                         <label>[B]$INFO[VideoPlayer.Title][/B]</label>
                     </control>
                     <control type="group" description="Cover">
@@ -281,7 +279,6 @@
                             <scroll>false</scroll>
                             <font>size24</font>
                             <align>right</align>
-                            <textcolor>orange</textcolor>
                             <shadowcolor>black</shadowcolor>
                             <label>[B]S $INFO[VideoPlayer.Season] E $INFO[VideoPlayer.Episode][/B]</label>
                         </control>
@@ -294,9 +291,8 @@
                             <scroll>false</scroll>
                             <font>size24</font>
                             <align>right</align>
-                            <textcolor>orange</textcolor>
                             <shadowcolor>black</shadowcolor>
-                            <label>[B]$INFO[VideoPlayer.ChannelNumber] - $INFO[VideoPlayer.ChannelName][/B]</label>
+                            <label>$INFO[VideoPlayer.ChannelName]</label>
                         </control>
                     </control>
                 </control>
@@ -363,17 +359,17 @@
                         <item id="0">
                             <visible>Pvr.IsPlayingTv</visible>
                             <thumb>Seekbar/OSDchn.png</thumb>
-                            <onclick>XBMC.ActivateWindow(PVROSDChannels)</onclick>
+                            <onclick>ActivateWindow(PVROSDChannels)</onclick>
                         </item>
                         <item id="16">
                             <visible>Pvr.IsPlayingTv</visible>
                             <thumb>Seekbar/OSDpvr.png</thumb>
-                            <onclick>XBMC.ActivateWindow(PVROSDGuide)</onclick>
+                            <onclick>ActivateWindow(PVROSDGuide)</onclick>
                         </item>
                         <item id="15">
                             <visible>Pvr.IsPlayingTv</visible>
                             <thumb>Seekbar/OSDtxt.png</thumb>
-                            <onclick>XBMC.ActivateWindow(Teletext)</onclick>
+                            <onclick>ActivateWindow(Teletext)</onclick>
                         </item>
                         <item id="5">
                             <visible>!Pvr.IsPlayingTV</visible>
