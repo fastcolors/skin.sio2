@@ -18,7 +18,7 @@
          <include>DialogGLs</include>
         <control type="button" id="699">
           <include>DialogButt</include>
-          <label>$LOCALIZE[128] $LOCALIZE[5]</label>
+          <label>14209</label>
           <onclick>Close</onclick>
           <onclick>ActivateWindow(Settings)</onclick>
         </control>
