@@ -394,7 +394,7 @@
                 <item id="349">
                     <!--<visible>!Player.HasMedia + !Skin.HasSetting(quitter)</visible>-->
                     <thumb>icons/quits.png</thumb>
-                    <label>351</label>
+                    <label>33060</label>
                     <property name="color">icons/darkblue.png</property>
                     <onclick>ActivateWindow(ShutdownMenu)</onclick>
                 </item>
