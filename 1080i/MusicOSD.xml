@@ -9,8 +9,8 @@
             <centerleft>960</centerleft>
             <align>center</align>
             <width>1920</width>
-            <onup>102</onup>
-            <ondown>noop</ondown>
+            <onup>noop</onup>
+            <ondown>102</ondown>
             <onright>noop</onright>
             <onleft>noop</onleft>
             <itemgap>30</itemgap>
@@ -122,25 +122,24 @@
                 </control>
             </control>
         </control>
-
-
         <control type="group" id="101">
-            <control type="image">
-                <width>1920</width>
-                <height>100</height>
-                <aspectratio>stretch</aspectratio>
-                <texture border="8" colordiffuse="cc999999">images/White.png</texture>
-            </control>
+            <top>990</top>
+            <!--<control type="image">-->
+                <!--<width>1920</width>-->
+                <!--<height>100</height>-->
+                <!--<aspectratio>stretch</aspectratio>-->
+                <!--<texture border="8" colordiffuse="cc999999">images/White.png</texture>-->
+            <!--</control>-->
             <control type="list" id="102">
                 <centerleft>960</centerleft>
                 <onright>102</onright>
                 <onleft>102</onleft>
-                <onup>noop</onup>
-                <ondown>200</ondown>
+                <onup>200</onup>
+                <ondown>noop</ondown>
                 <onright>noop</onright>
                 <onlet>noop</onlet>
                 <width>1200</width>
-                <height>100</height>
+                <height>80</height>
                 <orientation>horizontal</orientation>
                 <itemlayout width="90">
                     <control type="image">

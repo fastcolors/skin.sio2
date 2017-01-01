@@ -4,6 +4,11 @@
     <allowoverlay>no</allowoverlay>
     <controls>
         <include>BlackBackground</include>
+        <control type="image">
+            <include>Dimensions_Fullscreen</include>
+            <colordiffuse>55404040</colordiffuse>
+            <texture>$INFO[Player.Art(fanart)]</texture>
+        </control>
         <control type="group">
             <control type="visualisation" id="2" description="Visualisation">
                 <centerleft>960</centerleft>
@@ -40,7 +45,7 @@
                 </control>
             </control>
             <control type="progress" description="Progress Bar">
-                <top>1000</top>
+                <top>990</top>
                 <left>110</left>
                 <width>1700</width>
                 <height>10</height>
@@ -52,43 +57,6 @@
                 <info>Player.Progress</info>
                 <visible>true</visible>
             </control>
-        </control>
-
-
-        <control type="list">
-            <top>800</top>
-            <width>1920</width>
-            <height>300</height>
-            <orientation>horizontal</orientation>
-            <itemlayout width="240" height="300">
-                <control type="image">
-                    <height>200</height>
-                    <width>200</width>
-                    <texture fallback="images/White.png">$INFO[ListItem.Icon]</texture>
-                </control>
-                <control type="label">
-                    <top>210</top>
-                    <width>200</width>
-                    <height>20</height>
-                    <textcolor>white</textcolor>
-                    <label>$INFO[ListItem.Label]</label>
-                </control>
-            </itemlayout>
-            <focusedlayout width="240" height="300">
-                <control type="image">
-                    <height>200</height>
-                    <width>200</width>
-                    <texture fallback="images/White.png">$INFO[ListItem.Icon]</texture>
-                </control>
-                <control type="label">
-                    <top>210</top>
-                    <width>200</width>
-                    <height>20</height>
-                    <textcolor>white</textcolor>
-                    <label>$INFO[ListItem.Label]</label>
-                </control>
-            </focusedlayout>
-            <content>$INFO[MusicPlayer.Artist,musicdb://artists/]</content>
         </control>
     </controls>
 </window>

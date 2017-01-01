@@ -429,4 +429,7 @@
             </control>
         </focusedlayout>
     </include>
+    <include name="homeanimation">
+        <animation condition="!ControlGroup(700).HasFocus + !Container(9000).Row(0)" effect="slide" start="0,0" end="0,-590" time="220">Conditonal</animation>
+    </include>
 </includes>

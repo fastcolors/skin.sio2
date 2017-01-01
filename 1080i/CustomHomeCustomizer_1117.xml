@@ -94,426 +94,526 @@
                     </focusedlayout>
                     <content>
                         <item id="1013" description="VAddons">
-                            <visible>!Skin.HasSetting(hidevaddons) + Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)</visible>
-                            <thumb>icons/vaddons.png</thumb>
-                            <label>$LOCALIZE[157] $LOCALIZE[24001]</label>
-                            <onclick>Skin.ToggleSetting(hidevaddons)</onclick>
-                        </item>
-                        <item id="1013" description="Movies">
-                            <visible>Skin.HasSetting(hidevaddons) + Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)</visible>
-                            <thumb>help/off.png</thumb>
-                            <label>$LOCALIZE[157] $LOCALIZE[24001]</label>
-                            <onclick>Skin.ToggleSetting(hidevaddons)</onclick>
-                        </item>
-                        <item id="1001" description="Movies">
-                            <visible>!Skin.HasSetting(hidemovie)</visible>
-                            <thumb>icons/movies.png</thumb>
-                            <label>$LOCALIZE[20342]</label>
-                            <onclick>Skin.ToggleSetting(hidemovie)</onclick>
-                        </item>
-                        <item id="1001" description="Movies">
-                            <visible>Skin.HasSetting(hidemovie)</visible>
-                            <thumb>help/off.png</thumb>
-                            <label>$LOCALIZE[20342]</label>
-                            <onclick>Skin.ToggleSetting(hidemovie)</onclick>
-                        </item>
-                        <item id="1002" description="TV">
-                            <visible>!Skin.HasSetting(hidetv)</visible>
-                            <thumb>icons/tvshows.png</thumb>
-                            <label>$LOCALIZE[20343]</label>
-                            <onclick>Skin.ToggleSetting(hidetv)</onclick>
-                        </item>
-                        <item id="1002" description="TV">
-                            <visible>Skin.HasSetting(hidetv)</visible>
-                            <thumb>help/off.png</thumb>
-                            <label>$LOCALIZE[20343]</label>
-                            <onclick>Skin.ToggleSetting(hidetv)</onclick>
-                        </item>
-                        <item id="1003" description="Music">
-                            <visible>!Skin.HasSetting(hidemusic)</visible>
-                            <thumb>icons/music.png</thumb>
-                            <label>$LOCALIZE[2]</label>
-                            <onclick>Skin.ToggleSetting(hidemusic)</onclick>
-                        </item>
-                        <item id="1003" description="Music">
-                            <visible>Skin.HasSetting(hidemusic)</visible>
-                            <thumb>help/off.png</thumb>
-                            <label>$LOCALIZE[2]</label>
-                            <onclick>Skin.ToggleSetting(hidemusic)</onclick>
-                        </item>
-                        <item id="1005" description="Addons">
-                            <visible>!Skin.HasSetting(hideaddon)</visible>
-                            <thumb>icons/addons.png</thumb>
-                            <label>$LOCALIZE[24001]</label>
-                            <onclick>Skin.ToggleSetting(hideaddon)</onclick>
-                        </item>
-                        <item id="1005" description="Addons">
-                            <visible>Skin.HasSetting(hideaddon)</visible>
-                            <thumb>help/off.png</thumb>
-                            <label>$LOCALIZE[24001]</label>
-                            <onclick>Skin.ToggleSetting(hideaddon)</onclick>
-                        </item>
-                        <item id="1004" description="Photos">
-                            <visible>!Skin.HasSetting(hidepic)</visible>
-                            <thumb>icons/photos.png</thumb>
-                            <label>$LOCALIZE[1]</label>
-                            <onclick>Skin.ToggleSetting(hidepic)</onclick>
-                        </item>
-                        <item id="1004" description="Photos">
-                            <visible>Skin.HasSetting(hidepic)</visible>
-                            <thumb>help/off.png</thumb>
-                            <label>$LOCALIZE[1]</label>
-                            <onclick>Skin.ToggleSetting(hidepic)</onclick>
-                        </item>
-                        <item id="1006" description="Weather">
-                            <visible>!Skin.HasSetting(hidewtr)</visible>
-                            <thumb>icons/weather.png</thumb>
-                            <label>$LOCALIZE[8]</label>
-                            <onclick>Skin.ToggleSetting(hidewtr)</onclick>
-                        </item>
-                        <item id="1006" description="Weather">
-                            <visible>Skin.HasSetting(hidewtr)</visible>
-                            <thumb>help/off.png</thumb>
-                            <label>$LOCALIZE[8]</label>
-                            <onclick>Skin.ToggleSetting(hidewtr)</onclick>
-                        </item>
-                        <item id="1010" description="Favourites">
-                            <visible>!Skin.HasSetting(hidefav)</visible>
-                            <thumb>icons/favs.png</thumb>
-                            <label>$LOCALIZE[1036]</label>
-                            <onclick>Skin.ToggleSetting(hidefav)</onclick>
-                        </item>
-                        <item id="1010" description="Favourites">
-                            <visible>Skin.HasSetting(hidefav)</visible>
-                            <thumb>help/off.png</thumb>
-                            <label>$LOCALIZE[1036]</label>
-                            <onclick>Skin.ToggleSetting(hidefav)</onclick>
-                        </item>
-                        <item id="356">
-                          <visible>!Skin.HasSetting(hidetheater)</visible>
-                          <thumb>help/off.png</thumb>
-                          <label>31422</label>
-                          <onclick>Skin.ToggleSetting(hidetheater)</onclick>
-                        </item>
-                        <item id="356">
-                          <visible>Skin.HasSetting(hidetheater)</visible>
-                          <thumb>icons/extendedinfotheater.png</thumb>
-                          <label>31422</label>
-                          <onclick>Skin.ToggleSetting(hidetheater)</onclick>
-                        </item>
-                        <item id="357">
-                          <visible>!Skin.HasSetting(hidedvdrel)</visible>
-                          <thumb>help/off.png</thumb>
-                          <label>31423</label>
-                          <onclick>Skin.ToggleSetting(hidedvdrel)</onclick>
-                        </item>
-                        <item id="357">
-                          <visible>Skin.HasSetting(hidedvdrel)</visible>
-                          <thumb>icons/extendedinfodvd.png</thumb>
-                          <label>31423</label>
-                          <onclick>Skin.ToggleSetting(hidedvdrel)</onclick>
-                        </item>
-                        <item id="1014">
-                            <visible>!Skin.HasSetting(PVRhide)</visible>
-                            <thumb>icons/LiveTV.png</thumb>
-                            <label>31059</label>
-                            <onclick>Skin.ToggleSetting(PVRhide)</onclick>
-                        </item>
-                        <item id="1014">
-                            <visible>Skin.HasSetting(PVRhide)</visible>
-                            <thumb>help/off.png</thumb>
-                            <label>31059</label>
-                            <onclick>Skin.ToggleSetting(PVRhide)</onclick>
-                        </item>
-                        <item id="1014">
-                            <visible>!System.GetBool(pvrmanager.enabled)</visible>
-                            <thumb>help/off.png</thumb>
-                            <label>31059</label>
-                            <onclick>ActivateWindow(pvrsettings)</onclick>
-                        </item>
-                        <item id="601" description="HomeFav">
-                            <visible>!String.IsEmpty(Skin.String(HomeFav.1.Label))</visible>
-                            <label>$INFO[Skin.String(HomeFav.1.Label)]</label>
-                            <label2>+ $LOCALIZE[1036]</label2>
-                            <thumb>$INFO[Skin.String(HomeFav.1.Icon)]</thumb>
-                            <onclick>SetFocus(9000)</onclick>
-                        </item>
-                        <item id="601" description="HomeFav">
-                            <visible>String.IsEmpty(Skin.String(HomeFav.1.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[1036]</label>
-                            <onclick>RunScript(script.favourites,property=HomeFav.1)</onclick>
-                        </item>
-                        <item id="602" description="HomeFav">
-                            <visible>!String.IsEmpty(Skin.String(HomeFav.2.Label))</visible>
-                            <label>$INFO[Skin.String(HomeFav.2.Label)]</label>
-                            <label2>+ $LOCALIZE[1036]</label2>
-                            <thumb>$INFO[Skin.String(HomeFav.2.Icon)]</thumb>
-                            <onclick>SetFocus(9000)</onclick>
-                        </item>
-                        <item id="602" description="HomeFav">
-                            <visible>String.IsEmpty(Skin.String(HomeFav.2.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[1036]</label>
-                            <onclick>RunScript(script.favourites,property=HomeFav.2)</onclick>
-                        </item>
-                        <item id="603" description="HomeFav">
-                            <visible>!String.IsEmpty(Skin.String(HomeFav.3.Label))</visible>
-                            <label>$INFO[Skin.String(HomeFav.3.Label)]</label>
-                            <label2>+ $LOCALIZE[1036]</label2>
-                            <thumb>$INFO[Skin.String(HomeFav.3.Icon)]</thumb>
-                            <onclick>SetFocus(9000)</onclick>
-                        </item>
-                        <item id="603" description="HomeFav">
-                            <visible>String.IsEmpty(Skin.String(HomeFav.3.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[1036]</label>
-                            <onclick>RunScript(script.favourites,property=HomeFav.3)</onclick>
-                        </item>
-                        <item id="604" description="HomeFav">
-                            <visible>!String.IsEmpty(Skin.String(HomeFav.4.Label))</visible>
-                            <label>$INFO[Skin.String(HomeFav.4.Label)]</label>
-                            <label2>+ $LOCALIZE[1036]</label2>
-                            <thumb>$INFO[Skin.String(HomeFav.4.Icon)]</thumb>
-                            <onclick>SetFocus(9000)</onclick>
-                        </item>
-                        <item id="604" description="HomeFav">
-                            <visible>String.IsEmpty(Skin.String(HomeFav.4.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[1036]</label>
-                            <onclick>RunScript(script.favourites,property=HomeFav.4)</onclick>
-                        </item>
-                        <item id="605" description="HomeFav">
-                            <visible>!String.IsEmpty(Skin.String(HomeFav.5.Label))</visible>
-                            <label>$INFO[Skin.String(HomeFav.5.Label)]</label>
-                            <label2>+ $LOCALIZE[1036]</label2>
-                            <thumb>$INFO[Skin.String(HomeFav.5.Icon)]</thumb>
-                            <onclick>SetFocus(9000)</onclick>
-                        </item>
-                        <item id="605" description="HomeFav">
-                            <visible>String.IsEmpty(Skin.String(HomeFav.5.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[1036]</label>
-                            <onclick>RunScript(script.favourites,property=HomeFav.5)</onclick>
-                        </item>
-                        <item id="606" description="HomeFav">
-                            <visible>!String.IsEmpty(Skin.String(HomeFav.6.Label))</visible>
-                            <label>$INFO[Skin.String(HomeFav.6.Label)]</label>
-                            <label2>+ $LOCALIZE[1036]</label2>
-                            <thumb>$INFO[Skin.String(HomeFav.6.Icon)]</thumb>
-                            <onclick>SetFocus(9000)</onclick>
-                        </item>
-                        <item id="606" description="HomeFav">
-                            <visible>String.IsEmpty(Skin.String(HomeFav.6.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[1036]</label>
-                            <onclick>RunScript(script.favourites,property=HomeFav.6)</onclick>
-                        </item>
-                        <item id="401" description="AddonCustom">
-                            <visible>!String.IsEmpty(Skin.String(HomeAddon.1.Label))</visible>
-                            <thumb>$INFO[Skin.String(HomeAddon.1.Icon)]</thumb>
-                            <label2>$INFO[system.addonicon(Skin.String(HomeAddon.1.Label))]</label2>
-                            <label>$INFO[system.addonTitle(Skin.String(HomeAddon.1.Label))]</label>
-                            <onclick>SetFocus(9000)</onclick>
-                        </item>
-                        <item id="401" description="AddonCustom">
-                            <visible>String.IsEmpty(Skin.String(HomeAddon.1.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[Addon]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.1.Label,xbmc.python.pluginsource)</onclick>
-                            <onclick>Skin.Reset(HomeAddon.1.Icon)</onclick>
-                        </item>
-                        <item id="402" description="AddonCustom">
-                            <visible>!String.IsEmpty(Skin.String(HomeAddon.2.Label))</visible>
-                            <thumb>$INFO[Skin.String(HomeAddon.2.Icon)]</thumb>
-                            <label2>$INFO[system.addonicon(Skin.String(HomeAddon.2.Label))]</label2>
-                            <label>$INFO[system.addonTitle(Skin.String(HomeAddon.2.Label))]</label>
-                            <onclick>SetFocus(9000)</onclick>
-                        </item>
-                        <item id="402" description="AddonCustom">
-                            <visible>String.IsEmpty(Skin.String(HomeAddon.2.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[Addon]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.2.Label,xbmc.python.pluginsource)</onclick>
-                            <onclick>Skin.Reset(HomeAddon.2.Icon)</onclick>
-                        </item>
-                        <item id="403" description="AddonCustom">
-                            <visible>!String.IsEmpty(Skin.String(HomeAddon.3.Label))</visible>
-                            <thumb>$INFO[Skin.String(HomeAddon.3.Icon)]</thumb>
-                            <label2>$INFO[system.addonicon(Skin.String(HomeAddon.3.Label))]</label2>
-                            <label>$INFO[system.addonTitle(Skin.String(HomeAddon.3.Label))]</label>
-                            <onclick>SetFocus(9000)</onclick>
-                        </item>
-                        <item id="403" description="AddonCustom">
-                            <visible>String.IsEmpty(Skin.String(HomeAddon.3.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[Addon]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.3.Label,xbmc.python.pluginsource)</onclick>
-                            <onclick>Skin.Reset(HomeAddon.3.Icon)</onclick>
-                        </item>
-                        <item id="404" description="AddonCustom">
-                            <visible>!String.IsEmpty(Skin.String(HomeAddon.4.Label))</visible>
-                            <thumb>$INFO[Skin.String(HomeAddon.4.Icon)]</thumb>
-                            <label2>$INFO[system.addonicon(Skin.String(HomeAddon.4.Label))]</label2>
-                            <label>$INFO[system.addonTitle(Skin.String(HomeAddon.4.Label))]</label>
-                            <onclick>SetFocus(9000)</onclick>
-                        </item>
-                        <item id="404" description="AddonCustom">
-                            <visible>String.IsEmpty(Skin.String(HomeAddon.4.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[Addon]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.4.Label,xbmc.python.pluginsource)</onclick>
-                            <onclick>Skin.Reset(HomeAddon.4.Icon)</onclick>
-                        </item>
-                        <item id="405" description="AddonCustom">
-                            <visible>!String.IsEmpty(Skin.String(HomeAddon.5.Label))</visible>
-                            <thumb>$INFO[Skin.String(HomeAddon.5.Icon)]</thumb>
-                            <label2>$INFO[system.addonicon(Skin.String(HomeAddon.5.Label))]</label2>
-                            <label>$INFO[system.addonTitle(Skin.String(HomeAddon.5.Label))]</label>
-                            <onclick>SetFocus(9000)</onclick>
-                        </item>
-                        <item id="405" description="AddonCustom">
-                            <visible>String.IsEmpty(Skin.String(HomeAddon.5.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[Addon]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.5.Label,xbmc.python.pluginsource)</onclick>
-                            <onclick>Skin.Reset(HomeAddon.5.Icon)</onclick>
-                        </item>
-                        <item id="406" description="AddonCustom">
-                            <visible>!String.IsEmpty(Skin.String(HomeAddon.6.Label))</visible>
-                            <thumb>$INFO[Skin.String(HomeAddon.6.Icon)]</thumb>
-                            <label2>$INFO[system.addonicon(Skin.String(HomeAddon.6.Label))]</label2>
-                            <label>$INFO[system.addonTitle(Skin.String(HomeAddon.6.Label))]</label>
-                            <onclick>SetFocus(9000)</onclick>
-                        </item>
-                        <item id="406" description="AddonCustom">
-                            <visible>String.IsEmpty(Skin.String(HomeAddon.6.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[Addon]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.6.Label,xbmc.python.pluginsource)</onclick>
-                            <onclick>Skin.Reset(HomeAddon.6.Icon)</onclick>
-                        </item>
-                        <item id="501" description="ScriptCustom">
-                            <visible>!String.IsEmpty(Skin.String(HomeAddon.7.Label))</visible>
-                            <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.7.Label))]</thumb>
-                            <label>$INFO[system.addonTitle(Skin.String(HomeAddon.7.Label))]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.7.Label,xbmc.python.script)</onclick>
-                        </item>
-                        <item id="501" description="ScriptCustom">
-                            <visible>String.IsEmpty(Skin.String(HomeAddon.7.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[24009]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.7.Label,xbmc.python.script)</onclick>
-                        </item>
-                        <item id="502" description="ScriptCustom">
-                            <visible>!String.IsEmpty(Skin.String(HomeAddon.8.Label))</visible>
-                            <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.8.Label))]</thumb>
-                            <label>$INFO[system.addonTitle(Skin.String(HomeAddon.8.Label))]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.8.Label,xbmc.python.script)</onclick>
-                        </item>
-                        <item id="502" description="ScriptCustom">
-                            <visible>String.IsEmpty(Skin.String(HomeAddon.8.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[24009]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.8.Label,xbmc.python.script)</onclick>
-                        </item>
-                        <item id="503" description="ScriptCustom">
-                            <visible>!String.IsEmpty(Skin.String(HomeAddon.9.Label))</visible>
-                            <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.9.Label))]</thumb>
-                            <label>$INFO[system.addonTitle(Skin.String(HomeAddon.9.Label))]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.9.Label,xbmc.python.script)</onclick>
-                        </item>
-                        <item id="503" description="ScriptCustom">
-                            <visible>String.IsEmpty(Skin.String(HomeAddon.9.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[24009]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.9.Label,xbmc.python.script)</onclick>
-                        </item>
-                        <item id="504" description="ScriptCustom">
-                            <visible>!String.IsEmpty(Skin.String(HomeAddon.10.Label))</visible>
-                            <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.10.Label))]</thumb>
-                            <label>$INFO[system.addonTitle(Skin.String(HomeAddon.10.Label))]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.10.Label,xbmc.python.script)</onclick>
-                        </item>
-                        <item id="504" description="ScriptCustom">
-                            <visible>String.IsEmpty(Skin.String(HomeAddon.10.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[24009]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.10.Label,xbmc.python.script)</onclick>
-                        </item>
-                        <item id="505" description="ScriptCustom">
-                            <visible>!String.IsEmpty(Skin.String(HomeAddon.11.Label))</visible>
-                            <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.11.Label))]</thumb>
-                            <label>$INFO[system.addonTitle(Skin.String(HomeAddon.11.Label))]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.11.Label,xbmc.python.script)</onclick>
-                        </item>
-                        <item id="505" description="ScriptCustom">
-                            <visible>String.IsEmpty(Skin.String(HomeAddon.11.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[24009]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.11.Label,xbmc.python.script)</onclick>
-                        </item>
-                        <item id="506" description="ScriptCustom">
-                            <visible>!String.IsEmpty(Skin.String(HomeAddon.12.Label))</visible>
-                            <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.12.Label))]</thumb>
-                            <label>$INFO[system.addonTitle(Skin.String(HomeAddon.12.Label))]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.12.Label,xbmc.python.script)</onclick>
-                        </item>
-                        <item id="506" description="ScriptCustom">
-                            <visible>String.IsEmpty(Skin.String(HomeAddon.12.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[24009]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.12.Label,xbmc.python.script)</onclick>
-                        </item>
-                        <item id="1008" description="Programs">
-                            <visible>!Skin.HasSetting(hideprog)</visible>
-                            <thumb>icons/program.png</thumb>
-                            <label>$LOCALIZE[0]</label>
-                            <onclick>Skin.ToggleSetting(hideprog)</onclick>
-                        </item>
-                        <item id="1008" description="Programs">
-                            <visible>Skin.HasSetting(hideprog)</visible>
-                            <thumb>help/off.png</thumb>
-                            <label>$LOCALIZE[0]</label>
-                            <onclick>Skin.ToggleSetting(hideprog)</onclick>
-                        </item>
-                        <item id="1011" description="Sources">
-                            <visible>!Skin.HasSetting(hideSources)</visible>
-                            <thumb>icons/Sources.png</thumb>
-                            <label>20094</label>
-                            <onclick>Skin.ToggleSetting(hideSources)</onclick>
-                        </item>
-                        <item id="1011" description="Sources">
-                            <visible>Skin.HasSetting(hideSources)</visible>
-                            <thumb>help/off.png</thumb>
-                            <label>20094</label>
-                            <onclick>Skin.ToggleSetting(hideSources)</onclick>
-                        </item>
-                        <!--<item id="1009" description="RSS">
-                          <visible>!Skin.HasSetting(hiderss)</visible>
-                          <thumb>icons/RSS.png</thumb>
-                          <label>RSS</label>
-                          <onclick>Skin.ToggleSetting(hiderss)</onclick>
-                        </item>
-                        <item id="1009" description="RSS">
-                          <visible>Skin.HasSetting(hiderss)</visible>
-                          <thumb>help/off.png</thumb>
-                          <label>RSS</label>
-                          <onclick>Skin.ToggleSetting(hiderss)</onclick>
-                        </item>-->
-
-                        <item id="1012" description="Browser">
-                            <visible>!Skin.HasSetting(hidebro)</visible>
-                            <thumb>icons/browser.png</thumb>
-                            <label>7</label>
-                            <onclick>Skin.ToggleSetting(hidebro)</onclick>
-                        </item>
-                        <item id="1012" description="Browser">
-                            <visible>Skin.HasSetting(hidebro)</visible>
-                            <thumb>help/off.png</thumb>
-                            <label>7</label>
-                            <onclick>Skin.ToggleSetting(hidebro)</onclick>
-                        </item>
+                        <visible>!Skin.HasSetting(hidevaddons) + Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)</visible>
+                        <thumb>icons/vaddons.png</thumb>
+                        <label>$LOCALIZE[157] $LOCALIZE[24001]</label>
+                        <onclick>Skin.ToggleSetting(hidevaddons)</onclick>
+                    </item>
+                    <item id="1013" description="VAddons -OFF">
+                        <visible>Skin.HasSetting(hidevaddons) + Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>$LOCALIZE[157] $LOCALIZE[24001]</label>
+                        <onclick>Skin.ToggleSetting(hidevaddons)</onclick>
+                    </item>
+                    <item id="1001" description="Movies">
+                        <visible>!Skin.HasSetting(hidemovie)</visible>
+                        <thumb>icons/movies.png</thumb>
+                        <label>$LOCALIZE[20342]</label>
+                        <onclick>Skin.ToggleSetting(hidemovie)</onclick>
+                    </item>
+                    <item id="1001" description="Movies -OFF">
+                        <visible>Skin.HasSetting(hidemovie)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>$LOCALIZE[20342]</label>
+                        <onclick>Skin.ToggleSetting(hidemovie)</onclick>
+                    </item>
+                    <item id="1002" description="TV">
+                        <visible>!Skin.HasSetting(hidetv)</visible>
+                        <thumb>icons/tvshows.png</thumb>
+                        <label>$LOCALIZE[20343]</label>
+                        <onclick>Skin.ToggleSetting(hidetv)</onclick>
+                    </item>
+                    <item id="1002" description="TV -OFF">
+                        <visible>Skin.HasSetting(hidetv)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>$LOCALIZE[20343]</label>
+                        <onclick>Skin.ToggleSetting(hidetv)</onclick>
+                    </item>
+                    <item id="1003" description="Music">
+                        <visible>!Skin.HasSetting(hidemusic)</visible>
+                        <thumb>icons/music.png</thumb>
+                        <label>$LOCALIZE[2]</label>
+                        <onclick>Skin.ToggleSetting(hidemusic)</onclick>
+                    </item>
+                    <item id="1003" description="Music -OFF">
+                        <visible>Skin.HasSetting(hidemusic)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>$LOCALIZE[2]</label>
+                        <onclick>Skin.ToggleSetting(hidemusic)</onclick>
+                    </item>
+                    <item id="607" description="HomeFav">
+                        <visible>!String.IsEmpty(Skin.String(HomeFav.7.Label))</visible>
+                        <label>$INFO[Skin.String(HomeFav.7.Label)]</label>
+                        <label2>+ $LOCALIZE[1036]</label2>
+                        <thumb>$INFO[Skin.String(HomeFav.7.Icon)]</thumb>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="607" description="HomeFav">
+                        <visible>String.IsEmpty(Skin.String(HomeFav.7.Label))</visible>
+                        <thumb>DefaultFavourite.png</thumb>
+                        <label>+ $LOCALIZE[1036]</label>
+                        <onclick>RunScript(script.favourites,property=HomeFav.7)</onclick>
+                    </item>
+                    <item id="608" description="HomeFav">
+                        <visible>!String.IsEmpty(Skin.String(HomeFav.8.Label))</visible>
+                        <label>$INFO[Skin.String(HomeFav.8.Label)]</label>
+                        <label2>+ $LOCALIZE[1036]</label2>
+                        <thumb>$INFO[Skin.String(HomeFav.8.Icon)]</thumb>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="608" description="HomeFav">
+                        <visible>String.IsEmpty(Skin.String(HomeFav.8.Label))</visible>
+                        <thumb>DefaultFavourite.png</thumb>
+                        <label>+ $LOCALIZE[1036]</label>
+                        <onclick>RunScript(script.favourites,property=HomeFav.8)</onclick>
+                    </item>
+                    <item id="1005" description="Addons">
+                        <visible>!Skin.HasSetting(hideaddon)</visible>
+                        <thumb>icons/addons.png</thumb>
+                        <label>$LOCALIZE[24001]</label>
+                        <onclick>Skin.ToggleSetting(hideaddon)</onclick>
+                    </item>
+                    <item id="1005" description="Addons -OFF">
+                        <visible>Skin.HasSetting(hideaddon)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>$LOCALIZE[24001]</label>
+                        <onclick>Skin.ToggleSetting(hideaddon)</onclick>
+                    </item>
+                    <item id="1014">
+                        <visible>System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
+                        <thumb>icons/LiveTV.png</thumb>
+                        <label>31059</label>
+                        <onclick>Skin.ToggleSetting(PVRhide)</onclick>
+                    </item>
+                    <item id="1014">
+                        <visible>System.GetBool(pvrmanager.enabled) + Skin.HasSetting(PVRhide)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>31059</label>
+                        <onclick>Skin.ToggleSetting(PVRhide)</onclick>
+                    </item>
+                    <item id="1014">
+                        <visible>!System.GetBool(pvrmanager.enabled)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>31059</label>
+                        <onclick>ActivateWindow(pvrsettings)</onclick>
+                    </item>
+                    <item id="1004" description="Photos">
+                        <visible>!Skin.HasSetting(hidepic)</visible>
+                        <thumb>icons/photos.png</thumb>
+                        <label>$LOCALIZE[1]</label>
+                        <onclick>Skin.ToggleSetting(hidepic)</onclick>
+                    </item>
+                    <item id="1004" description="Photos -OFF">
+                        <visible>Skin.HasSetting(hidepic)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>$LOCALIZE[1]</label>
+                        <onclick>Skin.ToggleSetting(hidepic)</onclick>
+                    </item>
+                    <item id="1006" description="Weather">
+                        <visible>!Skin.HasSetting(hidewtr)</visible>
+                        <thumb>weathershelf/30.png</thumb>
+                        <label>$LOCALIZE[8]</label>
+                        <onclick>Skin.ToggleSetting(hidewtr)</onclick>
+                    </item>
+                    <item id="1006" description="Weather -OFF">
+                        <visible>Skin.HasSetting(hidewtr)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>$LOCALIZE[8]</label>
+                        <onclick>Skin.ToggleSetting(hidewtr)</onclick>
+                    </item>
+                    <item id="1010" description="Favourites">
+                        <visible>!Skin.HasSetting(hidefav)</visible>
+                        <thumb>icons/favs.png</thumb>
+                        <label>$LOCALIZE[1036]</label>
+                        <onclick>Skin.ToggleSetting(hidefav)</onclick>
+                    </item>
+                    <item id="1010" description="Favourites -OFF">
+                        <visible>Skin.HasSetting(hidefav)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>$LOCALIZE[1036]</label>
+                        <onclick>Skin.ToggleSetting(hidefav)</onclick>
+                    </item>
+                    <item id="358" description="next aired">
+                        <visible>Skin.HasSetting(nextair) + Library.HasContent(TVShows)</visible>
+                        <thumb>icons/nextaired.png</thumb>
+                        <label>Next Aired</label>
+                        <onclick>Skin.ToggleSetting(nextair)</onclick>
+                    </item>
+                    <item id="358" description="next aired -OFF">
+                        <visible>!Skin.HasSetting(nextair) + Library.HasContent(TVShows)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>Next Aired</label>
+                        <onclick condition="!System.HasAddon(script.tv.show.next.aired)">InstallAddon(script.tv.show.next.aired)</onclick>
+                        <onclick condition="System.HasAddon(script.tv.show.next.aired)">Skin.ToggleSetting(nextair)</onclick>
+                    </item>
+                    <item id="356" description="search">
+                        <visible>Skin.HasSetting(sear)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>137</label>
+                        <onclick>Skin.ToggleSetting(sear)</onclick>
+                    </item>
+                    <item id="356" description="search -OFF">
+                        <visible>!Skin.HasSetting(sear)</visible>
+                        <thumb>icons/search.png</thumb>
+                        <label>137</label>
+                        <onclick>Skin.ToggleSetting(sear)</onclick>
+                    </item>
+                    <item id="357" description="3d movies">
+                        <visible>!Skin.HasSetting(3dmovs)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>3D $LOCALIZE[342]</label>
+                        <onclick>Skin.ToggleSetting(3dmovs)</onclick>
+                    </item>
+                    <item id="357" description="3d movies -OFF">
+                        <visible>Skin.HasSetting(3dmovs)</visible>
+                        <thumb>icons/3d.png</thumb>
+                        <label>3D $LOCALIZE[342]</label>
+                        <onclick>Skin.ToggleSetting(3dmovs)</onclick>
+                    </item>
+                    <item id="359">
+                        <visible>Skin.HasSetting(showtheater)</visible>
+                        <thumb>icons/extendedinfotheater.png</thumb>
+                        <label>31422</label>
+                        <onclick>Skin.ToggleSetting(showtheater)</onclick>
+                    </item>
+                    <item id="359">
+                        <visible>!Skin.HasSetting(showtheater)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>31422</label>
+                        <onclick condition="System.HasAddon(script.extendedinfo)">Skin.ToggleSetting(showtheater)</onclick>
+                        <onclick condition="!System.HasAddon(script.extendedinfo)">InstallAddon(script.extendedinfo)</onclick>
+                    </item>
+                    <item id="360">
+                        <visible>Skin.HasSetting(showdvdrel)</visible>
+                        <thumb>icons/extendedinfodvd.png</thumb>
+                        <label>31423</label>
+                        <onclick>Skin.ToggleSetting(showdvdrel)</onclick>
+                    </item>
+                    <item id="360">
+                        <visible>!Skin.HasSetting(showdvdrel)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>31423</label>
+                        <onclick condition="System.HasAddon(script.extendedinfo)">Skin.ToggleSetting(showdvdrel)</onclick>
+                        <onclick condition="!System.HasAddon(script.extendedinfo)">InstallAddon(script.extendedinfo)</onclick>
+                    </item>
+                    <item id="601" description="HomeFav">
+                        <visible>!String.IsEmpty(Skin.String(HomeFav.1.Label))</visible>
+                        <label>$INFO[Skin.String(HomeFav.1.Label)]</label>
+                        <label2>+ $LOCALIZE[1036]</label2>
+                        <thumb>$INFO[Skin.String(HomeFav.1.Icon)]</thumb>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="601" description="HomeFav">
+                        <visible>String.IsEmpty(Skin.String(HomeFav.1.Label))</visible>
+                        <thumb>DefaultFavourite.png</thumb>
+                        <label>+ $LOCALIZE[1036]</label>
+                        <onclick>RunScript(script.favourites,property=HomeFav.1)</onclick>
+                    </item>
+                    <item id="602" description="HomeFav">
+                        <visible>!String.IsEmpty(Skin.String(HomeFav.2.Label))</visible>
+                        <label>$INFO[Skin.String(HomeFav.2.Label)]</label>
+                        <label2>+ $LOCALIZE[1036]</label2>
+                        <thumb>$INFO[Skin.String(HomeFav.2.Icon)]</thumb>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="602" description="HomeFav">
+                        <visible>String.IsEmpty(Skin.String(HomeFav.2.Label))</visible>
+                        <thumb>DefaultFavourite.png</thumb>
+                        <label>+ $LOCALIZE[1036]</label>
+                        <onclick>RunScript(script.favourites,property=HomeFav.2)</onclick>
+                    </item>
+                    <item id="603" description="HomeFav">
+                        <visible>!String.IsEmpty(Skin.String(HomeFav.3.Label))</visible>
+                        <label>$INFO[Skin.String(HomeFav.3.Label)]</label>
+                        <label2>+ $LOCALIZE[1036]</label2>
+                        <thumb>$INFO[Skin.String(HomeFav.3.Icon)]</thumb>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="603" description="HomeFav">
+                        <visible>String.IsEmpty(Skin.String(HomeFav.3.Label))</visible>
+                        <thumb>DefaultFavourite.png</thumb>
+                        <label>+ $LOCALIZE[1036]</label>
+                        <onclick>RunScript(script.favourites,property=HomeFav.3)</onclick>
+                    </item>
+                    <item id="604" description="HomeFav">
+                        <visible>!String.IsEmpty(Skin.String(HomeFav.4.Label))</visible>
+                        <label>$INFO[Skin.String(HomeFav.4.Label)]</label>
+                        <label2>+ $LOCALIZE[1036]</label2>
+                        <thumb>$INFO[Skin.String(HomeFav.4.Icon)]</thumb>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="604" description="HomeFav">
+                        <visible>String.IsEmpty(Skin.String(HomeFav.4.Label))</visible>
+                        <thumb>DefaultFavourite.png</thumb>
+                        <label>+ $LOCALIZE[1036]</label>
+                        <onclick>RunScript(script.favourites,property=HomeFav.4)</onclick>
+                    </item>
+                    <item id="605" description="HomeFav">
+                        <visible>!String.IsEmpty(Skin.String(HomeFav.5.Label))</visible>
+                        <label>$INFO[Skin.String(HomeFav.5.Label)]</label>
+                        <label2>+ $LOCALIZE[1036]</label2>
+                        <thumb>$INFO[Skin.String(HomeFav.5.Icon)]</thumb>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="605" description="HomeFav">
+                        <visible>String.IsEmpty(Skin.String(HomeFav.5.Label))</visible>
+                        <thumb>DefaultFavourite.png</thumb>
+                        <label>+ $LOCALIZE[1036]</label>
+                        <onclick>RunScript(script.favourites,property=HomeFav.5)</onclick>
+                    </item>
+                    <item id="606" description="HomeFav">
+                        <visible>!String.IsEmpty(Skin.String(HomeFav.6.Label))</visible>
+                        <label>$INFO[Skin.String(HomeFav.6.Label)]</label>
+                        <label2>+ $LOCALIZE[1036]</label2>
+                        <thumb>$INFO[Skin.String(HomeFav.6.Icon)]</thumb>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="606" description="HomeFav">
+                        <visible>String.IsEmpty(Skin.String(HomeFav.6.Label))</visible>
+                        <thumb>DefaultFavourite.png</thumb>
+                        <label>+ $LOCALIZE[1036]</label>
+                        <onclick>RunScript(script.favourites,property=HomeFav.6)</onclick>
+                    </item>
+                    <item id="401" description="AddonCustom">
+                        <visible>!String.IsEmpty(Skin.String(HomeAddon.1.Label))</visible>
+                        <thumb>$INFO[Skin.String(HomeAddon.1.Icon)]</thumb>
+                        <label2>$INFO[system.addonicon(Skin.String(HomeAddon.1.Label))]</label2>
+                        <label>$INFO[system.addonTitle(Skin.String(HomeAddon.1.Label))]</label>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="401" description="AddonCustom">
+                        <visible>String.IsEmpty(Skin.String(HomeAddon.1.Label))</visible>
+                        <thumb>DefaultAddon.png</thumb>
+                        <label>+ $LOCALIZE[24000]</label>
+                        <onclick>Skin.SetAddon(HomeAddon.1.Label,xbmc.python.pluginsource)</onclick>
+                        <onclick>Skin.Reset(HomeAddon.1.Icon)</onclick>
+                    </item>
+                    <item id="402" description="AddonCustom">
+                        <visible>!String.IsEmpty(Skin.String(HomeAddon.2.Label))</visible>
+                        <thumb>$INFO[Skin.String(HomeAddon.2.Icon)]</thumb>
+                        <label2>$INFO[system.addonicon(Skin.String(HomeAddon.2.Label))]</label2>
+                        <label>$INFO[system.addonTitle(Skin.String(HomeAddon.2.Label))]</label>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="402" description="AddonCustom">
+                        <visible>String.IsEmpty(Skin.String(HomeAddon.2.Label))</visible>
+                        <thumb>DefaultAddon.png</thumb>
+                        <label>+ $LOCALIZE[24000]</label>
+                        <onclick>Skin.SetAddon(HomeAddon.2.Label,xbmc.python.pluginsource)</onclick>
+                        <onclick>Skin.Reset(HomeAddon.2.Icon)</onclick>
+                    </item>
+                    <item id="403" description="AddonCustom">
+                        <visible>!String.IsEmpty(Skin.String(HomeAddon.3.Label))</visible>
+                        <thumb>$INFO[Skin.String(HomeAddon.3.Icon)]</thumb>
+                        <label2>$INFO[system.addonicon(Skin.String(HomeAddon.3.Label))]</label2>
+                        <label>$INFO[system.addonTitle(Skin.String(HomeAddon.3.Label))]</label>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="403" description="AddonCustom">
+                        <visible>String.IsEmpty(Skin.String(HomeAddon.3.Label))</visible>
+                        <thumb>DefaultAddon.png</thumb>
+                        <label>+ $LOCALIZE[24000]</label>
+                        <onclick>Skin.SetAddon(HomeAddon.3.Label,xbmc.python.pluginsource)</onclick>
+                        <onclick>Skin.Reset(HomeAddon.3.Icon)</onclick>
+                    </item>
+                    <item id="404" description="AddonCustom">
+                        <visible>!String.IsEmpty(Skin.String(HomeAddon.4.Label))</visible>
+                        <thumb>$INFO[Skin.String(HomeAddon.4.Icon)]</thumb>
+                        <label2>$INFO[system.addonicon(Skin.String(HomeAddon.4.Label))]</label2>
+                        <label>$INFO[system.addonTitle(Skin.String(HomeAddon.4.Label))]</label>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="404" description="AddonCustom">
+                        <visible>String.IsEmpty(Skin.String(HomeAddon.4.Label))</visible>
+                        <thumb>DefaultAddon.png</thumb>
+                        <label>+ $LOCALIZE[24000]</label>
+                        <onclick>Skin.SetAddon(HomeAddon.4.Label,xbmc.python.pluginsource)</onclick>
+                        <onclick>Skin.Reset(HomeAddon.4.Icon)</onclick>
+                    </item>
+                    <item id="405" description="AddonCustom">
+                        <visible>!String.IsEmpty(Skin.String(HomeAddon.5.Label))</visible>
+                        <thumb>$INFO[Skin.String(HomeAddon.5.Icon)]</thumb>
+                        <label2>$INFO[system.addonicon(Skin.String(HomeAddon.5.Label))]</label2>
+                        <label>$INFO[system.addonTitle(Skin.String(HomeAddon.5.Label))]</label>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="405" description="AddonCustom">
+                        <visible>String.IsEmpty(Skin.String(HomeAddon.5.Label))</visible>
+                        <thumb>DefaultAddon.png</thumb>
+                        <label>+ $LOCALIZE[24000]</label>
+                        <onclick>Skin.SetAddon(HomeAddon.5.Label,xbmc.python.pluginsource)</onclick>
+                        <onclick>Skin.Reset(HomeAddon.5.Icon)</onclick>
+                    </item>
+                    <item id="406" description="AddonCustom">
+                        <visible>!String.IsEmpty(Skin.String(HomeAddon.6.Label))</visible>
+                        <thumb>$INFO[Skin.String(HomeAddon.6.Icon)]</thumb>
+                        <label2>$INFO[system.addonicon(Skin.String(HomeAddon.6.Label))]</label2>
+                        <label>$INFO[system.addonTitle(Skin.String(HomeAddon.6.Label))]</label>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="406" description="AddonCustom">
+                        <visible>String.IsEmpty(Skin.String(HomeAddon.6.Label))</visible>
+                        <thumb>DefaultAddon.png</thumb>
+                        <label>+ $LOCALIZE[24000]</label>
+                        <onclick>Skin.SetAddon(HomeAddon.6.Label,xbmc.python.pluginsource)</onclick>
+                        <onclick>Skin.Reset(HomeAddon.6.Icon)</onclick>
+                    </item>
+                    <item id="501" description="ScriptCustom">
+                        <visible>!String.IsEmpty(Skin.String(HomeAddon.7.Label)) + String.IsEmpty(Skin.String(HomeAddon.7.Icon))</visible>
+                        <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.7.Label))]</thumb>
+                        <label>$INFO[system.addonTitle(Skin.String(HomeAddon.7.Label))]</label>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="501" description="ScriptCustom">
+                        <visible>!String.IsEmpty(Skin.String(HomeAddon.7.Label)) + !String.IsEmpty(Skin.String(HomeAddon.7.Icon))</visible>
+                        <thumb>$INFO[Skin.String(HomeAddon.7.Icon)]</thumb>
+                        <label>$INFO[system.addonTitle(Skin.String(HomeAddon.7.Label))]</label>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="501" description="ScriptCustom">
+                        <visible>String.IsEmpty(Skin.String(HomeAddon.7.Label))</visible>
+                        <thumb>DefaultAddon.png</thumb>
+                        <label>+ $LOCALIZE[24009]</label>
+                        <onclick>Skin.SetAddon(HomeAddon.7.Label,xbmc.python.script)</onclick>
+                    </item>
+                    <item id="502" description="ScriptCustom">
+                        <visible>!String.IsEmpty(Skin.String(HomeAddon.8.Label)) + String.IsEmpty(Skin.String(HomeAddon.8.Icon))</visible>
+                        <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.8.Label))]</thumb>
+                        <label>$INFO[system.addonTitle(Skin.String(HomeAddon.8.Label))]</label>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="502" description="ScriptCustom">
+                        <visible>!String.IsEmpty(Skin.String(HomeAddon.8.Label)) + !String.IsEmpty(Skin.String(HomeAddon.8.Icon))</visible>
+                        <thumb>$INFO[Skin.String(HomeAddon.8.Icon)]</thumb>
+                        <label>$INFO[system.addonTitle(Skin.String(HomeAddon.8.Label))]</label>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="502" description="ScriptCustom">
+                        <visible>String.IsEmpty(Skin.String(HomeAddon.8.Label))</visible>
+                        <thumb>DefaultAddon.png</thumb>
+                        <label>+ $LOCALIZE[24009]</label>
+                        <onclick>Skin.SetAddon(HomeAddon.8.Label,xbmc.python.script)</onclick>
+                    </item>
+                    <item id="503" description="ScriptCustom">
+                        <visible>!String.IsEmpty(Skin.String(HomeAddon.9.Label)) + String.IsEmpty(Skin.String(HomeAddon.9.Icon))</visible>
+                        <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.9.Label))]</thumb>
+                        <label>$INFO[system.addonTitle(Skin.String(HomeAddon.9.Label))]</label>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="503" description="ScriptCustom">
+                        <visible>!String.IsEmpty(Skin.String(HomeAddon.9.Label)) + !String.IsEmpty(Skin.String(HomeAddon.9.Icon))</visible>
+                        <thumb>$INFO[Skin.String(HomeAddon.9.Icon)]</thumb>
+                        <label>$INFO[system.addonTitle(Skin.String(HomeAddon.9.Label))]</label>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="503" description="ScriptCustom">
+                        <visible>String.IsEmpty(Skin.String(HomeAddon.9.Label))</visible>
+                        <thumb>DefaultAddon.png</thumb>
+                        <label>+ $LOCALIZE[24009]</label>
+                        <onclick>Skin.SetAddon(HomeAddon.9.Label,xbmc.python.script)</onclick>
+                    </item>
+                    <item id="504" description="ScriptCustom">
+                        <visible>!String.IsEmpty(Skin.String(HomeAddon.10.Label)) + String.IsEmpty(Skin.String(HomeAddon.10.Icon))</visible>
+                        <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.10.Label))]</thumb>
+                        <label>$INFO[system.addonTitle(Skin.String(HomeAddon.10.Label))]</label>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="504" description="ScriptCustom">
+                        <visible>!String.IsEmpty(Skin.String(HomeAddon.10.Label)) + !String.IsEmpty(Skin.String(HomeAddon.10.Icon))</visible>
+                        <thumb>$INFO[Skin.String(HomeAddon.10.Icon)]</thumb>
+                        <label>$INFO[system.addonTitle(Skin.String(HomeAddon.10.Label))]</label>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="504" description="ScriptCustom">
+                        <visible>String.IsEmpty(Skin.String(HomeAddon.10.Label))</visible>
+                        <thumb>DefaultAddon.png</thumb>
+                        <label>+ $LOCALIZE[24009]</label>
+                        <onclick>Skin.SetAddon(HomeAddon.10.Label,xbmc.python.script)</onclick>
+                    </item>
+                    <item id="505" description="ScriptCustom">
+                        <visible>!String.IsEmpty(Skin.String(HomeAddon.11.Label)) + String.IsEmpty(Skin.String(HomeAddon.11.Icon))</visible>
+                        <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.11.Label))]</thumb>
+                        <label>$INFO[system.addonTitle(Skin.String(HomeAddon.11.Label))]</label>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="505" description="ScriptCustom">
+                        <visible>!String.IsEmpty(Skin.String(HomeAddon.11.Label)) + !String.IsEmpty(Skin.String(HomeAddon.11.Icon))</visible>
+                        <thumb>$INFO[Skin.String(HomeAddon.11.Icon)]</thumb>
+                        <label>$INFO[system.addonTitle(Skin.String(HomeAddon.11.Label))]</label>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="505" description="ScriptCustom">
+                        <visible>String.IsEmpty(Skin.String(HomeAddon.11.Label))</visible>
+                        <thumb>DefaultAddon.png</thumb>
+                        <label>+ $LOCALIZE[24009]</label>
+                        <onclick>Skin.SetAddon(HomeAddon.11.Label,xbmc.python.script)</onclick>
+                    </item>
+                    <item id="506" description="ScriptCustom">
+                        <visible>!String.IsEmpty(Skin.String(HomeAddon.12.Label)) + String.IsEmpty(Skin.String(HomeAddon.12.Icon))</visible>
+                        <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.12.Label))]</thumb>
+                        <label>$INFO[system.addonTitle(Skin.String(HomeAddon.12.Label))]</label>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="506" description="ScriptCustom">
+                        <visible>!String.IsEmpty(Skin.String(HomeAddon.12.Label)) + !String.IsEmpty(Skin.String(HomeAddon.12.Icon))</visible>
+                        <thumb>$INFO[Skin.String(HomeAddon.12.Icon)]</thumb>
+                        <label>$INFO[system.addonTitle(Skin.String(HomeAddon.12.Label))]</label>
+                        <onclick>SetFocus(9000)</onclick>
+                    </item>
+                    <item id="506" description="ScriptCustom">
+                        <visible>String.IsEmpty(Skin.String(HomeAddon.12.Label))</visible>
+                        <thumb>DefaultAddon.png</thumb>
+                        <label>+ $LOCALIZE[24009]</label>
+                        <onclick>Skin.SetAddon(HomeAddon.12.Label,xbmc.python.script)</onclick>
+                    </item>
+                    <item id="347" description="Sources">
+                        <visible>!Skin.HasSetting(hideSources)</visible>
+                        <thumb>icons/Sources.png</thumb>
+                        <label>20094</label>
+                        <onclick>Skin.ToggleSetting(hideSources)</onclick>
+                    </item>
+                    <item id="347" description="Sources">
+                        <visible>Skin.HasSetting(hideSources)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>20094</label>
+                        <onclick>Skin.ToggleSetting(hideSources)</onclick>
+                    </item>
+                    <item id="361" description="video root">
+                        <visible>!Skin.HasSetting(hidevidroot)</visible>
+                        <thumb>icons/vidroot.png</thumb>
+                        <label>3</label>
+                        <onclick>Skin.ToggleSetting(hidevidroot)</onclick>
+                    </item>
+                    <item id="361" description="video root">
+                        <visible>Skin.HasSetting(hidevidroot)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>3</label>
+                        <onclick>Skin.ToggleSetting(hidevidroot)</onclick>
+                    </item>
+                    <item id="1012" description="Browser">
+                        <visible>!Skin.HasSetting(hidebro)</visible>
+                        <thumb>icons/browser.png</thumb>
+                        <label>7</label>
+                        <onclick>Skin.ToggleSetting(hidebro)</onclick>
+                    </item>
+                    <item id="1012" description="Browser">
+                        <visible>Skin.HasSetting(hidebro)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>7</label>
+                        <onclick>Skin.ToggleSetting(hidebro)</onclick>
+                    </item>
+                    <item id="1113" description="Settings">
+                        <visible>!Skin.HasSetting(hidesett)</visible>
+                        <thumb>icons/settings.png</thumb>
+                        <label>5</label>
+                        <onclick>Skin.ToggleSetting(hidesett)</onclick>
+                    </item>
+                    <item id="1113" description="Settings">
+                        <visible>Skin.HasSetting(hidesett)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>5</label>
+                        <onclick>Skin.ToggleSetting(hidesett)</onclick>
+                    </item>
                     </content>
                 </control>
             </control>
@@ -1109,6 +1209,7 @@
                         <onclick condition="Container(50).Hasfocus(604)">Skin.SetImage(HomeFav.4.Icon)</onclick>
                         <onclick condition="Container(50).Hasfocus(605)">Skin.SetImage(HomeFav.5.Icon)</onclick>
                         <onclick condition="Container(50).Hasfocus(606)">Skin.SetImage(HomeFav.6.Icon)</onclick>
+                        <onclick condition="Container(50).Hasfocus(607)">Skin.SetImage(HomeFav.7.Icon)</onclick>
                         <onclick condition="Container(50).Hasfocus(401)">Skin.SetImage(HomeAddon.1.Icon)</onclick>
                         <onclick condition="Container(50).Hasfocus(402)">Skin.SetImage(HomeAddon.2.Icon)</onclick>
                         <onclick condition="Container(50).Hasfocus(403)">Skin.SetImage(HomeAddon.3.Icon)</onclick>
@@ -1129,6 +1230,7 @@
                         <onclick condition="Container(50).Hasfocus(604)">RunScript(script.favourites,property=HomeFav.4)</onclick>
                         <onclick condition="Container(50).Hasfocus(605)">RunScript(script.favourites,property=HomeFav.5)</onclick>
                         <onclick condition="Container(50).Hasfocus(606)">RunScript(script.favourites,property=HomeFav.6)</onclick>
+                        <onclick condition="Container(50).Hasfocus(607)">RunScript(script.favourites,property=HomeFav.7)</onclick>
                         <onclick condition="Container(50).Hasfocus(401)">Skin.SetAddon(HomeAddon.1.Label,xbmc.python.pluginsource)</onclick>
                         <onclick condition="Container(50).Hasfocus(401)">Skin.Reset(HomeAddon.1.Icon)</onclick>
                         <onclick condition="Container(50).Hasfocus(402)">Skin.SetAddon(HomeAddon.2.Label,xbmc.python.pluginsource)</onclick>

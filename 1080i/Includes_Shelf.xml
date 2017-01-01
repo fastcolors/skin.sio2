@@ -33,7 +33,7 @@
                 <width>340</width>
                 <height>500</height>
                 <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                <aspectratio>scale</aspectratio>
+                <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
                 <visible>!String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
@@ -42,7 +42,7 @@
                 <width>340</width>
                 <height>500</height>
                 <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
-                <aspectratio>scale</aspectratio>
+                <aspectratio>keep</aspectratio>
             </control>
         </itemlayout>
         <focusedlayout height="600" width="380">
@@ -55,7 +55,7 @@
                     <left>40</left>
                     <top>46</top>
                     <width>460</width>
-                    <height>580</height>
+                    <height>560</height>
                     <texture>shadow.png</texture>
                 </control>
                 <control type="image">
@@ -65,7 +65,7 @@
                     <width>340</width>
                     <height>500</height>
                     <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                    <aspectratio>scale</aspectratio>
+                    <aspectratio>keep</aspectratio>
                 </control>
                 <control type="image">
                     <visible>!String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
@@ -74,7 +74,7 @@
                     <width>340</width>
                     <height>500</height>
                     <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
-                    <aspectratio>scale</aspectratio>
+                    <aspectratio>keep</aspectratio>
                 </control>
             </control>
             <control type="group" description="labels">
@@ -89,7 +89,7 @@
                     <font>size24</font>
                     <textcolor>White2</textcolor>
                     <autoscroll>false</autoscroll>
-                    <label>[B]$INFO[ListItem.Label][/B]</label>
+                    <label>[B]$INFO[ListItem.Title][/B]</label>
                     <align>center</align>
                 </control>
             </control>
@@ -152,30 +152,12 @@
     </include>
     <include name="Movies">
         <control type="panel" id="311" description="Movies Shelf Shortcuts">
-            <visible>
-                Library.HasContent(Movies) +
-                [Container(9000).HasFocus(340)
-                | Container(9000).HasFocus(357)
-                | Container(9000).HasFocus(359)
-                | Container(9000).HasFocus(360)
-                | Control.HasFocus(311)
-                | [Container(9000).HasFocus(601) + !String.IsEmpty(Skin.String(HomeFav.1.List))]
-                | [Container(9000).HasFocus(602) + !String.IsEmpty(Skin.String(HomeFav.2.List))]
-                | [Container(9000).HasFocus(603) + !String.IsEmpty(Skin.String(HomeFav.3.List))]
-                | [Container(9000).HasFocus(604) + !String.IsEmpty(Skin.String(HomeFav.4.List))]
-                | [Container(9000).HasFocus(605) + !String.IsEmpty(Skin.String(HomeFav.5.List))]
-                | [Container(9000).HasFocus(606) + !String.IsEmpty(Skin.String(HomeFav.6.List))]
-                | [Container(9000).HasFocus(607) + !String.IsEmpty(Skin.String(HomeFav.7.List))]
-                | [Container(9000).HasFocus(608) + !String.IsEmpty(Skin.String(HomeFav.8.List))]]
-            </visible>
-            <!--todo better way to know when to go up-->
-            <onup condition="[!String.IsEmpty(Container(311).ListItem.Trailer) + Container(9000).HasFocus(340)] | [Container(9000).HasFocus(359) + System.HasAddon(plugin.video.couchpotato_manager)] | [Container(9000).HasFocus(360) + System.HasAddon(plugin.video.sickrage)]">9010</onup>
-            <onup condition="String.IsEmpty(Container(311).ListItem.Trailer)">9009</onup>
+            <onup>9009</onup>
             <ondown>9000</ondown>
             <onleft>311</onleft>
             <onright>311</onright>
             <include>MoviesShortcutsCommons</include>
-            <content target="video">$VAR[shelfmovies]</content>
+            <content target="videos">$VAR[shelfmovies]</content>
         </control>
     </include>
     <include name="TV">
@@ -188,7 +170,7 @@
                 <onleft>312</onleft>
                 <onright>312</onright>
                 <include>MoviesShortcutsCommons</include>
-                <content target="video">$VAR[shelfTV]</content>
+                <content target="videos">$VAR[shelfTV]</content>
             </control>
         </control>
     </include>

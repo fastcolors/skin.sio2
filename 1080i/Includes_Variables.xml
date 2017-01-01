@@ -126,6 +126,12 @@
         <value condition="Container(9000).HasFocus(606)">$INFO[Skin.String(HomeFav.6.List)]</value>
         <value condition="Container(9000).HasFocus(607)">$INFO[Skin.String(HomeFav.7.List)]</value>
         <value condition="Container(9000).HasFocus(608)">$INFO[Skin.String(HomeFav.8.List)]</value>
+        <value condition="Container(9000).HasFocus(401)">$INFO[Skin.String(HomeAddon.1.Label),plugin://]</value>
+        <value condition="Container(9000).HasFocus(402)">$INFO[Skin.String(HomeAddon.2.Label),plugin://]</value>
+        <value condition="Container(9000).HasFocus(403)">$INFO[Skin.String(HomeAddon.3.Label),plugin://]</value>
+        <value condition="Container(9000).HasFocus(404)">$INFO[Skin.String(HomeAddon.4.Label),plugin://]</value>
+        <value condition="Container(9000).HasFocus(405)">$INFO[Skin.String(HomeAddon.5.Label),plugin://]</value>
+        <value condition="Container(9000).HasFocus(406)">$INFO[Skin.String(HomeAddon.6.Label),plugin://]</value>
         <value condition="Container(9000).HasFocus(357)">special://skin/resources/3d.xsp</value>
         <value condition="Container(9000).HasFocus(359)">plugin://script.extendedinfo?info=newdvdreleases&amp;&amp;limit=18</value>
         <!--<value condition="Container(9000).HasFocus(359)">plugin://script.extendedinfo?info=upcoming&amp;&amp;limit=18</value>-->
@@ -134,6 +140,7 @@
         <value condition="Container(9000).HasFocus(360)">plugin://script.extendedinfo?info=trendingshows&amp;&amp;limit=18</value>
         <!--<value condition="Container(9000).HasFocus(360)">plugin://script.extendedinfo?info=airingshows&amp;&amp;limit=18</value>-->
         <value condition="Container(9000).HasFocus(340)">videodb://recentlyaddedmovies/</value>
+        <value  condition="Container(9000).HasFocus(355)">pvr://channels/tv/*</value>
         <value>-</value>
     </variable>
 

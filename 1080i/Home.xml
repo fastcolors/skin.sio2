@@ -7,7 +7,7 @@
     <include>OpenClose</include>
     <controls>
         <control type="group" description="Furniture">
-            <animation condition="!ControlGroup(700).HasFocus + !Container(9000).Row(0)" effect="slide" start="0,0" end="0,-590" time="220">Conditonal</animation>
+            <include>homeanimation</include>
             <control type="image" description="Stage">
                 <width>1920</width>
                 <height>2080</height>
@@ -24,12 +24,12 @@
             </control>
         </control>
         <control type="button" id="9009">
-            <visible allowhiddenfocus="true">Control.HasFocus(9009)</visible>
-            <left>0</left>
-            <top>15</top>
-            <width>34</width>
-            <height>34</height>
-            <texturefocus aspectratio="keep">images/hometoggle.png</texturefocus>
+            <width>auto</width>
+            <focusedcolor>white</focusedcolor>
+            <include>ShelfFade</include>
+            <include>ShelfTitle</include>
+            <label>[B] $VAR[shelflabel] [/B]</label>
+            <texturefocus>-</texturefocus>
             <!--MOVIES-->
             <onclick  condition="Control.IsVisible(311) + String.IsEqual(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
             <onclick  condition="Control.IsVisible(311) + String.IsEqual(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
@@ -43,7 +43,7 @@
             <onright>noop</onright>
         </control>
         <control type="panel" id="9000" description="ICONE">
-            <animation condition="!ControlGroup(700).HasFocus + !Container(9000).Row(0)" effect="slide" start="0,0" end="0,-590" time="220">Conditonal</animation>
+            <include>homeanimation</include>
             <centerleft>960</centerleft>
             <top>710</top>
             <width>1800</width>
@@ -79,8 +79,8 @@
                 </control>
                 <control type="image" description="THMBSICONS">
                     <visible>String.IsEmpty(ListItem.Art(thumb))</visible>
+                    <centerleft>180</centerleft>
                     <centertop>130</centertop>
-                    <top>27</top>
                     <width>287</width>
                     <height>179</height>
                     <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
@@ -178,6 +178,21 @@
                     <thumb>icons/music.png</thumb>
                     <onclick>ActivateWindow(1177,return)</onclick>
                     <onclick condition="!Library.HasContent(Music)">ActivateWindow(501,root)</onclick>
+                </item>
+                <!--SHELF POPULATING CUSTOM FAVOURITES-->
+                <item id="607" description="Custom Fvourite">
+                    <visible>!String.IsEmpty(Skin.String(HomeFav.7.Label))</visible>
+                    <thumb>$INFO[Skin.String(HomeFav.7.Icon)]</thumb>
+                    <label>$INFO[Skin.String(HomeFav.7.Label)]</label>
+                    <property name="color">red</property>
+                    <onclick>$INFO[Skin.String(HomeFav.7.Path)]</onclick>
+                </item>
+                <item id="608" description="Custom Fvourite">
+                    <visible>!String.IsEmpty(Skin.String(HomeFav.8.Label))</visible>
+                    <thumb>$INFO[Skin.String(HomeFav.8.Icon)]</thumb>
+                    <label>$INFO[Skin.String(HomeFav.8.Label)]</label>
+                    <property name="color">lightblue</property>>
+                    <onclick>$INFO[Skin.String(HomeFav.8.Path)]</onclick>
                 </item>
                 <item id="343">
                     <visible>!Skin.HasSetting(hideaddon)</visible>
@@ -401,8 +416,8 @@
             </content>
         </control>
         <control type="group" id="700" description="Shelf items">
-            <animation condition="!ControlGroup(700).HasFocus + !Container(9000).Row(0)" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
-            <include>Movies</include>
+            <include>homeanimation</include>
+            <include condition="!Container(9000).HasFocus(342) + !Container(9000).HasFocus(343)">Movies</include>
             <include>TV</include>
             <include>Music_RA</include>
             <include condition="Skin.HasSetting(PicturesShelf_Custom)">Pictures_Shortcuts</include>
@@ -411,14 +426,6 @@
             <include condition="Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)">VAddons_Shortcuts</include>
             <include>Favsshelf</include>
             <include>weather_shelf</include>
-            <control type="image" description="Logo">
-                <visible>![Control.IsVisible(311) | Control.IsVisible(312) | Control.IsVisible(313) | Control.IsVisible(314) | Control.IsVisible(315) | Control.IsVisible(317) | Control.IsVisible(319) | Control.IsVisible(414)]</visible>
-                <include>ShelfFade</include>
-                <width>1920</width>
-                <height>500</height>
-                <aspectratio aligny="bottom">keep</aspectratio>
-                <texture>$VAR[ShelfLogo]</texture>
-            </control>
         </control>
         <control type="group" description="RSS">
             <control type="rss" description="RSS Feed">
@@ -506,10 +513,10 @@
             <textcolor>white</textcolor>
             <label>$INFO[System.Date(ddd d mmm)] • $INFO[System.Time]</label>
         </control>
-        <control type="label" description="Top Label">
-            <include>ShelfFade</include>
-            <include>ShelfTitle</include>
-            <label>[B] $VAR[shelflabel] [/B]</label>
-        </control>
+        <!--<control type="label" description="Top Label">-->
+            <!--<include>ShelfFade</include>-->
+            <!--<include>ShelfTitle</include>-->
+            <!--<label>[B] $VAR[shelflabel] [/B]</label>-->
+        <!--</control>-->
     </controls>
 </window>
