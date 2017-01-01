@@ -1,5 +1,5 @@
 <colors>
     <color name="bandabianca">66FFFFFF</color>
-    <color name="darktext">black</color>
-    <color name="infos">black</color>
+    <color name="darktext">ff000000</color>
+    <color name="infos">ff000000</color>
 </colors>
