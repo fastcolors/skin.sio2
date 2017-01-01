@@ -248,7 +248,7 @@
                         </control>
                     </control>
                 </focusedlayout>
-                <content target="video">$VAR[infosuggestions]</content>
+                <content target="videos">$VAR[infosuggestions]</content>
             </control>
             <control type="list" id="50">
                 <top>1120</top>

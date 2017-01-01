@@ -1078,7 +1078,7 @@
                             <info>ListItem.Overlay</info>
                         </control>
                     </focusedlayout>
-                    <content target="video" sortby="year">$INFO[ListItem.Path]</content>
+                    <content target="videos" sortby="year">$INFO[ListItem.Path]</content>
                 </control>
                 <control type="image">
                     <top>90</top>
@@ -1194,7 +1194,7 @@
                             <info>ListItem.Overlay</info>
                         </control>
                     </focusedlayout>
-                    <content target="video">$INFO[ListItem.FolderPath]</content>
+                    <content target="videos">$INFO[ListItem.FolderPath]</content>
                 </control>
             </control>
             <!--TVSHOW-END-->
