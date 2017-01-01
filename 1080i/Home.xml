@@ -24,18 +24,40 @@
             </control>
         </control>
         <control type="button" id="9009">
-            <width>auto</width>
             <focusedcolor>white</focusedcolor>
             <include>ShelfFade</include>
             <include>ShelfTitle</include>
             <label>[B] $VAR[shelflabel] [/B]</label>
             <texturefocus>-</texturefocus>
             <!--MOVIES-->
-            <onclick  condition="Control.IsVisible(311) + String.IsEqual(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
-            <onclick  condition="Control.IsVisible(311) + String.IsEqual(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
-            <onclick  condition="Control.IsVisible(311) + String.IsEqual(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
+            <onclick  condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
+            <onclick  condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
+            <onclick  condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
             <!--TVSHOWS-->
-            <onclick  condition="Control.IsVisible(312)">Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
+            <onclick  condition="Control.IsVisible(312) + StringCompare(Skin.String(TVshelf),)">Skin.SetString(TVshelf,1)</onclick>
+            <onclick  condition="Control.IsVisible(312) + StringCompare(Skin.String(TVshelf),1)">Skin.SetString(TVshelf,2)</onclick>
+            <onclick  condition="Control.IsVisible(312) + StringCompare(Skin.String(TVshelf),2)">Skin.SetString(TVshelf,)</onclick>
+            <!--MUSIC-->
+            <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),)">Skin.SetString(musicshelf,albums)</onclick>
+            <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),albums)">Skin.SetString(musicshelf,artists)</onclick>
+            <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),artists)">Skin.SetString(musicshelf,)</onclick>
+
+            <!--ADDONS-->
+            <!--<onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),1)">Skin.SetString(addonsshelf,2)</onclick>-->
+            <!--<onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),2)">Skin.SetString(addonsshelf,3)</onclick>-->
+            <!--<onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),3)">Skin.SetString(addonsshelf,)</onclick>-->
+            <!--<onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),)">Skin.SetString(addonsshelf,1)</onclick>-->
+
+            <!--CINEMAS-->
+            <!--<onclick  condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),)">Skin.SetString(theatersshelf,1)</onclick>-->
+            <!--<onclick  condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),1)">Skin.SetString(theatersshelf,2)</onclick>-->
+            <!--<onclick  condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),2)">Skin.SetString(theatersshelf,)</onclick>-->
+
+            <!--DVDS-->
+            <!--<onclick  condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),)">Skin.SetString(dvdsshelf,2)</onclick>-->
+            <!--<onclick  condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),1)">Skin.SetString(dvdsshelf,2)</onclick>-->
+            <!--<onclick  condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),2)">Skin.SetString(dvdsshelf,)</onclick>-->
+
             <onup>noop</onup>
             <ondown condition="Control.IsVisible(311)">311</ondown>
             <ondown condition="Control.IsVisible(312)">312</ondown>
@@ -419,7 +441,7 @@
             <include>homeanimation</include>
             <include condition="!Container(9000).HasFocus(342) + !Container(9000).HasFocus(343)">Movies</include>
             <include>TV</include>
-            <include>Music_RA</include>
+            <include>Music</include>
             <include condition="Skin.HasSetting(PicturesShelf_Custom)">Pictures_Shortcuts</include>
             <include condition="Skin.HasSetting(AddonsShelf_Custom)">Addons_Shortcuts</include>
             <include condition="!Skin.HasSetting(AddonsShelf_Custom)">Addons_Auto</include>
@@ -514,9 +536,9 @@
             <label>$INFO[System.Date(ddd d mmm)] • $INFO[System.Time]</label>
         </control>
         <!--<control type="label" description="Top Label">-->
-            <!--<include>ShelfFade</include>-->
-            <!--<include>ShelfTitle</include>-->
-            <!--<label>[B] $VAR[shelflabel] [/B]</label>-->
+        <!--<include>ShelfFade</include>-->
+        <!--<include>ShelfTitle</include>-->
+        <!--<label>[B] $VAR[shelflabel] [/B]</label>-->
         <!--</control>-->
     </controls>
 </window>
