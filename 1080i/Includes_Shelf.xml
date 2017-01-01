@@ -20,8 +20,9 @@
     </include>
     <include name="MoviesShortcutsCommons">
         <include>ShelfFade</include>
+        <animation effect="slide" end="-100,0" time="250" condition="Container(311).Column(4)">Conditional</animation>
         <top>90</top>
-        <width>1920</width>
+        <width>2030</width>
         <height>610</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
@@ -87,7 +88,6 @@
                     <width>360</width>
                     <height>60</height>
                     <font>size24</font>
-                    <textcolor>White2</textcolor>
                     <autoscroll>false</autoscroll>
                     <label>[B]$INFO[ListItem.Title][/B]</label>
                     <align>center</align>
@@ -98,6 +98,8 @@
     <include name="SquareShortcutsCommons">
         <include>ShelfFade</include>
         <!--<left>72</left>-->
+        <onup>9009</onup>
+        <ondown>9000</ondown>
         <top>90</top>
         <width>1920</width>
         <height>610</height>
@@ -144,9 +146,8 @@
                 <width>540</width>
                 <height>150</height>
                 <font>size26</font>
-                <textcolor>White2</textcolor>
                 <align>center</align>
-                <label>$INFO[ListItem.Label]</label>
+                <label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR]]</label>
             </control>
         </focusedlayout>
     </include>
@@ -174,25 +175,19 @@
             </control>
         </control>
     </include>
-    <include name="Music_RA">
+    <include name="Music">
         <control type="panel" id="313" description="TOP Shortcuts">
             <visible>[Library.HasContent(musicvideos) | Library.HasContent(music) | Skin.HasSetting(MusicShelf_Custom)] + [Container(9000).HasFocus(342) | Control.HasFocus(313)]</visible>
-            <onup>noop</onup>
-            <ondown>9000</ondown>
-            <onleft>noop</onleft>
-            <onright>noop</onright>
-            <focusposition>2</focusposition>
             <include>SquareShortcutsCommons</include>
             <onclick>PlayMedia($ESCINFO[ListItem.DBID,musicdb://albums/,/])</onclick>
-            <content>musicdb://recentlyaddedalbums/</content>
+            <content target="music">$VAR[musicshelfcontent]</content>
         </control>
     </include>
     <include name="Addons_Auto">
         <control type="panel" id="315" description="TOP Shortcuts">
             <visible>Container(9000).HasFocus(343) | Control.HasFocus(315)</visible>
-            <ondown>9000</ondown>
             <include>SquareShortcutsCommons</include>
-            <content>addons://sources/video/</content>
+            <content>addons://sources/executable/</content>
         </control>
     </include>
     <include name="Addons_Shortcuts">

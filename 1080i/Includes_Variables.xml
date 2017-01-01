@@ -145,8 +145,9 @@
     </variable>
 
     <variable name="shelfTV">
-        <value condition="Skin.HasSetting(TVShelf_Watchlist)">videodb://recentlyaddedepisodes/</value>
-        <value>plugin://service.library.data.provider?type=recommendedepisodes&amp;limit=18&amp;reload=$INFO[Window.Property(recommendedepisodes)]</value>
+        <value condition="Container(9000).HasFocus(341) + StringCompare(Skin.String(TVshelf),1)">special://skin/resources/randomTV.xsp</value>
+        <value condition="Container(9000).HasFocus(341) + StringCompare(Skin.String(TVshelf),2)">videodb://recentlyaddedepisodes</value>
+        <value condition="Container(9000).HasFocus(341)">plugin://service.library.data.provider?type=recommendedepisodes&limit=18&reload=$INFO[Window.Property(recommendedepisodes)]</value>
     </variable>
 
     <variable name="shelflabel">
@@ -155,12 +156,20 @@
         <value condition="Container(9000).HasFocus(340) + String.IsEqual(Skin.String(moviesshelf),RND)">$LOCALIZE[590]</value>
         <value condition="Container(9000).HasFocus(340) + String.IsEqual(Skin.String(moviesshelf),)">$LOCALIZE[20386]</value>
         <!--TV-->
-        <value condition="Container(9000).HasFocus(341) + Skin.HasSetting(TVShelf_Watchlist)">$LOCALIZE[20387]</value>
+        <value condition="Container(9000).HasFocus(341) + StringCompare(Skin.String(TVshelf),2)">$LOCALIZE[20387]</value>
+        <value condition="Container(9000).HasFocus(341) + StringCompare(Skin.String(TVshelf),1)">$LOCALIZE[590]</value>
         <value condition="Container(9000).HasFocus(341)">$LOCALIZE[31048]</value>
         <!--MUSIC-->
-        <value condition="Container(9000).HasFocus(342)">$LOCALIZE[359]</value>
+        <value condition="Container(9000).HasFocus(342) + Library.HasContent(Music) + StringCompare(Skin.String(musicshelf),albums)">$LOCALIZE[517]</value>
+        <value condition="Container(9000).HasFocus(342) + Library.HasContent(Music) + StringCompare(Skin.String(musicshelf),artists)">$LOCALIZE[590]</value>
+        <value condition="Container(9000).HasFocus(342) + Library.HasContent(Music)">$LOCALIZE[359]</value>
         <!--ADDONS-->
-        <value condition="Container(9000).HasFocus(343) + Control.IsVisible(315)">$INFO[Container(315).ListItem.Property(ItemType)]</value>
+        <!--todo label-->
+        <value condition="Container(9000).HasFocus(343) + Skin.HasSetting(AddonsShelf_Custom)">$LOCALIZE[31051]</value>
+        <!--<value condition="Container(9000).HasFocus(343) + StringCompare(Skin.String(addonsshelf),1)">$LOCALIZE[1038] </value>-->
+        <!--<value condition="Container(9000).HasFocus(343) + StringCompare(Skin.String(addonsshelf),2)">$LOCALIZE[1043] </value>-->
+        <!--<value condition="Container(9000).HasFocus(343) + StringCompare(Skin.String(addonsshelf),3)">$LOCALIZE[1039] </value>-->
+        <value condition="Container(9000).HasFocus(343)">$LOCALIZE[1037]</value>
         <!--PICTURES-->
         <value condition="Container(9000).HasFocus(344)"> </value>
         <!--LIVETV(RECORDINGS)-->
@@ -198,5 +207,11 @@
     <variable name="osdtop">
         <value condition="ControlGroup(101).Hasfocus(1)">videodb://recentlyaddedepisodes/</value>
         <value condition="Container(101).Position(2)">special://skin/resources/randomTV.xsp</value>
+    </variable>
+
+    <variable name="musicshelfcontent">
+        <value condition="Container(9000).HasFocus(342) + StringCompare(Skin.String(musicshelf),artists) + Library.HasContent(Music)">special://skin/resources/randomMZK.xsp</value>
+        <value condition="StringCompare(Skin.String(musicshelf),albums) + Library.HasContent(Music)">musicdb://recentlyplayedalbums/</value>
+        <value condition="Container(9000).HasFocus(342) + Library.HasContent(Music)">musicdb://recentlyaddedalbums/</value>
     </variable>
 </includes>
