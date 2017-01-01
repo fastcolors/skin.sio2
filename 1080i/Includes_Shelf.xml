@@ -16,7 +16,6 @@
         <aligny>center</aligny>
         <font>size30</font>
         <textcolor>dimgray</textcolor>
-        <shadowcolor>-</shadowcolor>
     </include>
     <include name="MoviesShortcutsCommons">
         <include>ShelfFade</include>
