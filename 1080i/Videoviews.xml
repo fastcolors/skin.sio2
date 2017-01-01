@@ -645,7 +645,7 @@
                 <control type="image" description="Studio">
                     <width>500</width>
                     <height>109</height>
-                    <texture colordiffuse="black">resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
+                    <texture colordiffuse="infos">resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
                     <aspectratio align="center">keep</aspectratio>
                 </control>
                 <control type="image">
@@ -661,11 +661,6 @@
                     <align>justify</align>
                     <autoscroll delay="7000" time="4300" repeat="10000"></autoscroll>
                     <label>$VAR[Plots]</label>
-                </control>
-                <control type="image">
-                    <height>1</height>
-                    <width>500</width>
-                    <texture colordiffuse="main">Lines/line.png</texture>
                 </control>
             </control>
             <control type="scrollbar" id="60">
@@ -705,7 +700,7 @@
                     <height>45</height>
                     <font>size42B</font>
                     <align>center</align>
-                    <textcolor>black</textcolor>
+                    <textcolor>infos</textcolor>
                     <label>[UPPERCASE]$INFO[ListItem.label][/UPPERCASE]</label>
                 </control>
                 <control type="textbox">
@@ -714,7 +709,7 @@
                     <font>size21</font>
                     <align>center</align>
                     <autoscroll>false</autoscroll>
-                    <textcolor>black</textcolor>
+                    <textcolor>infos</textcolor>
                     <label>• • [B]$INFO[ListItem.Tagline][/B] • •</label>
                 </control>
             </control>
@@ -804,56 +799,56 @@
                         <width>780</width>
                         <height>24</height>
                         <font>size21</font>
-                        <textcolor>black</textcolor>
+                        <textcolor>infos</textcolor>
                         <label>[B]$INFO[ListItem.Property(AudioLanguage.1)]$INFO[ListItem.Property(AudioLanguage.2), • ]$INFO[ListItem.Property(AudioLanguage.3), • ]$INFO[ListItem.Property(AudioLanguage.4), • ][/B]</label>
                     </control>
                     <control type="label">
                         <width>780</width>
                         <height>24</height>
                         <font>size21</font>
-                        <textcolor>black</textcolor>
+                        <textcolor>infos</textcolor>
                         <label>[B]$INFO[ListItem.Duration] $LOCALIZE[12391][/B]</label>
                     </control>
                     <control type="label">
                         <width>780</width>
                         <height>24</height>
                         <font>size21</font>
-                        <textcolor>black</textcolor>
+                        <textcolor>infos</textcolor>
                         <label>[B]$INFO[ListItem.Genre][/B]</label>
                     </control>
                     <control type="label">
                         <width>780</width>
                         <height>24</height>
                         <font>size21</font>
-                        <textcolor>black</textcolor>
+                        <textcolor>infos</textcolor>
                         <label>[B]$INFO[ListItem.Year][/B]</label>
                     </control>
                     <control type="label">
                         <width>780</width>
                         <height>24</height>
                         <font>size21</font>
-                        <textcolor>black</textcolor>
+                        <textcolor>infos</textcolor>
                         <label>[B]$INFO[ListItem.OriginalTitle][/B]</label>
                     </control>
                     <control type="label">
                         <width>780</width>
                         <height>24</height>
                         <font>size21</font>
-                        <textcolor>black</textcolor>
+                        <textcolor>infos</textcolor>
                         <label>[B]$INFO[ListItem.Director][/B]</label>
                     </control>
                     <control type="label">
                         <width>780</width>
                         <height>24</height>
                         <font>size21</font>
-                        <textcolor>black</textcolor>
+                        <textcolor>infos</textcolor>
                         <label>[B]$INFO[ListItem.Country][/B]</label>
                     </control>
                     <control type="label">
                         <width>780</width>
                         <height>24</height>
                         <font>size21</font>
-                        <textcolor>black</textcolor>
+                        <textcolor>infos</textcolor>
                         <label>[B]$INFO[ListItem.Studio][/B]</label>
                     </control>
                 </control>
@@ -867,7 +862,7 @@
                     <control type="image">
                         <width>450</width>
                         <height>24</height>
-                        <texture colordiffuse="black">$INFO[ListItem.Rating,badges/,.png]</texture>
+                        <texture colordiffuse="infos">$INFO[ListItem.Rating,badges/,.png]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label">
@@ -875,7 +870,7 @@
                         <height>20</height>
                         <font>size20</font>
                         <align>center</align>
-                        <textcolor>black</textcolor>
+                        <textcolor>infos</textcolor>
                         <label>[B]$INFO[ListItem.RatingAndVotes][/B]</label>
                     </control>
                 </control>
@@ -946,7 +941,7 @@
                     <width>750</width>
                     <height>630</height>
                     <align>justify</align>
-                    <textcolor>black</textcolor>
+                    <textcolor>infos</textcolor>
                     <label>[B]$VAR[Plots][/B]</label>
                 </control>
                 <control type="group" description="icon+overlay">

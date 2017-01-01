@@ -53,35 +53,35 @@
                     <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
                     <height>35</height>
                     <width>auto</width>
-                    <textcolor>black</textcolor>
+                    <textcolor>infos</textcolor>
                     <label>$INFO[ListItem.VideoResolution]</label>
                 </control>
                 <control type="label">
                     <visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
                     <height>35</height>
                     <width>auto</width>
-                    <textcolor>black</textcolor>
+                    <textcolor>infos</textcolor>
                     <label>$INFO[ListItem.AudioCodec, • ]</label>
                 </control>
                 <control type="label">
                     <visible>!String.IsEmpty(ListItem.VideoCodec)</visible>
                     <height>35</height>
                     <width>auto</width>
-                    <textcolor>black</textcolor>
+                    <textcolor>infos</textcolor>
                     <label>$INFO[ListItem.VideoCodec, • ]</label>
                 </control>
                 <control type="label">
                     <visible>!String.IsEmpty(ListItem.FileExtension)</visible>
                     <height>35</height>
                     <width>auto</width>
-                    <textcolor>black</textcolor>
+                    <textcolor>infos</textcolor>
                     <label>$INFO[ListItem.FileExtension, • ]</label>
                 </control>
                 <control type="label">
                     <visible>!String.IsEmpty(ListItem.MPAA) + !String.IsEqual($VAR[MPAAS],NA)</visible>
                     <height>35</height>
                     <width>auto</width>
-                    <textcolor>black</textcolor>
+                    <textcolor>infos</textcolor>
                     <label>$VAR[MPAAS, • ]</label>
                 </control>
             </control>
@@ -102,7 +102,7 @@
                 <height>24</height>
                 <width>135</width>
                 <aspectratio align="right">keep</aspectratio>
-                <texture colordiffuse="black">$INFO[ListItem.Rating,badges/,.png]</texture>
+                <texture colordiffuse="infos">$INFO[ListItem.Rating,badges/,.png]</texture>
             </control>
             <control type="image">
                 <centerleft>500</centerleft>
@@ -117,7 +117,7 @@
                 <width>756</width>
                 <height>350</height>
                 <align>justify</align>
-                <textcolor>black</textcolor>
+                <textcolor>infos</textcolor>
                 <label>$INFO[ListItem.Plot]</label>
             </control>
             <control type="image">
@@ -356,7 +356,7 @@
         <aligny>center</aligny>
         <scroll>false</scroll>
         <font>size36</font>
-        <textcolor>black</textcolor>
+        <textcolor>darktext</textcolor>
         <shadowcolor>-</shadowcolor>
     </include>
     <include name="50LabelFO">
@@ -391,7 +391,7 @@
         <top>10</top>
         <height>40</height>
         <width>720</width>
-        <textcolor>black</textcolor>
+        <textcolor>darktext</textcolor>
         <aligny>center</aligny>
         <font>size36</font>
         <scroll>false</scroll>

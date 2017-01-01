@@ -164,13 +164,13 @@
                                     <animation condition="String.IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
                                     <left>40</left>
                                     <width>700</width>
-                                    <include>BigListTitle</include>
+                                    <include>BigListTitleFO</include>
                                     <label>$INFO[ListItem.ChannelNumber]$INFO[ListItem.Label, • ]</label>
                                 </control>
                                 <control type="label">
                                     <left>45</left>
                                     <width>640</width>
-                                    <include>BigListDetails</include>
+                                    <include>BigListDetailsFO</include>
                                     <info>ListItem.Title</info>
                                 </control>
                                 <control type="image">

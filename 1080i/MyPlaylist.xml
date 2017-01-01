@@ -16,7 +16,7 @@
                     <include>LargeListItemCount</include>
                     <left>1020</left>
                     <top>131</top>
-                    <control type="fixedlist" id="50">
+                    <control tpe="fixedlist" id="50">
                         <left>0</left>
                         <top>0</top>
                         <width>802</width>

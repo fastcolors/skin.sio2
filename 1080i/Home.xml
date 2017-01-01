@@ -20,7 +20,7 @@
                 <width>1990</width>
                 <height>286</height>
                 <aspectratio>stretch</aspectratio>
-                <texture border="8" colordiffuse="66FFFFFF">images/White.png</texture>
+                <texture border="8" colordiffuse="bandabianca">images/White.png</texture>
             </control>
         </control>
         <control type="button" id="9009">

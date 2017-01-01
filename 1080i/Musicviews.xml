@@ -30,14 +30,14 @@
                                 <visible>![ListItem.IsFolder | ListItem.IsParentFolder | Container.Content(Artists)]</visible>
                                 <left>45</left>
                                 <width>717</width>
-                                <include>BigListTitleFO</include>
+                                <include>BigListTitle</include>
                                 <label>$INFO[ListItem.Title]</label>
                             </control>
                             <control type="label" description="Main Label">
                                 <visible>ListItem.IsFolder | ListItem.IsParentFolder | Container.Content(Artists)</visible>
                                 <left>45</left>
                                 <width>717</width>
-                                <include>BigListTitleFO</include>
+                                <include>BigListTitle</include>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </control>
@@ -53,7 +53,7 @@
                                 <visible>Container.Content(Artists)</visible>
                                 <left>45</left>
                                 <width>630</width>
-                                <include>BigListDetailsFO</include>
+                                <include>BigListDetails</include>
                                 <label>$INFO[ListItem.Property(Artist_Formed)]$INFO[ListItem.Property(Artist_Born)]$INFO[ListItem.Property(Artist_Genre), • ]</label>
                             </control>
                         </control>

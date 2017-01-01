@@ -24,8 +24,8 @@
     <textoffsetx>20</textoffsetx>
     <textcolor>White</textcolor>
     <shadowcolor>-</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
+    <focusedcolor>white</focusedcolor>
+    <selectedcolor>white</selectedcolor>
     <disabledcolor>dimgray</disabledcolor>
     <scrollout>false</scrollout>
     <pauseatend>3000</pauseatend>
@@ -61,7 +61,7 @@
     <font>size33</font>
     <label>-</label>
     <textoffsetx>20</textoffsetx>
-    <textcolor>black</textcolor>
+    <textcolor>darktext</textcolor>
     <shadowcolor>-</shadowcolor>
     <focusedcolor>black</focusedcolor>
     <selectedcolor>orange</selectedcolor>
@@ -78,7 +78,7 @@
     <font>size33</font>
     <label>-</label>
     <textoffsetx>20</textoffsetx>
-    <textcolor>black</textcolor>
+    <textcolor>darktext</textcolor>
     <shadowcolor>-</shadowcolor>
     <focusedcolor>black</focusedcolor>
     <selectedcolor>orange</selectedcolor>
@@ -97,7 +97,7 @@
     <font>size33</font>
     <label>-</label>
     <textoffsetx>20</textoffsetx>
-    <textcolor>black</textcolor>
+    <textcolor>darktext</textcolor>
     <shadowcolor>-</shadowcolor>
     <focusedcolor>black</focusedcolor>
     <selectedcolor>orange</selectedcolor>
@@ -118,7 +118,7 @@
     <aligny>center</aligny>
     <font>size33</font>
     <label>-</label>
-    <textcolor>black</textcolor>
+    <textcolor>darktext</textcolor>
     <shadowcolor>-</shadowcolor>
     <focusedcolor>black</focusedcolor>
     <selectedcolor>orange</selectedcolor>
@@ -144,7 +144,7 @@
     <spinwidth>18</spinwidth>
     <spinheight>18</spinheight>
     <font>size33</font>
-    <textcolor>black</textcolor>
+    <textcolor>darktext</textcolor>
     <shadowcolor>-</shadowcolor>
     <focusedcolor>black</focusedcolor>
     <selectedcolor>orange</selectedcolor>
@@ -170,7 +170,7 @@
     <!--<texturenofocus colordiffuse="77FFFFFF">images/White.png</texturenofocus>-->
     <spinwidth>18</spinwidth>
     <spinheight>18</spinheight>
-    <textcolor>black</textcolor>
+    <textcolor>darktext</textcolor>
     <shadowcolor>-</shadowcolor>
     <focusedcolor>black</focusedcolor>
     <selectedcolor>orange</selectedcolor>
@@ -205,7 +205,7 @@
     <textureslidernib>images/slider_nib_nf.png</textureslidernib>
     <textureslidernibfocus>images/slider_nib.png</textureslidernibfocus>
     <font>size33</font>
-    <textcolor>black</textcolor>
+    <textcolor>darktext</textcolor>
     <focusedcolor>black</focusedcolor>
     <selectedcolor>orange</selectedcolor>
     <disabledcolor>dimgray</disabledcolor>
