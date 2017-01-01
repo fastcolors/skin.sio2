@@ -24,6 +24,7 @@
                     <align>center</align>
                     <aligny>center</aligny>
                     <font>sizescroll</font>
+                    <textcolor>33ffffff</textcolor>
                     <animation effect="fade" time="200">VisibleChange</animation>
                     <label>$INFO[Player.SeekOffset]</label>
                 </control>
