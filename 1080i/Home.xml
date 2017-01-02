@@ -535,7 +535,7 @@
         </control>
         <control type="label" description="Clock">
             <visible>!System.Date(04-01,04-01)</visible>
-            <right>30</right>
+            <right>60</right>
             <top>20</top>
             <width>500</width>
             <height>25</height>
@@ -545,10 +545,13 @@
             <textcolor>white</textcolor>
             <label>$INFO[System.Date(ddd d mmm)] • $INFO[System.Time]</label>
         </control>
-        <!--<control type="label" description="Top Label">-->
-        <!--<include>ShelfFade</include>-->
-        <!--<include>ShelfTitle</include>-->
-        <!--<label>[B] $VAR[shelflabel] [/B]</label>-->
-        <!--</control>-->
+        <control type="image">
+            <right>20</right>
+            <top>18</top>
+            <width>30</width>
+            <height>30</height>
+            <colordiffuse>kodi</colordiffuse>
+            <texture>kodi_icon.png</texture>
+        </control>
     </controls>
 </window>
