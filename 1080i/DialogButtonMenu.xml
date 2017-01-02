@@ -10,6 +10,7 @@
       <height>700</height>
       <aspectratio>stretch</aspectratio>
       <texture border="50">images/ContextMenu.png</texture>
+      <colordiffuse>dialog</colordiffuse>
     </control>
     <control type="grouplist" id="9000">
       <top>290</top>

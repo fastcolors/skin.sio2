@@ -18,7 +18,7 @@
                 <width>1920</width>
                 <height>700</height>
                 <texture border="50">images/ContextMenu.png</texture>
-                <colordiffuse>EEFFFFFF</colordiffuse>
+                <colordiffuse>dialog</colordiffuse>
             </control>
             <control type="label" id="311">
                 <left>600</left>

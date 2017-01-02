@@ -439,6 +439,7 @@
                 <width>450</width>
                 <height>550</height>
                 <texture border="50">images/contextmenu.png</texture>
+                <colordiffuse>dialog</colordiffuse>
             </control>
             <control type="list" id="122">
                 <description>list3</description>
@@ -501,6 +502,7 @@
                 <width>450</width>
                 <height>550</height>
                 <texture border="50">images/contextmenu.png</texture>
+                <colordiffuse>dialog</colordiffuse>
             </control>
             <control type="list" id="127">
                 <description>list4</description>

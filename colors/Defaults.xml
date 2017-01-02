@@ -2,4 +2,5 @@
     <color name="bandabianca">66FFFFFF</color>
     <color name="darktext">ff000000</color>
     <color name="infos">ff000000</color>
+    <color name="dialog">ffffffff</color>
 </colors>

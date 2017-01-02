@@ -12,6 +12,7 @@
 			<width>1160</width>
 			<height>660</height>
 			<texture border="50">images/ContextMenu.png</texture>
+			<colordiffuse>dialog</colordiffuse>
 		</control>
 		<control type="label">
 			<description>Title label</description>

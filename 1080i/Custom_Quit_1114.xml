@@ -10,6 +10,7 @@
         <width>823</width>
         <height>662</height>
         <texture border="50">images/ContextMenu.png</texture>
+        <colordiffuse>dialog</colordiffuse>
       </control>
       <control type="group">
         <left>697</left>

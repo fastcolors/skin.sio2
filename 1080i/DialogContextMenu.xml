@@ -14,6 +14,7 @@
       <height>1080</height>
       <width>750</width>
       <texture border="50">images/ContextMenu.png</texture>
+      <colordiffuse>dialog</colordiffuse>
     </control>
     <control type="grouplist" id="996" description="Context menu container">
       <centerleft>960</centerleft>
