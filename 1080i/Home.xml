@@ -9,10 +9,18 @@
         <control type="group" description="Furniture">
             <include>homeanimation</include>
             <control type="image" description="Stage">
+                <visible>Skin.HasTheme(Dark)</visible>
                 <width>1920</width>
-                <height>2080</height>
+                <height>2160</height>
                 <aspectratio>stretch</aspectratio>
-                <texture>HomeBG.png</texture>
+                <texture>special://skin/resources/DarkHomeBG.png</texture>
+            </control>
+            <control type="image" description="Stage">
+                <visible>!Skin.HasTheme(Dark)</visible>
+                <width>1920</width>
+                <height>2160</height>
+                <aspectratio>stretch</aspectratio>
+                <texture>special://skin/resources/HomeBG.png</texture>
             </control>
             <control type="image" description="banda bianca">
                 <top>694</top>
