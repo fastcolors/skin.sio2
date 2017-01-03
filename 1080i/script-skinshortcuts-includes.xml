@@ -38,15 +38,14 @@
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
 			<label>$LOCALIZE[2]</label>
-			<label2>Custom item</label2>
+			<label2>-</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>icons/music.png</thumb>
 			<property name="labelID">2</property>
 			<property name="defaultID">music</property>
-			<visible>Library.HasContent(Music)</visible>
-			<onclick>ActivateWindow(music,library://music/albums.xml/,return)</onclick>
-			<property name="path">ActivateWindow(music,library://music/albums.xml/,return)</property>
-			<property name="list">library://music/albums.xml/</property>
+			<onclick>ActivateWindow(1177,return)</onclick>
+			<property name="path">ActivateWindow(1177,return)</property>
+			<property name="list">1177</property>
 			<visible>StringCompare(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">num-2</property>
 			<property name="group">mainmenu</property>
