@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <allowoverlay>no</allowoverlay>
+    <defaultcontrol always="true">211</defaultcontrol>
+    <controls>
+        <include>BlackBackground</include>
+        <control type="group" id="200">
+            <!-- id 211 - Current shortcuts -->
+            <control type="panel" id="211">
+                <width>1800</width>
+                <height>880</height>
+                <top>200</top>
+                <left>60</left>
+                <onleft>-</onleft>
+                <onright>-</onright>
+                <onup>300</onup>
+                <ondown>-</ondown>
+                <onclick>SetFocus(300)</onclick>
+                <scrolltime tween="sine" easing="inout">280</scrolltime>
+                <itemlayout height="290" width="360">
+                    <control type="image" description="shade_base">
+                        <centerleft>180</centerleft>
+                        <top>10</top>
+                        <width>350</width>
+                        <height>250</height>
+                        <texture>icons/iconbase.png</texture>
+                    </control>
+                    <control type="image" description="color base">
+                        <centerleft>180</centerleft>
+                        <centertop>130</centertop>
+                        <width>287</width>
+                        <height>179</height>
+                        <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
+                    </control>
+                    <control type="image" description="THMBSICONS">
+                        <centerleft>180</centerleft>
+                        <centertop>130</centertop>
+                        <width>287</width>
+                        <height>179</height>
+                        <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Icon]</texture>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
+                    </control>
+                    <control type="image">
+                        <visible>String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)</visible>
+                        <centerleft>180</centerleft>
+                        <centertop>130</centertop>
+                        <width>287</width>
+                        <height>179</height>
+                        <texture colordiffuse="aa000000">images/White.png</texture>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="290" width="360">
+                    <control type="group">
+                        <animation effect="zoom" start="100" end="130" time="120" center="180,210" tween="Back" easing="Out">Focus</animation>
+                        <animation effect="zoom" start="130" end="100" time="120" center="180,210">unFocus</animation>
+                        <control type="image" description="shade_base">
+                            <centerleft>180</centerleft>
+                            <animation effect="slide" start="0,0" end="0,34" time="240" reversible="true" tween="Back" easing="Out">Focus</animation>
+                            <top>10</top>
+                            <width>350</width>
+                            <height>250</height>
+                            <texture>icons/iconbase.png</texture>
+                        </control>
+                        <control type="image" description="color base">
+                            <centerleft>180</centerleft>
+                            <centertop>130</centertop>
+                            <width>287</width>
+                            <height>179</height>
+                            <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
+                        </control>
+                        <control type="image" description="THMBSICONS">
+                            <centerleft>180</centerleft>
+                            <centertop>130</centertop>
+                            <width>287</width>
+                            <height>179</height>
+                            <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Icon]</texture>
+                            <aspectratio scalediffuse="false">scale</aspectratio>
+                        </control>
+                        <control type="image">
+                            <visible>String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)</visible>
+                            <centerleft>180</centerleft>
+                            <centertop>130</centertop>
+                            <width>287</width>
+                            <height>179</height>
+                            <texture colordiffuse="aa000000">images/White.png</texture>
+                        </control>
+                    </control>
+                    <control type="label" description="label">
+                        <animation effect="fade" start="0" end="100" time="180">Focus</animation>
+                        <animation effect="fade" start="100" end="0" time="100">unFocus</animation>
+                        <centerleft>180</centerleft>
+                        <top>234</top>
+                        <width>368</width>
+                        <height>24</height>
+                        <font>size27B</font>
+                        <align>center</align>
+                        <label>$INFO[ListItem.label]</label>
+                    </control>
+                </focusedlayout>
+                <content></content>
+            </control>
+            <control type="image">
+                <visible>!Control.HasFocus(211)</visible>
+                <animation effect="fade" start="0" end="100" delay="150">VisibleChange</animation>
+                <left>324</left>
+                <top>240</top>
+                <animation effect="slide" end="360,0" condition="Container(211).Position(1)">Conditional</animation>
+                <animation effect="slide" end="720,0" condition="Container(211).Position(2)">Conditional</animation>
+                <animation effect="slide" end="1080,0" condition="Container(211).Position(3)">Conditional</animation>
+                <animation effect="slide" end="1440,0" condition="Container(211).Position(4)">Conditional</animation>
+                <animation effect="slide" end="1800,0" condition="Container(211).Position(5)">Conditional</animation>
+                <!--<animation effect="slide" end="0,230" condition="Container(211).Position(6)">Conditional</animation>-->
+                <width>20</width>
+                <height>20</height>
+                <texture colordiffuse="ddaaaaaa">images/White.png</texture>
+            </control>
+        </control>
+        <control type="grouplist" id="300">
+            <width>1920</width>
+            <ondown>211</ondown>
+            <onup>111</onup>
+            <align>center</align>
+            <orientation>horizontal</orientation>
+            <control type="button" id="303">
+                <description>Move shortcut up</description>
+                <include>osdtopbutton</include>
+                <onclick>noop</onclick>
+                <label>$ADDON[script.skinshortcuts 32002]</label>
+            </control>
+            <control type="button" id="304">
+                <description>Move shortcut down</description>
+                <include>osdtopbutton</include>
+                <onclick>noop</onclick>
+                <label>$ADDON[script.skinshortcuts 32003]</label>
+            </control>
+            <control type="button" id="305">
+                <description>Change shortcut label</description>
+                <include>osdtopbutton</include>
+                <onclick>noop</onclick>
+                <label>$ADDON[script.skinshortcuts 32025]</label>
+            </control>
+            <control type="button" id="306">
+                <description>Change shortcut thumbnail</description>
+                <include>osdtopbutton</include>
+                <onclick>noop</onclick>
+                <label>$ADDON[script.skinshortcuts 32026]</label>
+            </control>
+            <control type="button" id="307">
+                <description>Change shortcut action</description>
+                <include>osdtopbutton</include>
+                <onclick>noop</onclick>
+                <label>$ADDON[script.skinshortcuts 32027]</label>
+            </control>
+            <control type="button" id="301">
+                <description>Add a new shortcut</description>
+                <include>osdtopbutton</include>
+                <onclick>SetFocus(211)</onclick>
+                <label>$ADDON[script.skinshortcuts 32000]</label>
+            </control>
+            <control type="button" id="302">
+                <description>Delete shortcut</description>
+                <include>osdtopbutton</include>
+                <onclick>noop</onclick>
+                <label>$ADDON[script.skinshortcuts 32001]</label>
+            </control>
+            <control type="button" id="308">
+                <description>Reset shortcuts</description>
+                <include>osdtopbutton</include>
+                <onclick>noop</onclick>
+                <label>$ADDON[script.skinshortcuts 32028]</label>
+            </control>
+        </control>
+
+        <!--<control type="group" id="100">-->
+        <!--<visible allowhiddenfocus="true">Control.HasFocus(111) | Control.HasFocus(102) | Control.HasFocus(103) | Control.HasFocus(104)</visible>-->
+        <!--<control type="image">-->
+        <!--<centerleft>960</centerleft>-->
+        <!--<centertop>540</centertop>-->
+        <!--<width>1100</width>-->
+        <!--<height>1080</height>-->
+        <!--<texture border="50">images/ContextMenu.png</texture>-->
+        <!--<colordiffuse>dialog</colordiffuse>-->
+        <!--</control>-->
+        <!--&lt;!&ndash; id's 101, 102, 103 - label of current shortcut type, buttons to change shortcut type &ndash;&gt;-->
+        <!--<control type="grouplist" id="105">-->
+        <!--<left>1200</left>-->
+        <!--<centertop>540</centertop>-->
+        <!--<height>600</height>-->
+        <!--<align>center</align>-->
+        <!--<itemgap>20</itemgap>-->
+        <!--<onleft>111</onleft>-->
+        <!--<control type="button" id="102">-->
+        <!--<width>200</width>-->
+        <!--<label>DOWN</label>-->
+        <!--<onclick>-</onclick>-->
+        <!--</control>-->
+        <!--<control type="button" id="103">-->
+        <!--<width>200</width>-->
+        <!--<label>UP</label>-->
+        <!--<onclick>-</onclick>-->
+        <!--</control>-->
+        <!--<control type="button" id="104">-->
+        <!--<width>200</width>-->
+        <!--<label>Close</label>-->
+        <!--<onclick>SetFocus(211)</onclick>-->
+        <!--</control>-->
+        <!--</control>-->
+        <!--<control type="label" id="101">-->
+        <!--<top>60</top>-->
+        <!--<height>40</height>-->
+        <!--<left>500</left>-->
+        <!--<width>600</width>-->
+        <!--<align>center</align>-->
+        <!--<label>-</label>-->
+        <!--</control>-->
+        <!--&lt;!&ndash; id 111 - List of available plugins &ndash;&gt;-->
+        <!--<control type="list" id="111">-->
+        <!--<top>120</top>-->
+        <!--<left>500</left>-->
+        <!--<width>600</width>-->
+        <!--<height>900</height>-->
+        <!--<onright>105</onright>-->
+        <!--<orientation>vertical</orientation>-->
+        <!--<viewtype label="535">list</viewtype>-->
+        <!--<preloaditems>2</preloaditems>-->
+        <!--<itemlayout width="802" height="81">-->
+        <!--<control type="label" description="Main Label">-->
+        <!--<width>600</width>-->
+        <!--<height>50</height>-->
+        <!--<include>50Label</include>-->
+        <!--<label>$INFO[ListItem.Label]</label>-->
+        <!--</control>-->
+        <!--<control type="label" description="Label2">-->
+        <!--<width>600</width>-->
+        <!--<top>20</top>-->
+        <!--<font>font12</font>-->
+        <!--<include>50Label</include>-->
+        <!--<label>$INFO[ListItem.label2]</label>-->
+        <!--</control>-->
+        <!--</itemlayout>-->
+        <!--<focusedlayout width="802" height="81">-->
+        <!--<control type="group">-->
+        <!--<animation effect="zoom" time="120" start="100" end="105" center="auto" tween="Back" easing="Out">Focus</animation>-->
+        <!--<control type="image">-->
+        <!--<top>12</top>-->
+        <!--<height>70</height>-->
+        <!--<width>600</width>-->
+        <!--<texture>shadow.png</texture>-->
+        <!--</control>-->
+        <!--<control type="image">-->
+        <!--<height>70</height>-->
+        <!--<width>600</width>-->
+        <!--<texture border="8">images/White.png</texture>-->
+        <!--</control>-->
+        <!--<control type="label" description="Main Label">-->
+        <!--<width>600</width>-->
+        <!--<height>50</height>-->
+        <!--<include>50LabelFO</include>-->
+        <!--<label>$INFO[ListItem.Label]</label>-->
+        <!--</control>-->
+        <!--<control type="label" description="Label2">-->
+        <!--<width>600</width>-->
+        <!--<top>20</top>-->
+        <!--<font>font12</font>-->
+        <!--<include>50LabelFO</include>-->
+        <!--<label>$INFO[ListItem.label2]</label>-->
+        <!--</control>-->
+        <!--</control>-->
+        <!--</focusedlayout>-->
+        <!--</control>-->
+
+        <!--<control type="scrollbar" id="160">-->
+        <!--<top>50</top>-->
+        <!--<left>470</left>-->
+        <!--<width>20</width>-->
+        <!--<height>650</height>-->
+        <!--<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>-->
+        <!--<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>-->
+        <!--<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>-->
+        <!--<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>-->
+        <!--<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>-->
+        <!--<onleft>111</onleft>-->
+        <!--<onright>102</onright>-->
+        <!--<showonepage>false</showonepage>-->
+        <!--<orientation>vertical</orientation>-->
+        <!--</control>-->
+        <!--</control>-->
+    </controls>
+</window>

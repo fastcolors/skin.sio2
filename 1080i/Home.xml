@@ -4,6 +4,7 @@
     <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <onload>RunScript(script.favourites)</onload>
+    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000)</onload>
     <include>OpenClose</include>
     <controls>
         <control type="group" description="Furniture">
@@ -38,17 +39,17 @@
             <label>[B] $VAR[shelflabel] [/B]</label>
             <texturefocus>-</texturefocus>
             <!--MOVIES-->
-            <onclick  condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
-            <onclick  condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
-            <onclick  condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
+            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
+            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
+            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + StringCompare(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
             <!--TVSHOWS-->
-            <onclick  condition="Control.IsVisible(312) + StringCompare(Skin.String(TVshelf),)">Skin.SetString(TVshelf,1)</onclick>
-            <onclick  condition="Control.IsVisible(312) + StringCompare(Skin.String(TVshelf),1)">Skin.SetString(TVshelf,2)</onclick>
-            <onclick  condition="Control.IsVisible(312) + StringCompare(Skin.String(TVshelf),2)">Skin.SetString(TVshelf,)</onclick>
+            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),)">Skin.SetString(TVshelf,1)</onclick>
+            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),1)">Skin.SetString(TVshelf,2)</onclick>
+            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),2)">Skin.SetString(TVshelf,)</onclick>
             <!--MUSIC-->
-            <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),)">Skin.SetString(musicshelf,albums)</onclick>
-            <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),albums)">Skin.SetString(musicshelf,artists)</onclick>
-            <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),artists)">Skin.SetString(musicshelf,)</onclick>
+            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + StringCompare(Skin.String(musicshelf),)">Skin.SetString(musicshelf,albums)</onclick>
+            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + StringCompare(Skin.String(musicshelf),albums)">Skin.SetString(musicshelf,artists)</onclick>
+            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + StringCompare(Skin.String(musicshelf),artists)">Skin.SetString(musicshelf,)</onclick>
 
             <!--ADDONS-->
             <!--<onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),1)">Skin.SetString(addonsshelf,2)</onclick>-->
@@ -99,31 +100,15 @@
                     <centertop>130</centertop>
                     <width>287</width>
                     <height>179</height>
-                    <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Property(color)]</texture>
-                </control>
-                <control type="image" description="THMBSICONS">
-                    <visible>!String.IsEmpty(ListItem.Art(thumb))</visible>
-                    <centerleft>180</centerleft>
-                    <centertop>130</centertop>
-                    <width>287</width>
-                    <height>179</height>
-                    <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Art(thumb)]</texture>
-                </control>
-                <control type="image" description="THMBSICONS">
-                    <visible>String.IsEmpty(ListItem.Art(thumb))</visible>
-                    <centerleft>180</centerleft>
-                    <centertop>130</centertop>
-                    <width>287</width>
-                    <height>179</height>
                     <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
                 </control>
-                <control type="image" description="THMBS weather">
+                <control type="image" description="THMBSICONS">
                     <centerleft>180</centerleft>
                     <centertop>130</centertop>
                     <width>287</width>
                     <height>179</height>
-                    <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
-                    <aspectratio>keep</aspectratio>
+                    <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Icon]</texture>
+                    <aspectratio scalediffuse="false">scale</aspectratio>
                 </control>
             </itemlayout>
             <focusedlayout height="290" width="360">
@@ -143,31 +128,15 @@
                         <centertop>130</centertop>
                         <width>287</width>
                         <height>179</height>
-                        <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Property(color)]</texture>
-                    </control>
-                    <control type="image" description="THMBSICONS">
-                        <visible>!String.IsEmpty(ListItem.Art(thumb))</visible>
-                        <centerleft>180</centerleft>
-                        <centertop>130</centertop>
-                        <width>287</width>
-                        <height>179</height>
-                        <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Art(thumb)]</texture>
-                    </control>
-                    <control type="image" description="THMBSICONS">
-                        <visible>String.IsEmpty(ListItem.Art(thumb))</visible>
-                        <centerleft>180</centerleft>
-                        <centertop>130</centertop>
-                        <width>287</width>
-                        <height>179</height>
                         <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
                     </control>
-                    <control type="image" description="THMBS weather">
+                    <control type="image" description="THMBSICONS">
                         <centerleft>180</centerleft>
                         <centertop>130</centertop>
                         <width>287</width>
                         <height>179</height>
-                        <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
-                        <aspectratio>keep</aspectratio>
+                        <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Icon]</texture>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
                     </control>
                 </control>
                 <control type="label" description="label">
@@ -182,276 +151,12 @@
                     <label>$INFO[ListItem.label]</label>
                 </control>
             </focusedlayout>
-            <content>
-                <item id="355">
-                    <visible>Skin.HasSetting(hidemovie) + Skin.HasSetting(hidetv) + !Skin.HasSetting(hidevaddons)</visible>
-                    <thumb>icons/vaddons.png</thumb>
-                    <label>$LOCALIZE[157] $LOCALIZE[24001]</label>
-                    <onclick>noop</onclick>
-                    <onclick>noop</onclick>
-                </item>
-                <item id="340">
-                    <visible>!Skin.HasSetting(hidemovie)</visible>
-                    <label>342</label>
-                    <thumb>icons/movies.png</thumb>
-                    <onclick condition="Library.HasContent(Movies)">ActivateWindow(Videos,MovieTitles,return)</onclick>
-                    <onclick condition="!Library.HasContent(Movies)">ActivateWindow(Videos,root)</onclick>
-                </item>
-                <item id="341">
-                    <visible>!Skin.HasSetting(hidetv)</visible>
-                    <label>20343</label>
-                    <thumb>icons/tvshows.png</thumb>
-                    <onclick condition="Library.HasContent(TVShows)">ActivateWindow(Videos,TVShowTitles,return)</onclick>
-                    <onclick condition="!Library.HasContent(TVShows)">ActivateWindow(Videos,root)</onclick>
-                </item>
-                <item id="342">
-                    <visible>!Skin.HasSetting(hidemusic)</visible>
-                    <label>2</label>
-                    <thumb>icons/music.png</thumb>
-                    <onclick>ActivateWindow(1177,return)</onclick>
-                    <onclick condition="!Library.HasContent(Music)">ActivateWindow(501,root)</onclick>
-                </item>
-                <!--SHELF POPULATING CUSTOM FAVOURITES-->
-                <item id="607" description="Custom Fvourite">
-                    <visible>!String.IsEmpty(Skin.String(HomeFav.7.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.7.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.7.Label)]</label>
-                    <property name="color">red</property>
-                    <onclick>$INFO[Skin.String(HomeFav.7.Path)]</onclick>
-                </item>
-                <item id="608" description="Custom Fvourite">
-                    <visible>!String.IsEmpty(Skin.String(HomeFav.8.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.8.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.8.Label)]</label>
-                    <property name="color">lightblue</property>>
-                    <onclick>$INFO[Skin.String(HomeFav.8.Path)]</onclick>
-                </item>
-                <item id="343">
-                    <visible>!Skin.HasSetting(hideaddon)</visible>
-                    <label>24001</label>
-                    <thumb>icons/addons.png</thumb>
-                    <onclick>ActivateWindow(1118)</onclick>
-                </item>
-                <item id="344">
-                    <visible>!Skin.HasSetting(hidepic)</visible>
-                    <label>1</label>
-                    <thumb>icons/photos.png</thumb>
-                    <onclick>ActivateWindow(2)</onclick>
-                </item>
-                <item id="345">
-                    <visible>!Skin.HasSetting(hidewtr)</visible>
-                    <property name="weatherthumb">$INFO[Weather.Conditions]</property>
-                    <label>$INFO[Weather.Temperature]</label>
-                    <property name="color">icons/white.png</property>
-                    <onclick>ActivateWindow(MyWeather)</onclick>
-                </item>
-                <item id="352">
-                    <visible>!Skin.HasSetting(hidefav)</visible>
-                    <thumb>icons/favs.png</thumb>
-                    <label>$LOCALIZE[1036]</label>
-                    <property name="color">icons/red.png</property>
-                    <onclick>ActivateWindow(134)</onclick>
-                </item>
-                <item id="355">
-                    <thumb>icons/LiveTV.png</thumb>
-                    <label>31059</label>
-                    <property name="color">icons/green3.png</property>
-                    <onclick>ActivateWindow(1718)</onclick>
-                    <visible>!Pvr.IsRecording + !Skin.HasSetting(PVRhide)</visible>
-                </item>
-                <item id="355">
-                    <thumb>icons/LiveTVrec.png</thumb>
-                    <label>$INFO[Pvr.NowRecordingTitle]</label>
-                    <property name="color">icons/green3.png</property>
-                    <onclick>ActivateWindow(1718)</onclick>
-                    <visible>Pvr.IsRecording + !Skin.HasSetting(PVRhide)</visible>
-                </item>
-                <!--EXTENDEDINFO-->
-                <item id="359">
-                    <visible>Skin.HasSetting(hidetheater) + System.HasAddon(script.extendedinfo)</visible>
-                    <thumb>icons/extendedinfotheater.png</thumb>
-                    <label>31422</label>
-                    <property name="color">icons/orange.png</property>
-                    <onclick>SetFocus(700)</onclick>
-                </item>
-                <!--EXTENDEDINFO2-->
-                <item id="360">
-                    <visible>Skin.HasSetting(hidedvdrel) + System.HasAddon(script.extendedinfo)</visible>
-                    <thumb>icons/extendedinfodvd.png</thumb>
-                    <label>31423</label>
-                    <property name="color">icons/green3.png</property>
-                    <onclick>SetFocus(700)</onclick>
-                </item>
-                <item id="601" description="Custom Fvourite">
-                    <visible>!String.IsEmpty(Skin.String(HomeFav.1.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.1.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.1.Label)]</label>
-                    <property name="color">icons/red.png</property>
-                    <onclick>$INFO[Skin.String(HomeFav.1.Path)]</onclick>
-                </item>
-                <item id="602" description="Custom Fvourite">
-                    <visible>!String.IsEmpty(Skin.String(HomeFav.2.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.2.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.2.Label)]</label>
-                    <property name="color">icons/lightblue.png</property>
-                    <onclick>$INFO[Skin.String(HomeFav.2.Path)]</onclick>
-                </item>
-                <item id="603" description="Custom Fvourite">
-                    <visible>!String.IsEmpty(Skin.String(HomeFav.3.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.3.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.3.Label)]</label>
-                    <property name="color">icons/green.png</property>
-                    <onclick>$INFO[Skin.String(HomeFav.3.Path)]</onclick>
-                </item>
-                <item id="604" description="Custom Fvourite">
-                    <visible>!String.IsEmpty(Skin.String(HomeFav.4.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.4.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.4.Label)]</label>
-                    <property name="color">icons/Orange.png</property>
-                    <onclick>$INFO[Skin.String(HomeFav.4.Path)]</onclick>
-                </item>
-                <item id="605" description="Custom Fvourite">
-                    <visible>!String.IsEmpty(Skin.String(HomeFav.5.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.5.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.5.Label)]</label>
-                    <property name="color">icons/purple.png</property>
-                    <onclick>$INFO[Skin.String(HomeFav.5.Path)]</onclick>
-                </item>
-                <item id="606" description="Custom Fvourite">
-                    <visible>!String.IsEmpty(Skin.String(HomeFav.6.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.6.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.6.Label)]</label>
-                    <property name="color">icons/darkblue.png</property>
-                    <onclick>$INFO[Skin.String(HomeFav.6.Path)]</onclick>
-                </item>
-                <item id="401" description="Custom addon">
-                    <visible>!String.IsEmpty(Skin.String(HomeAddon.1.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeAddon.1.Icon)]</thumb>
-                    <label2>$INFO[system.addonicon(Skin.String(HomeAddon.1.label))]</label2>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.1.Label))]</label>
-                    <property name="color">icons/lightblue.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.1.Label)])</onclick>
-                </item>
-                <item id="402" description="Custom addon">
-                    <visible>!String.IsEmpty(Skin.String(HomeAddon.2.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeAddon.2.Icon)]</thumb>
-                    <label2>$INFO[system.addonicon(Skin.String(HomeAddon.2.label))]</label2>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.2.Label))]</label>
-                    <property name="color">icons/red.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.2.Label)])</onclick>
-                </item>
-                <item id="403" description="Custom addon">
-                    <visible>!String.IsEmpty(Skin.String(HomeAddon.3.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeAddon.3.Icon)]</thumb>
-                    <label2>$INFO[system.addonicon(Skin.String(HomeAddon.3.label))]</label2>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.3.Label))]</label>
-                    <property name="color">icons/green.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.3.Label)])</onclick>
-                </item>
-                <item id="404" description="Custom addon">
-                    <visible>!String.IsEmpty(Skin.String(HomeAddon.4.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeAddon.4.Icon)]</thumb>
-                    <label2>$INFO[system.addonicon(Skin.String(HomeAddon.4.label))]</label2>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.4.Label))]</label>
-                    <property name="color">icons/lightblue.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.4.Label)])</onclick>
-                </item>
-                <item id="405" description="Custom addon">
-                    <visible>!String.IsEmpty(Skin.String(HomeAddon.5.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeAddon.5.Icon)]</thumb>
-                    <label2>$INFO[system.addonicon(Skin.String(HomeAddon.5.label))]</label2>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.5.Label))]</label>
-                    <property name="color">icons/teak.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.5.Label)])</onclick>
-                </item>
-                <item id="406" description="Custom addon">
-                    <visible>!String.IsEmpty(Skin.String(HomeAddon.6.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeAddon.6.Icon)]</thumb>
-                    <label2>$INFO[system.addonicon(Skin.String(HomeAddon.6.label))]</label2>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.6.Label))]</label>
-                    <property name="color">icons/purple.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.6.Label)])</onclick>
-                </item>
-                <item id="501" description="Custom script">
-                    <visible>!String.IsEmpty(Skin.String(HomeAddon.7.Label))</visible>
-                    <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.7.label))]</thumb>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.7.Label))]</label>
-                    <property name="color">icons/orange.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.7.Label)])</onclick>
-                </item>
-                <item id="502" description="Custom script">
-                    <visible>!String.IsEmpty(Skin.String(HomeAddon.8.Label))</visible>
-                    <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.8.label))]</thumb>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.8.Label))]</label>
-                    <property name="color">icons/purple.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.8.Label)])</onclick>
-                </item>
-                <item id="503" description="Custom script">
-                    <visible>!String.IsEmpty(Skin.String(HomeAddon.9.Label))</visible>
-                    <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.9.label))]</thumb>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.9.Label))]</label>
-                    <property name="color">icons/green.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.9.Label)])</onclick>
-                </item>
-                <item id="504" description="Custom script">
-                    <visible>!String.IsEmpty(Skin.String(HomeAddon.10.Label))</visible>
-                    <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.10.label))]</thumb>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.10.Label))]</label>
-                    <property name="color">icons/red.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.10.Label)])</onclick>
-                </item>
-                <item id="505" description="Custom script">
-                    <visible>!String.IsEmpty(Skin.String(HomeAddon.11.Label))</visible>
-                    <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.11.label))]</thumb>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.11.Label))]</label>
-                    <property name="color">icons/lightblue.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.11.Label)])</onclick>
-                </item>
-                <item id="506" description="Custom script">
-                    <visible>!String.IsEmpty(Skin.String(HomeAddon.12.Label))</visible>
-                    <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.12.label))]</thumb>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.12.Label))]</label>
-                    <property name="color">icons/progcolor.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.12.Label)])</onclick>
-                </item>
-                <item id="350">
-                    <visible>!Skin.HasSetting(hideprog)</visible>
-                    <thumb>icons/program.png</thumb>
-                    <label>0</label>
-                    <onclick>ActivateWindow(Programs,Addons,return)</onclick>
-                </item>
-                <item id="347">
-                    <visible>!Skin.HasSetting(hideSources)</visible>
-                    <thumb>icons/sources.png</thumb>
-                    <label>20094</label>
-                    <property name="color">icons/darkblue.png</property>
-                    <onclick>activatewindow(1115)</onclick>
-                </item>
-                <item id="355">
-                    <visible>!Skin.HasSetting(hidesearch) + System.HasAddon(script.globalsearch)</visible>
-                    <thumb>icons/search.png</thumb>
-                    <label>search</label>
-                    <onclick>RunScript(script.globalsearch)</onclick>
-                </item>
-                <item id="348">
-                    <thumb>icons/settings.png</thumb>
-                    <label>5</label>
-                    <onclick>ActivateWindow(1120)</onclick>
-                </item>
-                <item id="349">
-                    <!--<visible>!Player.HasMedia + !Skin.HasSetting(quitter)</visible>-->
-                    <thumb>icons/quits.png</thumb>
-                    <label>33060</label>
-                    <property name="color">icons/darkblue.png</property>
-                    <onclick>ActivateWindow(ShutdownMenu)</onclick>
-                </item>
-            </content>
+            <content><include>skinshortcuts-mainmenu</include></content>
         </control>
         <control type="group" id="700" description="Shelf items">
             <include>homeanimation</include>
-            <include condition="!Container(9000).HasFocus(342) + !Container(9000).HasFocus(343)">Movies</include>
-            <include>TV</include>
-            <include>Music</include>
+            <include>Movies</include>
+            <include>Squares</include>
             <include condition="Skin.HasSetting(PicturesShelf_Custom)">Pictures_Shortcuts</include>
             <include condition="Skin.HasSetting(AddonsShelf_Custom)">Addons_Shortcuts</include>
             <include condition="!Skin.HasSetting(AddonsShelf_Custom)">Addons_Auto</include>

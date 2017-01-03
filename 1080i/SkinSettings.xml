@@ -2,6 +2,7 @@
 <window>
     <backgroundcolor>aliceblue</backgroundcolor>
     <defaultcontrol always="true">50</defaultcontrol>
+    <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000)</onunload>
     <allowoverlay>no</allowoverlay>
     <include>OpenClose</include>
     <controls>
@@ -22,7 +23,7 @@
                     <align>left</align>
                     <label>31052</label>
                     <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
-                    <onclick>ActivateWindow(1117)</onclick>
+                    <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
                 </control>
                 <control type="button" id="2">
                     <width>840</width>
