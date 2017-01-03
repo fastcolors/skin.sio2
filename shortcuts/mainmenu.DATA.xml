@@ -1,13 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <shortcuts>
-    <!--<shortcut>-->
-        <!--<defaultID>vaddons</defaultID>-->
-        <!--<label>24001</label>-->
-        <!--<icon>-</icon>-->
-        <!--<label2>icons/vaddons.png</label2>-->
-        <!--<thumb>-</thumb>-->
-        <!--<action>noop</action>-->
-    <!--</shortcut>-->
     <shortcut>
         <defaultID>movies</defaultID>
         <label>342</label>
@@ -125,20 +117,20 @@
         <action>RunScript(script.globalsearch)</action>
     </shortcut>
     <shortcut>
-        <defaultID>shutdownmenu</defaultID>
-        <label>33060</label>
-        <icon>-</icon>
-        <label2>icons/darkblue.png</label2>
-        <thumb>icons/quits.png</thumb>
-        <action>ActivateWindow(ShutdownMenu)</action>
-    </shortcut>
-    <shortcut>
         <defaultID>settings</defaultID>
         <label>5</label>
         <label2>Common Shortcut</label2>
         <icon>-</icon>
         <thumb>icons/settings.png</thumb>
         <action>ActivateWindow(1120)</action>
+    </shortcut>
+    <shortcut>
+        <defaultID>shutdownmenu</defaultID>
+        <label>33060</label>
+        <icon>-</icon>
+        <label2>icons/darkblue.png</label2>
+        <thumb>icons/quits.png</thumb>
+        <action>ActivateWindow(ShutdownMenu)</action>
     </shortcut>
 </shortcuts>
 

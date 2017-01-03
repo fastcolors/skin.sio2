@@ -33,13 +33,6 @@
                     <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
                     <onclick>Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
                 </control>
-                <control type="radiobutton" id="3">
-                    <width>840</width>
-                    <label>$LOCALIZE[21383]</label>
-                    <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
-                    <onclick>Skin.ToggleSetting(Scrollbars_Active)</onclick>
-                    <usealttexture>Skin.HasSetting(Scrollbars_Active)</usealttexture>
-                </control>
                 <control type="radiobutton" id="4">
                     <width>840</width>
                     <align>left</align>
@@ -48,38 +41,13 @@
                     <onclick>Skin.ToggleSetting(ViewsMenuOff)</onclick>
                     <usealttexture>!Skin.HasSetting(ViewsMenuOff)</usealttexture>
                 </control>
-                <control type="button" id="5">
-                    <width>840</width>
-                    <align>left</align>
-                    <label>$LOCALIZE[31049]</label>
-                    <label2>$VAR[QuitLabel]</label2>
-                    <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
-                    <onclick>ActivateWindow(1114)</onclick>
-                </control>
-                <control type="button" id="6">
-                    <width>840</width>
-                    <align>left</align>
-                    <label>$LOCALIZE[31053]</label>
-                    <label2>$INFO[Skin.String(MusicLink)]</label2>
-                    <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
-                    <onclick>ActivateWindow(1121)</onclick>
-                </control>
-                <control type="button" id="7">
-                    <width>840</width>
-                    <align>left</align>
-                    <label>$LOCALIZE[31030]</label>
-                    <label2>$VAR[CustomImgStatus]</label2>
-                    <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
-                    <onclick condition="!Skin.HasSetting(CustomImage)">Skin.SetImage(ShelfCustomImage)</onclick>
-                    <onclick condition="Skin.HasSetting(CustomImage)">Skin.Reset(CustomImage)</onclick>
-                    <onclick condition="!Skin.HasSetting(CustomImage)">Skin.SetBool(CustomImage)</onclick>
-                </control>
                 <control type="button" id="8">
                     <width>840</width>
                     <align>left</align>
                     <label>$LOCALIZE[31036]</label>
                     <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
                     <onclick>Skin.ResetSettings</onclick>
+                    <onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
                     <onclick>XBMC.ReloadSkin()</onclick>
                 </control>
                 <control type="button" id="9">

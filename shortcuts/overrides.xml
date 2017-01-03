@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <overrides>
-	<requiredshortcut label="5" thumbnail="icons/settings.png" icon="icons/settings.png">ActivateWindow(1120)</requiredshortcut>
+    <requiredshortcut label="5" thumbnail="icons/settings.png" icon="icons/settings.png">ActivateWindow(1120)</requiredshortcut>
 
-	<contextmenu>
-		<!-- Enable context menu on control 211 -->
-		<enableon>211</enableon>
+    <contextmenu>
+        <!-- Enable context menu on control 211 -->
+        <enableon>211</enableon>
 
-		<!-- Add enable/disable controls -->
-		<item control="313" condition="String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),False)">$LOCALIZE[24021]</item>
-		<item control="313" condition="String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)">$LOCALIZE[24022]</item>
-		<item control="401">Set Link</item>
+        <!-- Add enable/disable controls -->
+        <item control="313" condition="String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),False)">$LOCALIZE[24021]</item>
+        <item control="313" condition="String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)">$LOCALIZE[24022]</item>
+        <item control="401">Set Link</item>
 
-	</contextmenu>
+    </contextmenu>
 </overrides>

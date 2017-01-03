@@ -38,13 +38,13 @@
             <label>[B] $VAR[shelflabel] [/B]</label>
             <texturefocus>-</texturefocus>
             <!--MOVIES-->
-            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
-            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
-            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + StringCompare(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
+            <onclick  condition="$EXP[ismovies] + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
+            <onclick  condition="$EXP[ismovies] + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
+            <onclick  condition="$EXP[ismovies] + StringCompare(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
             <!--TVSHOWS-->
-            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),)">Skin.SetString(TVshelf,1)</onclick>
-            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),1)">Skin.SetString(TVshelf,2)</onclick>
-            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),2)">Skin.SetString(TVshelf,)</onclick>
+            <onclick  condition="$EXP[istvshows] + StringCompare(Skin.String(TVshelf),)">Skin.SetString(TVshelf,1)</onclick>
+            <onclick  condition="$EXP[istvshows] + StringCompare(Skin.String(TVshelf),1)">Skin.SetString(TVshelf,2)</onclick>
+            <onclick  condition="$EXP[istvshows] + StringCompare(Skin.String(TVshelf),2)">Skin.SetString(TVshelf,)</onclick>
             <!--MUSIC-->
             <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + StringCompare(Skin.String(musicshelf),)">Skin.SetString(musicshelf,albums)</onclick>
             <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + StringCompare(Skin.String(musicshelf),albums)">Skin.SetString(musicshelf,artists)</onclick>

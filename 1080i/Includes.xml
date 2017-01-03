@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include file="Includes_Variables.xml" />
+    <include file="Includes_Expressions.xml" />
     <include file="Defaults.xml" />
     <include file="CommonViews.xml" />
     <include file="Videoviews.xml" />
@@ -369,11 +370,9 @@
         <height>355</height>
         <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
         <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
-        <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-        <onright condition="!Skin.HasSetting(Scrollbars_Active)">noop</onright>
+        <onright>noop</onright>
         <orientation>horizontal</orientation>
         <preloaditems>4</preloaditems>
-        <pagecontrol>60</pagecontrol>
         <scrolltime>400</scrolltime>
         <itemlayout height="300" width="320">
             <control type="image">

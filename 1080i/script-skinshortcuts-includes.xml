@@ -38,14 +38,15 @@
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
 			<label>$LOCALIZE[2]</label>
-			<label2>-</label2>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>icons/music.png</thumb>
 			<property name="labelID">2</property>
 			<property name="defaultID">music</property>
-			<onclick>ActivateWindow(1177,return)</onclick>
-			<property name="path">ActivateWindow(1177,return)</property>
-			<property name="list">1177</property>
+			<visible>Library.HasContent(Music)</visible>
+			<onclick>ActivateWindow(music,library://music/albums.xml/,return)</onclick>
+			<property name="path">ActivateWindow(music,library://music/albums.xml/,return)</property>
+			<property name="list">library://music/albums.xml/</property>
 			<visible>StringCompare(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">num-2</property>
 			<property name="group">mainmenu</property>
@@ -75,8 +76,12 @@
 			<thumb>icons/photos.png</thumb>
 			<property name="labelID">1</property>
 			<property name="defaultID">pictures</property>
-			<visible>False</visible>
-			<onclick>noop</onclick>
+			<onclick>ActivateWindow(2)</onclick>
+			<property name="path">ActivateWindow(2)</property>
+			<property name="list">2</property>
+			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<property name="submenuVisibility">num-1</property>
+			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="6">
@@ -87,8 +92,12 @@
 			<thumb>-</thumb>
 			<property name="labelID">info-weather-temperature</property>
 			<property name="defaultID">weather</property>
-			<visible>False</visible>
-			<onclick>noop</onclick>
+			<onclick>ActivateWindow(MyWeather)</onclick>
+			<property name="path">ActivateWindow(MyWeather)</property>
+			<property name="list">MyWeather</property>
+			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<property name="submenuVisibility">info-weather-temperature</property>
+			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="7">
@@ -99,8 +108,13 @@
 			<thumb>icons/LiveTV.png</thumb>
 			<property name="labelID">31059</property>
 			<property name="defaultID">LiveTV</property>
-			<visible>False</visible>
-			<onclick>noop</onclick>
+			<visible>!Pvr.IsRecording</visible>
+			<onclick>ActivateWindow(1718)</onclick>
+			<property name="path">ActivateWindow(1718)</property>
+			<property name="list">1718</property>
+			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<property name="submenuVisibility">num-31059</property>
+			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="8">
@@ -128,8 +142,12 @@
 			<thumb>icons/favs.png</thumb>
 			<property name="labelID">1036</property>
 			<property name="defaultID">favourites</property>
-			<visible>False</visible>
-			<onclick>noop</onclick>
+			<onclick>ActivateWindow(134)</onclick>
+			<property name="path">ActivateWindow(134)</property>
+			<property name="list">134</property>
+			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<property name="submenuVisibility">num-1036</property>
+			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="10">
@@ -140,8 +158,13 @@
 			<thumb>icons/extendedinfotheater.png</thumb>
 			<property name="labelID">31422</property>
 			<property name="defaultID">upcomingmovies</property>
-			<visible>False</visible>
-			<onclick>noop</onclick>
+			<visible>System.HasAddon(script.extendedinfo)</visible>
+			<onclick>SetFocus(700)</onclick>
+			<property name="path">SetFocus(700)</property>
+			<property name="list">SetFocus(700)</property>
+			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<property name="submenuVisibility">num-31422</property>
+			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="11">
@@ -152,8 +175,13 @@
 			<thumb>icons/extendedinfodvd.png</thumb>
 			<property name="labelID">31423</property>
 			<property name="defaultID">upcomingtvshows</property>
-			<visible>False</visible>
-			<onclick>noop</onclick>
+			<visible>System.HasAddon(script.extendedinfo)</visible>
+			<onclick>SetFocus(700)</onclick>
+			<property name="path">SetFocus(700)</property>
+			<property name="list">SetFocus(700)</property>
+			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<property name="submenuVisibility">num-31423</property>
+			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="12">
@@ -206,22 +234,6 @@
 		</item>
 		<item id="15">
 			<property name="id">$NUMBER[15]</property>
-			<label>$LOCALIZE[33060]</label>
-			<label2>icons/darkblue.png</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb>icons/quits.png</thumb>
-			<property name="labelID">33060</property>
-			<property name="defaultID">shutdownmenu</property>
-			<onclick>ActivateWindow(ShutdownMenu)</onclick>
-			<property name="path">ActivateWindow(ShutdownMenu)</property>
-			<property name="list">ShutdownMenu</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
-			<property name="submenuVisibility">num-33060</property>
-			<property name="group">mainmenu</property>
-			<property name="hasSubmenu">False</property>
-		</item>
-		<item id="16">
-			<property name="id">$NUMBER[16]</property>
 			<label>$LOCALIZE[5]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -235,6 +247,22 @@
 			<property name="submenuVisibility">num-5</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
+		</item>
+		<item id="16">
+			<property name="id">$NUMBER[16]</property>
+			<label>$LOCALIZE[33060]</label>
+			<label2>icons/darkblue.png</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>icons/quits.png</thumb>
+			<property name="labelID">33060</property>
+			<property name="defaultID">shutdownmenu</property>
+			<onclick>ActivateWindow(ShutdownMenu)</onclick>
+			<property name="path">ActivateWindow(ShutdownMenu)</property>
+			<property name="list">ShutdownMenu</property>
+			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<property name="submenuVisibility">num-33060</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
@@ -468,22 +496,6 @@
 		</item>
 		<item id="15">
 			<property name="id">$NUMBER[15]</property>
-			<label>$LOCALIZE[33060]</label>
-			<label2>icons/darkblue.png</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb>icons/quits.png</thumb>
-			<property name="labelID">33060</property>
-			<property name="defaultID">shutdownmenu</property>
-			<onclick>ActivateWindow(ShutdownMenu)</onclick>
-			<property name="path">ActivateWindow(ShutdownMenu)</property>
-			<property name="list">ShutdownMenu</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
-			<property name="submenuVisibility">num-33060</property>
-			<property name="group">mainmenu</property>
-			<property name="hasSubmenu">False</property>
-		</item>
-		<item id="16">
-			<property name="id">$NUMBER[16]</property>
 			<label>$LOCALIZE[5]</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -497,6 +509,22 @@
 			<property name="submenuVisibility">num-5</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
+		</item>
+		<item id="16">
+			<property name="id">$NUMBER[16]</property>
+			<label>$LOCALIZE[33060]</label>
+			<label2>icons/darkblue.png</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>icons/quits.png</thumb>
+			<property name="labelID">33060</property>
+			<property name="defaultID">shutdownmenu</property>
+			<onclick>ActivateWindow(ShutdownMenu)</onclick>
+			<property name="path">ActivateWindow(ShutdownMenu)</property>
+			<property name="list">ShutdownMenu</property>
+			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<property name="submenuVisibility">num-33060</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">False</property>
 		</item>
 	</include>
 	<include />
@@ -890,7 +918,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[7]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -906,7 +934,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[13200]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -922,7 +950,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[10007]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -938,7 +966,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[14111]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -1342,7 +1370,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[7]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -1358,7 +1386,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[13200]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -1374,7 +1402,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[10007]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -1390,7 +1418,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[14111]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3042,18 +3070,10 @@
 		<description>No items</description>
 		<description>No items</description>
 	</include>
-	<include name="skinshortcuts-group-num-33060">
-		<description>No items</description>
-		<description>No items</description>
-	</include>
-	<include name="skinshortcuts-group-alt-num-33060">
-		<description>No items</description>
-		<description>No items</description>
-	</include>
 	<include name="skinshortcuts-group-num-5">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[7]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -3069,7 +3089,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[13200]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3085,7 +3105,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[10007]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3101,7 +3121,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[14111]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3118,7 +3138,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[7]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -3134,7 +3154,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[13200]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3150,7 +3170,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[10007]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3166,7 +3186,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[14111]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3185,7 +3205,7 @@
 	<include name="skinshortcuts-group-alt-num-5">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[7]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -3201,7 +3221,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[13200]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3217,7 +3237,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[10007]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3233,7 +3253,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[14111]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3250,7 +3270,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[7]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -3266,7 +3286,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[13200]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3282,7 +3302,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[10007]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3298,7 +3318,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">16</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[14111]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3313,5 +3333,13 @@
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
+	</include>
+	<include name="skinshortcuts-group-num-33060">
+		<description>No items</description>
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-alt-num-33060">
+		<description>No items</description>
+		<description>No items</description>
 	</include>
 </includes>
