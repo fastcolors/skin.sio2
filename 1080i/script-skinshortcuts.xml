@@ -11,10 +11,10 @@
                 <height>980</height>
                 <top>100</top>
                 <left>60</left>
-                <onleft>-</onleft>
-                <onright>-</onright>
-                <onup>300</onup>
-                <ondown>-</ondown>
+                <onleft>noop</onleft>
+                <onright>noop</onright>
+                <onup>noop</onup>
+                <ondown>noop</ondown>
                 <onclick>SetFocus(300)</onclick>
                 <scrolltime tween="sine" easing="inout">280</scrolltime>
                 <itemlayout height="290" width="360">
@@ -46,7 +46,7 @@
                         <centertop>130</centertop>
                         <width>287</width>
                         <height>179</height>
-                        <texture colordiffuse="aa000000">images/White.png</texture>
+                        <texture colordiffuse="aa000000" border="8">images/White.png</texture>
                     </control>
                 </itemlayout>
                 <focusedlayout height="290" width="360">
@@ -107,6 +107,14 @@
             <onup>111</onup>
             <align>center</align>
             <orientation>horizontal</orientation>
+            <control type="togglebutton" id="313">
+                <usealttexture>String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),False)</usealttexture>
+                <description>Move shortcut up</description>
+                <include>osdtopbutton</include>
+                <onclick>SetFocus(211)</onclick>
+                <label>$LOCALIZE[24022]</label>
+                <altlabel>$LOCALIZE[24021]</altlabel>
+            </control>
             <control type="button" id="303">
                 <description>Move shortcut up</description>
                 <include>osdtopbutton</include>

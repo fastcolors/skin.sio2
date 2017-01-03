@@ -118,6 +118,22 @@
 		</item>
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
+			<label>$LOCALIZE[1036]</label>
+			<label2>icons/red.png</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>icons/favs.png</thumb>
+			<property name="labelID">1036</property>
+			<property name="defaultID">favourites</property>
+			<onclick>ActivateWindow(134)</onclick>
+			<property name="path">ActivateWindow(134)</property>
+			<property name="list">134</property>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
+			<property name="submenuVisibility">num-1036</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">False</property>
+		</item>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
 			<label>$INFO[Pvr.NowRecordingTitle]</label>
 			<label2>icons/green3.png</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -132,22 +148,6 @@
 			<property name="submenuVisibility">info-pvr-nowrecordingtitle</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
-		</item>
-		<item id="9">
-			<property name="id">$NUMBER[9]</property>
-			<label>$LOCALIZE[1036]</label>
-			<label2>icons/red.png</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb>icons/favs.png</thumb>
-			<property name="labelID">1036</property>
-			<property name="defaultID">favourites</property>
-			<onclick>ActivateWindow(134)</onclick>
-			<property name="path">ActivateWindow(134)</property>
-			<property name="list">134</property>
-			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
-			<property name="submenuVisibility">num-1036</property>
-			<property name="group">mainmenu</property>
-			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="10">
 			<property name="id">$NUMBER[10]</property>
@@ -849,7 +849,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[22020]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -866,7 +866,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[19163]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -883,7 +883,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[19040]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -900,7 +900,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[137]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -2745,10 +2745,18 @@
 			<property name="isSubmenu">True</property>
 		</item>
 	</include>
+	<include name="skinshortcuts-group-num-1036">
+		<description>No items</description>
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-alt-num-1036">
+		<description>No items</description>
+		<description>No items</description>
+	</include>
 	<include name="skinshortcuts-group-info-pvr-nowrecordingtitle">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[22020]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -2765,7 +2773,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[19163]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -2782,7 +2790,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[19040]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -2799,7 +2807,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[137]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -2886,7 +2894,7 @@
 	<include name="skinshortcuts-group-alt-info-pvr-nowrecordingtitle">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[22020]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -2903,7 +2911,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[19163]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -2920,7 +2928,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[19040]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -2937,7 +2945,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[137]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -3020,14 +3028,6 @@
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
-	</include>
-	<include name="skinshortcuts-group-num-1036">
-		<description>No items</description>
-		<description>No items</description>
-	</include>
-	<include name="skinshortcuts-group-alt-num-1036">
-		<description>No items</description>
-		<description>No items</description>
 	</include>
 	<include name="skinshortcuts-group-num-31422">
 		<description>No items</description>
