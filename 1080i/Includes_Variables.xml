@@ -115,61 +115,54 @@
         <value>$INFO[ListItem.Art(fanart)]</value>
     </variable>
 
-    <variable name="shelfmovies">
-        <value condition="Container(9000).HasFocus(340) + String.IsEqual(Skin.String(moviesshelf),WL)">special://skin/resources/laststarted.xsp</value>
-        <value condition="Container(9000).HasFocus(340) + String.IsEqual(Skin.String(moviesshelf),RND)">special://skin/resources/random.xsp</value>
-        <value condition="Container(9000).HasFocus(601)">$INFO[Skin.String(HomeFav.1.List)]</value>
-        <value condition="Container(9000).HasFocus(602)">$INFO[Skin.String(HomeFav.2.List)]</value>
-        <value condition="Container(9000).HasFocus(603)">$INFO[Skin.String(HomeFav.3.List)]</value>
-        <value condition="Container(9000).HasFocus(604)">$INFO[Skin.String(HomeFav.4.List)]</value>
-        <value condition="Container(9000).HasFocus(605)">$INFO[Skin.String(HomeFav.5.List)]</value>
-        <value condition="Container(9000).HasFocus(606)">$INFO[Skin.String(HomeFav.6.List)]</value>
-        <value condition="Container(9000).HasFocus(607)">$INFO[Skin.String(HomeFav.7.List)]</value>
-        <value condition="Container(9000).HasFocus(608)">$INFO[Skin.String(HomeFav.8.List)]</value>
-        <value condition="Container(9000).HasFocus(401)">$INFO[Skin.String(HomeAddon.1.Label),plugin://]</value>
-        <value condition="Container(9000).HasFocus(402)">$INFO[Skin.String(HomeAddon.2.Label),plugin://]</value>
-        <value condition="Container(9000).HasFocus(403)">$INFO[Skin.String(HomeAddon.3.Label),plugin://]</value>
-        <value condition="Container(9000).HasFocus(404)">$INFO[Skin.String(HomeAddon.4.Label),plugin://]</value>
-        <value condition="Container(9000).HasFocus(405)">$INFO[Skin.String(HomeAddon.5.Label),plugin://]</value>
-        <value condition="Container(9000).HasFocus(406)">$INFO[Skin.String(HomeAddon.6.Label),plugin://]</value>
+    <variable name="shelf">
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),WL)">special://skin/resources/laststarted.xsp</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),RND)">special://skin/resources/random.xsp</value>
         <value condition="Container(9000).HasFocus(357)">special://skin/resources/3d.xsp</value>
-        <value condition="Container(9000).HasFocus(359)">plugin://script.extendedinfo?info=newdvdreleases&amp;&amp;limit=18</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies)">plugin://script.extendedinfo?info=newdvdreleases&amp;&amp;limit=18</value>
         <!--<value condition="Container(9000).HasFocus(359)">plugin://script.extendedinfo?info=upcoming&amp;&amp;limit=18</value>-->
         <!--<value condition="Container(9000).HasFocus(359)">plugin://script.extendedinfo?info=incinemas&amp;&amp;limit=18</value>-->
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingtvshows)">plugin://script.extendedinfo?info=trendingshows&amp;&amp;limit=18</value>
         <!--<value condition="Container(9000).HasFocus(360) + String.IsEqual(Skin.String(dvdsshelf),)">plugin://script.extendedinfo?info=topratedtvshows&amp;&amp;limit=18</value>-->
-        <value condition="Container(9000).HasFocus(360)">plugin://script.extendedinfo?info=trendingshows&amp;&amp;limit=18</value>
         <!--<value condition="Container(9000).HasFocus(360)">plugin://script.extendedinfo?info=airingshows&amp;&amp;limit=18</value>-->
-        <value condition="Container(9000).HasFocus(340)">videodb://recentlyaddedmovies/</value>
-        <value  condition="Container(9000).HasFocus(355)">pvr://channels/tv/*</value>
-        <value>-</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies)">videodb://recentlyaddedmovies/</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),LiveTV)">pvr://channels/tv/*</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),1)">special://skin/resources/randomTV.xsp</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),2)">videodb://recentlyaddedepisodes</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows)">plugin://service.library.data.provider?type=recommendedepisodes&limit=18&reload=$INFO[Window.Property(recommendedepisodes)]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music)">-</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)">-</value>
+        <value>$INFO[Container(9000).ListItem.Property(list)]</value>
     </variable>
 
-    <variable name="shelfTV">
-        <value condition="Container(9000).HasFocus(341) + StringCompare(Skin.String(TVshelf),1)">special://skin/resources/randomTV.xsp</value>
-        <value condition="Container(9000).HasFocus(341) + StringCompare(Skin.String(TVshelf),2)">videodb://recentlyaddedepisodes</value>
-        <value condition="Container(9000).HasFocus(341)">plugin://service.library.data.provider?type=recommendedepisodes&limit=18&reload=$INFO[Window.Property(recommendedepisodes)]</value>
+    <variable name="squareshelf">
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + String.IsEqual(Skin.String(musicshelf),artists) + Library.HasContent(Music)">special://skin/resources/randomMZK.xsp</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + String.IsEqual(Skin.String(musicshelf),albums) + Library.HasContent(Music)">musicdb://recentlyplayedalbums/</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + Library.HasContent(Music)">musicdb://recentlyaddedalbums/</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)">$INFO[Container(9000).ListItem.Property(list)]</value>
     </variable>
+
 
     <variable name="shelflabel">
         <!--MOVIES-->
-        <value condition="Container(9000).HasFocus(340) + String.IsEqual(Skin.String(moviesshelf),WL)">$LOCALIZE[31048]</value>
-        <value condition="Container(9000).HasFocus(340) + String.IsEqual(Skin.String(moviesshelf),RND)">$LOCALIZE[590]</value>
-        <value condition="Container(9000).HasFocus(340) + String.IsEqual(Skin.String(moviesshelf),)">$LOCALIZE[20386]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),WL)">$LOCALIZE[31048]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),RND)">$LOCALIZE[590]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),)">$LOCALIZE[20386]</value>
         <!--TV-->
-        <value condition="Container(9000).HasFocus(341) + StringCompare(Skin.String(TVshelf),2)">$LOCALIZE[20387]</value>
-        <value condition="Container(9000).HasFocus(341) + StringCompare(Skin.String(TVshelf),1)">$LOCALIZE[590]</value>
-        <value condition="Container(9000).HasFocus(341)">$LOCALIZE[31048]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),2)">$LOCALIZE[20387]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),1)">$LOCALIZE[590]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows)">$LOCALIZE[31048]</value>
         <!--MUSIC-->
-        <value condition="Container(9000).HasFocus(342) + Library.HasContent(Music) + StringCompare(Skin.String(musicshelf),albums)">$LOCALIZE[517]</value>
-        <value condition="Container(9000).HasFocus(342) + Library.HasContent(Music) + StringCompare(Skin.String(musicshelf),artists)">$LOCALIZE[590]</value>
-        <value condition="Container(9000).HasFocus(342) + Library.HasContent(Music)">$LOCALIZE[359]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + Library.HasContent(Music) + StringCompare(Skin.String(musicshelf),albums)">$LOCALIZE[517]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + Library.HasContent(Music) + StringCompare(Skin.String(musicshelf),artists)">$LOCALIZE[590]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + Library.HasContent(Music)">$LOCALIZE[359]</value>
         <!--ADDONS-->
         <!--todo label-->
-        <value condition="Container(9000).HasFocus(343) + Skin.HasSetting(AddonsShelf_Custom)">$LOCALIZE[31051]</value>
-        <!--<value condition="Container(9000).HasFocus(343) + StringCompare(Skin.String(addonsshelf),1)">$LOCALIZE[1038] </value>-->
-        <!--<value condition="Container(9000).HasFocus(343) + StringCompare(Skin.String(addonsshelf),2)">$LOCALIZE[1043] </value>-->
-        <!--<value condition="Container(9000).HasFocus(343) + StringCompare(Skin.String(addonsshelf),3)">$LOCALIZE[1039] </value>-->
-        <value condition="Container(9000).HasFocus(343)">$LOCALIZE[1037]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) + Skin.HasSetting(AddonsShelf_Custom)">$LOCALIZE[31051]</value>
+        <!--<value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) + StringCompare(Skin.String(addonsshelf),1)">$LOCALIZE[1038] </value>-->
+        <!--<value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) + StringCompare(Skin.String(addonsshelf),2)">$LOCALIZE[1043] </value>-->
+        <!--<value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) + StringCompare(Skin.String(addonsshelf),3)">$LOCALIZE[1039] </value>-->
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)">Addons</value>
         <!--PICTURES-->
         <value condition="Container(9000).HasFocus(344)"> </value>
         <!--LIVETV(RECORDINGS)-->
@@ -209,9 +202,4 @@
         <value condition="Container(101).Position(2)">special://skin/resources/randomTV.xsp</value>
     </variable>
 
-    <variable name="musicshelfcontent">
-        <value condition="Container(9000).HasFocus(342) + StringCompare(Skin.String(musicshelf),artists) + Library.HasContent(Music)">special://skin/resources/randomMZK.xsp</value>
-        <value condition="StringCompare(Skin.String(musicshelf),albums) + Library.HasContent(Music)">musicdb://recentlyplayedalbums/</value>
-        <value condition="Container(9000).HasFocus(342) + Library.HasContent(Music)">musicdb://recentlyaddedalbums/</value>
-    </variable>
 </includes>

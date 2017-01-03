@@ -9,7 +9,8 @@
       <top>210</top>
       <width>1360</width>
       <height>740</height>
-      <texture border="150">images/Dialog.png</texture>
+      <texture border="50">images/ContextMenu.png</texture>
+      <colordiffuse>dialog</colordiffuse>
     </control>
     <control type="group">
       <left>480</left>
@@ -18,7 +19,7 @@
         <width>960</width>
         <label>-</label>
         <font>size28</font>
-        <textcolor>black</textcolor>
+        <textcolor>darktext</textcolor>
         <align>center</align>
       </control>
       <control type="textbox" id="9" description="content">
@@ -26,7 +27,7 @@
         <width>960</width>
         <height>145</height>
         <align>center</align>
-        <textcolor>black</textcolor>
+        <textcolor>darktext</textcolor>
         <label>-</label>
       </control>
       <control type="progress" id="20" description="Progressbar">
