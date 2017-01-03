@@ -107,58 +107,60 @@
             <onup>111</onup>
             <align>center</align>
             <orientation>horizontal</orientation>
-            <!--<control type="button" id="303">-->
-                <!--<description>Move shortcut up</description>-->
-                <!--<include>osdtopbutton</include>-->
-                <!--<onclick>noop</onclick>-->
-                <!--<label>$ADDON[script.skinshortcuts 32002]</label>-->
-            <!--</control>-->
-            <!--<control type="button" id="304">-->
-                <!--<description>Move shortcut down</description>-->
-                <!--<include>osdtopbutton</include>-->
-                <!--<onclick>noop</onclick>-->
-                <!--<label>$ADDON[script.skinshortcuts 32003]</label>-->
-            <!--</control>-->
-            <!--<control type="button" id="305">-->
-                <!--<description>Change shortcut label</description>-->
-                <!--<include>osdtopbutton</include>-->
-                <!--<onclick>noop</onclick>-->
-                <!--<label>$ADDON[script.skinshortcuts 32025]</label>-->
-            <!--</control>-->
-            <!--<control type="button" id="306">-->
-                <!--<description>Change shortcut thumbnail</description>-->
-                <!--<include>osdtopbutton</include>-->
-                <!--<onclick>noop</onclick>-->
-                <!--<label>$ADDON[script.skinshortcuts 32026]</label>-->
-            <!--</control>-->
-            <!--<control type="button" id="307">-->
-                <!--<description>Change shortcut action</description>-->
-                <!--<include>osdtopbutton</include>-->
-                <!--<onclick>noop</onclick>-->
-                <!--<label>$ADDON[script.skinshortcuts 32027]</label>-->
-            <!--</control>-->
-            <!--<control type="button" id="301">-->
-                <!--<description>Add a new shortcut</description>-->
-                <!--<include>osdtopbutton</include>-->
-                <!--<onclick>SetFocus(211)</onclick>-->
-                <!--<label>$ADDON[script.skinshortcuts 32000]</label>-->
-            <!--</control>-->
-            <!--<control type="button" id="302">-->
-                <!--<description>Delete shortcut</description>-->
-                <!--<include>osdtopbutton</include>-->
-                <!--<onclick>noop</onclick>-->
-                <!--<label>$ADDON[script.skinshortcuts 32001]</label>-->
-            <!--</control>-->
+            <control type="button" id="303">
+                <description>Move shortcut up</description>
+                <include>osdtopbutton</include>
+                <onclick>noop</onclick>
+                <label>$ADDON[script.skinshortcuts 32002]</label>
+            </control>
+            <control type="button" id="304">
+                <description>Move shortcut down</description>
+                <include>osdtopbutton</include>
+                <onclick>noop</onclick>
+                <label>$ADDON[script.skinshortcuts 32003]</label>
+            </control>
+            <control type="button" id="305">
+                <description>Change shortcut label</description>
+                <include>osdtopbutton</include>
+                <onclick>noop</onclick>
+                <label>$ADDON[script.skinshortcuts 32025]</label>
+            </control>
+            <control type="button" id="306">
+                <description>Change shortcut thumbnail</description>
+                <include>osdtopbutton</include>
+                <onclick>noop</onclick>
+                <label>$ADDON[script.skinshortcuts 32026]</label>
+            </control>
+            <control type="button" id="307">
+                <description>Change shortcut action</description>
+                <include>osdtopbutton</include>
+                <onclick>noop</onclick>
+                <label>$ADDON[script.skinshortcuts 32027]</label>
+            </control>
+            <control type="button" id="301">
+                <description>Add a new shortcut</description>
+                <include>osdtopbutton</include>
+                <onclick>SetFocus(211)</onclick>
+                <label>$ADDON[script.skinshortcuts 32000]</label>
+            </control>
+            <control type="button" id="401">
+                <description>Add a new shortcut</description>
+                <include>osdtopbutton</include>
+                <onclick>SetFocus(211)</onclick>
+                <label>$ADDON[script.skinshortcuts 32048]</label>
+            </control>
+            <control type="button" id="302">
+                <description>Delete shortcut</description>
+                <include>osdtopbutton</include>
+                <onclick>noop</onclick>
+                <label>$ADDON[script.skinshortcuts 32001]</label>
+            </control>
             <control type="button" id="308">
                 <description>Reset shortcuts</description>
                 <include>osdtopbutton</include>
                 <onclick>noop</onclick>
                 <label>$ADDON[script.skinshortcuts 32028]</label>
             </control>
-        </control>
-        <control type="label">
-            <left>60</left>
-            <label>Open Context Menu for more options</label>
         </control>
     </controls>
 </window>

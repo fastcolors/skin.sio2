@@ -13,7 +13,7 @@
 			<onclick>ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/titles/,return)</property>
 			<property name="list">videodb://movies/titles/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">movies</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
@@ -30,7 +30,7 @@
 			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/,return)</property>
 			<property name="list">videodb://tvshows/titles/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">tvshows</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
@@ -46,7 +46,7 @@
 			<onclick>ActivateWindow(1177,return)</onclick>
 			<property name="path">ActivateWindow(1177,return)</property>
 			<property name="list">1177</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">num-2</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
@@ -62,7 +62,7 @@
 			<onclick>ActivateWindow(1118)</onclick>
 			<property name="path">ActivateWindow(1118)</property>
 			<property name="list">1118</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">num-24001</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
@@ -78,7 +78,7 @@
 			<onclick>ActivateWindow(2)</onclick>
 			<property name="path">ActivateWindow(2)</property>
 			<property name="list">2</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">num-1</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
@@ -94,7 +94,7 @@
 			<onclick>ActivateWindow(MyWeather)</onclick>
 			<property name="path">ActivateWindow(MyWeather)</property>
 			<property name="list">MyWeather</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">info-weather-temperature</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
@@ -111,7 +111,7 @@
 			<onclick>ActivateWindow(1718)</onclick>
 			<property name="path">ActivateWindow(1718)</property>
 			<property name="list">1718</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">num-31059</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
@@ -128,7 +128,7 @@
 			<onclick>ActivateWindow(1718)</onclick>
 			<property name="path">ActivateWindow(1718)</property>
 			<property name="list">1718</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">info-pvr-nowrecordingtitle</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
@@ -144,7 +144,7 @@
 			<onclick>ActivateWindow(134)</onclick>
 			<property name="path">ActivateWindow(134)</property>
 			<property name="list">134</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">num-1036</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
@@ -161,7 +161,7 @@
 			<onclick>SetFocus(700)</onclick>
 			<property name="path">SetFocus(700)</property>
 			<property name="list">SetFocus(700)</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">num-31422</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
@@ -178,7 +178,7 @@
 			<onclick>SetFocus(700)</onclick>
 			<property name="path">SetFocus(700)</property>
 			<property name="list">SetFocus(700)</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">num-31423</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
@@ -194,7 +194,7 @@
 			<onclick>ActivateWindow(Programs,addons://sources/executable/,return)</onclick>
 			<property name="path">ActivateWindow(Programs,addons://sources/executable/,return)</property>
 			<property name="list">addons://sources/executable/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">num-0</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
@@ -210,7 +210,7 @@
 			<onclick>ActivateWindow(1115)</onclick>
 			<property name="path">ActivateWindow(1115)</property>
 			<property name="list">1115</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">num-20094</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
@@ -226,7 +226,7 @@
 			<onclick>RunScript(script.globalsearch)</onclick>
 			<property name="path">RunScript(script.globalsearch)</property>
 			<property name="list">RunScript(script.globalsearch)</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">script-globalsearch</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
@@ -242,7 +242,7 @@
 			<onclick>ActivateWindow(1120)</onclick>
 			<property name="path">ActivateWindow(1120)</property>
 			<property name="list">1120</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">num-5</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
@@ -258,7 +258,7 @@
 			<onclick>ActivateWindow(ShutdownMenu)</onclick>
 			<property name="path">ActivateWindow(ShutdownMenu)</property>
 			<property name="list">ShutdownMenu</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">num-33060</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
@@ -275,7 +275,7 @@
 			<onclick>ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/titles/,return)</property>
 			<property name="list">videodb://movies/titles/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">movies</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
@@ -292,7 +292,7 @@
 			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/,return)</property>
 			<property name="list">videodb://tvshows/titles/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">tvshows</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
@@ -308,7 +308,7 @@
 			<onclick>ActivateWindow(1177,return)</onclick>
 			<property name="path">ActivateWindow(1177,return)</property>
 			<property name="list">1177</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">num-2</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
@@ -324,7 +324,7 @@
 			<onclick>ActivateWindow(1118)</onclick>
 			<property name="path">ActivateWindow(1118)</property>
 			<property name="list">1118</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">num-24001</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
@@ -340,7 +340,7 @@
 			<onclick>ActivateWindow(2)</onclick>
 			<property name="path">ActivateWindow(2)</property>
 			<property name="list">2</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">num-1</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
@@ -356,7 +356,7 @@
 			<onclick>ActivateWindow(MyWeather)</onclick>
 			<property name="path">ActivateWindow(MyWeather)</property>
 			<property name="list">MyWeather</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">info-weather-temperature</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
@@ -373,7 +373,7 @@
 			<onclick>ActivateWindow(1718)</onclick>
 			<property name="path">ActivateWindow(1718)</property>
 			<property name="list">1718</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">num-31059</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
@@ -390,7 +390,7 @@
 			<onclick>ActivateWindow(1718)</onclick>
 			<property name="path">ActivateWindow(1718)</property>
 			<property name="list">1718</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">info-pvr-nowrecordingtitle</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
@@ -406,7 +406,7 @@
 			<onclick>ActivateWindow(134)</onclick>
 			<property name="path">ActivateWindow(134)</property>
 			<property name="list">134</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">num-1036</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
@@ -423,7 +423,7 @@
 			<onclick>SetFocus(700)</onclick>
 			<property name="path">SetFocus(700)</property>
 			<property name="list">SetFocus(700)</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">num-31422</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
@@ -440,7 +440,7 @@
 			<onclick>SetFocus(700)</onclick>
 			<property name="path">SetFocus(700)</property>
 			<property name="list">SetFocus(700)</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">num-31423</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
@@ -456,7 +456,7 @@
 			<onclick>ActivateWindow(Programs,addons://sources/executable/,return)</onclick>
 			<property name="path">ActivateWindow(Programs,addons://sources/executable/,return)</property>
 			<property name="list">addons://sources/executable/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">num-0</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
@@ -472,7 +472,7 @@
 			<onclick>ActivateWindow(1115)</onclick>
 			<property name="path">ActivateWindow(1115)</property>
 			<property name="list">1115</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">num-20094</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
@@ -488,7 +488,7 @@
 			<onclick>RunScript(script.globalsearch)</onclick>
 			<property name="path">RunScript(script.globalsearch)</property>
 			<property name="list">RunScript(script.globalsearch)</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">script-globalsearch</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
@@ -504,7 +504,7 @@
 			<onclick>ActivateWindow(1120)</onclick>
 			<property name="path">ActivateWindow(1120)</property>
 			<property name="list">1120</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">num-5</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
@@ -520,7 +520,7 @@
 			<onclick>ActivateWindow(ShutdownMenu)</onclick>
 			<property name="path">ActivateWindow(ShutdownMenu)</property>
 			<property name="list">ShutdownMenu</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">num-33060</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
@@ -537,11 +537,11 @@
 			<thumb />
 			<property name="labelID">20386</property>
 			<property name="defaultID">20386</property>
-			<visible>[Library.HasContent(Movies)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</property>
 			<property name="list">videodb://recentlyaddedmovies/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -554,11 +554,11 @@
 			<thumb />
 			<property name="labelID">20434</property>
 			<property name="defaultID">20434</property>
-			<visible>[Library.HasContent(MovieSets)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(MovieSets)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/sets/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/sets/,return)</property>
 			<property name="list">videodb://movies/sets/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -571,11 +571,11 @@
 			<thumb />
 			<property name="labelID">369</property>
 			<property name="defaultID">369</property>
-			<visible>[Library.HasContent(Movies)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/titles/,return)</property>
 			<property name="list">videodb://movies/titles/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -588,11 +588,11 @@
 			<thumb />
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
-			<visible>[Library.HasContent(Movies)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/genres/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/genres/,return)</property>
 			<property name="list">videodb://movies/genres/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -605,11 +605,11 @@
 			<thumb />
 			<property name="labelID">562</property>
 			<property name="defaultID">562</property>
-			<visible>[Library.HasContent(Movies)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/years/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/years/,return)</property>
 			<property name="list">videodb://movies/years/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -622,11 +622,11 @@
 			<thumb />
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
-			<visible>[Library.HasContent(Movies)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/actors/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/actors/,return)</property>
 			<property name="list">videodb://movies/actors/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -639,11 +639,11 @@
 			<thumb />
 			<property name="labelID">20387</property>
 			<property name="defaultID">20387</property>
-			<visible>[Library.HasContent(TVShows)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</property>
 			<property name="list">videodb://recentlyaddedepisodes/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -656,11 +656,11 @@
 			<thumb />
 			<property name="labelID">369</property>
 			<property name="defaultID">369</property>
-			<visible>[Library.HasContent(TVShows)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/,return)</property>
 			<property name="list">videodb://tvshows/titles/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -673,11 +673,11 @@
 			<thumb />
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
-			<visible>[Library.HasContent(TVShows)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/genres/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/genres/,return)</property>
 			<property name="list">videodb://tvshows/genres/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -690,11 +690,11 @@
 			<thumb />
 			<property name="labelID">562</property>
 			<property name="defaultID">562</property>
-			<visible>[Library.HasContent(TVShows)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/years/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/years/,return)</property>
 			<property name="list">videodb://tvshows/years/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -707,11 +707,11 @@
 			<thumb />
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
-			<visible>[Library.HasContent(TVShows)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/actors/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/actors/,return)</property>
 			<property name="list">videodb://tvshows/actors/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -727,7 +727,7 @@
 			<onclick>ActivateWindow(Music,Files,Return)</onclick>
 			<property name="path">ActivateWindow(Music,Files,Return)</property>
 			<property name="list">Files</property>
-			<visible>[StringCompare(System.ProfileName,FastColors)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
+			<visible>[String.IsEqual(System.ProfileName,FastColors)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
 			<property name="group">2</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -743,7 +743,7 @@
 			<onclick>ActivateWindow(Music,MusicLibrary,return)</onclick>
 			<property name="path">ActivateWindow(Music,MusicLibrary,return)</property>
 			<property name="list">MusicLibrary</property>
-			<visible>[StringCompare(System.ProfileName,FastColors)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
+			<visible>[String.IsEqual(System.ProfileName,FastColors)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
 			<property name="group">2</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -759,7 +759,7 @@
 			<onclick>ActivateWindow(Music,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Music,Addons,return)</property>
 			<property name="list">Addons</property>
-			<visible>[StringCompare(System.ProfileName,FastColors)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
+			<visible>[String.IsEqual(System.ProfileName,FastColors)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
 			<property name="group">2</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -775,7 +775,7 @@
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
 			<property name="list">Addons</property>
-			<visible>[StringCompare(System.ProfileName,FastColors)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-1)</visible>
+			<visible>[String.IsEqual(System.ProfileName,FastColors)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-1)</visible>
 			<property name="group">1</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -788,11 +788,11 @@
 			<thumb />
 			<property name="labelID">22020</property>
 			<property name="defaultID">22020</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31059)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-31059)</visible>
 			<onclick>ActivateWindow(TVGuide)</onclick>
 			<property name="path">ActivateWindow(TVGuide)</property>
 			<property name="list">TVGuide</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -805,11 +805,11 @@
 			<thumb />
 			<property name="labelID">19163</property>
 			<property name="defaultID">19163</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31059)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-31059)</visible>
 			<onclick>ActivateWindow(TVRecordings)</onclick>
 			<property name="path">ActivateWindow(TVRecordings)</property>
 			<property name="list">TVRecordings</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -822,11 +822,11 @@
 			<thumb />
 			<property name="labelID">19040</property>
 			<property name="defaultID">19040</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31059)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-31059)</visible>
 			<onclick>ActivateWindow(TVTimers)</onclick>
 			<property name="path">ActivateWindow(TVTimers)</property>
 			<property name="list">TVTimers</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -839,11 +839,11 @@
 			<thumb />
 			<property name="labelID">137</property>
 			<property name="defaultID">137</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31059)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-31059)</visible>
 			<onclick>ActivateWindow(TVSearch)</onclick>
 			<property name="path">ActivateWindow(TVSearch)</property>
 			<property name="list">TVSearch</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -856,11 +856,11 @@
 			<thumb />
 			<property name="labelID">22020</property>
 			<property name="defaultID">22020</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
 			<onclick>ActivateWindow(TVGuide)</onclick>
 			<property name="path">ActivateWindow(TVGuide)</property>
 			<property name="list">TVGuide</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -873,11 +873,11 @@
 			<thumb />
 			<property name="labelID">19163</property>
 			<property name="defaultID">19163</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
 			<onclick>ActivateWindow(TVRecordings)</onclick>
 			<property name="path">ActivateWindow(TVRecordings)</property>
 			<property name="list">TVRecordings</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -890,11 +890,11 @@
 			<thumb />
 			<property name="labelID">19040</property>
 			<property name="defaultID">19040</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
 			<onclick>ActivateWindow(TVTimers)</onclick>
 			<property name="path">ActivateWindow(TVTimers)</property>
 			<property name="list">TVTimers</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -907,11 +907,11 @@
 			<thumb />
 			<property name="labelID">137</property>
 			<property name="defaultID">137</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
 			<onclick>ActivateWindow(TVSearch)</onclick>
 			<property name="path">ActivateWindow(TVSearch)</property>
 			<property name="list">TVSearch</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -927,7 +927,7 @@
 			<onclick>ActivateWindow(FileManager)</onclick>
 			<property name="path">ActivateWindow(FileManager)</property>
 			<property name="list">FileManager</property>
-			<visible>[StringCompare(System.ProfileName,FastColors)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
+			<visible>[String.IsEqual(System.ProfileName,FastColors)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -943,7 +943,7 @@
 			<onclick>ActivateWindow(Profiles)</onclick>
 			<property name="path">ActivateWindow(Profiles)</property>
 			<property name="list">Profiles</property>
-			<visible>[StringCompare(System.ProfileName,FastColors)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
+			<visible>[String.IsEqual(System.ProfileName,FastColors)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -959,7 +959,7 @@
 			<onclick>ActivateWindow(SystemInfo)</onclick>
 			<property name="path">ActivateWindow(SystemInfo)</property>
 			<property name="list">SystemInfo</property>
-			<visible>[StringCompare(System.ProfileName,FastColors)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
+			<visible>[String.IsEqual(System.ProfileName,FastColors)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -972,11 +972,11 @@
 			<thumb />
 			<property name="labelID">14111</property>
 			<property name="defaultID">14111</property>
-			<visible>[system.getbool(eventlog.enabled)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
+			<visible>[system.getbool(eventlog.enabled)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
 			<onclick>ActivateWindow(EventLog,events://,return)</onclick>
 			<property name="path">ActivateWindow(EventLog,events://,return)</property>
 			<property name="list">events://</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -989,11 +989,11 @@
 			<thumb />
 			<property name="labelID">20386</property>
 			<property name="defaultID">20386</property>
-			<visible>[Library.HasContent(Movies)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</property>
 			<property name="list">videodb://recentlyaddedmovies/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1006,11 +1006,11 @@
 			<thumb />
 			<property name="labelID">20434</property>
 			<property name="defaultID">20434</property>
-			<visible>[Library.HasContent(MovieSets)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(MovieSets)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/sets/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/sets/,return)</property>
 			<property name="list">videodb://movies/sets/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1023,11 +1023,11 @@
 			<thumb />
 			<property name="labelID">369</property>
 			<property name="defaultID">369</property>
-			<visible>[Library.HasContent(Movies)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/titles/,return)</property>
 			<property name="list">videodb://movies/titles/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1040,11 +1040,11 @@
 			<thumb />
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
-			<visible>[Library.HasContent(Movies)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/genres/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/genres/,return)</property>
 			<property name="list">videodb://movies/genres/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1057,11 +1057,11 @@
 			<thumb />
 			<property name="labelID">562</property>
 			<property name="defaultID">562</property>
-			<visible>[Library.HasContent(Movies)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/years/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/years/,return)</property>
 			<property name="list">videodb://movies/years/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1074,11 +1074,11 @@
 			<thumb />
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
-			<visible>[Library.HasContent(Movies)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/actors/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/actors/,return)</property>
 			<property name="list">videodb://movies/actors/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1091,11 +1091,11 @@
 			<thumb />
 			<property name="labelID">20387</property>
 			<property name="defaultID">20387</property>
-			<visible>[Library.HasContent(TVShows)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</property>
 			<property name="list">videodb://recentlyaddedepisodes/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1108,11 +1108,11 @@
 			<thumb />
 			<property name="labelID">369</property>
 			<property name="defaultID">369</property>
-			<visible>[Library.HasContent(TVShows)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/,return)</property>
 			<property name="list">videodb://tvshows/titles/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1125,11 +1125,11 @@
 			<thumb />
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
-			<visible>[Library.HasContent(TVShows)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/genres/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/genres/,return)</property>
 			<property name="list">videodb://tvshows/genres/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1142,11 +1142,11 @@
 			<thumb />
 			<property name="labelID">562</property>
 			<property name="defaultID">562</property>
-			<visible>[Library.HasContent(TVShows)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/years/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/years/,return)</property>
 			<property name="list">videodb://tvshows/years/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1159,11 +1159,11 @@
 			<thumb />
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
-			<visible>[Library.HasContent(TVShows)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/actors/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/actors/,return)</property>
 			<property name="list">videodb://tvshows/actors/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1179,7 +1179,7 @@
 			<onclick>ActivateWindow(Music,Files,Return)</onclick>
 			<property name="path">ActivateWindow(Music,Files,Return)</property>
 			<property name="list">Files</property>
-			<visible>[StringCompare(System.ProfileName,asd)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
+			<visible>[String.IsEqual(System.ProfileName,asd)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
 			<property name="group">2</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1195,7 +1195,7 @@
 			<onclick>ActivateWindow(Music,MusicLibrary,return)</onclick>
 			<property name="path">ActivateWindow(Music,MusicLibrary,return)</property>
 			<property name="list">MusicLibrary</property>
-			<visible>[StringCompare(System.ProfileName,asd)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
+			<visible>[String.IsEqual(System.ProfileName,asd)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
 			<property name="group">2</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1211,7 +1211,7 @@
 			<onclick>ActivateWindow(Music,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Music,Addons,return)</property>
 			<property name="list">Addons</property>
-			<visible>[StringCompare(System.ProfileName,asd)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
+			<visible>[String.IsEqual(System.ProfileName,asd)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
 			<property name="group">2</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1227,7 +1227,7 @@
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
 			<property name="list">Addons</property>
-			<visible>[StringCompare(System.ProfileName,asd)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-1)</visible>
+			<visible>[String.IsEqual(System.ProfileName,asd)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-1)</visible>
 			<property name="group">1</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1240,11 +1240,11 @@
 			<thumb />
 			<property name="labelID">22020</property>
 			<property name="defaultID">22020</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31059)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-31059)</visible>
 			<onclick>ActivateWindow(TVGuide)</onclick>
 			<property name="path">ActivateWindow(TVGuide)</property>
 			<property name="list">TVGuide</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1257,11 +1257,11 @@
 			<thumb />
 			<property name="labelID">19163</property>
 			<property name="defaultID">19163</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31059)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-31059)</visible>
 			<onclick>ActivateWindow(TVRecordings)</onclick>
 			<property name="path">ActivateWindow(TVRecordings)</property>
 			<property name="list">TVRecordings</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1274,11 +1274,11 @@
 			<thumb />
 			<property name="labelID">19040</property>
 			<property name="defaultID">19040</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31059)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-31059)</visible>
 			<onclick>ActivateWindow(TVTimers)</onclick>
 			<property name="path">ActivateWindow(TVTimers)</property>
 			<property name="list">TVTimers</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1291,11 +1291,11 @@
 			<thumb />
 			<property name="labelID">137</property>
 			<property name="defaultID">137</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31059)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-31059)</visible>
 			<onclick>ActivateWindow(TVSearch)</onclick>
 			<property name="path">ActivateWindow(TVSearch)</property>
 			<property name="list">TVSearch</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1308,11 +1308,11 @@
 			<thumb />
 			<property name="labelID">22020</property>
 			<property name="defaultID">22020</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
 			<onclick>ActivateWindow(TVGuide)</onclick>
 			<property name="path">ActivateWindow(TVGuide)</property>
 			<property name="list">TVGuide</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1325,11 +1325,11 @@
 			<thumb />
 			<property name="labelID">19163</property>
 			<property name="defaultID">19163</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
 			<onclick>ActivateWindow(TVRecordings)</onclick>
 			<property name="path">ActivateWindow(TVRecordings)</property>
 			<property name="list">TVRecordings</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1342,11 +1342,11 @@
 			<thumb />
 			<property name="labelID">19040</property>
 			<property name="defaultID">19040</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
 			<onclick>ActivateWindow(TVTimers)</onclick>
 			<property name="path">ActivateWindow(TVTimers)</property>
 			<property name="list">TVTimers</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1359,11 +1359,11 @@
 			<thumb />
 			<property name="labelID">137</property>
 			<property name="defaultID">137</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
 			<onclick>ActivateWindow(TVSearch)</onclick>
 			<property name="path">ActivateWindow(TVSearch)</property>
 			<property name="list">TVSearch</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1379,7 +1379,7 @@
 			<onclick>ActivateWindow(FileManager)</onclick>
 			<property name="path">ActivateWindow(FileManager)</property>
 			<property name="list">FileManager</property>
-			<visible>[StringCompare(System.ProfileName,asd)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
+			<visible>[String.IsEqual(System.ProfileName,asd)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1395,7 +1395,7 @@
 			<onclick>ActivateWindow(Profiles)</onclick>
 			<property name="path">ActivateWindow(Profiles)</property>
 			<property name="list">Profiles</property>
-			<visible>[StringCompare(System.ProfileName,asd)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
+			<visible>[String.IsEqual(System.ProfileName,asd)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1411,7 +1411,7 @@
 			<onclick>ActivateWindow(SystemInfo)</onclick>
 			<property name="path">ActivateWindow(SystemInfo)</property>
 			<property name="list">SystemInfo</property>
-			<visible>[StringCompare(System.ProfileName,asd)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
+			<visible>[String.IsEqual(System.ProfileName,asd)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1424,11 +1424,11 @@
 			<thumb />
 			<property name="labelID">14111</property>
 			<property name="defaultID">14111</property>
-			<visible>[system.getbool(eventlog.enabled)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
+			<visible>[system.getbool(eventlog.enabled)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
 			<onclick>ActivateWindow(EventLog,events://,return)</onclick>
 			<property name="path">ActivateWindow(EventLog,events://,return)</property>
 			<property name="list">events://</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1447,7 +1447,7 @@
 			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</property>
 			<property name="list">videodb://recentlyaddedmovies/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1464,7 +1464,7 @@
 			<onclick>ActivateWindow(Videos,videodb://movies/sets/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/sets/,return)</property>
 			<property name="list">videodb://movies/sets/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1481,7 +1481,7 @@
 			<onclick>ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/titles/,return)</property>
 			<property name="list">videodb://movies/titles/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1498,7 +1498,7 @@
 			<onclick>ActivateWindow(Videos,videodb://movies/genres/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/genres/,return)</property>
 			<property name="list">videodb://movies/genres/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1515,7 +1515,7 @@
 			<onclick>ActivateWindow(Videos,videodb://movies/years/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/years/,return)</property>
 			<property name="list">videodb://movies/years/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1532,7 +1532,7 @@
 			<onclick>ActivateWindow(Videos,videodb://movies/actors/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/actors/,return)</property>
 			<property name="list">videodb://movies/actors/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1549,7 +1549,7 @@
 			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</property>
 			<property name="list">videodb://recentlyaddedmovies/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1566,7 +1566,7 @@
 			<onclick>ActivateWindow(Videos,videodb://movies/sets/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/sets/,return)</property>
 			<property name="list">videodb://movies/sets/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1583,7 +1583,7 @@
 			<onclick>ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/titles/,return)</property>
 			<property name="list">videodb://movies/titles/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1600,7 +1600,7 @@
 			<onclick>ActivateWindow(Videos,videodb://movies/genres/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/genres/,return)</property>
 			<property name="list">videodb://movies/genres/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1617,7 +1617,7 @@
 			<onclick>ActivateWindow(Videos,videodb://movies/years/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/years/,return)</property>
 			<property name="list">videodb://movies/years/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1634,7 +1634,7 @@
 			<onclick>ActivateWindow(Videos,videodb://movies/actors/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/actors/,return)</property>
 			<property name="list">videodb://movies/actors/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1649,11 +1649,11 @@
 			<thumb />
 			<property name="labelID">20386</property>
 			<property name="defaultID">20386</property>
-			<visible>[Library.HasContent(Movies)] + StringCompare(Window(10000).Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Window(10000).Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</property>
 			<property name="list">videodb://recentlyaddedmovies/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1666,11 +1666,11 @@
 			<thumb />
 			<property name="labelID">20434</property>
 			<property name="defaultID">20434</property>
-			<visible>[Library.HasContent(MovieSets)] + StringCompare(Window(10000).Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(MovieSets)] + String.IsEqual(Window(10000).Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/sets/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/sets/,return)</property>
 			<property name="list">videodb://movies/sets/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1683,11 +1683,11 @@
 			<thumb />
 			<property name="labelID">369</property>
 			<property name="defaultID">369</property>
-			<visible>[Library.HasContent(Movies)] + StringCompare(Window(10000).Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Window(10000).Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/titles/,return)</property>
 			<property name="list">videodb://movies/titles/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1700,11 +1700,11 @@
 			<thumb />
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
-			<visible>[Library.HasContent(Movies)] + StringCompare(Window(10000).Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Window(10000).Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/genres/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/genres/,return)</property>
 			<property name="list">videodb://movies/genres/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1717,11 +1717,11 @@
 			<thumb />
 			<property name="labelID">562</property>
 			<property name="defaultID">562</property>
-			<visible>[Library.HasContent(Movies)] + StringCompare(Window(10000).Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Window(10000).Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/years/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/years/,return)</property>
 			<property name="list">videodb://movies/years/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1734,11 +1734,11 @@
 			<thumb />
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
-			<visible>[Library.HasContent(Movies)] + StringCompare(Window(10000).Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Window(10000).Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/actors/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/actors/,return)</property>
 			<property name="list">videodb://movies/actors/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1751,11 +1751,11 @@
 			<thumb />
 			<property name="labelID">20386</property>
 			<property name="defaultID">20386</property>
-			<visible>[Library.HasContent(Movies)] + StringCompare(Window(10000).Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Window(10000).Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</property>
 			<property name="list">videodb://recentlyaddedmovies/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1768,11 +1768,11 @@
 			<thumb />
 			<property name="labelID">20434</property>
 			<property name="defaultID">20434</property>
-			<visible>[Library.HasContent(MovieSets)] + StringCompare(Window(10000).Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(MovieSets)] + String.IsEqual(Window(10000).Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/sets/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/sets/,return)</property>
 			<property name="list">videodb://movies/sets/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1785,11 +1785,11 @@
 			<thumb />
 			<property name="labelID">369</property>
 			<property name="defaultID">369</property>
-			<visible>[Library.HasContent(Movies)] + StringCompare(Window(10000).Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Window(10000).Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/titles/,return)</property>
 			<property name="list">videodb://movies/titles/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1802,11 +1802,11 @@
 			<thumb />
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
-			<visible>[Library.HasContent(Movies)] + StringCompare(Window(10000).Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Window(10000).Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/genres/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/genres/,return)</property>
 			<property name="list">videodb://movies/genres/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1819,11 +1819,11 @@
 			<thumb />
 			<property name="labelID">562</property>
 			<property name="defaultID">562</property>
-			<visible>[Library.HasContent(Movies)] + StringCompare(Window(10000).Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Window(10000).Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/years/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/years/,return)</property>
 			<property name="list">videodb://movies/years/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1836,11 +1836,11 @@
 			<thumb />
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
-			<visible>[Library.HasContent(Movies)] + StringCompare(Window(10000).Property(submenuVisibility),movies)</visible>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Window(10000).Property(submenuVisibility),movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/actors/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/actors/,return)</property>
 			<property name="list">videodb://movies/actors/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">movies</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1859,7 +1859,7 @@
 			<onclick>ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</property>
 			<property name="list">videodb://recentlyaddedepisodes/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1876,7 +1876,7 @@
 			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/,return)</property>
 			<property name="list">videodb://tvshows/titles/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1893,7 +1893,7 @@
 			<onclick>ActivateWindow(Videos,videodb://tvshows/genres/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/genres/,return)</property>
 			<property name="list">videodb://tvshows/genres/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1910,7 +1910,7 @@
 			<onclick>ActivateWindow(Videos,videodb://tvshows/years/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/years/,return)</property>
 			<property name="list">videodb://tvshows/years/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1927,7 +1927,7 @@
 			<onclick>ActivateWindow(Videos,videodb://tvshows/actors/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/actors/,return)</property>
 			<property name="list">videodb://tvshows/actors/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1944,7 +1944,7 @@
 			<onclick>ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</property>
 			<property name="list">videodb://recentlyaddedepisodes/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1961,7 +1961,7 @@
 			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/,return)</property>
 			<property name="list">videodb://tvshows/titles/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1978,7 +1978,7 @@
 			<onclick>ActivateWindow(Videos,videodb://tvshows/genres/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/genres/,return)</property>
 			<property name="list">videodb://tvshows/genres/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1995,7 +1995,7 @@
 			<onclick>ActivateWindow(Videos,videodb://tvshows/years/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/years/,return)</property>
 			<property name="list">videodb://tvshows/years/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2012,7 +2012,7 @@
 			<onclick>ActivateWindow(Videos,videodb://tvshows/actors/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/actors/,return)</property>
 			<property name="list">videodb://tvshows/actors/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2027,11 +2027,11 @@
 			<thumb />
 			<property name="labelID">20387</property>
 			<property name="defaultID">20387</property>
-			<visible>[Library.HasContent(TVShows)] + StringCompare(Window(10000).Property(submenuVisibility),tvshows)</visible>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Window(10000).Property(submenuVisibility),tvshows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</property>
 			<property name="list">videodb://recentlyaddedepisodes/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2044,11 +2044,11 @@
 			<thumb />
 			<property name="labelID">369</property>
 			<property name="defaultID">369</property>
-			<visible>[Library.HasContent(TVShows)] + StringCompare(Window(10000).Property(submenuVisibility),tvshows)</visible>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Window(10000).Property(submenuVisibility),tvshows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/,return)</property>
 			<property name="list">videodb://tvshows/titles/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2061,11 +2061,11 @@
 			<thumb />
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
-			<visible>[Library.HasContent(TVShows)] + StringCompare(Window(10000).Property(submenuVisibility),tvshows)</visible>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Window(10000).Property(submenuVisibility),tvshows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/genres/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/genres/,return)</property>
 			<property name="list">videodb://tvshows/genres/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2078,11 +2078,11 @@
 			<thumb />
 			<property name="labelID">562</property>
 			<property name="defaultID">562</property>
-			<visible>[Library.HasContent(TVShows)] + StringCompare(Window(10000).Property(submenuVisibility),tvshows)</visible>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Window(10000).Property(submenuVisibility),tvshows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/years/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/years/,return)</property>
 			<property name="list">videodb://tvshows/years/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2095,11 +2095,11 @@
 			<thumb />
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
-			<visible>[Library.HasContent(TVShows)] + StringCompare(Window(10000).Property(submenuVisibility),tvshows)</visible>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Window(10000).Property(submenuVisibility),tvshows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/actors/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/actors/,return)</property>
 			<property name="list">videodb://tvshows/actors/</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2112,11 +2112,11 @@
 			<thumb />
 			<property name="labelID">20387</property>
 			<property name="defaultID">20387</property>
-			<visible>[Library.HasContent(TVShows)] + StringCompare(Window(10000).Property(submenuVisibility),tvshows)</visible>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Window(10000).Property(submenuVisibility),tvshows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</property>
 			<property name="list">videodb://recentlyaddedepisodes/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2129,11 +2129,11 @@
 			<thumb />
 			<property name="labelID">369</property>
 			<property name="defaultID">369</property>
-			<visible>[Library.HasContent(TVShows)] + StringCompare(Window(10000).Property(submenuVisibility),tvshows)</visible>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Window(10000).Property(submenuVisibility),tvshows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/,return)</property>
 			<property name="list">videodb://tvshows/titles/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2146,11 +2146,11 @@
 			<thumb />
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
-			<visible>[Library.HasContent(TVShows)] + StringCompare(Window(10000).Property(submenuVisibility),tvshows)</visible>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Window(10000).Property(submenuVisibility),tvshows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/genres/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/genres/,return)</property>
 			<property name="list">videodb://tvshows/genres/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2163,11 +2163,11 @@
 			<thumb />
 			<property name="labelID">562</property>
 			<property name="defaultID">562</property>
-			<visible>[Library.HasContent(TVShows)] + StringCompare(Window(10000).Property(submenuVisibility),tvshows)</visible>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Window(10000).Property(submenuVisibility),tvshows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/years/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/years/,return)</property>
 			<property name="list">videodb://tvshows/years/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2180,11 +2180,11 @@
 			<thumb />
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
-			<visible>[Library.HasContent(TVShows)] + StringCompare(Window(10000).Property(submenuVisibility),tvshows)</visible>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Window(10000).Property(submenuVisibility),tvshows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/actors/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/actors/,return)</property>
 			<property name="list">videodb://tvshows/actors/</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">tvshows</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2202,7 +2202,7 @@
 			<onclick>ActivateWindow(Music,Files,Return)</onclick>
 			<property name="path">ActivateWindow(Music,Files,Return)</property>
 			<property name="list">Files</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">2</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2218,7 +2218,7 @@
 			<onclick>ActivateWindow(Music,MusicLibrary,return)</onclick>
 			<property name="path">ActivateWindow(Music,MusicLibrary,return)</property>
 			<property name="list">MusicLibrary</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">2</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2234,7 +2234,7 @@
 			<onclick>ActivateWindow(Music,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Music,Addons,return)</property>
 			<property name="list">Addons</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">2</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2250,7 +2250,7 @@
 			<onclick>ActivateWindow(Music,Files,Return)</onclick>
 			<property name="path">ActivateWindow(Music,Files,Return)</property>
 			<property name="list">Files</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">2</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2266,7 +2266,7 @@
 			<onclick>ActivateWindow(Music,MusicLibrary,return)</onclick>
 			<property name="path">ActivateWindow(Music,MusicLibrary,return)</property>
 			<property name="list">MusicLibrary</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">2</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2282,7 +2282,7 @@
 			<onclick>ActivateWindow(Music,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Music,Addons,return)</property>
 			<property name="list">Addons</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">2</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2300,7 +2300,7 @@
 			<onclick>ActivateWindow(Music,Files,Return)</onclick>
 			<property name="path">ActivateWindow(Music,Files,Return)</property>
 			<property name="list">Files</property>
-			<visible>[StringCompare(System.ProfileName,FastColors)] + StringCompare(Window(10000).Property(submenuVisibility),num-2)</visible>
+			<visible>[String.IsEqual(System.ProfileName,FastColors)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-2)</visible>
 			<property name="group">2</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2316,7 +2316,7 @@
 			<onclick>ActivateWindow(Music,MusicLibrary,return)</onclick>
 			<property name="path">ActivateWindow(Music,MusicLibrary,return)</property>
 			<property name="list">MusicLibrary</property>
-			<visible>[StringCompare(System.ProfileName,FastColors)] + StringCompare(Window(10000).Property(submenuVisibility),num-2)</visible>
+			<visible>[String.IsEqual(System.ProfileName,FastColors)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-2)</visible>
 			<property name="group">2</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2332,7 +2332,7 @@
 			<onclick>ActivateWindow(Music,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Music,Addons,return)</property>
 			<property name="list">Addons</property>
-			<visible>[StringCompare(System.ProfileName,FastColors)] + StringCompare(Window(10000).Property(submenuVisibility),num-2)</visible>
+			<visible>[String.IsEqual(System.ProfileName,FastColors)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-2)</visible>
 			<property name="group">2</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2348,7 +2348,7 @@
 			<onclick>ActivateWindow(Music,Files,Return)</onclick>
 			<property name="path">ActivateWindow(Music,Files,Return)</property>
 			<property name="list">Files</property>
-			<visible>[StringCompare(System.ProfileName,asd)] + StringCompare(Window(10000).Property(submenuVisibility),num-2)</visible>
+			<visible>[String.IsEqual(System.ProfileName,asd)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-2)</visible>
 			<property name="group">2</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2364,7 +2364,7 @@
 			<onclick>ActivateWindow(Music,MusicLibrary,return)</onclick>
 			<property name="path">ActivateWindow(Music,MusicLibrary,return)</property>
 			<property name="list">MusicLibrary</property>
-			<visible>[StringCompare(System.ProfileName,asd)] + StringCompare(Window(10000).Property(submenuVisibility),num-2)</visible>
+			<visible>[String.IsEqual(System.ProfileName,asd)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-2)</visible>
 			<property name="group">2</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2380,7 +2380,7 @@
 			<onclick>ActivateWindow(Music,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Music,Addons,return)</property>
 			<property name="list">Addons</property>
-			<visible>[StringCompare(System.ProfileName,asd)] + StringCompare(Window(10000).Property(submenuVisibility),num-2)</visible>
+			<visible>[String.IsEqual(System.ProfileName,asd)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-2)</visible>
 			<property name="group">2</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2406,7 +2406,7 @@
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
 			<property name="list">Addons</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">1</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2422,7 +2422,7 @@
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
 			<property name="list">Addons</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">1</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2440,7 +2440,7 @@
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
 			<property name="list">Addons</property>
-			<visible>[StringCompare(System.ProfileName,FastColors)] + StringCompare(Window(10000).Property(submenuVisibility),num-1)</visible>
+			<visible>[String.IsEqual(System.ProfileName,FastColors)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-1)</visible>
 			<property name="group">1</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2456,7 +2456,7 @@
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
 			<property name="list">Addons</property>
-			<visible>[StringCompare(System.ProfileName,asd)] + StringCompare(Window(10000).Property(submenuVisibility),num-1)</visible>
+			<visible>[String.IsEqual(System.ProfileName,asd)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-1)</visible>
 			<property name="group">1</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2483,7 +2483,7 @@
 			<onclick>ActivateWindow(TVGuide)</onclick>
 			<property name="path">ActivateWindow(TVGuide)</property>
 			<property name="list">TVGuide</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2500,7 +2500,7 @@
 			<onclick>ActivateWindow(TVRecordings)</onclick>
 			<property name="path">ActivateWindow(TVRecordings)</property>
 			<property name="list">TVRecordings</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2517,7 +2517,7 @@
 			<onclick>ActivateWindow(TVTimers)</onclick>
 			<property name="path">ActivateWindow(TVTimers)</property>
 			<property name="list">TVTimers</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2534,7 +2534,7 @@
 			<onclick>ActivateWindow(TVSearch)</onclick>
 			<property name="path">ActivateWindow(TVSearch)</property>
 			<property name="list">TVSearch</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2551,7 +2551,7 @@
 			<onclick>ActivateWindow(TVGuide)</onclick>
 			<property name="path">ActivateWindow(TVGuide)</property>
 			<property name="list">TVGuide</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2568,7 +2568,7 @@
 			<onclick>ActivateWindow(TVRecordings)</onclick>
 			<property name="path">ActivateWindow(TVRecordings)</property>
 			<property name="list">TVRecordings</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2585,7 +2585,7 @@
 			<onclick>ActivateWindow(TVTimers)</onclick>
 			<property name="path">ActivateWindow(TVTimers)</property>
 			<property name="list">TVTimers</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2602,7 +2602,7 @@
 			<onclick>ActivateWindow(TVSearch)</onclick>
 			<property name="path">ActivateWindow(TVSearch)</property>
 			<property name="list">TVSearch</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2617,11 +2617,11 @@
 			<thumb />
 			<property name="labelID">22020</property>
 			<property name="defaultID">22020</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Window(10000).Property(submenuVisibility),num-31059)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Window(10000).Property(submenuVisibility),num-31059)</visible>
 			<onclick>ActivateWindow(TVGuide)</onclick>
 			<property name="path">ActivateWindow(TVGuide)</property>
 			<property name="list">TVGuide</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2634,11 +2634,11 @@
 			<thumb />
 			<property name="labelID">19163</property>
 			<property name="defaultID">19163</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Window(10000).Property(submenuVisibility),num-31059)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Window(10000).Property(submenuVisibility),num-31059)</visible>
 			<onclick>ActivateWindow(TVRecordings)</onclick>
 			<property name="path">ActivateWindow(TVRecordings)</property>
 			<property name="list">TVRecordings</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2651,11 +2651,11 @@
 			<thumb />
 			<property name="labelID">19040</property>
 			<property name="defaultID">19040</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Window(10000).Property(submenuVisibility),num-31059)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Window(10000).Property(submenuVisibility),num-31059)</visible>
 			<onclick>ActivateWindow(TVTimers)</onclick>
 			<property name="path">ActivateWindow(TVTimers)</property>
 			<property name="list">TVTimers</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2668,11 +2668,11 @@
 			<thumb />
 			<property name="labelID">137</property>
 			<property name="defaultID">137</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Window(10000).Property(submenuVisibility),num-31059)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Window(10000).Property(submenuVisibility),num-31059)</visible>
 			<onclick>ActivateWindow(TVSearch)</onclick>
 			<property name="path">ActivateWindow(TVSearch)</property>
 			<property name="list">TVSearch</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2685,11 +2685,11 @@
 			<thumb />
 			<property name="labelID">22020</property>
 			<property name="defaultID">22020</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Window(10000).Property(submenuVisibility),num-31059)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Window(10000).Property(submenuVisibility),num-31059)</visible>
 			<onclick>ActivateWindow(TVGuide)</onclick>
 			<property name="path">ActivateWindow(TVGuide)</property>
 			<property name="list">TVGuide</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2702,11 +2702,11 @@
 			<thumb />
 			<property name="labelID">19163</property>
 			<property name="defaultID">19163</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Window(10000).Property(submenuVisibility),num-31059)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Window(10000).Property(submenuVisibility),num-31059)</visible>
 			<onclick>ActivateWindow(TVRecordings)</onclick>
 			<property name="path">ActivateWindow(TVRecordings)</property>
 			<property name="list">TVRecordings</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2719,11 +2719,11 @@
 			<thumb />
 			<property name="labelID">19040</property>
 			<property name="defaultID">19040</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Window(10000).Property(submenuVisibility),num-31059)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Window(10000).Property(submenuVisibility),num-31059)</visible>
 			<onclick>ActivateWindow(TVTimers)</onclick>
 			<property name="path">ActivateWindow(TVTimers)</property>
 			<property name="list">TVTimers</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2736,11 +2736,11 @@
 			<thumb />
 			<property name="labelID">137</property>
 			<property name="defaultID">137</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Window(10000).Property(submenuVisibility),num-31059)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Window(10000).Property(submenuVisibility),num-31059)</visible>
 			<onclick>ActivateWindow(TVSearch)</onclick>
 			<property name="path">ActivateWindow(TVSearch)</property>
 			<property name="list">TVSearch</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">31059</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2759,7 +2759,7 @@
 			<onclick>ActivateWindow(TVGuide)</onclick>
 			<property name="path">ActivateWindow(TVGuide)</property>
 			<property name="list">TVGuide</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2776,7 +2776,7 @@
 			<onclick>ActivateWindow(TVRecordings)</onclick>
 			<property name="path">ActivateWindow(TVRecordings)</property>
 			<property name="list">TVRecordings</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2793,7 +2793,7 @@
 			<onclick>ActivateWindow(TVTimers)</onclick>
 			<property name="path">ActivateWindow(TVTimers)</property>
 			<property name="list">TVTimers</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2810,7 +2810,7 @@
 			<onclick>ActivateWindow(TVSearch)</onclick>
 			<property name="path">ActivateWindow(TVSearch)</property>
 			<property name="list">TVSearch</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2827,7 +2827,7 @@
 			<onclick>ActivateWindow(TVGuide)</onclick>
 			<property name="path">ActivateWindow(TVGuide)</property>
 			<property name="list">TVGuide</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2844,7 +2844,7 @@
 			<onclick>ActivateWindow(TVRecordings)</onclick>
 			<property name="path">ActivateWindow(TVRecordings)</property>
 			<property name="list">TVRecordings</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2861,7 +2861,7 @@
 			<onclick>ActivateWindow(TVTimers)</onclick>
 			<property name="path">ActivateWindow(TVTimers)</property>
 			<property name="list">TVTimers</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2878,7 +2878,7 @@
 			<onclick>ActivateWindow(TVSearch)</onclick>
 			<property name="path">ActivateWindow(TVSearch)</property>
 			<property name="list">TVSearch</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2893,11 +2893,11 @@
 			<thumb />
 			<property name="labelID">22020</property>
 			<property name="defaultID">22020</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Window(10000).Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Window(10000).Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
 			<onclick>ActivateWindow(TVGuide)</onclick>
 			<property name="path">ActivateWindow(TVGuide)</property>
 			<property name="list">TVGuide</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2910,11 +2910,11 @@
 			<thumb />
 			<property name="labelID">19163</property>
 			<property name="defaultID">19163</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Window(10000).Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Window(10000).Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
 			<onclick>ActivateWindow(TVRecordings)</onclick>
 			<property name="path">ActivateWindow(TVRecordings)</property>
 			<property name="list">TVRecordings</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2927,11 +2927,11 @@
 			<thumb />
 			<property name="labelID">19040</property>
 			<property name="defaultID">19040</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Window(10000).Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Window(10000).Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
 			<onclick>ActivateWindow(TVTimers)</onclick>
 			<property name="path">ActivateWindow(TVTimers)</property>
 			<property name="list">TVTimers</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2944,11 +2944,11 @@
 			<thumb />
 			<property name="labelID">137</property>
 			<property name="defaultID">137</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Window(10000).Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Window(10000).Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
 			<onclick>ActivateWindow(TVSearch)</onclick>
 			<property name="path">ActivateWindow(TVSearch)</property>
 			<property name="list">TVSearch</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2961,11 +2961,11 @@
 			<thumb />
 			<property name="labelID">22020</property>
 			<property name="defaultID">22020</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Window(10000).Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Window(10000).Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
 			<onclick>ActivateWindow(TVGuide)</onclick>
 			<property name="path">ActivateWindow(TVGuide)</property>
 			<property name="list">TVGuide</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2978,11 +2978,11 @@
 			<thumb />
 			<property name="labelID">19163</property>
 			<property name="defaultID">19163</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Window(10000).Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Window(10000).Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
 			<onclick>ActivateWindow(TVRecordings)</onclick>
 			<property name="path">ActivateWindow(TVRecordings)</property>
 			<property name="list">TVRecordings</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2995,11 +2995,11 @@
 			<thumb />
 			<property name="labelID">19040</property>
 			<property name="defaultID">19040</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Window(10000).Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Window(10000).Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
 			<onclick>ActivateWindow(TVTimers)</onclick>
 			<property name="path">ActivateWindow(TVTimers)</property>
 			<property name="list">TVTimers</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -3012,11 +3012,11 @@
 			<thumb />
 			<property name="labelID">137</property>
 			<property name="defaultID">137</property>
-			<visible>[System.HasPVRAddon] + StringCompare(Window(10000).Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Window(10000).Property(submenuVisibility),info-pvr-nowrecordingtitle)</visible>
 			<onclick>ActivateWindow(TVSearch)</onclick>
 			<property name="path">ActivateWindow(TVSearch)</property>
 			<property name="list">TVSearch</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">info-pvr-nowrecordingtitle</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -3082,7 +3082,7 @@
 			<onclick>ActivateWindow(FileManager)</onclick>
 			<property name="path">ActivateWindow(FileManager)</property>
 			<property name="list">FileManager</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -3098,7 +3098,7 @@
 			<onclick>ActivateWindow(Profiles)</onclick>
 			<property name="path">ActivateWindow(Profiles)</property>
 			<property name="list">Profiles</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -3114,7 +3114,7 @@
 			<onclick>ActivateWindow(SystemInfo)</onclick>
 			<property name="path">ActivateWindow(SystemInfo)</property>
 			<property name="list">SystemInfo</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -3131,7 +3131,7 @@
 			<onclick>ActivateWindow(EventLog,events://,return)</onclick>
 			<property name="path">ActivateWindow(EventLog,events://,return)</property>
 			<property name="list">events://</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -3147,7 +3147,7 @@
 			<onclick>ActivateWindow(FileManager)</onclick>
 			<property name="path">ActivateWindow(FileManager)</property>
 			<property name="list">FileManager</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -3163,7 +3163,7 @@
 			<onclick>ActivateWindow(Profiles)</onclick>
 			<property name="path">ActivateWindow(Profiles)</property>
 			<property name="list">Profiles</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -3179,7 +3179,7 @@
 			<onclick>ActivateWindow(SystemInfo)</onclick>
 			<property name="path">ActivateWindow(SystemInfo)</property>
 			<property name="list">SystemInfo</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -3196,7 +3196,7 @@
 			<onclick>ActivateWindow(EventLog,events://,return)</onclick>
 			<property name="path">ActivateWindow(EventLog,events://,return)</property>
 			<property name="list">events://</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -3214,7 +3214,7 @@
 			<onclick>ActivateWindow(FileManager)</onclick>
 			<property name="path">ActivateWindow(FileManager)</property>
 			<property name="list">FileManager</property>
-			<visible>[StringCompare(System.ProfileName,FastColors)] + StringCompare(Window(10000).Property(submenuVisibility),num-5)</visible>
+			<visible>[String.IsEqual(System.ProfileName,FastColors)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-5)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -3230,7 +3230,7 @@
 			<onclick>ActivateWindow(Profiles)</onclick>
 			<property name="path">ActivateWindow(Profiles)</property>
 			<property name="list">Profiles</property>
-			<visible>[StringCompare(System.ProfileName,FastColors)] + StringCompare(Window(10000).Property(submenuVisibility),num-5)</visible>
+			<visible>[String.IsEqual(System.ProfileName,FastColors)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-5)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -3246,7 +3246,7 @@
 			<onclick>ActivateWindow(SystemInfo)</onclick>
 			<property name="path">ActivateWindow(SystemInfo)</property>
 			<property name="list">SystemInfo</property>
-			<visible>[StringCompare(System.ProfileName,FastColors)] + StringCompare(Window(10000).Property(submenuVisibility),num-5)</visible>
+			<visible>[String.IsEqual(System.ProfileName,FastColors)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-5)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -3259,11 +3259,11 @@
 			<thumb />
 			<property name="labelID">14111</property>
 			<property name="defaultID">14111</property>
-			<visible>[system.getbool(eventlog.enabled)] + StringCompare(Window(10000).Property(submenuVisibility),num-5)</visible>
+			<visible>[system.getbool(eventlog.enabled)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-5)</visible>
 			<onclick>ActivateWindow(EventLog,events://,return)</onclick>
 			<property name="path">ActivateWindow(EventLog,events://,return)</property>
 			<property name="list">events://</property>
-			<visible>StringCompare(System.ProfileName,FastColors)</visible>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -3279,7 +3279,7 @@
 			<onclick>ActivateWindow(FileManager)</onclick>
 			<property name="path">ActivateWindow(FileManager)</property>
 			<property name="list">FileManager</property>
-			<visible>[StringCompare(System.ProfileName,asd)] + StringCompare(Window(10000).Property(submenuVisibility),num-5)</visible>
+			<visible>[String.IsEqual(System.ProfileName,asd)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-5)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -3295,7 +3295,7 @@
 			<onclick>ActivateWindow(Profiles)</onclick>
 			<property name="path">ActivateWindow(Profiles)</property>
 			<property name="list">Profiles</property>
-			<visible>[StringCompare(System.ProfileName,asd)] + StringCompare(Window(10000).Property(submenuVisibility),num-5)</visible>
+			<visible>[String.IsEqual(System.ProfileName,asd)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-5)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -3311,7 +3311,7 @@
 			<onclick>ActivateWindow(SystemInfo)</onclick>
 			<property name="path">ActivateWindow(SystemInfo)</property>
 			<property name="list">SystemInfo</property>
-			<visible>[StringCompare(System.ProfileName,asd)] + StringCompare(Window(10000).Property(submenuVisibility),num-5)</visible>
+			<visible>[String.IsEqual(System.ProfileName,asd)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-5)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -3324,11 +3324,11 @@
 			<thumb />
 			<property name="labelID">14111</property>
 			<property name="defaultID">14111</property>
-			<visible>[system.getbool(eventlog.enabled)] + StringCompare(Window(10000).Property(submenuVisibility),num-5)</visible>
+			<visible>[system.getbool(eventlog.enabled)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-5)</visible>
 			<onclick>ActivateWindow(EventLog,events://,return)</onclick>
 			<property name="path">ActivateWindow(EventLog,events://,return)</property>
 			<property name="list">events://</property>
-			<visible>StringCompare(System.ProfileName,asd)</visible>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="group">5</property>
 			<property name="isSubmenu">True</property>
 		</item>
