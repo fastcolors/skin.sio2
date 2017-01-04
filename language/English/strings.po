@@ -94,6 +94,10 @@ msgctxt "#31018"
 msgid "Choose which Addon is to be used to Search & Download Lyrics"
 msgstr "Choose which Addon is to be used to Search & Download Lyrics"
 
+msgctxt "#31019"
+msgid "If You remove this link You won't be able to access settings anymore."
+msgstr "If You remove this link You won't be able to access settings anymore."
+
 msgctxt "#31021"
 msgid "Memory Used:"
 msgstr "Memory Used:"
