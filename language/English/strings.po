@@ -50,6 +50,10 @@ msgctxt "#31007"
 msgid "Last Started"
 msgstr "Last Started"
 
+msgctxt "#31008"
+msgid "<include>skinshortcuts-submenu</include>"
+msgstr "<include>skinshortcuts-submenu</include>"
+
 msgctxt "#31009"
 msgid "Recently Added Episodes"
 msgstr "Recently Added Episodes"

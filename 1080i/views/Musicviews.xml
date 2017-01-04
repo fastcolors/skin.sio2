@@ -10,10 +10,10 @@
             <control type="group" description="List">
                 <include>LargeListItemCount</include>
                 <left>1020</left>
-                <top>131</top>
+                <top>120</top>
                 <control type="fixedlist" id="50">
                     <width>802</width>
-                    <height>888</height>
+                    <height>960</height>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                     <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
                     <onup>50</onup>
@@ -24,89 +24,7 @@
                     <movement>4</movement>
                     <preloaditems>4</preloaditems>
                     <scrolltime tween="sine" easing="inout">280</scrolltime>
-                    <itemlayout  width="802" height="111">
-                        <control type="group">
-                            <control type="label" description="Main Label">
-                                <visible>![ListItem.IsFolder | ListItem.IsParentFolder | Container.Content(Artists)]</visible>
-                                <left>45</left>
-                                <width>717</width>
-                                <include>BigListTitle</include>
-                                <label>$INFO[ListItem.Title]</label>
-                            </control>
-                            <control type="label" description="Main Label">
-                                <visible>ListItem.IsFolder | ListItem.IsParentFolder | Container.Content(Artists)</visible>
-                                <left>45</left>
-                                <width>717</width>
-                                <include>BigListTitle</include>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                        </control>
-                        <control type="group">
-                            <control type="label" description="Label2">
-                                <visible>!Container.Content(Artists)</visible>
-                                <width>630</width>
-                                <left>45</left>
-                                <include>BigListDetails</include>
-                                <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]$INFO[ListItem.Year, • ]$INFO[ListItem.Artist, • ]</label>
-                            </control>
-                            <control type="label" description="Label2">
-                                <visible>Container.Content(Artists)</visible>
-                                <left>45</left>
-                                <width>630</width>
-                                <include>BigListDetails</include>
-                                <label>$INFO[ListItem.Property(Artist_Formed)]$INFO[ListItem.Property(Artist_Born)]$INFO[ListItem.Property(Artist_Genre), • ]</label>
-                            </control>
-                        </control>
-                    </itemlayout>
-                    <focusedlayout width="802" height="111">
-                        <control type="group">
-                            <control type="image">
-                                <top>22</top>
-                                <left>-50</left>
-                                <height>100</height>
-                                <width>902</width>
-                                <texture>shadow.png</texture>
-                            </control>
-                            <control type="image">
-                                <height>100</height>
-                                <width>802</width>
-                                <texture border="8">images/White.png</texture>
-                            </control>
-                            <control type="group">
-                                <animation condition="String.IsEmpty(ListItem.Duration) + String.IsEmpty(ListItem.Year)  + String.IsEmpty(ListItem.Artist)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
-                                <control type="label" description="Main Label">
-                                    <visible>![ListItem.IsFolder | ListItem.IsParentFolder | Container.Content(Artists)]</visible>
-                                    <left>45</left>
-                                    <width>717</width>
-                                    <include>BigListTitleFO</include>
-                                    <label>$INFO[ListItem.Title]</label>
-                                </control>
-                                <control type="label" description="Main Label">
-                                    <visible>ListItem.IsFolder | ListItem.IsParentFolder | Container.Content(Artists)</visible>
-                                    <left>45</left>
-                                    <width>717</width>
-                                    <include>BigListTitleFO</include>
-                                    <label>$INFO[ListItem.Label]</label>
-                                </control>
-                            </control>
-                            <control type="group">
-                                <control type="label" description="Label2">
-                                    <visible>!Container.Content(Artists)</visible>
-                                    <left>45</left>
-                                    <width>630</width>
-                                    <include>BigListDetailsFO</include>
-                                    <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]$INFO[ListItem.Year, • ]$INFO[ListItem.Artist, • ]</label>
-                                </control>
-                                <control type="label" description="Label2">
-                                    <visible>Container.Content(Artists)</visible>
-                                    <left>45</left>
-                                    <width>630</width>
-                                    <include>BigListDetailsFO</include>
-                                    <label>$INFO[ListItem.Property(Artist_Formed)]$INFO[ListItem.Property(Artist_Born)]$INFO[ListItem.Property(Artist_Genre), • ]</label>
-                                </control>
-                            </control>
-                        </control>
-                    </focusedlayout>
+                    <include>LargeListLayout</include>
                 </control>
             </control>
             <control type="scrollbar" id="60">
@@ -127,7 +45,7 @@
             <visible>Control.IsVisible(53)</visible>
             <control type="group" description="Container and frame">
                 <control type="panel" id="53" description="Panel">
-                    <visible>!Container.content(songs)</visible>
+                    <visible>Container.content(albums)</visible>
                     <viewtype label="536">Icons</viewtype>
                     <left>50</left>
                     <width>1820</width>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="biglist">
+<!--LISTA GRANDE 50 -->
+        <control type="group" description="BigList">
+            <visible>Control.IsVisible(50)</visible>
+            <include>left_Panel</include>
+            <control type="group">
+                <include>LargeListItemCount</include>
+                <left>1020</left>
+                <top>110</top>
+                <control type="fixedlist" id="50">
+                    <visible>!String.IsEmpty(Container.FolderPath)</visible>
+                    <width>802</width>
+                    <height>900</height>
+                    <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+                    <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
+                    <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+                    <onright condition="!Skin.HasSetting(Scrollbars_Active)">noop</onright>
+                    <onup>50</onup>
+                    <ondown>50</ondown>
+                    <pagecontrol>60</pagecontrol>
+                    <viewtype label="535">List 50</viewtype>
+                    <focusposition>3</focusposition>
+                    <movement>4</movement>
+                    <preloaditems>4</preloaditems>
+                    <scrolltime>250</scrolltime>
+                    <include>LargeListLayout</include>
+                </control>
+            </control>
+            <control type="scrollbar" id="60">
+                <left>39r</left>
+                <top>135</top>
+                <height>870</height>
+                <onleft>51</onleft>
+                <onright>noop</onright>
+            </control>
+        </control>
+        </include>
+</includes>

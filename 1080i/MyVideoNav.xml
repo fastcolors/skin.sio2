@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <backgroundcolor>aliceblue</backgroundcolor>
-    <defaultcontrol always="true">50</defaultcontrol>
+    <defaultcontrol always="true">53</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <views>50,51,53,55,500</views>
+    <views>53,50,55,501</views>
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
         <control type="image">
-            <visible>Control.IsVisible(500)</visible>
+            <visible>!Control.IsVisible(53)</visible>
             <include>Dimensions_Fullscreen</include>
             <include>Fanart_Fade</include>
             <texture background="true">$INFO[ListItem.Property(fanart_image)]</texture>
@@ -20,7 +20,12 @@
             <include>Heading</include>
             <label>$VAR[RootLabel][COLOR=dimgray]$INFO[Container.NumItems,  (,)][/COLOR]</label>
         </control>
-        <include>Videoviews</include>
+        <!--VIEWS-->
+        <include>biglist</include>
+        <include>icons</include>
+        <include>banners</include>
+        <include>widelist</include>
+        <!--VIEWS-->
         <control type="group" description="Side menu 9000 group">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
             <include>DialogOpenCloseVisible</include>

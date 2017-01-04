@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="widelist">
+        <control type="group" description="StreamingList">
+            <visible>Control.IsVisible(501)</visible>
+            <control type="group">
+                <control type="fixedlist" id="501">
+                    <top>114</top>
+                    <width>1920</width>
+                    <height>666</height>
+                    <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+                    <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                    <onup>50</onup>
+                    <ondown>50</ondown>
+                    <pagecontrol>60</pagecontrol>
+                    <viewtype label="537">Big List</viewtype>
+                    <focusposition>3</focusposition>
+                    <movement>4</movement>
+                    <preloaditems>4</preloaditems>
+                    <scrolltime>250</scrolltime>
+                    <itemlayout width="1920" height="111">
+                        <control type="image">
+                            <animation effect="slide" end="0,-24" condition="ListItem.IsStereoscopic">Conditional</animation>
+                            <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
+                            <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
+                            <left>10</left>
+                            <centertop>55</centertop>
+                            <height>50</height>
+                            <width>42</width>
+                            <aspectratio>keep</aspectratio>
+                            <texture>badges/720.png</texture>
+                        </control>
+                        <control type="image">
+                            <visible>ListItem.IsStereoscopic</visible>
+                            <top>55</top>
+                            <left>10</left>
+                            <height>50</height>
+                            <width>42</width>
+                            <aspectratio>keep</aspectratio>
+                            <texture>badges/3d.png</texture>
+                        </control>
+                        <control type="label" description="Main Label">
+                            <animation condition="String.IsEmpty(ListItem.Label2) + String.IsEmpty(ListItem.Duration) + String.IsEmpty(ListItem.Year) + String.IsEmpty(ListItem.Artist)" effect="slide" end="0,20" time="0" reversible="true">Conditional</animation>
+                            <left>65</left>
+                            <width>1760</width>
+                            <include>BigListTitle</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="group">
+                            <control type="label" description="Label2">
+                                <left>65</left>
+                                <align>left</align>
+                                <include>BigListDetails</include>
+                                <label>$INFO[ListItem.Duration,$LOCALIZE[180]: , $LOCALIZE[31038]]</label>
+                            </control>
+                        </control>
+                        <control type="image">
+                            <left>1840</left>
+                            <top>36</top>
+                            <width>40</width>
+                            <height>40</height>
+                            <texture>$VAR[WatchStatus,overlay/]</texture>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout width="1920" height="111">
+                        <control type="image">
+                            <width>1920</width>
+                            <height>111</height>
+                            <texture border="8">images/White.png</texture>
+                        </control>
+                        <control type="image">
+                            <animation effect="slide" end="0,-24" condition="ListItem.IsStereoscopic">Conditional</animation>
+                            <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
+                            <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
+                            <left>10</left>
+                            <centertop>55</centertop>
+                            <height>50</height>
+                            <width>42</width>
+                            <aspectratio>keep</aspectratio>
+                            <texture>badges/720.png</texture>
+                        </control>
+                        <control type="image">
+                            <visible>ListItem.IsStereoscopic</visible>
+                            <top>55</top>
+                            <left>10</left>
+                            <height>50</height>
+                            <width>42</width>
+                            <aspectratio>keep</aspectratio>
+                            <texture>badges/3d.png</texture>
+                        </control>
+                        <control type="label" description="Main Label">
+                            <animation condition="String.IsEmpty(ListItem.Label2) + String.IsEmpty(ListItem.Duration) + String.IsEmpty(ListItem.Year) + String.IsEmpty(ListItem.Artist)" effect="slide" end="0,20" time="0" reversible="true">Conditional</animation>
+                            <left>65</left>
+                            <width>1760</width>
+                            <include>BigListTitle</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="group">
+                            <control type="label" description="Label2">
+                                <left>65</left>
+                                <align>left</align>
+                                <include>BigListDetails</include>
+                                <label>$INFO[ListItem.Duration,$LOCALIZE[180]: , $LOCALIZE[31038]]</label>
+                            </control>
+                        </control>
+                        <control type="image">
+                            <left>1840</left>
+                            <top>36</top>
+                            <width>40</width>
+                            <height>40</height>
+                            <texture>$VAR[WatchStatus,overlay/]</texture>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+                    </focusedlayout>
+                </control>
+            </control>
+            <control type="image">
+                <centertop>930</centertop>
+                <centerleft>160</centerleft>
+                <width>240</width>
+                <height>240</height>
+                <texture>$INFO[ListItem.Art(thumb)]</texture>
+                <aspectratio>keep</aspectratio>
+                <bordertexture>images/white.png</bordertexture>
+                <bordersize>4</bordersize>
+            </control>
+            <control type="image">
+                <centertop>930</centertop>
+                <centerleft>160</centerleft>
+                <width>240</width>
+                <height>240</height>
+                <texture fallback="DefaultVideoCover.png">$INFO[ListItem.Art(thumb)]</texture>
+                <aspectratio>keep</aspectratio>
+                <bordertexture border="8">images/white.png</bordertexture>
+                <bordersize>4</bordersize>
+            </control>
+            <control type="textbox" description="plots">
+                <left>930</left>
+                <top>781</top>
+                <width>930</width>
+                <height>299</height>
+                <align>justify</align>
+                <font>size24</font>
+                <textcolor>infos</textcolor>
+                <label>$VAR[Plots]</label>
+            </control>
+            <control type="grouplist" description="detailedinfos">
+                <left>300</left>
+                <top>800</top>
+                <height>260</height>
+                <width>600</width>
+                <align>center</align>
+                <itemgap>13</itemgap>
+                <control type="label">
+                    <width>600</width>
+                    <height>20</height>
+                    <font>size20</font>
+                    <textcolor>infos</textcolor>
+                    <label>$LOCALIZE[180]: [COLOR darktext][B]$INFO[ListItem.Duration] $LOCALIZE[12391][/B][/COLOR]</label>
+                </control>
+                <control type="label">
+                    <width>600</width>
+                    <height>20</height>
+                    <font>size20</font>
+                    <textcolor>infos</textcolor>
+                    <label>$LOCALIZE[515]: [COLOR darktext][B]$INFO[ListItem.Genre][/B][/COLOR]</label>
+                </control>
+                <control type="label">
+                    <width>600</width>
+                    <height>20</height>
+                    <font>size20</font>
+                    <textcolor>infos</textcolor>
+                    <label>$LOCALIZE[562]: [COLOR darktext][B]$INFO[ListItem.Year][/B][/COLOR]</label>
+                </control>
+                <control type="label">
+                    <width>600</width>
+                    <height>20</height>
+                    <font>size20</font>
+                    <textcolor>infos</textcolor>
+                    <label>$LOCALIZE[20339]: [COLOR darktext][B]$INFO[ListItem.Director][/B][/COLOR]</label>
+                </control>
+                <control type="label">
+                    <width>600</width>
+                    <height>20</height>
+                    <font>size20</font>
+                    <textcolor>infos</textcolor>
+                    <label>$LOCALIZE[21875]: [COLOR darktext][B]$INFO[ListItem.Country][/B][/COLOR]</label>
+                </control>
+                <control type="label">
+                    <width>600</width>
+                    <height>20</height>
+                    <font>size20</font>
+                    <textcolor>infos</textcolor>
+                    <scroll>false</scroll>
+                    <label>$LOCALIZE[20388]: [COLOR darktext][B]$INFO[ListItem.Studio][/B][/COLOR]</label>
+                </control>
+                <control type="label">
+                    <visible>!String.IsEmpty(ListItem.PlayCount)</visible>
+                    <width>600</width>
+                    <height>20</height>
+                    <font>size20</font>
+                    <textcolor>infos</textcolor>
+                    <label>$LOCALIZE[576]: [COLOR darktext][B]$INFO[ListItem.PlayCount][/B][/COLOR]</label>
+                </control>
+            </control>
+            <control type="grouplist">
+                <top>40</top>
+                <include>windowtitle</include>
+            </control>
+        </control>
+    </include>
+</includes>

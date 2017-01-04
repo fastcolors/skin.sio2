@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="iconmusic">
+        <!--ICONE-->
+        <control type="group" description="Icon View">
+            <visible>Control.IsVisible(53)</visible>
+            <control type="group" description="Container and frame">
+                <control type="panel" id="53" description="Panel">
+                    <top>100</top>
+                    <width>1920</width>
+                    <height>1010</height>
+                    <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+                    <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
+                    <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                    <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
+                    <onup>53</onup>
+                    <ondown>53</ondown>
+                    <viewtype label="53">Grid</viewtype>
+                    <pagecontrol>60</pagecontrol>
+                    <scrolltime tween="sine" easing="inout">300</scrolltime>
+                    <preloaditems>2</preloaditems>
+                    <itemlayout condition="Container.Content(Albums) | Container.Content(Artists)" height="225" width="225">
+                        <control type="image">
+                            <top>24</top>
+                            <left>65</left>
+                            <width>225</width>
+                            <height>225</height>
+                            <texture fallback="DefaultAddonMusic.png" background="true">$VAR[locandine]</texture>
+                            <aspectratio>scale</aspectratio>
+                            <bordertexture border="4">images/dvdbox.png</bordertexture>
+                            <bordersize>1</bordersize>
+                        </control>
+                        <control type="textbox">
+                            <visible>!StringCompare(ListItem.Label,..) + [Container.Content(years) | Container.Content(directors)]</visible>
+                            <animation effect="slide" condition="Container.Content(directors)" end="0,19">Conditional</animation>
+                            <top>64</top>
+                            <centerleft>177</centerleft>
+                            <width>140</width>
+                            <height>70</height>
+                            <align>center</align>
+                            <font>size24</font>
+                            <textcolor>black</textcolor>
+                            <shadowcolor>-</shadowcolor>
+                            <info>ListItem.Label</info>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout condition="Container.Content(Albums) | Container.Content(Artists)" height="225" width="225">
+                        <control type="group">
+                            <animation effect="zoom" center="185,50" end="120" time="200" reversible="true">Focus</animation>
+                            <animation effect="zoom" center="185,50" start="120" end="100" time="100" reversible="true">Unfocus</animation>
+                            <include>Scrollanim</include>
+                            <control type="image">
+                                <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
+                                <animation effect="fade" start="100" end="0" time="50" reversible="false">Unfocus</animation>
+                                <left>49</left>
+                                <top>9</top>
+                                <width>256</width>
+                                <height>256</height>
+                                <texture colordiffuse="d45555ff">images/white.png</texture>
+                                <aspectratio>stretch</aspectratio>
+                            </control>
+                            <control type="image">
+                                <top>24</top>
+                                <left>65</left>
+                                <width>225</width>
+                                <height>225</height>
+                                <texture fallback="DefaultAddonMusic.png" background="true">$VAR[locandine]</texture>
+                                <aspectratio>scale</aspectratio>
+                                <bordertexture border="4">images/dvdbox.png</bordertexture>
+                                <bordersize>1</bordersize>
+                            </control>
+                            <control type="textbox">
+                                <visible>!StringCompare(ListItem.Label,..) + [Container.Content(years) | Container.Content(directors)]</visible>
+                                <animation effect="slide" condition="Container.Content(directors)" end="0,19">Conditional</animation>
+                                <top>64</top>
+                                <centerleft>177</centerleft>
+                                <width>140</width>
+                                <height>70</height>
+                                <align>center</align>
+                                <font>size24</font>
+                                <textcolor>black</textcolor>
+                                <shadowcolor>-</shadowcolor>
+                                <info>ListItem.Label</info>
+                            </control>
+                        </control>
+                    </focusedlayout>
+                    <!--SQUARE-->
+                    <itemlayout height="250" width="246">
+                        <control type="image">
+                            <centerleft>220</centerleft>
+                            <top>24</top>
+                            <width>225</width>
+                            <height>225</height>
+                            <texture colordiffuse="aa222222">images/white.png</texture>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <top>24</top>
+                            <centerleft>220</centerleft>
+                            <width>225</width>
+                            <height>225</height>
+                            <texture fallback="DefaultAddon.png" background="true">$VAR[locandine]</texture>
+                            <aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
+                            <bordertexture border="4">images/dvdbox.png</bordertexture>
+                            <bordersize>1</bordersize>
+                        </control>
+                        <control type="textbox">
+                            <visible>!StringCompare(ListItem.Label,..) + [Container.Content(years) | Container.Content(directors) | Container.Content(countries) | Container.Content(studios) | Container.Content(tags)]</visible>
+                            <animation effect="slide" condition="Container.Content(years)" end="0,-31">Conditional</animation>
+                            <top>96</top>
+                            <centerleft>220</centerleft>
+                            <width>140</width>
+                            <height>90</height>
+                            <align>center</align>
+                            <font>size24</font>
+                            <autoscroll>false</autoscroll>
+                            <textcolor>black</textcolor>
+                            <shadowcolor>-</shadowcolor>
+                            <info>ListItem.Label</info>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="250" width="246">
+                        <control type="group">
+                            <animation effect="zoom" center="190,35" end="120" time="200" reversible="true">Focus</animation>
+                            <animation effect="zoom" center="190,35" start="120" end="100" time="100" reversible="true">Unfocus</animation>
+                            <include>Scrollanim</include>
+                            <control type="image">
+                                <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
+                                <animation effect="fade" start="100" end="0" time="50" reversible="false">Unfocus</animation>
+                                <centerleft>220</centerleft>
+                                <top>9</top>
+                                <width>256</width>
+                                <height>256</height>
+                                <texture colordiffuse="d45555ff">images/white.png</texture>
+                                <aspectratio>stretch</aspectratio>
+                            </control>
+                            <control type="image">
+                                <centerleft>220</centerleft>
+                                <top>24</top>
+                                <width>225</width>
+                                <height>225</height>
+                                <texture colordiffuse="aa222222">images/white.png</texture>
+                                <aspectratio>stretch</aspectratio>
+                            </control>
+                            <control type="image">
+                                <top>24</top>
+                                <centerleft>220</centerleft>
+                                <width>225</width>
+                                <height>225</height>
+                                <texture fallback="DefaultAddon.png" background="true">$VAR[locandine]</texture>
+                                <aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
+                                <bordertexture border="4">images/dvdbox.png</bordertexture>
+                                <bordersize>1</bordersize>
+                            </control>
+                            <control type="textbox">
+                                <visible>!StringCompare(ListItem.Label,..) + [Container.Content(years) | Container.Content(directors) | Container.Content(countries) | Container.Content(studios) | Container.Content(tags)]</visible>
+                                <animation effect="slide" condition="Container.Content(years)" end="0,-31">Conditional</animation>
+                                <top>96</top>
+                                <centerleft>220</centerleft>
+                                <width>140</width>
+                                <height>90</height>
+                                <align>center</align>
+                                <font>size24</font>
+                                <autoscroll>false</autoscroll>
+                                <textcolor>black</textcolor>
+                                <shadowcolor>-</shadowcolor>
+                                <info>ListItem.Label</info>
+                            </control>
+                        </control>
+                    </focusedlayout>
+                    <!--SQUAREND-->
+                </control>
+            </control>
+            <control type="image" description="Line Split">
+                <centerleft>960</centerleft>
+                <top>100</top>
+                <width>1500</width>
+                <height>1</height>
+                <texture colordiffuse="main">lines/Line1.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="group">
+                <visible>Container.Content(addons) + !Skin.HasSetting(noslideicon)</visible>
+                <visible>[Container(53).Column(0) + !StringCompare(ListItem.Label,..)] | Container(53).Column(1) | Container(53).Column(2) | Container(53).Column(3)</visible>
+                <left>1230</left>
+                <top>450</top>
+                <animation effect="slide" start="710,0" end="0,0" time="450" delay="200">visiblechange</animation>
+                <control type="image" description="Dialog BG">
+                    <width>700</width>
+                    <height>600</height>
+                    <texture border="30">images/ProgressBG.png</texture>
+                </control>
+                <control type="label" description="Title">
+                    <top>20</top>
+                    <width>700</width>
+                    <height>50</height>
+                    <align>center</align>
+                    <font>size36</font>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+                <control type="label" description="Version">
+                    <top>58</top>
+                    <width>700</width>
+                    <height>50</height>
+                    <align>center</align>
+                    <font>size24</font>
+                    <label>$INFO[ListItem.Label2]</label>
+                </control>
+                <control type="label" description="Media details">
+                    <top>90</top>
+                    <width>688</width>
+                    <height>50</height>
+                    <align>center</align>
+                    <font>size26</font>
+                    <info>ListItem.Property(Addon.Creator)</info>
+                </control>
+                <control type="image">
+                    <top>140</top>
+                    <centerleft>350</centerleft>
+                    <width>600</width>
+                    <height>400</height>
+                    <texture background="true">$VAR[bgimg]</texture>
+                    <aspectratio>keep</aspectratio>
+                    <bordertexture colordiffuse="main">images/white.png</bordertexture>
+                    <bordersize>5</bordersize>
+                </control>
+            </control>
+            <control type="group">
+                <visible>Container.Content(addons) + !Skin.HasSetting(noslideicon)</visible>
+                <visible>Container(53).Column(4) | Container(53).Column(5) | Container(53).Column(6) | Container(53).Column(7) | Container(53).Column(8)</visible>
+                <left>-10</left>
+                <top>450</top>
+                <animation effect="slide" start="-710,0" end="0,0" time="450" delay="200">visiblechange</animation>
+                <control type="image" description="Dialog BG">
+                    <width>700</width>
+                    <height>600</height>
+                    <texture border="30" flipx="true">images/ProgressBG.png</texture>
+                </control>
+                <control type="label" description="Title">
+                    <centerleft>350</centerleft>
+                    <top>20</top>
+                    <width>700</width>
+                    <height>50</height>
+                    <align>center</align>
+                    <font>size36</font>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+                <control type="label" description="Version">
+                    <top>58</top>
+                    <width>700</width>
+                    <height>50</height>
+                    <align>center</align>
+                    <font>size24</font>
+                    <label>$INFO[ListItem.Label2]</label>
+                </control>
+                <control type="label" description="Media details">
+                    <top>90</top>
+                    <width>688=</width>
+                    <height>50</height>
+                    <align>center</align>
+                    <font>size26</font>
+                    <info>ListItem.Property(Addon.Creator)</info>
+                </control>
+                <control type="image">
+                    <top>140</top>
+                    <centerleft>350</centerleft>
+                    <width>600</width>
+                    <height>400</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true">$VAR[bgimg]</texture>
+                    <bordertexture colordiffuse="main">images/white.png</bordertexture>
+                    <bordersize>5</bordersize>
+                </control>
+            </control>
+            <control type="group">
+                <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
+                <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">Unfocus</animation>
+                <control type="image">
+                    <left>-8r</left>
+                    <top>90</top>
+                    <height>910</height>
+                    <texture border="50" colordiffuse="AAFFFFFF">sidepanel/Back.png</texture>
+                </control>
+                <control type="scrollbar" id="60">
+                    <left>-37r</left>
+                    <top>120</top>
+                    <height>850</height>
+                    <onleft>50</onleft>
+                    <onright>noop</onright>
+                </control>
+            </control>
+            <control type="label">
+                <visible>Container.Content(Albums) | Container.Content(Artists)</visible>
+                <centerleft>960</centerleft>
+                <top>74</top>
+                <height>20</height>
+                <font>size24</font>
+                <align>center</align>
+                <width>1420</width>
+                <label>$VAR[TopLabel]</label>
+            </control>
+        </control>
+
+    </include>
+</includes>

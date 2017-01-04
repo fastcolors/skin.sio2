@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="fanartmusic">
+        <!-- FANART -->
+        <control type="group" description="Fanart">
+            <top>40</top>
+            <visible>Control.IsVisible(500)</visible>
+            <include>VisibleFade</include>
+            <control type="label">
+                <width>1920</width>
+                <align>center</align>
+                <label>$INFO[ListItem.Label]</label>
+                <font>size42B</font>
+            </control>
+            <control type="image" description="fanart">
+                <left>50</left>
+                <top>80</top>
+                <width>1080</width>
+                <height>500</height>
+                <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+                <aspectratio aligny="top">scale</aspectratio>
+            </control>
+            <control type="textbox" id="807">
+                <left>1160</left>
+                <top>80</top>
+                <width>700</width>
+                <height>580</height>
+                <align>justify</align>
+                <font>size27</font>
+                <label>$VAR[Plots]</label>
+            </control>
+            <control type="image">
+                <left>1130</left>
+                <top>80</top>
+                <width>800</width>
+                <height>1</height>
+                <texture>lines/LineL.png</texture>
+            </control>
+            <control type="image">
+                <left>560</left>
+                <top>660</top>
+                <width>1360</width>
+                <height>1</height>
+                <texture>lines/LineR.png</texture>
+            </control>
+            <control type="wraplist" id="500">
+                <visible>Container.content(musicvideos) | Container.content(Albums) | Container.content(Artists)</visible>
+                <viewtype label="Fanart">Fanart</viewtype>
+                <onup>9000</onup>
+                <ondown condition="!Skin.HasSetting(Scrollbars_Passive)">60</ondown>
+                <ondown>noop</ondown>
+                <onleft>500</onleft>
+                <onright>500</onright>
+                <left>70</left>
+                <top>60</top>
+                <width>1800</width>
+                <height>1000</height>
+                <orientation>horizontal</orientation>
+                <onleft>noop</onleft>
+                <onright>noop</onright>
+                <onup>noop</onup>
+                <ondown>222</ondown>
+                <preloaditems>2</preloaditems>
+                <pagecontrol>60</pagecontrol>
+                <scrolltime tween="sine" easing="inout">280</scrolltime>
+                <itemlayout width="300">
+                    <control type="group">
+                        <top>620</top>
+                        <control type="image" description="THUMBNAIL">
+                            <left>10</left>
+                            <top>10</top>
+                            <height>280</height>
+                            <width>280</width>
+                            <texture background="true" fallback="Defaultalbumcover.png">$INFO[ListItem.thumb]</texture>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="300">
+                    <control type="group">
+                        <animation effect="zoom" start="100" end="150" center="10,910" time="250" tween="Quadratic" easing="in">Focus</animation>
+                        <animation effect="zoom" start="150" end="100" center="10,910" time="60">Unfocus</animation>
+                        <top>620</top>
+                        <control type="image" description="inverted">
+                            <left>1</left>
+                            <top>1</top>
+                            <height>298</height>
+                            <width>298</width>
+                            <texture background="true">images/white.png</texture>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image" description="maindim">
+                            <animation effect ="fade" start="100" end="0" time="10">Unfocus</animation>
+                            <left>8</left>
+                            <top>8</top>
+                            <height>284</height>
+                            <width>284</width>
+                            <texture background="true">images/white.png</texture>
+                            <aspectratio>stretch</aspectratio>
+                            <colordiffuse>FFFFFFFF</colordiffuse>
+                        </control>
+                        <control type="image" description="THUMBNAIL">
+                            <left>10</left>
+                            <top>10</top>
+                            <height>280</height>
+                            <width>280</width>
+                            <texture background="true" fallback="Defaultalbumcover.png">$INFO[ListItem.thumb]</texture>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                    </control>
+                </focusedlayout>
+            </control>
+            <control type="scrollbar" id="60">
+                <animation effect="fade" delay="200" time="300">VisibleChange</animation>
+                <left>198</left>
+                <top>998</top>
+                <width>1525</width>
+                <height>9</height>
+                <onup>500</onup>
+                <ondown>500</ondown>
+                <orientation>horizontal</orientation>
+                <texturesliderbackground border="6">Scrollbar/HScrollbarBG.png</texturesliderbackground>
+                <texturesliderbar border="6">Scrollbar/HScrollerNF.png</texturesliderbar>
+                <texturesliderbarfocus border="6">Scrollbar/HScrollerFO.png</texturesliderbarfocus>
+                <showonepage>false</showonepage>
+            </control>
+        </control>
+    </include>
+</includes>

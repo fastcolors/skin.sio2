@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="listmusic">
+        <!--LIST-->
+        <control type="group" description="Base Music List">
+            <visible>Control.IsVisible(50)</visible>
+            <control type="group" description="Thumbnails with info">
+                <visible>!Container.Content(Songs)</visible>
+                <visible>[!String.IsEmpty(ListItem.Property(Album_Description)) + Container.Content(Albums)] | [!String.IsEmpty(ListItem.Property(Artist_Description)) + Container.Content(artists)]</visible>
+                <animation effect="fade" time="400">Visible</animation>
+                <animation effect="fade" time="0">Hidden</animation>
+                <control type="image" description="Icon">
+                    <centerleft>480</centerleft>
+                    <centertop>280</centertop>
+                    <width>800</width>
+                    <height>430</height>
+                    <include>Icon_Fade</include>
+                    <bordertexture colordiffuse="main">images/white.png</bordertexture>
+                    <bordersize>2</bordersize>
+                    <texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>
+                <control type="textbox">
+                    <centerleft>480</centerleft>
+                    <top>490</top>
+                    <width>800</width>
+                    <height>90</height>
+                    <align>center</align>
+                    <textcolor>orange</textcolor>
+                    <scroll>false</scroll>
+                    <font>size36</font>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+                <control type="textbox">
+                    <centerleft>480</centerleft>
+                    <top>590</top>
+                    <width>800</width>
+                    <height>430</height>
+                    <align>justify</align>
+                    <font>size26B</font>
+                    <autoscroll delay="6000" time="5000" repeat="10000"></autoscroll>
+                    <label>$VAR[Plots]</label>
+                </control>
+                <control type="image">
+                    <centerleft>480</centerleft>
+                    <top>589</top>
+                    <width>880</width>
+                    <height>1</height>
+                    <texture colordiffuse="main">lines/Line1.png</texture>
+                </control>
+                <control type="image">
+                    <centerleft>480</centerleft>
+                    <top>1020</top>
+                    <width>880</width>
+                    <height>1</height>
+                    <texture colordiffuse="main">lines/Line1.png</texture>
+                </control>
+            </control>
+            <control type="group" description="Thumbnails without info">
+                <visible>String.IsEmpty(ListItem.Property(Artist_Description))</visible>
+                <visible>String.IsEmpty(ListItem.Property(Album_Description))</visible>
+                <animation effect="fade" delay="100" time="300">Visible</animation>
+                <animation effect="fade" time="0">Hidden</animation>
+                <include>MusicInfo</include>
+            </control>
+            <control type="group" description="BigList">
+                <left>960</left>
+                <top>131</top>
+                <control type="fixedlist" id="50">
+                    <width>920</width>
+                    <height>888</height>
+                    <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+                    <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
+                    <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                    <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
+                    <onup>50</onup>
+                    <ondown>50</ondown>
+                    <pagecontrol>60</pagecontrol>
+                    <viewtype label="537">Big list</viewtype>
+                    <focusposition>3</focusposition>
+                    <movement>4</movement>
+                    <preloaditems>4</preloaditems>
+                    <scrolltime>250</scrolltime>
+                    <include>LargeListLayout</include>
+                </control>
+            </control>
+            <include>Linemiddle</include>
+            <control type="scrollbar" id="60">
+                <left>51r</left>
+                <top>135</top>
+                <height>870</height>
+                <onleft>50</onleft>
+                <onright>noop</onright>
+            </control>
+        </control>
+    </include>
+</includes>

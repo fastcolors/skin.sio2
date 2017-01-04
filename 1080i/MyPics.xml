@@ -71,7 +71,7 @@
               <control type="image">
                 <height>70</height>
                 <width>805</width>
-                <texture>images/White.png</texture>
+                <texture border="8">images/White.png</texture>
               </control>
               <include>Arrow</include>
               <control type="label" description="Main Label">

@@ -23,7 +23,7 @@
                 <width>800</width>
                 <height>800</height>
                 <include>Icon_Fade</include>
-                <texture diffuse="images/Diffuse.png" background="true">$VAR[Locandine]</texture>
+                <texture diffuse="images/Diffuse.png" background="true">$VAR[locandine]</texture>
                 <aspectratio aligny="center">keep</aspectratio>
             </control>
         </control>
@@ -37,7 +37,7 @@
                 <width>756</width>
                 <height>470</height>
                 <include>Icon_Fade</include>
-                <texture diffuse="images/Diffuse.png" background="true">$VAR[Locandine]</texture>
+                <texture diffuse="images/Diffuse.png" background="true">$VAR[locandine]</texture>
                 <aspectratio aligny="bottom">keep</aspectratio>
             </control>
             <include>Unwatched</include>
@@ -183,26 +183,26 @@
                 <centerleft>500</centerleft>
                 <width>760</width>
                 <height>440</height>
-                <bottom>580</bottom>
+                <bottom>540</bottom>
                 <include>Icon_Fade</include>
                 <texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
                 <aspectratio aligny="bottom">keep</aspectratio>
             </control>
             <control type="image">
-                <visible>Container.Content(Albums)</visible>
+                <visible>Container.Content(albums)</visible>
                 <centerleft>500</centerleft>
-                <bottom>580</bottom>
+                <bottom>540</bottom>
                 <width>460</width>
-                <height>460</height>
+                <height>400</height>
                 <include>Icon_Fade</include>
                 <texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
                 <aspectratio aligny="bottom">keep</aspectratio>
             </control>
             <control type="textbox">
                 <centerleft>500</centerleft>
-                <top>520</top>
+                <top>560</top>
                 <width>760</width>
-                <height>560</height>
+                <height>520</height>
                 <align>justify</align>
                 <autoscroll delay="3000" time="5000" repeat="10000"></autoscroll>
                 <label>$VAR[Plots]</label>

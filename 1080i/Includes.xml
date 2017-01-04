@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-    <include file="Includes_Variables.xml" />
+    <include file="script-skinshortcuts-includes.xml"/>
     <include file="Includes_Expressions.xml" />
+    <include file="Includes_Variables.xml" />
     <include file="Defaults.xml" />
     <include file="CommonViews.xml" />
-    <include file="Videoviews.xml" />
-    <include file="Musicviews.xml" />
-    <include file="Programviews.xml" />
+    <include file="views/video_biglist.xml" />
+    <include file="views/video_icons.xml" />
+    <include file="views/video_banners.xml" />
+    <include file="views/video_widelist.xml" />
+    <include file="views/Musicviews.xml" />
+    <include file="views/Programviews.xml" />
     <include file="Includes_Home.xml" />
     <include file="Includes_Shelf.xml" />
-    <include file="script-skinshortcuts-includes.xml"/>
     <include name="VisibleFade">
         <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
     </include>
@@ -364,82 +367,7 @@
         <texturenofocus>-</texturenofocus>
         <texturefocus>-</texturefocus>
     </include>
-    <include name="iconmusiclist">
-        <viewtype label="536">Icons</viewtype>
-        <width>1920</width>
-        <height>355</height>
-        <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-        <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
-        <onright>noop</onright>
-        <orientation>horizontal</orientation>
-        <preloaditems>4</preloaditems>
-        <scrolltime>400</scrolltime>
-        <itemlayout height="300" width="320">
-            <control type="image">
-                <visible>!String.IsEmpty(ListItem.Thumb)</visible>
-                <centerleft>300</centerleft>
-                <centertop>190</centertop>
-                <width>380</width>
-                <height>300</height>
-                <texture colordiffuse="bbffffff">shadow.png</texture>
-            </control>
-            <control type="image">
-                <centerleft>300</centerleft>
-                <centertop>150</centertop>
-                <width>280</width>
-                <height>280</height>
-                <texture background="true">$INFO[ListItem.Icon]</texture>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="textbox">
-                <centerleft>300</centerleft>
-                <top>290</top>
-                <width>300</width>
-                <height>64</height>
-                <font>size24</font>
-                <textcolor>white</textcolor>
-                <align>center</align>
-                <autoscroll>false</autoscroll>
-                <label>[B]$INFO[ListItem.Label][/B][CR]$INFO[ListItem.Label2]</label>
-            </control>
-        </itemlayout>
-        <focusedlayout height="300" width="320">
-            <control type="group">
-                <animation effect="zoom" time="120" start="100" end="110" center="300,300" tween="Back" easing="Out">Focus</animation>
-                <animation effect="zoom" start="110" end="100" time="120" center="300,300">unFocus</animation>
-                <control type="image">
-                    <animation effect="slide" start="0,0" end="0,10" time="120">Focus</animation>-->
-                    <animation effect="slide" start="0,10" end="0,0" time="120">unFocus</animation>-->
-                    <visible>!String.IsEmpty(ListItem.Thumb)</visible>
-                    <centerleft>300</centerleft>
-                    <centertop>200</centertop>
-                    <width>380</width>
-                    <height>300</height>
-                    <texture>shadow.png</texture>
-                </control>
-                <control type="image">
-                    <centerleft>300</centerleft>
-                    <centertop>150</centertop>
-                    <width>280</width>
-                    <height>280</height>
-                    <texture background="true">$INFO[ListItem.Icon]</texture>
-                    <aspectratio>stretch</aspectratio>
-                </control>
-            </control>
-            <control type="textbox">
-                <centerleft>300</centerleft>
-                <top>290</top>
-                <width>300</width>
-                <height>64</height>
-                <font>size24</font>
-                <textcolor>white</textcolor>
-                <align>center</align>
-                <autoscroll>false</autoscroll>
-                <label>[B]$INFO[ListItem.Label][/B][CR]$INFO[ListItem.Label2]</label>
-            </control>
-        </focusedlayout>
-    </include>
     <include name="homeanimation">
-        <animation condition="!ControlGroup(700).HasFocus + !Container(9000).Row(0)" effect="slide" start="0,0" end="0,-590" time="220">Conditonal</animation>
+        <animation condition="!ControlGroup(700).HasFocus + !Container(9000).Row(0) + !Control.HasFocus(9009)" effect="slide" start="0,0" end="0,-590" time="220">Conditonal</animation>
     </include>
 </includes>

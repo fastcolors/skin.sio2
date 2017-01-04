@@ -3,7 +3,7 @@
     <backgroundcolor>aliceblue</backgroundcolor>
     <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000)</onload>
+    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;level=1)</onload>
     <include>OpenClose</include>
     <controls>
         <control type="group" description="Furniture">
@@ -32,6 +32,7 @@
             </control>
         </control>
         <control type="button" id="9009">
+            <include>homeanimation</include>
             <focusedcolor>white</focusedcolor>
             <include>ShelfFade</include>
             <include>ShelfTitle</include>
@@ -56,15 +57,14 @@
             <!--<onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),3)">Skin.SetString(addonsshelf,)</onclick>-->
             <!--<onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),)">Skin.SetString(addonsshelf,1)</onclick>-->
 
-            <!--CINEMAS-->
-            <!--<onclick  condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),)">Skin.SetString(theatersshelf,1)</onclick>-->
-            <!--<onclick  condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),1)">Skin.SetString(theatersshelf,2)</onclick>-->
-            <!--<onclick  condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),2)">Skin.SetString(theatersshelf,)</onclick>-->
+            <!--UPCOMINGMOVIES-->
+            <onclick  condition="$EXP[isupcomingmovies] + StringCompare(Skin.String(theatersshelf),)">Skin.SetString(theatersshelf,1)</onclick>
+            <onclick  condition="$EXP[isupcomingmovies] + StringCompare(Skin.String(theatersshelf),1)">Skin.SetString(theatersshelf,2)</onclick>
+            <onclick  condition="$EXP[isupcomingmovies] + StringCompare(Skin.String(theatersshelf),2)">Skin.SetString(theatersshelf,)</onclick>
 
-            <!--DVDS-->
-            <!--<onclick  condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),)">Skin.SetString(dvdsshelf,2)</onclick>-->
-            <!--<onclick  condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),1)">Skin.SetString(dvdsshelf,2)</onclick>-->
-            <!--<onclick  condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),2)">Skin.SetString(dvdsshelf,)</onclick>-->
+            <!--UPCOMINGTVSHOWS-->
+            <onclick  condition="$EXP[isupcomingtvshows] + StringCompare(Skin.String(dvdsshelf),)">Skin.SetString(dvdsshelf,1)</onclick>
+            <onclick  condition="$EXP[isupcomingtvshows] + StringCompare(Skin.String(dvdsshelf),1)">Skin.SetString(dvdsshelf,)</onclick>
 
             <onup>noop</onup>
             <ondown condition="Control.IsVisible(312)">312</ondown>
@@ -158,9 +158,6 @@
             <include>Squares</include>
             <include condition="Skin.HasSetting(PicturesShelf_Custom)">Pictures_Shortcuts</include>
             <include condition="Skin.HasSetting(AddonsShelf_Custom)">Addons_Shortcuts</include>
-            <include condition="!Skin.HasSetting(AddonsShelf_Custom)">Addons_Auto</include>
-            <include condition="Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)">VAddons_Shortcuts</include>
-            <include>Favsshelf</include>
             <include>weather_shelf</include>
         </control>
         <control type="group" description="RSS">

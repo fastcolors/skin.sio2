@@ -2,675 +2,137 @@
 <includes>
     <include name="Videoviews">
         <!--SMALL LIST-->
-        <control type="group" description="List">
-            <visible>Control.IsVisible(50)</visible>
-            <include>left_Panel_plain</include>
-            <control type="group" description="Slider and List">
-                <include>SlimListItemCount</include>
-                <left>1020</left>
-                <top>110</top>
-                <control type="fixedlist" id="50">
-                    <width>802</width>
-                    <height>891</height>
-                    <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-                    <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
-                    <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-                    <onright condition="!Skin.HasSetting(Scrollbars_Active)">noop</onright>
-                    <onup>50</onup>
-                    <ondown>50</ondown>
-                    <pagecontrol>60</pagecontrol>
-                    <viewtype label="535">List</viewtype>
-                    <focusposition>5</focusposition>
-                    <movement>5</movement>
-                    <preloaditems>4</preloaditems>
-                    <scrolltime>250</scrolltime>
-                    <itemlayout condition="SubString(Container.FolderPath,plugin://,left)" width="802" height="81">
-                        <!--<control type="image">-->
-                        <!--<height>70</height>-->
-                        <!--<width>805</width>-->
-                        <!--<texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>-->
+        <!--<control type="group" description="List">-->
+            <!--<visible>Control.IsVisible(50)</visible>-->
+            <!--<include>left_Panel_plain</include>-->
+            <!--<control type="group" description="Slider and List">-->
+                <!--<include>SlimListItemCount</include>-->
+                <!--<left>1020</left>-->
+                <!--<top>110</top>-->
+                <!--<control type="fixedlist" id="50">-->
+                    <!--<visible>Container.Content(files)</visible>-->
+                    <!--<width>802</width>-->
+                    <!--<height>891</height>-->
+                    <!--<onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>-->
+                    <!--<onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>-->
+                    <!--<onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>-->
+                    <!--<onright condition="!Skin.HasSetting(Scrollbars_Active)">noop</onright>-->
+                    <!--<onup>50</onup>-->
+                    <!--<ondown>50</ondown>-->
+                    <!--<pagecontrol>60</pagecontrol>-->
+                    <!--<viewtype label="535">List</viewtype>-->
+                    <!--<focusposition>5</focusposition>-->
+                    <!--<movement>5</movement>-->
+                    <!--<preloaditems>4</preloaditems>-->
+                    <!--<scrolltime>250</scrolltime>-->
+                    <!--<itemlayout condition="SubString(Container.FolderPath,plugin://,left)" width="802" height="81">-->
+                        <!--&lt;!&ndash;<control type="image">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<height>70</height>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<width>805</width>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</control>&ndash;&gt;-->
+                        <!--<control type="label" description="Main Label">-->
+                            <!--<width>720</width>-->
+                            <!--<include>50Label</include>-->
+                            <!--<label>$INFO[ListItem.Label]</label>-->
                         <!--</control>-->
-                        <control type="label" description="Main Label">
-                            <width>720</width>
-                            <include>50Label</include>
-                            <label>$INFO[ListItem.Label]</label>
-                        </control>
-                    </itemlayout>
-                    <focusedlayout condition="SubString(Container.FolderPath,plugin://,left)" width="802" height="81">
-                        <control type="group">
-                            <animation effect="zoom" time="120" start="100" end="105" center="auto" tween="Back" easing="Out">Focus</animation>
-                            <control type="image">
-                                <top>12</top>
-                                <left>-50</left>
-                                <height>70</height>
-                                <width>905</width>
-                                <texture>shadow.png</texture>
-                            </control>
-                            <control type="image">
-                                <height>70</height>
-                                <width>805</width>
-                                <texture border="8">images/White.png</texture>
-                            </control>
-                            <control type="label" description="Main Label">
-                                <width>720</width>
-                                <include>50LabelFO</include>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                        </control>
-                    </focusedlayout>
-                    <itemlayout width="802" height="81">
-                        <!--<control type="image">-->
-                        <!--<height>70</height>-->
-                        <!--<width>802</width>-->
-                        <!--<texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>-->
-                        <!--</control>-->
-                        <include>Watched_Marks</include>
-                        <include>HD_Badge</include>
-                        <include>Arrow</include>
-                        <control type="label" description="Main Label">
-                            <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
-                            <include>50Label</include>
-                            <label>$INFO[ListItem.Label]</label>
-                            <label2>$INFO[ListItem.Label]</label2>
-                        </control>
-                        <control type="label" description="Main Label">
-                            <visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
-                            <width>711</width>
-                            <include>50Label</include>
-                            <label>$INFO[ListItem.Label]</label>
-                        </control>
-                        <control type="label" description="Label2">
-                            <visible>container.content(songs) | container.content(musicvideos)</visible>
-                            <include>50Label2</include>
-                            <label>$INFO[ListItem.Duration]</label>
-                        </control>
-                    </itemlayout>
-                    <focusedlayout width="802" height="81">
-                        <control type="group">
-                            <animation effect="zoom" time="120" start="100" end="105" center="auto" tween="Back" easing="Out">Focus</animation>
-                            <control type="image">
-                                <top>12</top>
-                                <left>-50</left>
-                                <height>70</height>
-                                <width>902</width>
-                                <texture>shadow.png</texture>
-                            </control>
-                            <control type="image">
-                                <height>70</height>
-                                <width>802</width>
-                                <texture border="8">images/White.png</texture>
-                            </control>
-                            <include>Watched_Marks</include>
-                            <include>HD_Badge</include>
-                            <include>Arrow</include>
-                            <control type="label" description="Main Label">
-                                <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
-                                <include>50LabelFO</include>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                            <control type="label" description="Main Label">
-                                <visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
-                                <width>711</width>
-                                <include>50LabelFO</include>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                            <control type="label" description="Label2">
-                                <visible>container.content(songs) | container.content(musicvideos)</visible>
-                                <include>50Label2FO</include>
-                                <label>$INFO[ListItem.Duration]</label>
-                            </control>
-                        </control>
-                    </focusedlayout>
-                </control>
-            </control>
-            <control type="scrollbar" id="60">
-                <left>39r</left>
-                <top>135</top>
-                <height>870</height>
-                <onright>noop</onright>
-                <onleft>50</onleft>
-            </control>
-        </control>
-        <!--LISTA GRANDE -->
-        <control type="group" description="BigList">
-            <visible>Control.IsVisible(51)</visible>
-            <include>left_Panel</include>
-            <control type="group">
-                <include>LargeListItemCount</include>
-                <left>1020</left>
-                <top>110</top>
-                <control type="fixedlist" id="51">
-                    <visible>!container.content(Sets)</visible>
-                    <visible>!String.IsEmpty(Container.FolderPath)</visible>
-                    <width>802</width>
-                    <height>900</height>
-                    <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-                    <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
-                    <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-                    <onright condition="!Skin.HasSetting(Scrollbars_Active)">noop</onright>
-                    <onup>51</onup>
-                    <ondown>51</ondown>
-                    <pagecontrol>60</pagecontrol>
-                    <viewtype label="537">Big List 50</viewtype>
-                    <focusposition>3</focusposition>
-                    <movement>4</movement>
-                    <preloaditems>4</preloaditems>
-                    <scrolltime>250</scrolltime>
-                    <include>LargeListLayout</include>
-                </control>
-            </control>
-            <control type="scrollbar" id="60">
-                <left>39r</left>
-                <top>135</top>
-                <height>870</height>
-                <onleft>51</onleft>
-                <onright>noop</onright>
-            </control>
-        </control>
-        <!--ICONVIEW-->
-        <control type="group" description="Icons view">
-            <visible>Control.IsVisible(53)</visible>
-            <control type="panel" id="53">
-                <left>50</left>
-                <width>1820</width>
-                <height>1080</height>
-                <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-                <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
-                <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-                <onright condition="!Skin.HasSetting(Scrollbars_Active)">noop</onright>
-                <onup>53</onup>
-                <ondown>53</ondown>
-                <viewtype label="536">Grid</viewtype>
-                <pagecontrol>60</pagecontrol>
-                <scrolltime tween="sine" easing="inout">300</scrolltime>
-                <preloaditems>2</preloaditems>
-                <itemlayout condition="Container.Content(Addons)" height="455" width="455">
-                    <control type="image">
-                        <visible>container.content(albums)</visible>
-                        <centerleft>227</centerleft>
-                        <centertop>227</centertop>
-                        <width>360</width>
-                        <height>360</height>
-                        <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
-                        <aspectratio>stretch</aspectratio>
-                    </control>
-                    <control type="image">
-                        <visible>!container.content(albums)</visible>
-                        <centerleft>227</centerleft>
-                        <centertop>227</centertop>
-                        <width>360</width>
-                        <height>360</height>
-                        <texture background="true">$INFO[ListItem.Icon]</texture>
-                        <aspectratio>stretch</aspectratio>
-                    </control>
-                </itemlayout>
-                <focusedlayout condition="Container.Content(Addons)" height="455" width="455">
-                    <control type="image">
-                        <animation effect="fade" start="0" end="100" time="150">Focus</animation>
-                        <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
-                        <visible>!ListItem.IsParentFolder</visible>
-                        <centerleft>227</centerleft>
-                        <centertop>227</centertop>
-                        <width>455</width>
-                        <height>455</height>
-                        <texture>shadow.png</texture>
-                    </control>
-                    <control type="group">
-                        <animation effect="zoom" time="120" start="100" end="114" center="auto" tween="Back" easing="Out">Focus</animation>
-                        <animation effect="zoom" start="114" end="100" time="120" center="auto">unFocus</animation>
-                        <control type="image">
-                            <visible>container.content(albums)</visible>
-                            <centerleft>227</centerleft>
-                            <centertop>227</centertop>
-                            <width>360</width>
-                            <height>360</height>
-                            <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
-                            <aspectratio>stretch</aspectratio>
-                        </control>
-                        <control type="image">
-                            <visible>!container.content(albums)</visible>
-                            <centerleft>227</centerleft>
-                            <centertop>227</centertop>
-                            <width>360</width>
-                            <height>360</height>
-                            <texture background="true">$INFO[ListItem.Icon]</texture>
-                            <aspectratio>stretch</aspectratio>
-                        </control>
-                        <control type="label">
-                            <animation effect="fade" start="0" end="100" time="150">Focus</animation>
-                            <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
-                            <centerleft>227</centerleft>
-                            <top>414</top>
-                            <width>600</width>
-                            <height>20</height>
-                            <font>size24</font>
-                            <textcolor>white</textcolor>
-                            <align>center</align>
-                            <label>[B]$INFO[ListItem.Label][/B]</label>
-                        </control>
-                    </control>
-                </focusedlayout>
-                <itemlayout condition="![Container.Content(Addons) | Container.Content(Episodes)]" height="500" width="360">
-                    <control type="image">
-                        <top>65</top>
-                        <centerleft>192</centerleft>
-                        <width>290</width>
-                        <height>420</height>
-                        <texture background="true">$VAR[Locandine]</texture>
-                        <aspectratio>scale</aspectratio>
-                    </control>
-                    <control type="group">
-                        <visible>container.content(TVshows) | container.content(seasons)</visible>
-                        <control type="image">
-                            <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                            <left>32</left>
-                            <top>427</top>
-                            <height>70</height>
-                            <width>70</width>
-                            <aspectratio>keep</aspectratio>
-                            <texture>badges/BadgeCount.png</texture>
-                        </control>
-                        <control type="label" description="Label2">
-                            <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                            <left>32</left>
-                            <top>427</top>
-                            <height>70</height>
-                            <width>70</width>
-                            <font>size24</font>
-                            <scroll>true</scroll>
-                            <align>center</align>
-                            <scroll>false</scroll>
-                            <textcolor>White</textcolor>
-                            <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
-                        </control>
-                    </control>
-                    <control type="image" description="WatchStatus">
-                        <visible>![container.content(TVshows) | container.content(seasons)]</visible>
-                        <visible>!ListItem.IsCollection</visible>
-                        <left>43</left>
-                        <top>457</top>
-                        <height>32</height>
-                        <width>60</width>
-                        <aspectratio align="left">keep</aspectratio>
-                        <texture>$VAR[WatchStatus]</texture>
-                    </control>
-                </itemlayout>
-                <focusedlayout condition="![Container.Content(Addons) | Container.Content(Episodes)]" height="500" width="360">
-                    <control type="group">
-                        <animation effect="zoom" time="120" start="100" end="120" center="180,275" tween="Back" easing="Out">Focus</animation>
-                        <animation effect="zoom" start="120" end="100" time="120" center="180,275">unFocus</animation>
-                        <control type="image">
-                            <animation effect="fade" start="0" end="100" time="150">Focus</animation>
-                            <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
-                            <visible>!ListItem.IsParentFolder</visible>
-                            <top>50</top>
-                            <centerleft>192</centerleft>
-                            <width>380</width>
-                            <height>450</height>
-                            <texture>shadow.png</texture>
-                        </control>
-                        <control type="image">
-                            <top>65</top>
-                            <centerleft>192</centerleft>
-                            <width>290</width>
-                            <height>420</height>
-                            <texture background="true">$VAR[Locandine]</texture>
-                            <aspectratio>scale</aspectratio>
-                        </control>
-                        <control type="group">
-                            <visible>container.content(TVshows) | container.content(seasons)</visible>
-                            <control type="image">
-                                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                                <left>32</left>
-                                <top>427</top>
-                                <height>70</height>
-                                <width>70</width>
-                                <aspectratio>keep</aspectratio>
-                                <texture>badges/BadgeCount.png</texture>
-                            </control>
-                            <control type="label" description="Label2">
-                                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                                <left>32</left>
-                                <top>427</top>
-                                <height>70</height>
-                                <width>70</width>
-                                <font>size24</font>
-                                <scroll>true</scroll>
-                                <align>center</align>
-                                <scroll>false</scroll>
-                                <textcolor>White</textcolor>
-                                <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
-                            </control>
-                        </control>
-                        <control type="image" description="WatchStatus">
-                            <visible>![container.content(TVshows) | container.content(seasons)]</visible>
-                            <visible>!ListItem.IsCollection</visible>
-                            <left>43</left>
-                            <top>457</top>
-                            <height>32</height>
-                            <width>60</width>
-                            <aspectratio align="left">keep</aspectratio>
-                            <texture>$VAR[WatchStatus]</texture>
-                        </control>
-                    </control>
-                </focusedlayout>
-                <itemlayout condition="Container.Content(Episodes)" height="375" width="454">
-                    <control type="image">
-                        <visible>container.content(episodes)</visible>
-                        <centerleft>227</centerleft>
-                        <top>44</top>
-                        <width>410</width>
-                        <height>280</height>
-                        <texture background="true">$INFO[ListItem.Icon]</texture>
-                        <aspectratio>scale</aspectratio>
-                    </control>
-                    <control type="image" description="WatchStatus">
-                        <left>18</left>
-                        <top>296</top>
-                        <height>32</height>
-                        <width>60</width>
-                        <aspectratio align="left">keep</aspectratio>
-                        <texture>$VAR[WatchStatus]</texture>
-                    </control>
-                    <control type="label">
-                        <centerleft>227</centerleft>
-                        <top>320</top>
-                        <width>410</width>
-                        <height>45</height>
-                        <font>size24</font>
-                        <textcolor>White2</textcolor>
-                        <align>center</align>
-                        <label>[B]$INFO[ListItem.Label][/B]</label>
-                    </control>
-                </itemlayout>
-                <focusedlayout condition="Container.Content(Episodes)" height="375" width="454">
-                    <control type="group">
-                        <animation effect="zoom" time="120" start="100" end="124" center="auto" tween="Back" easing="Out">Focus</animation>
-                        <animation effect="zoom" start="120" end="100" time="124" center="auto">unFocus</animation>
-                        <control type="image">
-                            <visible>!ListItem.IsParentFolder</visible>
-                            <animation effect="fade" start="0" end="100" time="150">Focus</animation>
-                            <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
-                            <left>0</left>
-                            <top>0</top>
-                            <width>454</width>
-                            <height>375</height>
-                            <texture>shadow.png</texture>
-                        </control>
-                        <control type="image">
-                            <visible>container.content(episodes)</visible>
-                            <centerleft>227</centerleft>
-                            <top>44</top>
-                            <width>410</width>
-                            <height>280</height>
-                            <texture background="true">$INFO[ListItem.Icon]</texture>
-                            <aspectratio>scale</aspectratio>
-                        </control>
-                        <control type="label">
-                            <centerleft>227</centerleft>
-                            <top>320</top>
-                            <width>410</width>
-                            <height>45</height>
-                            <font>size24</font>
-                            <textcolor>White2</textcolor>
-                            <align>center</align>
-                            <label>[B]$INFO[ListItem.Label][/B]</label>
-                        </control>
-                        <control type="image" description="WatchStatus">
-                            <left>18</left>
-                            <top>296</top>
-                            <height>32</height>
-                            <width>60</width>
-                            <aspectratio align="left">keep</aspectratio>
-                            <texture>$VAR[WatchStatus]</texture>
-                        </control>
-                    </control>
-                </focusedlayout>
-            </control>
-        </control>
-        <!--BANNERS-->
-        <control type="group" description="BANNERS">
-            <visible>Control.IsVisible(55)</visible>
-            <control type="group" description="Container and frame">
-                <control type="fixedlist" id="55" description="bannerlist">
-                    <visible>container.content(tvshows)</visible>
-                    <visible>!String.IsEmpty(Container.FolderPath)</visible>
-                    <viewtype label="539">Banners</viewtype>
-                    <centerleft>1720</centerleft>
-                    <top>140</top>
-                    <width>1800</width>
-                    <height>940</height>
-                    <orientation>vertical</orientation>
-                    <focusposition>1</focusposition>
-                    <preloaditems>2</preloaditems>
-                    <onup>ActivateWindow(1116)</onup>
-                    <ondown>ActivateWindow(1116)</ondown>
-                    <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-                    <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
-                    <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
-                    <preloaditems>4</preloaditems>
-                    <pagecontrol>60</pagecontrol>
-                    <scrolltime>300</scrolltime>
-                    <itemlayout condition="container.content(tvshows)" height="180" width="1800">
-                        <control type="image">
-                            <left>50</left>
-                            <top>80</top>
-                            <width>758</width>
-                            <height>140</height>
-                            <texture background="true" diffuse="images/DiffuseBanner.png">$INFO[ListItem.Art(banner)]</texture>
-                            <aspectratio>keep</aspectratio>
-                        </control>
-                        <control type="image">
-                            <visible>ListItem.IsParentFolder</visible>
-                            <left>50</left>
-                            <top>80</top>
-                            <width>758</width>
-                            <height>140</height>
-                            <texture background="true" diffuse="images/DiffuseBanner.png">DefaultFolderBackBanner.png</texture>
-                            <aspectratio>keep</aspectratio>
-                        </control>
-                        <control type="image">
-                            <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),99)</visible>
-                            <centerleft>60</centerleft>
-                            <centertop>82</centertop>
-                            <height>55</height>
-                            <width>85</width>
-                            <texture background="true" border="25">badges/badgecount.png</texture>
-                        </control>
-                        <control type="image">
-                            <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),9) + !IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),99)</visible>
-                            <centerleft>60</centerleft>
-                            <centertop>82</centertop>
-                            <height>55</height>
-                            <width>65</width>
-                            <texture background="true" border="25">badges/badgecount.png</texture>
-                        </control>
-                        <control type="image">
-                            <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0) + !IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),9)</visible>
-                            <centerleft>60</centerleft>
-                            <centertop>82</centertop>
-                            <height>55</height>
-                            <width>55</width>
-                            <texture background="true" border="25">badges/badgecount.png</texture>
-                        </control>
-                        <control type="label" description="Label2">
-                            <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                            <centerleft>60</centerleft>
-                            <centertop>82</centertop>
-                            <height>55</height>
-                            <width>150</width>
-                            <font>size26</font>
-                            <scroll>true</scroll>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <scroll>false</scroll>
-                            <textcolor>FFFFFFFF</textcolor>
-                            <shadowcolor></shadowcolor>
-                            <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
-                        </control>
-                        <!--<control type="image">-->
-                        <!--<visible>!ListItem.IsParentFolder</visible>-->
-                        <!--<top>125</top>-->
-                        <!--<left>19</left>-->
-                        <!--<width>50</width>-->
-                        <!--<height>50</height>-->
-                        <!--<texture>$INFO[ListItem.MPAA,Mpaa/,.png]</texture>-->
-                        <!--</control>-->
-                    </itemlayout>
-                    <focusedlayout condition="container.content(tvshows)" height="180" width="1800">
-                        <control type="group">
-                            <animation effect="zoom" end="140" center="409,150" time="350">Focus</animation>
-                            <animation effect="zoom" start="140" end="100" center="409,150" time="250">Unfocus</animation>
-                            <control type="image">
-                                <left>39</left>
-                                <top>0</top>
-                                <width>780</width>
-                                <height>300</height>
-                                <texture background="true" colordiffuse="$VAR[diffuseselect]">images/DiffuseBanner.png</texture>
-                                <aspectratio>keep</aspectratio>
-                            </control>
-                            <control type="image">
-                                <visible>ListItem.IsParentFolder</visible>
-                                <left>50</left>
-                                <top>80</top>
-                                <width>758</width>
-                                <height>140</height>
-                                <texture background="true" diffuse="images/DiffuseBanner.png">DefaultFolderBackBanner.png</texture>
-                                <aspectratio>keep</aspectratio>
-                            </control>
-                            <control type="image">
-                                <left>50</left>
-                                <top>80</top>
-                                <width>758</width>
-                                <height>140</height>
-                                <texture background="true" diffuse="images/DiffuseBanner.png">$INFO[ListItem.Art(banner)]</texture>
-                                <aspectratio>keep</aspectratio>
-                            </control>
-                            <control type="image">
-                                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),99)</visible>
-                                <centerleft>60</centerleft>
-                                <centertop>82</centertop>
-                                <height>55</height>
-                                <width>85</width>
-                                <texture background="true" border="25">badges/badgecount.png</texture>
-                            </control>
-                            <control type="image">
-                                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),9) + !IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),99)</visible>
-                                <centerleft>60</centerleft>
-                                <centertop>82</centertop>
-                                <height>55</height>
-                                <width>65</width>
-                                <texture background="true" border="25">badges/badgecount.png</texture>
-                            </control>
-                            <control type="image">
-                                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0) + !IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),9)</visible>
-                                <centerleft>60</centerleft>
-                                <centertop>82</centertop>
-                                <height>55</height>
-                                <width>55</width>
-                                <texture background="true" border="25">badges/badgecount.png</texture>
-                            </control>
-                            <control type="label" description="Label2">
-                                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                                <centerleft>60</centerleft>
-                                <centertop>82</centertop>
-                                <height>45</height>
-                                <width>150</width>
-                                <font>size26</font>
-                                <scroll>true</scroll>
-                                <align>center</align>
-                                <aligny>center</aligny>
-                                <scroll>false</scroll>
-                                <textcolor>FFFFFFFF</textcolor>
-                                <shadowcolor></shadowcolor>
-                                <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
-                            </control>
+                    <!--</itemlayout>-->
+                    <!--<focusedlayout condition="SubString(Container.FolderPath,plugin://,left)" width="802" height="81">-->
+                        <!--<control type="group">-->
+                            <!--<animation effect="zoom" time="120" start="100" end="105" center="auto" tween="Back" easing="Out">Focus</animation>-->
                             <!--<control type="image">-->
-                            <!--<visible>!ListItem.IsParentFolder</visible>-->
-                            <!--<top>125</top>-->
-                            <!--<left>19</left>-->
-                            <!--<width>50</width>-->
-                            <!--<height>50</height>-->
-                            <!--<texture>$INFO[ListItem.MPAA,Mpaa/,.png]</texture>-->
+                                <!--<top>12</top>-->
+                                <!--<left>-50</left>-->
+                                <!--<height>70</height>-->
+                                <!--<width>905</width>-->
+                                <!--<texture>shadow.png</texture>-->
                             <!--</control>-->
-                        </control>
-                    </focusedlayout>
-                </control>
-            </control>
-            <control type="image" description="Rating">
-                <right>110</right>
-                <top>80</top>
-                <height>30</height>
-                <width>270</width>
-                <aspectratio align="right">keep</aspectratio>
-                <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
-            </control>
-            <control type="label" description="Media details">
-                <left>129</left>
-                <top>90</top>
-                <width>1350</width>
-                <textcolor>white</textcolor>
-                <width>758</width>
-                <height>40</height>
-                <align>left</align>
-                <scroll>false</scroll>
-                <label>[B]$INFO[ListItem.Label][/B]  [COLOR=gray]$VAR[TopLabel][/COLOR]</label>
-            </control>
-            <control type="grouplist">
-                <top>150</top>
-                <left>129</left>
-                <itemgap>0</itemgap>
-                <control type="label" description="Show status">
-                    <width>650</width>
-                    <height>60</height>
-                    <textcolor>dimgray</textcolor>
-                    <width>500</width>
-                    <height>40</height>
-                    <align>left</align>
-                    <font>size28</font>
-                    <scroll>false</scroll>
-                    <label>STATUS: [COLOR=main]$INFO[ListItem.Status][/COLOR]</label>
-                </control>
-                <control type="label" description="Next Episode">
-                    <width>500</width>
-                    <height>60</height>
-                    <textcolor>dimgray</textcolor>
-                    <width>758</width>
-                    <height>40</height>
-                    <align>left</align>
-                    <font>size28</font>
-                    <scroll>false</scroll>
-                    <label>NEXT AIRTIME: [COLOR=main]$INFO[Window(Home).Property(NextAired.NextDay)][/COLOR]</label>
-                </control>
-                <control type="image" description="Studio">
-                    <width>500</width>
-                    <height>109</height>
-                    <texture colordiffuse="infos">resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
-                    <aspectratio align="center">keep</aspectratio>
-                </control>
-                <control type="image">
-                    <height>1</height>
-                    <width>500</width>
-                    <texture colordiffuse="main">Lines/line.png</texture>
-                </control>
-                <control type="textbox" description="Plot">
-                    <top>300</top>
-                    <width>500</width>
-                    <height>600</height>
-                    <font>size28</font>
-                    <align>justify</align>
-                    <autoscroll delay="7000" time="4300" repeat="10000"></autoscroll>
-                    <label>$VAR[Plots]</label>
-                </control>
-            </control>
-            <control type="scrollbar" id="60">
-                <left>85r</left>
-                <top>219</top>
-                <height>780</height>
-                <onleft>53</onleft>
-                <onright>9000</onright>
-            </control>
-        </control>
+                            <!--<control type="image">-->
+                                <!--<height>70</height>-->
+                                <!--<width>805</width>-->
+                                <!--<texture border="8">images/White.png</texture>-->
+                            <!--</control>-->
+                            <!--<control type="label" description="Main Label">-->
+                                <!--<width>720</width>-->
+                                <!--<include>50LabelFO</include>-->
+                                <!--<label>$INFO[ListItem.Label]</label>-->
+                            <!--</control>-->
+                        <!--</control>-->
+                    <!--</focusedlayout>-->
+                    <!--<itemlayout width="802" height="81">-->
+                        <!--&lt;!&ndash;<control type="image">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<height>70</height>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<width>802</width>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</control>&ndash;&gt;-->
+                        <!--<include>Watched_Marks</include>-->
+                        <!--<include>HD_Badge</include>-->
+                        <!--<include>Arrow</include>-->
+                        <!--<control type="label" description="Main Label">-->
+                            <!--<visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>-->
+                            <!--<include>50Label</include>-->
+                            <!--<label>$INFO[ListItem.Label]</label>-->
+                            <!--<label2>$INFO[ListItem.Label]</label2>-->
+                        <!--</control>-->
+                        <!--<control type="label" description="Main Label">-->
+                            <!--<visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>-->
+                            <!--<width>711</width>-->
+                            <!--<include>50Label</include>-->
+                            <!--<label>$INFO[ListItem.Label]</label>-->
+                        <!--</control>-->
+                        <!--<control type="label" description="Label2">-->
+                            <!--<visible>container.content(songs) | container.content(musicvideos)</visible>-->
+                            <!--<include>50Label2</include>-->
+                            <!--<label>$INFO[ListItem.Duration]</label>-->
+                        <!--</control>-->
+                    <!--</itemlayout>-->
+                    <!--<focusedlayout width="802" height="81">-->
+                        <!--<control type="group">-->
+                            <!--<animation effect="zoom" time="120" start="100" end="105" center="auto" tween="Back" easing="Out">Focus</animation>-->
+                            <!--<control type="image">-->
+                                <!--<top>12</top>-->
+                                <!--<left>-50</left>-->
+                                <!--<height>70</height>-->
+                                <!--<width>902</width>-->
+                                <!--<texture>shadow.png</texture>-->
+                            <!--</control>-->
+                            <!--<control type="image">-->
+                                <!--<height>70</height>-->
+                                <!--<width>802</width>-->
+                                <!--<texture border="8">images/White.png</texture>-->
+                            <!--</control>-->
+                            <!--<include>Watched_Marks</include>-->
+                            <!--<include>HD_Badge</include>-->
+                            <!--<include>Arrow</include>-->
+                            <!--<control type="label" description="Main Label">-->
+                                <!--<visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>-->
+                                <!--<include>50LabelFO</include>-->
+                                <!--<label>$INFO[ListItem.Label]</label>-->
+                            <!--</control>-->
+                            <!--<control type="label" description="Main Label">-->
+                                <!--<visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>-->
+                                <!--<width>711</width>-->
+                                <!--<include>50LabelFO</include>-->
+                                <!--<label>$INFO[ListItem.Label]</label>-->
+                            <!--</control>-->
+                            <!--<control type="label" description="Label2">-->
+                                <!--<visible>container.content(songs) | container.content(musicvideos)</visible>-->
+                                <!--<include>50Label2FO</include>-->
+                                <!--<label>$INFO[ListItem.Duration]</label>-->
+                            <!--</control>-->
+                        <!--</control>-->
+                    <!--</focusedlayout>-->
+                <!--</control>-->
+            <!--</control>-->
+            <!--<control type="scrollbar" id="60">-->
+                <!--<left>39r</left>-->
+                <!--<top>135</top>-->
+                <!--<height>870</height>-->
+                <!--<onright>noop</onright>-->
+                <!--<onleft>50</onleft>-->
+            <!--</control>-->
+        <!--</control>-->
+
         <!--SIO2-->
         <control type="group" description="sio2advanced">
             <visible>Control.IsVisible(500)</visible>

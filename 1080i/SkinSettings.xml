@@ -2,7 +2,7 @@
 <window>
     <backgroundcolor>aliceblue</backgroundcolor>
     <defaultcontrol always="true">50</defaultcontrol>
-    <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000)</onunload>
+    <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;level=1)</onunload>
     <allowoverlay>no</allowoverlay>
     <include>OpenClose</include>
     <controls>
@@ -24,6 +24,13 @@
                     <label>31052</label>
                     <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
                     <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
+                </control>
+                <control type="button" id="111">
+                    <width>840</width>
+                    <align>left</align>
+                    <label>$LOCALIZE[31052] Addons</label>
+                    <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
+                    <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=24001)</onclick>
                 </control>
                 <control type="button" id="2">
                     <width>840</width>

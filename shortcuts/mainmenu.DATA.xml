@@ -22,7 +22,7 @@
         <icon>-</icon>
         <label2>-</label2>
         <thumb>icons/music.png</thumb>
-        <action>ActivateWindow(1177,return)</action>
+        <action>ActivateWindow(Music,musicdb://,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>addons</defaultID>
@@ -93,7 +93,7 @@
         <visible>System.HasAddon(script.extendedinfo)</visible>
     </shortcut>
     <shortcut>
-        <defaultID>addons</defaultID>
+        <defaultID>programs</defaultID>
         <label>0</label>
         <icon>-</icon>
         <label2>-</label2>

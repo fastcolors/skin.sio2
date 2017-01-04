@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <allowoverlay>no</allowoverlay>
+    <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;level=1)</onunload>
     <defaultcontrol always="true">211</defaultcontrol>
     <controls>
         <include>BlackBackground</include>
@@ -15,7 +16,6 @@
                 <onright>noop</onright>
                 <onup>noop</onup>
                 <ondown>noop</ondown>
-                <onclick>SetFocus(300)</onclick>
                 <scrolltime tween="sine" easing="inout">280</scrolltime>
                 <itemlayout height="290" width="360">
                     <control type="image" description="shade_base">
@@ -107,14 +107,14 @@
             <onup>111</onup>
             <align>center</align>
             <orientation>horizontal</orientation>
-            <control type="togglebutton" id="313">
-                <usealttexture>String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),False)</usealttexture>
-                <description>Move shortcut up</description>
-                <include>osdtopbutton</include>
-                <onclick>SetFocus(211)</onclick>
-                <label>$LOCALIZE[24022]</label>
-                <altlabel>$LOCALIZE[24021]</altlabel>
-            </control>
+            <!--<control type="togglebutton" id="313">-->
+                <!--<usealttexture>String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),False)</usealttexture>-->
+                <!--<description>Move shortcut up</description>-->
+                <!--<include>osdtopbutton</include>-->
+                <!--<onclick>SetFocus(211)</onclick>-->
+                <!--<label>$LOCALIZE[24022]</label>-->
+                <!--<altlabel>$LOCALIZE[24021]</altlabel>-->
+            <!--</control>-->
             <control type="button" id="303">
                 <description>Move shortcut up</description>
                 <include>osdtopbutton</include>
@@ -169,6 +169,11 @@
                 <onclick>noop</onclick>
                 <label>$ADDON[script.skinshortcuts 32028]</label>
             </control>
+        </control>
+        <control type="label">
+            <left>60</left>
+            <bottom>10</bottom>
+            <label>Long Press to Enable/Disable Item</label>
         </control>
     </controls>
 </window>
