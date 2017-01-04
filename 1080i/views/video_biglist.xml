@@ -19,7 +19,7 @@
                     <onright condition="!Skin.HasSetting(Scrollbars_Active)">noop</onright>
                     <onup>50</onup>
                     <ondown>50</ondown>
-                    <pagecontrol>60</pagecontrol>
+                    <!--<pagecontrol>60</pagecontrol>-->
                     <viewtype label="535">List 50</viewtype>
                     <focusposition>3</focusposition>
                     <movement>4</movement>
@@ -28,13 +28,13 @@
                     <include>LargeListLayout</include>
                 </control>
             </control>
-            <control type="scrollbar" id="60">
-                <left>39r</left>
-                <top>135</top>
-                <height>870</height>
-                <onleft>51</onleft>
-                <onright>noop</onright>
-            </control>
+            <!--<control type="scrollbar" id="60">-->
+                <!--<left>39r</left>-->
+                <!--<top>135</top>-->
+                <!--<height>870</height>-->
+                <!--<onleft>51</onleft>-->
+                <!--<onright>noop</onright>-->
+            <!--</control>-->
         </control>
         </include>
 </includes>

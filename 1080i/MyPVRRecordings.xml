@@ -67,7 +67,6 @@
                     <scrolltime>250</scrolltime>
                     <itemlayout width="802" height="111">
                         <include>Watched_Marks</include>
-                        <include>HD_Badge</include>
                         <control type="group">
                             <control type="label" description="Main Label">
                                 <visible>!IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
@@ -104,7 +103,6 @@
                             <colordiffuse>445555FF</colordiffuse>
                         </control>
                         <include>Watched_Marks</include>
-                        <include>HD_Badge</include>
                         <control type="group">
                             <control type="label" description="Main Label">
                                 <visible>!IntegerGreaterThan(ListItem.VideoResolution,700)</visible>

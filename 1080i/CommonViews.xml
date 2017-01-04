@@ -437,35 +437,12 @@
     </include>
     <include name="Watched_Marks">
         <control type="image">
-            <visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Movies) | Container.Content(episodes) | Control.IsVisible(13) | Control.IsVisible(10)</visible>
+            <!--<visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Movies) | Container.Content(episodes) | Control.IsVisible(13) | Control.IsVisible(10)</visible>-->
             <left>4</left>
             <height>81</height>
             <width>30</width>
             <texture>$VAR[WatchStatus,overlay/]</texture>
             <aspectratio>keep</aspectratio>
-        </control>
-    </include>
-    <include name="HD_Badge">
-        <control type="label">
-            <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
-            <right>10</right>
-            <align>right</align>
-            <height>40</height>
-            <width>60</width>
-            <font>size21</font>
-            <textcolor>black</textcolor>
-            <info>ListItem.VideoResolution</info>
-        </control>
-        <control type="label">
-            <visible>ListItem.IsStereoscopic</visible>
-            <top>30</top>
-            <right>10</right>
-            <align>right</align>
-            <height>40</height>
-            <width>60</width>
-            <font>size21</font>
-            <textcolor>black</textcolor>
-            <label>3D</label>
         </control>
     </include>
     <include name="Unwatched">
@@ -495,9 +472,9 @@
     </include>
     <include name="Arrow">
         <control type="image" description="arrow">
-            <visible>[Window.IsActive(Settings.xml) | ListItem.IsFolder] + ![ListItem.IsParentFolder | ListItem.IsCollection  | container.content(Movies) | container.content(TVshows) | container.content(Seasons) | container.content(Episodes) | container.content(musicvideos) | container.content(songs) | container.content(addons) | SubString(Container.FolderPath,plugin://,left)]</visible>
+            <visible>[Window.IsActive(Settings.xml) | ListItem.IsFolder] + ![ListItem.IsParentFolder | ListItem.IsCollection | container.content(Movies) | container.content(TVshows) | container.content(Seasons) | container.content(Episodes) | container.content(musicvideos) | container.content(songs) | container.content(addons)]</visible>
             <right>0</right>
-            <height>70</height>
+            <height>100</height>
             <width>54</width>
             <aspectratio>keep</aspectratio>
             <texture>images/Arrow.png</texture>
@@ -505,10 +482,9 @@
     </include>
     <include name="Sets">
         <control type="image" description="Sets">
-            <visible>Window.IsActive(MyVideoNav.xml)</visible>
-            <visible>SubString(ListItem.Path,videodb://1/7)</visible>
-            <left>82r</left>
-            <height>70</height>
+            <visible>ListItem.IsCollection</visible>
+            <right>10</right>
+            <height>100</height>
             <width>45</width>
             <aspectratio align="right">keep</aspectratio>
             <texture>badges/sets.png</texture>
@@ -516,117 +492,24 @@
     </include>
     <include name="SetsFO">
         <control type="image" description="Sets">
-            <visible>Window.IsActive(MyVideoNav.xml)</visible>
-            <visible>SubString(ListItem.Path,videodb://1/7)</visible>
-            <left>82r</left>
-            <height>81</height>
+            <visible>ListItem.IsCollection</visible>
+            <right>10</right>
+            <height>100</height>
             <width>45</width>
             <aspectratio align="right">keep</aspectratio>
             <texture>badges/setsFO.png</texture>
         </control>
-    </include>
-    <include name="SetsLW">
-        <control type="image" description="Sets">
-            <visible>Window.IsActive(MyVideoNav.xml)</visible>
-            <visible>SubString(ListItem.Path,videodb://1/7)</visible>
-            <left>82r</left>
-            <height>111</height>
-            <width>45</width>
-            <aspectratio align="right">keep</aspectratio>
-            <texture>badges/sets.png</texture>
-        </control>
-    </include>
-    <include name="SetsFOLW">
-        <control type="image" description="Sets">
-            <visible>Window.IsActive(MyVideoNav.xml)</visible>
-            <visible>SubString(ListItem.Path,videodb://1/7)</visible>
-            <left>82r</left>
-            <height>111</height>
-            <width>45</width>
-            <aspectratio align="right">keep</aspectratio>
-            <texture>badges/setsFO.png</texture>
-        </control>
-    </include>
-    <include name="LargeListAddonsLayout">
-        <itemlayout condition="container.content(addons)" width="802" height="111">
-            <control type="group">
-                <control type="image">
-                    <left>9</left>
-                    <top>9</top>
-                    <height>93</height>
-                    <width>93</width>
-                    <texture background="true">$INFO[ListItem.Icon]</texture>
-                    <aspectratio>keep</aspectratio>
-                </control>
-            </control>
-            <control type="label" description="Main Label">
-                <visible>String.IsEmpty(ListItem.Label2)</visible>
-                <top>27</top>
-                <width>600</width>
-                <include>BigListTitle</include>
-                <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="label" description="Main Label">
-                <visible>!String.IsEmpty(ListItem.Label2)</visible>
-                <width>600</width>
-                <include>BigListTitle</include>
-                <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="label" description="Label2">
-                <width>600</width>
-                <include>BigListDetails</include>
-                <label>$INFO[ListItem.Label2]</label>
-            </control>
-        </itemlayout>
-        <focusedlayout condition="container.content(addons)" width="802" height="111">
-            <control type="group">
-                <control type="image">
-                    <left>9</left>
-                    <top>9</top>
-                    <height>93</height>
-                    <width>93</width>
-                    <texture background="true">$INFO[ListItem.Icon]</texture>
-                    <aspectratio>keep</aspectratio>
-                </control>
-            </control>
-            <control type="label" description="Main Label">
-                <visible>String.IsEmpty(ListItem.Label2)</visible>
-                <top>27</top>
-                <width>600</width>
-                <include>BigListTitleFO</include>
-                <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="label" description="Main Label">
-                <visible>!String.IsEmpty(ListItem.Label2)</visible>
-                <width>600</width>
-                <include>BigListTitleFO</include>
-                <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="label" description="Label2">
-                <width>600</width>
-                <include>BigListDetailsFO</include>
-                <label>$INFO[ListItem.Label2]</label>
-            </control>
-        </focusedlayout>
     </include>
     <include name="LargeListLayout">
         <itemlayout  width="802" height="111">
             <include>Watched_Marks</include>
-            <!--<include>HD_Badge</include>-->
-            <include>SetsLW</include>
+            <include>Sets</include>
+            <include>Arrow</include>
             <control type="group">
                 <animation condition="String.IsEmpty(ListItem.Label2) + String.IsEmpty(ListItem.Duration) + String.IsEmpty(ListItem.Year) + String.IsEmpty(ListItem.Artist)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
                 <control type="label" description="Main Label">
-                    <visible>![ListItem.IsFolder | IntegerGreaterThan(ListItem.VideoResolution,700)]</visible>
                     <left>45</left>
                     <width>717</width>
-                    <include>BigListTitle</include>
-                    <label>$INFO[ListItem.label]</label>
-                </control>
-                <control type="label" description="Main Label">
-                    <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
-                    <left>45</left>
-                    <width>630</width>
                     <include>BigListTitle</include>
                     <label>$INFO[ListItem.label]</label>
                 </control>
@@ -637,7 +520,7 @@
                     <width>630</width>
                     <left>45</left>
                     <include>BigListDetails</include>
-                    <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]</label>
+                    <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]$INFO[ListItem.Videoresolution, • ]</label>
                 </control>
                 <control type="label" description="Label2">
                     <visible>container.content(episodes)</visible>
@@ -678,21 +561,13 @@
                     <texture border="8">images/White.png</texture>
                 </control>
                 <include>Watched_Marks</include>
-                <!--<include>HD_Badge</include>-->
-                <include>SetsFOLW</include>
+                <include>SetsFO</include>
+                <include>Arrow</include>
                 <control type="group">
                     <animation condition="String.IsEmpty(ListItem.Label2) + String.IsEmpty(ListItem.Duration) + String.IsEmpty(ListItem.Year)  + String.IsEmpty(ListItem.Artist)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
                     <control type="label" description="Main Label">
-                        <visible>![ListItem.IsFolder | IntegerGreaterThan(ListItem.VideoResolution,700)]</visible>
                         <left>45</left>
                         <width>717</width>
-                        <include>BigListTitleFO</include>
-                        <label>$INFO[ListItem.label]</label>
-                    </control>
-                    <control type="label" description="Main Label">
-                        <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
-                        <left>45</left>
-                        <width>630</width>
                         <include>BigListTitleFO</include>
                         <label>$INFO[ListItem.label]</label>
                     </control>
@@ -703,7 +578,7 @@
                         <left>45</left>
                         <width>630</width>
                         <include>BigListDetailsFO</include>
-                        <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]</label>
+                        <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]$INFO[ListItem.Videoresolution, • ]</label>
                     </control>
                     <control type="label" description="Label2">
                         <visible>container.content(episodes)</visible>
@@ -996,7 +871,6 @@
                 <texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>
             </control>
             <include>Watched_Marks</include>
-            <include>HD_Badge</include>
             <include>Arrow</include>
             <control type="label" description="Main Label">
                 <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
@@ -1031,7 +905,6 @@
                     <texture border="8">images/White.png</texture>
                 </control>
                 <include>Watched_Marks</include>
-                <include>HD_Badge</include>
                 <include>Arrow</include>
                 <control type="label" description="Main Label">
                     <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>

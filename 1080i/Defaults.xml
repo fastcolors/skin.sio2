@@ -104,6 +104,7 @@
     <altselectedcolor>orange</altselectedcolor>
     <disabledcolor>dimgray</disabledcolor>
     <texturefocus border="8">images/White.png</texturefocus>
+    <alttexturefocus border="8">images/White.png</alttexturefocus>
     <!--<texturenofocus border="8" colordiffuse="77FFFFFF">images/White.png</texturenofocus>-->
     <align>center</align>
     <aligny>center</aligny>

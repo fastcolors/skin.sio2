@@ -86,6 +86,10 @@ msgctxt "#31016"
 msgid "Last Updated"
 msgstr "Last Updated"
 
+msgctxt "#31017"
+msgid "Show Clock"
+msgstr "Show Clock"
+
 msgctxt "#31018"
 msgid "Choose which Addon is to be used to Search & Download Lyrics"
 msgstr "Choose which Addon is to be used to Search & Download Lyrics"

@@ -25,14 +25,15 @@
                     <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
                     <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
                 </control>
-                <control type="button" id="111">
+                <control type="radiobutton" id="2">
                     <width>840</width>
                     <align>left</align>
-                    <label>$LOCALIZE[31052] Addons</label>
+                    <label>$LOCALIZE[31051]</label>
                     <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
-                    <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=24001)</onclick>
+                    <selected>Skin.HasSetting(AddonsShelf_Custom)</selected>
+                    <onclick>ActivateWindow(1617)</onclick>
                 </control>
-                <control type="button" id="2">
+                <control type="button" id="3">
                     <width>840</width>
                     <align>left</align>
                     <label>31062</label>
@@ -43,12 +44,20 @@
                 <control type="radiobutton" id="4">
                     <width>840</width>
                     <align>left</align>
+                    <label>31017</label>
+                    <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
+                    <onclick>Skin.ToggleSetting(clock)</onclick>
+                    <selected>!Skin.HasSetting(clock)</selected>
+                </control>
+                <control type="radiobutton" id="5">
+                    <width>840</width>
+                    <align>left</align>
                     <label>$LOCALIZE[31044]</label>
                     <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
                     <onclick>Skin.ToggleSetting(ViewsMenuOff)</onclick>
-                    <usealttexture>!Skin.HasSetting(ViewsMenuOff)</usealttexture>
+                    <selected>!Skin.HasSetting(ViewsMenuOff)</selected>
                 </control>
-                <control type="button" id="8">
+                <control type="button" id="6">
                     <width>840</width>
                     <align>left</align>
                     <label>$LOCALIZE[31036]</label>
@@ -57,7 +66,7 @@
                     <onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
                     <onclick>XBMC.ReloadSkin()</onclick>
                 </control>
-                <control type="button" id="9">
+                <control type="button" id="7">
                     <width>840</width>
                     <align>left</align>
                     <label>$LOCALIZE[31068]</label>

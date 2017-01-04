@@ -235,7 +235,7 @@
             </control>
         </control>
         <control type="label" description="Clock">
-            <visible>!System.Date(04-01,04-01)</visible>
+            <visible>!System.Date(04-01,04-01) + !Skin.HasSetting(clock)</visible>
             <right>60</right>
             <top>20</top>
             <width>500</width>

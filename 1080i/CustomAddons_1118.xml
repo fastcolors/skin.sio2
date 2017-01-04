@@ -37,12 +37,6 @@
           <onclick>Close</onclick>
           <onclick>ActivateWindow(AddonBrowser,root)</onclick>
         </control>
-        <control type="button" id="702">
-          <include>DialogButt</include>
-          <label>31040</label>
-          <onclick>Close</onclick>
-          <onclick>ActivateWindow(1617)</onclick>
-        </control>
       </control>
     </control>
   </controls>
