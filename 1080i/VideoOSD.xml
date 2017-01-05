@@ -257,19 +257,6 @@
                         <visible>!ControlGroup(101).HasFocus()</visible>
                         <left>1580</left>
                         <top>620</top>
-                        <control type="image" description="CoverReal">
-                            <visible>String.IsEmpty(Player.Art(tvshow.poster)) + !Window.IsActive(610)</visible>
-                            <height>300</height>
-                            <width>220</width>
-                            <aspectratio>keep</aspectratio>
-                            <texture diffuse="images/Diffuse.png">$INFO[VideoPlayer.Cover]</texture>
-                        </control>
-                        <control type="image" description="TVSHOW">
-                            <height>300</height>
-                            <width>220</width>
-                            <aspectratio>keep</aspectratio>
-                            <texture diffuse="images/Diffuse.png">$INFO[Player.Art(tvshow.poster)]</texture>
-                        </control>
                         <control type="label" description="Episode">
                             <visible>VideoPlayer.Content(Episodes)</visible>
                             <left>0</left>
@@ -479,6 +466,24 @@
                     <selected>String.IsEqual(System.StereoscopicMode,7)</selected>
                     <pulseonselect>false</pulseonselect>
                 </control>
+            </control>
+        </control>
+        <control type="grouplist">
+            <visible>!Window.IsVisible(fullscreeninfo) + !ControlGroup(101).HasFocus()</visible>
+            <top>30</top>
+            <left>1500</left>
+            <control type="image">
+                <width>375</width>
+                <height>150</height>
+                <aspectratio>keep</aspectratio>
+                <texture background="true">$INFO[Player.Art(clearlogo)]</texture>
+            </control>
+            <control type="image">
+                <width>375</width>
+                <height>100</height>
+                <texture>$INFO[VideoPlayer.mpaa,Mpaa/,.png]</texture>
+                <aspectratio align="right">keep</aspectratio>
+                <colordiffuse>77FFFFFF</colordiffuse>
             </control>
         </control>
     </controls>

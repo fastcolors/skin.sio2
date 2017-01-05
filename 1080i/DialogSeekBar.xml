@@ -83,13 +83,22 @@
                 <texture border="2">busy/Busy.png</texture>
                 <animation effect="rotate" start="360" end="0" center="auto" time="1200" loop="true" pulse="true" condition="true">conditional</animation>
             </control>
+        </control>
+        <control type="grouplist">
+            <visible>!Window.IsVisible(videoosd)</visible>
+            <top>30</top>
+            <left>1500</left>
             <control type="image">
-                <visible>!PLayer.Paused + !Window.IsVisible(fullscreeninfo)</visible>
-                <left>1500</left>
-                <top>750</top>
-                <width>100</width>
+                <width>375</width>
+                <height>150</height>
+                <aspectratio>keep</aspectratio>
+                <texture background="true">$INFO[Player.Art(clearlogo)]</texture>
+            </control>
+            <control type="image">
+                <width>375</width>
                 <height>100</height>
                 <texture>$INFO[VideoPlayer.mpaa,Mpaa/,.png]</texture>
+                <aspectratio align="right">keep</aspectratio>
                 <colordiffuse>77FFFFFF</colordiffuse>
             </control>
         </control>

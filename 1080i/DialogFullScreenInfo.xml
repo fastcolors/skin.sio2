@@ -128,42 +128,5 @@
             <aspectratio>scale</aspectratio>
             <texture diffuse="images/Diffuse.png">$INFO[Player.Art(fanart)]</texture>
         </control>
-        <control type="group">
-            <top>10</top>
-            <control type="label" description="Clock">
-                <left>60</left>
-                <width>695</width>
-                <height>60</height>
-                <font>size33B</font>
-                <textcolor>white</textcolor>
-                <label>$LOCALIZE[142] $INFO[System.Time]</label>
-            </control>
-            <control type="label">
-                <left>60</left>
-                <top>55</top>
-                <width>495</width>
-                <height>30</height>
-                <label>[B]$INFO[Player.Time][/B]</label>
-                <font>size26</font>
-            </control>
-            <control type="label" description="End time">
-                <left>60r</left>
-                <width>695</width>
-                <height>60</height>
-                <align>right</align>
-                <font>size33B</font>
-                <textcolor>White</textcolor>
-                <label>$LOCALIZE[31005]: $INFO[Player.FinishTime]</label>
-            </control>
-            <control type="label">
-                <left>60r</left>
-                <top>55</top>
-                <height>30</height>
-                <width>195</width>
-                <align>right</align>
-                <label>[B]- $INFO[Player.TimeRemaining][/B]</label>
-                <font>size26</font>
-            </control>
-        </control>
     </controls>
 </window>
