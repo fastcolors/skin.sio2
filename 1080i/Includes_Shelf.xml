@@ -90,12 +90,12 @@
         <scrolltime>400</scrolltime>
         <itemlayout height="610" width="840">
             <control type="image">
-            <left>80</left>
-            <top>45</top>
-            <width>790</width>
-            <height>450</height>
-            <texture background="true" diffuse="images/epdiffuse.png">$INFO[ListItem.Thumb]</texture>
-            <aspectratio scalediffuse="false">scale</aspectratio>
+                <left>80</left>
+                <top>45</top>
+                <width>790</width>
+                <height>450</height>
+                <texture background="true" diffuse="images/epdiffuse.png">$INFO[ListItem.Thumb]</texture>
+                <aspectratio scalediffuse="false">scale</aspectratio>
             </control>
             <control type="progress" description="progress">
                 <visible>ListItem.IsResumable</visible>
@@ -104,9 +104,9 @@
                 <width>710</width>
                 <height>8</height>
                 <texturebg>Seekbar/ProgressBG.png</texturebg>
-                <lefttexture>Seekbar/ProgressL.png</lefttexture>
-                <midtexture>Seekbar/ProgressM.png</midtexture>
-                <righttexture>Seekbar/ProgressR.png</righttexture>
+                <lefttexture border="4">Seekbar/ProgressL.png</lefttexture>
+                <midtexture border="4">Seekbar/ProgressM.png</midtexture>
+                <righttexture border="4">Seekbar/ProgressR.png</righttexture>
                 <info>ListItem.PercentPlayed</info>
             </control>
             <control type="label">
@@ -171,9 +171,9 @@
                     <width>710</width>
                     <height>8</height>
                     <texturebg>Seekbar/ProgressBG.png</texturebg>
-                    <lefttexture>Seekbar/ProgressL.png</lefttexture>
-                    <midtexture>Seekbar/ProgressM.png</midtexture>
-                    <righttexture>Seekbar/ProgressR.png</righttexture>
+                    <lefttexture border="4">Seekbar/ProgressL.png</lefttexture>
+                    <midtexture border="4">Seekbar/ProgressM.png</midtexture>
+                    <righttexture border="4">Seekbar/ProgressR.png</righttexture>
                     <info>ListItem.PercentPlayed</info>
                 </control>
                 <control type="label">
