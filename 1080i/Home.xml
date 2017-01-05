@@ -112,7 +112,7 @@
                     <centerleft>180</centerleft>
                     <centertop>118</centertop>
                     <width>300</width>
-                    <height>179</height>
+                    <height>180</height>
                     <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
                 </control>
                 <control type="image" description="THMBSICONS">
