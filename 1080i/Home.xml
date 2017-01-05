@@ -210,6 +210,7 @@
             <include>homeanimation</include>
             <include>Movies</include>
             <include>Music</include>
+            <include>Episodes</include>
             <include condition="Skin.HasSetting(PicturesShelf_Custom)">Pictures_Shortcuts</include>
             <include>Addons_Shortcuts</include>
             <include>weather_shelf</include>

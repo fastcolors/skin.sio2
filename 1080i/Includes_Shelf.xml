@@ -2,7 +2,7 @@
 <includes>
     <include name="ShelfFade">
         <animation effect="fade" end="100" delay="200" time="220">Visible</animation>
-        <animation effect="fade" end="0" time="100">Hidden</animation>
+        <animation effect="fade" end="0" delay="200" time="220">Hidden</animation>
     </include>
     <include name="MoviesShortcutsCommons">
         <include>ShelfFade</include>
@@ -81,6 +81,146 @@
             </control>
         </focusedlayout>
     </include>
+    <include name="EpisodeShortcutsCommons">
+        <include>ShelfFade</include>
+        <top>110</top>
+        <width>1920</width>
+        <height>610</height>
+        <orientation>horizontal</orientation>
+        <scrolltime>400</scrolltime>
+        <itemlayout height="610" width="840">
+            <control type="image">
+            <left>80</left>
+            <top>45</top>
+            <width>790</width>
+            <height>450</height>
+            <texture background="true" diffuse="images/epdiffuse.png">$INFO[ListItem.Thumb]</texture>
+            <aspectratio scalediffuse="false">scale</aspectratio>
+            </control>
+            <control type="progress" description="progress">
+                <visible>ListItem.IsResumable</visible>
+                <centerleft>475</centerleft>
+                <top>450</top>
+                <width>710</width>
+                <height>8</height>
+                <texturebg>Seekbar/ProgressBG.png</texturebg>
+                <lefttexture>Seekbar/ProgressL.png</lefttexture>
+                <midtexture>Seekbar/ProgressM.png</midtexture>
+                <righttexture>Seekbar/ProgressR.png</righttexture>
+                <info>ListItem.PercentPlayed</info>
+            </control>
+            <control type="label">
+                <centerleft>475</centerleft>
+                <top>490</top>
+                <width>790</width>
+                <height>40</height>
+                <font>size30B</font>
+                <scroll>false</scroll>
+                <textcolor>dimgray</textcolor>
+                <label>$INFO[ListItem.Title]</label>
+                <align>center</align>
+            </control>
+            <control type="label">
+                <visible>!ListItem.IsResumable</visible>
+                <top>400</top>
+                <left>118</left>
+                <width>335</width>
+                <height>30</height>
+                <font>size30B</font>
+                <textcolor>white</textcolor>
+                <!--<label>$LOCALIZE[]</label>-->
+                <label>New Episode</label>
+                <align>left</align>
+            </control>
+            <control type="label">
+                <visible>!ListItem.IsResumable</visible>
+                <top>434</top>
+                <left>119</left>
+                <width>335</width>
+                <height>30</height>
+                <font>size33</font>
+                <textcolor>white</textcolor>
+                <label>$LOCALIZE[20373]$INFO[ListItem.Season],$LOCALIZE[20359]$INFO[ListItem.Episode]</label>
+                <align>left</align>
+            </control>
+            <control type="image" description="Studio">
+                <centerleft>806</centerleft>
+                <top>60</top>
+                <width>70</width>
+                <height>60</height>
+                <texture colordiffuse="white">resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
+                <aspectratio>keep</aspectratio>
+            </control>
+        </itemlayout>
+        <focusedlayout height="610" width="840">
+            <control type="group">
+                <animation effect="zoom" start="100" end="110" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+                <animation effect="zoom" start="110" end="100" time="120" center="auto">unFocus</animation>
+                <control type="image">
+                    <left>80</left>
+                    <top>45</top>
+                    <width>790</width>
+                    <height>450</height>
+                    <texture background="true" diffuse="images/epdiffuse.png">$INFO[ListItem.Thumb]</texture>
+                    <aspectratio scalediffuse="false">scale</aspectratio>
+                </control>
+                <control type="progress" description="progress">
+                    <visible>ListItem.IsResumable</visible>
+                    <centerleft>475</centerleft>
+                    <top>450</top>
+                    <width>710</width>
+                    <height>8</height>
+                    <texturebg>Seekbar/ProgressBG.png</texturebg>
+                    <lefttexture>Seekbar/ProgressL.png</lefttexture>
+                    <midtexture>Seekbar/ProgressM.png</midtexture>
+                    <righttexture>Seekbar/ProgressR.png</righttexture>
+                    <info>ListItem.PercentPlayed</info>
+                </control>
+                <control type="label">
+                    <centerleft>475</centerleft>
+                    <top>490</top>
+                    <width>790</width>
+                    <height>40</height>
+                    <font>size30B</font>
+                    <scroll>false</scroll>
+                    <textcolor>dimgray</textcolor>
+                    <label>$INFO[ListItem.Title]</label>
+                    <align>center</align>
+                </control>
+                <control type="label">
+                    <visible>!ListItem.IsResumable</visible>
+                    <top>400</top>
+                    <left>118</left>
+                    <width>335</width>
+                    <height>30</height>
+                    <font>size30B</font>
+                    <textcolor>white</textcolor>
+                    <!--<label>$LOCALIZE[]</label>-->
+                    <label>New Episode</label>
+                    <align>left</align>
+                </control>
+                <control type="label">
+                    <visible>!ListItem.IsResumable</visible>
+                    <top>434</top>
+                    <left>119</left>
+                    <width>335</width>
+                    <height>30</height>
+                    <font>size33</font>
+                    <textcolor>white</textcolor>
+                    <label>$LOCALIZE[20373]$INFO[ListItem.Season],$LOCALIZE[20359]$INFO[ListItem.Episode]</label>
+                    <align>left</align>
+                </control>
+                <control type="image" description="Studio">
+                    <centerleft>806</centerleft>
+                    <top>60</top>
+                    <width>70</width>
+                    <height>60</height>
+                    <texture colordiffuse="white">resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>
+            </control>
+        </focusedlayout>
+    </include>
     <include name="SquareShortcutsCommons">
         <include>ShelfFade</include>
         <!--<left>72</left>-->
@@ -147,6 +287,28 @@
             <onright>311</onright>
             <include>MoviesShortcutsCommons</include>
             <content target="videos">$VAR[shelf]</content>
+        </control>
+    </include>
+    <include name="Music">
+        <control type="panel" id="312" description="TOP Shortcuts">
+            <include>ShelfFade</include>
+            <visible>$EXP[312visibility]</visible>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),music)</visible>
+            <include>SquareShortcutsCommons</include>
+            <onclick>PlayMedia($ESCINFO[ListItem.DBID,musicdb://albums/,/])</onclick>
+            <content target="music">$VAR[squareshelf]</content>
+        </control>
+    </include>
+    <include name="Episodes">
+        <control type="panel" id="313" description="Episodes Shelf Shortcuts">
+            <include>ShelfFade</include>
+            <visible>$EXP[313visibility]</visible>
+            <onup>9009</onup>
+            <ondown>9000</ondown>
+            <onleft>313</onleft>
+            <onright>313</onright>
+            <include>EpisodeShortcutsCommons</include>
+            <content target="videos">$VAR[epshelf]</content>
         </control>
     </include>
     <include name="Music">

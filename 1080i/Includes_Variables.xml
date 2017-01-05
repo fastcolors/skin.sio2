@@ -127,10 +127,6 @@
 
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),LiveTV)">pvr://channels/tv/*</value>
 
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),1)">special://skin/resources/randomTV.xsp</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),2)">videodb://recentlyaddedepisodes</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows)">plugin://service.library.data.provider?type=recommendedepisodes&limit=18&reload=$INFO[Window.Property(recommendedepisodes)]</value>
-
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music)"> </value>
 
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)"> </value>
@@ -139,8 +135,16 @@
 
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),pictures)"> </value>
 
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows)"> </value>
+
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),favourites)">favourites://</value>
         <value condition="Container(9000).Row(0)">$INFO[Container(9000).ListItem.Property(list)]</value>
+    </variable>
+
+    <variable name="epshelf">
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),1)">special://skin/resources/randomTV.xsp</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),2)">videodb://recentlyaddedepisodes</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows)">plugin://service.library.data.provider?type=recommendedepisodes&limit=18&reload=$INFO[Window.Property(recommendedepisodes)]</value>
     </variable>
 
     <variable name="squareshelf">
