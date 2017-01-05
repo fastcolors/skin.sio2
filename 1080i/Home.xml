@@ -35,8 +35,18 @@
             <include>homeanimation</include>
             <focusedcolor>white</focusedcolor>
             <include>ShelfFade</include>
-            <include>ShelfTitle</include>
-            <label>[B] $VAR[shelflabel] [/B]</label>
+            <animation>Focus</animation>
+            <animation>unFocus</animation>
+            <animation condition="$EXP[shelflabelsslide]" effect="slide" start="0" end="0,-20" time="180" tween="Back">Conditional</animation>
+            <left>80</left>
+            <top>50</top>
+            <height>45</height>
+            <width>750</width>
+            <align>left</align>
+            <aligny>center</aligny>
+            <font>size39B</font>
+            <textcolor>ff555555</textcolor>
+            <label>$VAR[shelflabel]</label>
             <texturefocus>-</texturefocus>
             <!--MOVIES-->
             <onclick  condition="$EXP[ismovies] + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
@@ -109,7 +119,7 @@
                     <aspectratio scalediffuse="false">scale</aspectratio>
                 </control>
             </itemlayout>
-             <focusedlayout height="270" width="360" condition="!Container(9000).Row(0)">
+            <focusedlayout height="270" width="360" condition="!Container(9000).Row(0)">
                 <control type="group">
                     <animation effect="zoom" start="100" end="125" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
                     <animation effect="zoom" start="125" end="100" time="120" center="auto">unFocus</animation>

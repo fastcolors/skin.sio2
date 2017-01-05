@@ -4,18 +4,6 @@
         <animation effect="fade" end="100" delay="200" time="220">Visible</animation>
         <animation effect="fade" end="0" time="100">Hidden</animation>
     </include>
-    <include name="ShelfTitle">
-        <animation condition="ControlGroup(700).HasFocus | Control.HasFocus(9009)" effect="zoom" start="100" end="110" time="120" center="325,200" tween="Back" easing="Out">Conditional</animation>
-        <animation condition="!ControlGroup(700).HasFocus + !Control.HasFocus(9009)" effect="zoom" start="110" end="100" time="120" center="325,200">Conditional</animation>
-        <left>80</left>
-        <top>40</top>
-        <height>45</height>
-        <width>750</width>
-        <align>left</align>
-        <aligny>center</aligny>
-        <font>size30</font>
-        <textcolor>dimgray</textcolor>
-    </include>
     <include name="MoviesShortcutsCommons">
         <include>ShelfFade</include>
         <animation effect="slide" end="-100,0" time="250" condition="Container(311).Column(4)">Conditional</animation>
@@ -152,7 +140,7 @@
     <include name="Movies">
         <control type="panel" id="311" description="Movies Shelf Shortcuts">
             <include>ShelfFade</include>
-            <!--<visible>!String.IsEqual(Container(9000).ListItem.Property(defaultID),music)</visible>-->
+            <visible>$EXP[311visibility]</visible>
             <onup>9009</onup>
             <ondown>9000</ondown>
             <onleft>311</onleft>
@@ -164,6 +152,7 @@
     <include name="Music">
         <control type="panel" id="312" description="TOP Shortcuts">
             <include>ShelfFade</include>
+            <visible>$EXP[312visibility]</visible>
             <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),music)</visible>
             <include>SquareShortcutsCommons</include>
             <onclick>PlayMedia($ESCINFO[ListItem.DBID,musicdb://albums/,/])</onclick>
@@ -184,12 +173,6 @@
     </include>
     <include name="Pictures_Shortcuts">
         <control type="group">
-            <control type="label" description="Top Label">
-                <visible>Control.IsVisible(314)</visible>
-                <include>ShelfFade</include>
-                <include>ShelfTitle</include>
-                <label>[B]$INFO[Container(314).ListItem.Property(ItemType)][/B]</label>
-            </control>
             <control type="panel" id="314" description="TOP Shortcuts">
                 <visible>Container(9000).HasFocus(344) | Control.HasFocus(314)</visible>
                 <onup></onup>
