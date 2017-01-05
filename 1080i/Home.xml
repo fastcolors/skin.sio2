@@ -8,24 +8,24 @@
     <controls>
         <control type="group" description="Furniture">
             <include>homeanimation</include>
-            <!--<control type="image" description="Stage">-->
-            <!--<visible>Skin.HasTheme(Dark)</visible>-->
-            <!--<width>1920</width>-->
-            <!--<height>2340</height>-->
-            <!--<aspectratio>stretch</aspectratio>-->
-            <!--<texture>special://skin/resources/DarkHomeBG.png</texture>-->
-            <!--</control>-->
-            <!--<control type="image" description="Stage">-->
-            <!--<visible>!Skin.HasTheme(Dark)</visible>-->
-            <!--<width>1920</width>-->
-            <!--<height>2340</height>-->
-            <!--<aspectratio>stretch</aspectratio>-->
-            <!--<texture>special://skin/resources/HomeBG.png</texture>-->
-            <!--</control>-->
+            <control type="image" description="Stage">
+                <visible>Skin.HasTheme(Dark)</visible>
+                <width>1920</width>
+                <height>2340</height>
+                <aspectratio>stretch</aspectratio>
+                <texture>special://skin/resources/DarkHomeBG.png</texture>
+            </control>
+            <control type="image" description="Stage">
+                <visible>!Skin.HasTheme(Dark)</visible>
+                <width>1920</width>
+                <height>2340</height>
+                <aspectratio>stretch</aspectratio>
+                <texture>special://skin/resources/HomeBG.png</texture>
+            </control>
             <!--<control type="image">-->
-                <!--<height>1080</height>-->
-                <!--<width>1920</width>-->
-                <!--<texture>appletv.jpg</texture>-->
+            <!--<height>1080</height>-->
+            <!--<width>1920</width>-->
+            <!--<texture>appletv.jpg</texture>-->
             <!--</control>-->
             <control type="image" description="banda bianca">
                 <top>720</top>
@@ -33,7 +33,7 @@
                 <width>1990</width>
                 <height>274</height>
                 <aspectratio>stretch</aspectratio>
-                <texture border="8" colordiffuse="bandabianca">images/White.png</texture>
+                <texture border="18" colordiffuse="bandabianca">images/White.png</texture>
             </control>
         </control>
         <control type="button" id="9009">
@@ -101,7 +101,7 @@
             <ondown>noop</ondown>
             <orientation>vertical</orientation>
             <scrolltime tween="sine" easing="inout">280</scrolltime>
-            <itemlayout height="270" width="360">
+            <itemlayout height="265" width="360">
                 <control type="image" description="shade_base">
                     <centerleft>180</centerleft>
                     <width>350</width>
@@ -124,7 +124,7 @@
                     <aspectratio scalediffuse="false">scale</aspectratio>
                 </control>
             </itemlayout>
-            <focusedlayout height="270" width="360" condition="!Container(9000).Row(0)">
+            <focusedlayout height="265" width="360" condition="!Container(9000).Row(0)">
                 <control type="group">
                     <animation effect="zoom" start="100" end="125" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
                     <animation effect="zoom" start="125" end="100" time="120" center="auto">unFocus</animation>
@@ -164,7 +164,7 @@
                     <label>$INFO[ListItem.label]</label>
                 </control>
             </focusedlayout>
-            <focusedlayout height="270" width="360" condition="Container(9000).Row(0)">
+            <focusedlayout height="265" width="360" condition="Container(9000).Row(0)">
                 <control type="group">
                     <animation effect="zoom" start="100" end="122" time="120" center="180,208" tween="Back" easing="Out">Focus</animation>
                     <animation effect="zoom" start="122" end="100" time="120" center="180,208">unFocus</animation>

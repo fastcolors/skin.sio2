@@ -310,7 +310,7 @@
             <include>ShelfFade</include>
             <control type="image">
                 <width>1920</width>
-                <height>700</height>
+                <height>720</height>
                 <aspectratio>stretch</aspectratio>
                 <!--<texture background="true">$INFO[Window(weather).Property(Current.FanartCode),weather/,.png]</texture>-->
                 <texture background="true">images/black.png</texture>
