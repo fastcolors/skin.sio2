@@ -89,31 +89,30 @@
             <itemlayout height="270" width="360">
                 <control type="image" description="shade_base">
                     <centerleft>180</centerleft>
-                    <top>10</top>
                     <width>350</width>
                     <height>250</height>
                     <texture>icons/iconbase.png</texture>
                 </control>
                 <control type="image" description="color base">
                     <centerleft>180</centerleft>
-                    <centertop>126</centertop>
+                    <centertop>117</centertop>
                     <width>287</width>
                     <height>179</height>
                     <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
                 </control>
                 <control type="image" description="THMBSICONS">
                     <centerleft>180</centerleft>
-                    <centertop>126</centertop>
+                    <centertop>117</centertop>
                     <width>287</width>
                     <height>179</height>
                     <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Icon]</texture>
                     <aspectratio scalediffuse="false">scale</aspectratio>
                 </control>
             </itemlayout>
-            <focusedlayout height="270" width="360">
+             <focusedlayout height="270" width="360" condition="!Container(9000).Row(0)">
                 <control type="group">
-                    <animation effect="zoom" start="100" end="128" time="120" center="180,210" tween="Back" easing="Out">Focus</animation>
-                    <animation effect="zoom" start="128" end="100" time="120" center="180,210">unFocus</animation>
+                    <animation effect="zoom" start="100" end="125" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+                    <animation effect="zoom" start="125" end="100" time="120" center="auto">unFocus</animation>
                     <control type="image" description="shade_base">
                         <centerleft>180</centerleft>
                         <animation effect="slide" start="0,0" end="0,34" time="240" reversible="true" tween="Back" easing="Out">Focus</animation>
@@ -124,14 +123,14 @@
                     </control>
                     <control type="image" description="color base">
                         <centerleft>180</centerleft>
-                        <centertop>126</centertop>
+                        <centertop>117</centertop>
                         <width>287</width>
                         <height>179</height>
                         <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
                     </control>
                     <control type="image" description="THMBSICONS">
                         <centerleft>180</centerleft>
-                        <centertop>126</centertop>
+                        <centertop>117</centertop>
                         <width>287</width>
                         <height>179</height>
                         <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Icon]</texture>
@@ -142,10 +141,50 @@
                     <animation effect="fade" start="0" end="100" time="180">Focus</animation>
                     <animation effect="fade" start="100" end="0" time="100">unFocus</animation>
                     <centerleft>180</centerleft>
-                    <top>225</top>
+                    <top>230</top>
                     <width>368</width>
                     <height>24</height>
-                    <font>size27B</font>
+                    <font>size28</font>
+                    <align>center</align>
+                    <label>$INFO[ListItem.label]</label>
+                </control>
+            </focusedlayout>
+            <focusedlayout height="270" width="360" condition="Container(9000).Row(0)">
+                <control type="group">
+                    <animation effect="zoom" start="100" end="125" time="120" center="180,206" tween="Back" easing="Out">Focus</animation>
+                    <animation effect="zoom" start="125" end="100" time="120" center="180,206">unFocus</animation>
+                    <control type="image" description="shade_base">
+                        <centerleft>180</centerleft>
+                        <animation effect="slide" start="0,0" end="0,34" time="240" reversible="true" tween="Back" easing="Out">Focus</animation>
+                        <top>10</top>
+                        <width>350</width>
+                        <height>250</height>
+                        <texture>icons/iconbase.png</texture>
+                    </control>
+                    <control type="image" description="color base">
+                        <centerleft>180</centerleft>
+                        <centertop>117</centertop>
+                        <width>287</width>
+                        <height>179</height>
+                        <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
+                    </control>
+                    <control type="image" description="THMBSICONS">
+                        <centerleft>180</centerleft>
+                        <centertop>117</centertop>
+                        <width>287</width>
+                        <height>179</height>
+                        <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Icon]</texture>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
+                    </control>
+                </control>
+                <control type="label" description="label">
+                    <animation effect="fade" start="0" end="100" time="180">Focus</animation>
+                    <animation effect="fade" start="100" end="0" time="100">unFocus</animation>
+                    <centerleft>180</centerleft>
+                    <top>214</top>
+                    <width>368</width>
+                    <height>24</height>
+                    <font>size28</font>
                     <align>center</align>
                     <label>$INFO[ListItem.label]</label>
                 </control>

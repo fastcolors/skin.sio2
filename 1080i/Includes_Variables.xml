@@ -114,7 +114,7 @@
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),WL)">special://skin/resources/laststarted.xsp</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),RND)">special://skin/resources/random.xsp</value>
 
-        <value condition="Container(9000).HasFocus(357)">special://skin/resources/3d.xsp</value>
+        <!--<value condition="Container(9000).HasFocus(357)">special://skin/resources/3d.xsp</value>-->
 
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies) + String.IsEqual(Skin.String(theatersshelf),1)">plugin://script.extendedinfo?info=newdvdreleases&amp;&amp;limit=18</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies) + String.IsEqual(Skin.String(theatersshelf),2)">plugin://script.extendedinfo?info=upcoming&amp;&amp;limit=18</value>
@@ -131,16 +131,16 @@
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),2)">videodb://recentlyaddedepisodes</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows)">plugin://service.library.data.provider?type=recommendedepisodes&limit=18&reload=$INFO[Window.Property(recommendedepisodes)]</value>
 
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music)"></value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music)"> </value>
 
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)"></value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)"> </value>
 
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),programs)"></value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),programs)"> </value>
 
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),pictures)"></value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),pictures)"> </value>
 
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),favourites)">favourites://</value>
-        <value>$INFO[Container(9000).ListItem.Property(list)]</value>
+        <value condition="Container(9000).Row(0)">$INFO[Container(9000).ListItem.Property(list)]</value>
     </variable>
 
     <variable name="squareshelf">
