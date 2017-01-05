@@ -30,15 +30,8 @@
         <icon>-</icon>
         <label2>-</label2>
         <thumb>icons/addons.png</thumb>
-        <action>ActivateWindow(1118)</action>
-    </shortcut>
-    <shortcut>
-        <defaultID>pictures</defaultID>
-        <label>1</label>
-        <icon>-</icon>
-        <label2>-</label2>
-        <thumb>icons/photos.png</thumb>
-        <action>ActivateWindow(2)</action>
+        <action>SetFocus(10030)</action>
+        <!--<action>ActivateWindow(1118)</action>-->
     </shortcut>
     <shortcut>
         <defaultID>weather</defaultID>
@@ -49,12 +42,21 @@
         <action>ActivateWindow(MyWeather)</action>
     </shortcut>
     <shortcut>
+        <defaultID>pictures</defaultID>
+        <label>1</label>
+        <icon>-</icon>
+        <label2>-</label2>
+        <thumb>icons/photos.png</thumb>
+        <action>ActivateWindow(2)</action>
+    </shortcut>
+    <shortcut>
         <defaultID>LiveTV</defaultID>
         <label>31059</label>
         <icon>-</icon>
         <label2>icons/green3.png</label2>
         <thumb>icons/LiveTV.png</thumb>
-        <action>ActivateWindow(1718)</action>
+        <action>SetFocus(10000)</action>
+        <!--<action>ActivateWindow(1718)</action>-->
         <visible>!Pvr.IsRecording</visible>
     </shortcut>
     <shortcut>
@@ -63,7 +65,7 @@
         <icon>-</icon>
         <label2>icons/green3.png</label2>
         <thumb>icons/LiveTVrec.png</thumb>
-        <action>ActivateWindow(1718)</action>
+        <action>SetFocus(10000)</action>
         <visible>Pvr.IsRecording</visible>
     </shortcut>
     <shortcut>
@@ -106,7 +108,8 @@
         <icon>-</icon>
         <label2>icons/darkblue.png</label2>
         <thumb>icons/sources.png</thumb>
-        <action>ActivateWindow(1115)</action>
+        <action>SetFocus(10010)</action>
+        <!--<action>ActivateWindow(1115)</action>-->
     </shortcut>
     <shortcut>
         <defaultID>search</defaultID>
@@ -122,7 +125,8 @@
         <label2>Common Shortcut</label2>
         <icon>-</icon>
         <thumb>icons/settings.png</thumb>
-        <action>ActivateWindow(1120)</action>
+        <!--<action>ActivateWindow(1120)</action>-->
+        <action>SetFocus(10020)</action>
     </shortcut>
     <shortcut>
         <defaultID>shutdownmenu</defaultID>

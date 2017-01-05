@@ -4,7 +4,6 @@
     <include>DialogOpenClose</include>
     <controls>
         <control type="group">
-            <include>DialogOpenCloseVisible</include>
             <control type="image" description="List back">
                 <centerleft>960</centerleft>
                 <centertop>540</centertop>

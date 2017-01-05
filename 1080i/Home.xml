@@ -11,22 +11,22 @@
             <control type="image" description="Stage">
                 <visible>Skin.HasTheme(Dark)</visible>
                 <width>1920</width>
-                <height>2160</height>
+                <height>2340</height>
                 <aspectratio>stretch</aspectratio>
                 <texture>special://skin/resources/DarkHomeBG.png</texture>
             </control>
             <control type="image" description="Stage">
                 <visible>!Skin.HasTheme(Dark)</visible>
                 <width>1920</width>
-                <height>2160</height>
+                <height>2340</height>
                 <aspectratio>stretch</aspectratio>
                 <texture>special://skin/resources/HomeBG.png</texture>
             </control>
             <control type="image" description="banda bianca">
-                <top>694</top>
+                <top>700</top>
                 <left>-35</left>
                 <width>1990</width>
-                <height>286</height>
+                <height>274</height>
                 <aspectratio>stretch</aspectratio>
                 <texture border="8" colordiffuse="bandabianca">images/White.png</texture>
             </control>
@@ -77,16 +77,16 @@
         <control type="panel" id="9000" description="ICONE">
             <include>homeanimation</include>
             <centerleft>960</centerleft>
-            <top>710</top>
+            <top>720</top>
             <width>1800</width>
-            <height>1060</height>
+            <height>1620</height>
             <onleft>9000</onleft>
             <onright>9000</onright>
             <onup>700</onup>
             <ondown>noop</ondown>
             <orientation>vertical</orientation>
             <scrolltime tween="sine" easing="inout">280</scrolltime>
-            <itemlayout height="290" width="360">
+            <itemlayout height="270" width="360">
                 <control type="image" description="shade_base">
                     <centerleft>180</centerleft>
                     <top>10</top>
@@ -96,24 +96,24 @@
                 </control>
                 <control type="image" description="color base">
                     <centerleft>180</centerleft>
-                    <centertop>130</centertop>
+                    <centertop>126</centertop>
                     <width>287</width>
                     <height>179</height>
                     <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
                 </control>
                 <control type="image" description="THMBSICONS">
                     <centerleft>180</centerleft>
-                    <centertop>130</centertop>
+                    <centertop>126</centertop>
                     <width>287</width>
                     <height>179</height>
                     <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Icon]</texture>
                     <aspectratio scalediffuse="false">scale</aspectratio>
                 </control>
             </itemlayout>
-            <focusedlayout height="290" width="360">
+            <focusedlayout height="270" width="360">
                 <control type="group">
-                    <animation effect="zoom" start="100" end="130" time="120" center="180,210" tween="Back" easing="Out">Focus</animation>
-                    <animation effect="zoom" start="130" end="100" time="120" center="180,210">unFocus</animation>
+                    <animation effect="zoom" start="100" end="128" time="120" center="180,210" tween="Back" easing="Out">Focus</animation>
+                    <animation effect="zoom" start="128" end="100" time="120" center="180,210">unFocus</animation>
                     <control type="image" description="shade_base">
                         <centerleft>180</centerleft>
                         <animation effect="slide" start="0,0" end="0,34" time="240" reversible="true" tween="Back" easing="Out">Focus</animation>
@@ -124,14 +124,14 @@
                     </control>
                     <control type="image" description="color base">
                         <centerleft>180</centerleft>
-                        <centertop>130</centertop>
+                        <centertop>126</centertop>
                         <width>287</width>
                         <height>179</height>
                         <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
                     </control>
                     <control type="image" description="THMBSICONS">
                         <centerleft>180</centerleft>
-                        <centertop>130</centertop>
+                        <centertop>126</centertop>
                         <width>287</width>
                         <height>179</height>
                         <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Icon]</texture>
@@ -142,7 +142,7 @@
                     <animation effect="fade" start="0" end="100" time="180">Focus</animation>
                     <animation effect="fade" start="100" end="0" time="100">unFocus</animation>
                     <centerleft>180</centerleft>
-                    <top>234</top>
+                    <top>225</top>
                     <width>368</width>
                     <height>24</height>
                     <font>size27B</font>
@@ -155,9 +155,9 @@
         <control type="group" id="700" description="Shelf items">
             <include>homeanimation</include>
             <include>Movies</include>
-            <include>Squares</include>
+            <include>Music</include>
             <include condition="Skin.HasSetting(PicturesShelf_Custom)">Pictures_Shortcuts</include>
-            <include condition="Skin.HasSetting(AddonsShelf_Custom)">Addons_Shortcuts</include>
+            <include>Addons_Shortcuts</include>
             <include>weather_shelf</include>
         </control>
         <control type="group" description="RSS">
@@ -254,5 +254,9 @@
             <colordiffuse>kodi</colordiffuse>
             <texture>kodi_icon.png</texture>
         </control>
+        <include>livepop</include>
+        <include>sourcespop</include>
+        <include>settingspop</include>
+        <include>addonspop</include>
     </controls>
 </window>

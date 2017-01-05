@@ -59,9 +59,9 @@
 			<thumb>icons/addons.png</thumb>
 			<property name="labelID">24001</property>
 			<property name="defaultID">addons</property>
-			<onclick>ActivateWindow(1118)</onclick>
-			<property name="path">ActivateWindow(1118)</property>
-			<property name="list">1118</property>
+			<onclick>SetFocus(10030)</onclick>
+			<property name="path">SetFocus(10030)</property>
+			<property name="list">SetFocus(10030)</property>
 			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">num-24001</property>
 			<property name="group">mainmenu</property>
@@ -69,22 +69,6 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<label>$LOCALIZE[1]</label>
-			<label2>-</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb>icons/photos.png</thumb>
-			<property name="labelID">1</property>
-			<property name="defaultID">pictures</property>
-			<onclick>ActivateWindow(2)</onclick>
-			<property name="path">ActivateWindow(2)</property>
-			<property name="list">2</property>
-			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
-			<property name="submenuVisibility">num-1</property>
-			<property name="group">mainmenu</property>
-			<property name="hasSubmenu">True</property>
-		</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
 			<label>$INFO[Weather.Temperature]</label>
 			<label2>icons/white.png</label2>
 			<icon>$INFO[Weather.Conditions]</icon>
@@ -99,6 +83,22 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
+			<label>$LOCALIZE[1]</label>
+			<label2>-</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>icons/photos.png</thumb>
+			<property name="labelID">1</property>
+			<property name="defaultID">pictures</property>
+			<onclick>ActivateWindow(2)</onclick>
+			<property name="path">ActivateWindow(2)</property>
+			<property name="list">2</property>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
+			<property name="submenuVisibility">num-1</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">True</property>
+		</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
 			<label>$LOCALIZE[31059]</label>
@@ -108,9 +108,9 @@
 			<property name="labelID">31059</property>
 			<property name="defaultID">LiveTV</property>
 			<visible>!Pvr.IsRecording</visible>
-			<onclick>ActivateWindow(1718)</onclick>
-			<property name="path">ActivateWindow(1718)</property>
-			<property name="list">1718</property>
+			<onclick>SetFocus(10000)</onclick>
+			<property name="path">SetFocus(10000)</property>
+			<property name="list">SetFocus(10000)</property>
 			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">num-31059</property>
 			<property name="group">mainmenu</property>
@@ -125,9 +125,9 @@
 			<property name="labelID">info-pvr-nowrecordingtitle</property>
 			<property name="defaultID">LiveTV</property>
 			<visible>Pvr.IsRecording</visible>
-			<onclick>ActivateWindow(1718)</onclick>
-			<property name="path">ActivateWindow(1718)</property>
-			<property name="list">1718</property>
+			<onclick>SetFocus(10000)</onclick>
+			<property name="path">SetFocus(10000)</property>
+			<property name="list">SetFocus(10000)</property>
 			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">info-pvr-nowrecordingtitle</property>
 			<property name="group">mainmenu</property>
@@ -207,9 +207,9 @@
 			<thumb>icons/sources.png</thumb>
 			<property name="labelID">20094</property>
 			<property name="defaultID">sources</property>
-			<onclick>ActivateWindow(1115)</onclick>
-			<property name="path">ActivateWindow(1115)</property>
-			<property name="list">1115</property>
+			<onclick>SetFocus(10010)</onclick>
+			<property name="path">SetFocus(10010)</property>
+			<property name="list">SetFocus(10010)</property>
 			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">num-20094</property>
 			<property name="group">mainmenu</property>
@@ -239,9 +239,9 @@
 			<thumb>icons/settings.png</thumb>
 			<property name="labelID">5</property>
 			<property name="defaultID">settings</property>
-			<onclick>ActivateWindow(1120)</onclick>
-			<property name="path">ActivateWindow(1120)</property>
-			<property name="list">1120</property>
+			<onclick>SetFocus(10020)</onclick>
+			<property name="path">SetFocus(10020)</property>
+			<property name="list">SetFocus(10020)</property>
 			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">num-5</property>
 			<property name="group">mainmenu</property>
@@ -321,9 +321,9 @@
 			<thumb>icons/addons.png</thumb>
 			<property name="labelID">24001</property>
 			<property name="defaultID">addons</property>
-			<onclick>ActivateWindow(1118)</onclick>
-			<property name="path">ActivateWindow(1118)</property>
-			<property name="list">1118</property>
+			<onclick>SetFocus(10030)</onclick>
+			<property name="path">SetFocus(10030)</property>
+			<property name="list">SetFocus(10030)</property>
 			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">num-24001</property>
 			<property name="group">mainmenu</property>
@@ -331,22 +331,6 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<label>$LOCALIZE[1]</label>
-			<label2>-</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb>icons/photos.png</thumb>
-			<property name="labelID">1</property>
-			<property name="defaultID">pictures</property>
-			<onclick>ActivateWindow(2)</onclick>
-			<property name="path">ActivateWindow(2)</property>
-			<property name="list">2</property>
-			<visible>String.IsEqual(System.ProfileName,asd)</visible>
-			<property name="submenuVisibility">num-1</property>
-			<property name="group">mainmenu</property>
-			<property name="hasSubmenu">True</property>
-		</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
 			<label>$INFO[Weather.Temperature]</label>
 			<label2>icons/white.png</label2>
 			<icon>$INFO[Weather.Conditions]</icon>
@@ -361,6 +345,22 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
+			<label>$LOCALIZE[1]</label>
+			<label2>-</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>icons/photos.png</thumb>
+			<property name="labelID">1</property>
+			<property name="defaultID">pictures</property>
+			<onclick>ActivateWindow(2)</onclick>
+			<property name="path">ActivateWindow(2)</property>
+			<property name="list">2</property>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
+			<property name="submenuVisibility">num-1</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">True</property>
+		</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
 			<label>$LOCALIZE[31059]</label>
@@ -370,9 +370,9 @@
 			<property name="labelID">31059</property>
 			<property name="defaultID">LiveTV</property>
 			<visible>!Pvr.IsRecording</visible>
-			<onclick>ActivateWindow(1718)</onclick>
-			<property name="path">ActivateWindow(1718)</property>
-			<property name="list">1718</property>
+			<onclick>SetFocus(10000)</onclick>
+			<property name="path">SetFocus(10000)</property>
+			<property name="list">SetFocus(10000)</property>
 			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">num-31059</property>
 			<property name="group">mainmenu</property>
@@ -387,9 +387,9 @@
 			<property name="labelID">info-pvr-nowrecordingtitle</property>
 			<property name="defaultID">LiveTV</property>
 			<visible>Pvr.IsRecording</visible>
-			<onclick>ActivateWindow(1718)</onclick>
-			<property name="path">ActivateWindow(1718)</property>
-			<property name="list">1718</property>
+			<onclick>SetFocus(10000)</onclick>
+			<property name="path">SetFocus(10000)</property>
+			<property name="list">SetFocus(10000)</property>
 			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">info-pvr-nowrecordingtitle</property>
 			<property name="group">mainmenu</property>
@@ -469,9 +469,9 @@
 			<thumb>icons/sources.png</thumb>
 			<property name="labelID">20094</property>
 			<property name="defaultID">sources</property>
-			<onclick>ActivateWindow(1115)</onclick>
-			<property name="path">ActivateWindow(1115)</property>
-			<property name="list">1115</property>
+			<onclick>SetFocus(10010)</onclick>
+			<property name="path">SetFocus(10010)</property>
+			<property name="list">SetFocus(10010)</property>
 			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">num-20094</property>
 			<property name="group">mainmenu</property>
@@ -501,9 +501,9 @@
 			<thumb>icons/settings.png</thumb>
 			<property name="labelID">5</property>
 			<property name="defaultID">settings</property>
-			<onclick>ActivateWindow(1120)</onclick>
-			<property name="path">ActivateWindow(1120)</property>
-			<property name="list">1120</property>
+			<onclick>SetFocus(10020)</onclick>
+			<property name="path">SetFocus(10020)</property>
+			<property name="list">SetFocus(10020)</property>
 			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">num-5</property>
 			<property name="group">mainmenu</property>
@@ -765,7 +765,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">6</property>
 			<label>$LOCALIZE[1039]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -1217,7 +1217,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">6</property>
 			<label>$LOCALIZE[1039]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -2393,10 +2393,18 @@
 		<description>No items</description>
 		<description>No items</description>
 	</include>
+	<include name="skinshortcuts-group-info-weather-temperature">
+		<description>No items</description>
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-alt-info-weather-temperature">
+		<description>No items</description>
+		<description>No items</description>
+	</include>
 	<include name="skinshortcuts-group-num-1">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">6</property>
 			<label>$LOCALIZE[1039]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -2412,7 +2420,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">6</property>
 			<label>$LOCALIZE[1039]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -2430,7 +2438,7 @@
 	<include name="skinshortcuts-group-alt-num-1">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">6</property>
 			<label>$LOCALIZE[1039]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -2446,7 +2454,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">6</property>
 			<label>$LOCALIZE[1039]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -2460,14 +2468,6 @@
 			<property name="group">1</property>
 			<property name="isSubmenu">True</property>
 		</item>
-	</include>
-	<include name="skinshortcuts-group-info-weather-temperature">
-		<description>No items</description>
-		<description>No items</description>
-	</include>
-	<include name="skinshortcuts-group-alt-info-weather-temperature">
-		<description>No items</description>
-		<description>No items</description>
 	</include>
 	<include name="skinshortcuts-group-num-31059">
 		<item id="1">

@@ -33,11 +33,11 @@
     <include name="DialogOpenCloseVisible">
         <animation type="Visible">
             <effect type="fade" start="0" end="100" time="240" />
-            <effect type="zoom" tween="cubic" easing="out" start="30" end="100" center="960,340" time="240" />
+            <effect type="zoom" tween="cubic" easing="out" start="30" end="100" center="960,540" time="240" />
         </animation>
         <animation type="Hidden">
             <effect type="fade" start="100" end="0" time="140" />
-            <effect type="zoom" tween="cubic" easing="in" start="100" end="30" center="960,340" time="140" />
+            <effect type="zoom" tween="cubic" easing="in" start="100" end="30" center="960,540" time="140" />
         </animation>
     </include>
     <include name="Fanart_Fade">
@@ -368,6 +368,201 @@
         <texturefocus>-</texturefocus>
     </include>
     <include name="homeanimation">
-        <animation condition="!ControlGroup(700).HasFocus + !Container(9000).Row(0) + !Control.HasFocus(9009)" effect="slide" start="0,0" end="0,-590" time="220">Conditonal</animation>
+        <animation condition="Container(9000).Row(1) + !ControlGroup(700).HasFocus + !Control.HasFocus(9009)" effect="slide" end="0,-240" time="220">Conditonal</animation>
+        <animation condition="Container(9000).Row(2) + !ControlGroup(700).HasFocus + !Control.HasFocus(9009)" effect="slide" end="0,-480" time="220">Conditonal</animation>
+        <animation condition="Container(9000).Row(3) + !ControlGroup(700).HasFocus + !Control.HasFocus(9009)" effect="slide" end="0,-720" time="220">Conditonal</animation>
+        <animation condition="Container(9000).Row(4) + !ControlGroup(700).HasFocus + !Control.HasFocus(9009)" effect="slide" end="0,-990" time="220">Conditonal</animation>
+        <!--<animation condition="Container(9000).Row(5) + !Control.HasFocus(9009)" effect="slide" end="0,-1260" time="220">Conditonal</animation>-->
+    </include>
+    <include name="livepop">
+        <control type="group">
+            <include>DialogOpenCloseVisible</include>
+            <visible allowhiddenfocus="true">ControlGroup(10000).HasFocus</visible>
+            <control type="image" description="List back">
+                <centerleft>960</centerleft>
+                <centertop>540</centertop>
+                <width>802</width>
+                <height>600</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="50">images/ContextMenu.png</texture>
+                <colordiffuse>dialog</colordiffuse>
+            </control>
+            <control type="grouplist" id="10000">
+                <centertop>540</centertop>
+                <height>500</height>
+                <ondown>10000</ondown>
+                <onup>10000</onup>
+                <align>center</align>
+                <include>DialogGLs</include>
+                <control type="button" id="10001">
+                    <include>DialogButt</include>
+                    <label>19023</label>
+                    <onclick>close</onclick>
+                    <onclick>ActivateWindowAndFocus(TVChannels)</onclick>
+                </control>
+                <control type="button" id="10002">
+                    <include>DialogButt</include>
+                    <label>19024</label>
+                    <onclick>close</onclick>
+                    <onclick>ActivateWindowAndFocus(RADIOChannels)</onclick>
+                </control>
+                <control type="button" id="10003">
+                    <include>DialogButt</include>
+                    <label>19069</label>
+                    <onclick>close</onclick>
+                    <onclick>ActivateWindow(TVGuide)</onclick>
+                </control>
+                <control type="button" id="10004">
+                    <include>DialogButt</include>
+                    <label>19163</label>
+                    <onclick>close</onclick>
+                    <onclick>ActivateWindowAndFocus(tvrecordings)</onclick>
+                </control>
+                <control type="button" id="10005">
+                    <include>DialogButt</include>
+                    <label>19040</label>
+                    <onclick>close</onclick>
+                    <onclick>ActivateWindowAndFocus(tvtimers)</onclick>
+                </control>
+                <control type="button" id="10006">
+                    <include>DialogButt</include>
+                    <label>222</label>
+                    <onclick>SetFocus(9000,$INFO[Container(9000).Position])</onclick>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="sourcespop">
+        <control type="group">
+            <visible allowhiddenfocus="true">ControlGroup(10010).HasFocus</visible>
+            <include>DialogOpenCloseVisible</include>
+            <control type="image" description="List back">
+                <centerleft>960</centerleft>
+                <centertop>540</centertop>
+                <width>802</width>
+                <height>520</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="50">images/ContextMenu.png</texture>
+                <colordiffuse>dialog</colordiffuse>
+            </control>
+            <control type="grouplist" id="10010">
+                <height>500</height>
+                <centertop>540</centertop>
+                <align>center</align>
+                <onup>10010</onup>
+                <ondown>10010</ondown>
+                <include>DialogGLs</include>
+                <control type="button" id="10011" description="Video">
+                    <include>DialogButt</include>
+                    <label>3</label>
+                    <onclick>ActivateWindow(Videos,files)</onclick>
+                </control>
+                <control type="button" id="10012" description="Music">
+                    <include>DialogButt</include>
+                    <label>$LOCALIZE[2]</label>
+                    <onclick>ActivateWindow(Music,files)</onclick>
+                </control>
+                <control type="button" id="10013" description="Update Library">
+                    <enable>Library.HasContent(Movies) | Library.HasContent(TVShows)</enable>
+                    <include>DialogButt</include>
+                    <label>653</label>
+                    <onclick>UpdateLibrary(video,,true)</onclick>
+                </control>
+                <control type="button" id="10014" description="Update Library">
+                    <enable>Library.HasContent(Movies) | Library.HasContent(TVShows)</enable>
+                    <include>DialogButt</include>
+                    <label>334</label>
+                    <onclick>CleanLibrary(video,true)</onclick>
+                </control>
+                <control type="button" id="10015" description="Cancel">
+                    <include>DialogButt</include>
+                    <label>222</label>
+                    <onclick>SetFocus(9000,$INFO[Container(9000).Position])</onclick>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="settingspop">
+        <control type="group">
+            <visible allowhiddenfocus="true">ControlGroup(10020).HasFocus</visible>
+            <include>DialogOpenCloseVisible</include>
+            <control type="image" description="List back">
+                <centerleft>960</centerleft>
+                <centertop>540</centertop>
+                <width>802</width>
+                <height>340</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="50">images/ContextMenu.png</texture>
+                <colordiffuse>dialog</colordiffuse>
+            </control>
+            <control type="grouplist" id="10020">
+                <centertop>540</centertop>
+                <onup>10020</onup>
+                <ondown>10020</ondown>
+                <align>center</align>
+                <include>DialogGLs</include>
+                <control type="button" id="10021">
+                    <include>DialogButt</include>
+                    <label>14209</label>
+                    <onclick>ActivateWindow(Settings)</onclick>
+                </control>
+                <control type="button" id="10022">
+                    <include>DialogButt</include>
+                    <label>20077</label>
+                    <onclick>ActivateWindow(SkinSettings)</onclick>
+                </control>
+                <control type="button" id="10023">
+                    <include>DialogButt</include>
+                    <label>222</label>
+                    <onclick>SetFocus(9000,$INFO[Container(9000).Position])</onclick>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="addonspop">
+        <control type="group">
+            <visible allowhiddenfocus="true">ControlGroup(10030).HasFocus</visible>
+            <include>DialogOpenCloseVisible</include>
+            <control type="image" description="List back">
+                <centerleft>960</centerleft>
+                <centertop>540</centertop>
+                <width>802</width>
+                <height>450</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="50">images/ContextMenu.png</texture>
+                <colordiffuse>dialog</colordiffuse>
+            </control>
+            <control type="grouplist" id="10030">
+                <centertop>540</centertop>
+                <height>480</height>
+                <align>center</align>
+                <onup>10030</onup>
+                <ondown>10030</ondown>
+                <include>DialogGLs</include>
+                <control type="button" id="10031">
+                    <include>DialogButt</include>
+                    <label>1037</label>
+                    <onclick>Close</onclick>
+                    <onclick>ActivateWindow(Videos,Addons)</onclick>
+                </control>
+                <control type="button" id="10032">
+                    <include>DialogButt</include>
+                    <label>1038</label>
+                    <onclick>Close</onclick>
+                    <onclick>ActivateWindow(Music,Addons)</onclick>
+                </control>
+                <control type="button" id="10033">
+                    <include>DialogButt</include>
+                    <label>31037</label>
+                    <onclick>Close</onclick>
+                    <onclick>ActivateWindow(AddonBrowser,root)</onclick>
+                </control>
+                <control type="button" id="10034">
+                    <include>DialogButt</include>
+                    <label>222</label>
+                    <onclick>SetFocus(9000,$INFO[Container(9000).Position])</onclick>
+                </control>
+            </control>
+        </control>
     </include>
 </includes>

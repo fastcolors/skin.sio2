@@ -13,8 +13,8 @@
       <colordiffuse>dialog</colordiffuse>
     </control>
     <control type="grouplist" id="9000">
-      <top>290</top>
-      <height>500</height>
+      <centertop>540</centertop>
+      <height>580</height>
       <align>center</align>
       <include>DialogGLs</include>
       <control type="button" id="1" description="Exit button">
@@ -50,6 +50,11 @@
         <include>DialogButt</include>
         <onclick>AlarmClock(Timer,Quit())</onclick>
         <label>timer</label>
+      </control>
+      <control type="button" id="7" description="TimerOff">
+        <include>DialogButt</include>
+        <onclick>ActivateWindow(Settings)</onclick>
+        <label>5</label>
       </control>
     </control>
   </controls>
