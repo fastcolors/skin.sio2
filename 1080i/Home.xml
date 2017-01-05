@@ -8,22 +8,27 @@
     <controls>
         <control type="group" description="Furniture">
             <include>homeanimation</include>
-            <control type="image" description="Stage">
-                <visible>Skin.HasTheme(Dark)</visible>
-                <width>1920</width>
-                <height>2340</height>
-                <aspectratio>stretch</aspectratio>
-                <texture>special://skin/resources/DarkHomeBG.png</texture>
-            </control>
-            <control type="image" description="Stage">
-                <visible>!Skin.HasTheme(Dark)</visible>
-                <width>1920</width>
-                <height>2340</height>
-                <aspectratio>stretch</aspectratio>
-                <texture>special://skin/resources/HomeBG.png</texture>
-            </control>
+            <!--<control type="image" description="Stage">-->
+            <!--<visible>Skin.HasTheme(Dark)</visible>-->
+            <!--<width>1920</width>-->
+            <!--<height>2340</height>-->
+            <!--<aspectratio>stretch</aspectratio>-->
+            <!--<texture>special://skin/resources/DarkHomeBG.png</texture>-->
+            <!--</control>-->
+            <!--<control type="image" description="Stage">-->
+            <!--<visible>!Skin.HasTheme(Dark)</visible>-->
+            <!--<width>1920</width>-->
+            <!--<height>2340</height>-->
+            <!--<aspectratio>stretch</aspectratio>-->
+            <!--<texture>special://skin/resources/HomeBG.png</texture>-->
+            <!--</control>-->
+            <!--<control type="image">-->
+                <!--<height>1080</height>-->
+                <!--<width>1920</width>-->
+                <!--<texture>appletv.jpg</texture>-->
+            <!--</control>-->
             <control type="image" description="banda bianca">
-                <top>700</top>
+                <top>720</top>
                 <left>-35</left>
                 <width>1990</width>
                 <height>274</height>
@@ -39,12 +44,12 @@
             <animation>unFocus</animation>
             <animation condition="$EXP[shelflabelsslide]" effect="slide" start="0" end="0,-20" time="180" tween="Back">Conditional</animation>
             <left>80</left>
-            <top>50</top>
+            <bottom>980</bottom>
             <height>45</height>
             <width>750</width>
             <align>left</align>
             <aligny>center</aligny>
-            <font>size39B</font>
+            <font>shelf</font>
             <textcolor>ff555555</textcolor>
             <label>$VAR[shelflabel]</label>
             <texturefocus>-</texturefocus>
@@ -87,7 +92,7 @@
         <control type="panel" id="9000" description="ICONE">
             <include>homeanimation</include>
             <centerleft>960</centerleft>
-            <top>720</top>
+            <top>740</top>
             <width>1800</width>
             <height>1620</height>
             <onleft>9000</onleft>
@@ -105,16 +110,16 @@
                 </control>
                 <control type="image" description="color base">
                     <centerleft>180</centerleft>
-                    <centertop>117</centertop>
-                    <width>287</width>
+                    <centertop>118</centertop>
+                    <width>300</width>
                     <height>179</height>
                     <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
                 </control>
                 <control type="image" description="THMBSICONS">
                     <centerleft>180</centerleft>
-                    <centertop>117</centertop>
-                    <width>287</width>
-                    <height>179</height>
+                    <centertop>118</centertop>
+                    <width>300</width>
+                    <height>180</height>
                     <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Icon]</texture>
                     <aspectratio scalediffuse="false">scale</aspectratio>
                 </control>
@@ -161,8 +166,8 @@
             </focusedlayout>
             <focusedlayout height="270" width="360" condition="Container(9000).Row(0)">
                 <control type="group">
-                    <animation effect="zoom" start="100" end="125" time="120" center="180,206" tween="Back" easing="Out">Focus</animation>
-                    <animation effect="zoom" start="125" end="100" time="120" center="180,206">unFocus</animation>
+                    <animation effect="zoom" start="100" end="122" time="120" center="180,208" tween="Back" easing="Out">Focus</animation>
+                    <animation effect="zoom" start="122" end="100" time="120" center="180,208">unFocus</animation>
                     <control type="image" description="shade_base">
                         <centerleft>180</centerleft>
                         <animation effect="slide" start="0,0" end="0,34" time="240" reversible="true" tween="Back" easing="Out">Focus</animation>
@@ -173,16 +178,16 @@
                     </control>
                     <control type="image" description="color base">
                         <centerleft>180</centerleft>
-                        <centertop>117</centertop>
-                        <width>287</width>
-                        <height>179</height>
+                        <centertop>118</centertop>
+                        <width>300</width>
+                        <height>180</height>
                         <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
                     </control>
                     <control type="image" description="THMBSICONS">
                         <centerleft>180</centerleft>
-                        <centertop>117</centertop>
-                        <width>287</width>
-                        <height>179</height>
+                        <centertop>118</centertop>
+                        <width>300</width>
+                        <height>180</height>
                         <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Icon]</texture>
                         <aspectratio scalediffuse="false">scale</aspectratio>
                     </control>

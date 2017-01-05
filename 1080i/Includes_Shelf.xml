@@ -9,33 +9,33 @@
         <animation effect="slide" end="-100,0" time="250" condition="Container(311).Column(4)">Conditional</animation>
         <top>90</top>
         <width>2030</width>
-        <height>610</height>
+        <height>630</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
-        <itemlayout height="600" width="380">
+        <itemlayout height="600" width="392">
             <control type="image">
                 <visible>String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <left>100</left>
-                <top>16</top>
-                <width>340</width>
+                <left>90</left>
+                <top>40</top>
+                <width>350</width>
                 <height>500</height>
                 <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
                 <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
                 <visible>!String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <left>100</left>
-                <top>16</top>
-                <width>340</width>
+                <left>90</left>
+                <top>40</top>
+                <width>350</width>
                 <height>500</height>
                 <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
                 <aspectratio>keep</aspectratio>
             </control>
         </itemlayout>
-        <focusedlayout height="600" width="380">
+        <focusedlayout height="600" width="392">
             <control type="group">
-                <animation effect="zoom" start="100" end="110" time="120" center="270,300" tween="Back" easing="Out">Focus</animation>
-                <animation effect="zoom" start="110" end="100" time="120" center="270,300">unFocus</animation>
+                <animation effect="zoom" start="100" end="112" time="120" center="265,300" tween="Back" easing="Out">Focus</animation>
+                <animation effect="zoom" start="112" end="100" time="120" center="265,300">unFocus</animation>
                 <control type="image">
                     <animation effect="fade" start="0" end="100" time="150">Focus</animation>
                     <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
@@ -47,18 +47,18 @@
                 </control>
                 <control type="image">
                     <visible>String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                    <left>100</left>
-                    <top>16</top>
-                    <width>340</width>
+                    <left>90</left>
+                    <top>40</top>
+                    <width>350</width>
                     <height>500</height>
                     <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
                     <aspectratio>keep</aspectratio>
                 </control>
                 <control type="image">
                     <visible>!String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                    <left>100</left>
-                    <top>16</top>
-                    <width>340</width>
+                    <left>90</left>
+                    <top>40</top>
+                    <width>350</width>
                     <height>500</height>
                     <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
                     <aspectratio>keep</aspectratio>
@@ -70,10 +70,10 @@
                 <control type="textbox">
                     <visible>ControlGroup(700).HasFocus()</visible>
                     <centerleft>270</centerleft>
-                    <top>544</top>
+                    <top>570</top>
                     <width>360</width>
                     <height>60</height>
-                    <font>size24</font>
+                    <font>size26</font>
                     <autoscroll>false</autoscroll>
                     <label>[B]$INFO[ListItem.Title][/B]</label>
                     <align>center</align>
