@@ -102,15 +102,15 @@
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
 			<label>$LOCALIZE[31059]</label>
-			<label2>icons/green3.png</label2>
+			<label2>-</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>icons/LiveTV.png</thumb>
 			<property name="labelID">31059</property>
 			<property name="defaultID">LiveTV</property>
 			<visible>!Pvr.IsRecording</visible>
-			<onclick>SetFocus(10000)</onclick>
-			<property name="path">SetFocus(10000)</property>
-			<property name="list">SetFocus(10000)</property>
+			<onclick>SetFocus(10040)</onclick>
+			<property name="path">SetFocus(10040)</property>
+			<property name="list">SetFocus(10040)</property>
 			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">num-31059</property>
 			<property name="group">mainmenu</property>
@@ -119,15 +119,15 @@
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
 			<label>$INFO[Pvr.NowRecordingTitle]</label>
-			<label2>icons/green3.png</label2>
+			<label2>-</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>icons/LiveTVrec.png</thumb>
 			<property name="labelID">info-pvr-nowrecordingtitle</property>
 			<property name="defaultID">LiveTV</property>
 			<visible>Pvr.IsRecording</visible>
-			<onclick>SetFocus(10000)</onclick>
-			<property name="path">SetFocus(10000)</property>
-			<property name="list">SetFocus(10000)</property>
+			<onclick>SetFocus(10040)</onclick>
+			<property name="path">SetFocus(10040)</property>
+			<property name="list">SetFocus(10040)</property>
 			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">info-pvr-nowrecordingtitle</property>
 			<property name="group">mainmenu</property>
@@ -136,7 +136,7 @@
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
 			<label>$LOCALIZE[1036]</label>
-			<label2>icons/red.png</label2>
+			<label2>-</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>icons/favs.png</thumb>
 			<property name="labelID">1036</property>
@@ -152,7 +152,7 @@
 		<item id="10">
 			<property name="id">$NUMBER[10]</property>
 			<label>$LOCALIZE[31422]</label>
-			<label2>icons/orange.png</label2>
+			<label2>-</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>icons/extendedinfotheater.png</thumb>
 			<property name="labelID">31422</property>
@@ -169,7 +169,7 @@
 		<item id="11">
 			<property name="id">$NUMBER[11]</property>
 			<label>$LOCALIZE[31423]</label>
-			<label2>icons/green3.png</label2>
+			<label2>-</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>icons/extendedinfodvd.png</thumb>
 			<property name="labelID">31423</property>
@@ -202,7 +202,7 @@
 		<item id="13">
 			<property name="id">$NUMBER[13]</property>
 			<label>$LOCALIZE[20094]</label>
-			<label2>icons/darkblue.png</label2>
+			<label2>-</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>icons/sources.png</thumb>
 			<property name="labelID">20094</property>
@@ -234,7 +234,7 @@
 		<item id="15">
 			<property name="id">$NUMBER[15]</property>
 			<label>$LOCALIZE[5]</label>
-			<label2>Common Shortcut</label2>
+			<label2>-</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>icons/settings.png</thumb>
 			<property name="labelID">5</property>
@@ -250,16 +250,35 @@
 		<item id="16">
 			<property name="id">$NUMBER[16]</property>
 			<label>$LOCALIZE[33060]</label>
-			<label2>icons/darkblue.png</label2>
+			<label2>-</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>icons/quits.png</thumb>
 			<property name="labelID">33060</property>
 			<property name="defaultID">shutdownmenu</property>
+			<property name="icon">-</property>
+			<visible>!Player.HasMedia</visible>
 			<onclick>ActivateWindow(ShutdownMenu)</onclick>
 			<property name="path">ActivateWindow(ShutdownMenu)</property>
 			<property name="list">ShutdownMenu</property>
 			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">num-33060</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">False</property>
+		</item>
+		<item id="17">
+			<property name="id">$NUMBER[17]</property>
+			<label>$LOCALIZE[33060]</label>
+			<label2>-</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>icons/full.png</thumb>
+			<property name="labelID">33060--0</property>
+			<property name="defaultID">shutdownmenu</property>
+			<visible>Player.HasMedia</visible>
+			<onclick>Action(fullscreen)</onclick>
+			<property name="path">Action(fullscreen)</property>
+			<property name="list">Action(fullscreen)</property>
+			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
+			<property name="submenuVisibility">33060-0</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
@@ -364,15 +383,15 @@
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
 			<label>$LOCALIZE[31059]</label>
-			<label2>icons/green3.png</label2>
+			<label2>-</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>icons/LiveTV.png</thumb>
 			<property name="labelID">31059</property>
 			<property name="defaultID">LiveTV</property>
 			<visible>!Pvr.IsRecording</visible>
-			<onclick>SetFocus(10000)</onclick>
-			<property name="path">SetFocus(10000)</property>
-			<property name="list">SetFocus(10000)</property>
+			<onclick>SetFocus(10040)</onclick>
+			<property name="path">SetFocus(10040)</property>
+			<property name="list">SetFocus(10040)</property>
 			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">num-31059</property>
 			<property name="group">mainmenu</property>
@@ -381,15 +400,15 @@
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
 			<label>$INFO[Pvr.NowRecordingTitle]</label>
-			<label2>icons/green3.png</label2>
+			<label2>-</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>icons/LiveTVrec.png</thumb>
 			<property name="labelID">info-pvr-nowrecordingtitle</property>
 			<property name="defaultID">LiveTV</property>
 			<visible>Pvr.IsRecording</visible>
-			<onclick>SetFocus(10000)</onclick>
-			<property name="path">SetFocus(10000)</property>
-			<property name="list">SetFocus(10000)</property>
+			<onclick>SetFocus(10040)</onclick>
+			<property name="path">SetFocus(10040)</property>
+			<property name="list">SetFocus(10040)</property>
 			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">info-pvr-nowrecordingtitle</property>
 			<property name="group">mainmenu</property>
@@ -398,7 +417,7 @@
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
 			<label>$LOCALIZE[1036]</label>
-			<label2>icons/red.png</label2>
+			<label2>-</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>icons/favs.png</thumb>
 			<property name="labelID">1036</property>
@@ -414,7 +433,7 @@
 		<item id="10">
 			<property name="id">$NUMBER[10]</property>
 			<label>$LOCALIZE[31422]</label>
-			<label2>icons/orange.png</label2>
+			<label2>-</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>icons/extendedinfotheater.png</thumb>
 			<property name="labelID">31422</property>
@@ -431,7 +450,7 @@
 		<item id="11">
 			<property name="id">$NUMBER[11]</property>
 			<label>$LOCALIZE[31423]</label>
-			<label2>icons/green3.png</label2>
+			<label2>-</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>icons/extendedinfodvd.png</thumb>
 			<property name="labelID">31423</property>
@@ -464,7 +483,7 @@
 		<item id="13">
 			<property name="id">$NUMBER[13]</property>
 			<label>$LOCALIZE[20094]</label>
-			<label2>icons/darkblue.png</label2>
+			<label2>-</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>icons/sources.png</thumb>
 			<property name="labelID">20094</property>
@@ -496,7 +515,7 @@
 		<item id="15">
 			<property name="id">$NUMBER[15]</property>
 			<label>$LOCALIZE[5]</label>
-			<label2>Common Shortcut</label2>
+			<label2>-</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>icons/settings.png</thumb>
 			<property name="labelID">5</property>
@@ -512,16 +531,35 @@
 		<item id="16">
 			<property name="id">$NUMBER[16]</property>
 			<label>$LOCALIZE[33060]</label>
-			<label2>icons/darkblue.png</label2>
+			<label2>-</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>icons/quits.png</thumb>
 			<property name="labelID">33060</property>
 			<property name="defaultID">shutdownmenu</property>
+			<property name="icon">-</property>
+			<visible>!Player.HasMedia</visible>
 			<onclick>ActivateWindow(ShutdownMenu)</onclick>
 			<property name="path">ActivateWindow(ShutdownMenu)</property>
 			<property name="list">ShutdownMenu</property>
 			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">num-33060</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">False</property>
+		</item>
+		<item id="17">
+			<property name="id">$NUMBER[17]</property>
+			<label>$LOCALIZE[33060]</label>
+			<label2>-</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>icons/full.png</thumb>
+			<property name="labelID">33060--0</property>
+			<property name="defaultID">shutdownmenu</property>
+			<visible>Player.HasMedia</visible>
+			<onclick>Action(fullscreen)</onclick>
+			<property name="path">Action(fullscreen)</property>
+			<property name="list">Action(fullscreen)</property>
+			<visible>String.IsEqual(System.ProfileName,asd)</visible>
+			<property name="submenuVisibility">33060-0</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
@@ -3338,6 +3376,14 @@
 		<description>No items</description>
 	</include>
 	<include name="skinshortcuts-group-alt-num-33060">
+		<description>No items</description>
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-33060-0">
+		<description>No items</description>
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-alt-33060-0">
 		<description>No items</description>
 		<description>No items</description>
 	</include>

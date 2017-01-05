@@ -377,7 +377,7 @@
     <include name="livepop">
         <control type="group">
             <include>DialogOpenCloseVisible</include>
-            <visible allowhiddenfocus="true">ControlGroup(10000).HasFocus</visible>
+            <visible allowhiddenfocus="true">ControlGroup(10040).HasFocus</visible>
             <control type="image" description="List back">
                 <centerleft>960</centerleft>
                 <centertop>540</centertop>
@@ -387,44 +387,44 @@
                 <texture border="50">images/ContextMenu.png</texture>
                 <colordiffuse>dialog</colordiffuse>
             </control>
-            <control type="grouplist" id="10000">
+            <control type="grouplist" id="10040">
                 <centertop>540</centertop>
                 <height>500</height>
                 <ondown>10000</ondown>
                 <onup>10000</onup>
                 <align>center</align>
                 <include>DialogGLs</include>
-                <control type="button" id="10001">
+                <control type="button" id="10041">
                     <include>DialogButt</include>
                     <label>19023</label>
                     <onclick>close</onclick>
                     <onclick>ActivateWindowAndFocus(TVChannels)</onclick>
                 </control>
-                <control type="button" id="10002">
+                <control type="button" id="10042">
                     <include>DialogButt</include>
                     <label>19024</label>
                     <onclick>close</onclick>
                     <onclick>ActivateWindowAndFocus(RADIOChannels)</onclick>
                 </control>
-                <control type="button" id="10003">
+                <control type="button" id="10043">
                     <include>DialogButt</include>
                     <label>19069</label>
                     <onclick>close</onclick>
                     <onclick>ActivateWindow(TVGuide)</onclick>
                 </control>
-                <control type="button" id="10004">
+                <control type="button" id="10044">
                     <include>DialogButt</include>
                     <label>19163</label>
                     <onclick>close</onclick>
                     <onclick>ActivateWindowAndFocus(tvrecordings)</onclick>
                 </control>
-                <control type="button" id="10005">
+                <control type="button" id="10045">
                     <include>DialogButt</include>
                     <label>19040</label>
                     <onclick>close</onclick>
                     <onclick>ActivateWindowAndFocus(tvtimers)</onclick>
                 </control>
-                <control type="button" id="10006">
+                <control type="button" id="10046">
                     <include>DialogButt</include>
                     <label>222</label>
                     <onclick>SetFocus(9000,$INFO[Container(9000).Position])</onclick>
