@@ -34,6 +34,11 @@
             <itemgap>8</itemgap>
             <pagecontrol>60</pagecontrol>
         </control>
+        <control type="label" id="14" description="Label">
+            <font>size34</font>
+            <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
+            <align>left</align>
+        </control>
         <control type="button" id="7" description="Button">
             <font>size34</font>
             <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
