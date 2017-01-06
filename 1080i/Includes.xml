@@ -9,7 +9,8 @@
     <include file="views/video_icons.xml" />
     <include file="views/video_banners.xml" />
     <include file="views/video_widelist.xml" />
-    <include file="views/Musicviews.xml" />
+    <include file="views/music_library.xml" />
+    <include file="views/music_icons.xml" />
     <include file="views/Programviews.xml" />
     <include file="Includes_Home.xml" />
     <include file="Includes_Shelf.xml" />
@@ -599,13 +600,13 @@
                     <height>60</height>
                     <width>auto</width>
                     <include>musictopbutton</include>
-                    <onclick>ActivateWindow(Music,return)</onclick>
+                    <onclick condition="!Window.IsActive(Music)">ReplaceWindow(Music,return)</onclick>
                     <label>14202</label>
                 </control>
                 <control type="button" id="601" description="newmusic">
                     <height>60</height>
                     <include>musictopbutton</include>
-                    <onclick>ActivateWindow(1123)</onclick>
+                    <onclick>ReplaceWindow(1123)</onclick>
                     <label>New Music</label>
                 </control>
                 <control type="button" id="602" description="Other">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1123">
-    <defaultcontrol always="false">9000</defaultcontrol>
+    <defaultcontrol always="true">601</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <views>50,53</views>
     <onload condition="!Window.IsActive(visualisation)">FullScreen</onload>
