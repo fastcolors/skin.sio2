@@ -22,11 +22,11 @@
                 <aspectratio>stretch</aspectratio>
                 <texture>special://skin/resources/HomeBG.png</texture>
             </control>
-            <!--<control type="image">-->
-            <!--<height>1080</height>-->
-            <!--<width>1920</width>-->
-            <!--<texture>appletv.jpg</texture>-->
-            <!--</control>-->
+            <control type="image">
+            <height>1080</height>
+            <width>1920</width>
+            <texture>appletv.png</texture>
+            </control>
             <control type="image" description="banda bianca">
                 <top>720</top>
                 <left>-35</left>
@@ -209,10 +209,10 @@
         <control type="group" id="700" description="Shelf items">
             <include>homeanimation</include>
             <include>Movies</include>
-            <include>Music</include>
+            <include>Squares</include>
             <include>Episodes</include>
             <include condition="Skin.HasSetting(PicturesShelf_Custom)">Pictures_Shortcuts</include>
-            <include>Addons_Shortcuts</include>
+            <include condition="Skin.HasSetting(AddonsShelf_Custom)">Addons_Shortcuts</include>
             <include>weather_shelf</include>
         </control>
         <control type="group" description="RSS">

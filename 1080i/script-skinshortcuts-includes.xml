@@ -43,9 +43,9 @@
 			<thumb>icons/music.png</thumb>
 			<property name="labelID">2</property>
 			<property name="defaultID">music</property>
-			<onclick>ActivateWindow(Music,musicdb://,return)</onclick>
-			<property name="path">ActivateWindow(Music,musicdb://,return)</property>
-			<property name="list">musicdb://</property>
+			<onclick>ActivateWindow(Music,return)</onclick>
+			<property name="path">ActivateWindow(Music,return)</property>
+			<property name="list">Music</property>
 			<visible>String.IsEqual(System.ProfileName,FastColors)</visible>
 			<property name="submenuVisibility">num-2</property>
 			<property name="group">mainmenu</property>
@@ -324,9 +324,9 @@
 			<thumb>icons/music.png</thumb>
 			<property name="labelID">2</property>
 			<property name="defaultID">music</property>
-			<onclick>ActivateWindow(Music,musicdb://,return)</onclick>
-			<property name="path">ActivateWindow(Music,musicdb://,return)</property>
-			<property name="list">musicdb://</property>
+			<onclick>ActivateWindow(Music,return)</onclick>
+			<property name="path">ActivateWindow(Music,return)</property>
+			<property name="list">Music</property>
 			<visible>String.IsEqual(System.ProfileName,asd)</visible>
 			<property name="submenuVisibility">num-2</property>
 			<property name="group">mainmenu</property>

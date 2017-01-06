@@ -144,6 +144,11 @@
             <size>50</size>
         </font>
         <font>
+            <name>music</name>
+            <filename>SanFranciscoHeavy.ttf</filename>
+            <size>80</size>
+        </font>
+        <font>
             <name>size212</name>
             <filename>SanFrancisco.ttf</filename>
             <size>142</size>

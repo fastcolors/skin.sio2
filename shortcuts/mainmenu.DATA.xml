@@ -22,7 +22,7 @@
         <icon>-</icon>
         <label2>-</label2>
         <thumb>icons/music.png</thumb>
-        <action>ActivateWindow(Music,musicdb://,return)</action>
+        <action>ActivateWindow(Music,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>addons</defaultID>

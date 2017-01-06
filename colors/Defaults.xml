@@ -1,5 +1,7 @@
 <colors>
     <color name="bandabianca">66FFFFFF</color>
+    <color name="bandamusica">f0aaaaaa</color>
+    <color name="maindim">e0ffffff</color>
     <color name="darktext">ff000000</color>
     <color name="infos">ff000000</color>
     <color name="dialog">ffffffff</color>
