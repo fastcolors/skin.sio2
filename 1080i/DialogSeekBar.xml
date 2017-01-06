@@ -86,21 +86,22 @@
         </control>
         <control type="grouplist">
             <visible>!Window.IsVisible(videoosd)</visible>
-            <top>30</top>
-            <left>1500</left>
+            <top>20</top>
+            <left>1450</left>
             <control type="image">
                 <width>375</width>
                 <height>150</height>
                 <aspectratio>keep</aspectratio>
                 <texture background="true">$INFO[Player.Art(clearlogo)]</texture>
             </control>
-            <control type="image">
-                <width>375</width>
-                <height>100</height>
-                <texture>$INFO[VideoPlayer.mpaa,Mpaa/,.png]</texture>
-                <aspectratio align="right">keep</aspectratio>
-                <colordiffuse>77FFFFFF</colordiffuse>
-            </control>
+            <!--todo mpaa-->
+            <!--<control type="image">-->
+                <!--<width>375</width>-->
+                <!--<height>100</height>-->
+                <!--<texture>$INFO[VideoPlayer.mpaa,Mpaa/,.png]</texture>-->
+                <!--<aspectratio align="right">keep</aspectratio>-->
+                <!--<colordiffuse>77FFFFFF</colordiffuse>-->
+            <!--</control>-->
         </control>
     </controls>
 </window>
