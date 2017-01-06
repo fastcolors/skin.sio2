@@ -80,7 +80,7 @@
                         <centerleft>192</centerleft>
                         <width>290</width>
                         <height>420</height>
-                        <texture background="true">$VAR[locandine]</texture>
+                        <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="image">
@@ -166,7 +166,7 @@
                             <centerleft>192</centerleft>
                             <width>290</width>
                             <height>420</height>
-                            <texture background="true">$VAR[locandine]</texture>
+                            <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
                             <aspectratio>keep</aspectratio>
                         </control>
                         <control type="image">

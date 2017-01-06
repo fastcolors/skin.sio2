@@ -23,7 +23,7 @@
                 <width>800</width>
                 <height>800</height>
                 <include>Icon_Fade</include>
-                <texture diffuse="images/Diffuse.png" background="true">$VAR[locandine]</texture>
+                <texture diffuse="images/Diffuse.png" background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
                 <aspectratio aligny="center">keep</aspectratio>
             </control>
         </control>
@@ -37,7 +37,7 @@
                 <width>756</width>
                 <height>470</height>
                 <include>Icon_Fade</include>
-                <texture diffuse="images/Diffuse.png" background="true">$VAR[locandine]</texture>
+                <texture diffuse="images/Diffuse.png" background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
                 <aspectratio aligny="bottom">keep</aspectratio>
             </control>
             <include>Unwatched</include>

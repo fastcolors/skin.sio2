@@ -138,6 +138,7 @@
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows)"> </value>
 
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),favourites)">favourites://</value>
+
         <value condition="Container(9000).Row(0)">$INFO[Container(9000).ListItem.Property(list)]</value>
     </variable>
 
