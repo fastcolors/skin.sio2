@@ -67,12 +67,12 @@
             <control type="group" description="labels">
                 <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
                 <animation effect="fade" start="100" end="0" time="200">unFocus</animation>
-                <control type="textbox">
+                <control type="label">
                     <visible>ControlGroup(700).HasFocus()</visible>
                     <centerleft>270</centerleft>
                     <top>590</top>
                     <width>700</width>
-                    <height>60</height>
+                    <height>40</height>
                     <font>size30B</font>
                     <autoscroll>false</autoscroll>
                     <label>$INFO[ListItem.Title]</label>
