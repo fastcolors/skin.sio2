@@ -18,7 +18,7 @@
                 <left>90</left>
                 <top>40</top>
                 <width>350</width>
-                <height>500</height>
+                <height>520</height>
                 <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
                 <aspectratio>keep</aspectratio>
             </control>
@@ -27,7 +27,7 @@
                 <left>90</left>
                 <top>40</top>
                 <width>350</width>
-                <height>500</height>
+                <height>520</height>
                 <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
                 <aspectratio>keep</aspectratio>
             </control>
@@ -50,7 +50,7 @@
                     <left>90</left>
                     <top>40</top>
                     <width>350</width>
-                    <height>500</height>
+                    <height>520</height>
                     <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
                     <aspectratio>keep</aspectratio>
                 </control>
@@ -59,7 +59,7 @@
                     <left>90</left>
                     <top>40</top>
                     <width>350</width>
-                    <height>500</height>
+                    <height>520</height>
                     <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
                     <aspectratio>keep</aspectratio>
                 </control>
@@ -70,12 +70,12 @@
                 <control type="textbox">
                     <visible>ControlGroup(700).HasFocus()</visible>
                     <centerleft>270</centerleft>
-                    <top>570</top>
-                    <width>360</width>
+                    <top>590</top>
+                    <width>700</width>
                     <height>60</height>
-                    <font>size26</font>
+                    <font>size30B</font>
                     <autoscroll>false</autoscroll>
-                    <label>[B]$INFO[ListItem.Title][/B]</label>
+                    <label>$INFO[ListItem.Title]</label>
                     <align>center</align>
                 </control>
             </control>
@@ -89,6 +89,15 @@
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
         <itemlayout height="610" width="840">
+            <control type="image" description="shadow">
+                <animation effect="fade" start="0" end="100" time="150">Focus</animation>
+                <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
+                <left>80</left>
+                <top>65</top>
+                <width>790</width>
+                <height>460</height>
+                <texture>shadow.png</texture>
+            </control>
             <control type="image">
                 <left>80</left>
                 <top>45</top>
@@ -156,6 +165,15 @@
             <control type="group">
                 <animation effect="zoom" start="100" end="110" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
                 <animation effect="zoom" start="110" end="100" time="120" center="auto">unFocus</animation>
+                <control type="image" description="shadow">
+                    <animation effect="fade" start="0" end="100" time="150">Focus</animation>
+                    <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
+                    <left>80</left>
+                    <top>45</top>
+                    <width>790</width>
+                    <height>520</height>
+                    <texture>shadow.png</texture>
+                </control>
                 <control type="image">
                     <left>80</left>
                     <top>45</top>
@@ -183,7 +201,6 @@
                     <height>40</height>
                     <font>size30B</font>
                     <scroll>false</scroll>
-                    <textcolor>dimgray</textcolor>
                     <label>$INFO[ListItem.Title]</label>
                     <align>center</align>
                 </control>
@@ -194,8 +211,8 @@
                     <width>335</width>
                     <height>30</height>
                     <font>size30B</font>
-                    <textcolor>white</textcolor>
                     <!--<label>$LOCALIZE[]</label>-->
+                    <!--todo localize-->
                     <label>New Episode</label>
                     <align>left</align>
                 </control>
@@ -206,7 +223,6 @@
                     <width>335</width>
                     <height>30</height>
                     <font>size33</font>
-                    <textcolor>white</textcolor>
                     <label>$LOCALIZE[20373]$INFO[ListItem.Season],$LOCALIZE[20359]$INFO[ListItem.Episode]</label>
                     <align>left</align>
                 </control>
@@ -311,11 +327,10 @@
             <content target="videos">$VAR[epshelf]</content>
         </control>
     </include>
-    <include name="Music">
+    <include name="Squares">
         <control type="panel" id="312" description="TOP Shortcuts">
             <include>ShelfFade</include>
             <visible>$EXP[312visibility]</visible>
-            <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),music)</visible>
             <include>SquareShortcutsCommons</include>
             <onclick>PlayMedia($ESCINFO[ListItem.DBID,musicdb://albums/,/])</onclick>
             <content target="music">$VAR[squareshelf]</content>
@@ -323,7 +338,7 @@
     </include>
     <include name="Addons_Shortcuts">
         <control type="panel" id="315" description="TOP Shortcuts">
-            <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) | String.IsEqual(Container(9000).ListItem.Property(defaultID),programs)</visible>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)</visible>
             <include>ShelfFade</include>
             <onup>noop</onup>
             <ondown>9000</ondown>
