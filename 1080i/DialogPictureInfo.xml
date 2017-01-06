@@ -72,7 +72,7 @@
             <width>920</width>
             <height>880</height>
             <include>Icon_Fade</include>
-            <texture fallback="PhotoFolder.png" background="true">$INFO[ListItem.Icon]</texture>
+            <texture background="true">$INFO[ListItem.Icon]</texture>
             <aspectratio aligny="center">keep</aspectratio>
         </control>
     </controls>
