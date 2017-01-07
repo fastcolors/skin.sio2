@@ -12,22 +12,22 @@
         <height>630</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
-        <itemlayout height="600" width="392">
+        <itemlayout height="600" width="382">
             <control type="image">
                 <visible>String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
                 <left>90</left>
-                <top>40</top>
-                <width>350</width>
-                <height>520</height>
+                <top>35</top>
+                <width>335</width>
+                <height>500</height>
                 <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                <aspectratio>keep</aspectratio>
+                <!--<aspectratio>keep</aspectratio>-->
             </control>
             <control type="image">
                 <visible>!String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
                 <left>90</left>
-                <top>40</top>
-                <width>350</width>
-                <height>520</height>
+                <top>35</top>
+                <width>335</width>
+                <height>500</height>
                 <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
                 <aspectratio>keep</aspectratio>
             </control>
@@ -40,26 +40,26 @@
                     <animation effect="fade" start="0" end="100" time="150">Focus</animation>
                     <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
                     <left>40</left>
-                    <top>46</top>
-                    <width>460</width>
-                    <height>560</height>
+                    <top>41</top>
+                    <width>455</width>
+                    <height>580</height>
                     <texture>shadow.png</texture>
                 </control>
                 <control type="image">
                     <visible>String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
                     <left>90</left>
-                    <top>40</top>
-                    <width>350</width>
-                    <height>520</height>
+                    <top>35</top>
+                    <width>335</width>
+                    <height>500</height>
                     <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
                     <aspectratio>keep</aspectratio>
                 </control>
                 <control type="image">
                     <visible>!String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
                     <left>90</left>
-                    <top>40</top>
-                    <width>350</width>
-                    <height>520</height>
+                    <top>35</top>
+                    <width>335</width>
+                    <height>500</height>
                     <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
                     <aspectratio>keep</aspectratio>
                 </control>
@@ -70,7 +70,7 @@
                 <control type="label">
                     <visible>ControlGroup(700).HasFocus()</visible>
                     <centerleft>270</centerleft>
-                    <top>590</top>
+                    <top>570</top>
                     <width>700</width>
                     <height>40</height>
                     <font>size30B</font>

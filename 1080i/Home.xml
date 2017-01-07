@@ -22,11 +22,11 @@
                 <aspectratio>stretch</aspectratio>
                 <texture>special://skin/resources/HomeBG.png</texture>
             </control>
-            <control type="image">
-            <height>1080</height>
-            <width>1920</width>
-            <texture>appletv.png</texture>
-            </control>
+            <!--<control type="image">-->
+            <!--<height>1080</height>-->
+            <!--<width>1920</width>-->
+            <!--<texture>appletv.png</texture>-->
+            <!--</control>-->
             <control type="image" description="banda bianca">
                 <top>720</top>
                 <left>-35</left>
@@ -42,7 +42,7 @@
             <include>ShelfFade</include>
             <animation>Focus</animation>
             <animation>unFocus</animation>
-            <animation condition="$EXP[shelflabelsslide]" effect="slide" start="0" end="0,-20" time="180" tween="Back">Conditional</animation>
+            <animation condition="$EXP[shelflabelsslide]" effect="slide" start="0" end="0,-30" time="180" tween="Back">Conditional</animation>
             <left>80</left>
             <bottom>980</bottom>
             <height>45</height>
