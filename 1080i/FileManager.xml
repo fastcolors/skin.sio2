@@ -56,7 +56,7 @@
               <height>60</height>
               <font>size26</font>
               <aligny>center</aligny>
-              <textcolor>White</textcolor>
+              <textcolor>darktext</textcolor>
               <selectedcolor>orange</selectedcolor>
               <info>ListItem.Label</info>
             </control>
@@ -96,7 +96,7 @@
               <height>60</height>
               <font>size26</font>
               <aligny>center</aligny>
-              <textcolor>White</textcolor>
+              <textcolor>black</textcolor>
               <selectedcolor>orange</selectedcolor>
               <info>ListItem.Label</info>
             </control>
@@ -162,7 +162,7 @@
               <font>size26</font>
               <align>right</align>
               <aligny>center</aligny>
-              <textcolor>White</textcolor>
+              <textcolor>darktext</textcolor>
               <info>ListItem.Label</info>
             </control>
             <control type="label">
@@ -201,7 +201,7 @@
               <font>size26</font>
               <align>right</align>
               <aligny>center</aligny>
-              <textcolor>White</textcolor>
+              <textcolor>black</textcolor>
               <info>ListItem.Label</info>
             </control>
             <control type="label">
