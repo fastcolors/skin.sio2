@@ -2,21 +2,23 @@
 <overrides>
     <requiredshortcut label="5" thumbnail="icons/settings.png" icon="icons/settings.png">SetFocus(10020)</requiredshortcut>
     <warn heading="$LOCALIZE[14117]" message="$LOCALIZE[31019]">SetFocus(10020)</warn>
+    <thumbnailBrowseDefault>special://skin/resources/extraicons/</thumbnailBrowseDefault>
+
     <contextmenu>
         <!-- Enable context menu on control 211 -->
         <enableon>211</enableon>
 
         <!-- Add enable/disable controls -->
-        <item control="313" condition="String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),False)">$LOCALIZE[24021]</item>
-        <item control="313" condition="String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)">$LOCALIZE[24022]</item>
-        <!--<item control="401">$ADDON[script.skinshortcuts 32048]</item>-->
+        <!--<item control="313" condition="String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),False)">$LOCALIZE[24021]</item>-->
+        <!--<item control="313" condition="String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)">$LOCALIZE[24022]</item>-->
+        <item control="401">$ADDON[script.skinshortcuts 32048]</item>
         <!--<item control="303">$ADDON[script.skinshortcuts 32002]</item>-->
         <!--<item control="304">$ADDON[script.skinshortcuts 32003]</item>-->
-        <!--<item control="305">$ADDON[script.skinshortcuts 32025]</item>-->
-        <!--<item control="306">$ADDON[script.skinshortcuts 32026]</item>-->
-        <!--<item control="307">$ADDON[script.skinshortcuts 32027]</item>-->
+        <item control="305">$ADDON[script.skinshortcuts 32025]</item>
+        <item control="306">$ADDON[script.skinshortcuts 32026]</item>
+        <item control="307">$ADDON[script.skinshortcuts 32027]</item>
         <!--<item control="301">$ADDON[script.skinshortcuts 32000]</item>-->
-        <!--<item control="302">$ADDON[script.skinshortcuts 32001]</item>-->
+        <item control="302">$ADDON[script.skinshortcuts 32001]</item>
 
     </contextmenu>
 
