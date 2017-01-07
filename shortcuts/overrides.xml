@@ -2,7 +2,7 @@
 <overrides>
     <requiredshortcut label="5" thumbnail="icons/settings.png" icon="icons/settings.png">SetFocus(10020)</requiredshortcut>
     <warn heading="$LOCALIZE[14117]" message="$LOCALIZE[31019]">SetFocus(10020)</warn>
-    <thumbnailBrowseDefault>special://skin/resources/extraicons/</thumbnailBrowseDefault>
+    <thumbnailBrowseDefault>resource://resource.images.sio2.icons/</thumbnailBrowseDefault>
 
     <contextmenu>
         <!-- Enable context menu on control 211 -->
