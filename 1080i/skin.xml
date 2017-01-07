@@ -248,7 +248,7 @@
                 </control>
                 <control type="label">
                     <width>600</width>
-                    <include>50TitleFO</include>
+                    <include>BigListTitleFO</include>
                     <selectedcolor>FFe2ff43</selectedcolor>
                     <textcolor>FFFFFFFF</textcolor>
                     <align>left</align>
@@ -261,7 +261,7 @@
                     <height>250</height>
                     <font>Size24</font>
                     <aligny>top</aligny>
-                    <textcolor>Grey</textcolor>
+                    <textcolor>gray</textcolor>
                     <label>$INFO[ListItem.Label2]</label>
                 </control>
             </itemlayout>
@@ -283,7 +283,7 @@
                 </control>
                 <control type="label">
                     <width>600</width>
-                    <include>50TitleFO</include>
+                    <include>BigListTitleFO</include>
                     <selectedcolor>FFe2ff43</selectedcolor>
                     <textcolor>FFFFFFFF</textcolor>
                     <align>left</align>
@@ -296,7 +296,7 @@
                     <height>250</height>
                     <font>Size24</font>
                     <aligny>top</aligny>
-                    <textcolor>Grey</textcolor>
+                    <textcolor>gray</textcolor>
                     <label>$INFO[ListItem.Label2]</label>
                 </control>
             </focusedlayout>
@@ -324,7 +324,7 @@
                 <control type="label">
                     <width>600</width>
                     <scroll>false</scroll>
-                    <include>50TitleFO</include>
+                    <include>BigListTitleFO</include>
                     <selectedcolor>FFe2ff43</selectedcolor>
                     <textcolor>FFFFFFFF</textcolor>
                     <align>left</align>
@@ -337,7 +337,7 @@
                     <height>250</height>
                     <font>Size24</font>
                     <aligny>top</aligny>
-                    <textcolor>Grey</textcolor>
+                    <textcolor>gray</textcolor>
                     <label>$INFO[ListItem.Label2]</label>
                 </control>
             </itemlayout>
@@ -359,7 +359,7 @@
                 </control>
                 <control type="label">
                     <width>600</width>
-                    <include>50TitleFO</include>
+                    <include>BigListTitleFO</include>
                     <textcolor>FFFFFFFF</textcolor>
                     <align>left</align>
                     <info>ListItem.Label</info>
@@ -371,7 +371,7 @@
                     <height>250</height>
                     <font>Size24</font>
                     <aligny>top</aligny>
-                    <textcolor>Grey</textcolor>
+                    <textcolor>gray</textcolor>
                     <label>$INFO[ListItem.Label2]</label>
                 </control>
             </focusedlayout>
@@ -397,7 +397,7 @@
                     <width>281</width>
                     <height>281</height>
                     <aspectratio>keep</aspectratio>
-                    <texture>$INFO[ListItem.Thumb]</texture>
+                    <texture>$INFO[ListItem.Art(thumb)]</texture>
                 </control>
             </itemlayout>
             <focusedlayout height="345" width="300">
@@ -407,7 +407,7 @@
                     <width>281</width>
                     <height>281</height>
                     <aspectratio>keep</aspectratio>
-                    <texture>$INFO[ListItem.Thumb]</texture>
+                    <texture>$INFO[ListItem.Art(thumb)]</texture>
                 </control>
                 <control type="label">
                     <left>150</left>
@@ -439,6 +439,7 @@
                 <width>450</width>
                 <height>550</height>
                 <texture border="50">images/contextmenu.png</texture>
+                <colordiffuse>dialog</colordiffuse>
             </control>
             <control type="list" id="122">
                 <description>list3</description>
@@ -462,7 +463,7 @@
                         <height>60</height>
                         <font>Size30</font>
                         <aligny>center</aligny>
-                        <textcolor>Silver</textcolor>
+                        <textcolor>whitesmoke</textcolor>
                         <align>center</align>
                         <info>ListItem.Label</info>
                     </control>
@@ -501,6 +502,7 @@
                 <width>450</width>
                 <height>550</height>
                 <texture border="50">images/contextmenu.png</texture>
+                <colordiffuse>dialog</colordiffuse>
             </control>
             <control type="list" id="127">
                 <description>list4</description>
@@ -523,7 +525,7 @@
                         <height>60</height>
                         <font>Size30</font>
                         <aligny>center</aligny>
-                        <textcolor>Silver</textcolor>
+                        <textcolor>whitesmoke</textcolor>
                         <align>center</align>
                         <info>ListItem.Label</info>
                     </control>

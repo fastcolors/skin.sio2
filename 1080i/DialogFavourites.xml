@@ -2,12 +2,11 @@
 <window type="dialog" id="134">
   <defaultcontrol always="true">450</defaultcontrol>
   <allowoverlay>no</allowoverlay>
-  <onunload>RunScript(script.favourites)</onunload>
   <include>OpenClose</include>
   <controls>
     <include>BlackBackground</include>
     <control type="label" description="Header label">
-      <include>HeadingR</include>
+      <include>Heading</include>
       <label>1036</label>
     </control>
     <control type="group">
@@ -26,68 +25,8 @@
         <scrolltime tween="sine" easing="inout">280</scrolltime>
         <include>LargeListLayout</include>
       </control>
-      <control type="group" description="Slider">
-        <include>Scrollanim</include>
-        <include>Slider2</include>
-        <animation type="Conditional" condition="ControlGroup(9000).HasFocus()">
-          <effect type="fade" start="100" end="40" time="0" reversible="true" />
-        </animation>
-        <animation condition="Container(450).Position(0)" effect="slide" start="0,0" end="0,-333" time="180" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(450).Position(1)" effect="slide" start="0,0" end="0,-222" time="180" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(450).Position(2)" effect="slide" start="0,0" end="0,-111" time="180" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(450).Position(3)" effect="slide" start="0,0" end="0,0" time="180" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(450).Position(4)" effect="slide" start="0,0" end="0,111" time="180" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(450).Position(5)" effect="slide" start="0,0" end="0,222" time="180" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(450).Position(6)" effect="slide" start="0,0" end="0,333" time="180" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(450).Position(7)" effect="slide" start="0,0" end="0,444" time="180" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(450).Position(8)" effect="slide" start="0,0" end="0,555" time="180" easing="inout" reversible="true">Conditional</animation>
-      </control>
     </control>
-    <control type="image">
-      <visible>Container.HasPrevious</visible>
-      <animation effect="fade" time="200">VisibleChange</animation>
-      <left>1005</left>
-      <top>135</top>
-      <height>81</height>
-      <width>832</width>
-      <texture flipy="true">images/DefaultGradient.png</texture>
-      <aspectratio>stretch</aspectratio>
-    </control>
-    <control type="image">
-      <animation effect="fade" time="200">VisibleChange</animation>
-      <visible>Container.HasNext</visible>
-      <left>1005</left>
-      <top>963</top>
-      <height>81</height>
-      <width>832</width>
-      <texture>images/DefaultGradient.png</texture>
-      <aspectratio>stretch</aspectratio>
-    </control>
-    <control type="group" description="Thumbs">
-      <left>-6</left>
-      <top>267</top>
-      <!--<animation effect="rotatey" start="0" end="-9" center="260," time="0" reversible="false" condition="true">Conditional</animation>-->
-      <control type="group" description="Squares">
-        <control type="image" description="Thumb Reflection">
-          <left>248</left>
-          <top>585</top>
-          <width>495</width>
-          <height>495</height>
-          <include>Icon_Fade</include>
-          <texture background="true" diffuse="images/Reflection.png" flipy="true">$INFO[ListItem.Icon]</texture>
-          <aspectratio>keep</aspectratio>
-        </control>
-        <control type="image" description="Thumb">
-          <left>248</left>
-          <top>90</top>
-          <width>495</width>
-          <height>495</height>
-          <include>Icon_Fade</include>
-          <texture diffuse="images/DiffuseB.png" background="true">$INFO[ListItem.Icon]</texture>
-          <aspectratio>keep</aspectratio>
-        </control>
-      </control>
-    </control>
+    <include>left_Panel_plain</include>
     <control type="scrollbar" id="60">
       <left>51r</left>
       <top>135</top>

@@ -18,7 +18,7 @@
 			<label>$LOCALIZE[19142]</label>
 			<align>center</align>
 			<aligny>center</aligny>
-			<textcolor>Yellow</textcolor>
+			<textcolor>orange</textcolor>
 			<visible>!pvr.IsPlayingRadio</visible>
 		</control>
 		<control type="image">
@@ -80,7 +80,7 @@
 			<height>70</height>
 			<align>center</align>
 			<font>font12</font>
-			<textcolor>Grey</textcolor>
+			<textcolor>gray</textcolor>
 			<label>$LOCALIZE[19001] $LOCALIZE[19002]</label>
 		</control>
 		<control type="group">

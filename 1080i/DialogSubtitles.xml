@@ -33,7 +33,7 @@
                     <width>1400</width>
                     <height>60</height>
                     <font>size27</font>
-                    <textcolor>Silver</textcolor>
+                    <textcolor>whitesmoke</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
                     <wrapmultiline>true</wrapmultiline>
@@ -82,7 +82,7 @@
                         <width>33</width>
                         <height>54</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>flags/$INFO[ListItem.Thumb].png</texture>
+                        <texture>flags/$INFO[ListItem.Art(thumb)].png</texture>
                     </control>
                     <control type="label">
                         <left>54</left>
@@ -90,7 +90,7 @@
                         <height>54</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>Grey</textcolor>
+                        <textcolor>gray</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
                         <info>ListItem.Label</info>
@@ -117,7 +117,7 @@
                         <height>54</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>Grey</textcolor>
+                        <textcolor>gray</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
                         <info>ListItem.Label2</info>
@@ -126,7 +126,7 @@
                         <left>1230</left>
                         <width>120</width>
                         <height>54</height>
-                        <colordiffuse>Grey</colordiffuse>
+                        <colordiffuse>gray</colordiffuse>
                         <aspectratio>keep</aspectratio>
                         <texture>badges/$INFO[ListItem.ActualIcon].0.png</texture>
                     </control>
@@ -143,7 +143,7 @@
                         <width>33</width>
                         <height>54</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>flags/$INFO[ListItem.Thumb].png</texture>
+                        <texture>flags/$INFO[ListItem.Art(thumb)].png</texture>
                     </control>
                     <control type="label">
                         <left>54</left>
@@ -252,7 +252,7 @@
                         <height>57</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <selectedcolor>Yellow</selectedcolor>
+                        <selectedcolor>orange</selectedcolor>
                         <align>left</align>
                         <info>ListItem.Label</info>
                         <visible>!ListItem.property(man)</visible>
@@ -286,7 +286,7 @@
                         <font>size27</font>
                         <aligny>center</aligny>
                         <textcolor>white</textcolor>
-                        <selectedcolor>Yellow</selectedcolor>
+                        <selectedcolor>orange</selectedcolor>
                         <align>left</align>
                         <info>ListItem.Label</info>
                         <visible>!ListItem.property(man)</visible>

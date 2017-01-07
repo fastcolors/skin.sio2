@@ -20,7 +20,7 @@
         <align>center</align>
         <font>size36</font>
         <textcolor>White</textcolor>
-        <shadowcolor>Black</shadowcolor>
+        <shadowcolor>-</shadowcolor>
         <animation effect="fade" time="200">VisibleChange</animation>
       </control>
       <control type="slider" id="11" description="Slider">
@@ -42,7 +42,7 @@
         <align>center</align>
         <font>size27</font>
         <textcolor>White</textcolor>
-        <shadowcolor>Black</shadowcolor>
+        <shadowcolor>-</shadowcolor>
         <animation effect="fade" time="200">VisibleChange</animation>
       </control>
     </control>

@@ -10,18 +10,6 @@
       <include>HeadingL</include>
       <label>10503</label>
     </control>
-    <control type="label" description="Clock">
-      <visible>Skin.HasSetting(ShowClock)</visible>
-      <left>50</left>
-      <top>3</top>
-      <width>195</width>
-      <height>75</height>
-      <align>right</align>
-      <aligny>center</aligny>
-      <font>size33B</font>
-      <textcolor>White</textcolor>
-      <label>$INFO[System.Time]</label>
-    </control>
     <control type="group">
       <description>Left panel</description>
       <left>20</left>
@@ -143,7 +131,7 @@
           <height>360</height>
           <aligny>bottom</aligny>
           <aspectratio>keep</aspectratio>
-          <texture fallback="defaultalbumcover.png">$INFO[Container(50).ListItem.Thumb]</texture>
+          <texture fallback="defaultalbumcover.png">$INFO[Container(50).ListItem.Art(thumb)]</texture>
           <bordersize>2</bordersize>
         </control>
         <control type="image">
@@ -164,7 +152,7 @@
           <height>420</height>
           <font>size26</font>
           <align>center</align>
-          <label>$INFO[Container(50).ListItem.Artist,[COLOR=Grey]$LOCALIZE[557]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Album,[COLOR=Grey]$LOCALIZE[558]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Duration,[COLOR=Grey]$LOCALIZE[555]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Genre,[COLOR=Grey]$LOCALIZE[515]:[/COLOR] ,[CR]]</label>
+          <label>$INFO[Container(50).ListItem.Artist,[COLOR=gray]$LOCALIZE[557]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Album,[COLOR=gray]$LOCALIZE[558]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Duration,[COLOR=gray]$LOCALIZE[555]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Genre,[COLOR=gray]$LOCALIZE[515]:[/COLOR] ,[CR]]</label>
         </control>
       </control>
       <control type="group">
@@ -177,7 +165,7 @@
           <width>360</width>
           <height>360</height>
           <aspectratio>keep</aspectratio>
-          <texture fallback="defaultalbumcover.png">$INFO[Container(100).ListItem.Thumb]</texture>
+          <texture fallback="defaultalbumcover.png">$INFO[Container(100).ListItem.Art(thumb)]</texture>
           <bordersize>2</bordersize>
         </control>
         <control type="textbox">
@@ -187,7 +175,7 @@
           <height>420</height>
           <font>size26</font>
           <align>center</align>
-          <label>$INFO[Container(100).ListItem.Artist,[COLOR=Grey]$LOCALIZE[557]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Album,[COLOR=Grey]$LOCALIZE[558]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Duration,[COLOR=Grey]$LOCALIZE[555]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Genre,[COLOR=Grey]$LOCALIZE[515]:[/COLOR] ,[CR]]</label>
+          <label>$INFO[Container(100).ListItem.Artist,[COLOR=gray]$LOCALIZE[557]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Album,[COLOR=gray]$LOCALIZE[558]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Duration,[COLOR=gray]$LOCALIZE[555]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Genre,[COLOR=gray]$LOCALIZE[515]:[/COLOR] ,[CR]]</label>
         </control>
       </control>
       <control type="image" description="separator Bottom">
@@ -246,7 +234,7 @@
         <label>-</label>
       </control>
       <control type="image" description="Slider 100">
-        <visible>!IsEmpty(Container(100).ListItem.Label) + Control.IsVisible(100)</visible>
+        <visible>!String.IsEmpty(Container(100).ListItem.Label) + Control.IsVisible(100)</visible>
         <left>0</left>
         <top>96</top>
         <width>600</width>
@@ -269,7 +257,7 @@
         <animation condition="Container(100).Position(11)" effect="slide" start="0,0" end="0,660" time="180" reversible="true">Conditional</animation>
       </control>
       <control type="fixedlist" id="100">
-        <visible>!IsEmpty(Container(100).ListItem.Label)</visible>
+        <visible>!String.IsEmpty(Container(100).ListItem.Label)</visible>
         <left>-15</left>
         <top>93</top>
         <width>630</width>

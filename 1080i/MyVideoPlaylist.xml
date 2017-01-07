@@ -11,15 +11,6 @@
           <top>240</top>
           <animation effect="fade" time="400">Visible</animation>
           <animation effect="fade" time="0">Hidden</animation>
-          <control type="image" description="Thumb Reflection">
-            <left>180</left>
-            <top>720</top>
-            <width>621</width>
-            <height>720</height>
-            <include>Icon_Fade</include>
-            <texture background="true" diffuse="images/Reflection0Long.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-            <aspectratio aligny="top">keep</aspectratio>
-          </control>
           <control type="image" description="Thumb">
             <left>180</left>
             <top>0</top>
@@ -33,7 +24,7 @@
         <control type="group" description="Slider and List">
           <include>LargeListItemCount</include>
           <left>1020</left>
-      <top>131</top>
+          <top>131</top>
           <control type="fixedlist" id="50">
             <left>0</left>
             <top>0</top>
@@ -51,7 +42,7 @@
             <preloaditems>4</preloaditems>
             <scrolltime tween="sine" easing="inout">280</scrolltime>
             <itemlayout width="802" height="111">
-              
+
               <control type="image" description="KEEP">
                 <left>0</left>
                 <top>0</top>
@@ -62,34 +53,34 @@
                 <aspectratio>keep</aspectratio>
               </control>
               <control type="label" description="Main Label">
-                <visible>!IsEmpty(ListItem.Artist) | !IsEmpty(ListItem.Label2)</visible>
+                <visible>!String.IsEmpty(ListItem.Artist) | !String.IsEmpty(ListItem.Label2)</visible>
                 <left>195</left>
                 <width>570</width>
-                <include>50Title</include>
+                <include>BigListTitle</include>
                 <label>$INFO[ListItem.Label]</label>
               </control>
               <control type="label" description="Main Label">
-                <visible>IsEmpty(ListItem.Artist) + IsEmpty(ListItem.Label2)</visible>
+                <visible>String.IsEmpty(ListItem.Artist) + String.IsEmpty(ListItem.Label2)</visible>
                 <top>27</top>
                 <left>195</left>
                 <width>570</width>
-                <include>50Title</include>
+                <include>BigListTitle</include>
                 <label>$INFO[ListItem.Label]</label>
               </control>
               <control type="label" description="Label2">
                 <left>195</left>
-                <include>50details</include>
+                <include>BigListDetails</include>
                 <label>$INFO[ListItem.Artist]</label>
               </control>
               <control type="label" description="Label2">
-                <visible>IsEmpty(ListItem.Artist)</visible>
+                <visible>String.IsEmpty(ListItem.Artist)</visible>
                 <left>195</left>
-                <include>50details</include>
+                <include>BigListDetails</include>
                 <label>$INFO[ListItem.Label2]</label>
               </control>
             </itemlayout>
             <focusedlayout width="802" height="111">
-              
+
               <control type="image" description="KEEP">
                 <left>0</left>
                 <top>0</top>
@@ -100,36 +91,36 @@
                 <aspectratio>keep</aspectratio>
               </control>
               <control type="label" description="Main Label">
-                <visible>!IsEmpty(ListItem.Artist) | !IsEmpty(ListItem.Label2)</visible>
+                <visible>!String.IsEmpty(ListItem.Artist) | !String.IsEmpty(ListItem.Label2)</visible>
                 <left>195</left>
                 <width>570</width>
-                <include>50TitleFO</include>
+                <include>BigListTitleFO</include>
                 <label>$INFO[ListItem.Label]</label>
               </control>
               <control type="label" description="Main Label">
-                <visible>IsEmpty(ListItem.Artist) + IsEmpty(ListItem.Label2)</visible>
+                <visible>String.IsEmpty(ListItem.Artist) + String.IsEmpty(ListItem.Label2)</visible>
                 <top>27</top>
                 <left>195</left>
                 <width>570</width>
-                <include>50TitleFO</include>
+                <include>BigListTitleFO</include>
                 <label>$INFO[ListItem.Label]</label>
               </control>
               <control type="label" description="Label2">
                 <left>195</left>
-                <include>50detailsFO</include>
+                <include>BigListDetailsFO</include>
                 <label>$INFO[ListItem.Artist]</label>
               </control>
               <control type="label" description="Label2">
-                <visible>IsEmpty(ListItem.Artist)</visible>
+                <visible>String.IsEmpty(ListItem.Artist)</visible>
                 <left>195</left>
-                <include>50detailsFO</include>
+                <include>BigListDetailsFO</include>
                 <label>$INFO[ListItem.Label2]</label>
               </control>
             </focusedlayout>
           </control>
           <include>LargeListSlider</include>
         </control>
-        <include>ListFade</include>
+
         <control type="scrollbar" id="60">
           <left>51r</left>
           <top>135</top>
@@ -142,12 +133,13 @@
         <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
         <include>DialogOpenCloseVisible</include>
         <control type="image" description="List back">
-          <left>459</left>
-          <top>168</top>
-          <width>1002</width>
-          <height>762</height>
+          <centerleft>960</centerleft>
+          <centertop>540</centertop>
+          <width>802</width>
+          <height>906</height>
           <aspectratio>stretch</aspectratio>
-          <texture border="150">images/Dialog.png</texture>
+          <texture border="50">images/ContextMenu.png</texture>
+          <colordiffuse>dialog</colordiffuse>
         </control>
         <control type="grouplist" id="9000">
           <include>DialogGLs</include>

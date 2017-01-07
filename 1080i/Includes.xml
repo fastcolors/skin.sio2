@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <include file="script-skinshortcuts-includes.xml"/>
+    <include file="Includes_Expressions.xml" />
     <include file="Includes_Variables.xml" />
     <include file="Defaults.xml" />
     <include file="CommonViews.xml" />
-    <include file="Videoviews.xml" />
-    <include file="Musicviews.xml" />
-    <include file="Programviews.xml" />
+
+    <include file="views/video_biglist.xml" />
+    <include file="views/video_icons.xml" />
+    <include file="views/video_banners.xml" />
+    <include file="views/video_widelist.xml" />
+
+    <include file="views/music_library.xml" />
+    <include file="views/music_albums.xml" />
+    <include file="views/music_artists.xml" />
+    <include file="views/music_songs.xml" />
+
+    <include file="views/Programviews.xml" />
+
     <include file="Includes_Home.xml" />
     <include file="Includes_Shelf.xml" />
     <include name="VisibleFade">
@@ -28,11 +40,11 @@
     <include name="DialogOpenCloseVisible">
         <animation type="Visible">
             <effect type="fade" start="0" end="100" time="240" />
-            <effect type="zoom" tween="cubic" easing="out" start="30" end="100" center="960,340" time="240" />
+            <effect type="zoom" tween="cubic" easing="out" start="30" end="100" center="960,540" time="240" />
         </animation>
         <animation type="Hidden">
             <effect type="fade" start="100" end="0" time="140" />
-            <effect type="zoom" tween="cubic" easing="in" start="100" end="30" center="960,340" time="140" />
+            <effect type="zoom" tween="cubic" easing="in" start="100" end="30" center="960,540" time="140" />
         </animation>
     </include>
     <include name="Fanart_Fade">
@@ -55,34 +67,13 @@
         <texturefocus>-</texturefocus>
     </include>
     <include name="Heading">
-        <left>330</left>
-        <top>0</top>
+        <centerleft>960</centerleft>
+        <top>10</top>
         <align>center</align>
         <aligny>center</aligny>
         <width>1260</width>
-        <height>75</height>
-        <textcolor>White2</textcolor>
-        <font>size42</font>
-    </include>
-    <include name="HeadingL">
-        <left>60</left>
-        <top>20</top>
-        <align>left</align>
-        <aligny>center</aligny>
-        <width>1260</width>
-        <height>45</height>
-        <textcolor>White2</textcolor>
-        <font>size42</font>
-    </include>
-    <include name="HeadingR">
-        <left>960</left>
-        <top>60</top>
-        <width>930</width>
-        <height>75</height>
-        <align>center</align>
-        <aligny>bottom</aligny>
-        <textcolor>White2</textcolor>
-        <font>size42</font>
+        <height>70</height>
+        <font>size42B</font>
     </include>
     <include name="Dimensions_Fullscreen">
         <left>0</left>
@@ -93,177 +84,38 @@
     <include name="Header">
         <control type="group">
             <visible>![Window.IsActive(home) | Window.IsActive(LoginScreen.xml)]</visible>
-            <control type="label" description="Clock other windows">
-                <visible>Skin.HasSetting(ShowClock)</visible>
-                <left>30r</left>
-                <top>3</top>
-                <width>195</width>
-                <height>75</height>
-                <align>right</align>
-                <aligny>center</aligny>
-                <font>size33B</font>
-                <textcolor>White</textcolor>
-                <label>$INFO[System.Time]</label>
-            </control>
             <control type="label" description="Heading">
-                <left>0</left>
-                <top>0</top>
                 <align>center</align>
                 <aligny>center</aligny>
                 <width>1920</width>
                 <height>75</height>
-                <textcolor>White2</textcolor>
                 <font>size42</font>
                 <label>$VAR[RootLabel]</label>
             </control>
-        </control>
-    </include>
-    <include name="Clock">
-        <control type="label" description="Clock no title">
-            <visible>![Window.IsActive(home) | Window.IsActive(LoginScreen.xml)]</visible>
-            <visible>Skin.HasSetting(ShowClock)</visible>
-            <left>0</left>
-            <top>0</top>
-            <width>1920</width>
-            <height>75</height>
-            <align>center</align>
-            <aligny>center</aligny>
-            <font>size36B</font>
-            <textcolor>White</textcolor>
-            <label>$INFO[System.Time] $INFO[System.Date]</label>
         </control>
     </include>
     <include name="WindowsTopInfos">
-        <control type="group">
-            <control type="label" description="Clock">
-                <visible>Skin.HasSetting(ShowClock)</visible>
-                <right>50</right>
-                <top>3</top>
-                <width>195</width>
-                <height>75</height>
-                <align>right</align>
-                <aligny>center</aligny>
-                <font>size33B</font>
-                <textcolor>White</textcolor>
-                <label>$INFO[System.Time]</label>
-            </control>
-        </control>
-        <control type="grouplist">
-            <visible>![Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(58) | Control.IsVisible(500) | Control.IsVisible(510) | Control.IsVisible(501) | Control.IsVisible(502) | [Window.IsActive(myPVR) + Control.IsVisible(10)] | [Window.IsActive(myPVR) + Control.IsVisible(14)]]</visible>
-            <left>990</left>
-            <top>60</top>
-            <width>870</width>
-            <height>75</height>
-            <align>center</align>
-            <aligny>bottom</aligny>
-            <orientation>horizontal</orientation>
-            <control type="label" id="7777" description="Heading">
-                <width min="60" max="750">auto</width>
-                <height>75</height>
-                <font>Size42</font>
-                <textcolor>White2</textcolor>
-                <scroll>false</scroll>
-                <label>$VAR[RootLabel]</label>
-            </control>
-            <control type="label" description="Number of files">
-                <visible>!IsEmpty(Control.GetLabel(7777))</visible>
-                <width min="60" max="120">auto</width>
-                <height>81</height>
-                <font>size26</font>
-                <textcolor>Grey</textcolor>
-                <label>$INFO[Container.NumItems,  (,)]</label>
-            </control>
-        </control>
-        <control type="grouplist">
-            <visible>Control.IsVisible(52) | Control.IsVisible(58) | Control.IsVisible(500) | Control.IsVisible(501) | Control.IsVisible(510) | Control.IsVisible(502) | [Window.IsActive(myPVR) + Control.IsVisible(10)] | [Window.IsActive(myPVR) + Control.IsVisible(14)]</visible>
-            <left>33</left>
-            <top>0</top>
-            <width>1230</width>
-            <height>75</height>
-            <align>left</align>
-            <aligny>bottom</aligny>
-            <orientation>horizontal</orientation>
-            <control type="label" id="7777" description="Heading">
-                <width min="60" max="1080">auto</width>
-                <height>75</height>
-                <font>size42</font>
-                <textcolor>White2</textcolor>
-                <scroll>false</scroll>
-                <label>$VAR[RootLabel]</label>
-            </control>
-            <control type="label" description="Number of files">
-                <visible>!IsEmpty(Control.GetLabel(7777))</visible>
-                <width min="60" max="120">auto</width>
-                <height>81</height>
-                <font>size26</font>
-                <textcolor>Grey</textcolor>
-                <label>$INFO[Container.NumItems,  (,)]</label>
-            </control>
-        </control>
         <control type="group" description="Scroll letter">
-            <visible>Container.Scrolling + !Control.IsVisible(53) + !Control.IsVisible(500)</visible>
+            <visible>Container.Scrolling</visible>
             <animation effect="fade" start="0" end="100" time="50" delay="0" reversible="false">Visible</animation>
             <animation effect="fade" start="100" end="0" time="150" delay="250" reversible="false">Hidden</animation>
-            <control type="image">
-                <left>1388</left>
-                <top>975</top>
-                <width>81</width>
-                <height>81</height>
-                <texture border="12">images/SortLetterBG.png</texture>
-            </control>
+            <!--<control type="image">-->
+            <!--<left>1388</left>-->
+            <!--<top>975</top>-->
+            <!--<width>81</width>-->
+            <!--<height>81</height>-->
+            <!--<texture border="8">images/White.png</texture>-->
+            <!--</control>-->
             <control type="label">
-                <left>1388</left>
-                <top>975</top>
-                <width>81</width>
-                <height>81</height>
+                <centerleft>960</centerleft>
+                <centertop>540</centertop>
+                <width>1920</width>
+                <height>1080</height>
                 <align>center</align>
-                <font>size38</font>
+                <font>sizescroll</font>
                 <label>$INFO[ListItem.SortLetter]</label>
             </control>
         </control>
-        <control type="group" description="Scroll letter">
-            <visible>Container.Scrolling + Control.IsVisible(500) + Control.HasFocus(60)</visible>
-            <animation effect="fade" start="0" end="100" time="50" delay="0" reversible="false">Visible</animation>
-            <animation effect="fade" start="100" end="0" time="150" delay="250" reversible="false">Hidden</animation>
-            <control type="image">
-                <left>920</left>
-                <top>975</top>
-                <width>81</width>
-                <height>81</height>
-                <texture border="12">images/SortLetterBG.png</texture>
-            </control>
-            <control type="label">
-                <left>920</left>
-                <top>975</top>
-                <width>81</width>
-                <height>81</height>
-                <align>center</align>
-                <font>size38</font>
-                <label>$INFO[ListItem.SortLetter]</label>
-            </control>
-        </control>
-        <control type="group" description="Scroll letter">
-            <visible>Container.Scrolling + Control.IsVisible(53)</visible>
-            <animation effect="fade" start="0" end="100" time="50" delay="0" reversible="false">Visible</animation>
-            <animation effect="fade" start="100" end="0" time="150" delay="250" reversible="false">Hidden</animation>
-            <control type="image">
-                <left>1800</left>
-                <top>499</top>
-                <width>81</width>
-                <height>81</height>
-                <texture border="12">images/SortLetterBG.png</texture>
-            </control>
-            <control type="label">
-                <left>1800</left>
-                <top>499</top>
-                <width>81</width>
-                <height>81</height>
-                <align>center</align>
-                <font>size38</font>
-                <label>$INFO[ListItem.SortLetter]</label>
-            </control>
-        </control>
-
         <!--DA FARE-->
         <control type="group" description="Player Info">
             <visible>!Control.HasFocus(340) + Player.HasMedia + ![Window.IsActive(DialogBusy.xml) | Window.IsActive(VideoFullscreen.xml) | Window.IsActive(myPVR.xml)]</visible>
@@ -274,7 +126,7 @@
             <control type="image" description="Playing BG">
                 <width>390</width>
                 <height>105</height>
-                <texture border="14">musicOSD/back.png</texture>
+                <texture border="8">images/White.png</texture>
             </control>
             <control type="group">
                 <control type="image">
@@ -300,7 +152,7 @@
                     <width>261</width>
                     <height>36</height>
                     <font>size24</font>
-                    <textcolor>White2</textcolor>
+                    <textcolor>black</textcolor>
                     <label>$INFO[MusicPlayer.Title]</label>
                 </control>
                 <control type="label">
@@ -310,6 +162,7 @@
                     <width>261</width>
                     <height>36</height>
                     <font>size21</font>
+                    <textcolor>black</textcolor>
                     <label>$INFO[MusicPlayer.Artist]</label>
                 </control>
                 <control type="label">
@@ -319,6 +172,7 @@
                     <width>261</width>
                     <height>36</height>
                     <font>size21</font>
+                    <textcolor>black</textcolor>
                     <label>$INFO[MusicPlayer.Album]</label>
                 </control>
                 <control type="label">
@@ -328,7 +182,7 @@
                     <width>261</width>
                     <height>36</height>
                     <font>size24</font>
-                    <textcolor>White2</textcolor>
+                    <textcolor>black</textcolor>
                     <label>$INFO[VideoPlayer.Title]</label>
                 </control>
                 <control type="label">
@@ -338,6 +192,7 @@
                     <width>261</width>
                     <height>36</height>
                     <font>size21</font>
+                    <textcolor>black</textcolor>
                     <label>$INFO[VideoPlayer.Artist]</label>
                 </control>
                 <control type="label">
@@ -347,6 +202,7 @@
                     <width>261</width>
                     <height>36</height>
                     <font>size21</font>
+                    <textcolor>black</textcolor>
                     <label>$INFO[VideoPlayer.Album]</label>
                 </control>
             </control>
@@ -363,131 +219,19 @@
         <aspectratio aligny="center" align="left">stretch</aspectratio>
     </include>
     <include name="BlackBackground">
-        <control type="image" description="Default BG">
+        <control type="image" description="Background_dark">
+            <visible>Skin.HasTheme(Dark)</visible>
             <width>1920</width>
             <height>1080</height>
-            <texture>images/Black.png</texture>
+            <aspectratio>stretch</aspectratio>
+            <texture>special://skin/resources/DarkHomeBG.png</texture>
         </control>
-    </include>
-    <include name="SettingsClock">
-        <control type="label" id="7777" description="Heading">
-            <left>990</left>
-            <top>60</top>
-            <width>900</width>
-            <height>75</height>
-            <font>size42</font>
-            <textcolor>White2</textcolor>
-            <align>center</align>
-            <scroll>false</scroll>
-            <label>$VAR[RootLabel]</label>
-        </control>
-        <control type="label" description="Clock no title">
-            <visible>![Window.IsActive(home) | Window.IsActive(LoginScreen.xml)]</visible>
-            <visible>Skin.HasSetting(ShowClock)</visible>
-            <left>33r</left>
-            <top>3</top>
-            <width>195</width>
-            <height>75</height>
-            <align>right</align>
-            <aligny>center</aligny>
-            <font>size33B</font>
-            <textcolor>White</textcolor>
-            <label>$INFO[System.Time]</label>
-        </control>
-    </include>
-    <include name="PVRinfos">
-        <control type="image">
-            <description>background image</description>
-            <left>-170</left>
-            <top>-150</top>
-            <width>1460</width>
-            <height>800</height>
-            <texture border="150">images/Dialog.png</texture>
-            <visible>![Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)]</visible>
-        </control>
-        <control type="image">
-            <top>110</top>
-            <width>1160</width>
-            <height>1</height>
-            <texture>images/Line.png</texture>
-        </control>
-        <control type="image">
-            <left>0</left>
-            <top>370</top>
-            <width>1160</width>
-            <height>1</height>
-            <texture>images/Line.png</texture>
-        </control>
-        <control type="label">
-            <description>header label</description>
-            <left>20</left>
-            <top>0</top>
-            <width>1100</width>
-            <height>30</height>
-            <font>size26</font>
-            <label>$LOCALIZE[19047]</label>
-            <align>center</align>
-            <aligny>center</aligny>
-            <textcolor>White</textcolor>
-        </control>
-        <control type="label">
-            <description>Title label</description>
-            <left>20</left>
-            <top>40</top>
-            <width>1100</width>
-            <height>30</height>
-            <font>size33B</font>
-            <label>$INFO[ListItem.Title]</label>
-            <align>center</align>
-            <aligny>center</aligny>
-            <textcolor>Yellow</textcolor>
-            <shadowcolor>black</shadowcolor>
-        </control>
-        <control type="label">
-            <description>Start time</description>
-            <left>20</left>
-            <top>75</top>
-            <width>1100</width>
-            <height>25</height>
-            <align>center</align>
-            <aligny>center</aligny>
-            <font>Size26</font>
-            <textcolor>Grey</textcolor>
-            <label>$LOCALIZE[142] $INFO[ListItem.StartTime]</label>
-        </control>
-        <control type="textbox" id="400">
-            <description>Plot value</description>
-            <left>20</left>
-            <top>110</top>
-            <width>1080</width>
-            <height>260</height>
-            <font>size26</font>
-            <align>justify</align>
-            <textcolor>white</textcolor>
-            <pagecontrol>-</pagecontrol>
-            <label fallback="161">$INFO[ListItem.Plot]</label>
-        </control>
-        <control type="label">
-            <description>Duration</description>
-            <left>60</left>
-            <top>390</top>
-            <width>1000</width>
-            <height>25</height>
-            <align>center</align>
-            <font>size26</font>
-            <textcolor>Grey</textcolor>
-            <label>$LOCALIZE[552]: $INFO[ListItem.StartDate] / $LOCALIZE[19148]: $INFO[ListItem.ChannelName]</label>
-        </control>
-        <control type="label">
-            <description>Duration</description>
-            <left>60</left>
-            <top>420</top>
-            <width>1000</width>
-            <height>25</height>
-            <align>center</align>
-            <font>size26</font>
-            <textcolor>Grey</textcolor>
-            <label>$LOCALIZE[180]: $INFO[ListItem.Duration] / $LOCALIZE[135]: $INFO[ListItem.Genre]</label>
+        <control type="image" description="Background_def">
+            <visible>!Skin.HasTheme(Dark)</visible>
+            <width>1920</width>
+            <height>1080</height>
+            <aspectratio>stretch</aspectratio>
+            <texture>special://skin/resources/HomeBG.png</texture>
         </control>
     </include>
     <include name="PVRsidemenu">
@@ -496,99 +240,96 @@
             <include>DialogOpenCloseVisible</include>
             <control type="image" description="List back">
                 <centerleft>960</centerleft>
-                <top>50</top>
-                <width>1002</width>
-                <height>1050</height>
+                <centertop>540</centertop>
+                <width>750</width>
+                <height>1040</height>
                 <aspectratio>stretch</aspectratio>
-                <texture border="150">images/Dialog.png</texture>
+                <texture border="50">images/ContextMenu.png</texture>
+                <colordiffuse>dialog</colordiffuse>
             </control>
             <control type="grouplist" id="9000">
                 <centerleft>960</centerleft>
-                <top>200</top>
-                <height>1000</height>
+                <centertop>540</centertop>
+                <height>1080</height>
+                <align>center</align>
                 <include>DialogGLs</include>
                 <control type="button" id="3">
-                    <visible>!Window.IsActive(TVGuide)</visible>
                     <description>Sort by button</description>
                     <include>DialogButt</include>
-                    <label>103</label>
+                    <label>-</label>
                 </control>
                 <control type="togglebutton" id="4">
-                    <visible>!Window.IsActive(TVGuide)</visible>
                     <description>Sort asc</description>
                     <include>DialogButt</include>
                     <label>584</label>
                     <altlabel>585</altlabel>
                     <usealttexture>Container.SortDirection(Ascending)</usealttexture>
                 </control>
-                <control type="radiobutton" id="5">
-                    <description>Group recording items by folder structure</description>
-                    <left>0</left>
-                    <right>40</right>
-                    <include>DialogButt</include>
-                    <label>19270</label>
-                    <visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
-                </control>
                 <control type="button" id="31">
+                    <visible>!Window.IsActive(TVGuide)</visible>
+                    <description>Filter</description>
+                    <include>DialogButt</include>
+                    <onclick>-</onclick>
+                    <label>587</label>
+                </control>
+                <control type="button" id="32">
                     <description>TV Guide</description>
                     <include>DialogButt</include>
                     <onclick condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">noop</onclick>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
                     <label>22020</label>
                 </control>
-                <control type="button" id="32">
+                <control type="button" id="33">
                     <description>TV Channels</description>
                     <include>DialogButt</include>
                     <onclick condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)">noop</onclick>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
                     <label>19023</label>
                 </control>
                 <control type="button" id="34">
                     <description>Recordings</description>
                     <include>DialogButt</include>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
                     <label>19163</label>
                 </control>
                 <control type="button" id="35">
                     <description>Timers</description>
                     <include>DialogButt</include>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
                     <label>19040</label>
                 </control>
                 <control type="button" id="36">
                     <description>Search</description>
                     <include>DialogButt</include>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
                     <label>137</label>
                 </control>
                 <control type="button" id="28">
                     <description>Channel Groups</description>
-                    <left>0</left>
-                    <right>40</right>
                     <include>DialogButt</include>
                     <label>-</label>
                 </control>
                 <control type="radiobutton" id="600" description="EPG">
-                    <visible>Window.IsActive(MyPVRGuide.xml)</visible>
+                    <visible>Window.IsActive(TVGuide)</visible>
                     <include>DialogButt</include>
                     <onclick>Container.SetViewMode(10)</onclick>
                     <selected>Control.IsVisible(10)</selected>
                     <label>EPG</label>
                 </control>
                 <control type="radiobutton" id="602" description="Now">
-                    <visible>Window.IsActive(MyPVRGuide.xml)</visible>
+                    <visible>Window.IsActive(TVGuide)</visible>
                     <include>DialogButt</include>
                     <onclick>Container.SetViewMode(11)</onclick>
                     <selected>Control.IsVisible(11) + !Control.IsVisible(10)</selected>
                     <label>19030</label>
                 </control>
                 <control type="radiobutton" id="603" description="Next">
-                    <visible>Window.IsActive(MyPVRGuide.xml)</visible>
+                    <visible>Window.IsActive(TVGuide)</visible>
                     <include>DialogButt</include>
                     <onclick>Container.SetViewMode(12)</onclick>
                     <selected>Control.IsVisible(12) + !Control.IsVisible(10)</selected>
@@ -597,22 +338,295 @@
             </control>
         </control>
     </include>
-    <include name="BigListTitle">
-        <left>128</left>
-        <top>12</top>
-        <height>50</height>
-        <width>720</width>
-        <aligny>center</aligny>
-        <font>size30</font>
-        <scroll>false</scroll>
-        <textcolor>gray</textcolor>
+    <include name="selection">
+        <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+        <animation effect="zoom" start="120" end="100" time="120" center="auto">unFocus</animation>
     </include>
-    <include name="BigListDetails">
-        <left>128</left>
-        <top>63</top>
-        <height>33</height>
-        <width>350</width>
-        <font>size27</font>
-        <scroll>false</scroll>
+    <include name="diavidinfobuttons">
+        <animation effect="zoom" start="100" end="110" time="120" center="320,50" tween="Back" easing="Out">Focus</animation>
+        <animation effect="zoom" start="110" end="100" time="120" center="320,50">unFocus</animation>
+        <width>320</width>
+        <height>70</height>
+        <font>size21</font>
+        <align>right</align>
+        <aligny>top</aligny>
+        <wrapmultiline>true</wrapmultiline>
+        <textoffsetx>10</textoffsetx>
+        <onclick>noop</onclick>
+    </include>
+    <include name="diavidinfolabels">
+        <width>320</width>
+        <height>24</height>
+        <font>size21</font>
+        <textoffsetx>10</textoffsetx>
+        <align>right</align>
+        <aligny>bottom</aligny>
+    </include>
+    <include name="osdtopbutton">
+        <animation>Focus</animation>
+        <animation>unFocus</animation>
+        <font>font10</font>
+        <width>auto</width>
+        <textcolor>dimgray</textcolor>
+        <focusedcolor>white</focusedcolor>
+        <texturenofocus>-</texturenofocus>
+        <texturefocus>-</texturefocus>
+    </include>
+    <include name="musictopbutton">
+        <animation>Focus</animation>
+        <animation>unFocus</animation>
+        <font>size39B</font>
+        <width>auto</width>
+        <textcolor>dimgray</textcolor>
+        <focusedcolor>white</focusedcolor>
+        <texturenofocus>-</texturenofocus>
+        <texturefocus>-</texturefocus>
+    </include>
+    <include name="homeanimation">
+        <animation condition="Container(9000).Row(1) + !ControlGroup(700).HasFocus + !Control.HasFocus(9009)" effect="slide" end="0,-240" time="220">Conditonal</animation>
+        <animation condition="Container(9000).Row(2) + !ControlGroup(700).HasFocus + !Control.HasFocus(9009)" effect="slide" end="0,-480" time="220">Conditonal</animation>
+        <animation condition="Container(9000).Row(3) + !ControlGroup(700).HasFocus + !Control.HasFocus(9009)" effect="slide" end="0,-720" time="220">Conditonal</animation>
+        <animation condition="Container(9000).Row(4) + !ControlGroup(700).HasFocus + !Control.HasFocus(9009)" effect="slide" end="0,-990" time="220">Conditonal</animation>
+        <!--<animation condition="Container(9000).Row(5) + !Control.HasFocus(9009)" effect="slide" end="0,-1260" time="220">Conditonal</animation>-->
+    </include>
+    <include name="livepop">
+        <control type="group">
+            <include>DialogOpenCloseVisible</include>
+            <visible allowhiddenfocus="true">ControlGroup(10040).HasFocus</visible>
+            <control type="image" description="List back">
+                <centerleft>960</centerleft>
+                <centertop>540</centertop>
+                <width>802</width>
+                <height>600</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="50">images/ContextMenu.png</texture>
+                <colordiffuse>dialog</colordiffuse>
+            </control>
+            <control type="grouplist" id="10040">
+                <centertop>540</centertop>
+                <height>500</height>
+                <ondown>10000</ondown>
+                <onup>10000</onup>
+                <align>center</align>
+                <include>DialogGLs</include>
+                <control type="button" id="10041">
+                    <include>DialogButt</include>
+                    <label>19023</label>
+                    <onclick>close</onclick>
+                    <onclick>ActivateWindowAndFocus(TVChannels)</onclick>
+                </control>
+                <control type="button" id="10042">
+                    <include>DialogButt</include>
+                    <label>19024</label>
+                    <onclick>close</onclick>
+                    <onclick>ActivateWindowAndFocus(RADIOChannels)</onclick>
+                </control>
+                <control type="button" id="10043">
+                    <include>DialogButt</include>
+                    <label>19069</label>
+                    <onclick>close</onclick>
+                    <onclick>ActivateWindow(TVGuide)</onclick>
+                </control>
+                <control type="button" id="10044">
+                    <include>DialogButt</include>
+                    <label>19163</label>
+                    <onclick>close</onclick>
+                    <onclick>ActivateWindowAndFocus(tvrecordings)</onclick>
+                </control>
+                <control type="button" id="10045">
+                    <include>DialogButt</include>
+                    <label>19040</label>
+                    <onclick>close</onclick>
+                    <onclick>ActivateWindowAndFocus(tvtimers)</onclick>
+                </control>
+                <control type="button" id="10046">
+                    <include>DialogButt</include>
+                    <label>222</label>
+                    <onclick>SetFocus(9000,$INFO[Container(9000).Position])</onclick>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="sourcespop">
+        <control type="group">
+            <visible allowhiddenfocus="true">ControlGroup(10010).HasFocus</visible>
+            <include>DialogOpenCloseVisible</include>
+            <control type="image" description="List back">
+                <centerleft>960</centerleft>
+                <centertop>540</centertop>
+                <width>802</width>
+                <height>520</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="50">images/ContextMenu.png</texture>
+                <colordiffuse>dialog</colordiffuse>
+            </control>
+            <control type="grouplist" id="10010">
+                <height>500</height>
+                <centertop>540</centertop>
+                <align>center</align>
+                <onup>10010</onup>
+                <ondown>10010</ondown>
+                <include>DialogGLs</include>
+                <control type="button" id="10011" description="Video">
+                    <include>DialogButt</include>
+                    <label>3</label>
+                    <onclick>ActivateWindow(Videos,files)</onclick>
+                </control>
+                <control type="button" id="10012" description="Music">
+                    <include>DialogButt</include>
+                    <label>$LOCALIZE[2]</label>
+                    <onclick>ActivateWindow(Music,files)</onclick>
+                </control>
+                <control type="button" id="10013" description="Update Library">
+                    <enable>Library.HasContent(Movies) | Library.HasContent(TVShows)</enable>
+                    <include>DialogButt</include>
+                    <label>653</label>
+                    <onclick>UpdateLibrary(video,,true)</onclick>
+                </control>
+                <control type="button" id="10014" description="Update Library">
+                    <enable>Library.HasContent(Movies) | Library.HasContent(TVShows)</enable>
+                    <include>DialogButt</include>
+                    <label>334</label>
+                    <onclick>CleanLibrary(video,true)</onclick>
+                </control>
+                <control type="button" id="10015" description="Cancel">
+                    <include>DialogButt</include>
+                    <label>222</label>
+                    <onclick>SetFocus(9000,$INFO[Container(9000).Position])</onclick>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="settingspop">
+        <control type="group">
+            <visible allowhiddenfocus="true">ControlGroup(10020).HasFocus</visible>
+            <include>DialogOpenCloseVisible</include>
+            <control type="image" description="List back">
+                <centerleft>960</centerleft>
+                <centertop>540</centertop>
+                <width>802</width>
+                <height>340</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="50">images/ContextMenu.png</texture>
+                <colordiffuse>dialog</colordiffuse>
+            </control>
+            <control type="grouplist" id="10020">
+                <centertop>540</centertop>
+                <onup>10020</onup>
+                <ondown>10020</ondown>
+                <align>center</align>
+                <include>DialogGLs</include>
+                <control type="button" id="10021">
+                    <include>DialogButt</include>
+                    <label>14209</label>
+                    <onclick>ActivateWindow(Settings)</onclick>
+                </control>
+                <control type="button" id="10022">
+                    <include>DialogButt</include>
+                    <label>20077</label>
+                    <onclick>ActivateWindow(SkinSettings)</onclick>
+                </control>
+                <control type="button" id="10023">
+                    <include>DialogButt</include>
+                    <label>222</label>
+                    <onclick>SetFocus(9000,$INFO[Container(9000).Position])</onclick>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="addonspop">
+        <control type="group">
+            <visible allowhiddenfocus="true">ControlGroup(10030).HasFocus</visible>
+            <include>DialogOpenCloseVisible</include>
+            <control type="image" description="List back">
+                <centerleft>960</centerleft>
+                <centertop>540</centertop>
+                <width>802</width>
+                <height>450</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="50">images/ContextMenu.png</texture>
+                <colordiffuse>dialog</colordiffuse>
+            </control>
+            <control type="grouplist" id="10030">
+                <centertop>540</centertop>
+                <height>480</height>
+                <align>center</align>
+                <onup>10030</onup>
+                <ondown>10030</ondown>
+                <include>DialogGLs</include>
+                <control type="button" id="10031">
+                    <include>DialogButt</include>
+                    <label>1037</label>
+                    <onclick>Close</onclick>
+                    <onclick>ActivateWindow(Videos,Addons)</onclick>
+                </control>
+                <control type="button" id="10032">
+                    <include>DialogButt</include>
+                    <label>1038</label>
+                    <onclick>Close</onclick>
+                    <onclick>ActivateWindow(Music,Addons)</onclick>
+                </control>
+                <control type="button" id="10033">
+                    <include>DialogButt</include>
+                    <label>31037</label>
+                    <onclick>Close</onclick>
+                    <onclick>ActivateWindow(AddonBrowser,root)</onclick>
+                </control>
+                <control type="button" id="10034">
+                    <include>DialogButt</include>
+                    <label>222</label>
+                    <onclick>SetFocus(9000,$INFO[Container(9000).Position])</onclick>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="9000music">
+        <control type="group" id="9000">
+            <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+            <animation effect="slide" time ="300" start="0,-140" end="0,0">VisibleChange</animation>
+            <control type="image">
+                <centerleft>960</centerleft>
+                <width>2000</width>
+                <height>140</height>
+                <texture border="8">images/White.png</texture>
+                <colordiffuse>bandamusica</colordiffuse>
+            </control>
+            <control type="grouplist" id="666">
+                <top>40</top>
+                <align>center</align>
+                <width>1920</width>
+                <height>60</height>
+                <itemgap>0</itemgap>
+                <orientation>horizontal</orientation>
+                <ondown>777</ondown>
+                <onright>noop</onright>
+                <control type="button" id="600" description="library">
+                    <height>60</height>
+                    <width>auto</width>
+                    <include>musictopbutton</include>
+                    <onclick condition="!Window.IsActive(Music)">ReplaceWindow(Music,return)</onclick>
+                    <label>14202</label>
+                </control>
+                <control type="button" id="601" description="newmusic">
+                    <height>60</height>
+                    <include>musictopbutton</include>
+                    <onclick>ReplaceWindow(1123)</onclick>
+                    <label>New Music</label>
+                </control>
+                <control type="button" id="603">
+                    <height>60</height>
+                    <include>musictopbutton</include>
+                    <onclick>SendClick(16)</onclick>
+                    <label>Party Mode</label>
+                </control>
+                <control type="button" id="3" description="Other">
+                    <height>60</height>
+                    <include>musictopbutton</include>
+                    <!--<onfocus>ActivateWindow(Music,musicdb://albums/,return)</onfocus>-->
+                    <onfocus>Skin.SetString(selectmusic,3)</onfocus>
+                    <label>-</label>
+                </control>
+            </control>
+        </control>
     </include>
 </includes>

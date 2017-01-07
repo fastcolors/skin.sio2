@@ -1,154 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window type="buttonMenu" id="111">
+<window type="buttonMenu">
   <defaultcontrol>9000</defaultcontrol>
   <include>DialogOpenClose</include>
   <controls>
-    <control type="image" description="BG">
-      <animation effect="fade" start="0" end="50" delay="150" time="300">WindowOpen</animation>
-      <animation effect="fade" start="50" end="0" time="50">WindowClose</animation>
-      <width>1920</width>
-      <height>1080</height>
-      <texture>images/BlackT.png</texture>
-    </control>
-    <control type="image" description="Dialog">
-      <left>350</left>
-      <top>290</top>
-      <width>1220</width>
-      <height>500</height>
+    <control type="image" description="List back">
+      <centerleft>960</centerleft>
+      <centertop>540</centertop>
+      <width>802</width>
+      <height>700</height>
       <aspectratio>stretch</aspectratio>
-      <texture border="150">images/Dialog.png</texture>
+      <texture border="50">images/ContextMenu.png</texture>
+      <colordiffuse>dialog</colordiffuse>
     </control>
     <control type="grouplist" id="9000">
-      <left>500</left>
-      <top>450</top>
-      <width>920</width>
-      <height>126</height>
-      <onleft>9000</onleft>
-      <onright>9000</onright>
-      <onup>noop</onup>
-      <ondown>noop</ondown>
-      <itemgap>30</itemgap>
+      <centertop>540</centertop>
+      <height>580</height>
       <align>center</align>
-      <orientation>horizontal</orientation>
+      <include>DialogGLs</include>
       <control type="button" id="1" description="Exit button">
-        <width>126</width>
-        <height>126</height>
-        <font>-</font>
-        <texturenofocus>BM_QuitNF.png</texturenofocus>
-        <texturefocus>BM_QuitFO.png</texturefocus>
+        <include>DialogButt</include>
         <onclick>XBMC.Quit()</onclick>
         <label>13009</label>
       </control>
       <control type="button" id="2" description="Shutdown button">
         <enable>System.CanPowerDown</enable>
-        <animation type="Conditional" condition="!Control.IsEnabled(2)">
-          <effect type="fade" start="100" end="30" time="0" reversible="true" />
-        </animation>
-        <width>126</width>
-        <height>126</height>
-        <font>-</font>
-        <texturenofocus>BM_ShutdownNF.png</texturenofocus>
-        <texturefocus>BM_ShutdownFO.png</texturefocus>
+        <include>DialogButt</include>
         <onclick>XBMC.Powerdown()</onclick>
         <label>13005</label>
       </control>
       <control type="button" id="3" description="Suspend button">
         <enable>System.CanSuspend</enable>
-        <animation type="Conditional" condition="!Control.IsEnabled(3)">
-          <effect type="fade" start="100" end="30" time="0" reversible="true" />
-        </animation>
-        <width>126</width>
-        <height>126</height>
-        <font>-</font>
-        <texturenofocus>BM_SleepNF.png</texturenofocus>
-        <texturefocus>BM_SleepFO.png</texturefocus>
+        <include>DialogButt</include>
         <onclick>XBMC.Suspend()</onclick>
         <label>13011</label>
       </control>
       <control type="button" id="4" description="Reboot button">
         <enable>System.CanReboot</enable>
-        <animation type="Conditional" condition="!Control.IsEnabled(4)">
-          <effect type="fade" start="100" end="30" time="0" reversible="true" />
-        </animation>
-        <width>126</width>
-        <height>126</height>
-        <font>-</font>
-        <texturenofocus>BM_RestartNF.png</texturenofocus>
-        <texturefocus>BM_RestartFO.png</texturefocus>
+        <include>DialogButt</include>
         <onclick>XBMC.Reset()</onclick>
         <label>13013</label>
       </control>
       <control type="button" id="5" description="LogOff">
         <enable>System.HasLoginScreen</enable>
-        <animation type="Conditional" condition="!Control.IsEnabled(5)">
-          <effect type="fade" start="100" end="30" time="0" reversible="true" />
-        </animation>
-        <width>126</width>
-        <height>126</height>
-        <font>-</font>
-        <texturenofocus>BM_LogOffNF.png</texturenofocus>
-        <texturefocus>BM_LogOffFO.png</texturefocus>
+        <include>DialogButt</include>
         <onclick>Activatewindow(29)</onclick>
-        <label>13013</label>
+        <label>logoff</label>
       </control>
-	  <control type="button" id="6" description="TimerOff">
-        <animation type="Conditional" condition="!Control.IsEnabled(6)">
-          <effect type="fade" start="100" end="30" time="0" reversible="true" />
-        </animation>
-        <width>126</width>
-        <height>126</height>
-        <font>-</font>
-        <texturenofocus>BM_TimeroffNF.png</texturenofocus>
-        <texturefocus>BM_TimeroffFO.png</texturefocus>
-		<colordiffuse>FFFFFFFF</colordiffuse>
+      <control type="button" id="6" description="TimerOff">
+        <include>DialogButt</include>
         <onclick>AlarmClock(Timer,Quit())</onclick>
-        <label>13013</label>
+        <label>timer</label>
       </control>
-    </control>
-    <control type="group">
-      <left>660</left>
-      <top>565</top>
-      <control type="label">
-        <visible>ControlGroup(9000).HasFocus(1)</visible>
-        <width>600</width>
-        <align>center</align>
-        <font>size39B</font>
-        <label>13009</label>
-      </control>
-      <control type="label">
-        <visible>ControlGroup(9000).HasFocus(2)</visible>
-        <width>600</width>
-        <align>center</align>
-        <font>size39B</font>
-        <label>13005</label>
-      </control>
-      <control type="label">
-        <visible>ControlGroup(9000).HasFocus(3)</visible>
-        <width>600</width>
-        <align>center</align>
-        <font>size39B</font>
-        <label>13011</label>
-      </control>
-      <control type="label">
-        <visible>ControlGroup(9000).HasFocus(4)</visible>
-        <width>600</width>
-        <align>center</align>
-        <font>size39B</font>
-        <label>13013</label>
-      </control>
-      <control type="label">
-        <visible>ControlGroup(9000).HasFocus(5)</visible>
-        <width>600</width>
-        <align>center</align>
-        <font>size39B</font>
-        <label>31032</label>
-      </control>
-	  <control type="label">
-        <visible>ControlGroup(9000).HasFocus(6)</visible>
-        <width>600</width>
-        <align>center</align>
-        <font>size39B</font>
-        <label>19040</label>
+      <control type="button" id="7" description="TimerOff">
+        <include>DialogButt</include>
+        <onclick>ActivateWindow(Settings)</onclick>
+        <label>5</label>
       </control>
     </control>
   </controls>

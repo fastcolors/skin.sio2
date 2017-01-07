@@ -1,475 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+    <backgroundcolor>aliceblue</backgroundcolor>
     <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <onload>RunScript(script.favourites)</onload>
-    <onload>SetProperty(SkinWidgets_RandomItems_Update,true)</onload>
+    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;level=1)</onload>
     <include>OpenClose</include>
     <controls>
         <control type="group" description="Furniture">
-            <animation condition="!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-590" time="220">Conditonal</animation>
+            <include>homeanimation</include>
             <control type="image" description="Stage">
+                <visible>Skin.HasTheme(Dark)</visible>
                 <width>1920</width>
-                <height>1080</height>
+                <height>2340</height>
                 <aspectratio>stretch</aspectratio>
-                <texture>HomeBG.png</texture>
+                <texture>special://skin/resources/DarkHomeBG.png</texture>
+            </control>
+            <control type="image" description="Stage">
+                <visible>!Skin.HasTheme(Dark)</visible>
+                <width>1920</width>
+                <height>2340</height>
+                <aspectratio>stretch</aspectratio>
+                <texture>special://skin/resources/HomeBG.png</texture>
+            </control>
+            <!--<control type="image">-->
+            <!--<height>1080</height>-->
+            <!--<width>1920</width>-->
+            <!--<texture>appletv.png</texture>-->
+            <!--</control>-->
+            <control type="image" description="banda bianca">
+                <top>720</top>
+                <left>-35</left>
+                <width>1990</width>
+                <height>274</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="18" colordiffuse="bandabianca">images/White.png</texture>
             </control>
         </control>
         <control type="button" id="9009">
-            <visible allowhiddenfocus="true">Control.HasFocus(9009)</visible>
-            <left>50</left>
-            <top>65</top>
-            <width>34</width>
-            <height>34</height>
-            <texturefocus aspectratio="keep">images/hometoggle.png</texturefocus>
+            <include>homeanimation</include>
+            <focusedcolor>white</focusedcolor>
+            <include>ShelfFade</include>
+            <animation>Focus</animation>
+            <animation>unFocus</animation>
+            <animation condition="$EXP[shelflabelsslide]" effect="slide" start="0" end="0,-30" time="180" tween="Back">Conditional</animation>
+            <left>80</left>
+            <bottom>980</bottom>
+            <height>45</height>
+            <width>750</width>
+            <align>left</align>
+            <aligny>center</aligny>
+            <font>shelf</font>
+            <textcolor>ff555555</textcolor>
+            <label>$VAR[shelflabel]</label>
+            <texturefocus>-</texturefocus>
             <!--MOVIES-->
-            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
-            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
-            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
+            <onclick  condition="$EXP[ismovies] + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
+            <onclick  condition="$EXP[ismovies] + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
+            <onclick  condition="$EXP[ismovies] + StringCompare(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
             <!--TVSHOWS-->
-            <onclick  condition="Control.IsVisible(312)">Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
+            <onclick  condition="$EXP[istvshows] + StringCompare(Skin.String(TVshelf),)">Skin.SetString(TVshelf,1)</onclick>
+            <onclick  condition="$EXP[istvshows] + StringCompare(Skin.String(TVshelf),1)">Skin.SetString(TVshelf,2)</onclick>
+            <onclick  condition="$EXP[istvshows] + StringCompare(Skin.String(TVshelf),2)">Skin.SetString(TVshelf,)</onclick>
+            <!--MUSIC-->
+            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + StringCompare(Skin.String(musicshelf),)">Skin.SetString(musicshelf,albums)</onclick>
+            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + StringCompare(Skin.String(musicshelf),albums)">Skin.SetString(musicshelf,artists)</onclick>
+            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + StringCompare(Skin.String(musicshelf),artists)">Skin.SetString(musicshelf,)</onclick>
+
+            <!--ADDONS-->
+            <!--<onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),1)">Skin.SetString(addonsshelf,2)</onclick>-->
+            <!--<onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),2)">Skin.SetString(addonsshelf,3)</onclick>-->
+            <!--<onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),3)">Skin.SetString(addonsshelf,)</onclick>-->
+            <!--<onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),)">Skin.SetString(addonsshelf,1)</onclick>-->
+
+            <!--UPCOMINGMOVIES-->
+            <onclick  condition="$EXP[isupcomingmovies] + StringCompare(Skin.String(theatersshelf),)">Skin.SetString(theatersshelf,1)</onclick>
+            <onclick  condition="$EXP[isupcomingmovies] + StringCompare(Skin.String(theatersshelf),1)">Skin.SetString(theatersshelf,2)</onclick>
+            <onclick  condition="$EXP[isupcomingmovies] + StringCompare(Skin.String(theatersshelf),2)">Skin.SetString(theatersshelf,)</onclick>
+
+            <!--UPCOMINGTVSHOWS-->
+            <onclick  condition="$EXP[isupcomingtvshows] + StringCompare(Skin.String(dvdsshelf),)">Skin.SetString(dvdsshelf,1)</onclick>
+            <onclick  condition="$EXP[isupcomingtvshows] + StringCompare(Skin.String(dvdsshelf),1)">Skin.SetString(dvdsshelf,)</onclick>
+
             <onup>noop</onup>
-            <ondown condition="Control.IsVisible(311)">311</ondown>
             <ondown condition="Control.IsVisible(312)">312</ondown>
+            <ondown condition="Control.IsVisible(313)">313</ondown>
+            <ondown condition="Control.IsVisible(315)">315</ondown>
+            <ondown condition="Control.IsVisible(311)">311</ondown>
             <onleft>noop</onleft>
             <onright>noop</onright>
         </control>
         <control type="panel" id="9000" description="ICONE">
-            <animation condition="!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-590" time="220">Conditonal</animation>
+            <include>homeanimation</include>
             <centerleft>960</centerleft>
-            <top>620</top>
+            <top>740</top>
             <width>1800</width>
-            <height>1060</height>
+            <height>1620</height>
             <onleft>9000</onleft>
             <onright>9000</onright>
             <onup>700</onup>
             <ondown>noop</ondown>
             <orientation>vertical</orientation>
             <scrolltime tween="sine" easing="inout">280</scrolltime>
-            <itemlayout height="270" width="360">
-                <control type="image" description="THMBSCOLOR">
+            <itemlayout height="265" width="360">
+                <control type="image" description="shade_base">
                     <centerleft>180</centerleft>
-                    <top>30</top>
-                    <width>304</width>
-                    <height>176</height>
-                    <texture border="20">$INFO[ListItem.Property(color)]</texture>
+                    <width>350</width>
+                    <height>250</height>
+                    <texture>icons/iconbase.png</texture>
+                </control>
+                <control type="image" description="color base">
+                    <centerleft>180</centerleft>
+                    <centertop>118</centertop>
+                    <width>300</width>
+                    <height>180</height>
+                    <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
                 </control>
                 <control type="image" description="THMBSICONS">
-                    <visible>!IsEmpty(Listitem.thumb)</visible>
                     <centerleft>180</centerleft>
-                    <top>30</top>
-                    <width>304</width>
-                    <height>176</height>
-                    <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
-                </control>
-                <control type="image" description="THMBSICONS">
-                    <visible>IsEmpty(Listitem.thumb)</visible>
-                    <centerleft>180</centerleft>
-                    <top>30</top>
-                    <width>304</width>
-                    <height>176</height>
-                    <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
-                </control>
-                <control type="image" description="THMBS weather">
-                    <centerleft>180</centerleft>
-                    <top>30</top>
-                    <width>304</width>
-                    <height>176</height>
-                    <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
-                    <aspectratio>keep</aspectratio>
-                </control>
-                <control type="label" description="LABEL">
-                    <centerleft>180</centerleft>
-                    <top>220</top>
-                    <width>368</width>
-                    <height>24</height>
-                    <font>size30</font>
-                    <align>center</align>
-                    <textcolor>White</textcolor>
-                    <label>[B]$INFO[ListItem.label][/B]</label>
+                    <centertop>118</centertop>
+                    <width>300</width>
+                    <height>180</height>
+                    <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Icon]</texture>
+                    <aspectratio scalediffuse="false">scale</aspectratio>
                 </control>
             </itemlayout>
-            <focusedlayout height="270" width="360">
-                <control type="image" description="THMBSCOLOR">
-                    <centerleft>180</centerleft>
-                    <top>30</top>
-                    <width>304</width>
-                    <height>176</height>
-                    <texture border="20">$INFO[ListItem.Property(color)]</texture>
-                </control>
-                <control type="image" description="THMBSICONS">
-                    <visible>!IsEmpty(Listitem.thumb)</visible>
-                    <centerleft>180</centerleft>
-                    <top>30</top>
-                    <width>304</width>
-                    <height>176</height>
-                    <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
-                </control>
-                <control type="image" description="THMBSICONS">
-                    <visible>IsEmpty(Listitem.thumb)</visible>
-                    <centerleft>180</centerleft>
-                    <top>30</top>
-                    <width>304</width>
-                    <height>176</height>
-                    <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
-                </control>
-                <control type="image" description="THMBS weather">
-                    <centerleft>180</centerleft>
-                    <top>30</top>
-                    <width>304</width>
-                    <height>176</height>
-                    <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
-                    <aspectratio>keep</aspectratio>
+            <focusedlayout height="265" width="360" condition="!Container(9000).Row(0)">
+                <control type="group">
+                    <animation effect="zoom" start="100" end="125" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+                    <animation effect="zoom" start="125" end="100" time="120" center="auto">unFocus</animation>
+                    <control type="image" description="shade_base">
+                        <centerleft>180</centerleft>
+                        <animation effect="slide" start="0,0" end="0,34" time="240" reversible="true" tween="Back" easing="Out">Focus</animation>
+                        <top>10</top>
+                        <width>350</width>
+                        <height>250</height>
+                        <texture>icons/iconbase.png</texture>
+                    </control>
+                    <control type="image" description="color base">
+                        <centerleft>180</centerleft>
+                        <centertop>117</centertop>
+                        <width>287</width>
+                        <height>179</height>
+                        <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
+                    </control>
+                    <control type="image" description="THMBSICONS">
+                        <centerleft>180</centerleft>
+                        <centertop>117</centertop>
+                        <width>287</width>
+                        <height>179</height>
+                        <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Icon]</texture>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
+                    </control>
                 </control>
                 <control type="label" description="label">
-                    <animation effect="fade" start="80" end="100" time="300=" delay="300">Focus</animation>
+                    <animation effect="fade" start="0" end="100" time="180">Focus</animation>
+                    <animation effect="fade" start="100" end="0" time="100">unFocus</animation>
                     <centerleft>180</centerleft>
-                    <top>220</top>
+                    <top>230</top>
                     <width>368</width>
                     <height>24</height>
-                    <font>size30</font>
+                    <font>size28</font>
                     <align>center</align>
-                    <textcolor>White2</textcolor>
-                    <label>[B]$INFO[ListItem.label][/B]</label>
+                    <label>$INFO[ListItem.label]</label>
                 </control>
             </focusedlayout>
-            <content>
-                <item id="355">
-                    <visible>Skin.HasSetting(hidemovie) + Skin.HasSetting(hidetv)  + !Skin.HasSetting(hidevaddons)</visible>
-                    <thumb>icons/vaddons.png</thumb>
-                    <label>$LOCALIZE[157] $LOCALIZE[24001]</label>
-                    <onclick>noop</onclick>
-                    <onclick>noop</onclick>
-                </item>
-                <item id="340">
-                    <visible>!Skin.HasSetting(hidemovie)</visible>
-                    <thumb>icons/movies.png</thumb>
-                    <label>342</label>
-                    <property name="color">icons/lightblue.png</property>
-                    <onclick condition="Library.HasContent(Movies)">ActivateWindow(Videos,MovieTitles,return)</onclick>
-                    <onclick condition="!Library.HasContent(Movies)">ActivateWindow(Videos,root)</onclick>
-                </item>
-                <item id="341">
-                    <visible>!Skin.HasSetting(hidetv)</visible>
-                    <thumb>icons/tvshows.png</thumb>
-                    <label>20343</label>
-                    <property name="color">icons/purple.png</property>
-                    <onclick condition="Library.HasContent(TVShows)">ActivateWindow(VideoLibrary,TVShowTitles,return)</onclick>
-                    <onclick condition="!Library.HasContent(TVShows)">ActivateWindow(Videos,root)</onclick>
-                </item>
-
-                <item id="342">
-                    <visible>!Skin.HasSetting(hidemusic)</visible>
-                    <thumb>icons/music.png</thumb>
-                    <label>2</label>
-                    <property name="color">icons/Orange.png</property>
-                    <onclick>ActivateWindow(502,$INFO[Skin.String(MusicLink)])</onclick>
-                    <onclick condition="!Library.HasContent(Music)">ActivateWindow(501,root)</onclick>
-                </item>
-                <item id="343">
-                    <visible>!Skin.HasSetting(hideaddon)</visible>
-                    <thumb>icons/addons.png</thumb>
-                    <label>24001</label>
-                    <property name="color">icons/Green.png</property>
-                    <onclick>ActivateWindow(1118)</onclick>
-                </item>
-                <item id="344">
-                    <visible>!Skin.HasSetting(hidepic)</visible>
-                    <thumb>icons/photos.png</thumb>
-                    <label>1</label>
-                    <property name="color">icons/dvdcolor.png</property>
-                    <onclick>ActivateWindow(2)</onclick>
-                </item>
-                <item id="345">
-                    <visible>!Skin.HasSetting(hidewtr)</visible>
-                    <property name="weatherthumb">$INFO[Weather.Conditions]</property>
-                    <label>$INFO[Weather.Temperature]</label>
-                    <property name="color">icons/teak.png</property>
-                    <onclick>ActivateWindow(MyWeather)</onclick>
-                </item>
-                <item id="352">
-                    <visible>!Skin.HasSetting(hidefav)</visible>
-                    <thumb>icons/favs.png</thumb>
-                    <label>$LOCALIZE[1036]</label>
-                    <property name="color">icons/red.png</property>
-                    <onclick>ActivateWindow(134)</onclick>
-                </item>
-                <item id="355">
-                    <thumb>icons/LiveTV.png</thumb>
-                    <label>31059</label>
-                    <property name="color">icons/green3.png</property>
-                    <onclick>ActivateWindow(1718)</onclick>
-                    <visible>!Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
-                </item>
-                <item id="355">
-                    <thumb>icons/LiveTVrec.png</thumb>
-                    <label>$INFO[Pvr.NowRecordingTitle]</label>
-                    <property name="color">icons/green3.png</property>
-                    <onclick>ActivateWindow(1718)</onclick>
-                    <visible>Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
-                </item>
-
-                <!--item id="356">
-                 <visible>Skin.HasSetting(3dmovs)</visible>
-                 <thumb>icons/3d.png</thumb>
-                 <label>3D $LOCALIZE[342]</label>
-                 <property name="color">icons/lightblue.png</property>
-                 <onclick></onclick>
-               </item-->
-                <item id="601" description="Custom Fvourite">
-                    <visible>!IsEmpty(Skin.String(HomeFav.1.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.1.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.1.Label)]</label>
-                    <property name="color">icons/red.png</property>
-                    <onclick>$INFO[Skin.String(HomeFav.1.Path)]</onclick>
-                </item>
-                <item id="602" description="Custom Fvourite">
-                    <visible>!IsEmpty(Skin.String(HomeFav.2.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.2.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.2.Label)]</label>
-                    <property name="color">icons/lightblue.png</property>
-                    <onclick>$INFO[Skin.String(HomeFav.2.Path)]</onclick>
-                </item>
-                <item id="603" description="Custom Fvourite">
-                    <visible>!IsEmpty(Skin.String(HomeFav.3.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.3.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.3.Label)]</label>
-                    <property name="color">icons/green.png</property>
-                    <onclick>$INFO[Skin.String(HomeFav.3.Path)]</onclick>
-                </item>
-                <item id="604" description="Custom Fvourite">
-                    <visible>!IsEmpty(Skin.String(HomeFav.4.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.4.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.4.Label)]</label>
-                    <property name="color">icons/Orange.png</property>
-                    <onclick>$INFO[Skin.String(HomeFav.4.Path)]</onclick>
-                </item>
-                <item id="605" description="Custom Fvourite">
-                    <visible>!IsEmpty(Skin.String(HomeFav.5.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.5.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.5.Label)]</label>
-                    <property name="color">icons/purple.png</property>
-                    <onclick>$INFO[Skin.String(HomeFav.5.Path)]</onclick>
-                </item>
-                <item id="606" description="Custom Fvourite">
-                    <visible>!IsEmpty(Skin.String(HomeFav.6.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.6.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.6.Label)]</label>
-                    <property name="color">icons/darkblue.png</property>
-                    <onclick>$INFO[Skin.String(HomeFav.6.Path)]</onclick>
-                </item>
-                <item id="401" description="Custom addon">
-                    <visible>!IsEmpty(Skin.String(HomeAddon.1.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeAddon.1.Icon)]</thumb>
-                    <label2>$INFO[system.addonicon(Skin.String(HomeAddon.1.label))]</label2>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.1.Label))]</label>
-                    <property name="color">icons/lightblue.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.1.Label)])</onclick>
-                </item>
-                <item id="402" description="Custom addon">
-                    <visible>!IsEmpty(Skin.String(HomeAddon.2.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeAddon.2.Icon)]</thumb>
-                    <label2>$INFO[system.addonicon(Skin.String(HomeAddon.2.label))]</label2>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.2.Label))]</label>
-                    <property name="color">icons/red.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.2.Label)])</onclick>
-                </item>
-                <item id="403" description="Custom addon">
-                    <visible>!IsEmpty(Skin.String(HomeAddon.3.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeAddon.3.Icon)]</thumb>
-                    <label2>$INFO[system.addonicon(Skin.String(HomeAddon.3.label))]</label2>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.3.Label))]</label>
-                    <property name="color">icons/green.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.3.Label)])</onclick>
-                </item>
-                <item id="404" description="Custom addon">
-                    <visible>!IsEmpty(Skin.String(HomeAddon.4.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeAddon.4.Icon)]</thumb>
-                    <label2>$INFO[system.addonicon(Skin.String(HomeAddon.4.label))]</label2>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.4.Label))]</label>
-                    <property name="color">icons/lightblue.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.4.Label)])</onclick>
-                </item>
-                <item id="405" description="Custom addon">
-                    <visible>!IsEmpty(Skin.String(HomeAddon.5.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeAddon.5.Icon)]</thumb>
-                    <label2>$INFO[system.addonicon(Skin.String(HomeAddon.5.label))]</label2>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.5.Label))]</label>
-                    <property name="color">icons/teak.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.5.Label)])</onclick>
-                </item>
-                <item id="406" description="Custom addon">
-                    <visible>!IsEmpty(Skin.String(HomeAddon.6.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeAddon.6.Icon)]</thumb>
-                    <label2>$INFO[system.addonicon(Skin.String(HomeAddon.6.label))]</label2>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.6.Label))]</label>
-                    <property name="color">icons/purple.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.6.Label)])</onclick>
-                </item>
-                <item id="501" description="Custom script">
-                    <visible>!IsEmpty(Skin.String(HomeAddon.7.Label))</visible>
-                    <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.7.label))]</thumb>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.7.Label))]</label>
-                    <property name="color">icons/orange.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.7.Label)])</onclick>
-                </item>
-                <item id="502" description="Custom script">
-                    <visible>!IsEmpty(Skin.String(HomeAddon.8.Label))</visible>
-                    <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.8.label))]</thumb>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.8.Label))]</label>
-                    <property name="color">icons/purple.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.8.Label)])</onclick>
-                </item>
-                <item id="503" description="Custom script">
-                    <visible>!IsEmpty(Skin.String(HomeAddon.9.Label))</visible>
-                    <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.9.label))]</thumb>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.9.Label))]</label>
-                    <property name="color">icons/green.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.9.Label)])</onclick>
-                </item>
-                <item id="504" description="Custom script">
-                    <visible>!IsEmpty(Skin.String(HomeAddon.10.Label))</visible>
-                    <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.10.label))]</thumb>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.10.Label))]</label>
-                    <property name="color">icons/red.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.10.Label)])</onclick>
-                </item>
-                <item id="505" description="Custom script">
-                    <visible>!IsEmpty(Skin.String(HomeAddon.11.Label))</visible>
-                    <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.11.label))]</thumb>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.11.Label))]</label>
-                    <property name="color">icons/lightblue.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.11.Label)])</onclick>
-                </item>
-                <item id="506" description="Custom script">
-                    <visible>!IsEmpty(Skin.String(HomeAddon.12.Label))</visible>
-                    <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.12.label))]</thumb>
-                    <label>$INFO[system.addonTitle(Skin.String(HomeAddon.12.Label))]</label>
-                    <property name="color">icons/progcolor.png</property>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.12.Label)])</onclick>
-                </item>
-                <!--<item id="346">-->
-                <!--<visible>!Skin.HasSetting(hidewl)</visible>-->
-                <!--<thumb>icons/watchlist.png</thumb>-->
-                <!--<label>31028</label>-->
-                <!--<property name="color">icons/dvdcolor.png</property>-->
-                <!--<onclick>ActivateWindow(1113)</onclick>-->
-                <!--</item>-->
-                <item id="350">
-                    <visible>!Skin.HasSetting(hideprog)</visible>
-                    <thumb>icons/program.png</thumb>
-                    <label>0</label>
-                    <property name="color">icons/progcolor.png</property>
-                    <onclick>ActivateWindow(Programs)</onclick>
-                </item>
-                <item id="347">
-                    <visible>!Skin.HasSetting(hideSources)</visible>
-                    <thumb>icons/sources.png</thumb>
-                    <label>20094</label>
-                    <property name="color">icons/darkblue.png</property>
-                    <onclick>activatewindow(1115)</onclick>
-                </item>
-                <!--<item id="352">
-                  <visible>!Skin.HasSetting(hidefav)</visible>
-                  <thumb>icons/favs.png</thumb>
-                  <label>$LOCALIZE[1036]</label>
-                  <property name="color">icons/pink.png</property>
-                  <onclick>ActivateWindow(134)</onclick>
-                </item>-->
-                <item id="353">
-                    <visible>!Skin.HasSetting(hidebro)</visible>
-                    <thumb>icons/browser.png</thumb>
-                    <label>7</label>
-                    <property name="color">icons/lightyellow.png</property>
-                    <onclick>ActivateWindow(3)</onclick>
-                </item>
-                <item id="354">
-                    <visible>![System.Platform.ios | System.Platform.atv2]</visible>
-                    <visible>!Skin.HasSetting(XBMC3)</visible>
-                    <visible>System.HasMediadvd</visible>
-                    <thumb>icons/DVD.png</thumb>
-                    <label>$INFO[System.DVDLabel]</label>
-                    <property name="color">icons/dvdcolor.png</property>
-                    <onclick>ActivateWindow(1112)</onclick>
-                </item>
-                <item id="348">
-                    <thumb>icons/settings.png</thumb>
-                    <label>5</label>
-                    <property name="color">icons/bluegray.png</property>
-                    <onclick>ActivateWindow(1120)</onclick>
-                </item>
-                <item id="349">
-                    <visible>Player.HasMedia</visible>
-                    <thumb>icons/full.png</thumb>
-                    <label>31064</label>
-                    <property name="color">icons/green3.png</property>
-                    <onclick condition="Player.HasMedia">Fullscreen</onclick>
-                </item>
-                <item id="349">
-                    <visible>!Player.HasMedia + Skin.HasSetting(quitter)</visible>
-                    <thumb>icons/quits.png</thumb>
-                    <label>351</label>
-                    <property name="color">icons/darkblue.png</property>
-                    <onclick condition="StringCompare(Skin.String(shutdown),quit)">XBMC.quit()</onclick>
-                    <onclick condition="StringCompare(Skin.String(shutdown),powerdown)">XBMC.powerdown()</onclick>
-                    <onclick condition="StringCompare(Skin.String(shutdown),hibernate)">XBMC.hibernate()</onclick>
-                    <onclick condition="StringCompare(Skin.String(shutdown),suspend)">XBMC.suspend()</onclick>
-                    <onclick condition="StringCompare(Skin.String(shutdown),reboot)">XBMC.reboot()</onclick>
-                </item>
-                <item id="349">
-                    <visible>!Player.HasMedia + !Skin.HasSetting(quitter)</visible>
-                    <thumb>icons/quits.png</thumb>
-                    <label>351</label>
-                    <property name="color">icons/darkblue.png</property>
-                    <onclick>ActivateWindow(1191)</onclick>
-                </item>
-            </content>
+            <focusedlayout height="265" width="360" condition="Container(9000).Row(0)">
+                <control type="group">
+                    <animation effect="zoom" start="100" end="122" time="120" center="180,208" tween="Back" easing="Out">Focus</animation>
+                    <animation effect="zoom" start="122" end="100" time="120" center="180,208">unFocus</animation>
+                    <control type="image" description="shade_base">
+                        <centerleft>180</centerleft>
+                        <animation effect="slide" start="0,0" end="0,34" time="240" reversible="true" tween="Back" easing="Out">Focus</animation>
+                        <top>10</top>
+                        <width>350</width>
+                        <height>250</height>
+                        <texture>icons/iconbase.png</texture>
+                    </control>
+                    <control type="image" description="color base">
+                        <centerleft>180</centerleft>
+                        <centertop>118</centertop>
+                        <width>300</width>
+                        <height>180</height>
+                        <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
+                    </control>
+                    <control type="image" description="THMBSICONS">
+                        <centerleft>180</centerleft>
+                        <centertop>118</centertop>
+                        <width>300</width>
+                        <height>180</height>
+                        <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Icon]</texture>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
+                    </control>
+                </control>
+                <control type="label" description="label">
+                    <animation effect="fade" start="0" end="100" time="180">Focus</animation>
+                    <animation effect="fade" start="100" end="0" time="100">unFocus</animation>
+                    <centerleft>180</centerleft>
+                    <top>214</top>
+                    <width>368</width>
+                    <height>24</height>
+                    <font>size28</font>
+                    <align>center</align>
+                    <label>$INFO[ListItem.label]</label>
+                </control>
+            </focusedlayout>
+            <content><include>skinshortcuts-mainmenu</include></content>
         </control>
-        <control type="image">
-            <top>980</top>
-            <width>1920</width>
-            <height>100</height>
-            <texture>images/bottomshader.png</texture>
-        </control>
-        <!--SLIDER-->
-        <control type="image">
-            <animation condition="!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-590" time="220">Conditonal</animation>
-            <centertop>738</centertop>
-            <centerleft>240</centerleft>
-            <width>358</width>
-            <height>200</height>
-            <texture>images/atvslider.png</texture>
-            <aspectratio>stretch</aspectratio>
-            <animation condition="Container(9000).Column(0)" effect="slide" end="0,0" time="220">Conditional</animation>
-            <animation condition="Container(9000).Column(1)" effect="slide" end="360,0" time="220">Conditional</animation>
-            <animation condition="Container(9000).Column(2)" effect="slide" end="720,0" time="220">Conditional</animation>
-            <animation condition="Container(9000).Column(3)" effect="slide" end="1080,0" time="220">Conditional</animation>
-            <animation condition="Container(9000).Column(4)" effect="slide" end="1440,0" time="220">Conditional</animation>
-            <animation condition="Container(9000).Row(0)" effect="slide" end="0,0" time="220">Conditional</animation>
-            <animation condition="Container(9000).Row(1)" effect="slide" end="0,270" time="220">Conditional</animation>
-            <animation condition="Container(9000).Row(2)" effect="slide" end="0,540" time="220">Conditional</animation>
-            <animation condition="Container(9000).Row(3)" effect="slide" end="0,810" time="220">Conditional</animation>
-            <animation condition="Container(9000).Row(4)" effect="slide" end="0,1080" time="220">Conditional</animation>
-            <!--<animation condition="!Control.HasFocus(9000)" effect="fade" start="100" end="0"  time="220">Conditional</animation>-->
-        </control>
-        <include>weather_shelf</include>
         <control type="group" id="700" description="Shelf items">
-            <animation condition="!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
+            <include>homeanimation</include>
             <include>Movies</include>
-            <include>TV</include>
-            <include>Music_RA</include>
+            <include>Squares</include>
+            <include>Episodes</include>
             <include condition="Skin.HasSetting(PicturesShelf_Custom)">Pictures_Shortcuts</include>
             <include condition="Skin.HasSetting(AddonsShelf_Custom)">Addons_Shortcuts</include>
-            <include condition="Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)">VAddons_Shortcuts</include>
-            <include>Favsshelf</include>
-            <control type="image" description="Logo">
-                <visible>![[Container(9000).HasFocus(340) + Library.HasContent(Movies)] | [Container(9000).HasFocus(341) + Library.HasContent(TVShows)] | [Container(9000).HasFocus(342) + Library.HasContent(Music)] | [Container(9000).HasFocus(342) + Control.IsVisible(313)] | [Container(9000).HasFocus(343) + Skin.HasSetting(AddonsShelf_Custom)] | [Container(9000).HasFocus(344) + Control.IsVisible(314)] | [Container(9000).HasFocus(349) + Player.HasMedia] | Container(9000).HasFocus(345) | Control.IsVisible(317) | [Container(9000).HasFocus(352) + Container(9000).Row(0) + IntegerGreaterThan(Window.Property(favourite.count),0)]]</visible>
-                <include>ShelfFade</include>
-                <width>1920</width>
-                <height>500</height>
-                <aspectratio aligny="bottom">keep</aspectratio>
-                <texture>$VAR[ShelfLogo]</texture>
-            </control>
+            <include>weather_shelf</include>
         </control>
         <control type="group" description="RSS">
             <control type="rss" description="RSS Feed">
@@ -482,93 +226,92 @@
                 <height>33</height>
                 <font>size22</font>
                 <urlset>1</urlset>
-                <shadowcolor>Black</shadowcolor>
+                <shadowcolor>-</shadowcolor>
                 <titlecolor>White</titlecolor>
                 <headlinecolor>White</headlinecolor>
-                <textcolor>Grey</textcolor>
-            </control>
-            <control type="image" description="RSS Left fade">
-                <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-                <left>0</left>
-                <bottom>0</bottom>
-                <width>90</width>
-                <height>33</height>
-                <texture>images/DefaultGradientH.png</texture>
-            </control>
-            <control type="image" description="RSS Right fade">
-                <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-                <left>1830</left>
-                <bottom>0</bottom>
-                <width>90</width>
-                <height>33</height>
-                <texture flipx="true">images/DefaultGradientH.png</texture>
+                <textcolor>gray</textcolor>
             </control>
         </control>
-        <control type="group" description="Player Info">
+        <control type="group">
             <visible>Player.HasAudio</visible>
             <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
-            <animation effect="slide" tween="Sine" easing="Out" start="430,0" end="0,0" time="600" delay="200">VisibleChange</animation>
-            <left>1500</left>
-            <top>440</top>
-            <control type="image" description="Playing BG">
-                <width>430</width>
-                <height>105</height>
-                <texture border="20">images/ProgressBG.png</texture>
+            <animation effect="slide" end="0,-128" condition="Window.IsActive(DialogExtendedProgressBar.xml)">Conditional</animation>
+            <left>1190</left>
+            <top>944</top>
+            <animation effect="fade" start="0" end="100" time="500">WindowOpen</animation>
+            <animation effect="fade" start="100" end="0" time="500">WindowClose</animation>
+            <control type="image" description="Dialog BG">
+                <width>720</width>
+                <height>128</height>
+                <texture border="25">images/notification.png</texture>
             </control>
-            <control type="group">
-                <control type="image">
-                    <left>18</left>
-                    <top>15</top>
-                    <width>75</width>
-                    <height>75</height>
-                    <texture>$INFO[MusicPlayer.Cover]</texture>
-                    <aspectratio>keep</aspectratio>
-                </control>
-                <control type="label">
-                    <left>110</left>
-                    <top>9</top>
+            <control type="image" description="File Icon">
+                <left>22</left>
+                <centertop>64</centertop>
+                <width>90</width>
+                <height>90</height>
+                <aspectratio>keep</aspectratio>
+                <texture>$INFO[MusicPlayer.Cover]</texture>
+            </control>
+            <control type="grouplist">
+                <left>130</left>
+                <height>120</height>
+                <align>center</align>
+                <itemgap>8</itemgap>
+                <control type="label" id="401" description="Heading">
+                    <width>575</width>
+                    <height>20</height>
+                    <font>size21</font>
+                    <align>left</align>
                     <aligny>center</aligny>
-                    <width>300</width>
-                    <height>36</height>
-                    <font>size24</font>
-                    <textcolor>White2</textcolor>
+                    <textcolor>black</textcolor>
                     <label>$INFO[MusicPlayer.Title]</label>
                 </control>
-                <control type="label">
-                    <left>110</left>
-                    <top>36</top>
-                    <aligny>center</aligny>
-                    <width>300</width>
-                    <height>36</height>
+                <control type="label" id="402" description="Message">
+                    <width>575</width>
+                    <height>20</height>
                     <font>size21</font>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <textcolor>black</textcolor>
+                    <shadowcolor>-</shadowcolor>
                     <label>$INFO[MusicPlayer.Artist]</label>
                 </control>
-                <control type="label">
-                    <left>110</left>
-                    <top>60</top>
-                    <aligny>center</aligny>
-                    <width>300</width>
-                    <height>36</height>
+                <control type="label" id="402" description="Message">
+                    <width>575</width>
+                    <height>20</height>
                     <font>size21</font>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <textcolor>black</textcolor>
+                    <shadowcolor>-</shadowcolor>
                     <label>$INFO[MusicPlayer.Album]</label>
                 </control>
             </control>
         </control>
         <control type="label" description="Clock">
-            <visible>Skin.HasSetting(ShowClock) + !System.Date(04-01,04-01)</visible>
-            <right>35</right>
+            <visible>!System.Date(04-01,04-01) + !Skin.HasSetting(clock)</visible>
+            <right>60</right>
             <top>20</top>
             <width>500</width>
-            <height>45</height>
+            <height>25</height>
             <align>right</align>
-            <font>size33B</font>
-            <textcolor>White</textcolor>
-            <label>$INFO[System.Time] $INFO[System.Date]</label>
+            <font>size27</font>
+            <shadowcolor>-</shadowcolor>
+            <textcolor>white</textcolor>
+            <label>$INFO[System.Date(ddd d mmm)] • $INFO[System.Time]</label>
         </control>
-        <control type="label" description="Top Label">
-            <include>ShelfFade</include>
-            <include>ShelfTitle</include>
-            <label>[B] $VAR[shelflabel] [/B]</label>
+        <control type="image">
+            <right>20</right>
+            <top>18</top>
+            <width>30</width>
+            <height>30</height>
+            <colordiffuse>kodi</colordiffuse>
+            <texture>kodi_icon.png</texture>
         </control>
+        <include>livepop</include>
+        <include>sourcespop</include>
+        <include>settingspop</include>
+        <include>addonspop</include>
     </controls>
 </window>
