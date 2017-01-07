@@ -83,11 +83,7 @@
             <texture>images/sio2logo.png</texture>
         </control>
         <control type="label">
-            <centerleft>960</centerleft>
-            <height>81</height>
-            <width>800</width>
-            <align>center</align>
-            <font>size42</font>
+            <include>Heading</include>
             <label>$LOCALIZE[20077]</label>
         </control>
     </controls>

@@ -5,13 +5,19 @@
     <include file="Includes_Variables.xml" />
     <include file="Defaults.xml" />
     <include file="CommonViews.xml" />
+
     <include file="views/video_biglist.xml" />
     <include file="views/video_icons.xml" />
     <include file="views/video_banners.xml" />
     <include file="views/video_widelist.xml" />
+
     <include file="views/music_library.xml" />
-    <include file="views/music_icons.xml" />
+    <include file="views/music_albums.xml" />
+    <include file="views/music_artists.xml" />
+    <include file="views/music_songs.xml" />
+
     <include file="views/Programviews.xml" />
+
     <include file="Includes_Home.xml" />
     <include file="Includes_Shelf.xml" />
     <include name="VisibleFade">
@@ -79,8 +85,6 @@
         <control type="group">
             <visible>![Window.IsActive(home) | Window.IsActive(LoginScreen.xml)]</visible>
             <control type="label" description="Heading">
-                <left>0</left>
-                <top>0</top>
                 <align>center</align>
                 <aligny>center</aligny>
                 <width>1920</width>
@@ -609,18 +613,18 @@
                     <onclick>ReplaceWindow(1123)</onclick>
                     <label>New Music</label>
                 </control>
-                <control type="button" id="602" description="Other">
+                <control type="button" id="603">
+                    <height>60</height>
+                    <include>musictopbutton</include>
+                    <onclick>SendClick(16)</onclick>
+                    <label>Party Mode</label>
+                </control>
+                <control type="button" id="3" description="Other">
                     <height>60</height>
                     <include>musictopbutton</include>
                     <!--<onfocus>ActivateWindow(Music,musicdb://albums/,return)</onfocus>-->
                     <onfocus>Skin.SetString(selectmusic,3)</onfocus>
-                    <label>Radio</label>
-                </control>
-                <control type="button" id="603">
-                    <height>60</height>
-                    <include>musictopbutton</include>
-                    <onclick>PlayerControl(PartyMode)</onclick>
-                    <label>Party Mode</label>
+                    <label>-</label>
                 </control>
             </control>
         </control>

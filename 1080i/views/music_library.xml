@@ -19,10 +19,10 @@
                 <left>1380</left>
                 <textcolor>darktext</textcolor>
                 <font>music</font>
-                <label>Library</label>
+                <label>14202</label>
             </control>
-            <control type="list" id="50">
-                <visible>!Container.content(albums) + !Container.content(artists)</visible>
+            <control type="panel" id="50">
+                <visible>![Container.content(albums) | Container.content(artists) | Container.content(songs)]</visible>
                 <left>1365</left>
                 <top>190</top>
                 <width>570</width>
@@ -32,8 +32,6 @@
                 <onup>9000</onup>
                 <ondown>noop</ondown>
                 <viewtype label="537">Big list</viewtype>
-                <focusposition>3</focusposition>
-                <movement>4</movement>
                 <preloaditems>4</preloaditems>
                 <scrolltime tween="sine" easing="inout">280</scrolltime>
                 <itemlayout width="470" height="80">

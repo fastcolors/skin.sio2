@@ -36,8 +36,6 @@
         <value condition="Container.content(movies) + String.IsEqual(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20342]</value>
         <value condition="Container.content(tvshows) + String.IsEqual(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20343]</value>
         <value condition="Container.content(musicvideos) + String.IsEqual(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20389]</value>
-        <value condition="Window.IsActive(SkinSettings.xml)">$LOCALIZE[5] - SiO2</value>
-        <value condition="Window.IsActive(Settings.xml)">$LOCALIZE[5]</value>
         <value condition="Window.IsActive(AddonBrowser.xml) + String.IsEmpty(Container.FolderName)">$LOCALIZE[31037]</value>
         <value condition="Window.IsActive(MyVideoPlaylist.xml)">$LOCALIZE[20012]</value>
         <value condition="Window.IsActive(MyMusicPlaylist.xml)">$LOCALIZE[20011]</value>
@@ -53,6 +51,7 @@
         <value condition="Window.IsActive(MyPVR.xml)">$INFO[Control.GetLabel(30)]</value>
         <value>$INFO[Container.FolderName]</value>
     </variable>
+
     <variable name="TopLabel" description="Infos">
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Date,, • ]$INFO[ListItem.Size]</value>
         <value condition="Container.content(Albums)">$INFO[ListItem.Label]</value>
