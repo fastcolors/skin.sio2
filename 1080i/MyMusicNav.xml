@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="502">
     <defaultcontrol always="true">600</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <views>50,51,52,53</views>
-    <onload condition="!Window.IsActive(visualisation)">FullScreen</onload>
     <controls>
         <include>BlackBackground</include>
         <!--<control type="image">-->
