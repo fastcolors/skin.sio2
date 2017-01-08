@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">666</defaultcontrol>
+    <defaultcontrol></defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <controls>
         <include>BlackBackground</include>
@@ -10,7 +10,7 @@
             <texture>$INFO[Player.Art(fanart)]</texture>
         </control>
         <control type="group">
-            <control type="visualisation" id="2" description="Visualisation">
+            <control type="visualisation" id="2">
                 <centerleft>960</centerleft>
                 <top>780</top>
                 <width>400</width>
