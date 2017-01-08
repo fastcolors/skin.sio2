@@ -623,7 +623,7 @@
                     <height>60</height>
                     <include>musictopbutton</include>
                     <!--<onfocus>ActivateWindow(Music,musicdb://albums/,return)</onfocus>-->
-                    <onfocus>Skin.SetString(selectmusic,3)</onfocus>
+                    <onclick>-</onclick>
                     <label>-</label>
                 </control>
             </control>
