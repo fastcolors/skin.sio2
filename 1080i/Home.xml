@@ -227,8 +227,8 @@
                 <font>size22</font>
                 <urlset>1</urlset>
                 <shadowcolor>-</shadowcolor>
-                <titlecolor>White</titlecolor>
-                <headlinecolor>White</headlinecolor>
+                <titlecolor>white</titlecolor>
+                <headlinecolor>white</headlinecolor>
                 <textcolor>gray</textcolor>
             </control>
         </control>

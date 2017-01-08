@@ -107,7 +107,6 @@
                 <font>size26</font>
                 <align>left</align>
                 <aligny>center</aligny>
-                <textcolor>White</textcolor>
                 <selectedcolor>orange</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
@@ -126,7 +125,6 @@
                 <font>size26</font>
                 <align>left</align>
                 <aligny>center</aligny>
-                <textcolor>White</textcolor>
                 <selectedcolor>orange</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
@@ -179,7 +177,6 @@
                 <font>size26</font>
                 <align>left</align>
                 <aligny>center</aligny>
-                <textcolor>White</textcolor>
                 <label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
               </control>
               <control type="image">

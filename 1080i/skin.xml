@@ -69,7 +69,7 @@
             <width>450</width>
             <height>40</height>
             <label>label</label>
-            <textcolor>White</textcolor>
+            <textcolor>white</textcolor>
             <font>Size22</font>
         </control>
         <control type="label" id="107">
@@ -80,7 +80,7 @@
             <height>40</height>
             <label>version</label>
             <align>right</align>
-            <textcolor>White</textcolor>
+            <textcolor>white</textcolor>
             <font>Size22</font>
         </control>
         <control type="label" id="207">
@@ -88,7 +88,7 @@
             <width>350</width>
             <height>40</height>
             <label>720p</label>
-            <textcolor>White</textcolor>
+            <textcolor>white</textcolor>
             <font>Size22</font>
             <visible>False</visible>
         </control>
@@ -100,7 +100,7 @@
             <height>30</height>
             <align>center</align>
             <label>Loading...</label>
-            <textcolor>White</textcolor>
+            <textcolor>white</textcolor>
         </control>
         <control type="label" id="109">
             <description>dlinfotext</description>
@@ -109,7 +109,7 @@
             <width>500</width>
             <height>30</height>
             <!--label></label-->
-            <textcolor>White</textcolor>
+            <textcolor>white</textcolor>
         </control>
         <control type="label" id="110">
             <description>loading</description>
@@ -118,7 +118,7 @@
             <width>450</width>
             <height>30</height>
             <label>Please wait</label>
-            <textcolor>White</textcolor>
+            <textcolor>white</textcolor>
         </control>
         <control type="label" id="111">
             <visible>!Control.HasFocus(129)</visible>
@@ -207,7 +207,7 @@
             <font>Size24</font>
             <align>justify</align>
             <autoscroll delay="3000" time="2000" repeat="10000">true</autoscroll>
-            <textcolor>White</textcolor>
+            <textcolor>white</textcolor>
             <visible>Control.IsVisible(120)</visible>
         </control>
         <control type="textbox" id="123">
@@ -221,7 +221,7 @@
             <onup>123</onup>
             <ondown>123</ondown>
             <pagecontrol>124</pagecontrol>
-            <textcolor>White</textcolor>
+            <textcolor>white</textcolor>
         </control>
         <control type="list" id="112">
             <animation effect="slide" start="720" time="150">WindowOpen</animation>
@@ -415,7 +415,7 @@
                     <width>270</width>
                     <height>45</height>
                     <font>size24</font>
-                    <textcolor>White</textcolor>
+                    <textcolor>white</textcolor>
                     <align>center</align>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
@@ -561,7 +561,7 @@
             <top>580</top>
             <subtype>page</subtype>
             <font>Size22</font>
-            <textcolor>White</textcolor>
+            <textcolor>white</textcolor>
             <onleft>124</onleft>
             <onright>124</onright>
             <ondown>124</ondown>

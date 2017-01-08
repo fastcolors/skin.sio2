@@ -19,7 +19,6 @@
         <width>390</width>
         <align>center</align>
         <font>size36</font>
-        <textcolor>White</textcolor>
         <shadowcolor>-</shadowcolor>
         <animation effect="fade" time="200">VisibleChange</animation>
       </control>
@@ -41,7 +40,6 @@
         <width>600</width>
         <align>center</align>
         <font>size27</font>
-        <textcolor>White</textcolor>
         <shadowcolor>-</shadowcolor>
         <animation effect="fade" time="200">VisibleChange</animation>
       </control>

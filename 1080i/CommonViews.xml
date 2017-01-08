@@ -672,7 +672,6 @@
     </include>
     <include name="TitleCommons">
         <font>size39B</font>
-        <textcolor>White</textcolor>
         <shadowcolor>black</shadowcolor>
     </include>
     <include name="Keyboard">
