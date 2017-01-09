@@ -22,10 +22,11 @@
                 <aspectratio>stretch</aspectratio>
                 <texture>special://skin/resources/HomeBG.png</texture>
             </control>
+            <!--CLONING-->
             <!--<control type="image">-->
             <!--<height>1080</height>-->
             <!--<width>1920</width>-->
-            <!--<texture>appletv.png</texture>-->
+            <!--<texture>atv.png</texture>-->
             <!--</control>-->
             <control type="image" description="banda bianca">
                 <top>720</top>

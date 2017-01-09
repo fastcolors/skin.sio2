@@ -244,15 +244,15 @@
         <ondown>9000</ondown>
         <top>90</top>
         <width>1920</width>
-        <height>610</height>
+        <height>630</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
-        <itemlayout height="600" width="500">
+        <itemlayout height="600" width="550">
             <control type="image">
-                <left>99</left>
-                <top>27</top>
-                <width>450</width>
-                <height>450</height>
+                <left>90</left>
+                <top>35</top>
+                <width>500</width>
+                <height>500</height>
                 <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
                 <aspectratio>scale</aspectratio>
             </control>
@@ -265,16 +265,16 @@
                     <animation effect="fade" start="0" end="100" time="150">Focus</animation>
                     <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
                     <left>40</left>
-                    <top>46</top>
-                    <width>570</width>
-                    <height>530</height>
+                    <top>66</top>
+                    <width>630</width>
+                    <height>540</height>
                     <texture>shadow.png</texture>
                 </control>
                 <control type="image">
-                    <left>99</left>
-                    <top>27</top>
-                    <width>450</width>
-                    <height>450</height>
+                    <left>90</left>
+                    <top>35</top>
+                    <width>500</width>
+                    <height>500</height>
                     <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
@@ -284,7 +284,7 @@
                 <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
                 <animation effect="fade" start="100" end="0" time="80">unFocus</animation>
                 <centerleft>330</centerleft>
-                <top>520</top>
+                <top>560</top>
                 <width>540</width>
                 <height>150</height>
                 <font>size26</font>
@@ -533,7 +533,7 @@
                         <top>160</top>
                         <height>45</height>
                         <width>230</width>
-                         <shadowcolor>dimgray</shadowcolor>
+                        <shadowcolor>dimgray</shadowcolor>
                         <align>center</align>
                         <label>$INFO[ListItem.label]</label>
                     </control>
@@ -543,7 +543,7 @@
                         <height>100</height>
                         <width>230</width>
                         <align>center</align>
-                         <shadowcolor>dimgray</shadowcolor>
+                        <shadowcolor>dimgray</shadowcolor>
                         <label>$INFO[ListItem.label2]</label>
                     </control>
                     <control type="label" description="Conditions">
@@ -552,7 +552,7 @@
                         <height>45</height>
                         <width>230</width>
                         <font>size21</font>
-                         <shadowcolor>dimgray</shadowcolor>
+                        <shadowcolor>dimgray</shadowcolor>
                         <align>center</align>
                         <label>$INFO[ListItem.Property(Conditions)]</label>
                     </control>
@@ -577,7 +577,7 @@
                         <top>160</top>
                         <height>45</height>
                         <width>230</width>
-                         <shadowcolor>dimgray</shadowcolor>
+                        <shadowcolor>dimgray</shadowcolor>
                         <align>center</align>
                         <label>$INFO[ListItem.label]</label>
                     </control>
@@ -587,7 +587,7 @@
                         <height>100</height>
                         <width>230</width>
                         <align>center</align>
-                         <shadowcolor>dimgray</shadowcolor>
+                        <shadowcolor>dimgray</shadowcolor>
                         <label>$INFO[ListItem.label2]</label>
                     </control>
                     <control type="label" description="Conditions">
@@ -596,7 +596,7 @@
                         <height>45</height>
                         <width>230</width>
                         <font>size21</font>
-                         <shadowcolor>dimgray</shadowcolor>
+                        <shadowcolor>dimgray</shadowcolor>
                         <align>center</align>
                         <label>$INFO[ListItem.Property(Conditions)]</label>
                     </control>
