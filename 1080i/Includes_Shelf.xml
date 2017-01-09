@@ -485,12 +485,19 @@
         <control type="group">
             <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),weather)</visible>
             <include>ShelfFade</include>
-            <control type="image">
+            <!--<control type="image">-->
+            <!--<width>1920</width>-->
+            <!--<height>720</height>-->
+            <!--<aspectratio>scale</aspectratio>-->
+            <!--<texture background="true">$INFO[Window(weather).Property(Current.FanartCode),weather/,.jpg]</texture>-->
+            <!--<texture background="true">images/black.png</texture>-->
+            <!--</control>-->
+            <control type="multiimage">
                 <width>1920</width>
                 <height>720</height>
-                <aspectratio>stretch</aspectratio>
-                <!--<texture background="true">$INFO[Window(weather).Property(Current.FanartCode),weather/,.png]</texture>-->
-                <texture background="true">images/black.png</texture>
+                <aspectratio>scale</aspectratio>
+                <imagepath>weather</imagepath>
+                <timeperimage>2000</timeperimage>
             </control>
             <control type="label">
                 <left>83</left>
@@ -498,8 +505,8 @@
                 <width>1754</width>
                 <height>40</height>
                 <align>center</align>
-                <textcolor>white</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <font>shelf</font>
+                <shadowcolor>dimgray</shadowcolor>
                 <label>$INFO[Weather.Location]</label>
             </control>
             <control type="list" id="414" description="TOP Weather">
@@ -509,16 +516,24 @@
                 <onright>9000</onright>
                 <orientation>horizontal</orientation>
                 <left>85</left>
-                <top>180</top>
+                <top>200</top>
                 <width>1760</width>
                 <height>418</height>
                 <itemlayout width="250">
+                    <control type="image">
+                        <centerleft>125</centerleft>
+                        <top>0</top>
+                        <width>230</width>
+                        <height>350</height>
+                        <texture border="8">images/white.png</texture>
+                        <colordiffuse>77000000</colordiffuse>
+                    </control>
                     <control type="label">
                         <centerleft>125</centerleft>
                         <top>160</top>
                         <height>45</height>
-                        <width>250</width>
-                        <textcolor>white</textcolor>
+                        <width>230</width>
+                         <shadowcolor>dimgray</shadowcolor>
                         <align>center</align>
                         <label>$INFO[ListItem.label]</label>
                     </control>
@@ -526,18 +541,18 @@
                         <centerleft>125</centerleft>
                         <top>200</top>
                         <height>100</height>
-                        <width>250</width>
+                        <width>230</width>
                         <align>center</align>
-                        <textcolor>white</textcolor>
+                         <shadowcolor>dimgray</shadowcolor>
                         <label>$INFO[ListItem.label2]</label>
                     </control>
                     <control type="label" description="Conditions">
                         <centerleft>125</centerleft>
                         <top>290</top>
                         <height>45</height>
-                        <width>250</width>
+                        <width>230</width>
                         <font>size21</font>
-                        <textcolor>white</textcolor>
+                         <shadowcolor>dimgray</shadowcolor>
                         <align>center</align>
                         <label>$INFO[ListItem.Property(Conditions)]</label>
                     </control>
@@ -549,12 +564,20 @@
                     </control>
                 </itemlayout>
                 <focusedlayout width="250">
+                    <control type="image">
+                        <centerleft>125</centerleft>
+                        <top>0</top>
+                        <width>230</width>
+                        <height>350</height>
+                        <texture border="8">images/white.png</texture>
+                        <colordiffuse>77000000</colordiffuse>
+                    </control>
                     <control type="label">
                         <centerleft>125</centerleft>
                         <top>160</top>
                         <height>45</height>
-                        <width>250</width>
-                        <textcolor>white</textcolor>
+                        <width>230</width>
+                         <shadowcolor>dimgray</shadowcolor>
                         <align>center</align>
                         <label>$INFO[ListItem.label]</label>
                     </control>
@@ -562,18 +585,18 @@
                         <centerleft>125</centerleft>
                         <top>200</top>
                         <height>100</height>
-                        <width>250</width>
+                        <width>230</width>
                         <align>center</align>
-                        <textcolor>white</textcolor>
+                         <shadowcolor>dimgray</shadowcolor>
                         <label>$INFO[ListItem.label2]</label>
                     </control>
                     <control type="label" description="Conditions">
                         <centerleft>125</centerleft>
                         <top>290</top>
                         <height>45</height>
-                        <width>250</width>
+                        <width>230</width>
                         <font>size21</font>
-                        <textcolor>white</textcolor>
+                         <shadowcolor>dimgray</shadowcolor>
                         <align>center</align>
                         <label>$INFO[ListItem.Property(Conditions)]</label>
                     </control>
