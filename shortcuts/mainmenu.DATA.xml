@@ -39,7 +39,7 @@
         <icon>$INFO[Weather.Conditions]</icon>
         <label2>icons/white.png</label2>
         <thumb>-</thumb>
-        <action>ActivateWindow(MyWeather)</action>
+        <action>SetFocus(700)</action>
     </shortcut>
     <shortcut>
         <defaultID>pictures</defaultID>

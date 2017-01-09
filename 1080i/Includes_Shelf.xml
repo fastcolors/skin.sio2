@@ -12,6 +12,7 @@
         <height>630</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
+        <onclick condition="$EXP[isupcomingmovies]">contextmenu</onclick>
         <itemlayout height="600" width="382">
             <control type="image">
                 <visible>String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
