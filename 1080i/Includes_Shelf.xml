@@ -120,13 +120,13 @@
             </control>
             <control type="label">
                 <centerleft>475</centerleft>
-                <top>490</top>
+                <top>500</top>
                 <width>790</width>
                 <height>40</height>
                 <font>size30B</font>
                 <scroll>false</scroll>
                 <textcolor>dimgray</textcolor>
-                <label>$INFO[ListItem.Title]</label>
+                <label>$INFO[ListItem.TVShowTitle]</label>
                 <align>center</align>
             </control>
             <control type="label">
@@ -196,12 +196,12 @@
                 </control>
                 <control type="label">
                     <centerleft>475</centerleft>
-                    <top>490</top>
+                    <top>500</top>
                     <width>790</width>
                     <height>40</height>
                     <font>size30B</font>
                     <scroll>false</scroll>
-                    <label>$INFO[ListItem.Title]</label>
+                    <label>$INFO[ListItem.TVShowTitle]</label>
                     <align>center</align>
                 </control>
                 <control type="label">
