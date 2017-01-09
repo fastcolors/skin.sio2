@@ -39,7 +39,7 @@
                         <control type="label">
                             <centerleft>245</centerleft>
                             <top>360</top>
-                            <width>600</width>
+                            <width>300</width>
                             <height>20</height>
                             <font>size30</font>
                             <align>center</align>
