@@ -110,8 +110,8 @@
     </variable>
 
     <variable name="shelf">
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),WL)">special://skin/resources/laststarted.xsp</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),RND)">special://skin/resources/random.xsp</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),WL)">special://skin/playlists/inprogress_movies.xsp</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),RND)">special://skin/playlists/random_movies.xsp</value>
 
         <!--<value condition="Container(9000).HasFocus(357)">special://skin/resources/3d.xsp</value>-->
 
@@ -142,13 +142,13 @@
     </variable>
 
     <variable name="epshelf">
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),1)">special://skin/resources/randomTV.xsp</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),1)">special://skin/playlists/random_episodes.xsp</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),2)">plugin://service.library.data.provider?type=recommendedepisodes&limit=18&reload=$INFO[Window.Property(recommendedepisodes)]</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows)">videodb://recentlyaddedepisodes</value>
     </variable>
 
     <variable name="squareshelf">
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + String.IsEqual(Skin.String(musicshelf),artists) + Library.HasContent(Music)">special://skin/resources/randomMZK.xsp</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + String.IsEqual(Skin.String(musicshelf),artists) + Library.HasContent(Music)">special://skin/playlists/random_albums.xsp</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + String.IsEqual(Skin.String(musicshelf),albums) + Library.HasContent(Music)">musicdb://recentlyplayedalbums/</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + Library.HasContent(Music)">musicdb://recentlyaddedalbums/</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) + Skin.HasSetting(AddonsShelf_Custom)"></value>

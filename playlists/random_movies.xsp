@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <smartplaylist type="movies">
-    <name>Random</name>
+    <name>Random movies</name>
     <match>all</match>
     <limit>5</limit>
-    <order direction="ascending">random</order>
+    <order direction="descending">random</order>
 </smartplaylist>
