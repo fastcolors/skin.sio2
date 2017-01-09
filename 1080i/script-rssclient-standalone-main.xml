@@ -33,7 +33,7 @@
             <font>Size42B</font>
             <label>$INFO[ListItem.Label]</label>
             <wrapmultiline>true</wrapmultiline>
-            <textcolor>Grey</textcolor>
+            <textcolor>gray</textcolor>
           </control>
           <control type="label" description="ItemDate">
             <left>600</left>
@@ -43,7 +43,7 @@
             <align>center</align>
             <font>size22</font>
             <label>$INFO[ListItem.Property(date)]</label>
-            <textcolor>Grey</textcolor>
+            <textcolor>gray</textcolor>
           </control>
           <control type="image">
             <top>80</top>
@@ -76,7 +76,7 @@
             <align>center</align>
             <font>size22</font>
             <label>$INFO[ListItem.Property(date)]</label>
-            <textcolor>Grey</textcolor>
+            <textcolor>gray</textcolor>
           </control>
           <control type="image">
             <top>80</top>
@@ -92,7 +92,7 @@
             <aligny>top</aligny>
             <align>justify</align>
             <label>$INFO[ListItem.Property(desc)]</label>
-            <visible>StringCompare(ListItem.Property(image),)</visible>
+            <visible>String.IsEqual(ListItem.Property(image),)</visible>
             <textcolor>white</textcolor>
           </control>
           <control type="textbox">
@@ -103,7 +103,7 @@
             <aligny>top</aligny>
             <align>justify</align>
             <label>$INFO[ListItem.Property(desc)]</label>
-            <visible>!StringCompare(ListItem.Property(image),)</visible>
+            <visible>!String.IsEqual(ListItem.Property(image),)</visible>
             <textcolor>white</textcolor>
           </control>
           <control type="image">
@@ -114,7 +114,7 @@
           </control>
         </control>
         <control type="group" description="Imagefeed">
-          <visible>!StringCompare(ListItem.Property(image),)</visible>
+          <visible>!String.IsEqual(ListItem.Property(image),)</visible>
           <control type="image" id="30011">
             <left>0</left>
             <top>100</top>
@@ -171,7 +171,7 @@
           <width>375</width>
           <textoffsetx>15</textoffsetx>
           <textwidth>352</textwidth>
-          <visible>!StringCompare(Container(30050).ListItem.Property(video),)</visible>
+          <visible>!String.IsEqual(Container(30050).ListItem.Property(video),)</visible>
         </control>
       </control>
     </control>
@@ -220,7 +220,7 @@
           <top>0</top>
           <width>400</width>
           <height>60</height>
-          <textcolor>Yellow</textcolor>
+          <textcolor>orange</textcolor>
           <align>center</align>
           <aligny>center</aligny>
           <label>$INFO[ListItem.Label]</label>
@@ -260,7 +260,6 @@
 				<textcolor>White</textcolor>
 				<width>384</width>
 			</control>
-			
 			<control type="togglebutton" id="39004" description="Sort order">
 				<label>-</label>
 				<width>50</width>
@@ -276,12 +275,12 @@
           <width>384</width>
           <label>$ADDON[script.rssclient-standalone 30002]</label>
           <onclick>RunScript(script.rss.editor)</onclick>
-          <textcolor>White</textcolor>
+          <textcolor>white</textcolor>
         </control>
         <control type="button" id="39999">
           <description>go to addon settings (button id is important)</description>
           <label>$ADDON[script.rssclient-standalone 30009]</label>
-          <textcolor>White</textcolor>
+          <textcolor>white</textcolor>
           <width>384</width>
         </control>
       </control>

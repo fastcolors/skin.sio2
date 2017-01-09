@@ -41,8 +41,8 @@
         <font>size33</font>
         <align>left</align>
         <aligny>center</aligny>
-        <focusedcolor>White</focusedcolor>
-        <selectedcolor>White</selectedcolor>
+        <focusedcolor>white</focusedcolor>
+        <selectedcolor>orange</selectedcolor>
         <label>-</label>
         <textoffsetx>20</textoffsetx>
         <pulseonselect>false</pulseonselect>

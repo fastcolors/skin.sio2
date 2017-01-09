@@ -1,26 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="7">
   <defaultcontrol always="true">9001</defaultcontrol>
+  <backgroundcolor>aliceblue</backgroundcolor>
   <allowoverlay>no</allowoverlay>
   <include>OpenClose</include>
   <controls>
     <include>BlackBackground</include>
-    <control type="image" description="Line Split">
-      <left>0</left>
-      <top>150</top>
-      <width>1920</width>
-      <height>1</height>
-      <aspectratio>stretch</aspectratio>
-      <texture>images/Line.png</texture>
-    </control>
-    <control type="image" description="Line Split">
-      <left>0</left>
-      <top>80</top>
-      <width>1920</width>
-      <height>1</height>
-      <aspectratio>stretch</aspectratio>
-      <texture>images/Line.png</texture>
-    </control>
     <control type="label" description="Heading">
       <include>Heading</include>
       <label>130</label>
@@ -31,41 +16,31 @@
         <width>auto</width>
         <align>center</align>
         <height>80</height>
-        <itemgap>9</itemgap>
+        <itemgap>8</itemgap>
         <onleft>noop</onleft>
         <onright>noop</onright>
         <onup>9001</onup>
         <ondown>9001</ondown>
         <orientation>horizontal</orientation>
         <control type="button" id="95" description="Summary">
-          <texturenofocus border="5">-</texturenofocus>
-          <texturefocus border="5">images/backfocus.png</texturefocus>
           <width>300</width>
           <label>20037</label>
         </control>
         <control type="button" id="94" description="Storage">
           <width>300</width>
           <label>13277</label>
-          <texturenofocus border="5">-</texturenofocus>
-          <texturefocus border="5">images/backfocus.png</texturefocus>
         </control>
         <control type="button" id="96" description="Network">
           <width>300</width>
           <label>13279</label>
-          <texturenofocus border="5">-</texturenofocus>
-          <texturefocus border="5">images/backfocus.png</texturefocus>
         </control>
         <control type="button" id="97" description="Video">
           <width>300</width>
           <label>13280</label>
-          <texturenofocus border="5">-</texturenofocus>
-          <texturefocus border="5">images/backfocus.png</texturefocus>
         </control>
         <control type="button" id="98" description="Hardware">
           <width>300</width>
           <label>13281</label>
-          <texturenofocus border="5">-</texturenofocus>
-          <texturefocus border="5">images/backfocus.png</texturefocus>
         </control>
       </control>
       <control type="grouplist" description="Stage">
@@ -167,7 +142,7 @@
           <width>1420</width>
           <font>size27</font>
         </control>
-        <control type="label" id="52" description="XBMC BUILD">
+        <control type="label" id="52" description="KODI BUILD">
           <width>1420</width>
           <align>center</align>
           <font>size27</font>

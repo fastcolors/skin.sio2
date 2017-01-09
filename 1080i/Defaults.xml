@@ -6,41 +6,39 @@
     <align>left</align>
     <aligny>center</aligny>
     <font>size33</font>
-    <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
-    <disabledcolor>Disabled</disabledcolor>
-    <scroll>true</scroll>
+    <textcolor>white</textcolor>
+    <shadowcolor>-</shadowcolor>
+    <focusedcolor>white</focusedcolor>
+    <selectedcolor>orange</selectedcolor>
+    <disabledcolor>slategray</disabledcolor>
+    <scroll>false</scroll>
     <scrollspeed>50</scrollspeed>
     <scrollsuffix>  •  </scrollsuffix>
   </default>
   <default type="fadelabel">
-    <left>0</left>
-    <top>0</top>
     <height>75</height>
     <label>-</label>
     <align>left</align>
     <aligny>center</aligny>
     <font>size33</font>
     <textoffsetx>20</textoffsetx>
-    <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
-    <disabledcolor>Disabled</disabledcolor>
+    <textcolor>white</textcolor>
+    <shadowcolor>-</shadowcolor>
+    <focusedcolor>white</focusedcolor>
+    <selectedcolor>white</selectedcolor>
+    <disabledcolor>dimgray</disabledcolor>
     <scrollout>false</scrollout>
     <pauseatend>3000</pauseatend>
     <scrollsuffix> •  • </scrollsuffix>
   </default>
   <default type="textbox">
     <label>-</label>
-    <font>size30</font>
-    <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
-    <disabledcolor>Disabled</disabledcolor>
+    <font>size28</font>
+    <textcolor>white</textcolor>
+    <shadowcolor>-</shadowcolor>
+    <focusedcolor>white</focusedcolor>
+    <selectedcolor>white</selectedcolor>
+    <disabledcolor>dimgray</disabledcolor>
     <pagecontrol>61</pagecontrol>
     <pulseonselect></pulseonselect>
     <autoscroll delay="6000" time="3000" repeat="10000"></autoscroll>
@@ -54,26 +52,25 @@
     <aspectratio>stretch</aspectratio>
   </default>
   <default type="button">
-    <left>0</left>
-    <top>0</top>
+    <animation effect="zoom" start="100" end="105" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+    <animation effect="zoom" start="105" end="100" time="120" center="auto">unFocus</animation>
     <width>390</width>
-    <height>75</height>
+    <height>70</height>
     <align>center</align>
     <aligny>center</aligny>
     <font>size33</font>
     <label>-</label>
     <textoffsetx>20</textoffsetx>
-    <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
-    <disabledcolor>Disabled</disabledcolor>
-    <texturefocus border="8">images/Buttonselect.png</texturefocus>
+    <textcolor>darktext</textcolor>
+    <shadowcolor>-</shadowcolor>
+    <focusedcolor>black</focusedcolor>
+    <selectedcolor>orange</selectedcolor>
+    <disabledcolor>dimgray</disabledcolor>
+    <texturefocus border="8">images/White.png</texturefocus>
+    <!--<texturenofocus border="8" colordiffuse="77FFFFFF">images/White.png</texturenofocus>-->
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="edit">
-    <left>0</left>
-    <top>0</top>
     <width>390</width>
     <height>75</height>
     <align>center</align>
@@ -81,62 +78,65 @@
     <font>size33</font>
     <label>-</label>
     <textoffsetx>20</textoffsetx>
-    <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
-    <disabledcolor>Disabled</disabledcolor>
-    <texturenofocus border="8">images/Black.png</texturenofocus>
-    <texturefocus flipy="true" border="8">images/Buttonselect.png</texturefocus>
+    <textcolor>darktext</textcolor>
+    <shadowcolor>-</shadowcolor>
+    <focusedcolor>black</focusedcolor>
+    <selectedcolor>orange</selectedcolor>
+    <disabledcolor>dimgray</disabledcolor>
+    <texturenofocus border="8" colordiffuse="99ffffff">images/White.png</texturenofocus>
+    <texturefocus border="8">images/White.png</texturefocus>
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="togglebutton">
-    <left>0</left>
-    <top>0</top>
+    <animation effect="zoom" start="100" end="105" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+    <animation effect="zoom" start="105" end="100" time="120" center="auto">unFocus</animation>
     <width>450</width>
-    <height>75</height>
+    <height>70</height>
     <align>center</align>
     <aligny>center</aligny>
     <font>size33</font>
     <label>-</label>
     <textoffsetx>20</textoffsetx>
-    <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
-    <altselectedcolor>Yellow</altselectedcolor>
-    <disabledcolor>Disabled</disabledcolor>
-    <texturefocus border="8">images/Buttonselect.png</texturefocus>
-    <alttexturefocus border="8">images/Buttonselect.png</alttexturefocus>
+    <textcolor>darktext</textcolor>
+    <shadowcolor>-</shadowcolor>
+    <focusedcolor>black</focusedcolor>
+    <selectedcolor>orange</selectedcolor>
+    <altselectedcolor>orange</altselectedcolor>
+    <disabledcolor>dimgray</disabledcolor>
+    <texturefocus border="8">images/White.png</texturefocus>
+    <alttexturefocus border="8">images/White.png</alttexturefocus>
+    <!--<texturenofocus border="8" colordiffuse="77FFFFFF">images/White.png</texturenofocus>-->
     <align>center</align>
     <aligny>center</aligny>
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="radiobutton">
-    <left>0</left>
+    <animation effect="zoom" start="100" end="105" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+    <animation effect="zoom" start="105" end="100" time="120" center="auto">unFocus</animation>
     <top>6</top>
-    <height>75</height>
+    <height>70</height>
     <align>left</align>
     <aligny>center</aligny>
     <font>size33</font>
     <label>-</label>
-    <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
-    <disabledcolor>Disabled</disabledcolor>
-    <radiowidth>30</radiowidth>
-    <radioheight>30</radioheight>
-    <texturefocus border="8">images/Buttonselect.png</texturefocus>
+    <textcolor>darktext</textcolor>
+    <shadowcolor>-</shadowcolor>
+    <focusedcolor>black</focusedcolor>
+    <selectedcolor>orange</selectedcolor>
+    <disabledcolor>dimgray</disabledcolor>
+    <radiowidth>50</radiowidth>
+    <radioheight>50</radioheight>
+    <texturefocus border="8">images/White.png</texturefocus>
+    <!--<texturenofocus border="8" colordiffuse="77FFFFFF">images/White.png</texturenofocus>-->
     <textureradiofocus>images/RadioON.png</textureradiofocus>
-    <textureradionofocus>-</textureradionofocus>
+    <textureradionofocus>images/RadioOFF.png</textureradionofocus>
     <textoffsetx>20</textoffsetx>
     <!--<radioleft>262</radioleft>-->
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="spincontrol">
-    <left>0</left>
-    <top>0</top>
+    <animation effect="zoom" start="100" end="105" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+    <animation effect="zoom" start="105" end="100" time="120" center="auto">unFocus</animation>
     <textureup>images/ArrowUpNF.png</textureup>
     <textureupfocus>images/ArrowUpFO.png</textureupfocus>
     <texturedown>images/ArrowDownNF.png</texturedown>
@@ -145,11 +145,11 @@
     <spinwidth>18</spinwidth>
     <spinheight>18</spinheight>
     <font>size33</font>
-    <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
-    <disabledcolor>Disabled</disabledcolor>
+    <textcolor>darktext</textcolor>
+    <shadowcolor>-</shadowcolor>
+    <focusedcolor>black</focusedcolor>
+    <selectedcolor>orange</selectedcolor>
+    <disabledcolor>dimgray</disabledcolor>
     <textoffsetx>20</textoffsetx>
     <align>left</align>
     <aligny>center</aligny>
@@ -157,24 +157,25 @@
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="spincontrolex">
-    <left>0</left>
-    <top>0</top>
+    <animation effect="zoom" start="100" end="105" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+    <animation effect="zoom" start="105" end="100" time="120" center="auto">unFocus</animation>
     <width>450</width>
-    <height>75</height>
+    <height>70</height>
     <label>-</label>
     <font>size33</font>
     <textureup>images/ArrowUpNF.png</textureup>
     <textureupfocus>images/ArrowUpFO.png</textureupfocus>
     <texturedown>images/ArrowDownNF.png</texturedown>
     <texturedownfocus>images/ArrowDownFO.png</texturedownfocus>
-    <texturefocus border="8">images/Buttonselect.png</texturefocus>
+    <texturefocus border="8">images/White.png</texturefocus>
+    <!--<texturenofocus colordiffuse="77FFFFFF">images/White.png</texturenofocus>-->
     <spinwidth>18</spinwidth>
     <spinheight>18</spinheight>
-    <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
-    <disabledcolor>Disabled</disabledcolor>
+    <textcolor>darktext</textcolor>
+    <shadowcolor>-</shadowcolor>
+    <focusedcolor>black</focusedcolor>
+    <selectedcolor>orange</selectedcolor>
+    <disabledcolor>dimgray</disabledcolor>
     <textoffsetx>20</textoffsetx>
     <align>left</align>
     <aligny>center</aligny>
@@ -191,27 +192,28 @@
     <texturesliderbar>OSD/SliderBackground2.png</texturesliderbar>
   </default>
   <default type="sliderex" description="Default Slider">
+    <animation effect="zoom" start="100" end="105" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+    <animation effect="zoom" start="105" end="100" time="120" center="auto">unFocus</animation>
+    <texturefocus border="8">images/White.png</texturefocus>
+    <!--<texturenofocus border="8" colordiffuse="77FFFFFF">images/White.png</texturenofocus>-->
     <left>795</left>
     <top>225</top>
-    <height>75</height>
+    <height>70</height>
     <width>450</width>
-    <sliderwidth>100</sliderwidth>
-    <sliderheight>24</sliderheight>
-    <texturesliderbar>OSD/SliderBackground.png</texturesliderbar>
-    <textureslidernib>OSD/SliderNibNF.png</textureslidernib>
-    <textureslidernibfocus>OSD/SliderNibFO.png</textureslidernibfocus>
-    <texturefocus border="8">images/Buttonselect.png</texturefocus>
-    <texturenofocus>-</texturenofocus>
+    <sliderwidth>400</sliderwidth>
+    <sliderheight>40</sliderheight>
+    <texturesliderbar>images/slider_bg.png</texturesliderbar>
+    <textureslidernib>images/slider_nib_nf.png</textureslidernib>
+    <textureslidernibfocus>images/slider_nib.png</textureslidernibfocus>
     <font>size33</font>
-    <textcolor>White</textcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
-    <disabledcolor>Disabled</disabledcolor>
+    <textcolor>darktext</textcolor>
+    <focusedcolor>black</focusedcolor>
+    <selectedcolor>orange</selectedcolor>
+    <disabledcolor>dimgray</disabledcolor>
+    <aligny>center</aligny>
     <textoffsetx>20</textoffsetx>
   </default>
   <default type="scrollbar">
-    <left>0</left>
-    <top>0</top>
     <width>9</width>
     <orientation>vertical</orientation>
     <texturesliderbackground border="0,4,0,4">Scrollbar/ScrollbarBG.png</texturesliderbackground>

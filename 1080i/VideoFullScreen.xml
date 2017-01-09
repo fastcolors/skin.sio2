@@ -12,7 +12,7 @@
         <texture>images/Black.png</texture>
         <colordiffuse>BBFFFFFF</colordiffuse>
       </control>
-      <control type="grouplist" id="0">
+   <control type="grouplist" id="0">
         <left>60</left>
         <top>90</top>
         <width>1800</width>

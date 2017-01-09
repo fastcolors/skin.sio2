@@ -59,7 +59,7 @@
           <label>19143</label>
           <align>center</align>
           <aligny>center</aligny>
-          <textcolor>Yellow</textcolor>
+          <textcolor>orange</textcolor>
         </control>
         <control type="group">
           <description>Group list</description>
@@ -75,7 +75,7 @@
             <label>19146</label>
             <align>center</align>
             <aligny>center</aligny>
-            <textcolor>Grey</textcolor>
+            <textcolor>gray</textcolor>
           </control>
           <control type="label">
             <description>name label</description>
@@ -107,8 +107,7 @@
                 <font>size26</font>
                 <align>left</align>
                 <aligny>center</aligny>
-                <textcolor>White</textcolor>
-                <selectedcolor>Yellow</selectedcolor>
+                <selectedcolor>orange</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
             </itemlayout>
@@ -126,8 +125,7 @@
                 <font>size26</font>
                 <align>left</align>
                 <aligny>center</aligny>
-                <textcolor>White</textcolor>
-                <selectedcolor>Yellow</selectedcolor>
+                <selectedcolor>orange</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
             </focusedlayout>
@@ -146,7 +144,7 @@
             <font>Size26</font>
             <align>center</align>
             <aligny>center</aligny>
-            <textcolor>Grey</textcolor>
+            <textcolor>gray</textcolor>
             <info>Control.GetLabel(21)</info>
           </control>
           <control type="label">
@@ -179,7 +177,6 @@
                 <font>size26</font>
                 <align>left</align>
                 <aligny>center</aligny>
-                <textcolor>White</textcolor>
                 <label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
               </control>
               <control type="image">
@@ -204,7 +201,7 @@
                 <font>size26</font>
                 <align>left</align>
                 <aligny>center</aligny>
-                <textcolor>Yellow</textcolor>
+                <textcolor>orange</textcolor>
                 <label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
               </control>
               <control type="image">
@@ -230,7 +227,7 @@
             <font>Size26</font>
             <align>center</align>
             <aligny>center</aligny>
-            <textcolor>Grey</textcolor>
+            <textcolor>gray</textcolor>
             <info>Control.GetLabel(22)</info>
           </control>
           <control type="label">
@@ -289,7 +286,7 @@
                 <font>size26</font>
                 <align>left</align>
                 <aligny>center</aligny>
-                <textcolor>Yellow</textcolor>
+                <textcolor>orange</textcolor>
                 <label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
               </control>
               <control type="image">
@@ -303,13 +300,6 @@
           </control>
         </control>
       </control>
-    </control>
-    <control type="image">
-      <left>135</left>
-      <top>800</top>
-      <width>1590</width>
-      <height>80</height>
-      <texture>images/bottomshader.png</texture>
     </control>
     <control type="grouplist" id="9000">
       <left>1560</left>
@@ -360,7 +350,7 @@
       <top>860</top>
       <width>1580</width>
       <align>center</align>
-      <label>[COLOR Grey]$LOCALIZE[19207][/COLOR] $INFO[Control.GetLabel(20)]</label>
+      <label>[COLOR gray]$LOCALIZE[19207][/COLOR] $INFO[Control.GetLabel(20)]</label>
     </control>
     <control type="label" id="20">
       <description>Fake Label</description>

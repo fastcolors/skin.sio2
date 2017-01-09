@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="20">
+    <backgroundcolor>lightgray</backgroundcolor>
     <defaultcontrol always="true">50</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <controls>
+        <include>BlackBackground</include>
         <control type="group" description="Slider and List">
             <include>SlimListItemCount</include>
             <left>1020</left>
             <top>131</top>
-            <include>SlimListSlider</include>
             <control type="fixedlist" id="50">
                 <width>802</width>
                 <height>891</height>
@@ -23,10 +24,22 @@
                 <preloaditems>4</preloaditems>
                 <scrolltime tween="sine" easing="inout">280</scrolltime>
                 <itemlayout width="802" height="81">
-                    <include>ArrowNF</include>
+                    <!--<control type="image">-->
+                    <!--<height>70</height>-->
+                    <!--<width>805</width>-->
+                    <!--<texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>-->
+                    <!--</control>-->
+                    <control type="image" description="arrow">
+                        <visible>[Window.IsActive(Settings.xml) | ListItem.IsFolder] + ![ListItem.IsParentFolder | ListItem.IsCollection | container.content(Movies) | container.content(TVshows) | container.content(Seasons) | container.content(Episodes) | container.content(musicvideos) | container.content(songs) | container.content(addons)]</visible>
+                        <right>0</right>
+                        <height>70</height>
+                        <width>54</width>
+                        <aspectratio>keep</aspectratio>
+                        <texture>images/Arrow.png</texture>
+                    </control>
                     <control type="label" description="Main Label">
                         <width max="720">auto</width>
-                        <include>52MainLabel</include>
+                        <include>50Label</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label" description="Label2">
@@ -38,33 +51,54 @@
                         <align>right</align>
                         <font>size27</font>
                         <scroll>false</scroll>
-                        <textcolor>Grey</textcolor>
+                        <textcolor>black</textcolor>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                 </itemlayout>
                 <focusedlayout width="802" height="81">
-                    <include>ArrowFO</include>
-                    <control type="label" description="Main Label">
-                        <width max="720">auto</width>
-                        <include>52MainLabelFO</include>
-                        <label>$INFO[ListItem.Label]</label>
-                    </control>
-                    <control type="label" description="Label2">
-                        <visible>!ListItem.IsFolder</visible>
-                        <animation effect="fade" time="300" start="50" end="100" delay="100">Focus</animation>
-                        <right>45</right>
-                        <top>0</top>
-                        <height>81</height>
-                        <width>300</width>
-                        <align>right</align>
-                        <font>size27</font>
-                        <textcolor>White2</textcolor>
-                        <label>$INFO[ListItem.Label2]</label>
+                    <control type="group">
+                        <animation effect="zoom" time="120" start="100" end="105" center="auto" tween="Back" easing="Out">Focus</animation>
+                        <control type="image">
+                            <top>12</top>
+                            <left>-50</left>
+                            <height>70</height>
+                            <width>905</width>
+                            <texture>shadow.png</texture>
+                        </control>
+                        <control type="image">
+                            <height>70</height>
+                            <width>805</width>
+                            <texture border="8">images/White.png</texture>
+                        </control>
+                        <control type="image" description="arrow">
+                            <visible>[Window.IsActive(Settings.xml) | ListItem.IsFolder] + ![ListItem.IsParentFolder | ListItem.IsCollection | container.content(Movies) | container.content(TVshows) | container.content(Seasons) | container.content(Episodes) | container.content(musicvideos) | container.content(songs) | container.content(addons)]</visible>
+                            <right>0</right>
+                            <height>70</height>
+                            <width>54</width>
+                            <aspectratio>keep</aspectratio>
+                            <texture>images/Arrow.png</texture>
+                        </control>
+                        <control type="label" description="Main Label">
+                            <width max="720">auto</width>
+                            <include>50LabelFO</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label" description="Label2">
+                            <visible>!ListItem.IsFolder</visible>
+                            <animation effect="fade" time="300" start="50" end="100" delay="100">Focus</animation>
+                            <right>45</right>
+                            <top>0</top>
+                            <height>81</height>
+                            <width>300</width>
+                            <align>right</align>
+                            <font>size27</font>
+                            <textcolor>black</textcolor>
+                            <label>$INFO[ListItem.Label2]</label>
+                        </control>
                     </control>
                 </focusedlayout>
             </control>
         </control>
-        <include>ListFade</include>
         <control type="scrollbar" id="60">
             <left>39r</left>
             <top>135</top>
@@ -78,15 +112,18 @@
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
             <include>DialogOpenCloseVisible</include>
             <control type="image" description="List back">
-                <left>459</left>
-                <top>188</top>
-                <width>1002</width>
-                <height>787</height>
+                <centerleft>960</centerleft>
+                <centertop>540</centertop>
+                <width>802</width>
+                <height>706</height>
                 <aspectratio>stretch</aspectratio>
-                <texture border="150">images/Dialog.png</texture>
+                <texture border="50">images/ContextMenu.png</texture>
+                <colordiffuse>dialog</colordiffuse>
             </control>
             <control type="grouplist" id="9000">
-                <height>800</height>
+                <height>780</height>
+                <top>150</top>
+                <align>center</align>
                 <include>DialogGLs</include>
                 <control type="button" id="3" description="Sort">
                     <include>DialogButt</include>
@@ -109,15 +146,11 @@
                     <include>DialogButt</include>
                     <label>24999</label>
                 </control>
-                <control type="togglebutton" id="699" description="Playing">
+                <control type="button" id="699" description="Playing">
                     <enable>Player.HasMedia</enable>
                     <include>DialogButt</include>
-                    <label>$LOCALIZE[16003]</label>
-                    <altlabel>$LOCALIZE[31055]</altlabel>
-                    <usealttexture>Player.HasMedia</usealttexture>
+                    <label>$LOCALIZE[31055]</label>
                     <onclick>fullscreen</onclick>
-                    <altclick>fullscreen</altclick>
-                    <animation effect="fade" start="100" end="60" time="100" condition="!Player.HasMedia">Conditional</animation>
                 </control>
             </control>
         </control>
@@ -128,7 +161,7 @@
             <width>500</width>
             <height>20</height>
             <font>font12</font>
-            <textcolor>Grey</textcolor>
+            <textcolor>gray</textcolor>
             <scroll>false</scroll>
             <align>right</align>
             <aligny>center</aligny>

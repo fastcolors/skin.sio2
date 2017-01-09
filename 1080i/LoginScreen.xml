@@ -7,7 +7,7 @@
     <control type="group">
       <top>75</top>
       <control type="fixedlist" id="52">
-        <animation effect="slide" start="0,0" end="-225,0" time="0" condition="StringCompare(Container(52).NumItems,2)">conditional</animation>
+        <animation effect="slide" start="0,0" end="-225,0" time="0" condition="String.IsEqual(Container(52).NumItems,2)">conditional</animation>
         <left>285</left>
         <top>249</top>
         <width>1350</width>
@@ -51,7 +51,7 @@
         <height>326</height>
         <aspectratio>stretch</aspectratio>
         <texture>images/LoginSlider.png</texture>
-        <animation effect="slide" start="0,0" end="-225,0" time="0" condition="StringCompare(Container(52).NumItems,2)">conditional</animation>
+        <animation effect="slide" start="0,0" end="-225,0" time="0" condition="String.IsEqual(Container(52).NumItems,2)">conditional</animation>
         <animation type="Conditional" condition="Container(52).Position(0)">
           <effect type="slide" start="0,0" end="-450,0" center="auto" time="200" reversible="true" />
         </animation>
@@ -82,7 +82,7 @@
         <width>1920</width>
         <font>size27</font>
         <align>center</align>
-        <textcolor>Grey</textcolor>
+        <textcolor>gray</textcolor>
         <label>$INFO[ListItem.Label2]</label>
       </control>
       <control type="button" id="11" description="Quit xbmc">

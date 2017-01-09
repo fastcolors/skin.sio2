@@ -6,34 +6,13 @@
   <controls>
     <include>BlackBackground</include>
     <control type="label" id="1" description="Header label">
-      <include>HeadingR</include>
+      <include>Heading</include>
       <label>13406</label>
     </control>
     <control type="group" description="Group 3 Plain list">
       <control type="group">
         <left>1020</left>
         <top>150</top>
-        <control type="group" description="Slider">
-          <include>Scrollanim</include>
-          <control type="group">
-            <visible>Container(3).HasFocus() + !Control.HasFocus(5)</visible>
-            <include>slider</include>
-          </control>
-          <animation type="Conditional" condition="Control.HasFocus(9001) | ControlGroup(9000).HasFocus()">
-            <effect type="fade" start="100" end="40" time="0" reversible="true" />
-          </animation>
-          <animation condition="Container(3).Position(0)" effect="slide" start="0,0" end="0,-405" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(1)" effect="slide" start="0,0" end="0,-324" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(2)" effect="slide" start="0,0" end="0,-243" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(3)" effect="slide" start="0,0" end="0,-162" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(4)" effect="slide" start="0,0" end="0,-81" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(5)" effect="slide" start="0,0" end="0,0" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(6)" effect="slide" start="0,0" end="0,81" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(7)" effect="slide" start="0,0" end="0,162" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(8)" effect="slide" start="0,0" end="0,243" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(9)" effect="slide" start="0,0" end="0,324" time="140" reversible="true">Conditional</animation>
-          <animation condition="Container(3).Position(10)" effect="slide" start="0,0" end="0,405" time="140" reversible="true">Conditional</animation>
-        </control>
         <control type="list" id="3">
           <width>802</width>
           <height>888</height>
@@ -44,34 +23,34 @@
           <pagecontrol>60</pagecontrol>
           <scrolltime tween="sine" easing="inout">280</scrolltime>
           <itemlayout width="802" height="81">
-            <include>ArrowNF</include>
+            <include>Arrow</include>
             <control type="label" description="Main Label">
               <visible>!ListItem.IsFolder</visible>
               <width>765</width>
-              <include>52MainLabel</include>
-			  <selectedcolor>Yellow</selectedcolor>
+              <include>50Label</include>
+			  <selectedcolor>orange</selectedcolor>
               <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label" description="Main Label">
               <visible>ListItem.IsFolder</visible>
-              <include>52MainLabel</include>
-			  <selectedcolor>Yellow</selectedcolor>
+              <include>50Label</include>
+			  <selectedcolor>orange</selectedcolor>
               <label>$INFO[ListItem.Label]</label>
             </control>
           </itemlayout>
           <focusedlayout width="802" height="81">
-            <include>ArrowFO</include>
+            <include>Arrow</include>
              <control type="label" description="Main Label">
               <visible>!ListItem.IsFolder</visible>
               <width>765</width>
-              <include>52MainLabel</include>
-			  <selectedcolor>Yellow</selectedcolor>
+              <include>50Label</include>
+			  <selectedcolor>orange</selectedcolor>
               <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label" description="Main Label">
               <visible>ListItem.IsFolder</visible>
-              <include>52MainLabel</include>
-			  <selectedcolor>Yellow</selectedcolor>
+              <include>50Label</include>
+			  <selectedcolor>orange</selectedcolor>
               <label>$INFO[ListItem.Label]</label>
             </control>
           </focusedlayout>
@@ -112,11 +91,11 @@
               <aspectratio>keep</aspectratio>
             </control>
             <control type="label" description="Main Label">
-              <include>50Title</include>
+              <include>BigListTitle</include>
               <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label" description="Label2">
-              <include>50details</include>
+              <include>BigListDetails</include>
               <label>$INFO[ListItem.Label2]</label>
             </control>
             <control type="image">
@@ -141,11 +120,11 @@
               <aspectratio>keep</aspectratio>
             </control>
             <control type="label" description="Main Label">
-              <include>50TitleFO</include>
+              <include>BigListTitleFO</include>
               <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label" description="Label2">
-              <include>50detailsFO</include>
+              <include>BigListDetailsFO</include>
               <label>$INFO[ListItem.Label2]</label>
             </control>
             <control type="image">
@@ -159,26 +138,6 @@
               <aspectratio>keep</aspectratio>
             </control>
           </focusedlayout>
-        </control>
-        <control type="group" description="Slider">
-          <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="960,540" time="300" reversible="true">Conditional</animation>
-          <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300" reversible="true">Conditional</animation>
-          <control type="group">
-            <visible>Container(6).HasFocus() + !Control.HasFocus(5)</visible>
-            <include>Slider2</include>
-          </control>
-          <animation type="Conditional" condition="Control.HasFocus(9001) | ControlGroup(9000).HasFocus()">
-            <effect type="fade" start="100" end="40" time="0" reversible="true" />
-          </animation>
-          <animation condition="Container(6).Position(0)" effect="slide" start="0,0" end="0,-333" time="180" easing="inout" reversible="true">Conditional</animation>
-          <animation condition="Container(6).Position(1)" effect="slide" start="0,0" end="0,-222" time="180" easing="inout" reversible="true">Conditional</animation>
-          <animation condition="Container(6).Position(2)" effect="slide" start="0,0" end="0,-111" time="180" easing="inout" reversible="true">Conditional</animation>
-          <animation condition="Container(6).Position(3)" effect="slide" start="0,0" end="0,0" time="180" easing="inout" reversible="true">Conditional</animation>
-          <animation condition="Container(6).Position(4)" effect="slide" start="0,0" end="0,111" time="180" easing="inout" reversible="true">Conditional</animation>
-          <animation condition="Container(6).Position(5)" effect="slide" start="0,0" end="0,222" time="180" easing="inout" reversible="true">Conditional</animation>
-          <animation condition="Container(6).Position(6)" effect="slide" start="0,0" end="0,333" time="180" easing="inout" reversible="true">Conditional</animation>
-          <animation condition="Container(6).Position(7)" effect="slide" start="0,0" end="0,444" time="180" easing="inout" reversible="true">Conditional</animation>
-          <animation condition="Container(6).Position(8)" effect="slide" start="0,0" end="0,555" time="180" easing="inout" reversible="true">Conditional</animation>
         </control>
       </control>
       <control type="image">

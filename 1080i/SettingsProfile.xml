@@ -54,7 +54,6 @@
             <width>900</width>
             <aligny>center</aligny>
             <font>size36</font>
-            <textcolor>White</textcolor>
             <label>$INFO[ListItem.Label]</label>
           </control>
         </itemlayout>

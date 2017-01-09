@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2600">
+    <backgroundcolor>aliceblue</backgroundcolor>
     <defaultcontrol always="true">3</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <include>OpenClose</include>
@@ -11,7 +12,6 @@
             <texture>images/weatherback.png</texture>
             <aspectratio>stretch</aspectratio>
         </control>
-        <include>Clock</include>
         <control type="group" description="Bottom">
             <control type="label" description="last updated label">
                 <left>1400</left>
@@ -20,7 +20,7 @@
                 <height>45</height>
                 <label>$LOCALIZE[31016]</label>
                 <font>size26</font>
-                <textcolor>Grey</textcolor>
+                <textcolor>dimgray</textcolor>
             </control>
             <control type="label" id="11" description="last update">
                 <left>1400</left>
@@ -29,10 +29,10 @@
                 <height>45</height>
                 <label>-</label>
                 <font>size26</font>
-                <textcolor>Grey</textcolor>
+                <textcolor>dimgray</textcolor>
             </control>
             <control type="spincontrolex" id="3">
-                <visible>!StringCompare(Weather.Plugin,weather.weatherplus)</visible>
+                <visible>!String.IsEqual(Weather.Plugin,weather.weatherplus)</visible>
                 <description>Location</description>
                 <colordiffuse>FFFFAA00</colordiffuse>
                 <left>200</left>
@@ -42,12 +42,13 @@
                 <texturefocus></texturefocus>
                 <texturenofocus></texturenofocus>
                 <label>-</label>
+                <textcolor>white</textcolor>
                 <font>size42B</font>
-                <shadowcolor>-</shadowcolor>
                 <ondown>150</ondown>
             </control>
         </control>
         <control type="button" id="2" description="Refresh">
+            <animation effect="zoom" time="120" start="100" end="120" center="auto" tween="Back" easing="Out">Focus</animation>
             <top>980</top>
             <centerleft>960</centerleft>
             <onright>noop</onright>
@@ -59,7 +60,7 @@
             <align>center</align>
         </control>
         <control type="group" id="51">
-            <visible>!StringCompare(Weather.Plugin,weather.weatherplus)</visible>
+            <visible>!String.IsEqual(Weather.Plugin,weather.weatherplus)</visible>
             <left>200</left>
             <top>160</top>
             <control type="label" description="Temp value">
@@ -68,7 +69,7 @@
                 <width>500</width>
                 <font>size212</font>
                 <align>center</align>
-                <shadowcolor>-</shadowcolor>
+                <textcolor>white</textcolor>
                 <height>30</height>
                 <label>$INFO[Window.Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
             </control>
@@ -78,7 +79,7 @@
                 <width>500</width>
                 <height>30</height>
                 <align>center</align>
-                <shadowcolor>-</shadowcolor>
+                <textcolor>white</textcolor>
                 <label>$LOCALIZE[402] : $INFO[Window.Property(Current.FeelsLike)]°</label>
             </control>
             <control type="label" description="Current dew value">
@@ -87,7 +88,7 @@
                 <width>500</width>
                 <height>30</height>
                 <align>center</align>
-                <shadowcolor>-</shadowcolor>
+                <textcolor>white</textcolor>
                 <label>$LOCALIZE[405] : $INFO[Window.Property(Current.DewPoint)]</label>
             </control>
             <control type="label" description="Current humidity value">
@@ -95,7 +96,7 @@
                 <width>600</width>
                 <height>30</height>
                 <align>center</align>
-                <shadowcolor>-</shadowcolor>
+                <textcolor>white</textcolor>
                 <label>$LOCALIZE[406] : $INFO[Window.Property(Current.Humidity)]</label>
             </control>
             <control type="label" description="Current uv label">
@@ -103,7 +104,7 @@
                 <width>600</width>
                 <height>30</height>
                 <align>center</align>
-                <shadowcolor>-</shadowcolor>
+                <textcolor>white</textcolor>
                 <label>$LOCALIZE[403] : $INFO[Window.Property(Current.UVIndex)]</label>
             </control>
             <control type="label" description="Current wind value">
@@ -112,7 +113,7 @@
                 <width>600</width>
                 <height>30</height>
                 <align>center</align>
-                <shadowcolor>-</shadowcolor>
+                <textcolor>white</textcolor>
                 <label>$LOCALIZE[404] : $INFO[Window.Property(Current.Wind)]</label>
             </control>
         </control>
@@ -133,7 +134,7 @@
                     <width>220</width>
                     <align>center</align>
                     <font>size36</font>
-                    <shadowcolor>-</shadowcolor>
+                    <textcolor>white</textcolor>
                     <label>$INFO[ListItem.label]</label>
                 </control>
                 <control type="label" description="temps">
@@ -142,7 +143,7 @@
                     <height>100</height>
                     <width>220</width>
                     <align>center</align>
-                    <shadowcolor>-</shadowcolor>
+                    <textcolor>white</textcolor>
                     <label>$INFO[ListItem.label2]</label>
                 </control>
                 <control type="label" description="Conditions">
@@ -152,7 +153,7 @@
                     <width>220</width>
                     <font>size21</font>
                     <align>center</align>
-                    <shadowcolor>-</shadowcolor>
+                    <textcolor>white</textcolor>
                     <label>$INFO[ListItem.Property(Conditions)]</label>
                 </control>
                 <control type="image" description="Dayicon">
@@ -160,7 +161,7 @@
                     <top>122</top>
                     <height>220</height>
                     <width>220</width>
-                    <texture>$INFO[ListItem.thumb]</texture>
+                    <texture>$INFO[ListItem.Art(thumb)]</texture>
                     <aspectratio align="center">keep</aspectratio>
                 </control>
                 <control type="image">
@@ -177,8 +178,7 @@
                     <width>220</width>
                     <align>center</align>
                     <font>size36</font>
-                    <textcolor>Yellow</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <textcolor>orange</textcolor>
                     <label>$INFO[ListItem.label]</label>
                 </control>
                 <control type="label" description="temps">
@@ -187,7 +187,7 @@
                     <height>100</height>
                     <width>220</width>
                     <align>center</align>
-                    <shadowcolor>-</shadowcolor>
+                    <textcolor>white</textcolor>
                     <label>$INFO[ListItem.label2]</label>
                 </control>
                 <control type="label" description="Conditions">
@@ -197,7 +197,7 @@
                     <width>220</width>
                     <font>size21</font>
                     <align>center</align>
-                    <shadowcolor>-</shadowcolor>
+                    <textcolor>white</textcolor>
                     <label>$INFO[ListItem.Property(Conditions)]</label>
                 </control>
                 <control type="image" description="Dayicon">
@@ -205,7 +205,7 @@
                     <top>122</top>
                     <height>220</height>
                     <width>220</width>
-                    <texture>$INFO[ListItem.thumb]</texture>
+                    <texture>$INFO[ListItem.Art(thumb)]</texture>
                     <aspectratio align="center">keep</aspectratio>
                 </control>
                 <control type="image">

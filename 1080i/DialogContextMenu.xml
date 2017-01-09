@@ -5,46 +5,25 @@
   <include>DialogOpenClose</include>
   <coordinates>
     <system>1</system>
-    <origin x="668" y="80" />
+    <origin x="0" y="0" />
   </coordinates>
   <controls>
     <control type="image" id="999" description="Background image">
-      <left>-19</left>
-      <top>-45</top>
-      <height>1140</height>
-      <width>554</width>
-      <texture border="60,60,60,60">images/ContextMenu.png</texture>
+      <centerleft>960</centerleft>
+      <centertop>540</centertop>
+      <height>1080</height>
+      <width>750</width>
+      <texture border="50">images/ContextMenu.png</texture>
+      <colordiffuse>dialog</colordiffuse>
     </control>
     <control type="grouplist" id="996" description="Context menu container">
-      <left>18</left>
-      <top>45</top>
-      <width>480</width>
-      <height max="960">auto</height>
-      <itemgap>3</itemgap>
-	  <control type="button" id="1500">
-	  <visible>System.HasAddon(script.cinema.experience) + Container.Content(Movies)</visible>
-	<left>-</left>
-      <top>-</top>
-      <width>480</width>
-      <height>60</height>
-      <shadowcolor>BlackT</shadowcolor>
-      <focusedcolor>White2</focusedcolor>
-      <texturefocus border="5">images/ContextButton.png</texturefocus>
-      <texturenofocus>-</texturenofocus>
-	<label>31061</label>
-	<onclick>XBMC.RunScript(script.cinema.experience)</onclick>
-	</control>
+      <centerleft>960</centerleft>
+      <height>960</height>
+      <include>DialogGLs</include>
     </control>
     <control type="button" id="1000" description="Buttons">
-      <left>-</left>
-      <top>-</top>
-      <width>480</width>
-      <height>60</height>
-      <shadowcolor>BlackT</shadowcolor>
-      <focusedcolor>White2</focusedcolor>
-      <texturefocus border="5">images/ContextButton.png</texturefocus>
-      <texturenofocus>-</texturenofocus>
+      <animation effect="zoom" time="120" start="100" end="110" center="auto" tween="Back" easing="Out">Focus</animation>
+      <include>DialogButt</include>
     </control>
-	
   </controls>
 </window>

@@ -1,28 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">50</defaultcontrol>
+    <backgroundcolor>aliceblue</backgroundcolor>
+    <defaultcontrol always="true">53</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <views>50,51,53,55,500,52</views>
+    <views>53,50,55,501</views>
     <include>OpenClose</include>
     <controls>
-        <include>Videoviews</include>
+        <include>BlackBackground</include>
+        <control type="image">
+            <visible>!Control.IsVisible(53)</visible>
+            <include>Dimensions_Fullscreen</include>
+            <include>Fanart_Fade</include>
+            <texture background="true">$INFO[ListItem.Property(fanart_image)]</texture>
+            <colordiffuse>10ffffff</colordiffuse>
+            <aspectratio>stretch</aspectratio>
+        </control>
+        <control type="label" description="Heading">
+            <visible>!Control.IsVisible(53)</visible>
+            <include>Heading</include>
+            <label>$VAR[RootLabel][COLOR=dimgray]$INFO[Container.NumItems,  (,)][/COLOR]</label>
+        </control>
+        <!--VIEWS-->
+        <include>biglist</include>
+        <include>icons</include>
+        <include>banners</include>
+        <include>widelist</include>
+        <!--VIEWS-->
         <control type="group" description="Side menu 9000 group">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
             <include>DialogOpenCloseVisible</include>
             <control type="image" description="List back">
                 <centerleft>960</centerleft>
-                <top>50</top>
-                <width>1002</width>
-                <height>1006</height>
+                <centertop>540</centertop>
+                <width>802</width>
+                <height>906</height>
                 <aspectratio>stretch</aspectratio>
-                <texture border="150">images/Dialog.png</texture>
+                <texture border="50">images/ContextMenu.png</texture>
+                <colordiffuse>dialog</colordiffuse>
             </control>
             <control type="grouplist" id="9000">
-                <height>678</height>
-                <top>220</top>
+                <height>878</height>
+                <align>center</align>
                 <include>DialogGLs</include>
                 <control type="button" id="2" description="Views">
-                    <texturenofocus>-</texturenofocus>
                     <include>DialogButt</include>
                 </control>
                 <control type="togglebutton" id="14" description="Toggle Watched">
@@ -70,15 +90,18 @@
                     <altlabel>13353</altlabel>
                     <usealttexture>library.isscanningvideo</usealttexture>
                 </control>
+                <control type="button" id="598">
+                    <include>DialogButt</include>
+                    <label>Artwork</label>
+                    <onclick condition="!system.hasaddon(script.artwork.downloader)">InstallAddon(script.artwork.downloader)</onclick>
+                    <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, dbid=$INFO[ListItem.DBID], clearlogo, discart)</onclick>
+                    <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, dbid=$INFO[ListItem.DBID], clearlogo, discart)</onclick>
+                    <onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=musicvideos, dbid=$INFO[ListItem.DBID], clearlogo, discart)</onclick>
+                    <visible>[Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)]</visible>
+                    <onclick>right</onclick>
+                </control>
             </control>
         </control>
-        <control type="group">
-            <include>WindowsTopInfos</include>
-            <control type="label" description="Heading">
-                <visible>IsEmpty(Container.FolderName)</visible>
-                <include>HeadingR</include>
-                <label>3</label>
-            </control>
-        </control>
+        <include>WindowsTopInfos</include>
     </controls>
 </window>
