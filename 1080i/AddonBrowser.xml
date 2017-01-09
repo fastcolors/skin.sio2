@@ -25,11 +25,18 @@
                 <scrolltime tween="sine" easing="inout">280</scrolltime>
                 <itemlayout width="802" height="81">
                     <!--<control type="image">-->
-                        <!--<height>70</height>-->
-                        <!--<width>805</width>-->
-                        <!--<texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>-->
+                    <!--<height>70</height>-->
+                    <!--<width>805</width>-->
+                    <!--<texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>-->
                     <!--</control>-->
-                    <include>Arrow</include>
+                    <control type="image" description="arrow">
+                        <visible>[Window.IsActive(Settings.xml) | ListItem.IsFolder] + ![ListItem.IsParentFolder | ListItem.IsCollection | container.content(Movies) | container.content(TVshows) | container.content(Seasons) | container.content(Episodes) | container.content(musicvideos) | container.content(songs) | container.content(addons)]</visible>
+                        <right>0</right>
+                        <height>70</height>
+                        <width>54</width>
+                        <aspectratio>keep</aspectratio>
+                        <texture>images/Arrow.png</texture>
+                    </control>
                     <control type="label" description="Main Label">
                         <width max="720">auto</width>
                         <include>50Label</include>
@@ -63,7 +70,14 @@
                             <width>805</width>
                             <texture border="8">images/White.png</texture>
                         </control>
-                        <include>Arrow</include>
+                        <control type="image" description="arrow">
+                            <visible>[Window.IsActive(Settings.xml) | ListItem.IsFolder] + ![ListItem.IsParentFolder | ListItem.IsCollection | container.content(Movies) | container.content(TVshows) | container.content(Seasons) | container.content(Episodes) | container.content(musicvideos) | container.content(songs) | container.content(addons)]</visible>
+                            <right>0</right>
+                            <height>70</height>
+                            <width>54</width>
+                            <aspectratio>keep</aspectratio>
+                            <texture>images/Arrow.png</texture>
+                        </control>
                         <control type="label" description="Main Label">
                             <width max="720">auto</width>
                             <include>50LabelFO</include>
