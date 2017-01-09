@@ -20,7 +20,7 @@
                 <width>335</width>
                 <height>500</height>
                 <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                <!--<aspectratio>keep</aspectratio>-->
+                <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
                 <visible>!String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
@@ -254,7 +254,7 @@
                 <width>500</width>
                 <height>500</height>
                 <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                <aspectratio>scale</aspectratio>
+                <aspectratio>keep</aspectratio>
             </control>
         </itemlayout>
         <focusedlayout height="600" width="500">
@@ -276,7 +276,7 @@
                     <width>500</width>
                     <height>500</height>
                     <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                    <aspectratio>scale</aspectratio>
+                    <aspectratio>keep</aspectratio>
                 </control>
             </control>
             <control type="textbox">
