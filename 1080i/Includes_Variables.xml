@@ -113,11 +113,11 @@
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),WL)">special://skin/playlists/inprogress_movies.xsp</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),RND)">special://skin/playlists/random_movies.xsp</value>
 
-        <!--<value condition="Container(9000).HasFocus(357)">special://skin/resources/3d.xsp</value>-->
+        <!--<value condition="Container(9000).HasFocus(357)">special://skin/playlists/3d.xsp</value>-->
 
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies) + String.IsEqual(Skin.String(theatersshelf),1)">plugin://script.extendedinfo?info=newdvdreleases&amp;&amp;limit=18</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies) + String.IsEqual(Skin.String(theatersshelf),2)">plugin://script.extendedinfo?info=upcoming&amp;&amp;limit=18</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies)">plugin://script.extendedinfo?info=incinemas&amp;&amp;limit=18</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies) + String.IsEqual(Skin.String(theatersshelf),1)">plugin://script.extendedinfo?info=popularmovies&amp;&amp;limit=18</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies) + String.IsEqual(Skin.String(theatersshelf),2)">plugin://script.extendedinfo?info=upcomingmovies&amp;&amp;limit=18</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies)">plugin://script.extendedinfo?info=incinemamovies&amp;&amp;limit=18</value>
 
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingtvshows) + String.IsEqual(Skin.String(dvdsshelf),1)">plugin://script.extendedinfo?info=topratedtvshows&amp;&amp;limit=18</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingtvshows)">plugin://script.extendedinfo?info=trendingshows&amp;&amp;limit=18</value>
@@ -159,6 +159,10 @@
 
     <variable name="shelflabel">
         <!--UPCOMINGTVSHOWS-->
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies) + String.IsEqual(Skin.String(theatersshelf),1)">info=popularmovies</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies) + String.IsEqual(Skin.String(theatersshelf),2)">info=upcomingmovies</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies)">info=incinemamovies</value>
+
         <!--todo labels-->
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingtvshows) + StringCompare(Skin.String(dvdsshelf),1)">Top Rated TV Shows</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingtvshows)">Trending TV Shows</value>
@@ -199,8 +203,8 @@
     </variable>
 
     <variable name="infosuggestions">
-        <value condition="Container.Content(movies)">special://skin/resources/random.xsp</value>
-        <value condition="Container.Content(tvshows) | Container.Content(episodes)">special://skin/resources/randomTV.xsp</value>
+        <value condition="Container.Content(movies)">special://skin/playlists/random.xsp</value>
+        <value condition="Container.Content(tvshows) | Container.Content(episodes)">special://skin/playlists/randomTV.xsp</value>
     </variable>
 
     <variable name="locandine">
@@ -214,9 +218,5 @@
         <value>$INFO[ListItem.Icon]</value>
     </variable>
 
-    <variable name="osdtop">
-        <value condition="ControlGroup(101).Hasfocus(1)">videodb://recentlyaddedepisodes/</value>
-        <value condition="Container(101).Position(2)">special://skin/resources/randomTV.xsp</value>
-    </variable>
 
 </includes>

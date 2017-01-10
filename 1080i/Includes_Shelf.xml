@@ -12,7 +12,7 @@
         <height>630</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
-        <onclick condition="$EXP[isupcomingmovies]">contextmenu</onclick>
+        <onclick condition="$EXP[isupcomingmovies]">RunPlugin(plugin://plugin.video.couchpotato_manager/movies/add&amptitle=$INFO[Container(311).ListItem.Label])</onclick>
         <itemlayout height="600" width="382">
             <control type="image">
                 <visible>String.IsEmpty(ListItem.Art(tvshow.poster))</visible>

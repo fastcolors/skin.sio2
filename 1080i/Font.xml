@@ -39,6 +39,11 @@
             <size>21</size>
         </font>
         <font>
+            <name>size21B</name>
+            <filename>SanFranciscoHeavy.ttf</filename>
+            <size>21</size>
+        </font>
+        <font>
             <name>size22</name>
             <filename>SanFrancisco.ttf</filename>
             <size>22</size>

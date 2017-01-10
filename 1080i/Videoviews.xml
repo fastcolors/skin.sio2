@@ -665,13 +665,13 @@
                         <visible>Skin.HasTheme(Dark)</visible>
                         <width>1432</width>
                         <height>1080</height>
-                        <texture>special://skin/resources/DarkHomeBG.png</texture>
+                        <texture>special://skin/backdrops/dark_default_background.png</texture>
                     </control>
                     <control type="image" description="Background_def">
                         <visible>!Skin.HasTheme(Dark)</visible>
                         <width>1432</width>
                         <height>1080</height>
-                        <texture>special://skin/resources/HomeBG.png</texture>
+                        <texture>special://skin/backdrops/light_default_background.png</texture>
                     </control>
                     <control type="image">
                         <fadetime>200</fadetime>

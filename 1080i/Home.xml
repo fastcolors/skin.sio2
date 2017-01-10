@@ -6,28 +6,28 @@
     <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;level=1)</onload>
     <include>OpenClose</include>
     <controls>
+        <control type="image" description="Stage">
+            <visible>Skin.HasTheme(Dark)</visible>
+            <width>1920</width>
+            <height>1080</height>
+            <aspectratio>stretch</aspectratio>
+            <texture>special://skin/backdrops/dark_default_background.png</texture>
+        </control>
+        <control type="image" description="Stage">
+            <visible>!Skin.HasTheme(Dark)</visible>
+            <width>1920</width>
+            <height>1080</height>
+            <aspectratio>stretch</aspectratio>
+            <texture>special://skin/backdrops/light_default_background.png</texture>
+        </control>
+        <!--CLONING-->
+        <!--<control type="image">-->
+        <!--<height>1080</height>-->
+        <!--<width>1920</width>-->
+        <!--<texture>atv.png</texture>-->
+        <!--</control>-->
         <control type="group" description="Furniture">
             <include>homeanimation</include>
-            <control type="image" description="Stage">
-                <visible>Skin.HasTheme(Dark)</visible>
-                <width>1920</width>
-                <height>2340</height>
-                <aspectratio>stretch</aspectratio>
-                <texture>special://skin/resources/DarkHomeBG.png</texture>
-            </control>
-            <control type="image" description="Stage">
-                <visible>!Skin.HasTheme(Dark)</visible>
-                <width>1920</width>
-                <height>2340</height>
-                <aspectratio>stretch</aspectratio>
-                <texture>special://skin/resources/HomeBG.png</texture>
-            </control>
-            <!--CLONING-->
-            <!--<control type="image">-->
-            <!--<height>1080</height>-->
-            <!--<width>1920</width>-->
-            <!--<texture>atv.png</texture>-->
-            <!--</control>-->
             <control type="image" description="banda bianca">
                 <top>720</top>
                 <left>-35</left>
