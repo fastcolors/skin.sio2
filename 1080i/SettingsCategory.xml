@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="12">
     <defaultcontrol always="true">3</defaultcontrol>
-    <backgroundcolor>aliceblue</backgroundcolor>
+    <backgroundcolor>background</backgroundcolor>
     <allowoverlay>no</allowoverlay>
     <include>OpenClose</include>
     <controls>

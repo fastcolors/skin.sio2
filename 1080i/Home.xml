@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <backgroundcolor>aliceblue</backgroundcolor>
+    <backgroundcolor>background</backgroundcolor>
     <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;level=1)</onload>
@@ -213,7 +213,7 @@
             <include>Movies</include>
             <include>Squares</include>
             <include>Episodes</include>
-            <include condition="Skin.HasSetting(PicturesShelf_Custom)">Pictures_Shortcuts</include>
+            <include>Pictures_Shortcuts</include>
             <include condition="Skin.HasSetting(AddonsShelf_Custom)">Addons_Shortcuts</include>
             <include>weather_shelf</include>
         </control>

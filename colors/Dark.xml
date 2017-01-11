@@ -1,4 +1,5 @@
 <colors>
+    <color name="background">black</color>
     <color name="bandabianca">66555555</color>
     <color name="bandamusica">bb555555</color>
     <color name="maindim">f0444444</color>

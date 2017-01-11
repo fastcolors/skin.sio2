@@ -3,7 +3,7 @@
     <views>17</views>
     <defaultcontrol>17</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <backgroundcolor>aliceblue</backgroundcolor>
+    <backgroundcolor>background</backgroundcolor>
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>

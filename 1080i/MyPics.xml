@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2">
-    <backgroundcolor>aliceblue</backgroundcolor>
+    <backgroundcolor>background</backgroundcolor>
     <defaultcontrol always="true">53</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <controls>
