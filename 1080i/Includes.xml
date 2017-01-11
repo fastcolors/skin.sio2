@@ -388,7 +388,7 @@
         <animation condition="Container(9000).Row(2) + !ControlGroup(700).HasFocus + !Control.HasFocus(9009)" effect="slide" end="0,-480" time="220">Conditonal</animation>
         <animation condition="Container(9000).Row(3) + !ControlGroup(700).HasFocus + !Control.HasFocus(9009)" effect="slide" end="0,-720" time="220">Conditonal</animation>
         <animation condition="Container(9000).Row(4) + !ControlGroup(700).HasFocus + !Control.HasFocus(9009)" effect="slide" end="0,-990" time="220">Conditonal</animation>
-        <!--<animation condition="Container(9000).Row(5) + !Control.HasFocus(9009)" effect="slide" end="0,-1260" time="220">Conditonal</animation>-->
+        <animation condition="Container(9000).Row(5) + !ControlGroup(700).HasFocus + !Control.HasFocus(9009)" effect="slide" end="0,-1260" time="220">Conditonal</animation>
     </include>
     <include name="livepop">
         <control type="group">
