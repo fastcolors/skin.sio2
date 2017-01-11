@@ -5,17 +5,18 @@
             <visible>Control.IsVisible(501)</visible>
             <control type="group">
                 <control type="fixedlist" id="501">
+                    <visible>!String.IsEmpty(Container.FolderPath)</visible>
                     <top>114</top>
                     <width>1920</width>
-                    <height>666</height>
+                    <height>555</height>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                     <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
                     <onup>50</onup>
                     <ondown>50</ondown>
-                    <pagecontrol>60</pagecontrol>
-                    <viewtype label="537">Big List</viewtype>
-                    <focusposition>3</focusposition>
-                    <movement>4</movement>
+                    <!--<pagecontrol>60</pagecontrol>-->
+                    <viewtype label="539">Wide List</viewtype>
+                    <focusposition>2</focusposition>
+                    <!--<movement>0</movement>-->
                     <preloaditems>4</preloaditems>
                     <scrolltime>250</scrolltime>
                     <itemlayout width="1920" height="111">

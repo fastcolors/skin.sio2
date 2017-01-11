@@ -771,7 +771,7 @@
                     <control type="label">
                         <font>size33B</font>
                         <align>center</align>
-                        <textcolor>black</textcolor>
+                        <textcolor>infos</textcolor>
                         <label>$INFO[ListItem.Label]$INFO[ListItem.AddonVersion,  •  ]</label>
                     </control>
                     <control type="textbox">

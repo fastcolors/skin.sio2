@@ -60,13 +60,20 @@
                 <control type="button" id="6">
                     <width>840</width>
                     <align>left</align>
+                    <label>$LOCALIZE[15111]:    $INFO[Skin.CurrentTheme]</label>
+                    <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
+                    <onclick>Skin.Theme(1)</onclick>
+                </control>
+                <control type="button" id="7">
+                    <width>840</width>
+                    <align>left</align>
                     <label>$LOCALIZE[31036]</label>
                     <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
                     <onclick>Skin.ResetSettings</onclick>
                     <onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
                     <onclick>XBMC.ReloadSkin()</onclick>
                 </control>
-                <control type="button" id="7">
+                <control type="button" id="8">
                     <width>840</width>
                     <align>left</align>
                     <label>$LOCALIZE[31068]</label>

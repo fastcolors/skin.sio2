@@ -14,7 +14,7 @@
                 <onright condition="!Skin.HasSetting(Scrollbars_Active)">noop</onright>
                 <onup>53</onup>
                 <ondown>53</ondown>
-                <viewtype label="536">Grid</viewtype>
+                <viewtype label="536">Icons</viewtype>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime tween="sine" easing="inout">300</scrolltime>
                 <preloaditems>2</preloaditems>

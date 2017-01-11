@@ -27,8 +27,8 @@ msgid "Items"
 msgstr "Items"
 
 msgctxt "#31002"
-msgid "Karaoke Song"
-msgstr "Karaoke Song"
+msgid "Banners"
+msgstr "Banners"
 
 msgctxt "#31003"
 msgid "Gives the option to go directly to a Music Library node when Music Icon is pressed: [CR][CR]• Albums[CR]• Artists[CR]• Genres[CR]• Songs"

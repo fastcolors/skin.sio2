@@ -311,9 +311,5 @@
             <colordiffuse>kodi</colordiffuse>
             <texture>kodi_icon.png</texture>
         </control>
-        <include>livepop</include>
-        <include>sourcespop</include>
-        <include>settingspop</include>
-        <include>addonspop</include>
     </controls>
 </window>

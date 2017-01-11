@@ -8,7 +8,7 @@
                 <control type="fixedlist" id="55" description="bannerlist">
                     <visible>container.content(tvshows)</visible>
                     <visible>!String.IsEmpty(Container.FolderPath)</visible>
-                    <viewtype label="539">Banners</viewtype>
+                    <viewtype label="31002">Banners</viewtype>
                     <centerleft>1720</centerleft>
                     <top>140</top>
                     <width>1800</width>
