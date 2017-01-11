@@ -98,6 +98,7 @@
             <height>1620</height>
             <onleft>9000</onleft>
             <onright>9000</onright>
+            <onup condition="[String.IsEqual(Container(311).NumItems,0) + String.IsEqual(Container(9000).ListItem.Property(defaultID),movies)] | [String.IsEqual(Container(313).NumItems,0) + String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows)]">9009</onup>
             <onup>700</onup>
             <ondown>noop</ondown>
             <orientation>vertical</orientation>
