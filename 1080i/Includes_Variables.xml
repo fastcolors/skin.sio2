@@ -159,9 +159,9 @@
 
     <variable name="shelflabel">
         <!--UPCOMINGTVSHOWS-->
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies) + String.IsEqual(Skin.String(theatersshelf),1)">info=popularmovies</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies) + String.IsEqual(Skin.String(theatersshelf),2)">info=upcomingmovies</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies)">info=incinemamovies</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies) + String.IsEqual(Skin.String(theatersshelf),1)">Popular Movies</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies) + String.IsEqual(Skin.String(theatersshelf),2)">Upcoming Movies</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies)">Movies in Theaters</value>
 
         <!--todo labels-->
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingtvshows) + StringCompare(Skin.String(dvdsshelf),1)">Top Rated TV Shows</value>

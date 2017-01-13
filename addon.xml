@@ -6,6 +6,7 @@
         <import addon="script.skinshortcuts" version="1.0.13"/>
         <import addon="script.artwork.downloader" version="13.1.0"/>
         <import addon="service.library.data.provider" version="0.0.4"/>
+        <import addon="resource.uisounds.sio2" version="1.0.0"/>
     </requires>
     <extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="1" debugging="false">
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
