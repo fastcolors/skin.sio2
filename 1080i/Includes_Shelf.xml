@@ -403,9 +403,9 @@
                     <control type="image">
                         <centerleft>125</centerleft>
                         <width>230</width>
-                        <height>350</height>
+                        <height>360</height>
                         <texture border="8">images/white.png</texture>
-                        <colordiffuse>44000000</colordiffuse>
+                        <colordiffuse>77000000</colordiffuse>
                     </control>
                     <control type="label">
                         <centerleft>125</centerleft>
@@ -446,9 +446,9 @@
                     <control type="image">
                         <centerleft>125</centerleft>
                         <width>230</width>
-                        <height>350</height>
+                        <height>360</height>
                         <texture border="8">images/white.png</texture>
-                        <colordiffuse>44000000</colordiffuse>
+                        <colordiffuse>77000000</colordiffuse>
                     </control>
                     <control type="label">
                         <centerleft>125</centerleft>
