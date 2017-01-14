@@ -149,7 +149,7 @@
                 <visible>Integer.IsLessOrEqual(Container(211).NumItems,29)</visible>
                 <description>Add a new shortcut</description>
                 <include>osdtopbutton</include>
-                <onclick>-</onclick>
+                <onclick></onclick>
                 <label>$ADDON[script.skinshortcuts 32000]</label>
             </control>
             <!--<control type="button" id="401">-->

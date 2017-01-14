@@ -13,8 +13,7 @@
                 <visible>!String.IsEmpty(Container.FolderPath)</visible>
                 <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                 <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
-                <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
-                <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
+                <onright>noop</onright>
                 <onup>52</onup>
                 <ondown>52</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -397,13 +396,6 @@
                     <top>90</top>
                     <height>910</height>
                     <texture border="50" colordiffuse="AAFFFFFF">sidepanel/Back.png</texture>
-                </control>
-                <control type="scrollbar" id="60">
-                    <left>-37r</left>
-                    <top>120</top>
-                    <height>850</height>
-                    <onleft>50</onleft>
-                    <onright>noop</onright>
                 </control>
             </control>
             <!--GENERAL STUFF ENDS-->

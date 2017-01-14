@@ -16,8 +16,7 @@
 				<width>802</width>
 				<height>890</height>
 				<onright>9002</onright>
-				<onleft condition="Skin.HasSetting(Scrollbars_Active)">60</onleft>
-				<onleft condition="!Skin.HasSetting(Scrollbars_Active)">-</onleft>
+				<onleft>noop</onleft>
 				<onup>20</onup>
 				<ondown>20</ondown>
 				<pagecontrol>60</pagecontrol>

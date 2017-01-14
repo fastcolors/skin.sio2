@@ -15,8 +15,7 @@
                     <height>900</height>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                     <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
-                    <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-                    <onright condition="!Skin.HasSetting(Scrollbars_Active)">noop</onright>
+                    <onright>noop</onright>
                     <onup>50</onup>
                     <ondown>50</ondown>
                     <!--<pagecontrol>60</pagecontrol>-->
@@ -28,13 +27,6 @@
                     <include>LargeListLayout</include>
                 </control>
             </control>
-            <!--<control type="scrollbar" id="60">-->
-                <!--<left>39r</left>-->
-                <!--<top>135</top>-->
-                <!--<height>870</height>-->
-                <!--<onleft>51</onleft>-->
-                <!--<onright>noop</onright>-->
-            <!--</control>-->
         </control>
         </include>
 </includes>

@@ -58,8 +58,7 @@
                     <width>802</width>
                     <height>888</height>
                     <onleft>9000</onleft>
-                    <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
-                    <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
+                    <onright>noop</onright>
                     <onup>17</onup>
                     <ondown>17</ondown>
                     <pagecontrol>60</pagecontrol>
@@ -121,13 +120,6 @@
                 <width>1</width>
                 <height>1080</height>
                 <texture>images/LineV.png</texture>
-            </control>
-            <control type="scrollbar" id="60">
-                <left>39r</left>
-                <top>135</top>
-                <height>870</height>
-                <onleft>11</onleft>
-                <onright>noop</onright>
             </control>
             <control type="label">
                 <description>Page Count Label</description>

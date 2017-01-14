@@ -270,7 +270,7 @@
                     <visible>!Window.IsActive(TVGuide)</visible>
                     <description>Filter</description>
                     <include>DialogButt</include>
-                    <onclick>-</onclick>
+                    <onclick></onclick>
                     <label>587</label>
                 </control>
                 <control type="button" id="32">
@@ -432,8 +432,7 @@
                 <control type="button" id="3" description="Other">
                     <height>60</height>
                     <include>musictopbutton</include>
-                    <!--<onfocus>ActivateWindow(Music,musicdb://albums/,return)</onfocus>-->
-                    <onclick>-</onclick>
+                    <onclick></onclick>
                     <label>-</label>
                 </control>
             </control>

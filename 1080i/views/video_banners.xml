@@ -19,8 +19,7 @@
                     <onup>ActivateWindow(1116)</onup>
                     <ondown>ActivateWindow(1116)</ondown>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-                    <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
-                    <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
+                    <onright>noop</onright>
                     <preloaditems>4</preloaditems>
                     <pagecontrol>60</pagecontrol>
                     <scrolltime>300</scrolltime>
@@ -235,13 +234,6 @@
                     <autoscroll delay="7000" time="4300" repeat="10000"></autoscroll>
                     <label>$VAR[Plots]</label>
                 </control>
-            </control>
-            <control type="scrollbar" id="60">
-                <left>85r</left>
-                <top>219</top>
-                <height>780</height>
-                <onleft>53</onleft>
-                <onright>9000</onright>
             </control>
         </control>
     </include>

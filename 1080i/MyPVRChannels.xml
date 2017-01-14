@@ -95,8 +95,7 @@
                         <width>802</width>
                         <height>984</height>
                         <onleft>9000</onleft>
-                        <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
-                        <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
+                        <onright>noop</onright>
                         <onup>11</onup>
                         <ondown>11</ondown>
                         <pagecontrol>60</pagecontrol>
@@ -201,13 +200,6 @@
                             </control>
                         </focusedlayout>
                     </control>
-                </control>
-                <control type="scrollbar" id="60">
-                    <left>39r</left>
-                    <top>135</top>
-                    <height>870</height>
-                    <onleft>11</onleft>
-                    <onright>noop</onright>
                 </control>
             </control>
         </control>

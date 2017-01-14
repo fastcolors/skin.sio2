@@ -10,8 +10,7 @@
                 <height>1080</height>
                 <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                 <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
-                <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-                <onright condition="!Skin.HasSetting(Scrollbars_Active)">noop</onright>
+                <onright>noop</onright>
                 <onup>53</onup>
                 <ondown>53</ondown>
                 <viewtype label="536">Icons</viewtype>

@@ -189,14 +189,6 @@
                     </control>
                 </focusedlayout>
             </control>
-            <control type="scrollbar" id="60">
-                <left>152</left>
-                <top>303</top>
-                <height>522</height>
-                <onleft>noop</onleft>
-                <onright>120</onright>
-                <showonepage>true</showonepage>
-            </control>
         </control>
         <control type="group" id="250">
             <left>-60</left>
