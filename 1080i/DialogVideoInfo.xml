@@ -150,17 +150,29 @@
                     <textoffsetx>0</textoffsetx>
                     <label>20410</label>
                 </control>
-                <control type="togglebutton" id="8" description="Play/browse to Show">
+                <control type="button" id="8" description="Play/browse to Show">
+                    <visible>!Container.Content(tvshows)</visible>
                     <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
                     <animation effect="zoom" start="120" end="100" time="120" center="auto">unFocus</animation>
                     <height>100</height>
                     <width>150</width>
                     <texturefocus>images/diffuserounded.png</texturefocus>
                     <texturenofocus>images/diffuserounded.png</texturenofocus>
-                    <usealttexture>Container.Content(TVShows)</usealttexture>
                     <font>XS</font>
                     <textoffsetx>0</textoffsetx>
                     <label>208</label>
+                </control>
+                <control type="button" id="8" description="Play/browse to Show">
+                    <visible>Container.Content(tvshows)</visible>
+                    <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+                    <animation effect="zoom" start="120" end="100" time="120" center="auto">unFocus</animation>
+                    <height>100</height>
+                    <width>150</width>
+                    <texturefocus>images/diffuserounded.png</texturefocus>
+                    <texturenofocus>images/diffuserounded.png</texturenofocus>
+                    <font>XS</font>
+                    <textoffsetx>0</textoffsetx>
+                    <label>1024</label>
                 </control>
                 <control type="button" id="299" description="Cinema">
                     <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>

@@ -6,6 +6,7 @@
     </coordinates>
     <include>OpenClose</include>
     <controls>
+        <include>BlackBackground</include>
         <control type="multiimage" description="Busy animation">
             <centerleft>960</centerleft>
             <centertop>590</centertop>
