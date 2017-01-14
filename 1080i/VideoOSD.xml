@@ -35,10 +35,10 @@
                     <onleft>noop</onleft>
                     <onright>noop</onright>
                     <onup>100</onup>
-                    <ondown condition="Control.HasFocus(701)">7000</ondown>
                     <ondown condition="Control.HasFocus(704)">9000</ondown>
                     <ondown condition="Control.HasFocus(703)">10000</ondown>
                     <ondown condition="Control.HasFocus(706)">8000</ondown>
+                    <ondown>100</ondown>
                     <orientation>horizontal</orientation>
                     <align>center</align>
                     <scrolltime>240</scrolltime>
@@ -46,7 +46,7 @@
                         <font>size36B</font>
                         <include>osdtopbutton</include>
                         <label>29915</label>
-                        <onclick>SetFocus(100,2)</onclick>
+                        <!--<onclick>SetFocus(100,2)</onclick>-->
                     </control>
                     <control type="button" id="704" description="audio and subtitles">
                         <font>size36B</font>

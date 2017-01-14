@@ -357,20 +357,20 @@
         <control type="group">
             <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),weather)</visible>
             <include>ShelfFade</include>
-            <!--<control type="image">-->
-            <!--<width>1920</width>-->
-            <!--<height>720</height>-->
-            <!--<aspectratio align="top">scale</aspectratio>-->
-            <!--<texture background="true">$INFO[Window(weather).Property(Current.FanartCode),weather/,.jpg]</texture>-->
+            <control type="image">
+            <width>1920</width>
+            <height>720</height>
+            <aspectratio align="top">scale</aspectratio>
+            <texture background="true">$INFO[Window(weather).Property(Current.FanartCode),weather/,.jpg]</texture>
             <!--<texture background="true">images/black.png</texture>-->
-            <!--</control>-->
-            <control type="multiimage">
-                <width>1920</width>
-                <height>720</height>
-                <aspectratio align="top">scale</aspectratio>
-                <imagepath>weather</imagepath>
-                <timeperimage>2000</timeperimage>
             </control>
+            <!--<control type="multiimage">-->
+                <!--<width>1920</width>-->
+                <!--<height>720</height>-->
+                <!--<aspectratio align="top">scale</aspectratio>-->
+                <!--<imagepath>weather</imagepath>-->
+                <!--<timeperimage>2000</timeperimage>-->
+            <!--</control>-->
             <control type="label">
                 <left>83</left>
                 <top>100</top>
