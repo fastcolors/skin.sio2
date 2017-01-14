@@ -282,116 +282,116 @@
                     </control>
                 </control>
 
-                <control type="group" description="VideoSettings">
-                    <visible>Control.HasFocus(703) | ControlGroup(10000).HasFocus</visible>
-                    <control type="image">
-                        <top>140</top>
-                        <centerleft>960</centerleft>
-                        <width>2020</width>
-                        <height>340</height>
-                        <colordiffuse>osdoverlay</colordiffuse>
-                        <texture border="8">images/White.png</texture>
-                    </control>
-                    <control type="group" id="10000">
-                        <top>170</top>
-                        <control type="grouplist" description="left" id="10001">
-                            <left>335</left>
-                            <height>340</height>
-                            <width>410</width>
-                            <align>left</align>
-                            <onup>704</onup>
-                            <onright>10002</onright>
-                            <onleft>noop</onleft>
-                            <ondown>noop</ondown>
-                            <itemgap>0</itemgap>
-                            <control type="label" id="10010">
-                                <font>size21B</font>
-                                <height>30</height>
-                                <label>[UPPERCASE]$LOCALIZE[304][/UPPERCASE]</label>
-                                <textoffsetx>50</textoffsetx>
-                                <textcolor>lightgray</textcolor>
-                            </control>
-                            <control type="button" id="10013">
-                                <font>size33</font>
-                                <height>50</height>
-                                <include>osdtopbutton</include>
-                                <!--todo localize NEXT SUBTITLE-->
-                                <label>$ESCINFO[system.getbool[subtitles.languages]]</label>
-                                <textoffsetx>50</textoffsetx>
-                                <textcolor>lightgray</textcolor>
-                                <onclick>Action(AudioNextLanguage)</onclick>
-                            </control>
-                            <control type="label" id="10014">
-                                <font>size33</font>
-                                <height>50</height>
-                                <include>osdtopbutton</include>
-                                <label>$LOCALIZE[304]: $INFO[VideoPlayer.AudioLanguage]</label>
-                                <textoffsetx>50</textoffsetx>
-                                <textcolor>lightgray</textcolor>
-                            </control>
-                        </control>
-                        <control type="grouplist" description="center" id="10002">
-                            <left>745</left>
-                            <height>340</height>
-                            <width>480</width>
-                            <align>left</align>
-                            <onup>704</onup>
-                            <onright>10003</onright>
-                            <onleft>10001</onleft>
-                            <ondown>noop</ondown>
-                            <itemgap>0</itemgap>
-                            <control type="label" id="10011">
-                                <font>size21B</font>
-                                <height>30</height>
-                                <label>VIDEO</label>
-                                <textoffsetx>50</textoffsetx>
-                                <textcolor>lightgray</textcolor>
-                            </control>
-                            <control type="button" id="10015" description="audio offset">
-                                <font>size33</font>
-                                <height>50</height>
-                                <include>osdtopbutton</include>
-                                <label>297</label>
-                                <textoffsetx>50</textoffsetx>
-                                <textcolor>lightgray</textcolor>
-                                <onclick>SetFocus(100,2)</onclick>
-                                <onclick>Action(audiodelay)</onclick>
-                            </control>
-                            <control type="radiobutton" id="10017">
-                                <font>size33</font>
-                                <height>50</height>
-                                <width>480</width>
-                                <textureradiofocus>images/osdRadioON.png</textureradiofocus>
-                                <textureradionofocus>-</textureradionofocus>
-                                <radioposx>5</radioposx>
-                                <include>osdtopbutton</include>
-                                <label>ViewMOde</label>
-                                <textoffsetx>50</textoffsetx>
-                                <textcolor>lightgray</textcolor>
-                                <onclick>RunScript(script.skin.helper.service,action=togglekodisetting,setting=defaultvideosettings.nonlinstretch)</onclick>
-                                <selected>system.getbool(defaultvideosettings.nonlinstretch)</selected>
-                            </control>
-                        </control>
-                        <control type="grouplist" description="right" id="10003">
-                            <left>1225</left>
-                            <height>340</height>
-                            <width>410</width>
-                            <align>left</align>
-                            <onup>704</onup>
-                            <onright>noop</onright>
-                            <onleft>10002</onleft>
-                            <ondown>noop</ondown>
-                            <itemgap>0</itemgap>
-                            <control type="label" id="10012">
-                                <font>size21B</font>
-                                <height>30</height>
-                                <label>ALTOPARLANTE</label>
-                                <textoffsetx>50</textoffsetx>
-                                <textcolor>lightgray</textcolor>
-                            </control>
-                        </control>
-                    </control>
-                </control>
+                <!--<control type="group" description="VideoSettings">-->
+                    <!--<visible>Control.HasFocus(703) | ControlGroup(10000).HasFocus</visible>-->
+                    <!--<control type="image">-->
+                        <!--<top>140</top>-->
+                        <!--<centerleft>960</centerleft>-->
+                        <!--<width>2020</width>-->
+                        <!--<height>340</height>-->
+                        <!--<colordiffuse>osdoverlay</colordiffuse>-->
+                        <!--<texture border="8">images/White.png</texture>-->
+                    <!--</control>-->
+                    <!--<control type="group" id="10000">-->
+                        <!--<top>170</top>-->
+                        <!--<control type="grouplist" description="left" id="10001">-->
+                            <!--<left>335</left>-->
+                            <!--<height>340</height>-->
+                            <!--<width>410</width>-->
+                            <!--<align>left</align>-->
+                            <!--<onup>704</onup>-->
+                            <!--<onright>10002</onright>-->
+                            <!--<onleft>noop</onleft>-->
+                            <!--<ondown>noop</ondown>-->
+                            <!--<itemgap>0</itemgap>-->
+                            <!--<control type="label" id="10010">-->
+                                <!--<font>size21B</font>-->
+                                <!--<height>30</height>-->
+                                <!--<label>[UPPERCASE]$LOCALIZE[304][/UPPERCASE]</label>-->
+                                <!--<textoffsetx>50</textoffsetx>-->
+                                <!--<textcolor>lightgray</textcolor>-->
+                            <!--</control>-->
+                            <!--<control type="button" id="10013">-->
+                                <!--<font>size33</font>-->
+                                <!--<height>50</height>-->
+                                <!--<include>osdtopbutton</include>-->
+                                <!--&lt;!&ndash;todo localize NEXT SUBTITLE&ndash;&gt;-->
+                                <!--<label>$ESCINFO[system.getbool[subtitles.languages]]</label>-->
+                                <!--<textoffsetx>50</textoffsetx>-->
+                                <!--<textcolor>lightgray</textcolor>-->
+                                <!--<onclick>Action(AudioNextLanguage)</onclick>-->
+                            <!--</control>-->
+                            <!--<control type="label" id="10014">-->
+                                <!--<font>size33</font>-->
+                                <!--<height>50</height>-->
+                                <!--<include>osdtopbutton</include>-->
+                                <!--<label>$LOCALIZE[304]: $INFO[VideoPlayer.AudioLanguage]</label>-->
+                                <!--<textoffsetx>50</textoffsetx>-->
+                                <!--<textcolor>lightgray</textcolor>-->
+                            <!--</control>-->
+                        <!--</control>-->
+                        <!--<control type="grouplist" description="center" id="10002">-->
+                            <!--<left>745</left>-->
+                            <!--<height>340</height>-->
+                            <!--<width>480</width>-->
+                            <!--<align>left</align>-->
+                            <!--<onup>704</onup>-->
+                            <!--<onright>10003</onright>-->
+                            <!--<onleft>10001</onleft>-->
+                            <!--<ondown>noop</ondown>-->
+                            <!--<itemgap>0</itemgap>-->
+                            <!--<control type="label" id="10011">-->
+                                <!--<font>size21B</font>-->
+                                <!--<height>30</height>-->
+                                <!--<label>VIDEO</label>-->
+                                <!--<textoffsetx>50</textoffsetx>-->
+                                <!--<textcolor>lightgray</textcolor>-->
+                            <!--</control>-->
+                            <!--<control type="button" id="10015" description="audio offset">-->
+                                <!--<font>size33</font>-->
+                                <!--<height>50</height>-->
+                                <!--<include>osdtopbutton</include>-->
+                                <!--<label>297</label>-->
+                                <!--<textoffsetx>50</textoffsetx>-->
+                                <!--<textcolor>lightgray</textcolor>-->
+                                <!--<onclick>SetFocus(100,2)</onclick>-->
+                                <!--<onclick>Action(audiodelay)</onclick>-->
+                            <!--</control>-->
+                            <!--<control type="radiobutton" id="10017">-->
+                                <!--<font>size33</font>-->
+                                <!--<height>50</height>-->
+                                <!--<width>480</width>-->
+                                <!--<textureradiofocus>images/osdRadioON.png</textureradiofocus>-->
+                                <!--<textureradionofocus>-</textureradionofocus>-->
+                                <!--<radioposx>5</radioposx>-->
+                                <!--<include>osdtopbutton</include>-->
+                                <!--<label>ViewMOde</label>-->
+                                <!--<textoffsetx>50</textoffsetx>-->
+                                <!--<textcolor>lightgray</textcolor>-->
+                                <!--<onclick>RunScript(script.skin.helper.service,action=togglekodisetting,setting=defaultvideosettings.nonlinstretch)</onclick>-->
+                                <!--<selected>system.getbool(defaultvideosettings.nonlinstretch)</selected>-->
+                            <!--</control>-->
+                        <!--</control>-->
+                        <!--<control type="grouplist" description="right" id="10003">-->
+                            <!--<left>1225</left>-->
+                            <!--<height>340</height>-->
+                            <!--<width>410</width>-->
+                            <!--<align>left</align>-->
+                            <!--<onup>704</onup>-->
+                            <!--<onright>noop</onright>-->
+                            <!--<onleft>10002</onleft>-->
+                            <!--<ondown>noop</ondown>-->
+                            <!--<itemgap>0</itemgap>-->
+                            <!--<control type="label" id="10012">-->
+                                <!--<font>size21B</font>-->
+                                <!--<height>30</height>-->
+                                <!--<label>ALTOPARLANTE</label>-->
+                                <!--<textoffsetx>50</textoffsetx>-->
+                                <!--<textcolor>lightgray</textcolor>-->
+                            <!--</control>-->
+                        <!--</control>-->
+                    <!--</control>-->
+                <!--</control>-->
 
                 <control type="group" description="Video Stream Infos">
                     <visible>Control.HasFocus(707)</visible>
