@@ -6,20 +6,7 @@
     <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;level=1)</onload>
     <include>OpenClose</include>
     <controls>
-        <control type="image" description="Stage">
-            <visible>Skin.HasTheme(Dark)</visible>
-            <width>1920</width>
-            <height>1080</height>
-            <aspectratio>stretch</aspectratio>
-            <texture>special://skin/backdrops/dark_default_background.png</texture>
-        </control>
-        <control type="image" description="Stage">
-            <visible>!Skin.HasTheme(Dark)</visible>
-            <width>1920</width>
-            <height>1080</height>
-            <aspectratio>stretch</aspectratio>
-            <texture>special://skin/backdrops/light_default_background.png</texture>
-        </control>
+        <include>BlackBackground</include>
         <!--CLONING-->
         <!--<control type="image">-->
         <!--<height>1080</height>-->
