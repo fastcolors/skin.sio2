@@ -450,7 +450,7 @@
                     <width>630</width>
                     <left>45</left>
                     <include>BigListDetails</include>
-                    <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]$INFO[ListItem.Videoresolution, • ]</label>
+                    <label>$INFO[ListItem.Mpaa,, • ]$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]$INFO[ListItem.Videoresolution, • ]</label>
                 </control>
                 <control type="label" description="Label2">
                     <visible>container.content(episodes)</visible>
@@ -508,7 +508,7 @@
                         <left>45</left>
                         <width>630</width>
                         <include>BigListDetailsFO</include>
-                        <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]$INFO[ListItem.Videoresolution, • ]</label>
+                        <label>$INFO[ListItem.Mpaa,, • ]$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]$INFO[ListItem.Videoresolution, • ]</label>
                     </control>
                     <control type="label" description="Label2">
                         <visible>container.content(episodes)</visible>

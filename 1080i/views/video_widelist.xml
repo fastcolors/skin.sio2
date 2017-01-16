@@ -8,15 +8,13 @@
                     <visible>!String.IsEmpty(Container.FolderPath)</visible>
                     <top>114</top>
                     <width>1920</width>
-                    <height>555</height>
+                    <height>655</height>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                     <onright>noop</onright>
                     <onup>50</onup>
                     <ondown>50</ondown>
-                    <!--<pagecontrol>60</pagecontrol>-->
                     <viewtype label="539">Wide List</viewtype>
                     <focusposition>2</focusposition>
-                    <!--<movement>0</movement>-->
                     <preloaditems>4</preloaditems>
                     <scrolltime>250</scrolltime>
                     <itemlayout width="1920" height="111">
@@ -50,9 +48,10 @@
                         <control type="group">
                             <control type="label" description="Label2">
                                 <left>65</left>
+                                <width>1800</width>
                                 <align>left</align>
                                 <include>BigListDetails</include>
-                                <label>$INFO[ListItem.Duration,$LOCALIZE[180]: , $LOCALIZE[31038]]</label>
+                                <label>$INFO[ListItem.Mpaa,, • ]$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]$INFO[ListItem.Videoresolution, • ]</label>
                             </control>
                         </control>
                         <control type="image">
@@ -94,15 +93,16 @@
                             <animation condition="String.IsEmpty(ListItem.Label2) + String.IsEmpty(ListItem.Duration) + String.IsEmpty(ListItem.Year) + String.IsEmpty(ListItem.Artist)" effect="slide" end="0,20" time="0" reversible="true">Conditional</animation>
                             <left>65</left>
                             <width>1760</width>
-                            <include>BigListTitle</include>
+                            <include>BigListTitleFO</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="group">
                             <control type="label" description="Label2">
                                 <left>65</left>
+                                <width>1800</width>
                                 <align>left</align>
-                                <include>BigListDetails</include>
-                                <label>$INFO[ListItem.Duration,$LOCALIZE[180]: , $LOCALIZE[31038]]</label>
+                                <include>BigListDetailsFO</include>
+                                <label>$INFO[ListItem.Mpaa,, • ]$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]$INFO[ListItem.Videoresolution, • ]</label>
                             </control>
                         </control>
                         <control type="image">
