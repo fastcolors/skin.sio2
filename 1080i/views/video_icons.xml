@@ -80,7 +80,7 @@
                         <width>290</width>
                         <height>420</height>
                         <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
-                        <aspectratio>keep</aspectratio>
+                        <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image">
                         <visible>ListItem.IsParentFolder</visible>
@@ -127,10 +127,10 @@
                     <control type="image" description="WatchStatus">
                         <visible>![container.content(TVshows) | container.content(seasons)]</visible>
                         <visible>!ListItem.IsCollection</visible>
-                        <left>43</left>
+                        <centerleft>192</centerleft>
                         <top>457</top>
                         <height>32</height>
-                        <width>60</width>
+                        <width>300</width>
                         <aspectratio align="left">keep</aspectratio>
                         <texture>$VAR[WatchStatus]</texture>
                     </control>
@@ -165,7 +165,7 @@
                             <width>290</width>
                             <height>420</height>
                             <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
-                            <aspectratio>keep</aspectratio>
+                            <aspectratio>scale</aspectratio>
                         </control>
                         <control type="image">
                             <visible>ListItem.IsParentFolder</visible>
@@ -212,10 +212,10 @@
                         <control type="image" description="WatchStatus">
                             <visible>![container.content(TVshows) | container.content(seasons)]</visible>
                             <visible>!ListItem.IsCollection</visible>
-                            <left>43</left>
+                            <centerleft>192</centerleft>
                             <top>457</top>
                             <height>32</height>
-                            <width>60</width>
+                            <width>300</width>
                             <aspectratio align="left">keep</aspectratio>
                             <texture>$VAR[WatchStatus]</texture>
                         </control>
