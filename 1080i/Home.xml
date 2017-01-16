@@ -30,6 +30,7 @@
             <include>ShelfFade</include>
             <animation>Focus</animation>
             <animation>unFocus</animation>
+            <animation condition="$EXP[istvshows]" effect="slide" end="0,25"  time="180" tween="Back" easing="inout">Conditional</animation>
             <animation condition="$EXP[shelflabelsslide]" effect="slide" start="0" end="0,-30" time="180" tween="Back">Conditional</animation>
             <left>80</left>
             <bottom>980</bottom>
