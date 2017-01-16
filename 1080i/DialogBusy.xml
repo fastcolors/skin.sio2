@@ -9,7 +9,7 @@
         <include>BlackBackground</include>
         <control type="multiimage" description="Busy animation">
             <centerleft>960</centerleft>
-            <centertop>590</centertop>
+            <centertop>540</centertop>
             <width>700</width>
             <height>70</height>
             <imagepath>busy/multi</imagepath>
