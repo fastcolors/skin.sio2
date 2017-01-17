@@ -4,7 +4,8 @@
         <left>0</left>
         <top>0</top>
     </coordinates>
-    <include>OpenClose</include>
+    <animation effect="fade" time="250">WindowOpen</animation>
+    <animation effect="fade" time="250">WindowClose</animation>
     <controls>
         <include>BlackBackground</include>
         <control type="multiimage" description="Busy animation">
