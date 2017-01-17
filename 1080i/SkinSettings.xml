@@ -60,7 +60,7 @@
                 <control type="radiobutton" id="9">
                     <width>840</width>
                     <align>left</align>
-                    <label>Use Fanart for SHelf Episodes</label>
+                    <label>$LOCALIZE[31045]</label>
                     <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
                     <onclick>Skin.ToggleSetting(epthumb)</onclick>
                     <selected>Skin.HasSetting(epthumb)</selected>

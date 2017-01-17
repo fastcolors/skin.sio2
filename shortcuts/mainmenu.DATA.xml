@@ -86,15 +86,6 @@
         <visible>System.HasAddon(script.extendedinfo)</visible>
     </shortcut>
     <shortcut>
-        <defaultID>upcomingtvshows</defaultID>
-        <label>31423</label>
-        <icon>-</icon>
-        <label2>-</label2>
-        <thumb>icons/extendedinfodvd.png</thumb>
-        <action>SetFocus(700)</action>
-        <visible>System.HasAddon(script.extendedinfo)</visible>
-    </shortcut>
-    <shortcut>
         <defaultID>programs</defaultID>
         <label>0</label>
         <icon>-</icon>

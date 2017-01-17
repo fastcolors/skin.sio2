@@ -87,17 +87,7 @@
         <value condition="Skin.HasSetting(osdch)">$LOCALIZE[19069]</value>
         <value >$LOCALIZE[19019]</value>
     </variable>
-    <variable name="helptext">
-        <value condition="ControlGroup(50).HasFocus(1)"></value>
-        <value condition="ControlGroup(50).HasFocus(2)">$LOCALIZE[31018]</value>
-        <value condition="ControlGroup(50).HasFocus(3)"></value>
-        <value condition="ControlGroup(50).HasFocus(4)">$LOCALIZE[31054]</value>
-        <value condition="ControlGroup(50).HasFocus(5)">$LOCALIZE[31022]</value>
-        <value condition="ControlGroup(50).HasFocus(6)">$LOCALIZE[31003]</value>
-        <value condition="ControlGroup(50).HasFocus(7)">$LOCALIZE[31031]</value>
-        <value condition="ControlGroup(50).HasFocus(8)">$LOCALIZE[31036]</value>
-        <value condition="ControlGroup(50).HasFocus(9)"></value>
-    </variable>
+
     <variable name="nowplay">
         <value condition="Pvr.IsPlayingTV">$INFO[]</value>
         <value condition="String.IsEmpty(Player.Art(tvshow.poster))">$INFO[VideoPlayer.Cover]</value>
@@ -118,9 +108,6 @@
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies) + String.IsEqual(Skin.String(theatersshelf),1)">plugin://script.extendedinfo?info=popularmovies&amp;&amp;limit=18</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies) + String.IsEqual(Skin.String(theatersshelf),2)">plugin://script.extendedinfo?info=upcomingmovies&amp;&amp;limit=18</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies)">plugin://script.extendedinfo?info=incinemamovies&amp;&amp;limit=18</value>
-
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingtvshows) + String.IsEqual(Skin.String(dvdsshelf),1)">plugin://script.extendedinfo?info=topratedtvshows&amp;&amp;limit=18</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingtvshows)">plugin://script.extendedinfo?info=trendingshows&amp;&amp;limit=18</value>
 
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies)">videodb://recentlyaddedmovies/</value>
 
@@ -158,14 +145,10 @@
 
 
     <variable name="shelflabel">
-        <!--UPCOMINGTVSHOWS-->
+        <!--UPCOMINGMOVIES-->
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies) + String.IsEqual(Skin.String(theatersshelf),1)">Popular Movies</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies) + String.IsEqual(Skin.String(theatersshelf),2)">Upcoming Movies</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies)">Movies in Theaters</value>
-
-        <!--todo labels-->
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingtvshows) + StringCompare(Skin.String(dvdsshelf),1)">Top Rated TV Shows</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingtvshows)">Trending TV Shows</value>
         <!--MOVIES-->
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),WL)">$LOCALIZE[31048]</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),RND)">$LOCALIZE[590]</value>

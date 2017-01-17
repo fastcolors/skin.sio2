@@ -66,10 +66,6 @@
             <onclick  condition="$EXP[isupcomingmovies] + StringCompare(Skin.String(theatersshelf),1)">Skin.SetString(theatersshelf,2)</onclick>
             <onclick  condition="$EXP[isupcomingmovies] + StringCompare(Skin.String(theatersshelf),2)">Skin.SetString(theatersshelf,)</onclick>
 
-            <!--UPCOMINGTVSHOWS-->
-            <onclick  condition="$EXP[isupcomingtvshows] + StringCompare(Skin.String(dvdsshelf),)">Skin.SetString(dvdsshelf,1)</onclick>
-            <onclick  condition="$EXP[isupcomingtvshows] + StringCompare(Skin.String(dvdsshelf),1)">Skin.SetString(dvdsshelf,)</onclick>
-
             <onup>noop</onup>
             <ondown condition="Control.IsVisible(312)">312</ondown>
             <ondown condition="Control.IsVisible(313)">313</ondown>
