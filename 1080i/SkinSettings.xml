@@ -57,6 +57,14 @@
                     <onclick>Skin.ToggleSetting(ViewsMenuOff)</onclick>
                     <selected>!Skin.HasSetting(ViewsMenuOff)</selected>
                 </control>
+                <control type="radiobutton" id="9">
+                    <width>840</width>
+                    <align>left</align>
+                    <label>Use Fanart for SHelf Episodes</label>
+                    <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
+                    <onclick>Skin.ToggleSetting(epthumb)</onclick>
+                    <selected>Skin.HasSetting(epthumb)</selected>
+                </control>
                 <control type="button" id="6">
                     <width>840</width>
                     <align>left</align>
