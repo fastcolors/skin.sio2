@@ -138,9 +138,13 @@ msgctxt "#31045"
 msgid "Use Fanart for Episodes on Shelf"
 msgstr "Use Fanart for Episodes on Shelf"
 
+msgctxt "#31046"
+msgid "In Progress"
+msgstr "In Progress"
+
 msgctxt "#31048"
-msgid "Recommended"
-msgstr "Recommended"
+msgid "Up Next"
+msgstr "Up Next"
 
 msgctxt "#31049"
 msgid "Home menu Power button function"
