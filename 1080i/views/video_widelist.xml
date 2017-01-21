@@ -205,10 +205,6 @@
                     <label>$LOCALIZE[576]: [COLOR darktext][B]$INFO[ListItem.PlayCount][/B][/COLOR]</label>
                 </control>
             </control>
-            <control type="grouplist">
-                <top>40</top>
-                <include>windowtitle</include>
-            </control>
         </control>
     </include>
 </includes>
