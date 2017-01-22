@@ -4,7 +4,7 @@
     <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;level=1)</onload>
-    <include>OpenClose</include>
+    <include>HomeOpenClose</include>
     <controls>
         <include>BlackBackground</include>
         <!--CLONING-->
@@ -75,6 +75,7 @@
             <onright>noop</onright>
         </control>
         <control type="panel" id="9000" description="ICONE">
+            <include>HomePanelOpenClose</include>
             <include>homeanimation</include>
             <centerleft>960</centerleft>
             <top>740</top>
@@ -154,6 +155,7 @@
                 <control type="group">
                     <animation effect="zoom" start="100" end="122" time="120" center="180,208" tween="Back" easing="Out">Focus</animation>
                     <animation effect="zoom" start="122" end="100" time="120" center="180,208">unFocus</animation>
+                    <animation effect="zoom" start="100" end="322" time="120" center="180,208" tween="Back" easing="Out">onClick</animation>
                     <control type="image" description="shade_base">
                         <centerleft>180</centerleft>
                         <animation effect="slide" start="0,0" end="0,34" time="240" reversible="true" tween="Back" easing="Out">Focus</animation>
