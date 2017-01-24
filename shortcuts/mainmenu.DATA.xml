@@ -83,7 +83,7 @@
         <label2>-</label2>
         <thumb>icons/extendedinfotheater.png</thumb>
         <action>SetFocus(700)</action>
-        <visible>System.HasAddon(script.extendedinfo)</visible>
+        <visible>System.HasAddon(script.extendedinfo) + Skin.HasSetting(upcomingmovies)</visible>
     </shortcut>
     <shortcut>
         <defaultID>programs</defaultID>
