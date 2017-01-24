@@ -4,85 +4,80 @@
     <allowoverlay>yes</allowoverlay>
     <zorder>5</zorder>
     <include>OpenClose</include>
-    <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
-    <visible>Window.IsVisible(FullScreenVideo) + [Window.IsActive(videoosd.xml) | Player.Seeking | Player.DisplayAfterSeek | Player.Forwarding | Player.Rewinding | Player.Caching]</visible>
+    <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
+    <visible>Window.IsVisible(FullScreenVideo) + [Window.IsActive(videoosd.xml) | Player.DisplayAfterSeek | Player.Seeking | Player.Forwarding | Player.Rewinding | Player.Caching]</visible>
     <animation effect="fade" start="0" end="100" time="400">Visible</animation>
     <animation effect="fade" start="100" end="0" time="100">Hidden</animation>
     <controls>
+        <control type="group" description="Time">
+            <visible>!Window.IsActive(142)</visible>
+            <animation effect="fade" start="0" end="70" time="400">Visible</animation>
+            <animation effect="fade" start="70" end="0" time="100">Hidden</animation>
+        </control>
+        <control type="label" description="Seek time label">
+            <visible>!Skin.HasSetting(hidejump)</visible>
+            <height>1080</height>
+            <width>1920</width>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>sizescroll</font>
+            <textcolor>33ffffff</textcolor>
+            <animation effect="fade" time="200">VisibleChange</animation>
+            <label>$INFO[Player.SeekOffset]</label>
+        </control>
         <control type="group">
-            <control type="group" description="Time">
-                <visible>!Window.IsActive(142)</visible>
-                <animation effect="fade" start="0" end="70" time="400">Visible</animation>
-                <animation effect="fade" start="70" end="0" time="100">Hidden</animation>
+            <top>980</top>
+            <left>110</left>
+            <control type="progress" description="Cache Progress">
+                <!--Player.Caching-->
+                <width>1700</width>
+                <height>10</height>
+                <reveal>true</reveal>
+                <texturebg border="4">Seekbar/ProgressBG.png</texturebg>
+                <lefttexture>Seekbar/ProgressL.png</lefttexture>
+                <midtexture>Seekbar/ProgressM.png</midtexture>
+                <righttexture>Seekbar/ProgressR.png</righttexture>
+                <colordiffuse>FF333366</colordiffuse>
+                <info>Player.ProgressCache</info>
             </control>
-            <control type="group">
-                <control type="label" description="Seek time label">
-                    <visible>![player.forwarding | player.rewinding]</visible>
-                    <visible>Player.DisplayAfterSeek</visible>
-                    <height>1080</height>
-                    <width>1920</width>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <font>sizescroll</font>
-                    <textcolor>33ffffff</textcolor>
-                    <animation effect="fade" time="200">VisibleChange</animation>
-                    <label>$INFO[Player.SeekOffset]</label>
-                </control>
+            <control type="progress" id="23" description="Progress Bar">
+                <width>1700</width>
+                <height>10</height>
+                <reveal>true</reveal>
+                <texturebg border="4">Seekbar/ProgressBG.png</texturebg>
+                <lefttexture border="4">Seekbar/ProgressL.png</lefttexture>
+                <midtexture>Seekbar/ProgressM.png</midtexture>
+                <righttexture border="4">Seekbar/ProgressR.png</righttexture>
+                <info>Player.Progress</info>
+                <visible>true</visible>
             </control>
-            <control type="group">
-                <top>980</top>
-                <left>110</left>
-                <control type="progress" description="Cache Progress">
-                    <!--Player.Caching-->
-                    <width>1700</width>
-                    <height>10</height>
-                    <reveal>true</reveal>
-                    <texturebg border="4">Seekbar/ProgressBG.png</texturebg>
-                    <lefttexture>Seekbar/ProgressL.png</lefttexture>
-                    <midtexture>Seekbar/ProgressM.png</midtexture>
-                    <righttexture>Seekbar/ProgressR.png</righttexture>
-                    <colordiffuse>FF333366</colordiffuse>
-                    <info>Player.ProgressCache</info>
-                </control>
-                <control type="progress" id="23" description="Progress Bar">
-                    <width>1700</width>
-                    <height>10</height>
-                    <reveal>true</reveal>
-                    <texturebg border="4">Seekbar/ProgressBG.png</texturebg>
-                    <lefttexture border="4">Seekbar/ProgressL.png</lefttexture>
-                    <midtexture>Seekbar/ProgressM.png</midtexture>
-                    <righttexture border="4">Seekbar/ProgressR.png</righttexture>
-                    <info>Player.Progress</info>
-                    <visible>true</visible>
-                </control>
-                <control type="label">
-                    <top>15</top>
-                    <width>195</width>
-                    <height>30</height>
-                    <label>$INFO[Player.Time]</label>
-                    <textcolor>lightgray</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <font>size26</font>
-                </control>
-                <control type="label">
-                    <top>15</top>
-                    <right>110</right>
-                    <height>30</height>
-                    <width>195</width>
-                    <align>right</align>
-                    <label>- $INFO[Player.TimeRemaining]</label>
-                    <textcolor>lightgray</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <font>size26</font>
-                </control>
+            <control type="label">
+                <top>15</top>
+                <width>195</width>
+                <height>30</height>
+                <label>$INFO[Player.Time]</label>
+                <textcolor>lightgray</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <font>size26</font>
             </control>
-            <control type="image" description="Buffer icon">
-                <visible>Player.Caching</visible>
-                <left>0</left>
-                <include>OSDbarIcons</include>
-                <texture border="2">busy/Busy.png</texture>
-                <animation effect="rotate" start="360" end="0" center="auto" time="1200" loop="true" pulse="true" condition="true">conditional</animation>
+            <control type="label">
+                <top>15</top>
+                <right>110</right>
+                <height>30</height>
+                <width>195</width>
+                <align>right</align>
+                <label>- $INFO[Player.TimeRemaining]</label>
+                <textcolor>lightgray</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <font>size26</font>
             </control>
+        </control>
+        <control type="image" description="Buffer icon">
+            <visible>Player.Caching</visible>
+            <left>0</left>
+            <include>OSDbarIcons</include>
+            <texture border="2">busy/Busy.png</texture>
+            <animation effect="rotate" start="360" end="0" center="auto" time="1200" loop="true" pulse="true" condition="true">conditional</animation>
         </control>
         <control type="grouplist">
             <visible>!Window.IsVisible(videoosd)</visible>
@@ -96,11 +91,11 @@
             </control>
             <!--todo mpaa-->
             <!--<control type="image">-->
-                <!--<width>375</width>-->
-                <!--<height>100</height>-->
-                <!--<texture>$INFO[VideoPlayer.mpaa,Mpaa/,.png]</texture>-->
-                <!--<aspectratio align="right">keep</aspectratio>-->
-                <!--<colordiffuse>77FFFFFF</colordiffuse>-->
+            <!--<width>375</width>-->
+            <!--<height>100</height>-->
+            <!--<texture>$INFO[VideoPlayer.mpaa,Mpaa/,.png]</texture>-->
+            <!--<aspectratio align="right">keep</aspectratio>-->
+            <!--<colordiffuse>77FFFFFF</colordiffuse>-->
             <!--</control>-->
         </control>
     </controls>

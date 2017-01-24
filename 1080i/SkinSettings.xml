@@ -73,6 +73,14 @@
                     <onclick>Skin.ToggleSetting(upcomingmovies)</onclick>
                     <selected>Skin.HasSetting(upcomingmovies)</selected>
                 </control>
+                <control type="radiobutton" id="11">
+                    <width>840</width>
+                    <align>left</align>
+                    <label>$LOCALIZE[31042]</label>
+                    <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
+                    <onclick>Skin.ToggleSetting(hidejump)</onclick>
+                    <selected>Skin.HasSetting(hidejump)</selected>
+                </control>
                 <control type="button" id="6">
                     <width>840</width>
                     <align>left</align>
