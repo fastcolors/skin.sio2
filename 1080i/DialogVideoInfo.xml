@@ -39,7 +39,7 @@
                     <width>880</width>
                     <height>45</height>
                     <font>size24</font>
-                    <textcolor>maindim</textcolor>
+                    <textcolor>darktext</textcolor>
                     <label>$INFO[ListItem.Studio]</label>
                 </control>
                 <control type="label">
@@ -47,7 +47,7 @@
                     <width>880</width>
                     <height>45</height>
                     <font>size24</font>
-                    <textcolor>maindim</textcolor>
+                    <textcolor>darktext</textcolor>
                     <label>$INFO[ListItem.Duration,, min]$INFO[ListItem.MPAA, • ]</label>
                 </control>
                 <control type="textbox" id="4" description="plot">
@@ -140,7 +140,6 @@
                 <control type="button" id="11" description="Trailer">
                     <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
                     <animation effect="zoom" start="120" end="100" time="120" center="auto">unFocus</animation>
-
                     <height>100</height>
                     <width>150</width>
                     <texturefocus>images/diffuserounded.png</texturefocus>

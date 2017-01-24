@@ -162,8 +162,8 @@
     </variable>
 
     <variable name="infosuggestions">
-        <value condition="Container.Content(movies)">special://skin/playlists/random.xsp</value>
-        <value condition="Container.Content(tvshows) | Container.Content(episodes)">special://skin/playlists/randomTV.xsp</value>
+        <value condition="Container.Content(movies)">plugin://script.extendedinfo?info=similarmovies&amp;&amp;dbid=$INFO[ListItem.DBID]&amp;&amp;limit=20</value>
+        <value condition="Container.Content(tvshows) | Container.Content(episodes)">special://skin/playlists/random_tvshows.xsp</value>
     </variable>
 
     <variable name="locandine">
