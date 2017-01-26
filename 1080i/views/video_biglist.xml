@@ -18,7 +18,6 @@
                     <onright>noop</onright>
                     <onup>50</onup>
                     <ondown>50</ondown>
-                    <!--<pagecontrol>60</pagecontrol>-->
                     <viewtype label="537">Big List</viewtype>
                     <focusposition>3</focusposition>
                     <movement>4</movement>
