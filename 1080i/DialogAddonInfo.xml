@@ -12,13 +12,6 @@
       <colordiffuse>30FFFFFF</colordiffuse>
       <info>ListItem.Art(fanart)</info>
     </control>
-    <!--<control type="image" description="whitback">-->
-    <!--<centerleft>540</centerleft>-->
-    <!--<top>80</top>-->
-    <!--<width>950</width>-->
-    <!--<height>1000</height>-->
-    <!--<texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>-->
-    <!--</control>-->
     <control type="grouplist">
       <top>100</top>
       <centerleft>540</centerleft>
@@ -28,7 +21,7 @@
       <control type="label" description="Item Label">
         <width>auto</width>
         <height>40</height>
-        <textcolor>black</textcolor>
+        <textcolor>darktext</textcolor>
         <font>Size42b</font>
         <align>center</align>
         <autoscroll time="6000" delay="8000" repeat="8000">true</autoscroll>
@@ -37,7 +30,7 @@
       <control type="label" description="Item Label">
         <width>auto</width>
         <height>52</height>
-        <textcolor>black</textcolor>
+        <textcolor>darktext</textcolor>
         <font>Size22</font>
         <align>center</align>
         <autoscroll time="6000" delay="8000" repeat="8000">true</autoscroll>
@@ -60,31 +53,33 @@
       <width>900</width>
       <height>880</height>
       <align>justify</align>
+       <textcolor>infos</textcolor>
       <autoscroll delay="6500" time="4000" repeat="10000"></autoscroll>
       <info>ListItem.AddonDescription</info>
     </control>
-    <!--<control type="image">-->
-    <!--<centerleft>1470</centerleft>-->
-    <!--<top>80</top>-->
-    <!--<width>250</width>-->
-    <!--<height>250</height>-->
-    <!--<texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>-->
-    <!--</control>-->
+    <control type="image">
+      <centerleft>1470</centerleft>
+      <top>100</top>
+      <width>300</width>
+      <height>300</height>
+      <texture>$INFO[ListItem.Icon]</texture>
+    </control>
     <control type="label">
       <centerleft>1470</centerleft>
-      <top>350</top>
-      <width>750</width>
+      <top>420</top>
+      <width>800</width>
       <height>40</height>
-      <info>ListItem.AddonCreator</info>
+      <textcolor>infos</textcolor>
+      <label>$INFO[ListItem.AddonCreator,Created by ]</label>
     </control>
     <control type="textbox">
       <centerleft>1470</centerleft>
-      <top>410</top>
+      <top>460</top>
       <font>Size22</font>
       <textcolor>red</textcolor>
       <align>justify</align>
       <width>800</width>
-      <height>120</height>
+      <height>80</height>
       <info>ListItem.AddonDisclaimer</info>
     </control>
     <control type="group" description="Options">
