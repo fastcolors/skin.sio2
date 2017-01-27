@@ -458,4 +458,11 @@
             </control>
         </control>
     </include>
+
+    <include name="osdbutton">
+        <width>90</width>
+        <height>98</height>
+        <animation>Focus</animation>
+        <animation>unFocus</animation>
+    </include>
 </includes>
