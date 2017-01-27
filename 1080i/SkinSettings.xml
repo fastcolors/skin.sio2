@@ -9,10 +9,10 @@
         <include>BlackBackground</include>
         <control type="group">
             <left>1020</left>
-            <top>131</top>
+            <top>130</top>
             <control type="grouplist" id="50">
                 <width>902</width>
-                <height>882</height>
+                <height>950</height>
                 <onleft>noop</onleft>
                 <onright>noop</onright>
                 <onup>50</onup>
