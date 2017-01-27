@@ -40,7 +40,27 @@
                 <texture diffuse="images/Diffuse.png" background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
                 <aspectratio aligny="bottom">keep</aspectratio>
             </control>
-            <include>Unwatched</include>
+            <control type="group">
+                <top>550</top>
+                <left>660</left>
+                <visible>!String.IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !String.IsEqual(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                <animation effect="fade" time="200" delay="300">Visible</animation>
+                <animation effect="fade" end="0">Hidden</animation>
+                <control type="image">
+                    <height>55</height>
+                    <width>80</width>
+                    <aspectratio>keep</aspectratio>
+                    <texture>badges/Badgecount.png</texture>
+                </control>
+                <control type="label" description="Label2">
+                    <height>50</height>
+                    <width>80</width>
+                    <font>size30</font>
+                    <align>center</align>
+                    <textcolor>black</textcolor>
+                    <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
+                </control>
+            </control>
             <control type="grouplist">
                 <centerleft>500</centerleft>
                 <top>620</top>
@@ -84,16 +104,6 @@
                     <textcolor>infos</textcolor>
                     <label>$VAR[MPAAS, • ]</label>
                 </control>
-            </control>
-            <control type="image">
-                <visible>!String.IsEmpty(ListItem.Mpaa) + !Container.Content(Movies)</visible>
-                <animation condition="!Container.Content(Episodes)" effect="slide" end="450,320">Conditional</animation>
-                <left>60</left>
-                <top>150</top>
-                <height>120</height>
-                <width>120</width>
-                <aspectratio>keep</aspectratio>
-                <texture>$VAR[MPAAS,Mpaa/,.png]</texture>
             </control>
             <control type="image" description="Stars">
                 <visible>!String.IsEmpty(ListItem.Rating)</visible>
@@ -466,13 +476,6 @@
                     <include>BigListDetails</include>
                     <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]</label>
                 </control>
-                <control type="label" description="Label2">
-                    <visible>!Container.Content(Artists)</visible>
-                    <left>760</left>
-                    <align>right</align>
-                    <include>BigListDetails</include>
-                    <label>$INFO[ListItem.Artist]</label>
-                </control>
             </control>
         </itemlayout>
         <focusedlayout width="802" height="111">
@@ -524,14 +527,6 @@
                         <align>left</align>
                         <include>BigListDetails</include>
                         <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]</label>
-                    </control>
-                    <control type="label" description="Label2">
-                        <visible>!Container.Content(Artists)</visible>
-                        <left>760</left>
-                        <width>480</width>
-                        <align>right</align>
-                        <include>BigListDetailsFO</include>
-                        <label>$INFO[ListItem.Artist]</label>
                     </control>
                 </control>
             </control>
