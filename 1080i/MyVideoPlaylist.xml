@@ -31,8 +31,7 @@
             <width>802</width>
             <height>888</height>
             <onleft>9000</onleft>
-            <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-            <onright condition="!Skin.HasSetting(Scrollbars_Active)">9000</onright>
+            <onright>9000</onright>
             <onup>50</onup>
             <ondown>50</ondown>
             <pagecontrol>60</pagecontrol>
@@ -119,14 +118,6 @@
             </focusedlayout>
           </control>
           <include>LargeListSlider</include>
-        </control>
-
-        <control type="scrollbar" id="60">
-          <left>51r</left>
-          <top>135</top>
-          <height>870</height>
-          <onleft>50</onleft>
-          <onright>noop</onright>
         </control>
       </control>
       <control type="group" description="Side menu 9000 group">

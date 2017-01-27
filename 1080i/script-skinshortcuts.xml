@@ -108,12 +108,12 @@
             <align>center</align>
             <orientation>horizontal</orientation>
             <!--<control type="togglebutton" id="313">-->
-                <!--<usealttexture>String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),False)</usealttexture>-->
-                <!--<description>Move shortcut up</description>-->
-                <!--<include>osdtopbutton</include>-->
-                <!--<onclick>SetFocus(211)</onclick>-->
-                <!--<label>$LOCALIZE[24022]</label>-->
-                <!--<altlabel>$LOCALIZE[24021]</altlabel>-->
+            <!--<usealttexture>String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),False)</usealttexture>-->
+            <!--<description>Move shortcut up</description>-->
+            <!--<include>osdtopbutton</include>-->
+            <!--<onclick>SetFocus(211)</onclick>-->
+            <!--<label>$LOCALIZE[24022]</label>-->
+            <!--<altlabel>$LOCALIZE[24021]</altlabel>-->
             <!--</control>-->
             <control type="button" id="303">
                 <description>Move shortcut up</description>
@@ -128,40 +128,41 @@
                 <label>$ADDON[script.skinshortcuts 32003]</label>
             </control>
             <!--<control type="button" id="305">-->
-                <!--<description>Change shortcut label</description>-->
-                <!--<include>osdtopbutton</include>-->
-                <!--<onclick>noop</onclick>-->
-                <!--<label>$ADDON[script.skinshortcuts 32025]</label>-->
+            <!--<description>Change shortcut label</description>-->
+            <!--<include>osdtopbutton</include>-->
+            <!--<onclick>noop</onclick>-->
+            <!--<label>$ADDON[script.skinshortcuts 32025]</label>-->
             <!--</control>-->
             <!--<control type="button" id="306">-->
-                <!--<description>Change shortcut thumbnail</description>-->
-                <!--<include>osdtopbutton</include>-->
-                <!--<onclick>noop</onclick>-->
-                <!--<label>$ADDON[script.skinshortcuts 32026]</label>-->
+            <!--<description>Change shortcut thumbnail</description>-->
+            <!--<include>osdtopbutton</include>-->
+            <!--<onclick>noop</onclick>-->
+            <!--<label>$ADDON[script.skinshortcuts 32026]</label>-->
             <!--</control>-->
             <!--<control type="button" id="307">-->
-                <!--<description>Change shortcut action</description>-->
-                <!--<include>osdtopbutton</include>-->
-                <!--<onclick>noop</onclick>-->
-                <!--<label>$ADDON[script.skinshortcuts 32027]</label>-->
+            <!--<description>Change shortcut action</description>-->
+            <!--<include>osdtopbutton</include>-->
+            <!--<onclick>noop</onclick>-->
+            <!--<label>$ADDON[script.skinshortcuts 32027]</label>-->
             <!--</control>-->
             <control type="button" id="301">
+                <visible>Integer.IsLessOrEqual(Container(211).NumItems,29)</visible>
                 <description>Add a new shortcut</description>
                 <include>osdtopbutton</include>
-                <onclick>SetFocus(211)</onclick>
+                <onclick></onclick>
                 <label>$ADDON[script.skinshortcuts 32000]</label>
             </control>
             <!--<control type="button" id="401">-->
-                <!--<description>function</description>-->
-                <!--<include>osdtopbutton</include>-->
-                <!--<onclick>SetFocus(211)</onclick>-->
-                <!--<label>$ADDON[script.skinshortcuts 32048]</label>-->
+            <!--<description>function</description>-->
+            <!--<include>osdtopbutton</include>-->
+            <!--<onclick>SetFocus(211)</onclick>-->
+            <!--<label>$ADDON[script.skinshortcuts 32048]</label>-->
             <!--</control>-->
             <!--<control type="button" id="302">-->
-                <!--<description>Delete shortcut</description>-->
-                <!--<include>osdtopbutton</include>-->
-                <!--<onclick>noop</onclick>-->
-                <!--<label>$ADDON[script.skinshortcuts 32001]</label>-->
+            <!--<description>Delete shortcut</description>-->
+            <!--<include>osdtopbutton</include>-->
+            <!--<onclick>noop</onclick>-->
+            <!--<label>$ADDON[script.skinshortcuts 32001]</label>-->
             <!--</control>-->
             <control type="button" id="313">
                 <description>Disable shortcut</description>
@@ -176,10 +177,34 @@
                 <label>$ADDON[script.skinshortcuts 32028]</label>
             </control>
         </control>
+        <control type="image">
+            <width>480</width>
+            <height>80</height>
+            <bottom>10</bottom>
+            <texture colordiffuse="osdoverlay" border="8">images/White.png</texture>
+        </control>
         <control type="label">
             <left>60</left>
-            <bottom>10</bottom>
-            <label>Long Press to Enable/Disable Item</label>
+            <bottom>12</bottom>
+            <width>470</width>
+            <label>Long Press to Edit Item</label>
+        </control>
+        <control type="group">
+            <visible>!Integer.IsLessOrEqual(Container(211).NumItems,29)</visible>
+            <control type="image">
+                <width>480</width>
+                <height>80</height>
+                <bottom>10</bottom>
+                <right>0</right>
+                <texture colordiffuse="red" border="8">images/White.png</texture>
+            </control>
+            <control type="label">
+                <right>60</right>
+                <width>410</width>
+                <bottom>12</bottom>
+                <align>right</align>
+                <label>Max Item Number</label>
+            </control>
         </control>
     </controls>
 </window>

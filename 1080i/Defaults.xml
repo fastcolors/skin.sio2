@@ -182,15 +182,20 @@
     <reverse>yes</reverse>
     <pulseonselect>false</pulseonselect>
   </default>
+
   <default type="slider" description="Seek Slider">
     <visible>true</visible>
     <width>711</width>
-    <height>36</height>
-    <texturesliderbar>OSD/SeekSliderBack.png</texturesliderbar>
-    <textureslidernib>OSD/ScrollBarNibFO.png</textureslidernib>
-    <textureslidernibfocus>OSD/ScrollBarNibFO.png</textureslidernibfocus>
-    <texturesliderbar>OSD/SliderBackground2.png</texturesliderbar>
+    <height>30</height>
+    <!--<texturesliderbar border="10">buttons/slider-back.png</texturesliderbar>-->
+    <!--<textureslidernib>buttons/slider-nib.png</textureslidernib>-->
+    <!--<textureslidernibfocus colordiffuse="button_focus">buttons/slider-nib.png</textureslidernibfocus>-->
+    <orientation>horizontal</orientation>
+    <texturesliderbar border="4">images/slider_bg.png</texturesliderbar>
+    <textureslidernib>images/slider_nib_nf.png</textureslidernib>
+    <textureslidernibfocus>images/slider_nib.png</textureslidernibfocus>
   </default>
+
   <default type="sliderex" description="Default Slider">
     <animation effect="zoom" start="100" end="105" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
     <animation effect="zoom" start="105" end="100" time="120" center="auto">unFocus</animation>

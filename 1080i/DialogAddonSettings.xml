@@ -90,13 +90,5 @@
       <font>size33</font>
       <width>900</width>
     </control>
-    <control type="scrollbar" id="60">
-      <left>45r</left>
-      <top>165</top>
-      <height>825</height>
-      <onleft>2</onleft>
-      <showonepage>false</showonepage>
-      <onright>8999</onright>
-    </control>
   </controls>
 </window>

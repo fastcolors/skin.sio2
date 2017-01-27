@@ -30,8 +30,8 @@
         <icon>-</icon>
         <label2>-</label2>
         <thumb>icons/addons.png</thumb>
-        <action>SetFocus(10030)</action>
-        <!--<action>ActivateWindow(1118)</action>-->
+        <!--<action>SetFocus(10030)</action>-->
+        <action>ActivateWindow(1118)</action>
     </shortcut>
     <shortcut>
         <defaultID>weather</defaultID>
@@ -39,7 +39,7 @@
         <icon>$INFO[Weather.Conditions]</icon>
         <label2>icons/white.png</label2>
         <thumb>-</thumb>
-        <action>ActivateWindow(MyWeather)</action>
+        <action>SetFocus(700)</action>
     </shortcut>
     <shortcut>
         <defaultID>pictures</defaultID>
@@ -55,8 +55,8 @@
         <icon>-</icon>
         <label2>-</label2>
         <thumb>icons/LiveTV.png</thumb>
-        <action>SetFocus(10040)</action>
-        <!--<action>ActivateWindow(1718)</action>-->
+        <!--<action>SetFocus(10040)</action>-->
+        <action>ActivateWindow(1718)</action>
         <visible>!Pvr.IsRecording</visible>
     </shortcut>
     <shortcut>
@@ -83,16 +83,7 @@
         <label2>-</label2>
         <thumb>icons/extendedinfotheater.png</thumb>
         <action>SetFocus(700)</action>
-        <visible>System.HasAddon(script.extendedinfo)</visible>
-    </shortcut>
-    <shortcut>
-        <defaultID>upcomingtvshows</defaultID>
-        <label>31423</label>
-        <icon>-</icon>
-        <label2>-</label2>
-        <thumb>icons/extendedinfodvd.png</thumb>
-        <action>SetFocus(700)</action>
-        <visible>System.HasAddon(script.extendedinfo)</visible>
+        <visible>System.HasAddon(script.extendedinfo) + Skin.HasSetting(upcomingmovies)</visible>
     </shortcut>
     <shortcut>
         <defaultID>programs</defaultID>
@@ -108,8 +99,8 @@
         <icon>-</icon>
         <label2>-</label2>
         <thumb>icons/sources.png</thumb>
-        <action>SetFocus(10010)</action>
-        <!--<action>ActivateWindow(1115)</action>-->
+        <!--<action>SetFocus(10010)</action>-->
+        <action>ActivateWindow(1115)</action>
     </shortcut>
     <shortcut>
         <defaultID>search</defaultID>
@@ -125,8 +116,8 @@
         <label2>-</label2>
         <icon>-</icon>
         <thumb>icons/settings.png</thumb>
-        <!--<action>ActivateWindow(1120)</action>-->
-        <action>SetFocus(10020)</action>
+        <action>ActivateWindow(1120)</action>
+        <!--<action>SetFocus(10020)</action>-->
     </shortcut>
     <shortcut>
         <defaultID>shutdownmenu</defaultID>

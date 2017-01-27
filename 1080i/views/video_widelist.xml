@@ -5,17 +5,16 @@
             <visible>Control.IsVisible(501)</visible>
             <control type="group">
                 <control type="fixedlist" id="501">
+                    <visible>!String.IsEmpty(Container.FolderPath)</visible>
                     <top>114</top>
                     <width>1920</width>
-                    <height>666</height>
+                    <height>655</height>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-                    <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                    <onright>noop</onright>
                     <onup>50</onup>
                     <ondown>50</ondown>
-                    <pagecontrol>60</pagecontrol>
-                    <viewtype label="537">Big List</viewtype>
-                    <focusposition>3</focusposition>
-                    <movement>4</movement>
+                    <viewtype label="539">Wide List</viewtype>
+                    <focusposition>2</focusposition>
                     <preloaditems>4</preloaditems>
                     <scrolltime>250</scrolltime>
                     <itemlayout width="1920" height="111">
@@ -49,9 +48,10 @@
                         <control type="group">
                             <control type="label" description="Label2">
                                 <left>65</left>
+                                <width>1800</width>
                                 <align>left</align>
                                 <include>BigListDetails</include>
-                                <label>$INFO[ListItem.Duration,$LOCALIZE[180]: , $LOCALIZE[31038]]</label>
+                                <label>$INFO[ListItem.Mpaa,, • ]$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]$INFO[ListItem.Videoresolution, • ]</label>
                             </control>
                         </control>
                         <control type="image">
@@ -93,15 +93,16 @@
                             <animation condition="String.IsEmpty(ListItem.Label2) + String.IsEmpty(ListItem.Duration) + String.IsEmpty(ListItem.Year) + String.IsEmpty(ListItem.Artist)" effect="slide" end="0,20" time="0" reversible="true">Conditional</animation>
                             <left>65</left>
                             <width>1760</width>
-                            <include>BigListTitle</include>
+                            <include>BigListTitleFO</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="group">
                             <control type="label" description="Label2">
                                 <left>65</left>
+                                <width>1800</width>
                                 <align>left</align>
-                                <include>BigListDetails</include>
-                                <label>$INFO[ListItem.Duration,$LOCALIZE[180]: , $LOCALIZE[31038]]</label>
+                                <include>BigListDetailsFO</include>
+                                <label>$INFO[ListItem.Mpaa,, • ]$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]$INFO[ListItem.Videoresolution, • ]</label>
                             </control>
                         </control>
                         <control type="image">
@@ -203,10 +204,6 @@
                     <textcolor>infos</textcolor>
                     <label>$LOCALIZE[576]: [COLOR darktext][B]$INFO[ListItem.PlayCount][/B][/COLOR]</label>
                 </control>
-            </control>
-            <control type="grouplist">
-                <top>40</top>
-                <include>windowtitle</include>
             </control>
         </control>
     </include>

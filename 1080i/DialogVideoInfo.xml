@@ -39,7 +39,7 @@
                     <width>880</width>
                     <height>45</height>
                     <font>size24</font>
-                    <textcolor>maindim</textcolor>
+                    <textcolor>darktext</textcolor>
                     <label>$INFO[ListItem.Studio]</label>
                 </control>
                 <control type="label">
@@ -47,7 +47,7 @@
                     <width>880</width>
                     <height>45</height>
                     <font>size24</font>
-                    <textcolor>maindim</textcolor>
+                    <textcolor>darktext</textcolor>
                     <label>$INFO[ListItem.Duration,, min]$INFO[ListItem.MPAA, • ]</label>
                 </control>
                 <control type="textbox" id="4" description="plot">
@@ -140,7 +140,6 @@
                 <control type="button" id="11" description="Trailer">
                     <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
                     <animation effect="zoom" start="120" end="100" time="120" center="auto">unFocus</animation>
-
                     <height>100</height>
                     <width>150</width>
                     <texturefocus>images/diffuserounded.png</texturefocus>
@@ -150,32 +149,30 @@
                     <textoffsetx>0</textoffsetx>
                     <label>20410</label>
                 </control>
-                <control type="togglebutton" id="8" description="Play/browse to Show">
+                <control type="button" id="8" description="Play/browse to Show">
+                    <visible>!Container.Content(tvshows)</visible>
                     <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
                     <animation effect="zoom" start="120" end="100" time="120" center="auto">unFocus</animation>
                     <height>100</height>
                     <width>150</width>
                     <texturefocus>images/diffuserounded.png</texturefocus>
                     <texturenofocus>images/diffuserounded.png</texturenofocus>
-                    <usealttexture>Container.Content(TVShows)</usealttexture>
                     <font>XS</font>
                     <textoffsetx>0</textoffsetx>
                     <label>208</label>
                 </control>
-                <control type="button" id="299" description="Cinema">
+                <control type="button" id="888" description="Play/browse to Show">
+                    <visible>Container.Content(tvshows)</visible>
                     <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
                     <animation effect="zoom" start="120" end="100" time="120" center="auto">unFocus</animation>
-                    <visible>Container.Content(Movies) + system.hasaddon(script.cinema.experience)</visible>
                     <height>100</height>
                     <width>150</width>
                     <texturefocus>images/diffuserounded.png</texturefocus>
                     <texturenofocus>images/diffuserounded.png</texturenofocus>
-                    <onclick>Dialog.Close(all,true)</onclick>
-                    <onclick>Playlist.Clear</onclick>
-                    <onclick>RunScript(script.cinema.experience)</onclick>
                     <font>XS</font>
                     <textoffsetx>0</textoffsetx>
-                    <label>Cinema</label>
+                    <label>1024</label>
+                    <onclick>SendClick(8)</onclick>
                 </control>
                 <control type="button" id="6" description="Refresh">
                     <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>

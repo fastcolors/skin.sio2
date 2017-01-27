@@ -5,9 +5,10 @@
     <zorder>2</zorder>
     <controls>
         <control type="group">
-            <control type="group" id="101" description="Options content">
+            <visible>!Window.IsVisible(subtitlesearch) + !Window.IsVisible(10123) + !Window.IsVisible(10124) + !Window.IsVisible(10125)</visible>
+            <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+            <control type="group" id="111" description="Options content">
                 <top>-400</top>
-                <visible>!Window.IsVisible(10123) + !Window.IsVisible(10124) + !Window.IsVisible(10125)</visible>
                 <animation type="Focus">
                     <effect type="slide" tween="Cubic" easing="out" start="0,0" end="0,400" time="800" />
                 </animation>
@@ -15,217 +16,441 @@
                     <effect type="slide" start="0,400" end="0,0" time="400"/>
                 </animation>
                 <control type="image">
-                    <width>1920</width>
-                    <height>400</height>
-                    <colordiffuse>ee999999</colordiffuse>
+                    <centerleft>960</centerleft>
+                    <width>2020</width>
+                    <height>140</height>
+                    <colordiffuse>osdoverlay</colordiffuse>
                     <texture border="8">images/White.png</texture>
                 </control>
-                <control type="image">
-                    <top>110</top>
-                    <width>1920</width>
-                    <height>1</height>
-                    <texture>images/Line.png</texture>
-                    <colordiffuse>dimgray</colordiffuse>
-                </control>
                 <control type="grouplist" id="101" description="OSD Options">
-                    <top>20</top>
+                    <top>35</top>
                     <width>1920</width>
-                    <height>720</height>
+                    <height>140</height>
                     <itemgap>0</itemgap>
                     <onleft>noop</onleft>
                     <onright>noop</onright>
                     <onup>100</onup>
-                    <ondown>101</ondown>
+                    <ondown condition="Control.HasFocus(704)">9000</ondown>
+                    <ondown condition="Control.HasFocus(703)">10000</ondown>
+                    <ondown condition="Control.HasFocus(706)">8000</ondown>
+                    <ondown>100</ondown>
                     <orientation>horizontal</orientation>
                     <align>center</align>
                     <scrolltime>240</scrolltime>
-                    <control type="togglebutton" id="701" description="Subtitles">
+                    <control type="button" id="706" description="Info">
+                        <font>size36B</font>
                         <include>osdtopbutton</include>
-                        <label>$LOCALIZE[287]</label>
-                        <onclick>SetFocus(100,2)</onclick>
-                        <onclick>Close</onclick>
-                        <onclick>ActivateWindow(SubtitleSearch)</onclick>
+                        <label>29915</label>
+                        <!--<onclick>SetFocus(100,2)</onclick>-->
                     </control>
-                    <control type="button" id="703">
-                        <include>osdtopbutton</include>
-                        <label>13395</label>
-                        <onclick>SetFocus(100,2)</onclick>
-                        <onclick>Close</onclick>
-                        <onclick>ActivateWindow(OSDVideoSettings)</onclick>
-                    </control>
-                    <control type="button" id="704">
+                    <control type="button" id="704" description="audio and subtitles">
+                        <font>size36B</font>
                         <include>osdtopbutton</include>
                         <label>$LOCALIZE[292] &amp; $LOCALIZE[287]</label>
                         <onclick>SetFocus(100,2)</onclick>
                         <onclick>Close</onclick>
                         <onclick>ActivateWindow(OSDAudioSettings)</onclick>
                     </control>
+                    <control type="button" id="703" description="videosett">
+                        <font>size36B</font>
+                        <include>osdtopbutton</include>
+                        <label>13395</label>
+                        <onclick>SetFocus(100,2)</onclick>
+                        <onclick>ActivateWindow(OSDVideoSettings)</onclick>
+                    </control>
                     <control type="button" id="705">
+                        <font>size36B</font>
                         <include>osdtopbutton</include>
                         <label>298</label>
-                        <onclick>SetFocus(100,2)</onclick>
-                        <onclick>Close</onclick>
+                        <!--<onclick>SetFocus(100,2)</onclick>-->
                         <onclick>ActivateWindow(VideoBookmarks)</onclick>
                     </control>
-                    <control type="button" id="706" description="Info">
-                        <include>osdtopbutton</include>
-                        <label>20176</label>
-                        <onclick>SetFocus(100,2)</onclick>
-                        <onclick>close</onclick>
-                        <onclick>ActivateWindow(142)</onclick>
-                    </control>
                     <control type="button" id="707">
+                        <font>size36B</font>
                         <include>osdtopbutton</include>
                         <label>21445</label>
                         <onfocus>PlayerProcessInfo</onfocus>
-                        <!--<onclick>PlayerProcessInfo</onclick>-->
+                        <onclick>SetFocus(100,2)</onclick>
                     </control>
                     <control type="button" id="708">
-                        <!--<visible>VideoPlayer.HasMenu</visible>-->
+                        <font>size36B</font>
+                        <visible>VideoPlayer.HasMenu</visible>
                         <include>osdtopbutton</include>
                         <label>25003</label>
                         <onclick>SetFocus(100,2)</onclick>
                         <onclick>PlayerControl(ShowVideoMenu)</onclick>
                     </control>
                 </control>
-                <control type="list">
-                    <left>110</left>
-                    <top>160</top>
-                    <width>1700</width>
-                    <height>600</height>
-                    <onup>101</onup>
-                    <ondown>noop</ondown>
-                    <onleft>noop</onleft>
-                    <onright>noop</onright>
-                    <viewtype label="354">list</viewtype>
-                    <itemlayout width="500" height="30">
+                <control type="group" description="Video Info">
+                    <visible>Control.HasFocus(706)</visible>
+                    <control type="image">
+                        <top>140</top>
+                        <centerleft>960</centerleft>
+                        <width>2020</width>
+                        <height>300</height>
+                        <colordiffuse>osdoverlay</colordiffuse>
+                        <texture border="8">images/White.png</texture>
+                    </control>
+                    <control type="image">
+                        <centertop>255</centertop>
+                        <centerleft>295</centerleft>
+                        <height>160</height>
+                        <width>280</width>
+                        <texture background="true">$INFO[Player.Art(fanart)]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <onclick></onclick>
+                    </control>
+                    <control type="grouplist" description="Video Settings">
+                        <left>470</left>
+                        <top>170</top>
+                        <onup>706</onup>
+                        <height>300</height>
+                        <align>left</align>
                         <control type="label">
-                            <left>30</left>
-                            <top>3</top>
-                            <width>430</width>
-                            <height>22</height>
-                            <aligny>center</aligny>
-                            <textcolor>dimgray</textcolor>
-                            <selectedcolor>orange</selectedcolor>
-                            <align>left</align>
-                            <label>ListItem.Label</label>
+                            <height>40</height>
+                            <info>Player.Title</info>
+                            <textcolor>lightgray</textcolor>
                         </control>
-                    </itemlayout>
-                    <focusedlayout width="500" height="30">
                         <control type="label">
-                            <left>30</left>
-                            <top>3</top>
-                            <width>430</width>
-                            <height>22</height>
-                            <aligny>center</aligny>
-                            <textcolor>white</textcolor>
-                            <selectedcolor>orange</selectedcolor>
-                            <align>left</align>
-                            <info>ListItem.Label</info>
+                            <height>40</height>
+                            <info>Player.Duration</info>
+                            <textcolor>lightgray</textcolor>
                         </control>
-                    </focusedlayout>
-                    <!--<content>$VAR[osdtop]</content>-->
-                    <item>
-                        <label>21894</label>
-                        <label2>$INFO[ListItem.Property(Artist_Formed)]</label2>
-                        <onclick>noop</onclick>
-                    </item>
+                        <control type="textbox">
+                            <height>150</height>
+                            <width>1300</width>
+                            <label>$INFO[VideoPlayer.Plot]</label>
+                            <textcolor>lightgray</textcolor>
+                        </control>
+                    </control>
                 </control>
-                <control type="grouplist" description="Video Stream Infos">
+
+                <control type="group" description="Audio and Subtitles">
+                    <visible>Control.HasFocus(704) | ControlGroup(9000).HasFocus</visible>
+                    <control type="image">
+                        <top>140</top>
+                        <centerleft>960</centerleft>
+                        <width>2020</width>
+                        <height>250</height>
+                        <colordiffuse>osdoverlay</colordiffuse>
+                        <texture border="8">images/White.png</texture>
+                    </control>
+                    <control type="group" id="9000">
+                        <top>170</top>
+                        <control type="grouplist" description="Language" id="9001">
+                            <left>335</left>
+                            <height>340</height>
+                            <width>480</width>
+                            <align>left</align>
+                            <onup>704</onup>
+                            <onright>9002</onright>
+                            <onleft>noop</onleft>
+                            <ondown>noop</ondown>
+                            <itemgap>0</itemgap>
+                            <control type="label" id="9010">
+                                <font>size21B</font>
+                                <height>30</height>
+                                <label>[UPPERCASE]$LOCALIZE[304][/UPPERCASE]</label>
+                                <textoffsetx>50</textoffsetx>
+                                <textcolor>lightgray</textcolor>
+                            </control>
+                            <control type="button" id="9013">
+                                <font>size33</font>
+                                <height>50</height>
+                                <include>osdtopbutton</include>
+                                <!--todo localize NEXT Audio-->
+                                <label>$LOCALIZE[209] $LOCALIZE[304]</label>
+                                <textoffsetx>50</textoffsetx>
+                                <textcolor>lightgray</textcolor>
+                                <onclick>Action(AudioNextLanguage)</onclick>
+                            </control>
+                            <control type="label" id="9014">
+                                <font>size33</font>
+                                <height>50</height>
+                                <include>osdtopbutton</include>
+                                <label>$LOCALIZE[304]: $INFO[VideoPlayer.AudioLanguage]</label>
+                                <textoffsetx>50</textoffsetx>
+                                <textcolor>lightgray</textcolor>
+                            </control>
+                        </control>
+                        <control type="grouplist" description="Subtitles" id="9002">
+                            <left>815</left>
+                            <height>340</height>
+                            <width>480</width>
+                            <align>left</align>
+                            <onup>704</onup>
+                            <onright>9003</onright>
+                            <onleft>9001</onleft>
+                            <ondown>noop</ondown>
+                            <itemgap>0</itemgap>
+                            <control type="label" id="9012">
+                                <font>size21B</font>
+                                <height>30</height>
+                                <label>[UPPERCASE]$LOCALIZE[287][/UPPERCASE]</label>
+                                <textoffsetx>50</textoffsetx>
+                                <textcolor>lightgray</textcolor>
+                            </control>
+                            <control type="button" id="9018">
+                                <font>size33</font>
+                                <height>50</height>
+                                <textoffsetx>50</textoffsetx>
+                                <include>osdtopbutton</include>
+                                <!--todo localize NEXT SUBTITLE-->
+                                <label>$LOCALIZE[209] $LOCALIZE[287]</label>
+                                <textcolor>lightgray</textcolor>
+                                <onclick>Action(NextSubtitle)</onclick>
+                            </control>
+                            <control type="button" id="9019">
+                                <font>size33</font>
+                                <height>50</height>
+                                <textoffsetx>50</textoffsetx>
+                                <include>osdtopbutton</include>
+                                <label>Find More</label>
+                                <onclick>ActivateWindow(subtitlesearch)</onclick>
+                            </control>
+                            <control type="label" id="9020">
+                                <font>size33</font>
+                                <height>50</height>
+                                <include>osdtopbutton</include>
+                                <label>$LOCALIZE[304]: $INFO[VideoPlayer.SubtitlesLanguage]</label>
+                                <textoffsetx>50</textoffsetx>
+                                <textcolor>lightgray</textcolor>
+                            </control>
+                        </control>
+                        <control type="grouplist" description="audioprefs" id="9003">
+                            <left>1295</left>
+                            <height>340</height>
+                            <width>410</width>
+                            <align>left</align>
+                            <onup>704</onup>
+                            <onright>noop</onright>
+                            <onleft>9002</onleft>
+                            <ondown>noop</ondown>
+                            <itemgap>0</itemgap>
+                            <control type="label" id="9011">
+                                <font>size21B</font>
+                                <height>30</height>
+                                <label>[UPPERCASE]suono[/UPPERCASE]</label>
+                                <textoffsetx>50</textoffsetx>
+                                <textcolor>lightgray</textcolor>
+                            </control>
+                            <control type="button" id="9015" description="audio offset">
+                                <font>size33</font>
+                                <height>50</height>
+                                <include>osdtopbutton</include>
+                                <label>297</label>
+                                <textoffsetx>50</textoffsetx>
+                                <textcolor>lightgray</textcolor>
+                                <onclick>SetFocus(100,2)</onclick>
+                                <onclick>Action(audiodelay)</onclick>
+                            </control>
+                            <control type="radiobutton" id="9016" description="stereo upmix">
+                                <!--<enable>!String.IsEqual(system.getbool(audiooutput.channels),1)</enable>-->
+                                <font>size33</font>
+                                <height>50</height>
+                                <width>480</width>
+                                <textureradiofocus>images/osdRadioON.png</textureradiofocus>
+                                <textureradionofocus>-</textureradionofocus>
+                                <radioposx>5</radioposx>
+                                <include>osdtopbutton</include>
+                                <label>Stereo Upmix</label>
+                                <textoffsetx>50</textoffsetx>
+                                <textcolor>lightgray</textcolor>
+                                <onclick>RunScript(script.skin.helper.service,action=togglekodisetting,setting=audiooutput.stereoupmix)</onclick>
+                                <selected>system.getbool(audiooutput.stereoupmix)</selected>
+                            </control>
+                            <control type="radiobutton" id="9017">
+                                <font>size33</font>
+                                <height>50</height>
+                                <width>480</width>
+                                <textureradiofocus>images/osdRadioON.png</textureradiofocus>
+                                <textureradionofocus>-</textureradionofocus>
+                                <radioposx>5</radioposx>
+                                <include>osdtopbutton</include>
+                                <label>Passthrough</label>
+                                <textoffsetx>50</textoffsetx>
+                                <textcolor>lightgray</textcolor>
+                                <onclick>RunScript(script.skin.helper.service,action=togglekodisetting,setting=audiooutput.passthrough)</onclick>
+                                <selected>system.getbool(audiooutput.passthrough)</selected>
+                            </control>
+                        </control>
+                    </control>
+                </control>
+
+                <!--<control type="group" description="VideoSettings">-->
+                <!--<visible>Control.HasFocus(703) | ControlGroup(10000).HasFocus</visible>-->
+                <!--<control type="image">-->
+                <!--<top>140</top>-->
+                <!--<centerleft>960</centerleft>-->
+                <!--<width>2020</width>-->
+                <!--<height>340</height>-->
+                <!--<colordiffuse>osdoverlay</colordiffuse>-->
+                <!--<texture border="8">images/White.png</texture>-->
+                <!--</control>-->
+                <!--<control type="group" id="10000">-->
+                <!--<top>170</top>-->
+                <!--<control type="grouplist" description="left" id="10001">-->
+                <!--<left>335</left>-->
+                <!--<height>340</height>-->
+                <!--<width>410</width>-->
+                <!--<align>left</align>-->
+                <!--<onup>704</onup>-->
+                <!--<onright>10002</onright>-->
+                <!--<onleft>noop</onleft>-->
+                <!--<ondown>noop</ondown>-->
+                <!--<itemgap>0</itemgap>-->
+                <!--<control type="label" id="10010">-->
+                <!--<font>size21B</font>-->
+                <!--<height>30</height>-->
+                <!--<label>[UPPERCASE]$LOCALIZE[304][/UPPERCASE]</label>-->
+                <!--<textoffsetx>50</textoffsetx>-->
+                <!--<textcolor>lightgray</textcolor>-->
+                <!--</control>-->
+                <!--<control type="button" id="10013">-->
+                <!--<font>size33</font>-->
+                <!--<height>50</height>-->
+                <!--<include>osdtopbutton</include>-->
+                <!--&lt;!&ndash;todo localize NEXT SUBTITLE&ndash;&gt;-->
+                <!--<label>$ESCINFO[system.getbool[subtitles.languages]]</label>-->
+                <!--<textoffsetx>50</textoffsetx>-->
+                <!--<textcolor>lightgray</textcolor>-->
+                <!--<onclick>Action(AudioNextLanguage)</onclick>-->
+                <!--</control>-->
+                <!--<control type="label" id="10014">-->
+                <!--<font>size33</font>-->
+                <!--<height>50</height>-->
+                <!--<include>osdtopbutton</include>-->
+                <!--<label>$LOCALIZE[304]: $INFO[VideoPlayer.AudioLanguage]</label>-->
+                <!--<textoffsetx>50</textoffsetx>-->
+                <!--<textcolor>lightgray</textcolor>-->
+                <!--</control>-->
+                <!--</control>-->
+                <!--<control type="grouplist" description="center" id="10002">-->
+                <!--<left>745</left>-->
+                <!--<height>340</height>-->
+                <!--<width>480</width>-->
+                <!--<align>left</align>-->
+                <!--<onup>704</onup>-->
+                <!--<onright>10003</onright>-->
+                <!--<onleft>10001</onleft>-->
+                <!--<ondown>noop</ondown>-->
+                <!--<itemgap>0</itemgap>-->
+                <!--<control type="label" id="10011">-->
+                <!--<font>size21B</font>-->
+                <!--<height>30</height>-->
+                <!--<label>VIDEO</label>-->
+                <!--<textoffsetx>50</textoffsetx>-->
+                <!--<textcolor>lightgray</textcolor>-->
+                <!--</control>-->
+                <!--<control type="button" id="10015" description="audio offset">-->
+                <!--<font>size33</font>-->
+                <!--<height>50</height>-->
+                <!--<include>osdtopbutton</include>-->
+                <!--<label>297</label>-->
+                <!--<textoffsetx>50</textoffsetx>-->
+                <!--<textcolor>lightgray</textcolor>-->
+                <!--<onclick>SetFocus(100,2)</onclick>-->
+                <!--<onclick>Action(audiodelay)</onclick>-->
+                <!--</control>-->
+                <!--<control type="radiobutton" id="10017">-->
+                <!--<font>size33</font>-->
+                <!--<height>50</height>-->
+                <!--<width>480</width>-->
+                <!--<textureradiofocus>images/osdRadioON.png</textureradiofocus>-->
+                <!--<textureradionofocus>-</textureradionofocus>-->
+                <!--<radioposx>5</radioposx>-->
+                <!--<include>osdtopbutton</include>-->
+                <!--<label>ViewMOde</label>-->
+                <!--<textoffsetx>50</textoffsetx>-->
+                <!--<textcolor>lightgray</textcolor>-->
+                <!--<onclick>RunScript(script.skin.helper.service,action=togglekodisetting,setting=defaultvideosettings.nonlinstretch)</onclick>-->
+                <!--<selected>system.getbool(defaultvideosettings.nonlinstretch)</selected>-->
+                <!--</control>-->
+                <!--</control>-->
+                <!--<control type="grouplist" description="right" id="10003">-->
+                <!--<left>1225</left>-->
+                <!--<height>340</height>-->
+                <!--<width>410</width>-->
+                <!--<align>left</align>-->
+                <!--<onup>704</onup>-->
+                <!--<onright>noop</onright>-->
+                <!--<onleft>10002</onleft>-->
+                <!--<ondown>noop</ondown>-->
+                <!--<itemgap>0</itemgap>-->
+                <!--<control type="label" id="10012">-->
+                <!--<font>size21B</font>-->
+                <!--<height>30</height>-->
+                <!--<label>ALTOPARLANTE</label>-->
+                <!--<textoffsetx>50</textoffsetx>-->
+                <!--<textcolor>lightgray</textcolor>-->
+                <!--</control>-->
+                <!--</control>-->
+                <!--</control>-->
+                <!--</control>-->
+
+                <control type="group" description="Video Stream Infos">
                     <visible>Control.HasFocus(707)</visible>
-                    <left>110</left>
-                    <top>120</top>
-                    <control type="label">
-                        <width>1600</width>
-                        <height>50</height>
-                        <aligny>bottom</aligny>
-                        <label>$INFO[Player.Process(videodecoder),Video Decoder: ] $INFO[Player.Process(pixformat),Pixel Format: ]</label>
-                        <font>font13</font>
-                        <textcolor>lightgray</textcolor>
-                        <visible>Player.HasVideo</visible>
+                    <control type="image">
+                        <top>140</top>
+                        <centerleft>960</centerleft>
+                        <width>2020</width>
+                        <height>300</height>
+                        <colordiffuse>osdoverlay</colordiffuse>
+                        <texture border="8">images/White.png</texture>
                     </control>
-                    <control type="label">
-                        <width>1600</width>
-                        <height>50</height>
-                        <aligny>bottom</aligny>
-                        <label>$INFO[Player.Process(deintmethod),Deinterlace Method: ]</label>
-                        <font>font13</font>
-                        <textcolor>lightgray</textcolor>
-                        <visible>Player.HasVideo</visible>
-                    </control>
-                    <control type="label">
-                        <width>1600</width>
-                        <height>50</height>
-                        <aligny>bottom</aligny>
-                        <label>$INFO[Player.Process(videowidth),Video : ,x]$INFO[Player.Process(videoheight),, px]$INFO[Player.Process(videodar),$COMMA , AR]$INFO[Player.Process(videofps),$COMMA , FPS]</label>
-                        <font>font13</font>
-                        <textcolor>lightgray</textcolor>
-                        <visible>Player.HasVideo</visible>
-                    </control>
-                    <control type="label">
-                        <width>1600</width>
-                        <height>50</height>
-                        <aligny>bottom</aligny>
-                        <label>Audio Channels: $INFO[Player.Process(audiochannels),,$COMMA ]$INFO[Player.Process(audiodecoder)]$INFO[Player.Process(audiobitspersample),$COMMA , bits]$INFO[Player.Process(audiosamplerate),$COMMA , Hz]</label>
-                        <font>font13</font>
-                        <textcolor>lightgray</textcolor>
-                    </control>
-                    <control type="label">
-                        <width>1600</width>
-                        <height>50</height>
-                        <aligny>bottom</aligny>
-                        <label>$INFO[System.Memory(used.percent),Memory in Use: ,       ]$INFO[System.CpuUsage,$LOCALIZE[13271]]</label>
-                        <font>font13</font>
-                        <textcolor>lightgray</textcolor>
+                    <control type="grouplist">
+                        <left>110</left>
+                        <top>160</top>
+                        <control type="label">
+                            <width>1600</width>
+                            <height>50</height>
+                            <aligny>bottom</aligny>
+                            <label>$INFO[Player.Process(videodecoder),Video Decoder: ] $INFO[Player.Process(pixformat),Pixel Format: ]</label>
+                            <font>font13</font>
+                            <textcolor>lightgray</textcolor>
+                        </control>
+                        <control type="label">
+                            <width>1600</width>
+                            <height>50</height>
+                            <aligny>bottom</aligny>
+                            <label>$INFO[Player.Process(deintmethod),Deinterlace Method: ]</label>
+                            <font>font13</font>
+                            <textcolor>lightgray</textcolor>
+                        </control>
+                        <control type="label">
+                            <width>1600</width>
+                            <height>50</height>
+                            <aligny>bottom</aligny>
+                            <label>$INFO[Player.Process(videowidth),Video : ,x]$INFO[Player.Process(videoheight),, px]$INFO[Player.Process(videodar),$COMMA , AR]$INFO[Player.Process(videofps),$COMMA , FPS]</label>
+                            <font>font13</font>
+                            <textcolor>lightgray</textcolor>
+                        </control>
+                        <control type="label">
+                            <width>1600</width>
+                            <height>50</height>
+                            <aligny>bottom</aligny>
+                            <label>Audio Channels: $INFO[Player.Process(audiochannels),,$COMMA ]$INFO[Player.Process(audiodecoder)]$INFO[Player.Process(audiobitspersample),$COMMA , bits]$INFO[Player.Process(audiosamplerate),$COMMA , Hz]</label>
+                            <font>font13</font>
+                            <textcolor>lightgray</textcolor>
+                        </control>
+                        <control type="label">
+                            <width>1600</width>
+                            <height>50</height>
+                            <aligny>bottom</aligny>
+                            <label>$INFO[System.Memory(used.percent),Memory in Use: ,       ]$INFO[System.CpuUsage,$LOCALIZE[13271]]</label>
+                            <font>font13</font>
+                            <textcolor>lightgray</textcolor>
+                        </control>
                     </control>
                 </control>
-                <control type="grouplist" description="Video Stream Infos">
-                    <visible>Control.HasFocus(701)</visible>
-                    <left>110</left>
-                    <top>120</top>
-                    <control type="label">
-                        <width>1600</width>
-                        <height>50</height>
-                        <aligny>bottom</aligny>
-                        <label>$INFO[Player.Process(videodecoder),Video Decoder: ] $INFO[Player.Process(pixformat),Pixel Format: ]</label>
-                        <font>font13</font>
-                        <textcolor>lightgray</textcolor>
-                        <visible>Player.HasVideo</visible>
-                    </control>
-                    <control type="label">
-                        <width>1600</width>
-                        <height>50</height>
-                        <aligny>bottom</aligny>
-                        <label>$INFO[Player.Process(deintmethod),Deinterlace Method: ]</label>
-                        <font>font13</font>
-                        <textcolor>lightgray</textcolor>
-                        <visible>Player.HasVideo</visible>
-                    </control>
-                    <control type="label">
-                        <width>1600</width>
-                        <height>50</height>
-                        <aligny>bottom</aligny>
-                        <label>$INFO[Player.Process(videowidth),Video : ,x]$INFO[Player.Process(videoheight),, px]$INFO[Player.Process(videodar),$COMMA , AR]$INFO[Player.Process(videofps),$COMMA , FPS]</label>
-                        <font>font13</font>
-                        <textcolor>lightgray</textcolor>
-                        <visible>Player.HasVideo</visible>
-                    </control>
-                    <control type="label">
-                        <width>1600</width>
-                        <height>50</height>
-                        <aligny>bottom</aligny>
-                        <label>Audio Channels: $INFO[Player.Process(audiochannels),,$COMMA ]$INFO[Player.Process(audiodecoder)]$INFO[Player.Process(audiobitspersample),$COMMA , bits]$INFO[Player.Process(audiosamplerate),$COMMA , Hz]</label>
-                        <font>font13</font>
-                        <textcolor>lightgray</textcolor>
-                    </control>
-                    <control type="label">
-                        <width>1600</width>
-                        <height>50</height>
-                        <aligny>bottom</aligny>
-                        <label>$INFO[System.Memory(used.percent),Memory in Use: ,       ]$INFO[System.CpuUsage,$LOCALIZE[13271]]</label>
-                        <font>font13</font>
-                        <textcolor>lightgray</textcolor>
-                    </control>
+
+                <control type="image">
+                    <centerleft>960</centerleft>
+                    <top>140</top>
+                    <width>2220</width>
+                    <height>1</height>
+                    <texture>images/Line.png</texture>
+                    <colordiffuse>dimgray</colordiffuse>
                 </control>
             </control>
             <control type="group">
@@ -241,50 +466,21 @@
                             <width>1850</width>
                             <height>150</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="8" colordiffuse="99000000">images/White.png</texture>
+                            <texture border="8" colordiffuse="osdoverlay">images/White.png</texture>
                         </control>
                     </control>
                     <control type="label" description="Title">
                         <left>120</left>
                         <bottom>120</bottom>
                         <height>60</height>
-                        <width>840</width>
+                        <width>940</width>
                         <scroll>true</scroll>
                         <font>size33B</font>
                         <label>[B]$INFO[VideoPlayer.Title][/B]</label>
                     </control>
-                    <control type="group" description="Cover">
-                        <visible>!ControlGroup(101).HasFocus()</visible>
-                        <left>1580</left>
-                        <top>620</top>
-                        <control type="label" description="Episode">
-                            <visible>VideoPlayer.Content(Episodes)</visible>
-                            <left>0</left>
-                            <top>290</top>
-                            <height>60</height>
-                            <width>220</width>
-                            <scroll>false</scroll>
-                            <font>size24</font>
-                            <align>right</align>
-                            <shadowcolor>black</shadowcolor>
-                            <label>[B]S $INFO[VideoPlayer.Season] E $INFO[VideoPlayer.Episode][/B]</label>
-                        </control>
-                        <control type="label" description="Channel">
-                            <visible>Pvr.IsPlayingTV</visible>
-                            <left>0</left>
-                            <top>290</top>
-                            <height>60</height>
-                            <width>220</width>
-                            <scroll>false</scroll>
-                            <font>size24</font>
-                            <align>right</align>
-                            <shadowcolor>black</shadowcolor>
-                            <label>$INFO[VideoPlayer.ChannelName]</label>
-                        </control>
-                    </control>
                 </control>
-                <control type="list" id="100">
-                    <left>1000</left>
+                <control type="grouplist" id="100">
+                    <right>100</right>
                     <bottom>100</bottom>
                     <onright>100</onright>
                     <onleft>100</onleft>
@@ -292,103 +488,117 @@
                     <ondown>101</ondown>
                     <width>700</width>
                     <height>100</height>
-                    <align>center</align>
+                    <align>right</align>
                     <orientation>horizontal</orientation>
-                    <itemlayout width="90">
-                        <control type="image">
-                            <width>90</width>
-                            <height>98</height>
-                            <texture colordiffuse="dimgray">$INFO[ListItem.Art(thumb)]</texture>
-                        </control>
-                    </itemlayout>
-                    <focusedlayout width="90">
-                        <control type="image">
-                            <width>90</width>
-                            <height>98</height>
-                            <texture>$INFO[ListItem.Art(thumb)]</texture>
-                        </control>
-                    </focusedlayout>
-                    <content>
-                        <item id="7">
-                            <visible>!Pvr.IsPlayingTV</visible>
-                            <thumb>Seekbar/OSDPrevious.png</thumb>
-                            <onclick>PlayerControl(Previous)</onclick>
-                        </item>
-                        <item id="10">
-                            <visible>Pvr.IsPlayingTV</visible>
-                            <thumb>Seekbar/OSDup.png</thumb>
-                            <onclick>PlayerControl(Previous)</onclick>
-                        </item>
-                        <item id="11">
-                            <visible>Pvr.IsPlayingTV</visible>
-                            <thumb>Seekbar/OSDdown.png</thumb>
-                            <onclick>PlayerControl(Next)</onclick>
-                        </item>
-                        <item id="1">
-                            <visible>!Pvr.IsPlayingTV</visible>
-                            <thumb>Seekbar/OSDRW.png</thumb>
-                            <onclick>PlayerControl(Rewind)</onclick>
-                        </item>
-                        <item id="0">
-                            <visible>!Player.Paused + !Player.Forwarding + !Player.Rewinding + !Pvr.IsPlayingTV</visible>
-                            <thumb>Seekbar/OSDPause.png</thumb>
-                            <onclick>PlayerControl(Play)</onclick>
-                        </item>
-                        <item id="0">
-                            <visible>Player.Paused | Player.Forwarding | Player.Rewinding + !Pvr.IsPlayingTV</visible>
-                            <thumb>Seekbar/OSDPlay.png</thumb>
-                            <onclick>PlayerControl(Play)</onclick>
-                        </item>
-                        <item id="4">
-                            <thumb>Seekbar/OSDStop.png</thumb>
-                            <onclick>PlayerControl(Stop)</onclick>
-                        </item>
-                        <item id="0">
-                            <visible>Pvr.IsPlayingTv</visible>
-                            <thumb>Seekbar/OSDchn.png</thumb>
-                            <onclick>ActivateWindow(PVROSDChannels)</onclick>
-                        </item>
-                        <item id="16">
-                            <visible>Pvr.IsPlayingTv</visible>
-                            <thumb>Seekbar/OSDpvr.png</thumb>
-                            <onclick>ActivateWindow(PVROSDGuide)</onclick>
-                        </item>
-                        <item id="15">
-                            <visible>Pvr.IsPlayingTv</visible>
-                            <thumb>Seekbar/OSDtxt.png</thumb>
-                            <onclick>ActivateWindow(Teletext)</onclick>
-                        </item>
-                        <item id="5">
-                            <visible>!Pvr.IsPlayingTV</visible>
-                            <thumb>Seekbar/OSDFW.png</thumb>
-                            <onclick>PlayerControl(Forward)</onclick>
-                        </item>
-                        <item id="6">
-                            <visible>!Pvr.IsPlayingTV</visible>
-                            <thumb>Seekbar/OSDNext.png</thumb>
-                            <onclick>PlayerControl(Next)</onclick>
-                        </item>
-                        <item id="8">
-                            <visible>Player.CanRecord + !Pvr.IsRecording</visible>
-                            <thumb>Seekbar/OSDrec.png</thumb>
-                            <onclick>PlayerControl(Record)</onclick>
-                        </item>
-                        <item id="8">
-                            <visible>Player.CanRecord + Pvr.IsRecording</visible>
-                            <thumb>Seekbar/OSDrecon.png</thumb>
-                            <onclick>PlayerControl(Record)</onclick>
-                        </item>
-                        <item id="255">
-                            <visible>VideoPlayer.IsStereoscopic</visible>
-                            <thumb>Seekbar/OSD3D.png</thumb>
-                            <onclick>SetFocus(500)</onclick>
-                        </item>
-                    </content>
+                    <control type="button" id="1">
+                        <include>osdbutton</include>
+                        <texturenofocus colordiffuse="dimgray">Seekbar/OSDPrevious.png</texturenofocus>
+                        <texturefocus>Seekbar/OSDPrevious.png</texturefocus>
+                        <visible>!Pvr.IsPlayingTV</visible>
+                        <onclick>PlayerControl(Previous)</onclick>
+                    </control>
+                    <control type="button" id="2">
+                        <include>osdbutton</include>
+                        <texturenofocus colordiffuse="dimgray">Seekbar/OSDup.png</texturenofocus>
+                        <texturefocus>Seekbar/OSDup.png</texturefocus>
+                        <visible>Pvr.IsPlayingTV</visible>
+                        <onclick>PlayerControl(Previous)</onclick>
+                    </control>
+                    <control type="button" id="3">
+                        <include>osdbutton</include>
+                        <texturenofocus colordiffuse="dimgray">Seekbar/OSDdown.png</texturenofocus>
+                        <texturefocus>Seekbar/OSDdown.png</texturefocus>
+                        <visible>Pvr.IsPlayingTV</visible>
+                        <onclick>PlayerControl(Next)</onclick>
+                    </control>
+                    <control type="button" id="4">
+                        <include>osdbutton</include>
+                        <texturenofocus colordiffuse="dimgray">Seekbar/OSDRW.png</texturenofocus>
+                        <texturefocus>Seekbar/OSDRW.png</texturefocus>
+                        <visible>!Pvr.IsPlayingTV</visible>
+                        <onclick>PlayerControl(Rewind)</onclick>
+                    </control>
+                    <control type="button" id="5">
+                        <include>osdbutton</include>
+                        <texturenofocus colordiffuse="dimgray">Seekbar/OSDPause.png</texturenofocus>
+                        <texturefocus>Seekbar/OSDPause.png</texturefocus>
+                        <visible>!Player.Paused + !Player.Forwarding + !Player.Rewinding + !Pvr.IsPlayingTV</visible>
+                        <onclick>PlayerControl(Play)</onclick>
+                    </control>
+                    <control type="button" id="6">
+                        <include>osdbutton</include>
+                        <texturenofocus colordiffuse="dimgray">Seekbar/OSDPlay.png</texturenofocus>
+                        <texturefocus>Seekbar/OSDPlay.png</texturefocus>
+                        <visible>Player.Paused | Player.Forwarding | Player.Rewinding + !Pvr.IsPlayingTV</visible>
+                        <onclick>PlayerControl(Play)</onclick>
+                    </control>
+                    <control type="button" id="7">
+                        <include>osdbutton</include>
+                        <texturenofocus colordiffuse="dimgray">Seekbar/OSDStop.png</texturenofocus>
+                        <texturefocus>Seekbar/OSDStop.png</texturefocus>
+                        <onclick>PlayerControl(Stop)</onclick>
+                    </control>
+                    <control type="button" id="8">
+                        <include>osdbutton</include>
+                        <visible>Pvr.IsPlayingTv</visible>
+                        <texturenofocus colordiffuse="dimgray">Seekbar/OSDchn.png</texturenofocus>
+                        <texturefocus>Seekbar/OSDchn.png</texturefocus>
+                        <onclick>PlayerControl(PVROSDChannels)</onclick>
+                    </control>
+                    <control type="button" id="9">
+                        <include>osdbutton</include>
+                        <visible>Pvr.IsPlayingTv</visible>
+                        <texturenofocus colordiffuse="dimgray">Seekbar/OSDpvr.png</texturenofocus>
+                        <texturefocus>Seekbar/OSDpvr.png</texturefocus>
+                        <onclick>PlayerControl(PVROSDGuide)</onclick>
+                    </control>
+                    <control type="button" id="10">
+                        <include>osdbutton</include>
+                        <visible>Pvr.IsPlayingTv</visible>
+                        <texturenofocus colordiffuse="dimgray">Seekbar/OSDtxt.png</texturenofocus>
+                        <texturefocus>Seekbar/OSDtxt.png</texturefocus>
+                        <onclick>PlayerControl(Teletext)</onclick>
+                    </control>
+                    <control type="button" id="11">
+                        <include>osdbutton</include>
+                        <visible>!Pvr.IsPlayingTv</visible>
+                        <texturenofocus colordiffuse="dimgray">Seekbar/OSDFW.png</texturenofocus>
+                        <texturefocus>Seekbar/OSDFW.png</texturefocus>
+                        <onclick>PlayerControl(Forward)</onclick>
+                    </control>
+                    <control type="button" id="12">
+                        <include>osdbutton</include>
+                        <visible>!Pvr.IsPlayingTv</visible>
+                        <texturenofocus colordiffuse="dimgray">Seekbar/OSDNext.png</texturenofocus>
+                        <texturefocus>Seekbar/OSDNext.png</texturefocus>
+                        <onclick>PlayerControl(Next)</onclick>
+                    </control>
+                    <control type="button" id="13">
+                        <include>osdbutton</include>
+                        <visible>Player.CanRecord + !Pvr.IsRecording</visible>
+                        <texturenofocus colordiffuse="dimgray">Seekbar/OSDrec.png</texturenofocus>
+                        <texturefocus>Seekbar/OSDrec.png</texturefocus>
+                        <onclick>PlayerControl(Record)</onclick>
+                    </control>
+                    <control type="button" id="14">
+                        <include>osdbutton</include>
+                        <visible>Player.CanRecord + Pvr.IsRecording</visible>
+                        <texturenofocus colordiffuse="dimgray">Seekbar/OSDrecon.png</texturenofocus>
+                        <texturefocus>Seekbar/OSDrecon.png</texturefocus>
+                        <onclick>PlayerControl(Record)</onclick>
+                    </control>
+                    <control type="button" id="255">
+                        <include>osdbutton</include>
+                        <visible>VideoPlayer.IsStereoscopic</visible>
+                        <texturenofocus colordiffuse="dimgray">Seekbar/OSD3D.png</texturenofocus>
+                        <texturefocus>Seekbar/OSD3D.png</texturefocus>
+                        <onclick>SetFocus(500)</onclick>
+                    </control>
                 </control>
             </control>
         </control>
-        <control type="image">
-            <visible>!ControlGroup(101).HasFocus()</visible>
+        <control type="button">
+            <visible>!ControlGroup(111).HasFocus()</visible>
             <visible>!Window.IsVisible(10123) + !Window.IsVisible(10124) + !Window.IsVisible(10125)</visible>
             <animation type="Visible">
                 <effect type="fade" tween="circle" easing="in" start="0" end="100" time="800" />
@@ -397,7 +607,9 @@
             <top>20</top>
             <width>60</width>
             <height>40</height>
-            <texture>images/Dialogpull.png</texture>
+            <texturenofocus>images/Dialogpull.png</texturenofocus>
+            <texturefocus>images/Dialogpull.png</texturefocus>
+            <onclick>SetFocus(101)</onclick>
         </control>
         <control type="group">
             <visible>VideoPlayer.IsStereoscopic + ![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
@@ -469,7 +681,7 @@
             </control>
         </control>
         <control type="grouplist">
-            <visible>!Window.IsVisible(fullscreeninfo) + !ControlGroup(101).HasFocus()</visible>
+            <visible>!Window.IsVisible(fullscreeninfo) + !ControlGroup(111).HasFocus()</visible>
             <top>20</top>
             <left>1450</left>
             <control type="image">
@@ -480,11 +692,11 @@
             </control>
             <!--todo mpaa-->
             <!--<control type="image">-->
-                <!--<width>375</width>-->
-                <!--<height>100</height>-->
-                <!--<texture>$INFO[VideoPlayer.mpaa,Mpaa/,.png]</texture>-->
-                <!--<aspectratio align="right">keep</aspectratio>-->
-                <!--<colordiffuse>77FFFFFF</colordiffuse>-->
+            <!--<width>375</width>-->
+            <!--<height>100</height>-->
+            <!--<texture>$INFO[VideoPlayer.mpaa,Mpaa/,.png]</texture>-->
+            <!--<aspectratio align="right">keep</aspectratio>-->
+            <!--<colordiffuse>77FFFFFF</colordiffuse>-->
             <!--</control>-->
         </control>
     </controls>

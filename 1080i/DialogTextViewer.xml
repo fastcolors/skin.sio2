@@ -37,15 +37,6 @@
         <font>size27</font>
         <align>justify</align>
       </control>
-      <control type="scrollbar" id="61">
-        <left>960</left>
-        <top>105</top>
-        <height>690</height>
-        <onleft>Close</onleft>
-        <onright>Close</onright>
-        <ondown>61</ondown>
-        <onup>61</onup>
-      </control>
     </control>
   </controls>
 </window>

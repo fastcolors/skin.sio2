@@ -35,7 +35,7 @@
                     <control type="label">
                         <left>180</left>
                         <height>80</height>
-                        <width>720</width>
+                        <width>620</width>
                         <textcolor>darktext</textcolor>
                         <info>ListItem.Title</info>
                     </control>
@@ -87,7 +87,7 @@
                         <control type="label">
                             <left>180</left>
                             <height>80</height>
-                            <width>720</width>
+                            <width>620</width>
                             <textcolor>darktext</textcolor>
                             <info>ListItem.Title</info>
                         </control>

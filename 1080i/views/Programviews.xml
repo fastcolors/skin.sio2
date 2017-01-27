@@ -6,10 +6,9 @@
             <visible>Control.IsVisible(50)</visible>
             <include>Left_Panel_Addons</include>
             <control type="group">
-                <include>LargeListItemCount</include>
                 <left>1020</left>
                 <top>120</top>
-                <control type="fixedlist" id="50">
+                <control type="list" id="50">
                     <visible>!container.content(Sets)</visible>
                     <visible>!String.IsEmpty(Container.FolderPath)</visible>
                     <width>802</width>
@@ -26,15 +25,63 @@
                     <movement>4</movement>
                     <preloaditems>4</preloaditems>
                     <scrolltime>250</scrolltime>
-                    <include>SlimListLayout</include>
+                    <itemlayout width="802" height="81">
+                        <control type="image">
+                            <height>70</height>
+                            <width>805</width>
+                            <texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>
+                        </control>
+                        <control type="label" description="Main Label">
+                            <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
+                            <include>50Label</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label" description="Main Label">
+                            <visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
+                            <width>711</width>
+                            <include>50Label</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label" description="Label2">
+                            <visible>container.content(songs) | container.content(musicvideos)</visible>
+                            <include>50Label2</include>
+                            <label>$INFO[ListItem.Duration]</label>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout width="802" height="81">
+                        <control type="group">
+                            <animation effect="zoom" time="120" start="100" end="105" center="auto" tween="Back" easing="Out">Focus</animation>
+                            <control type="image">
+                                <top>12</top>
+                                <left>-50</left>
+                                <height>70</height>
+                                <width>905</width>
+                                <texture>shadow.png</texture>
+                            </control>
+                            <control type="image">
+                                <height>70</height>
+                                <width>805</width>
+                                <texture border="8">images/White.png</texture>
+                            </control>
+                            <control type="label" description="Main Label">
+                                <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
+                                <include>50LabelFO</include>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label" description="Main Label">
+                                <visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
+                                <width>711</width>
+                                <include>50LabelFO</include>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label" description="Label2">
+                                <visible>container.content(songs) | container.content(musicvideos)</visible>
+                                <include>50Label2FO</include>
+                                <label>$INFO[ListItem.Duration]</label>
+                            </control>
+                        </control>
+                    </focusedlayout>
                 </control>
-            </control>
-            <control type="scrollbar" id="60">
-                <left>39r</left>
-                <top>135</top>
-                <height>870</height>
-                <onleft>50</onleft>
-                <onright>noop</onright>
             </control>
         </control>
         <!--ICONE-->
@@ -50,8 +97,7 @@
                     <height>1080</height>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                     <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
-                    <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-                    <onright condition="!Skin.HasSetting(Scrollbars_Active)">noop</onright>
+                    <onright>noop</onright>
                     <onup>53</onup>
                     <ondown>53</ondown>
                     <preloaditems>4</preloaditems>

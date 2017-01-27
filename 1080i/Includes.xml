@@ -27,6 +27,26 @@
         <animation effect="fade" time="150">WindowOpen</animation>
         <animation effect="fade" time="150">WindowClose</animation>
     </include>
+    <include name="HomeOpenClose">
+        <animation type="WindowOpen" reversible="false">
+            <effect type="fade" time="250" />
+            <effect type="zoom" start="150" end="100" time="250" center="960,540" />
+        </animation>
+        <animation type="WindowClose" reversible="false">
+            <effect type="fade" time="400" delay="100" />
+            <effect type="zoom" end="150" time="400" center="960,540" delay="100" />
+        </animation>
+    </include>
+    <include name="HomePanelOpenClose">
+        <animation type="WindowOpen" reversible="false">
+            <effect type="fade" time="250" />
+            <effect type="zoom" start="140" end="100" time="250" center="960,540" />
+        </animation>
+        <animation type="WindowClose" reversible="false">
+            <effect type="fade" time="300" delay="100" />
+            <effect type="zoom" end="140" time="300" center="960,540"/>
+        </animation>
+    </include>
     <include name="DialogOpenClose">
         <animation type="WindowOpen">
             <effect type="fade" start="0" end="100" time="240" />
@@ -225,14 +245,14 @@
             <width>1920</width>
             <height>1080</height>
             <aspectratio>stretch</aspectratio>
-            <texture>special://skin/resources/DarkHomeBG.png</texture>
+            <texture>special://skin/backdrops/dark_default_background.png</texture>
         </control>
         <control type="image" description="Background_def">
             <visible>!Skin.HasTheme(Dark)</visible>
             <width>1920</width>
             <height>1080</height>
             <aspectratio>stretch</aspectratio>
-            <texture>special://skin/resources/HomeBG.png</texture>
+            <texture>special://skin/backdrops/light_default_background.png</texture>
         </control>
     </include>
     <include name="PVRsidemenu">
@@ -270,7 +290,7 @@
                     <visible>!Window.IsActive(TVGuide)</visible>
                     <description>Filter</description>
                     <include>DialogButt</include>
-                    <onclick>-</onclick>
+                    <onclick></onclick>
                     <label>587</label>
                 </control>
                 <control type="button" id="32">
@@ -388,198 +408,7 @@
         <animation condition="Container(9000).Row(2) + !ControlGroup(700).HasFocus + !Control.HasFocus(9009)" effect="slide" end="0,-480" time="220">Conditonal</animation>
         <animation condition="Container(9000).Row(3) + !ControlGroup(700).HasFocus + !Control.HasFocus(9009)" effect="slide" end="0,-720" time="220">Conditonal</animation>
         <animation condition="Container(9000).Row(4) + !ControlGroup(700).HasFocus + !Control.HasFocus(9009)" effect="slide" end="0,-990" time="220">Conditonal</animation>
-        <!--<animation condition="Container(9000).Row(5) + !Control.HasFocus(9009)" effect="slide" end="0,-1260" time="220">Conditonal</animation>-->
-    </include>
-    <include name="livepop">
-        <control type="group">
-            <include>DialogOpenCloseVisible</include>
-            <visible allowhiddenfocus="true">ControlGroup(10040).HasFocus</visible>
-            <control type="image" description="List back">
-                <centerleft>960</centerleft>
-                <centertop>540</centertop>
-                <width>802</width>
-                <height>600</height>
-                <aspectratio>stretch</aspectratio>
-                <texture border="50">images/ContextMenu.png</texture>
-                <colordiffuse>dialog</colordiffuse>
-            </control>
-            <control type="grouplist" id="10040">
-                <centertop>540</centertop>
-                <height>500</height>
-                <ondown>10000</ondown>
-                <onup>10000</onup>
-                <align>center</align>
-                <include>DialogGLs</include>
-                <control type="button" id="10041">
-                    <include>DialogButt</include>
-                    <label>19023</label>
-                    <onclick>close</onclick>
-                    <onclick>ActivateWindowAndFocus(TVChannels)</onclick>
-                </control>
-                <control type="button" id="10042">
-                    <include>DialogButt</include>
-                    <label>19024</label>
-                    <onclick>close</onclick>
-                    <onclick>ActivateWindowAndFocus(RADIOChannels)</onclick>
-                </control>
-                <control type="button" id="10043">
-                    <include>DialogButt</include>
-                    <label>19069</label>
-                    <onclick>close</onclick>
-                    <onclick>ActivateWindow(TVGuide)</onclick>
-                </control>
-                <control type="button" id="10044">
-                    <include>DialogButt</include>
-                    <label>19163</label>
-                    <onclick>close</onclick>
-                    <onclick>ActivateWindowAndFocus(tvrecordings)</onclick>
-                </control>
-                <control type="button" id="10045">
-                    <include>DialogButt</include>
-                    <label>19040</label>
-                    <onclick>close</onclick>
-                    <onclick>ActivateWindowAndFocus(tvtimers)</onclick>
-                </control>
-                <control type="button" id="10046">
-                    <include>DialogButt</include>
-                    <label>222</label>
-                    <onclick>SetFocus(9000,$INFO[Container(9000).Position])</onclick>
-                </control>
-            </control>
-        </control>
-    </include>
-    <include name="sourcespop">
-        <control type="group">
-            <visible allowhiddenfocus="true">ControlGroup(10010).HasFocus</visible>
-            <include>DialogOpenCloseVisible</include>
-            <control type="image" description="List back">
-                <centerleft>960</centerleft>
-                <centertop>540</centertop>
-                <width>802</width>
-                <height>520</height>
-                <aspectratio>stretch</aspectratio>
-                <texture border="50">images/ContextMenu.png</texture>
-                <colordiffuse>dialog</colordiffuse>
-            </control>
-            <control type="grouplist" id="10010">
-                <height>500</height>
-                <centertop>540</centertop>
-                <align>center</align>
-                <onup>10010</onup>
-                <ondown>10010</ondown>
-                <include>DialogGLs</include>
-                <control type="button" id="10011" description="Video">
-                    <include>DialogButt</include>
-                    <label>3</label>
-                    <onclick>ActivateWindow(Videos,files)</onclick>
-                </control>
-                <control type="button" id="10012" description="Music">
-                    <include>DialogButt</include>
-                    <label>$LOCALIZE[2]</label>
-                    <onclick>ActivateWindow(Music,files)</onclick>
-                </control>
-                <control type="button" id="10013" description="Update Library">
-                    <enable>Library.HasContent(Movies) | Library.HasContent(TVShows)</enable>
-                    <include>DialogButt</include>
-                    <label>653</label>
-                    <onclick>UpdateLibrary(video,,true)</onclick>
-                </control>
-                <control type="button" id="10014" description="Update Library">
-                    <enable>Library.HasContent(Movies) | Library.HasContent(TVShows)</enable>
-                    <include>DialogButt</include>
-                    <label>334</label>
-                    <onclick>CleanLibrary(video,true)</onclick>
-                </control>
-                <control type="button" id="10015" description="Cancel">
-                    <include>DialogButt</include>
-                    <label>222</label>
-                    <onclick>SetFocus(9000,$INFO[Container(9000).Position])</onclick>
-                </control>
-            </control>
-        </control>
-    </include>
-    <include name="settingspop">
-        <control type="group">
-            <visible allowhiddenfocus="true">ControlGroup(10020).HasFocus</visible>
-            <include>DialogOpenCloseVisible</include>
-            <control type="image" description="List back">
-                <centerleft>960</centerleft>
-                <centertop>540</centertop>
-                <width>802</width>
-                <height>340</height>
-                <aspectratio>stretch</aspectratio>
-                <texture border="50">images/ContextMenu.png</texture>
-                <colordiffuse>dialog</colordiffuse>
-            </control>
-            <control type="grouplist" id="10020">
-                <centertop>540</centertop>
-                <onup>10020</onup>
-                <ondown>10020</ondown>
-                <align>center</align>
-                <include>DialogGLs</include>
-                <control type="button" id="10021">
-                    <include>DialogButt</include>
-                    <label>14209</label>
-                    <onclick>ActivateWindow(Settings)</onclick>
-                </control>
-                <control type="button" id="10022">
-                    <include>DialogButt</include>
-                    <label>20077</label>
-                    <onclick>ActivateWindow(SkinSettings)</onclick>
-                </control>
-                <control type="button" id="10023">
-                    <include>DialogButt</include>
-                    <label>222</label>
-                    <onclick>SetFocus(9000,$INFO[Container(9000).Position])</onclick>
-                </control>
-            </control>
-        </control>
-    </include>
-    <include name="addonspop">
-        <control type="group">
-            <visible allowhiddenfocus="true">ControlGroup(10030).HasFocus</visible>
-            <include>DialogOpenCloseVisible</include>
-            <control type="image" description="List back">
-                <centerleft>960</centerleft>
-                <centertop>540</centertop>
-                <width>802</width>
-                <height>450</height>
-                <aspectratio>stretch</aspectratio>
-                <texture border="50">images/ContextMenu.png</texture>
-                <colordiffuse>dialog</colordiffuse>
-            </control>
-            <control type="grouplist" id="10030">
-                <centertop>540</centertop>
-                <height>480</height>
-                <align>center</align>
-                <onup>10030</onup>
-                <ondown>10030</ondown>
-                <include>DialogGLs</include>
-                <control type="button" id="10031">
-                    <include>DialogButt</include>
-                    <label>1037</label>
-                    <onclick>Close</onclick>
-                    <onclick>ActivateWindow(Videos,Addons)</onclick>
-                </control>
-                <control type="button" id="10032">
-                    <include>DialogButt</include>
-                    <label>1038</label>
-                    <onclick>Close</onclick>
-                    <onclick>ActivateWindow(Music,Addons)</onclick>
-                </control>
-                <control type="button" id="10033">
-                    <include>DialogButt</include>
-                    <label>31037</label>
-                    <onclick>Close</onclick>
-                    <onclick>ActivateWindow(AddonBrowser,root)</onclick>
-                </control>
-                <control type="button" id="10034">
-                    <include>DialogButt</include>
-                    <label>222</label>
-                    <onclick>SetFocus(9000,$INFO[Container(9000).Position])</onclick>
-                </control>
-            </control>
-        </control>
+        <animation condition="Container(9000).Row(5) + !ControlGroup(700).HasFocus + !Control.HasFocus(9009)" effect="slide" end="0,-1260" time="220">Conditonal</animation>
     </include>
     <include name="9000music">
         <control type="group" id="9000">
@@ -623,11 +452,16 @@
                 <control type="button" id="3" description="Other">
                     <height>60</height>
                     <include>musictopbutton</include>
-                    <!--<onfocus>ActivateWindow(Music,musicdb://albums/,return)</onfocus>-->
-                    <onclick>-</onclick>
+                    <onclick></onclick>
                     <label>-</label>
                 </control>
             </control>
         </control>
+    </include>
+    <include name="osdbutton">
+        <width>90</width>
+        <height>98</height>
+        <animation>Focus</animation>
+        <animation>unFocus</animation>
     </include>
 </includes>

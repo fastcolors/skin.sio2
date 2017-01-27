@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2">
-    <backgroundcolor>aliceblue</backgroundcolor>
+    <backgroundcolor>background</backgroundcolor>
     <defaultcontrol always="true">53</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <controls>
@@ -35,7 +35,7 @@
                     <width>802</width>
                     <height>888</height>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-                    <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+                    <onright>noop</onright>
                     <onup>50</onup>
                     <ondown>50</ondown>
                     <pagecontrol>60</pagecontrol>
@@ -95,13 +95,6 @@
                         </control>
                     </focusedlayout>
                 </control>
-            </control>
-            <control type="scrollbar" id="60">
-                <left>51r</left>
-                <top>147</top>
-                <height>882</height>
-                <onleft>50</onleft>
-                <onright>noop</onright>
             </control>
         </control>
         <control type="group">
@@ -224,13 +217,6 @@
                 <textcolor>whitesmoke</textcolor>
                 <include>Genre51Commons</include>
                 <label>$INFO[ListItem.label][COLOR=gray]$VAR[TopLabel,  ][/COLOR]</label>
-            </control>
-            <control type="scrollbar" id="60">
-                <left>45r</left>
-                <top>144</top>
-                <height>900</height>
-                <onleft>53</onleft>
-                <onright>9000</onright>
             </control>
         </control>
         <control type="group" description="Side menu 9000 group">

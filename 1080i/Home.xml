@@ -1,32 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <backgroundcolor>aliceblue</backgroundcolor>
+    <backgroundcolor>background</backgroundcolor>
     <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;level=1)</onload>
-    <include>OpenClose</include>
+    <include>HomeOpenClose</include>
     <controls>
+        <include>BlackBackground</include>
+        <!--CLONING-->
+        <!--<control type="image">-->
+        <!--<height>1080</height>-->
+        <!--<width>1920</width>-->
+        <!--<texture>atv.png</texture>-->
+        <!--</control>-->
         <control type="group" description="Furniture">
             <include>homeanimation</include>
-            <control type="image" description="Stage">
-                <visible>Skin.HasTheme(Dark)</visible>
-                <width>1920</width>
-                <height>2340</height>
-                <aspectratio>stretch</aspectratio>
-                <texture>special://skin/resources/DarkHomeBG.png</texture>
-            </control>
-            <control type="image" description="Stage">
-                <visible>!Skin.HasTheme(Dark)</visible>
-                <width>1920</width>
-                <height>2340</height>
-                <aspectratio>stretch</aspectratio>
-                <texture>special://skin/resources/HomeBG.png</texture>
-            </control>
-            <!--<control type="image">-->
-            <!--<height>1080</height>-->
-            <!--<width>1920</width>-->
-            <!--<texture>appletv.png</texture>-->
-            <!--</control>-->
             <control type="image" description="banda bianca">
                 <top>720</top>
                 <left>-35</left>
@@ -42,6 +30,7 @@
             <include>ShelfFade</include>
             <animation>Focus</animation>
             <animation>unFocus</animation>
+            <animation condition="$EXP[istvshows]" effect="slide" end="0,25"  time="180" tween="Back" easing="inout">Conditional</animation>
             <animation condition="$EXP[shelflabelsslide]" effect="slide" start="0" end="0,-30" time="180" tween="Back">Conditional</animation>
             <left>80</left>
             <bottom>980</bottom>
@@ -77,10 +66,6 @@
             <onclick  condition="$EXP[isupcomingmovies] + StringCompare(Skin.String(theatersshelf),1)">Skin.SetString(theatersshelf,2)</onclick>
             <onclick  condition="$EXP[isupcomingmovies] + StringCompare(Skin.String(theatersshelf),2)">Skin.SetString(theatersshelf,)</onclick>
 
-            <!--UPCOMINGTVSHOWS-->
-            <onclick  condition="$EXP[isupcomingtvshows] + StringCompare(Skin.String(dvdsshelf),)">Skin.SetString(dvdsshelf,1)</onclick>
-            <onclick  condition="$EXP[isupcomingtvshows] + StringCompare(Skin.String(dvdsshelf),1)">Skin.SetString(dvdsshelf,)</onclick>
-
             <onup>noop</onup>
             <ondown condition="Control.IsVisible(312)">312</ondown>
             <ondown condition="Control.IsVisible(313)">313</ondown>
@@ -90,6 +75,7 @@
             <onright>noop</onright>
         </control>
         <control type="panel" id="9000" description="ICONE">
+            <include>HomePanelOpenClose</include>
             <include>homeanimation</include>
             <centerleft>960</centerleft>
             <top>740</top>
@@ -97,6 +83,7 @@
             <height>1620</height>
             <onleft>9000</onleft>
             <onright>9000</onright>
+            <onup condition="[String.IsEqual(Container(311).NumItems,0) + String.IsEqual(Container(9000).ListItem.Property(defaultID),movies)] | [String.IsEqual(Container(313).NumItems,0) + String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows)]">9009</onup>
             <onup>700</onup>
             <ondown>noop</ondown>
             <orientation>vertical</orientation>
@@ -168,6 +155,7 @@
                 <control type="group">
                     <animation effect="zoom" start="100" end="122" time="120" center="180,208" tween="Back" easing="Out">Focus</animation>
                     <animation effect="zoom" start="122" end="100" time="120" center="180,208">unFocus</animation>
+                    <animation effect="zoom" start="100" end="322" time="120" center="180,208" tween="Back" easing="Out">onClick</animation>
                     <control type="image" description="shade_base">
                         <centerleft>180</centerleft>
                         <animation effect="slide" start="0,0" end="0,34" time="240" reversible="true" tween="Back" easing="Out">Focus</animation>
@@ -211,7 +199,7 @@
             <include>Movies</include>
             <include>Squares</include>
             <include>Episodes</include>
-            <include condition="Skin.HasSetting(PicturesShelf_Custom)">Pictures_Shortcuts</include>
+            <include>Pictures_Shortcuts</include>
             <include condition="Skin.HasSetting(AddonsShelf_Custom)">Addons_Shortcuts</include>
             <include>weather_shelf</include>
         </control>
@@ -309,9 +297,5 @@
             <colordiffuse>kodi</colordiffuse>
             <texture>kodi_icon.png</texture>
         </control>
-        <include>livepop</include>
-        <include>sourcespop</include>
-        <include>settingspop</include>
-        <include>addonspop</include>
     </controls>
 </window>

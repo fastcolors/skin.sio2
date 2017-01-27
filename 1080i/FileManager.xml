@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="3">
-  <backgroundcolor>aliceblue</backgroundcolor>
+  <backgroundcolor>background</backgroundcolor>
   <defaultcontrol always="true">20</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <include>OpenClose</include>
@@ -225,20 +225,6 @@
         <textcolor>gray</textcolor>
         <label>-</label>
       </control>
-    </control>
-    <control type="scrollbar" id="60">
-      <left>50</left>
-      <top>175</top>
-      <height>810</height>
-      <onleft>20</onleft>
-      <onright>20</onright>
-    </control>
-    <control type="scrollbar" id="61">
-      <right>50</right>
-      <top>175</top>
-      <height>810</height>
-      <onleft>21</onleft>
-      <onright>21</onright>
     </control>
   </controls>
 </window>

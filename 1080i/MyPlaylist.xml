@@ -5,11 +5,6 @@
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
-        <!--<control type="image">-->
-            <!--<width>1920</width>-->
-            <!--<height>1080</height>-->
-            <!--<texture>0plst.png</texture>-->
-        <!--</control>-->
         <control type="image" description="Thumb">
             <centerleft>1510</centerleft>
             <centertop>460</centertop>
@@ -32,14 +27,6 @@
                 <viewtype label="535">List</viewtype>
                 <scrolltime tween="sine" easing="inout">280</scrolltime>
                 <itemlayout width="840" height="75">
-                    <!--<control type="image">-->
-                    <!--<left>10</left>-->
-                    <!--<top>0</top>-->
-                    <!--<height>100</height>-->
-                    <!--<width>100</width>-->
-                    <!--<texture background="true">$INFO[ListItem.Icon]</texture>-->
-                    <!--<aspectratio>scale</aspectratio>-->
-                    <!--</control>-->
                     <control type="label" description="Main Label">
                         <width>600</width>
                         <left>80</left>
@@ -77,14 +64,6 @@
                             <width>840</width>
                             <texture border="8">images/White.png</texture>
                         </control>
-                        <!--<control type="image">-->
-                        <!--<left>10</left>-->
-                        <!--<top>0</top>-->
-                        <!--<height>100</height>-->
-                        <!--<width>100</width>-->
-                        <!--<texture background="true">$INFO[ListItem.Icon]</texture>-->
-                        <!--<aspectratio>scale</aspectratio>-->
-                        <!--</control>-->
                         <control type="label" description="Main Label">
                             <left>80</left>
                             <height>65</height>

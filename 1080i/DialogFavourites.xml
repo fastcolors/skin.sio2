@@ -16,7 +16,7 @@
         <width>802</width>
         <height>888</height>
         <onleft>noop</onleft>
-        <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+        <onright>noop</onright>
         <onup>450</onup>
         <ondown>450</ondown>
         <pagecontrol>60</pagecontrol>
@@ -27,12 +27,5 @@
       </control>
     </control>
     <include>left_Panel_plain</include>
-    <control type="scrollbar" id="60">
-      <left>51r</left>
-      <top>135</top>
-      <height>870</height>
-      <onleft>450</onleft>
-      <onright>noop</onright>
-    </control>
   </controls>
 </window>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="12">
     <defaultcontrol always="true">3</defaultcontrol>
-    <backgroundcolor>aliceblue</backgroundcolor>
+    <backgroundcolor>background</backgroundcolor>
     <allowoverlay>no</allowoverlay>
     <include>OpenClose</include>
     <controls>
@@ -66,13 +66,6 @@
             <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
             <aligny>center</aligny>
         </control>
-        <!--<control type="scrollbar" id="60">-->
-            <!--<left>39r</left>-->
-            <!--<top>159</top>-->
-            <!--<height>861</height>-->
-            <!--<onleft>5</onleft>-->
-            <!--<onright>noop</onright>-->
-        <!--</control>-->
         <control type="button" id="20">
             <description>Settings Level</description>
             <width>350</width>

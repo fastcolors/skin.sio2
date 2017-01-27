@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="banners">
-         <!--BANNERS 55-->
+        <!--BANNERS 55-->
         <control type="group" description="BANNERS">
             <visible>Control.IsVisible(55)</visible>
             <control type="group" description="Container and frame">
                 <control type="fixedlist" id="55" description="bannerlist">
                     <visible>container.content(tvshows)</visible>
                     <visible>!String.IsEmpty(Container.FolderPath)</visible>
-                    <viewtype label="539">Banners</viewtype>
+                    <viewtype label="31002">Banners</viewtype>
                     <centerleft>1720</centerleft>
                     <top>140</top>
                     <width>1800</width>
@@ -19,8 +19,7 @@
                     <onup>ActivateWindow(1116)</onup>
                     <ondown>ActivateWindow(1116)</ondown>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-                    <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
-                    <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
+                    <onright>noop</onright>
                     <preloaditems>4</preloaditems>
                     <pagecontrol>60</pagecontrol>
                     <scrolltime>300</scrolltime>
@@ -92,15 +91,17 @@
                     </itemlayout>
                     <focusedlayout condition="container.content(tvshows)" height="180" width="1800">
                         <control type="group">
-                            <animation effect="zoom" end="140" center="409,150" time="350">Focus</animation>
+                            <animation effect="zoom" end="140" center="409,150" time="350" tween="Back" easing="Out">Focus</animation>
                             <animation effect="zoom" start="140" end="100" center="409,150" time="250">Unfocus</animation>
                             <control type="image">
+                                <animation effect="fade" start="0" end="100" time="150">Focus</animation>
+                                <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
+                                <visible>!ListItem.IsParentFolder</visible>
                                 <left>39</left>
-                                <top>0</top>
+                                <top>80</top>
                                 <width>780</width>
-                                <height>300</height>
-                                <texture background="true" colordiffuse="$VAR[diffuseselect]">images/DiffuseBanner.png</texture>
-                                <aspectratio>keep</aspectratio>
+                                <height>200</height>
+                                <texture>shadow.png</texture>
                             </control>
                             <control type="image">
                                 <visible>ListItem.IsParentFolder</visible>
@@ -235,13 +236,6 @@
                     <autoscroll delay="7000" time="4300" repeat="10000"></autoscroll>
                     <label>$VAR[Plots]</label>
                 </control>
-            </control>
-            <control type="scrollbar" id="60">
-                <left>85r</left>
-                <top>219</top>
-                <height>780</height>
-                <onleft>53</onleft>
-                <onright>9000</onright>
             </control>
         </control>
     </include>
