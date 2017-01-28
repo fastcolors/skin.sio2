@@ -121,15 +121,9 @@
                 <control type="button" id="3" description="Sort">
                     <include>DialogButt</include>
                 </control>
-                <control type="button" id="5" description="Updates">
+                <control type="button" id="5" description="Settings">
                     <include>DialogButt</include>
-                    <label>$LOCALIZE[24063]: $LOCALIZE[1223]</label>
-                    <altlabel>$LOCALIZE[24063]: $LOCALIZE[305]</altlabel>
-                </control>
-                <control type="togglebutton" id="6" description="Notifications">
-                    <include>DialogButt</include>
-                    <label>$LOCALIZE[25000]: $LOCALIZE[1223]</label>
-                    <altlabel>$LOCALIZE[25000]: $LOCALIZE[305]</altlabel>
+                    <label>$LOCALIZE[10004]</label>
                 </control>
                 <control type="radiobutton" id="7" description="language filter">
                     <include>DialogButt</include>
@@ -139,11 +133,9 @@
                     <include>DialogButt</include>
                     <label>24999</label>
                 </control>
-                <control type="button" id="699" description="Playing">
-                    <enable>Player.HasMedia</enable>
+                <control type="button" id="9" description="Check Updates">
                     <include>DialogButt</include>
-                    <label>$LOCALIZE[31055]</label>
-                    <onclick>fullscreen</onclick>
+                    <label>24034</label>
                 </control>
             </control>
         </control>
