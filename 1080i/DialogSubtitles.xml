@@ -199,14 +199,16 @@
             <top>90</top>
             <animation effect="slide" start="0,0" end="-450,0" time="400" reversible="true" condition="Control.HasFocus(150) | Control.HasFocus(160) | Control.HasFocus(122)">Conditional</animation>
             <control type="image" description="BG">
-                <left>1827</left>
+                <left>1927</left>
                 <top>45</top>
-                <width>708</width>
-                <height>810</height>
-                <texture border="150">images/Dialog.png</texture>
+                <width>508</width>
+                <height>610</height>
+                <texture border="8">images/White.png</texture>
+                <colordiffuse>dialog</colordiffuse>
             </control>
             <control type="button" id="160">
                 <description>Manual search button</description>
+                <animation>Focus</animation>
                 <left>2000</left>
                 <top>190</top>
                 <width>375</width>
@@ -217,8 +219,7 @@
                 <ondown>150</ondown>
                 <label>$LOCALIZE[24120]</label>
                 <font>size27</font>
-                <texturefocus>images/Buttonselect.png</texturefocus>
-                <align>center</align>
+                <align>left</align>
             </control>
             <control type="image">
                 <description>separator</description>
