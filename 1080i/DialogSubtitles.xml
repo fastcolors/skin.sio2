@@ -3,14 +3,16 @@
     <allowoverlay>no</allowoverlay>
     <include>OpenClose</include>
     <controls>
+        <control type="image" description="BG">
+            <centerleft>960</centerleft>
+            <centertop>530</centertop>
+            <width>1500</width>
+            <height>860</height>
+            <texture border="8">images/White.png</texture>
+            <colordiffuse>dialog</colordiffuse>
+        </control>
         <control type="group" id="250">
             <left>110</left>
-            <control type="image" description="BG">
-                <width>1700</width>
-                <height>1080</height>
-                <texture border="150">images/Dialog.png</texture>
-                <colordiffuse>CCFFFFFF</colordiffuse>
-            </control>
             <control type="image">
                 <left>1447</left>
                 <top>160</top>
@@ -89,7 +91,7 @@
                         <height>54</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>gray</textcolor>
+                        <textcolor>darktext</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
                         <info>ListItem.Label</info>
@@ -116,7 +118,7 @@
                         <height>54</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>gray</textcolor>
+                        <textcolor>darktext</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
                         <info>ListItem.Label2</info>
@@ -125,7 +127,7 @@
                         <left>1230</left>
                         <width>120</width>
                         <height>54</height>
-                        <colordiffuse>gray</colordiffuse>
+                        <colordiffuse>darktext</colordiffuse>
                         <aspectratio>keep</aspectratio>
                         <texture>badges/$INFO[ListItem.ActualIcon].0.png</texture>
                     </control>
@@ -134,7 +136,7 @@
                     <control type="image">
                         <width>1358</width>
                         <height>54</height>
-                        <texture border="8">Images/Buttonselect.png</texture>
+                        <texture border="8">Images/White.png</texture>
                         <visible>Control.HasFocus(120)</visible>
                     </control>
                     <control type="image">
@@ -150,7 +152,7 @@
                         <height>54</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>White2</textcolor>
+                        <textcolor>black</textcolor>
                         <align>left</align>
                         <info>ListItem.Label</info>
                     </control>
@@ -167,6 +169,7 @@
                         <width>60</width>
                         <height>54</height>
                         <aspectratio>keep</aspectratio>
+                        <colordiffuse>black</colordiffuse>
                         <texture>icon_sync.png</texture>
                         <visible>ListItem.property(sync)</visible>
                     </control>
@@ -176,7 +179,7 @@
                         <height>54</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>White2</textcolor>
+                        <textcolor>black</textcolor>
                         <align>left</align>
                         <info>ListItem.Label2</info>
                     </control>
@@ -185,6 +188,7 @@
                         <width>120</width>
                         <height>54</height>
                         <aspectratio>keep</aspectratio>
+                        <colordiffuse>black</colordiffuse>
                         <texture>badges/$INFO[ListItem.ActualIcon].0.png</texture>
                     </control>
                 </focusedlayout>
@@ -195,14 +199,16 @@
             <top>90</top>
             <animation effect="slide" start="0,0" end="-450,0" time="400" reversible="true" condition="Control.HasFocus(150) | Control.HasFocus(160) | Control.HasFocus(122)">Conditional</animation>
             <control type="image" description="BG">
-                <left>1827</left>
+                <left>1927</left>
                 <top>45</top>
-                <width>708</width>
-                <height>810</height>
-                <texture border="150">images/Dialog.png</texture>
+                <width>508</width>
+                <height>610</height>
+                <texture border="8">images/White.png</texture>
+                <colordiffuse>dialog</colordiffuse>
             </control>
             <control type="button" id="160">
                 <description>Manual search button</description>
+                <animation>Focus</animation>
                 <left>2000</left>
                 <top>190</top>
                 <width>375</width>
@@ -213,8 +219,7 @@
                 <ondown>150</ondown>
                 <label>$LOCALIZE[24120]</label>
                 <font>size27</font>
-                <texturefocus>images/Buttonselect.png</texturefocus>
-                <align>center</align>
+                <align>left</align>
             </control>
             <control type="image">
                 <description>separator</description>
@@ -266,7 +271,7 @@
                         <top>0</top>
                         <width>375</width>
                         <height>57</height>
-                        <texture border="8">Images/Buttonselect.png</texture>
+                        <texture border="8">Images/White.png</texture>
                         <visible>Control.HasFocus(150)</visible>
                     </control>
                     <control type="label">

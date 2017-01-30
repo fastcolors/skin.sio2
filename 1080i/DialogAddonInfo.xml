@@ -70,7 +70,7 @@
             <width>800</width>
             <height>40</height>
             <textcolor>infos</textcolor>
-            <label>$INFO[ListItem.AddonCreator,Created by ]</label>
+            <label>$INFO[ListItem.AddonCreator,$LOCALIZE[31043]]</label>
         </control>
         <control type="textbox">
             <centerleft>1470</centerleft>

@@ -134,6 +134,10 @@ msgctxt "#31042"
 msgid "Hide Time Seek Label"
 msgstr "Hide Time Seek Label"
 
+msgctxt "#31043"
+msgid "Created by :"
+msgstr "Created by :"
+
 msgctxt "#31044"
 msgid "View options dialog"
 msgstr "View options dialog"
