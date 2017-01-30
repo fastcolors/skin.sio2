@@ -9,7 +9,8 @@
         <top>250</top>
         <width>1023</width>
         <height>562</height>
-        <texture border="150">images/Dialog.png</texture>
+        <texture border="8">images/White.png</texture>
+        <colordiffuse>dialog</colordiffuse>
       </control>
       <control type="label" description="Dialog heading">
         <left>615</left>

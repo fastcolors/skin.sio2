@@ -599,7 +599,7 @@
         </control>
         <control type="button">
             <visible>!ControlGroup(111).HasFocus()</visible>
-            <visible>!Window.IsVisible(10123) + !Window.IsVisible(10124) + !Window.IsVisible(10125)</visible>
+            <visible>!Window.IsVisible(10123) + !Window.IsVisible(10124) + !Window.IsVisible(10125) + !Window.IsVisible(Dialogselect.xml)</visible>
             <animation type="Visible">
                 <effect type="fade" tween="circle" easing="in" start="0" end="100" time="800" />
             </animation>
@@ -612,23 +612,24 @@
             <onclick>SetFocus(101)</onclick>
         </control>
         <control type="group">
-            <visible>VideoPlayer.IsStereoscopic + ![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
+            <visible>VideoPlayer.IsStereoscopic + ![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(Dialogselect.xml)]</visible>
             <visible allowhiddenfocus="true">ControlGroup(500).HasFocus</visible>
             <animation effect="fade" time="200">VisibleChange</animation>
             <control type="image">
-                <left>510</left>
-                <top>500</top>
-                <width>900</width>
-                <height>450</height>
+                <centerleft>960</centerleft>
+                <centertop>540</centertop>
+                <width>800</width>
+                <height>350</height>
                 <aspectratio>stretch</aspectratio>
-                <texture border="150">images/Dialog.png</texture>
+                <texture border="8">images/White.png</texture>
+                <colordiffuse>dialog</colordiffuse>
             </control>
             <control type="grouplist" id="500">
-                <left>710</left>
-                <top>300</top>
+                <centerleft>960</centerleft>
+                <centertop>540</centertop>
                 <width>500</width>
                 <height>500</height>
-                <align>bottom</align>
+                <align>center</align>
                 <itemgap>0</itemgap>
                 <onleft>100</onleft>
                 <onright>100</onright>
@@ -639,7 +640,7 @@
                 <control type="group">
                     <description>Header</description>
                     <width>500</width>
-                    <height>50</height>
+                    <height>80</height>
                     <control type="label" id="">
                         <top>20</top>
                         <width>500</width>
@@ -651,7 +652,6 @@
                     </control>
                 </control>
                 <control type="radiobutton" id="503">
-                    <height>40</height>
                     <width>500</width>
                     <font>Size33</font>
                     <label>24022</label>
@@ -660,22 +660,18 @@
                     <pulseonselect>false</pulseonselect>
                 </control>
                 <control type="button" id="502">
-                    <height>40</height>
                     <width>500</width>
                     <align>left</align>
                     <font>Size33</font>
-                    <textoffsetx>30</textoffsetx>
-                    <pulseonselect>false</pulseonselect>
                     <label>3D Mode Selection</label>
                     <onclick>StereoMode</onclick>
                 </control>
                 <control type="radiobutton" id="501">
-                    <height>40</height>
                     <width>500</width>
                     <font>Size33</font>
                     <label>Force 2D</label>
                     <onclick>StereoModeToMono</onclick>
-                    <selected>String.IsEqual(System.StereoscopicMode,7)</selected>
+                    <selected>Integer.IsEqual(System.StereoscopicMode,9)</selected>
                     <pulseonselect>false</pulseonselect>
                 </control>
             </control>

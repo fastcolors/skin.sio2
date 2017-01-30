@@ -4,7 +4,7 @@
     <allowoverlay>yes</allowoverlay>
     <zorder>5</zorder>
     <include>OpenClose</include>
-    <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
+    <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(Dialogselect.xml)]</visible>
     <visible>Window.IsVisible(FullScreenVideo) + [Window.IsActive(videoosd.xml) | Player.DisplayAfterSeek | Player.Seeking | Player.Forwarding | Player.Rewinding | Player.Caching]</visible>
     <animation effect="fade" start="0" end="100" time="400">Visible</animation>
     <animation effect="fade" start="100" end="0" time="100">Hidden</animation>

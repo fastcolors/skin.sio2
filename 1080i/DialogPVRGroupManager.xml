@@ -17,7 +17,8 @@
         <width>2040</width>
         <height>1150</height>
         <aspectratio>stretch</aspectratio>
-        <texture border="150">images/Dialog.png</texture>
+        <texture border="150">images/White.png</texture>
+        <colordiffuse>dialog</colordiffuse>
       </control>
   <control type="image">
         <left>595</left>

@@ -9,7 +9,8 @@
       <top>90</top>
       <width>1530</width>
       <height>870</height>
-      <texture border="150">images/Dialog.png</texture>
+      <texture border="8">images/White.png</texture>
+      <colordiffuse>dialog</colordiffuse>
     </control>
     <control type="group">
       <left>360</left>
