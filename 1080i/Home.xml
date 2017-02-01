@@ -197,6 +197,7 @@
         <control type="group" id="700" description="Shelf items">
             <include>homeanimation</include>
             <include>Movies</include>
+            <include>Music</include>
             <include>Squares</include>
             <include>Episodes</include>
             <include>Pictures_Shortcuts</include>

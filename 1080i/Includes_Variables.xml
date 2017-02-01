@@ -110,13 +110,18 @@
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows)">videodb://recentlyaddedepisodes</value>
     </variable>
 
-    <variable name="squareshelf">
+    <variable name="musicshelf">
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + String.IsEqual(Skin.String(musicshelf),artists) + Library.HasContent(Music)">special://skin/playlists/random_albums.xsp</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + String.IsEqual(Skin.String(musicshelf),albums) + Library.HasContent(Music)">musicdb://recentlyplayedalbums/</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + Library.HasContent(Music)">musicdb://recentlyaddedalbums/</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) + Skin.HasSetting(AddonsShelf_Custom)"></value>
+        <value> </value>
+    </variable>
+
+    <variable name="squareshelf">
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) + Skin.HasSetting(AddonsShelf_Custom)"> </value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)">addons://user/</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),programs)">$INFO[Container(9000).ListItem.Property(list)]</value>
+        <value> </value>
     </variable>
 
 
@@ -167,8 +172,7 @@
     </variable>
 
     <variable name="locandine">
-        <!--<value condition="Container.Content(countries)">$INFO[ListItem.Label,flags/,.png]</value>-->
-        <value condition="Container.Content(episodes) + !String.IsEmpty(ListItem.Art(season.poster))">$INFO[ListItem.Art(season.poster)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(season.poster))">$INFO[ListItem.Art(season.poster)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
         <value condition="Container.Content(studios)">resource://resource.images.studios.white/$INFO[ListItem.Label,,.png]</value>
         <value condition="Container.Content(years)">DefaultYear_Blank.png</value>
