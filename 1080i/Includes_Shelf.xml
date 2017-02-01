@@ -4,7 +4,7 @@
         <animation effect="fade" start="0" end="100" delay="200" time="300">Visible</animation>
         <animation effect="fade" start="100" end="0" time="300">Hidden</animation>
     </include>
-    <include name="MoviesShortcutsCommons">
+    <include name="PosterShortcutsCommons">
         <include>ShelfFade</include>
         <animation effect="slide" end="-100,0" time="250" condition="Container(311).Column(4)">Conditional</animation>
         <top>90</top>
@@ -19,7 +19,7 @@
                 <top>35</top>
                 <width>335</width>
                 <height>500</height>
-                <texture background="true">$VAR[locandine]</texture>
+                <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
                 <aspectratio>keep</aspectratio>
             </control>
         </itemlayout>
@@ -41,7 +41,7 @@
                     <top>35</top>
                     <width>335</width>
                     <height>500</height>
-                    <texture background="true">$VAR[locandine]</texture>
+                    <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
                     <aspectratio>keep</aspectratio>
                 </control>
             </control>
@@ -274,7 +274,53 @@
                 <visible>ControlGroup(700).HasFocus()</visible>
                 <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
                 <animation effect="fade" start="100" end="0" time="80">unFocus</animation>
-                <centerleft>330</centerleft>
+                <centerleft>345</centerleft>
+                <top>560</top>
+                <width>540</width>
+                <height>150</height>
+                <font>size26</font>
+                <align>center</align>
+                <label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR]]</label>
+            </control>
+        </focusedlayout>
+    </include>
+    <include name="PluginsShortcutsCommons">
+        <include>ShelfFade</include>
+        <onup>9009</onup>
+        <ondown>9000</ondown>
+        <top>90</top>
+        <width>1920</width>
+        <height>630</height>
+        <orientation>horizontal</orientation>
+        <scrolltime>400</scrolltime>
+        <itemlayout height="600" width="550">
+            <control type="image">
+                <left>90</left>
+                <top>35</top>
+                <width>500</width>
+                <height>500</height>
+                <texture fallback="DefaultAddon.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+                <aspectratio>keep</aspectratio>
+            </control>
+        </itemlayout>
+        <focusedlayout height="600" width="500">
+            <control type="group">
+                <animation effect="zoom" start="100" end="110" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+                <animation effect="zoom" start="110" end="100" time="120" center="auto" easing="">unFocus</animation>
+                <control type="image">
+                    <left>90</left>
+                    <top>35</top>
+                    <width>500</width>
+                    <height>500</height>
+                    <texture fallback="DefaultAddon.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>
+            </control>
+            <control type="textbox">
+                <visible>ControlGroup(700).HasFocus()</visible>
+                <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
+                <animation effect="fade" start="100" end="0" time="80">unFocus</animation>
+                <centerleft>360</centerleft>
                 <top>560</top>
                 <width>540</width>
                 <height>150</height>
@@ -291,7 +337,7 @@
             <ondown>9000</ondown>
             <onleft>311</onleft>
             <onright>311</onright>
-            <include>MoviesShortcutsCommons</include>
+            <include>PosterShortcutsCommons</include>
             <content target="videos">$VAR[shelf]</content>
         </control>
     </include>
@@ -314,24 +360,26 @@
             <content target="videos">$VAR[epshelf]</content>
         </control>
     </include>
-    <include name="Squares">
+    <include name="Addons">
         <control type="panel" id="317" description="TOP Shortcuts">
             <visible>$EXP[317visibility]</visible>
-            <include>SquareShortcutsCommons</include>
+            <!--<onclick>noop</onclick>-->
+            <include>PluginsShortcutsCommons</include>
             <content target="programs">$VAR[squareshelf]</content>
         </control>
     </include>
-    <include name="Addons_Shortcuts">
-        <control type="panel" id="315" description="TOP Shortcuts">
-            <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)</visible>
-            <onup>noop</onup>
-            <ondown>9000</ondown>
-            <onleft>315</onleft>
-            <onright>315</onright>
-            <include>SquareShortcutsCommons</include>
-            <content><include>skinshortcuts-submenu</include></content>
-        </control>
-    </include>
+    <!--<include name="Addons_Shortcuts">-->
+        <!--<control type="panel" id="315" description="TOP Shortcuts">-->
+            <!--<visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)</visible>-->
+            <!--<visible>Skin.HasSetting(AddonsShelf_Custom)</visible>-->
+            <!--<onup>noop</onup>-->
+            <!--<ondown>9000</ondown>-->
+            <!--<onleft>315</onleft>-->
+            <!--<onright>315</onright>-->
+            <!--<include>PluginsShortcutsCommons</include>-->
+            <!--<content><include>skinshortcuts-submenu</include></content>-->
+        <!--</control>-->
+    <!--</include>-->
     <include name="Pictures_Shortcuts">
         <control type="group">
             <control type="panel" id="314" description="TOP Shortcuts">
@@ -347,20 +395,20 @@
     <include name="weather_shelf">
         <control type="group">
             <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),weather)</visible>
-            <!--<control type="image">-->
-            <!--<width>1920</width>-->
-            <!--<height>720</height>-->
-            <!--<aspectratio align="top">scale</aspectratio>-->
-            <!--<texture background="true">$INFO[Window(weather).Property(Current.FanartCode),weather/,.jpg]</texture>-->
-            <!--&lt;!&ndash;<texture background="true">images/black.png</texture>&ndash;&gt;-->
-            <!--</control>-->
-            <control type="multiimage">
-                <width>1920</width>
-                <height>720</height>
-                <aspectratio align="top">scale</aspectratio>
-                <imagepath>weather</imagepath>
-                <timeperimage>2000</timeperimage>
+            <control type="image">
+            <width>1920</width>
+            <height>720</height>
+            <aspectratio align="top">scale</aspectratio>
+            <texture background="true">$INFO[Window(weather).Property(Current.FanartCode),weather/,.jpg]</texture>
+            <!--<texture background="true">images/black.png</texture>-->
             </control>
+            <!--<control type="multiimage">-->
+                <!--<width>1920</width>-->
+                <!--<height>720</height>-->
+                <!--<aspectratio align="top">scale</aspectratio>-->
+                <!--<imagepath>weather</imagepath>-->
+                <!--<timeperimage>2000</timeperimage>-->
+            <!--</control>-->
             <control type="label">
                 <left>83</left>
                 <top>100</top>

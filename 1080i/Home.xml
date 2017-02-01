@@ -56,7 +56,7 @@
             <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + StringCompare(Skin.String(musicshelf),artists)">Skin.SetString(musicshelf,)</onclick>
 
             <!--ADDONS-->
-            <!--<onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),1)">Skin.SetString(addonsshelf,2)</onclick>-->
+            <!--<onclick  condition="Control.IsVisible(315) | Control.IsVisible(317)">Skin.ToggleSetting(AddonsShelf_Custom)</onclick>-->
             <!--<onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),2)">Skin.SetString(addonsshelf,3)</onclick>-->
             <!--<onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),3)">Skin.SetString(addonsshelf,)</onclick>-->
             <!--<onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),)">Skin.SetString(addonsshelf,1)</onclick>-->
@@ -70,6 +70,7 @@
             <ondown condition="Control.IsVisible(312)">312</ondown>
             <ondown condition="Control.IsVisible(313)">313</ondown>
             <ondown condition="Control.IsVisible(315)">315</ondown>
+            <ondown condition="Control.IsVisible(317)">317</ondown>
             <ondown condition="Control.IsVisible(311)">311</ondown>
             <onleft>noop</onleft>
             <onright>noop</onright>
@@ -198,10 +199,10 @@
             <include>homeanimation</include>
             <include>Movies</include>
             <include>Music</include>
-            <include>Squares</include>
+            <include>Addons</include>
             <include>Episodes</include>
             <include>Pictures_Shortcuts</include>
-            <include condition="Skin.HasSetting(AddonsShelf_Custom)">Addons_Shortcuts</include>
+            <!--<include>Addons_Shortcuts</include>-->
             <include>weather_shelf</include>
         </control>
         <control type="group" description="RSS">

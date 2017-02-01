@@ -118,12 +118,9 @@
     </variable>
 
     <variable name="squareshelf">
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) + Skin.HasSetting(AddonsShelf_Custom)"> </value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)">addons://user/</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),programs)">$INFO[Container(9000).ListItem.Property(list)]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)">addons://recently_updated/</value>
         <value> </value>
     </variable>
-
 
     <variable name="shelflabel">
         <!--UPCOMINGMOVIES-->
@@ -144,11 +141,11 @@
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + Library.HasContent(Music)">$LOCALIZE[359]</value>
         <!--ADDONS-->
         <!--todo label-->
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) + Skin.HasSetting(AddonsShelf_Custom)">$LOCALIZE[31051]</value>
+        <!--<value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) + Skin.HasSetting(AddonsShelf_Custom)">$LOCALIZE[31051]</value>-->
         <!--<value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) + StringCompare(Skin.String(addonsshelf),1)">$LOCALIZE[1038] </value>-->
         <!--<value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) + StringCompare(Skin.String(addonsshelf),2)">$LOCALIZE[1043] </value>-->
         <!--<value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) + StringCompare(Skin.String(addonsshelf),3)">$LOCALIZE[1039] </value>-->
-        <value condition="[String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) | String.IsEqual(Container(9000).ListItem.Property(defaultID),programs)]">Addons</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)">Recently Updated Addons</value>
         <!--PICTURES-->
         <value condition="Container(9000).HasFocus(344)"> </value>
         <!--LIVETV(RECORDINGS)-->

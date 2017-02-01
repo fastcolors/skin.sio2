@@ -115,8 +115,8 @@ msgid "Reset ALL skin settings to default"
 msgstr "Reset ALL skin settings to default"
 
 msgctxt "#31037"
-msgid "Add-ons manager"
-msgstr "Add-ons manager"
+msgid "App Store"
+msgstr "App Store"
 
 msgctxt "#31038"
 msgid "min"
