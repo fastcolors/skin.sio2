@@ -133,7 +133,7 @@
                 <align>center</align>
             </control>
             <control type="label">
-                <visible>!ListItem.IsResumable</visible>
+                <visible>!ListItem.IsResumable + Integer.IsEqual(ListItem.PlayCount,0)</visible>
                 <top>400</top>
                 <left>118</left>
                 <width>335</width>
