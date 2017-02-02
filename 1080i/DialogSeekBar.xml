@@ -89,14 +89,6 @@
                 <aspectratio>keep</aspectratio>
                 <texture background="true">$INFO[Player.Art(clearlogo)]</texture>
             </control>
-            <!--todo mpaa-->
-            <!--<control type="image">-->
-            <!--<width>375</width>-->
-            <!--<height>100</height>-->
-            <!--<texture>$INFO[VideoPlayer.mpaa,Mpaa/,.png]</texture>-->
-            <!--<aspectratio align="right">keep</aspectratio>-->
-            <!--<colordiffuse>77FFFFFF</colordiffuse>-->
-            <!--</control>-->
         </control>
     </controls>
 </window>
