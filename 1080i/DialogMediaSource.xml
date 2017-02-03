@@ -95,8 +95,6 @@
         <label>-</label>
         <width>1020</width>
         <align>left</align>
-        <texturefocus border="8" >images/Buttonselect.png</texturefocus>
-        <texturenofocus flipy="true" border="8" >images/textedit.png</texturenofocus>
         <textoffsetx>20</textoffsetx>
         <onup>10</onup>
         <onleft>18</onleft>

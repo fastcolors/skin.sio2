@@ -33,9 +33,9 @@
                 </control>
                 <control type="button" id="701">
                     <include>DialogButt</include>
-                    <label>31037</label>
+                    <label>0</label>
                     <onclick>Close</onclick>
-                    <onclick>ActivateWindow(AddonBrowser,root)</onclick>
+                    <onclick>ActivateWindow(Programs,addons://sources/executable/,return)</onclick>
                 </control>
                 <control type="button" id="702">
                     <include>DialogButt</include>

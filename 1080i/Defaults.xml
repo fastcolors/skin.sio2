@@ -83,7 +83,7 @@
     <focusedcolor>black</focusedcolor>
     <selectedcolor>orange</selectedcolor>
     <disabledcolor>dimgray</disabledcolor>
-    <texturenofocus border="8" colordiffuse="99ffffff">images/White.png</texturenofocus>
+    <texturenofocus border="8" colordiffuse="66ffffff">images/White.png</texturenofocus>
     <texturefocus border="8">images/White.png</texturefocus>
     <pulseonselect>false</pulseonselect>
   </default>

@@ -1,36 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="ShelfFade">
-        <animation effect="fade" end="100" delay="200" time="220">Visible</animation>
-        <animation effect="fade" end="0" delay="200" time="220">Hidden</animation>
+        <animation effect="fade" start="0" end="100" delay="200" time="300">Visible</animation>
+        <animation effect="fade" start="100" end="0" time="300">Hidden</animation>
     </include>
-    <include name="MoviesShortcutsCommons">
+    <include name="PosterShortcutsCommons">
         <include>ShelfFade</include>
         <animation effect="slide" end="-100,0" time="250" condition="Container(311).Column(4)">Conditional</animation>
         <top>90</top>
         <width>2030</width>
         <height>630</height>
+        <onup>9009</onup>
+        <ondown>9000</ondown>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
-        <!--<onup condition="$EXP[isupcomingmovies]">RunPlugin(plugin://plugin.video.couchpotato_manager/movies/add?title=$INFO[Container(311).ListItem.Label])</onup>-->
         <onclick condition="$EXP[isupcomingmovies]">Contextmenu</onclick>
         <itemlayout height="600" width="382">
             <control type="image">
-                <visible>String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
                 <left>90</left>
                 <top>35</top>
                 <width>335</width>
                 <height>500</height>
-                <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                <aspectratio>keep</aspectratio>
-            </control>
-            <control type="image">
-                <visible>!String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                <left>90</left>
-                <top>35</top>
-                <width>335</width>
-                <height>500</height>
-                <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
+                <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
                 <aspectratio>keep</aspectratio>
             </control>
         </itemlayout>
@@ -48,21 +41,11 @@
                     <texture>shadow.png</texture>
                 </control>
                 <control type="image">
-                    <visible>String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
                     <left>90</left>
                     <top>35</top>
                     <width>335</width>
                     <height>500</height>
-                    <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                    <aspectratio>keep</aspectratio>
-                </control>
-                <control type="image">
-                    <visible>!String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
-                    <left>90</left>
-                    <top>35</top>
-                    <width>335</width>
-                    <height>500</height>
-                    <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
+                    <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
                     <aspectratio>keep</aspectratio>
                 </control>
             </control>
@@ -88,6 +71,10 @@
         <top>110</top>
         <width>1920</width>
         <height>610</height>
+        <onup>9009</onup>
+        <ondown>9000</ondown>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
         <itemlayout height="610" width="840">
@@ -133,7 +120,7 @@
                 <align>center</align>
             </control>
             <control type="label">
-                <visible>!ListItem.IsResumable</visible>
+                <visible>!ListItem.IsResumable + Integer.IsEqual(ListItem.PlayCount,0)</visible>
                 <top>400</top>
                 <left>118</left>
                 <width>335</width>
@@ -252,12 +239,13 @@
     </include>
     <include name="SquareShortcutsCommons">
         <include>ShelfFade</include>
-        <!--<left>72</left>-->
-        <onup>9009</onup>
-        <ondown>9000</ondown>
         <top>90</top>
         <width>1920</width>
         <height>630</height>
+        <onup>9009</onup>
+        <ondown>9000</ondown>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
         <itemlayout height="600" width="550">
@@ -296,7 +284,7 @@
                 <visible>ControlGroup(700).HasFocus()</visible>
                 <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
                 <animation effect="fade" start="100" end="0" time="80">unFocus</animation>
-                <centerleft>330</centerleft>
+                <centerleft>345</centerleft>
                 <top>560</top>
                 <width>540</width>
                 <height>150</height>
@@ -308,89 +296,81 @@
     </include>
     <include name="Movies">
         <control type="panel" id="311" description="Movies Shelf Shortcuts">
-            <include>ShelfFade</include>
             <visible>$EXP[311visibility]</visible>
-            <onup>9009</onup>
-            <ondown>9000</ondown>
-            <onleft>311</onleft>
-            <onright>311</onright>
-            <include>MoviesShortcutsCommons</include>
+            <include>PosterShortcutsCommons</include>
             <content target="videos">$VAR[shelf]</content>
         </control>
     </include>
     <include name="Music">
         <control type="panel" id="312" description="TOP Shortcuts">
-            <include>ShelfFade</include>
-            <visible>$EXP[312visibility]</visible>
             <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),music)</visible>
             <include>SquareShortcutsCommons</include>
             <onclick>PlayMedia($ESCINFO[ListItem.DBID,musicdb://albums/,/])</onclick>
-            <content target="music">$VAR[squareshelf]</content>
+            <content target="music">$VAR[musicshelf]</content>
         </control>
     </include>
     <include name="Episodes">
         <control type="panel" id="313" description="Episodes Shelf Shortcuts">
-            <include>ShelfFade</include>
             <visible>$EXP[313visibility]</visible>
-            <onup>9009</onup>
-            <ondown>9000</ondown>
-            <onleft>313</onleft>
-            <onright>313</onright>
             <include>EpisodeShortcutsCommons</include>
             <content target="videos">$VAR[epshelf]</content>
         </control>
     </include>
-    <include name="Squares">
-        <control type="panel" id="312" description="TOP Shortcuts">
-            <include>ShelfFade</include>
-            <visible>$EXP[312visibility]</visible>
+    <include name="Addons">
+        <control type="panel" id="317" description="TOP Shortcuts">
+            <visible>$EXP[317visibility]</visible>
             <include>SquareShortcutsCommons</include>
-            <onclick>PlayMedia($ESCINFO[ListItem.DBID,musicdb://albums/,/])</onclick>
-            <content target="music">$VAR[squareshelf]</content>
+            <content target="programs">$VAR[squareshelf]</content>
         </control>
     </include>
-    <include name="Addons_Shortcuts">
-        <control type="panel" id="315" description="TOP Shortcuts">
-            <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)</visible>
-            <include>ShelfFade</include>
-            <onup>noop</onup>
-            <ondown>9000</ondown>
-            <onleft>315</onleft>
-            <onright>315</onright>
-            <include>SquareShortcutsCommons</include>
-            <content><include>skinshortcuts-submenu</include></content>
-        </control>
-    </include>
-    <include name="Pictures_Shortcuts">
+    <!--<include name="Addons_Shortcuts">-->
+    <!--<control type="panel" id="315" description="TOP Shortcuts">-->
+    <!--<visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)</visible>-->
+    <!--<visible>Skin.HasSetting(AddonsShelf_Custom)</visible>-->
+    <!--<onup>noop</onup>-->
+    <!--<ondown>9000</ondown>-->
+    <!--<onleft>315</onleft>-->
+    <!--<onright>315</onright>-->
+    <!--<include>SquareShortcutsCommons</include>-->
+    <!--<content><include>skinshortcuts-submenu</include></content>-->
+    <!--</control>-->
+    <!--</include>-->
+    <!--todo appstore shelf-->
+    <include name="appstore_shelf">
         <control type="group">
+            <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),programs)</visible>
+            <!--<control type="image">-->
+                <!--<width>1920</width>-->
+                <!--<height>720</height>-->
+                <!--<aspectratio align="top">scale</aspectratio>-->
+                <!--<texture background="true">images/black.png</texture>-->
+            <!--</control>-->
             <control type="panel" id="314" description="TOP Shortcuts">
                 <onup>noop</onup>
                 <ondown>9000</ondown>
                 <onleft>314</onleft>
                 <onright>314</onright>
                 <include>SquareShortcutsCommons</include>
-                <content>pictures://</content>
+                <content>-</content>
             </control>
         </control>
     </include>
     <include name="weather_shelf">
         <control type="group">
             <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),weather)</visible>
-            <include>ShelfFade</include>
-            <!--<control type="image">-->
-                <!--<width>1920</width>-->
-                <!--<height>720</height>-->
-                <!--<aspectratio align="top">scale</aspectratio>-->
-                <!--<texture background="true">$INFO[Window(weather).Property(Current.FanartCode),weather/,.jpg]</texture>-->
-                <!--&lt;!&ndash;<texture background="true">images/black.png</texture>&ndash;&gt;-->
-            <!--</control>-->
-            <control type="multiimage">
-            <width>1920</width>
-            <height>720</height>
-            <aspectratio align="top">scale</aspectratio>
-            <imagepath>weather</imagepath>
-            <timeperimage>2000</timeperimage>
+            <control type="image">
+                <width>1920</width>
+                <height>720</height>
+                <aspectratio align="top">scale</aspectratio>
+                <texture background="true">$INFO[Window(weather).Property(Current.FanartCode),weather/,.jpg]</texture>
             </control>
+            <!--<control type="multiimage">-->
+            <!--<width>1920</width>-->
+            <!--<height>720</height>-->
+            <!--<aspectratio align="top">scale</aspectratio>-->
+            <!--<imagepath>weather</imagepath>-->
+            <!--<timeperimage>2000</timeperimage>-->
+            <!--</control>-->
             <control type="label">
                 <left>83</left>
                 <top>100</top>

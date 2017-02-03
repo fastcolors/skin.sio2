@@ -9,14 +9,11 @@
                 <left>1020</left>
                 <top>120</top>
                 <control type="list" id="50">
-                    <visible>!container.content(Sets)</visible>
-                    <visible>!String.IsEmpty(Container.FolderPath)</visible>
                     <width>802</width>
                     <height>960</height>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                     <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
-                    <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-                    <onright condition="!Skin.HasSetting(Scrollbars_Active)">noop</onright>
+                    <onright>noop</onright>
                     <onup>50</onup>
                     <ondown>50</ondown>
                     <pagecontrol>60</pagecontrol>

@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="147">
-  <defaultcontrol>61</defaultcontrol>
-  <include>DialogOpenClose</include>
-  <controls>
-    <control type="image" description="BG">
-      <animation effect="fade" start="0" end="100" delay="150" time="300">WindowOpen</animation>
-      <animation effect="fade" start="100" end="0" time="50">WindowClose</animation>
-      <left>0</left>
-      <top>0</top>
-      <width>1920</width>
-      <height>1080</height>
-      <texture>busy/BusyBG.png</texture>
-    </control>
-    <control type="image">
-      <left>365</left>
-      <top>-60</top>
-      <width>1200</width>
-      <height>1110</height>
-      <texture border="150">images/Dialog.png</texture>
-    </control>
-    <control type="group">
-      <left>450</left>
-      <top>75</top>
-      <control type="label" id="1" description="Header">
-        <left>60</left>
-        <top>30</top>
-        <align>center</align>
-        <width>750</width>
-        <height>45</height>
-      </control>
-      <control type="textbox" id="5" description="Textarea">
-        <left>90</left>
-        <top>120</top>
-        <width>720</width>
-        <height>690</height>
-        <font>size27</font>
-        <align>justify</align>
-      </control>
-    </control>
-  </controls>
+    <defaultcontrol>61</defaultcontrol>
+    <include>DialogOpenClose</include>
+    <controls>
+        <control type="image">
+            <visible>!Skin.HasTheme(Dark)</visible>
+            <centerleft>960</centerleft>
+            <centertop>540</centertop>
+            <width>1320</width>
+            <height>1040</height>
+            <colordiffuse>ff999999</colordiffuse>
+            <texture>special://skin/backdrops/light_default_background.png</texture>
+            <aspectratio align="center">scale</aspectratio>
+        </control>
+        <control type="image">
+            <visible>Skin.HasTheme(Dark)</visible>
+            <centerleft>960</centerleft>
+            <centertop>540</centertop>
+            <width>1320</width>
+            <height>1040</height>
+            <colordiffuse>ffbbbbbb</colordiffuse>
+            <texture>special://skin/backdrops/dark_default_background.png</texture>
+            <aspectratio align="center">scale</aspectratio>
+        </control>
+        <control type="label" id="1" description="Header">
+            <centerleft>960</centerleft>
+            <top>60</top>
+            <align>center</align>
+            <width>1920</width>
+            <height>40</height>
+        </control>
+        <control type="textbox" id="5" description="Textarea">
+            <centerleft>960</centerleft>
+            <centertop>560</centertop>
+            <width>1200</width>
+            <height>860</height>
+            <font>size26</font>
+            <!--<align>justify</align>-->
+        </control>
+    </controls>
 </window>

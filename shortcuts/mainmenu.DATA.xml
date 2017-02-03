@@ -87,11 +87,11 @@
     </shortcut>
     <shortcut>
         <defaultID>programs</defaultID>
-        <label>0</label>
+        <label>31037</label>
         <icon>-</icon>
         <label2>-</label2>
         <thumb>icons/program.png</thumb>
-        <action>ActivateWindow(Programs,addons://sources/executable/,return)</action>
+        <action>ActivateWindow(AddonBrowser,root)</action>
     </shortcut>
     <shortcut>
         <defaultID>sources</defaultID>

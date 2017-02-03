@@ -56,16 +56,6 @@
           </focusedlayout>
         </control>
       </control>
-      <control type="image">
-        <animation effect="fade" time="200">VisibleChange</animation>
-        <visible>Container(3).HasNext</visible>
-        <left>1005</left>
-        <top>963</top>
-        <height>81</height>
-        <width>832</width>
-        <texture>images/DefaultGradient.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
     </control>
 
     <control type="group" description="Group 6 Thumbs">
@@ -139,16 +129,6 @@
             </control>
           </focusedlayout>
         </control>
-      </control>
-      <control type="image">
-        <animation effect="fade" time="200">VisibleChange</animation>
-        <visible>Container(6).HasNext</visible>
-        <left>1005</left>
-        <top>963</top>
-        <height>81</height>
-        <width>832</width>
-        <texture>images/DefaultGradient.png</texture>
-        <aspectratio>stretch</aspectratio>
       </control>
     </control>
     <control type="group" description="Thumbs">

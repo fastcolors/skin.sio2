@@ -24,6 +24,7 @@
         <include>biglist</include>
         <include>icons</include>
         <include>banners</include>
+        <include>moviebanners</include>
         <include>widelist</include>
         <!--VIEWS-->
         <control type="group" description="Side menu 9000 group">
@@ -94,9 +95,9 @@
                     <include>DialogButt</include>
                     <label>Artwork</label>
                     <onclick condition="!system.hasaddon(script.artwork.downloader)">InstallAddon(script.artwork.downloader)</onclick>
-                    <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, dbid=$INFO[ListItem.DBID], clearlogo, discart)</onclick>
-                    <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, dbid=$INFO[ListItem.DBID], clearlogo, discart)</onclick>
-                    <onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=musicvideos, dbid=$INFO[ListItem.DBID], clearlogo, discart)</onclick>
+                    <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, clearlogo)</onclick>
+                    <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, clearlogo)</onclick>
+                    <onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=musicvideos, clearlogo)</onclick>
                     <visible>[Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)]</visible>
                     <onclick>right</onclick>
                 </control>

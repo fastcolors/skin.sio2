@@ -377,7 +377,6 @@
     </include>
     <include name="Watched_Marks">
         <control type="image">
-            <!--<visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Movies) | Container.Content(episodes) | Control.IsVisible(13) | Control.IsVisible(10)</visible>-->
             <left>4</left>
             <height>81</height>
             <width>30</width>
@@ -419,118 +418,6 @@
             <aspectratio>keep</aspectratio>
             <texture>images/Arrow.png</texture>
         </control>
-    </include>
-    <include name="Sets">
-        <control type="image" description="Sets">
-            <visible>ListItem.IsCollection</visible>
-            <right>10</right>
-            <height>100</height>
-            <width>45</width>
-            <aspectratio align="right">keep</aspectratio>
-            <texture>badges/sets.png</texture>
-        </control>
-    </include>
-    <include name="SetsFO">
-        <control type="image" description="Sets">
-            <visible>ListItem.IsCollection</visible>
-            <right>10</right>
-            <height>100</height>
-            <width>45</width>
-            <aspectratio align="right">keep</aspectratio>
-            <texture>badges/setsFO.png</texture>
-        </control>
-    </include>
-    <include name="LargeListLayout">
-        <itemlayout  width="802" height="111">
-            <include>Watched_Marks</include>
-            <include>Sets</include>
-            <include>Arrow</include>
-            <control type="group">
-                <animation condition="String.IsEmpty(ListItem.Label2) + String.IsEmpty(ListItem.Duration) + String.IsEmpty(ListItem.Year) + String.IsEmpty(ListItem.Artist)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
-                <control type="label" description="Main Label">
-                    <left>45</left>
-                    <width>717</width>
-                    <include>BigListTitle</include>
-                    <label>$INFO[ListItem.label]</label>
-                </control>
-            </control>
-            <control type="group">
-                <control type="label" description="Label2">
-                    <visible>!String.IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)</visible>
-                    <width>630</width>
-                    <left>45</left>
-                    <include>BigListDetails</include>
-                    <label>$INFO[ListItem.Mpaa,, • ]$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]$INFO[ListItem.Videoresolution, • ]</label>
-                </control>
-                <control type="label" description="Label2">
-                    <visible>container.content(episodes)</visible>
-                    <left>760</left>
-                    <align>right</align>
-                    <include>BigListDetails</include>
-                    <label>$INFO[ListItem.Premiered]</label>
-                </control>
-                <control type="label" description="Label2">
-                    <visible>container.content(episodes)  + !ListItem.IsFolder</visible>
-                    <left>45</left>
-                    <align>left</align>
-                    <include>BigListDetails</include>
-                    <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]</label>
-                </control>
-            </control>
-        </itemlayout>
-        <focusedlayout width="802" height="111">
-            <control type="group">
-                <animation effect="zoom" time="120" start="100" end="105" center="auto" tween="Back" easing="Out">Focus</animation>
-                <control type="image">
-                    <top>22</top>
-                    <left>-50</left>
-                    <height>100</height>
-                    <width>902</width>
-                    <texture>shadow.png</texture>
-                </control>
-                <control type="image">
-                    <height>100</height>
-                    <width>802</width>
-                    <texture border="8">images/White.png</texture>
-                </control>
-                <include>Watched_Marks</include>
-                <include>SetsFO</include>
-                <include>Arrow</include>
-                <control type="group">
-                    <animation condition="String.IsEmpty(ListItem.Label2) + String.IsEmpty(ListItem.Duration) + String.IsEmpty(ListItem.Year)  + String.IsEmpty(ListItem.Artist)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
-                    <control type="label" description="Main Label">
-                        <left>45</left>
-                        <width>717</width>
-                        <include>BigListTitleFO</include>
-                        <label>$INFO[ListItem.label]</label>
-                    </control>
-                </control>
-                <control type="group">
-                    <control type="label" description="Label2">
-                        <visible>!String.IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)</visible>
-                        <left>45</left>
-                        <width>630</width>
-                        <include>BigListDetailsFO</include>
-                        <label>$INFO[ListItem.Mpaa,, • ]$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]$INFO[ListItem.Videoresolution, • ]</label>
-                    </control>
-                    <control type="label" description="Label2">
-                        <visible>container.content(episodes)</visible>
-                        <left>760</left>
-                        <width>480</width>
-                        <align>right</align>
-                        <include>BigListDetailsFO</include>
-                        <label>$INFO[ListItem.Premiered]</label>
-                    </control>
-                    <control type="label" description="Label2">
-                        <visible>container.content(episodes) + !ListItem.IsFolder</visible>
-                        <left>45</left>
-                        <align>left</align>
-                        <include>BigListDetails</include>
-                        <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]</label>
-                    </control>
-                </control>
-            </control>
-        </focusedlayout>
     </include>
     <include name="ButtonMenu">
         <width>525</width>
