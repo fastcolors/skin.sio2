@@ -335,15 +335,23 @@
     <!--<content><include>skinshortcuts-submenu</include></content>-->
     <!--</control>-->
     <!--</include>-->
-    <include name="Pictures_Shortcuts">
+    <!--todo appstore shelf-->
+    <include name="appstore_shelf">
         <control type="group">
+            <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),programs)</visible>
+            <!--<control type="image">-->
+                <!--<width>1920</width>-->
+                <!--<height>720</height>-->
+                <!--<aspectratio align="top">scale</aspectratio>-->
+                <!--<texture background="true">images/black.png</texture>-->
+            <!--</control>-->
             <control type="panel" id="314" description="TOP Shortcuts">
                 <onup>noop</onup>
                 <ondown>9000</ondown>
                 <onleft>314</onleft>
                 <onright>314</onright>
                 <include>SquareShortcutsCommons</include>
-                <content>pictures://</content>
+                <content>-</content>
             </control>
         </control>
     </include>
@@ -355,7 +363,6 @@
                 <height>720</height>
                 <aspectratio align="top">scale</aspectratio>
                 <texture background="true">$INFO[Window(weather).Property(Current.FanartCode),weather/,.jpg]</texture>
-                <!--<texture background="true">images/black.png</texture>-->
             </control>
             <!--<control type="multiimage">-->
             <!--<width>1920</width>-->

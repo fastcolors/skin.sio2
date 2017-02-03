@@ -201,8 +201,7 @@
             <include>Music</include>
             <include>Addons</include>
             <include>Episodes</include>
-            <include>Pictures_Shortcuts</include>
-            <!--<include>Addons_Shortcuts</include>-->
+            <include>appstore_shelf</include>
             <include>weather_shelf</include>
         </control>
         <control type="group" description="RSS">

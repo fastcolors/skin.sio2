@@ -783,4 +783,68 @@
             <colordiffuse>dimgray</colordiffuse>
         </control>
     </include>
+    <include name="adbrowserlists">
+        <orientation>horizontal</orientation>
+        <top>150</top>
+        <width>1920</width>
+        <height>280</height>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
+        <!--<onup>666</onup>-->
+        <!--<ondown>5007</ondown>-->
+        <onclick>info</onclick>
+        <viewtype label="50">List</viewtype>
+        <focusposition>5</focusposition>
+        <movement>5</movement>
+        <preloaditems>4</preloaditems>
+        <scrolltime tween="sine" easing="inout">280</scrolltime>
+        <itemlayout width="350" height="200">
+            <control type="image">
+                <left>80</left>
+                <width>300</width>
+                <height>200</height>
+                <texture>$INFO[ListItem.Icon]</texture>
+            </control>
+            <control type="textbox" description="Label2">
+                <left>80</left>
+                <top>210</top>
+                <height>81</height>
+                <width>300</width>
+                <font>size27</font>
+                <scroll>false</scroll>
+                <align>center</align>
+                <textcolor>infos</textcolor>
+                <label>$INFO[ListItem.Label]$INFO[ListItem.Label2]</label>
+            </control>
+        </itemlayout>
+        <focusedlayout width="350" height="200">
+            <control type="group">
+                <animation effect="zoom" time="120" start="100" end="115" center="230,100" tween="Back" easing="Out">Focus</animation>
+                <control type="image">
+                    <top>40</top>
+                    <left>80</left>
+                    <height>200</height>
+                    <width>300</width>
+                    <texture>shadow.png</texture>
+                </control>
+                <control type="image">
+                    <left>80</left>
+                    <width>300</width>
+                    <height>200</height>
+                    <texture>$INFO[ListItem.Icon]</texture>
+                </control>
+                <control type="textbox" description="Label2">
+                    <left>80</left>
+                    <top>210</top>
+                    <height>81</height>
+                    <width>300</width>
+                    <font>size27</font>
+                    <scroll>false</scroll>
+                    <align>center</align>
+                    <textcolor>infos</textcolor>
+                    <label>$INFO[ListItem.Label]$INFO[ListItem.Label2]</label>
+                </control>
+            </control>
+        </focusedlayout>
+    </include>
 </includes>
