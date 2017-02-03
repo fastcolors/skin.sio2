@@ -159,6 +159,12 @@
             <size>142</size>
             <style>bold</style>
         </font>
+        <font>
+            <name>size212_fast</name>
+            <filename>fst.ttf</filename>
+            <size>120</size>
+            <style>italics</style>
+        </font>
          <font>
             <name>sizescroll</name>
             <filename>SanFranciscoHeavy.ttf</filename>

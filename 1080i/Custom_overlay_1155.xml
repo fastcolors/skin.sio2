@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1154">
+    <defaultcontrol>-</defaultcontrol>
+    <visible>Player.HasVideo</visible>
+    <controls>
+        <control type="image">
+            <left>60</left>
+            <top>30</top>
+            <width>375</width>
+            <height>150</height>
+            <texture>logo_fast_video.png</texture>
+            <colordiffuse>aaffffff</colordiffuse>
+            <aspectratio>keep</aspectratio>
+        </control>
+        <control type="image">
+            <top>20</top>
+            <right>60</right>
+            <width>375</width>
+            <height>150</height>
+            <aspectratio>keep</aspectratio>
+            <colordiffuse>99ffffff</colordiffuse>
+            <texture background="true">$INFO[Player.Art(clearlogo)]</texture>
+        </control>
+    </controls>
+</window>
