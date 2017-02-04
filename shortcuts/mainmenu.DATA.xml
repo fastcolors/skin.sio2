@@ -22,7 +22,7 @@
         <icon>-</icon>
         <label2>-</label2>
         <thumb>icons/music.png</thumb>
-        <action>ActivateWindow(Music,return)</action>
+        <action>ActivateWindow(Music,Musicdb://,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>addons</defaultID>
@@ -50,7 +50,7 @@
         <action>ActivateWindow(2)</action>
     </shortcut>
     <shortcut>
-        <defaultID>LiveTV</defaultID>
+        <defaultID>livetv</defaultID>
         <label>31059</label>
         <icon>-</icon>
         <label2>-</label2>
@@ -60,7 +60,7 @@
         <visible>!Pvr.IsRecording</visible>
     </shortcut>
     <shortcut>
-        <defaultID>LiveTV</defaultID>
+        <defaultID>livetv</defaultID>
         <label>$INFO[Pvr.NowRecordingTitle]</label>
         <icon>-</icon>
         <label2>-</label2>

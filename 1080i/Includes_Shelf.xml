@@ -298,26 +298,27 @@
         <control type="panel" id="311" description="Movies Shelf Shortcuts">
             <visible>$EXP[311visibility]</visible>
             <include>PosterShortcutsCommons</include>
-            <content target="videos">$VAR[shelf]</content>
+            <content target="$INFO[Container(9000).ListItem.Property(widgetTarget)]">$INFO[Container(9000).ListItem.Property(widgetPath)]</content>
         </control>
     </include>
     <include name="Music">
-        <control type="panel" id="312" description="TOP Shortcuts">
+        <control type="panel" id="312" description="Music Shelf Shortcuts">
             <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),music)</visible>
             <include>SquareShortcutsCommons</include>
             <onclick>PlayMedia($ESCINFO[ListItem.DBID,musicdb://albums/,/])</onclick>
-            <content target="music">$VAR[musicshelf]</content>
+            <content target="$INFO[Container(9000).ListItem.Property(widgetTarget)]">$INFO[Container(9000).ListItem.Property(widgetPath)]</content>
+
         </control>
     </include>
     <include name="Episodes">
         <control type="panel" id="313" description="Episodes Shelf Shortcuts">
             <visible>$EXP[313visibility]</visible>
             <include>EpisodeShortcutsCommons</include>
-            <content target="videos">$VAR[epshelf]</content>
+            <content target="$INFO[Container(9000).ListItem.Property(widgetTarget)]">$INFO[Container(9000).ListItem.Property(widgetPath)]</content>
         </control>
     </include>
     <include name="Addons">
-        <control type="panel" id="317" description="TOP Shortcuts">
+        <control type="panel" id="317" description="Addons Shelf Shortcuts">
             <visible>$EXP[317visibility]</visible>
             <include>SquareShortcutsCommons</include>
             <content target="programs">$VAR[squareshelf]</content>
@@ -325,14 +326,12 @@
     </include>
     <!--<include name="Addons_Shortcuts">-->
     <!--<control type="panel" id="315" description="TOP Shortcuts">-->
-    <!--<visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)</visible>-->
-    <!--<visible>Skin.HasSetting(AddonsShelf_Custom)</visible>-->
     <!--<onup>noop</onup>-->
     <!--<ondown>9000</ondown>-->
     <!--<onleft>315</onleft>-->
     <!--<onright>315</onright>-->
     <!--<include>SquareShortcutsCommons</include>-->
-    <!--<content><include>skinshortcuts-submenu</include></content>-->
+    <!--<content target="$INFO[Container(9000).ListItem.Property(widgetTarget)]">$INFO[Container(9000).ListItem.Property(widgetPath)]</content>-->
     <!--</control>-->
     <!--</include>-->
     <!--todo appstore shelf-->

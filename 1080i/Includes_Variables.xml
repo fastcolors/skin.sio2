@@ -75,34 +75,11 @@
         <value>$INFO[ListItem.Art(fanart)]</value>
     </variable>
 
-    <variable name="shelf">
+    <variable name="movieshelf">
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),WL)">special://skin/playlists/inprogress_movies.xsp</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),RND)">special://skin/playlists/random_movies.xsp</value>
-
-        <!--<value condition="Container(9000).HasFocus(357)">special://skin/playlists/3d.xsp</value>-->
-
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies) + String.IsEqual(Skin.String(theatersshelf),1)">plugin://script.extendedinfo?info=popularmovies&amp;&amp;limit=18</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies) + String.IsEqual(Skin.String(theatersshelf),2)">plugin://script.extendedinfo?info=upcomingmovies&amp;&amp;limit=18</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies)">plugin://script.extendedinfo?info=incinemamovies&amp;&amp;limit=18</value>
-
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies)">videodb://recentlyaddedmovies/</value>
-
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),LiveTV)">pvr://channels/tv/*</value>
-
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music)"> </value>
-
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)"> </value>
-
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),programs)"> </value>
-
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),pictures)"> </value>
-
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows)"> </value>
-
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),favourites)">favourites://</value>
-
-        <value condition="Container(9000).Row(0)">$INFO[Container(9000).ListItem.Property(list)]</value>
-    </variable>
+</variable>
 
     <variable name="epshelf">
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),1)">special://skin/playlists/random_episodes.xsp</value>
