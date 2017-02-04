@@ -339,10 +339,10 @@
         <control type="group">
             <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),programs)</visible>
             <!--<control type="image">-->
-                <!--<width>1920</width>-->
-                <!--<height>720</height>-->
-                <!--<aspectratio align="top">scale</aspectratio>-->
-                <!--<texture background="true">images/black.png</texture>-->
+            <!--<width>1920</width>-->
+            <!--<height>720</height>-->
+            <!--<aspectratio align="top">scale</aspectratio>-->
+            <!--<texture background="true">images/black.png</texture>-->
             <!--</control>-->
             <control type="panel" id="314" description="TOP Shortcuts">
                 <onup>noop</onup>
