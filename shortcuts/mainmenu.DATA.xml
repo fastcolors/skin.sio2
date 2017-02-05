@@ -9,7 +9,7 @@
         <action>ActivateWindow(Videos,videodb://movies/titles/,return)</action>
     </shortcut>
     <shortcut>
-        <defaultID>tvshows</defaultID>
+        <defaultID>episodes</defaultID>
         <label>20343</label>
         <icon>-</icon>
         <label2>-</label2>

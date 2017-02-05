@@ -2,7 +2,7 @@
 <includes>
     <include name="ShelfFade">
         <animation effect="fade" start="0" end="100" delay="200" time="300">Visible</animation>
-        <animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+        <animation effect="fade" start="100" end="0" time="150">Hidden</animation>
     </include>
     <include name="PosterShortcutsCommons">
         <include>ShelfFade</include>
@@ -255,7 +255,7 @@
                 <width>500</width>
                 <height>500</height>
                 <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                <aspectratio>keep</aspectratio>
+                <aspectratio>scale</aspectratio>
             </control>
         </itemlayout>
         <focusedlayout height="600" width="500">
@@ -277,7 +277,7 @@
                     <width>500</width>
                     <height>500</height>
                     <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                    <aspectratio>keep</aspectratio>
+                    <aspectratio>scale</aspectratio>
                 </control>
             </control>
             <control type="textbox">
@@ -307,12 +307,11 @@
             <include>SquareShortcutsCommons</include>
             <onclick>PlayMedia($ESCINFO[ListItem.DBID,musicdb://albums/,/])</onclick>
             <content target="$INFO[Container(9000).ListItem.Property(widgetTarget)]">$INFO[Container(9000).ListItem.Property(widgetPath)]</content>
-
         </control>
     </include>
     <include name="Episodes">
         <control type="panel" id="313" description="Episodes Shelf Shortcuts">
-            <visible>$EXP[313visibility]</visible>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),episodes)</visible>
             <include>EpisodeShortcutsCommons</include>
             <content target="$INFO[Container(9000).ListItem.Property(widgetTarget)]">$INFO[Container(9000).ListItem.Property(widgetPath)]</content>
         </control>
@@ -324,16 +323,17 @@
             <content target="programs">$VAR[squareshelf]</content>
         </control>
     </include>
-    <!--<include name="Addons_Shortcuts">-->
-    <!--<control type="panel" id="315" description="TOP Shortcuts">-->
-    <!--<onup>noop</onup>-->
-    <!--<ondown>9000</ondown>-->
-    <!--<onleft>315</onleft>-->
-    <!--<onright>315</onright>-->
-    <!--<include>SquareShortcutsCommons</include>-->
-    <!--<content target="$INFO[Container(9000).ListItem.Property(widgetTarget)]">$INFO[Container(9000).ListItem.Property(widgetPath)]</content>-->
-    <!--</control>-->
-    <!--</include>-->
+    <include name="general">
+        <control type="panel" id="320" description="TOP Shortcuts">
+            <visible>$EXP[320visibility]</visible>
+            <onup>noop</onup>
+            <ondown>9000</ondown>
+            <onleft>315</onleft>
+            <onright>315</onright>
+            <include>SquareShortcutsCommons</include>
+            <content>$INFO[Container(9000).ListItem.Property(list)]</content>
+        </control>
+    </include>
     <!--todo appstore shelf-->
     <include name="appstore_shelf">
         <control type="group">
@@ -350,7 +350,7 @@
                 <onleft>314</onleft>
                 <onright>314</onright>
                 <include>SquareShortcutsCommons</include>
-                <content>-</content>
+                <content></content>
             </control>
         </control>
     </include>

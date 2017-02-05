@@ -82,21 +82,19 @@
 </variable>
 
     <variable name="epshelf">
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),1)">special://skin/playlists/random_episodes.xsp</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),2)">plugin://service.library.data.provider?type=recommendedepisodes&limit=18&reload=$INFO[Window.Property(recommendedepisodes)]</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows)">videodb://recentlyaddedepisodes</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),episodes) + StringCompare(Skin.String(TVshelf),1)">special://skin/playlists/random_episodes.xsp</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),episodes) + StringCompare(Skin.String(TVshelf),2)">plugin://service.library.data.provider?type=recommendedepisodes&limit=18&reload=$INFO[Window.Property(recommendedepisodes)]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),episodes)">videodb://recentlyaddedepisodes</value>
     </variable>
 
     <variable name="musicshelf">
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + String.IsEqual(Skin.String(musicshelf),artists) + Library.HasContent(Music)">special://skin/playlists/random_albums.xsp</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + String.IsEqual(Skin.String(musicshelf),albums) + Library.HasContent(Music)">musicdb://recentlyplayedalbums/</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + Library.HasContent(Music)">musicdb://recentlyaddedalbums/</value>
-        <value> </value>
     </variable>
 
     <variable name="squareshelf">
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)">addons://recently_updated/</value>
-        <value> </value>
     </variable>
 
     <variable name="shelflabel">
@@ -109,9 +107,9 @@
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),RND)">$LOCALIZE[590]</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),)">$LOCALIZE[20386]</value>
         <!--TV-->
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),2)">$LOCALIZE[31048]</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows) + StringCompare(Skin.String(TVshelf),1)">$LOCALIZE[590]</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows)">$LOCALIZE[20387]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),episodes) + StringCompare(Skin.String(TVshelf),2)">$LOCALIZE[31048]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),episodes) + StringCompare(Skin.String(TVshelf),1)">$LOCALIZE[590]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),episodes)">$LOCALIZE[20387]</value>
         <!--MUSIC-->
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + Library.HasContent(Music) + StringCompare(Skin.String(musicshelf),albums)">$LOCALIZE[517]</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + Library.HasContent(Music) + StringCompare(Skin.String(musicshelf),artists)">$LOCALIZE[590]</value>
