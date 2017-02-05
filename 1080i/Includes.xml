@@ -472,7 +472,7 @@
             <itemgap>0</itemgap>
             <onleft>noop</onleft>
             <onright>noop</onright>
-            <onup>noop</onup>
+            <onup>100</onup>
             <ondown condition="Control.HasFocus(704)">9000</ondown>
             <ondown condition="Control.HasFocus(703)">10000</ondown>
             <ondown condition="Control.HasFocus(706)">8000</ondown>
