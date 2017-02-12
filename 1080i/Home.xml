@@ -3,7 +3,7 @@
     <backgroundcolor>background</backgroundcolor>
     <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;level=1)</onload>
+    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;level=0)</onload>
     <include>HomeOpenClose</include>
     <controls>
         <include>BlackBackground</include>
@@ -201,6 +201,8 @@
             <include>Music</include>
             <include>Addons</include>
             <include>Episodes</include>
+            <include>Favourites</include>
+            <include>Livetv</include>
             <include>appstore_shelf</include>
             <include>general</include>
             <include>weather_shelf</include>

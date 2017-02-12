@@ -30,7 +30,6 @@
         <icon>-</icon>
         <label2>-</label2>
         <thumb>icons/addons.png</thumb>
-        <!--<action>SetFocus(10030)</action>-->
         <action>ActivateWindow(1118)</action>
     </shortcut>
     <shortcut>
@@ -56,7 +55,7 @@
         <label2>-</label2>
         <thumb>icons/LiveTV.png</thumb>
         <!--<action>SetFocus(10040)</action>-->
-        <action>ActivateWindow(1718)</action>
+        <action>ActivateWindow(TVChannels)</action>
         <visible>!Pvr.IsRecording</visible>
     </shortcut>
     <shortcut>
