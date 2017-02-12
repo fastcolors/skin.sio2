@@ -24,7 +24,15 @@
                 <width>335</width>
                 <height>500</height>
                 <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image" description="WatchStatus">
+                <left>373</left>
+                <bottom>65</bottom>
+                <height>52</height>
+                <width>52</width>
                 <aspectratio>keep</aspectratio>
+                <texture>$VAR[WatchStatus]</texture>
             </control>
         </itemlayout>
         <focusedlayout height="600" width="392">
@@ -46,7 +54,15 @@
                     <width>335</width>
                     <height>500</height>
                     <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
+                    <aspectratio>scale</aspectratio>
+                </control>
+                <control type="image" description="WatchStatus">
+                    <left>373</left>
+                    <bottom>65</bottom>
+                    <height>52</height>
+                    <width>52</width>
                     <aspectratio>keep</aspectratio>
+                    <texture>$VAR[WatchStatus]</texture>
                 </control>
             </control>
             <control type="group" description="labels">
