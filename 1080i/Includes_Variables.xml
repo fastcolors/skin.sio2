@@ -144,6 +144,7 @@
     </variable>
 
     <variable name="locandine">
+        <value condition="Container.Content(episodes)">$INFO[ListItem.Art(thumb)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(season.poster))">$INFO[ListItem.Art(season.poster)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
         <value condition="Container.Content(studios)">resource://resource.images.studios.white/$INFO[ListItem.Label,,.png]</value>

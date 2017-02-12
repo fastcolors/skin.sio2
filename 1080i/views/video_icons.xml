@@ -127,10 +127,10 @@
                     <control type="image" description="WatchStatus">
                         <visible>![container.content(TVshows) | container.content(seasons)]</visible>
                         <visible>!ListItem.IsCollection</visible>
-                        <centerleft>192</centerleft>
-                        <top>457</top>
-                        <height>32</height>
-                        <width>300</width>
+                         <right>23</right>
+                            <bottom>15</bottom>
+                            <height>32</height>
+                            <width>32</width>
                         <aspectratio align="left">keep</aspectratio>
                         <texture>$VAR[WatchStatus]</texture>
                     </control>
@@ -212,10 +212,10 @@
                         <control type="image" description="WatchStatus">
                             <visible>![container.content(TVshows) | container.content(seasons)]</visible>
                             <visible>!ListItem.IsCollection</visible>
-                            <centerleft>192</centerleft>
-                            <top>457</top>
+                            <right>23</right>
+                            <bottom>15</bottom>
                             <height>32</height>
-                            <width>300</width>
+                            <width>32</width>
                             <aspectratio align="left">keep</aspectratio>
                             <texture>$VAR[WatchStatus]</texture>
                         </control>

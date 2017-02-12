@@ -60,8 +60,9 @@
                             <visible>container.content(episodes) + !ListItem.IsFolder</visible>
                             <left>45</left>
                             <align>left</align>
+                            <width>630</width>
                             <include>BigListDetails</include>
-                            <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]$INFO[ListItem.Premiered]</label>
+                            <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]$INFO[ListItem.Premiered, • $LOCALIZE[31039]]</label>
                         </control>
                     </itemlayout>
                     <focusedlayout width="802" height="111">
@@ -115,8 +116,9 @@
                                 <visible>container.content(episodes) + !ListItem.IsFolder</visible>
                                 <left>45</left>
                                 <align>left</align>
+                                <width>630</width>
                                 <include>BigListDetails</include>
-                                <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]$INFO[ListItem.Premiered]</label>
+                                <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]$INFO[ListItem.Premiered, • $LOCALIZE[31039]]</label>
                             </control>
                         </control>
                     </focusedlayout>

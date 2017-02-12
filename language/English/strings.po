@@ -122,6 +122,10 @@ msgctxt "#31038"
 msgid "min"
 msgstr "min"
 
+msgctxt "#31039"
+msgid "Premiered :"
+msgstr "Premiered :"
+
 msgctxt "#31040"
 msgid "Shelf items"
 msgstr "Shelf items"
