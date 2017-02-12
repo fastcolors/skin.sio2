@@ -1,0 +1,1964 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <include>WindowOpenClose</include>
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <controls>
+        <control type="group" id="100">
+            <control type="label" id="110">
+                <font>-</font>
+            </control>
+            <control type="label" id="120">
+                <font>-</font>
+            </control>
+            <control type="label" id="130">
+                <font>-</font>
+            </control>
+            <control type="label" id="140">
+                <font>-</font>
+            </control>
+            <control type="label" id="150">
+                <font>-</font>
+            </control>
+            <control type="label" id="160">
+                <font>-</font>
+            </control>
+            <control type="label" id="170">
+                <font>-</font>
+            </control>
+            <control type="label" id="180">
+                <font>-</font>
+            </control>
+            <control type="label" id="210">
+                <font>-</font>
+            </control>
+            <control type="label" id="220">
+                <font>-</font>
+            </control>
+            <control type="label" id="230">
+                <font>-</font>
+            </control>
+            <include>BlackBackground</include>
+            <control type="group">
+                <animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
+                <control type="label" id="190">
+                    <top>40</top>
+                    <width>380</width>
+                    <height>55</height>
+                    <aligny>center</aligny>
+                    <font>font13</font>
+                    <label></label>
+                </control>
+                <control type="label" id="191">
+                    <top>70</top>
+                    <width>380</width>
+                    <height>55</height>
+                    <aligny>center</aligny>
+                    <font>font13</font>
+                    <label></label>
+                </control>
+                <control type="button" id="198">
+                    <top>40</top>
+                    <width>462</width>
+                    <height>80</height>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>font14</font>
+                    <onup>9000</onup>
+                    <animation>Focus</animation>
+                    <animation>unFocus</animation>
+                    <ondown>9000</ondown>
+                    <onleft>101</onleft>
+                    <onright>101</onright>
+                </control>
+                <control type="group">
+                    <control type="panel" id="9000">
+                        <left>10</left>
+                        <top>140</top>
+                        <width>462</width>
+                        <height>840</height>
+                        <movement>6</movement>
+                        <onup>198</onup>
+                        <ondown>198</ondown>
+                        <onleft>101</onleft>
+                        <onright>101</onright>
+                        <scrolltime tween="cubic" easing="out">500</scrolltime>
+                        <itemlayout height="80" width="462">
+                            <control type="label">
+                                <left>104</left>
+                                <height>80</height>
+                                <width>560</width>
+                                <aligny>center</aligny>
+                                <textcolor>darktext</textcolor>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout height="80" width="462">
+                            <control type="group">
+                                <control type="image">
+                                    <width>462</width>
+                                    <height>80</height>
+                                    <texture border="8">images/White.png</texture>
+                                </control>
+                            </control>
+                            <control type="label">
+                                <left>104</left>
+                                <height>80</height>
+                                <width>560</width>
+                                <aligny>center</aligny>
+                                <textcolor>darktext</textcolor>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                        </focusedlayout>
+                        <content>
+                            <item id="1">
+                                <label>$LOCALIZE[342]</label>
+                                <label2>$LOCALIZE[283]$INFO[Control.GetLabel(110),: ]</label2>
+                                <thumb>globalsearch-icon-movies.png</thumb>
+                                <onclick>noop</onclick>
+                                <visible>Control.IsVisible(119)</visible>
+                            </item>
+                            <item id="2">
+                                <label>$LOCALIZE[20343]</label>
+                                <label2>$LOCALIZE[283]$INFO[Control.GetLabel(120),: ]</label2>
+                                <thumb>globalsearch-icon-tvshows.png</thumb>
+                                <onclick>noop</onclick>
+                                <visible>Control.IsVisible(129)</visible>
+                            </item>
+                            <item id="3">
+                                <label>$LOCALIZE[33054]</label>
+                                <label2>$LOCALIZE[283]$INFO[Control.GetLabel(130),: ]</label2>
+                                <thumb>globalsearch-icon-seasons.png</thumb>
+                                <onclick>noop</onclick>
+                                <visible>Control.IsVisible(139)</visible>
+                            </item>
+                            <item id="4">
+                                <label>$LOCALIZE[20360]</label>
+                                <label2>$LOCALIZE[283]$INFO[Control.GetLabel(140),: ]</label2>
+                                <thumb>globalsearch-icon-episodes.png</thumb>
+                                <onclick>noop</onclick>
+                                <visible>Control.IsVisible(149)</visible>
+                            </item>
+                            <item id="5">
+                                <label>$LOCALIZE[20389]</label>
+                                <label2>$LOCALIZE[283]$INFO[Control.GetLabel(150),: ]</label2>
+                                <thumb>globalsearch-icon-musicvideos.png</thumb>
+                                <onclick>noop</onclick>
+                                <visible>Control.IsVisible(159)</visible>
+                            </item>
+                            <item id="6">
+                                <label>$LOCALIZE[133]</label>
+                                <label2>$LOCALIZE[283]$INFO[Control.GetLabel(160),: ]</label2>
+                                <thumb>globalsearch-icon-artists.png</thumb>
+                                <onclick>noop</onclick>
+                                <visible>Control.IsVisible(169)</visible>
+                            </item>
+                            <item id="7">
+                                <label>$LOCALIZE[132]</label>
+                                <label2>$LOCALIZE[283]$INFO[Control.GetLabel(170),: ]</label2>
+                                <thumb>globalsearch-icon-albums.png</thumb>
+                                <onclick>noop</onclick>
+                                <visible>Control.IsVisible(179)</visible>
+                            </item>
+                            <item id="8">
+                                <label>$LOCALIZE[134]</label>
+                                <label2>$LOCALIZE[283]$INFO[Control.GetLabel(180),: ]</label2>
+                                <thumb>globalsearch-icon-songs.png</thumb>
+                                <onclick>noop</onclick>
+                                <visible>Control.IsVisible(189)</visible>
+                            </item>
+                            <item id="9">
+                                <label>$LOCALIZE[344]</label>
+                                <label2>$LOCALIZE[283]$INFO[Control.GetLabel(210),: ]</label2>
+                                <thumb>globalsearch-icon-actors.png</thumb>
+                                <onclick>noop</onclick>
+                                <visible>Control.IsVisible(219)</visible>
+                            </item>
+                            <item id="10">
+                                <label>$LOCALIZE[20348]</label>
+                                <label2>$LOCALIZE[283]$INFO[Control.GetLabel(230),: ]</label2>
+                                <thumb>globalsearch-icon-directors.png</thumb>
+                                <onclick>noop</onclick>
+                                <visible>Control.IsVisible(239)</visible>
+                            </item>
+                            <item id="11">
+                                <label>$LOCALIZE[19069]</label>
+                                <label2>$LOCALIZE[283]$INFO[Control.GetLabel(220),: ]</label2>
+                                <thumb>globalsearch-icon-livetv.png</thumb>
+                                <onclick>noop</onclick>
+                                <visible>Control.IsVisible(229)</visible>
+                            </item>
+                        </content>
+                    </control>
+                </control>
+                <control type="group" id="101">
+                    <left>460</left>
+                    <control type="group" id="119" description="movies">
+                        <control type="panel" id="111">
+                            <width>1500</width>
+                            <height>1080</height>
+                            <onleft>9000</onleft>
+                            <onright>531</onright>
+                            <onup>101</onup>
+                            <ondown>101</ondown>
+                            <viewtype label="31102">icon</viewtype>
+                            <preloaditems>4</preloaditems>
+                            <pagecontrol>531</pagecontrol>
+                            <scrolltime tween="cubic" easing="out">500</scrolltime>
+                            <animation effect="fade" time="200">VisibleChange</animation>
+                            <visible>Container(9000).HasFocus(1)</visible>
+                            <itemlayout height="500" width="360">
+                                <control type="image">
+                                    <top>65</top>
+                                    <centerleft>192</centerleft>
+                                    <width>290</width>
+                                    <height>420</height>
+                                    <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
+                                    <aspectratio>scale</aspectratio>
+                                </control>
+                                <control type="image" description="WatchStatus">
+                                    <right>23</right>
+                                    <bottom>15</bottom>
+                                    <height>52</height>
+                                    <width>52</width>
+                                    <aspectratio align="left">keep</aspectratio>
+                                    <texture>$VAR[WatchStatus]</texture>
+                                </control>
+                            </itemlayout>
+                            <focusedlayout height="500" width="360">
+                                <control type="group">
+                                    <animation effect="zoom" start="100" end="120" time="120" center="180,275" tween="Back" easing="Out">Focus</animation>
+                                    <animation effect="zoom" start="120" end="100" time="120" center="180,275">unFocus</animation>
+                                    <control type="image">
+                                        <animation effect="fade" start="0" end="100" time="150">Focus</animation>
+                                        <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
+                                        <visible>!ListItem.IsParentFolder</visible>
+                                        <top>50</top>
+                                        <centerleft>192</centerleft>
+                                        <width>380</width>
+                                        <height>450</height>
+                                        <texture>shadow.png</texture>
+                                    </control>
+                                    <control type="image">
+                                        <top>65</top>
+                                        <centerleft>192</centerleft>
+                                        <width>290</width>
+                                        <height>420</height>
+                                        <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
+                                        <aspectratio>scale</aspectratio>
+                                    </control>
+                                    <control type="image" description="WatchStatus">
+                                        <right>23</right>
+                                        <bottom>15</bottom>
+                                        <height>52</height>
+                                        <width>52</width>
+                                        <aspectratio align="left">keep</aspectratio>
+                                        <texture>$VAR[WatchStatus]</texture>
+                                    </control>
+                                </control>
+                            </focusedlayout>
+                        </control>
+                    </control>
+                    <control type="group" id="129" description="tvshows">
+                        <control type="panel" id="121">ì
+                            <width>1500</width>
+                            <height>1080</height>
+                            <onleft>9000</onleft>
+                            <onright>531</onright>
+                            <onup>noop</onup>
+                            <ondown>noop</ondown>
+                            <viewtype label="31102">icon</viewtype>
+                            <preloaditems>4</preloaditems>
+                            <pagecontrol>531</pagecontrol>
+                            <scrolltime tween="cubic" easing="out">500</scrolltime>
+                            <animation effect="fade" time="200">VisibleChange</animation>
+                            <visible>Container(9000).HasFocus(2)</visible>
+                            <itemlayout height="500" width="360">
+                                <control type="image">
+                                    <top>65</top>
+                                    <centerleft>192</centerleft>
+                                    <width>290</width>
+                                    <height>420</height>
+                                    <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
+                                    <aspectratio>scale</aspectratio>
+                                </control>
+                                <control type="image" description="WatchStatus">
+                                    <right>23</right>
+                                    <bottom>15</bottom>
+                                    <height>52</height>
+                                    <width>52</width>
+                                    <aspectratio align="left">keep</aspectratio>
+                                    <texture>$VAR[WatchStatus]</texture>
+                                </control>
+                            </itemlayout>
+                            <focusedlayout height="500" width="360">
+                                <control type="group">
+                                    <animation effect="zoom" start="100" end="120" time="120" center="180,275" tween="Back" easing="Out">Focus</animation>
+                                    <animation effect="zoom" start="120" end="100" time="120" center="180,275">unFocus</animation>
+                                    <control type="image">
+                                        <animation effect="fade" start="0" end="100" time="150">Focus</animation>
+                                        <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
+                                        <visible>!ListItem.IsParentFolder</visible>
+                                        <top>50</top>
+                                        <centerleft>192</centerleft>
+                                        <width>380</width>
+                                        <height>450</height>
+                                        <texture>shadow.png</texture>
+                                    </control>
+                                    <control type="image">
+                                        <top>65</top>
+                                        <centerleft>192</centerleft>
+                                        <width>290</width>
+                                        <height>420</height>
+                                        <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
+                                        <aspectratio>scale</aspectratio>
+                                    </control>
+                                    <control type="image" description="WatchStatus">
+                                        <right>23</right>
+                                        <bottom>15</bottom>
+                                        <height>52</height>
+                                        <width>52</width>
+                                        <aspectratio align="left">keep</aspectratio>
+                                        <texture>$VAR[WatchStatus]</texture>
+                                    </control>
+                                </control>
+                            </focusedlayout>
+                        </control>
+                    </control>
+                    <control type="group" id="139" description="">
+                        <control type="panel" id="131">
+                            <width>1500</width>
+                            <height>1080</height>
+                            <onleft>9000</onleft>
+                            <onright>531</onright>
+                            <onup>noop</onup>
+                            <ondown>noop</ondown>
+                            <viewtype label="31102">icon</viewtype>
+                            <preloaditems>4</preloaditems>
+                            <pagecontrol>531</pagecontrol>
+                            <scrolltime tween="cubic" easing="out">500</scrolltime>
+                            <animation effect="fade" time="200">VisibleChange</animation>
+                            <visible>Container(9000).HasFocus(3)</visible>
+                            <itemlayout height="500" width="360">
+                                <control type="image">
+                                    <top>65</top>
+                                    <centerleft>192</centerleft>
+                                    <width>290</width>
+                                    <height>420</height>
+                                    <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
+                                    <aspectratio>scale</aspectratio>
+                                </control>
+                                <control type="image" description="WatchStatus">
+                                    <right>23</right>
+                                    <bottom>15</bottom>
+                                    <height>52</height>
+                                    <width>52</width>
+                                    <aspectratio align="left">keep</aspectratio>
+                                    <texture>$VAR[WatchStatus]</texture>
+                                </control>
+                            </itemlayout>
+                            <focusedlayout height="500" width="360">
+                                <control type="group">
+                                    <animation effect="zoom" start="100" end="120" time="120" center="180,275" tween="Back" easing="Out">Focus</animation>
+                                    <animation effect="zoom" start="120" end="100" time="120" center="180,275">unFocus</animation>
+                                    <control type="image">
+                                        <animation effect="fade" start="0" end="100" time="150">Focus</animation>
+                                        <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
+                                        <visible>!ListItem.IsParentFolder</visible>
+                                        <top>50</top>
+                                        <centerleft>192</centerleft>
+                                        <width>380</width>
+                                        <height>450</height>
+                                        <texture>shadow.png</texture>
+                                    </control>
+                                    <control type="image">
+                                        <top>65</top>
+                                        <centerleft>192</centerleft>
+                                        <width>290</width>
+                                        <height>420</height>
+                                        <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
+                                        <aspectratio>scale</aspectratio>
+                                    </control>
+                                    <control type="image" description="WatchStatus">
+                                        <right>23</right>
+                                        <bottom>15</bottom>
+                                        <height>52</height>
+                                        <width>52</width>
+                                        <aspectratio align="left">keep</aspectratio>
+                                        <texture>$VAR[WatchStatus]</texture>
+                                    </control>
+                                </control>
+                            </focusedlayout>
+                        </control>
+                    </control>
+                    <control type="group" id="149" description="episodes">
+                        <control type="panel" id="141">
+                            <left>18</left>
+                            <top>0</top>
+                            <width>1500</width>
+                            <height>1080</height>
+                            <onleft>9000</onleft>
+                            <onright>531</onright>
+                            <onup>noop</onup>
+                            <ondown>noop</ondown>
+                            <viewtype label="31102">icon</viewtype>
+                            <preloaditems>4</preloaditems>
+                            <pagecontrol>531</pagecontrol>
+                            <scrolltime tween="cubic" easing="out">500</scrolltime>
+                            <animation effect="fade" time="200">VisibleChange</animation>
+                            <visible>Container(9000).HasFocus(4)</visible>
+                            <itemlayout height="375" width="454">
+                                <control type="image">
+                                    <centerleft>227</centerleft>
+                                    <top>44</top>
+                                    <width>410</width>
+                                    <height>280</height>
+                                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                                    <aspectratio>scale</aspectratio>
+                                </control>
+                                <control type="image" description="WatchStatus">
+                                    <left>18</left>
+                                    <top>296</top>
+                                    <height>32</height>
+                                    <width>60</width>
+                                    <aspectratio align="left">keep</aspectratio>
+                                    <texture>$VAR[WatchStatus]</texture>
+                                </control>
+                                <control type="textbox">
+                                    <centerleft>227</centerleft>
+                                    <top>325</top>
+                                    <width>410</width>
+                                    <height>90</height>
+                                    <align>center</align>
+                                    <font>size24</font>
+                                    <label>$INFO[ListItem.Property(TVShowTitle)][CR]$INFO[ListItem.Label]</label>
+                                </control>
+                            </itemlayout>
+                            <focusedlayout height="375" width="454">
+                                <control type="group">
+                                    <animation effect="zoom" start="100" end="110" time="124" center="auto" tween="Back" easing="Out">Focus</animation>
+                                    <animation effect="zoom" start="110" end="100" time="124" center="auto">unFocus</animation>
+                                    <control type="image">
+                                        <visible>!ListItem.IsParentFolder</visible>
+                                        <animation effect="fade" start="0" end="100" time="150">Focus</animation>
+                                        <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
+                                        <left>0</left>
+                                        <top>0</top>
+                                        <width>454</width>
+                                        <height>375</height>
+                                        <texture>shadow.png</texture>
+                                    </control>
+                                    <control type="image">
+                                        <centerleft>227</centerleft>
+                                        <top>44</top>
+                                        <width>410</width>
+                                        <height>280</height>
+                                        <texture background="true">$INFO[ListItem.Icon]</texture>
+                                        <aspectratio>scale</aspectratio>
+                                    </control>
+                                    <control type="image" description="WatchStatus">
+                                        <left>18</left>
+                                        <top>296</top>
+                                        <height>32</height>
+                                        <width>60</width>
+                                        <aspectratio align="left">keep</aspectratio>
+                                        <texture>$VAR[WatchStatus]</texture>
+                                    </control>
+                                    <control type="textbox">
+                                        <centerleft>227</centerleft>
+                                        <top>325</top>
+                                        <width>410</width>
+                                        <height>90</height>
+                                        <align>center</align>
+                                        <font>size24</font>
+                                        <label>$INFO[ListItem.Property(TVShowTitle)][CR]$INFO[ListItem.Label]</label>
+                                    </control>
+                                </control>
+                            </focusedlayout>
+                        </control>
+                    </control>
+                    <control type="group" id="159">
+                        <control type="panel" id="151">
+                            <left>18</left>
+                            <top>0</top>
+                            <width>1500</width>
+                            <height>720</height>
+                            <onleft>9000</onleft>
+                            <onright>531</onright>
+                            <onup>101</onup>
+                            <ondown>101</ondown>
+                            <viewtype label="31102">icon</viewtype>
+                            <preloaditems>4</preloaditems>
+                            <pagecontrol>531</pagecontrol>
+                            <scrolltime tween="cubic" easing="out">500</scrolltime>
+                            <animation effect="fade" time="200">VisibleChange</animation>
+                            <visible>Container(9000).HasFocus(5)</visible>
+                            <itemlayout height="360" width="470">
+                                <control type="image">
+                                    <left>1</left>
+                                    <top>10</top>
+                                    <width>380</width>
+                                    <height>250</height>
+                                    <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Icon]</texture>
+                                    <aspectratio>scale</aspectratio>
+                                    <bordertexture border="6">globalsearch-panel-shadow.png</bordertexture>
+                                    <bordersize>5</bordersize>
+                                </control>
+                                <control type="image">
+                                    <left>1</left>
+                                    <top>265</top>
+                                    <width>380</width>
+                                    <height>80</height>
+                                    <texture colordiffuse="B0FFFFFF">globalsearch-black.png</texture>
+                                    <bordertexture border="6">globalsearch-panel-shadow.png</bordertexture>
+                                    <bordersize>5</bordersize>
+                                </control>
+                                <control type="label">
+                                    <left>15</left>
+                                    <top>275</top>
+                                    <width>360</width>
+                                    <height>29</height>
+                                    <font>font10</font>
+                                    <align>center</align>
+                                    <aligny>center</aligny>
+                                    <selectedcolor>FFF0F0F0</selectedcolor>
+                                    <label>[B]$INFO[ListItem.Property(Artist)][/B]</label>
+                                </control>
+                                <control type="label">
+                                    <left>15</left>
+                                    <top>304</top>
+                                    <width>360</width>
+                                    <height>29</height>
+                                    <font>font10</font>
+                                    <align>center</align>
+                                    <aligny>center</aligny>
+                                    <selectedcolor>FFF0F0F0</selectedcolor>
+                                    <label>$INFO[ListItem.Label]</label>
+                                </control>
+                                <control type="group">
+                                    <left>170</left>
+                                    <top>20</top>
+                                    <visible>!IsEmpty(ListItem.Property(UserRating))</visible>
+                                    <control type="image">
+                                        <left>8</left>
+                                        <top>2</top>
+                                        <width>36</width>
+                                        <height>36</height>
+                                        <aspectratio>keep</aspectratio>
+                                        <texture colordiffuse="FF12B2E7">globalsearch-list-circle.png</texture>
+                                    </control>
+                                    <control type="label">
+                                        <top>6</top>
+                                        <align>center</align>
+                                        <width>50</width>
+                                        <height>32</height>
+                                        <textcolor>FFF0F0F0</textcolor>
+                                        <font>font10_title</font>
+                                        <label>$INFO[ListItem.Property(UserRating)]</label>
+                                    </control>
+                                </control>
+                            </itemlayout>
+                            <focusedlayout height="360" width="470">
+                                <control type="group">
+                                    <animation effect="slide" start="0,0" end="-40,0" time="300">Focus</animation>
+                                    <animation effect="slide" start="-40,0" end="0,0" time="125">UnFocus</animation>
+                                    <control type="image">
+                                        <left>1</left>
+                                        <top>10</top>
+                                        <width>380</width>
+                                        <height>250</height>
+                                        <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Icon]</texture>
+                                        <aspectratio>scale</aspectratio>
+                                        <bordertexture border="6">globalsearch-panel-shadow.png</bordertexture>
+                                        <bordersize>5</bordersize>
+                                    </control>
+                                    <control type="image">
+                                        <left>1</left>
+                                        <top>265</top>
+                                        <width>380</width>
+                                        <height>80</height>
+                                        <texture colordiffuse="B0FFFFFF">globalsearch-black.png</texture>
+                                        <bordertexture border="6">globalsearch-panel-shadow.png</bordertexture>
+                                        <bordersize>5</bordersize>
+                                    </control>
+                                    <control type="label">
+                                        <left>15</left>
+                                        <top>275</top>
+                                        <width>360</width>
+                                        <height>29</height>
+                                        <font>font10</font>
+                                        <align>center</align>
+                                        <aligny>center</aligny>
+                                        <selectedcolor>FFF0F0F0</selectedcolor>
+                                        <label>[B]$INFO[ListItem.Property(Artist)][/B]</label>
+                                    </control>
+                                    <control type="label">
+                                        <left>15</left>
+                                        <top>304</top>
+                                        <width>360</width>
+                                        <height>29</height>
+                                        <font>font10</font>
+                                        <align>center</align>
+                                        <aligny>center</aligny>
+                                        <selectedcolor>FFF0F0F0</selectedcolor>
+                                        <label>$INFO[ListItem.Label]</label>
+                                    </control>
+                                    <control type="group">
+                                        <left>170</left>
+                                        <top>20</top>
+                                        <visible>!IsEmpty(ListItem.Property(UserRating))</visible>
+                                        <control type="image">
+                                            <left>8</left>
+                                            <top>2</top>
+                                            <width>36</width>
+                                            <height>36</height>
+                                            <aspectratio>keep</aspectratio>
+                                            <texture colordiffuse="FF12B2E7">globalsearch-list-circle.png</texture>
+                                        </control>
+                                        <control type="label">
+                                            <top>6</top>
+                                            <align>center</align>
+                                            <width>50</width>
+                                            <height>32</height>
+                                            <textcolor>FFF0F0F0</textcolor>
+                                            <font>font10_title</font>
+                                            <label>$INFO[ListItem.Property(UserRating)]</label>
+                                        </control>
+                                    </control>
+                                    <control type="image">
+                                        <left>1</left>
+                                        <top>11</top>
+                                        <width>380</width>
+                                        <height>333</height>
+                                        <texture border="8" colordiffuse="FF12B2E7">globalsearch-thumbnail-focus.png</texture>
+                                    </control>
+                                </control>
+                                <control type="image">
+                                    <left>354</left>
+                                    <top>12</top>
+                                    <width>70</width>
+                                    <height>330</height>
+                                    <fadetime>300</fadetime>
+                                    <texture colordiffuse="FF12B2E7">globalsearch-white.png</texture>
+                                    <animation effect="zoom" start="0,100" end="100,100" time="250" center="auto">Focus</animation>
+                                    <animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50">UnFocus</animation>
+                                </control>
+                                <control type="group">
+                                    <top>12</top>
+                                    <left>354</left>
+                                    <animation effect="fade" start="0" end="100" time="200" delay="250">Focus</animation>
+                                    <animation effect="fade" start="100" end="0" time="50">UnFocus</animation>
+                                    <control type="group">
+                                        <top>20</top>
+                                        <control type="image">
+                                            <top>0</top>
+                                            <left>0</left>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <fadetime>300</fadetime>
+                                            <aspectratio align="center">keep</aspectratio>
+                                            <texture>globalsearch-list-rating.png</texture>
+                                        </control>
+                                        <control type="label">
+                                            <left>0</left>
+                                            <top>35</top>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <align>center</align>
+                                            <font>font_textbox</font>
+                                            <selectedcolor>FFF0F0F0</selectedcolor>
+                                            <label fallback="-">$INFO[ListItem.Property(Rating)]</label>
+                                        </control>
+                                    </control>
+                                    <control type="group">
+                                        <top>140</top>
+                                        <control type="image">
+                                            <top>0</top>
+                                            <left>0</left>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <fadetime>300</fadetime>
+                                            <aspectratio align="center">keep</aspectratio>
+                                            <texture>globalsearch-list-year.png</texture>
+                                        </control>
+                                        <control type="label">
+                                            <left>0</left>
+                                            <top>35</top>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <align>center</align>
+                                            <font>font_textbox</font>
+                                            <selectedcolor>FFF0F0F0</selectedcolor>
+                                            <label fallback="-">$INFO[ListItem.Property(Year)]</label>
+                                        </control>
+                                    </control>
+                                    <control type="group">
+                                        <top>260</top>
+                                        <control type="image">
+                                            <left>11</left>
+                                            <top>0</top>
+                                            <width>48</width>
+                                            <height>48</height>
+                                            <texture>globalsearch-list-watched.png</texture>
+                                            <visible>IntegerGreaterThan(ListItem.Property(Playcount),0)</visible>
+                                        </control>
+                                        <control type="image">
+                                            <left>11</left>
+                                            <top>0</top>
+                                            <width>48</width>
+                                            <height>48</height>
+                                            <texture>globalsearch-list-unwatched.png</texture>
+                                            <visible>!IntegerGreaterThan(ListItem.Property(Playcount),0)</visible>
+                                        </control>
+                                    </control>
+                                </control>
+                            </focusedlayout>
+                        </control>
+                    </control>
+                    <control type="group" id="169" description="artists">
+                        <control type="panel" id="161">
+                            <left>0</left>
+                            <top>22</top>
+                            <width>1500</width>
+                            <height>720</height>
+                            <onleft>9000</onleft>
+                            <onright>531</onright>
+                            <onup>101</onup>
+                            <ondown>101</ondown>
+                            <viewtype label="31102">icon</viewtype>
+                            <preloaditems>4</preloaditems>
+                            <pagecontrol>531</pagecontrol>
+                            <scrolltime tween="cubic" easing="out">500</scrolltime>
+                            <animation effect="fade" time="200">VisibleChange</animation>
+                            <visible>Container(9000).HasFocus(6)</visible>
+                            <itemlayout height="360" width="350">
+                                <control type="image">
+                                    <left>1</left>
+                                    <top>10</top>
+                                    <width>300</width>
+                                    <height>300</height>
+                                    <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Icon]</texture>
+                                    <aspectratio>scale</aspectratio>
+                                    <bordertexture border="6">globalsearch-panel-shadow.png</bordertexture>
+                                    <bordersize>5</bordersize>
+                                </control>
+                                <control type="image">
+                                    <left>1</left>
+                                    <top>235</top>
+                                    <width>300</width>
+                                    <height>75</height>
+                                    <texture colordiffuse="B0FFFFFF">globalsearch-black.png</texture>
+                                    <bordertexture border="6">globalsearch-panel-shadow.png</bordertexture>
+                                    <bordersize>5</bordersize>
+                                </control>
+                                <control type="textbox">
+                                    <left>15</left>
+                                    <top>235</top>
+                                    <width>270</width>
+                                    <height>70</height>
+                                    <font>font10</font>
+                                    <align>center</align>
+                                    <aligny>center</aligny>
+                                    <selectedcolor>FFF0F0F0</selectedcolor>
+                                    <label>$INFO[ListItem.Label]</label>
+                                </control>
+                                <control type="group">
+                                    <left>250</left>
+                                    <top>20</top>
+                                    <visible>!IsEmpty(ListItem.Property(UserRating))</visible>
+                                    <control type="image">
+                                        <left>8</left>
+                                        <top>2</top>
+                                        <width>36</width>
+                                        <height>36</height>
+                                        <aspectratio>keep</aspectratio>
+                                        <texture colordiffuse="FF12B2E7">globalsearch-list-circle.png</texture>
+                                    </control>
+                                    <control type="label">
+                                        <top>6</top>
+                                        <align>center</align>
+                                        <width>50</width>
+                                        <height>32</height>
+                                        <textcolor>FFF0F0F0</textcolor>
+                                        <font>font10_title</font>
+                                        <label>$INFO[ListItem.Property(UserRating)]</label>
+                                    </control>
+                                </control>
+                            </itemlayout>
+                            <focusedlayout height="360" width="350">
+                                <control type="group">
+                                    <animation effect="slide" start="0,0" end="-40,0" time="300">Focus</animation>
+                                    <animation effect="slide" start="-40,0" end="0,0" time="125">UnFocus</animation>
+                                    <control type="image">
+                                        <left>1</left>
+                                        <top>10</top>
+                                        <width>300</width>
+                                        <height>300</height>
+                                        <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Icon]</texture>
+                                        <aspectratio>scale</aspectratio>
+                                        <bordertexture border="6">globalsearch-panel-shadow.png</bordertexture>
+                                        <bordersize>5</bordersize>
+                                    </control>
+                                    <control type="image">
+                                        <left>1</left>
+                                        <top>235</top>
+                                        <width>300</width>
+                                        <height>75</height>
+                                        <texture colordiffuse="B0FFFFFF">globalsearch-black.png</texture>
+                                        <bordertexture border="6">globalsearch-panel-shadow.png</bordertexture>
+                                        <bordersize>5</bordersize>
+                                    </control>
+                                    <control type="textbox">
+                                        <left>15</left>
+                                        <top>235</top>
+                                        <width>270</width>
+                                        <height>70</height>
+                                        <font>font10</font>
+                                        <align>center</align>
+                                        <aligny>center</aligny>
+                                        <selectedcolor>FFF0F0F0</selectedcolor>
+                                        <label>$INFO[ListItem.Label]</label>
+                                    </control>
+                                    <control type="group">
+                                        <left>250</left>
+                                        <top>20</top>
+                                        <visible>!IsEmpty(ListItem.Property(UserRating))</visible>
+                                        <control type="image">
+                                            <left>8</left>
+                                            <top>2</top>
+                                            <width>36</width>
+                                            <height>36</height>
+                                            <aspectratio>keep</aspectratio>
+                                            <texture colordiffuse="FF12B2E7">globalsearch-list-circle.png</texture>
+                                        </control>
+                                        <control type="label">
+                                            <top>6</top>
+                                            <align>center</align>
+                                            <width>50</width>
+                                            <height>32</height>
+                                            <textcolor>FFF0F0F0</textcolor>
+                                            <font>font10_title</font>
+                                            <label>$INFO[ListItem.Property(UserRating)]</label>
+                                        </control>
+                                    </control>
+                                    <control type="image">
+                                        <left>1</left>
+                                        <top>11</top>
+                                        <width>300</width>
+                                        <height>300</height>
+                                        <texture border="8" colordiffuse="FF12B2E7">globalsearch-thumbnail-focus.png</texture>
+                                    </control>
+                                </control>
+                                <control type="image">
+                                    <left>268</left>
+                                    <top>12</top>
+                                    <width>70</width>
+                                    <height>300</height>
+                                    <fadetime>300</fadetime>
+                                    <texture colordiffuse="FF12B2E7">globalsearch-white.png</texture>
+                                    <animation effect="zoom" start="0,100" end="100,100" time="250" center="auto">Focus</animation>
+                                    <animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50">UnFocus</animation>
+                                </control>
+                                <control type="group">
+                                    <top>12</top>
+                                    <left>268</left>
+                                    <animation effect="fade" start="0" end="100" time="200" delay="250">Focus</animation>
+                                    <animation effect="fade" start="100" end="0" time="50">UnFocus</animation>
+                                    <control type="group">
+                                        <top>20</top>
+                                        <control type="image">
+                                            <top>0</top>
+                                            <left>0</left>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <fadetime>300</fadetime>
+                                            <aspectratio align="center">keep</aspectratio>
+                                            <texture>globalsearch-list-formed.png</texture>
+                                        </control>
+                                        <control type="textbox">
+                                            <left>0</left>
+                                            <top>35</top>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <align>center</align>
+                                            <font>font_textbox</font>
+                                            <selectedcolor>FFF0F0F0</selectedcolor>
+                                            <label fallback="-">$INFO[ListItem.Property(Artist_Formed)]</label>
+                                        </control>
+                                    </control>
+                                    <control type="group">
+                                        <top>140</top>
+                                        <control type="image">
+                                            <top>0</top>
+                                            <left>0</left>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <fadetime>300</fadetime>
+                                            <aspectratio align="center">keep</aspectratio>
+                                            <texture>globalsearch-list-disbanded.png</texture>
+                                        </control>
+                                        <control type="textbox">
+                                            <left>0</left>
+                                            <top>35</top>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <align>center</align>
+                                            <font>font_textbox</font>
+                                            <selectedcolor>FFF0F0F0</selectedcolor>
+                                            <label fallback="-">$INFO[ListItem.Property(Artist_Disbanded)]</label>
+                                        </control>
+                                    </control>
+                                </control>
+                            </focusedlayout>
+                        </control>
+                    </control>
+                    <control type="group" id="179" description="albums">
+                        <control type="panel" id="171">
+                            <left>0</left>
+                            <top>22</top>
+                            <width>1500</width>
+                            <height>720</height>
+                            <onleft>9000</onleft>
+                            <onright>531</onright>
+                            <onup>101</onup>
+                            <ondown>101</ondown>
+                            <viewtype label="31102">icon</viewtype>
+                            <preloaditems>4</preloaditems>
+                            <pagecontrol>531</pagecontrol>
+                            <scrolltime tween="cubic" easing="out">500</scrolltime>
+                            <animation effect="fade" time="200">VisibleChange</animation>
+                            <visible>Container(9000).HasFocus(7)</visible>
+                            <itemlayout height="360" width="350">
+                                <control type="image">
+                                    <left>1</left>
+                                    <top>10</top>
+                                    <width>300</width>
+                                    <height>300</height>
+                                    <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Icon]</texture>
+                                    <aspectratio>scale</aspectratio>
+                                    <bordertexture border="6">globalsearch-panel-shadow.png</bordertexture>
+                                    <bordersize>5</bordersize>
+                                </control>
+                                <control type="image">
+                                    <left>1</left>
+                                    <top>235</top>
+                                    <width>300</width>
+                                    <height>75</height>
+                                    <texture colordiffuse="B0FFFFFF">globalsearch-black.png</texture>
+                                    <bordertexture border="6">globalsearch-panel-shadow.png</bordertexture>
+                                    <bordersize>5</bordersize>
+                                </control>
+                                <control type="label">
+                                    <left>15</left>
+                                    <top>250</top>
+                                    <width>270</width>
+                                    <height>29</height>
+                                    <font>font10</font>
+                                    <align>center</align>
+                                    <aligny>center</aligny>
+                                    <selectedcolor>FFF0F0F0</selectedcolor>
+                                    <label>[B]$INFO[ListItem.Property(Artist)][/B]</label>
+                                </control>
+                                <control type="label">
+                                    <left>15</left>
+                                    <top>276</top>
+                                    <width>280</width>
+                                    <height>29</height>
+                                    <font>font10</font>
+                                    <align>center</align>
+                                    <aligny>center</aligny>
+                                    <selectedcolor>FFF0F0F0</selectedcolor>
+                                    <label>$INFO[ListItem.Label]</label>
+                                </control>
+                                <control type="group">
+                                    <left>250</left>
+                                    <top>20</top>
+                                    <visible>!IsEmpty(ListItem.Property(UserRating))</visible>
+                                    <control type="image">
+                                        <left>8</left>
+                                        <top>2</top>
+                                        <width>36</width>
+                                        <height>36</height>
+                                        <aspectratio>keep</aspectratio>
+                                        <texture colordiffuse="FF12B2E7">globalsearch-list-circle.png</texture>
+                                    </control>
+                                    <control type="label">
+                                        <top>6</top>
+                                        <align>center</align>
+                                        <width>50</width>
+                                        <height>32</height>
+                                        <textcolor>FFF0F0F0</textcolor>
+                                        <font>font10_title</font>
+                                        <label>$INFO[ListItem.Property(UserRating)]</label>
+                                    </control>
+                                </control>
+                            </itemlayout>
+                            <focusedlayout height="360" width="350">
+                                <control type="group">
+                                    <animation effect="slide" start="0,0" end="-40,0" time="300">Focus</animation>
+                                    <animation effect="slide" start="-40,0" end="0,0" time="125">UnFocus</animation>
+                                    <control type="image">
+                                        <left>1</left>
+                                        <top>10</top>
+                                        <width>300</width>
+                                        <height>300</height>
+                                        <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Icon]</texture>
+                                        <aspectratio>scale</aspectratio>
+                                        <bordertexture border="6">globalsearch-panel-shadow.png</bordertexture>
+                                        <bordersize>5</bordersize>
+                                    </control>
+                                    <control type="image">
+                                        <left>1</left>
+                                        <top>235</top>
+                                        <width>300</width>
+                                        <height>75</height>
+                                        <texture colordiffuse="B0FFFFFF">globalsearch-black.png</texture>
+                                        <bordertexture border="6">globalsearch-panel-shadow.png</bordertexture>
+                                        <bordersize>5</bordersize>
+                                    </control>
+                                    <control type="label">
+                                        <left>15</left>
+                                        <top>250</top>
+                                        <width>270</width>
+                                        <height>29</height>
+                                        <font>font10</font>
+                                        <align>center</align>
+                                        <aligny>center</aligny>
+                                        <selectedcolor>FFF0F0F0</selectedcolor>
+                                        <label>[B]$INFO[ListItem.Property(Artist)][/B]</label>
+                                    </control>
+                                    <control type="label">
+                                        <left>15</left>
+                                        <top>276</top>
+                                        <width>280</width>
+                                        <height>29</height>
+                                        <font>font10</font>
+                                        <align>center</align>
+                                        <aligny>center</aligny>
+                                        <selectedcolor>FFF0F0F0</selectedcolor>
+                                        <label>$INFO[ListItem.Label]</label>
+                                    </control>
+                                    <control type="group">
+                                        <left>250</left>
+                                        <top>20</top>
+                                        <visible>!IsEmpty(ListItem.Property(UserRating))</visible>
+                                        <control type="image">
+                                            <left>8</left>
+                                            <top>2</top>
+                                            <width>36</width>
+                                            <height>36</height>
+                                            <aspectratio>keep</aspectratio>
+                                            <texture colordiffuse="FF12B2E7">globalsearch-list-circle.png</texture>
+                                        </control>
+                                        <control type="label">
+                                            <top>6</top>
+                                            <align>center</align>
+                                            <width>50</width>
+                                            <height>32</height>
+                                            <textcolor>FFF0F0F0</textcolor>
+                                            <font>font10_title</font>
+                                            <label>$INFO[ListItem.Property(UserRating)]</label>
+                                        </control>
+                                    </control>
+                                    <control type="image">
+                                        <left>1</left>
+                                        <top>11</top>
+                                        <width>300</width>
+                                        <height>300</height>
+                                        <texture border="8" colordiffuse="FF12B2E7">globalsearch-thumbnail-focus.png</texture>
+                                    </control>
+                                </control>
+                                <control type="image">
+                                    <left>268</left>
+                                    <top>12</top>
+                                    <width>70</width>
+                                    <height>300</height>
+                                    <fadetime>300</fadetime>
+                                    <texture colordiffuse="FF12B2E7">globalsearch-white.png</texture>
+                                    <animation effect="zoom" start="0,100" end="100,100" time="250" center="auto">Focus</animation>
+                                    <animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50">UnFocus</animation>
+                                </control>
+                                <control type="group">
+                                    <top>12</top>
+                                    <left>268</left>
+                                    <animation effect="fade" start="0" end="100" time="200" delay="250">Focus</animation>
+                                    <animation effect="fade" start="100" end="0" time="50">UnFocus</animation>
+                                    <control type="group">
+                                        <top>20</top>
+                                        <control type="image">
+                                            <top>0</top>
+                                            <left>0</left>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <fadetime>300</fadetime>
+                                            <aspectratio align="center">keep</aspectratio>
+                                            <texture>globalsearch-list-rating.png</texture>
+                                        </control>
+                                        <control type="label">
+                                            <left>0</left>
+                                            <top>35</top>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <align>center</align>
+                                            <font>font_textbox</font>
+                                            <selectedcolor>FFF0F0F0</selectedcolor>
+                                            <label fallback="-">$INFO[ListItem.Property(Album_Rating)]</label>
+                                        </control>
+                                    </control>
+                                    <control type="group">
+                                        <top>140</top>
+                                        <control type="image">
+                                            <top>0</top>
+                                            <left>0</left>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <fadetime>300</fadetime>
+                                            <aspectratio align="center">keep</aspectratio>
+                                            <texture>globalsearch-list-year.png</texture>
+                                        </control>
+                                        <control type="label">
+                                            <left>0</left>
+                                            <top>35</top>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <align>center</align>
+                                            <font>font_textbox</font>
+                                            <selectedcolor>FFF0F0F0</selectedcolor>
+                                            <label fallback="-">$INFO[ListItem.Property(Year)]</label>
+                                        </control>
+                                    </control>
+                                </control>
+                            </focusedlayout>
+                        </control>
+                    </control>
+                    <control type="group" id="189" description="songs">
+                        <control type="panel" id="181">
+                            <left>0</left>
+                            <top>22</top>
+                            <width>1500</width>
+                            <height>720</height>
+                            <onleft>9000</onleft>
+                            <onright>531</onright>
+                            <onup>101</onup>
+                            <ondown>101</ondown>
+                            <viewtype label="31102">icon</viewtype>
+                            <preloaditems>4</preloaditems>
+                            <pagecontrol>531</pagecontrol>
+                            <scrolltime tween="cubic" easing="out">500</scrolltime>
+                            <animation effect="fade" time="200">VisibleChange</animation>
+                            <visible>Container(9000).HasFocus(8)</visible>
+                            <itemlayout height="360" width="350">
+                                <control type="image">
+                                    <left>1</left>
+                                    <top>10</top>
+                                    <width>300</width>
+                                    <height>300</height>
+                                    <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Icon]</texture>
+                                    <aspectratio>scale</aspectratio>
+                                    <bordertexture border="6">globalsearch-panel-shadow.png</bordertexture>
+                                    <bordersize>5</bordersize>
+                                </control>
+                                <control type="image">
+                                    <left>1</left>
+                                    <top>235</top>
+                                    <width>300</width>
+                                    <height>75</height>
+                                    <texture colordiffuse="B0FFFFFF">globalsearch-black.png</texture>
+                                    <bordertexture border="6">globalsearch-panel-shadow.png</bordertexture>
+                                    <bordersize>5</bordersize>
+                                </control>
+                                <control type="label">
+                                    <left>15</left>
+                                    <top>250</top>
+                                    <width>270</width>
+                                    <height>29</height>
+                                    <font>font10</font>
+                                    <align>center</align>
+                                    <aligny>center</aligny>
+                                    <selectedcolor>FFF0F0F0</selectedcolor>
+                                    <label>[B]$INFO[ListItem.Property(Artist)][/B]</label>
+                                </control>
+                                <control type="label">
+                                    <left>15</left>
+                                    <top>276</top>
+                                    <width>280</width>
+                                    <height>29</height>
+                                    <font>font10</font>
+                                    <align>center</align>
+                                    <aligny>center</aligny>
+                                    <selectedcolor>FFF0F0F0</selectedcolor>
+                                    <label>$INFO[ListItem.Label]</label>
+                                </control>
+                                <control type="group">
+                                    <left>250</left>
+                                    <top>20</top>
+                                    <visible>!IsEmpty(ListItem.Property(UserRating))</visible>
+                                    <control type="image">
+                                        <left>8</left>
+                                        <top>2</top>
+                                        <width>36</width>
+                                        <height>36</height>
+                                        <aspectratio>keep</aspectratio>
+                                        <texture colordiffuse="FF12B2E7">globalsearch-list-circle.png</texture>
+                                    </control>
+                                    <control type="label">
+                                        <top>6</top>
+                                        <align>center</align>
+                                        <width>50</width>
+                                        <height>32</height>
+                                        <textcolor>FFF0F0F0</textcolor>
+                                        <font>font10_title</font>
+                                        <label>$INFO[ListItem.Property(UserRating)]</label>
+                                    </control>
+                                </control>
+                            </itemlayout>
+                            <focusedlayout height="360" width="350">
+                                <control type="group">
+                                    <animation effect="slide" start="0,0" end="-40,0" time="300">Focus</animation>
+                                    <animation effect="slide" start="-40,0" end="0,0" time="125">UnFocus</animation>
+                                    <control type="image">
+                                        <left>1</left>
+                                        <top>10</top>
+                                        <width>300</width>
+                                        <height>300</height>
+                                        <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Icon]</texture>
+                                        <aspectratio>scale</aspectratio>
+                                        <bordertexture border="6">globalsearch-panel-shadow.png</bordertexture>
+                                        <bordersize>5</bordersize>
+                                    </control>
+                                    <control type="image">
+                                        <left>1</left>
+                                        <top>235</top>
+                                        <width>300</width>
+                                        <height>75</height>
+                                        <texture colordiffuse="B0FFFFFF">globalsearch-black.png</texture>
+                                        <bordertexture border="6">globalsearch-panel-shadow.png</bordertexture>
+                                        <bordersize>5</bordersize>
+                                    </control>
+                                    <control type="label">
+                                        <left>15</left>
+                                        <top>250</top>
+                                        <width>270</width>
+                                        <height>29</height>
+                                        <font>font10</font>
+                                        <align>center</align>
+                                        <aligny>center</aligny>
+                                        <selectedcolor>FFF0F0F0</selectedcolor>
+                                        <label>[B]$INFO[ListItem.Property(Artist)][/B]</label>
+                                    </control>
+                                    <control type="label">
+                                        <left>15</left>
+                                        <top>276</top>
+                                        <width>280</width>
+                                        <height>29</height>
+                                        <font>font10</font>
+                                        <align>center</align>
+                                        <aligny>center</aligny>
+                                        <selectedcolor>FFF0F0F0</selectedcolor>
+                                        <label>$INFO[ListItem.Label]</label>
+                                    </control>
+                                    <control type="group">
+                                        <left>250</left>
+                                        <top>20</top>
+                                        <visible>!IsEmpty(ListItem.Property(UserRating))</visible>
+                                        <control type="image">
+                                            <left>8</left>
+                                            <top>2</top>
+                                            <width>36</width>
+                                            <height>36</height>
+                                            <aspectratio>keep</aspectratio>
+                                            <texture colordiffuse="FF12B2E7">globalsearch-list-circle.png</texture>
+                                        </control>
+                                        <control type="label">
+                                            <top>6</top>
+                                            <align>center</align>
+                                            <width>50</width>
+                                            <height>32</height>
+                                            <textcolor>FFF0F0F0</textcolor>
+                                            <font>font10_title</font>
+                                            <label>$INFO[ListItem.Property(UserRating)]</label>
+                                        </control>
+                                    </control>
+                                    <control type="image">
+                                        <left>1</left>
+                                        <top>11</top>
+                                        <width>300</width>
+                                        <height>300</height>
+                                        <texture border="8" colordiffuse="FF12B2E7">globalsearch-thumbnail-focus.png</texture>
+                                    </control>
+                                </control>
+                                <control type="image">
+                                    <left>268</left>
+                                    <top>12</top>
+                                    <width>70</width>
+                                    <height>300</height>
+                                    <fadetime>300</fadetime>
+                                    <texture colordiffuse="FF12B2E7">globalsearch-white.png</texture>
+                                    <animation effect="zoom" start="0,100" end="100,100" time="250" center="auto">Focus</animation>
+                                    <animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50">UnFocus</animation>
+                                </control>
+                                <control type="group">
+                                    <top>12</top>
+                                    <left>268</left>
+                                    <animation effect="fade" start="0" end="100" time="200" delay="250">Focus</animation>
+                                    <animation effect="fade" start="100" end="0" time="50">UnFocus</animation>
+                                    <control type="group">
+                                        <top>20</top>
+                                        <control type="image">
+                                            <top>0</top>
+                                            <left>0</left>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <fadetime>300</fadetime>
+                                            <aspectratio align="center">keep</aspectratio>
+                                            <texture>globalsearch-list-rating.png</texture>
+                                        </control>
+                                        <control type="label">
+                                            <left>0</left>
+                                            <top>35</top>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <align>center</align>
+                                            <font>font_textbox</font>
+                                            <selectedcolor>FFF0F0F0</selectedcolor>
+                                            <label fallback="-">$INFO[ListItem.Property(Rating)]</label>
+                                        </control>
+                                    </control>
+                                    <control type="group">
+                                        <top>140</top>
+                                        <control type="image">
+                                            <top>0</top>
+                                            <left>0</left>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <fadetime>300</fadetime>
+                                            <aspectratio align="center">keep</aspectratio>
+                                            <texture>globalsearch-list-year.png</texture>
+                                        </control>
+                                        <control type="label">
+                                            <left>0</left>
+                                            <top>35</top>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <align>center</align>
+                                            <font>font_textbox</font>
+                                            <selectedcolor>FFF0F0F0</selectedcolor>
+                                            <label fallback="-">$INFO[ListItem.Property(Year)]</label>
+                                        </control>
+                                    </control>
+                                    <control type="group">
+                                        <top>240</top>
+                                        <control type="image">
+                                            <left>11</left>
+                                            <top>0</top>
+                                            <width>48</width>
+                                            <height>48</height>
+                                            <texture>globalsearch-list-watched.png</texture>
+                                            <visible>IntegerGreaterThan(ListItem.Property(Playcount),0)</visible>
+                                        </control>
+                                        <control type="image">
+                                            <left>11</left>
+                                            <top>0</top>
+                                            <width>48</width>
+                                            <height>48</height>
+                                            <texture>globalsearch-list-unwatched.png</texture>
+                                            <visible>!IntegerGreaterThan(ListItem.Property(Playcount),0)</visible>
+                                        </control>
+                                    </control>
+                                </control>
+                            </focusedlayout>
+                        </control>
+                    </control>
+                    <control type="group" id="219">
+                        <control type="panel" id="211">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>1500</width>
+                            <height>720</height>
+                            <onleft>9000</onleft>
+                            <onright>531</onright>
+                            <onup>101</onup>
+                            <ondown>101</ondown>
+                            <viewtype label="31102">icon</viewtype>
+                            <preloaditems>4</preloaditems>
+                            <pagecontrol>531</pagecontrol>
+                            <scrolltime tween="cubic" easing="out">500</scrolltime>
+                            <animation effect="fade" time="200">VisibleChange</animation>
+                            <visible>Container(9000).HasFocus(9)</visible>
+                            <itemlayout height="360" width="285">
+                                <control type="image">
+                                    <left>0</left>
+                                    <top>-1</top>
+                                    <width>256</width>
+                                    <height>362</height>
+                                    <texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Icon]</texture>
+                                    <bordertexture border="20">globalsearch-shadow.png</bordertexture>
+                                    <bordersize>20</bordersize>
+                                    <animation effect="slide" end="-15,0" time="0" condition="true">Conditional</animation>
+                                </control>
+                                <control type="image">
+                                    <left>5</left>
+                                    <top>275</top>
+                                    <width>216</width>
+                                    <height>66</height>
+                                    <texture colordiffuse="B0FFFFFF">globalsearch-black.png</texture>
+                                </control>
+                                <control type="textbox">
+                                    <left>15</left>
+                                    <top>270</top>
+                                    <width>192</width>
+                                    <height>70</height>
+                                    <font>font10</font>
+                                    <align>center</align>
+                                    <aligny>center</aligny>
+                                    <label>$INFO[ListItem.Label]</label>
+                                </control>
+                                <control type="group">
+                                    <left>170</left>
+                                    <top>20</top>
+                                    <visible>!IsEmpty(ListItem.Property(UserRating))</visible>
+                                    <control type="image">
+                                        <left>8</left>
+                                        <top>2</top>
+                                        <width>36</width>
+                                        <height>36</height>
+                                        <aspectratio>keep</aspectratio>
+                                        <texture colordiffuse="FF12B2E7">globalsearch-list-circle.png</texture>
+                                    </control>
+                                    <control type="label">
+                                        <top>6</top>
+                                        <align>center</align>
+                                        <width>50</width>
+                                        <height>32</height>
+                                        <textcolor>FFF0F0F0</textcolor>
+                                        <font>font10_title</font>
+                                        <label>$INFO[ListItem.Property(UserRating)]</label>
+                                    </control>
+                                </control>
+                            </itemlayout>
+                            <focusedlayout height="360" width="285">
+                                <control type="group">
+                                    <animation effect="slide" start="0,0" end="-40,0" time="300">Focus</animation>
+                                    <animation effect="slide" start="-40,0" end="0,0" time="125">UnFocus</animation>
+                                    <control type="image">
+                                        <left>1</left>
+                                        <top>15</top>
+                                        <width>220</width>
+                                        <height>330</height>
+                                        <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Icon]</texture>
+                                        <bordertexture colordiffuse="60FFFFFF">globalsearch-black.png</bordertexture>
+                                        <bordersize>4</bordersize>
+                                    </control>
+                                    <control type="image">
+                                        <left>5</left>
+                                        <top>275</top>
+                                        <width>212</width>
+                                        <height>66</height>
+                                        <texture colordiffuse="B0FFFFFF">globalsearch-black.png</texture>
+                                    </control>
+                                    <control type="textbox">
+                                        <left>15</left>
+                                        <top>270</top>
+                                        <width>192</width>
+                                        <height>70</height>
+                                        <font>font10</font>
+                                        <align>center</align>
+                                        <aligny>center</aligny>
+                                        <label>$INFO[ListItem.Label]</label>
+                                    </control>
+                                    <control type="group">
+                                        <left>170</left>
+                                        <top>20</top>
+                                        <visible>!IsEmpty(ListItem.Property(UserRating))</visible>
+                                        <control type="image">
+                                            <left>8</left>
+                                            <top>2</top>
+                                            <width>36</width>
+                                            <height>36</height>
+                                            <aspectratio>keep</aspectratio>
+                                            <texture colordiffuse="FF12B2E7">globalsearch-list-circle.png</texture>
+                                        </control>
+                                        <control type="label">
+                                            <top>6</top>
+                                            <align>center</align>
+                                            <width>50</width>
+                                            <height>32</height>
+                                            <textcolor>FFF0F0F0</textcolor>
+                                            <font>font10_title</font>
+                                            <label>$INFO[ListItem.Property(UserRating)]</label>
+                                        </control>
+                                    </control>
+                                </control>
+                                <control type="group">
+                                    <top>15</top>
+                                    <animation type="Focus">
+                                        <effect type="slide" start="0,0" end="-40,0" time="300" />
+                                        <effect type="fade" start="0" end="100" time="300" />
+                                    </animation>
+                                    <animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
+                                    <control type="image">
+                                        <left>1</left>
+                                        <width>220</width>
+                                        <height>330</height>
+                                        <texture border="8" colordiffuse="FF12B2E7">globalsearch-thumbnail-focus.png</texture>
+                                    </control>
+                                </control>
+                                <control type="image">
+                                    <top>15</top>
+                                    <left>190</left>
+                                    <width>70</width>
+                                    <height>330</height>
+                                    <fadetime>300</fadetime>
+                                    <texture colordiffuse="FF12B2E7">globalsearch-white.png</texture>
+                                    <animation effect="zoom" start="0,100" end="100,100" time="250" center="auto">Focus</animation>
+                                    <animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50">UnFocus</animation>
+                                </control>
+                                <control type="group">
+                                    <top>15</top>
+                                    <left>190</left>
+                                    <animation effect="fade" start="0" end="100" time="200" delay="250">Focus</animation>
+                                    <animation effect="fade" start="100" end="0" time="50">UnFocus</animation>
+                                    <control type="group">
+                                        <top>20</top>
+                                        <control type="image">
+                                            <top>0</top>
+                                            <left>0</left>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <fadetime>300</fadetime>
+                                            <aspectratio align="center">keep</aspectratio>
+                                            <texture>globalsearch-list-rating.png</texture>
+                                        </control>
+                                        <control type="label">
+                                            <left>0</left>
+                                            <top>35</top>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <align>center</align>
+                                            <font>font_textbox</font>
+                                            <selectedcolor>FFF0F0F0</selectedcolor>
+                                            <label fallback="-">$INFO[ListItem.Property(Rating)]</label>
+                                        </control>
+                                    </control>
+                                    <control type="group">
+                                        <top>140</top>
+                                        <control type="image">
+                                            <top>0</top>
+                                            <left>0</left>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <fadetime>300</fadetime>
+                                            <aspectratio align="center">keep</aspectratio>
+                                            <texture>globalsearch-list-year.png</texture>
+                                        </control>
+                                        <control type="label">
+                                            <left>0</left>
+                                            <top>35</top>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <align>center</align>
+                                            <font>font_textbox</font>
+                                            <selectedcolor>FFF0F0F0</selectedcolor>
+                                            <label fallback="-">$INFO[ListItem.Property(Year)]</label>
+                                        </control>
+                                    </control>
+                                    <control type="group">
+                                        <top>260</top>
+                                        <control type="image">
+                                            <left>11</left>
+                                            <top>0</top>
+                                            <width>48</width>
+                                            <height>48</height>
+                                            <texture>globalsearch-list-watched.png</texture>
+                                            <visible>IntegerGreaterThan(ListItem.Property(Playcount),0)</visible>
+                                        </control>
+                                        <control type="image">
+                                            <left>11</left>
+                                            <top>0</top>
+                                            <width>48</width>
+                                            <height>48</height>
+                                            <texture>globalsearch-list-unwatched.png</texture>
+                                            <visible>!IntegerGreaterThan(ListItem.Property(Playcount),0)</visible>
+                                        </control>
+                                    </control>
+                                </control>
+                            </focusedlayout>
+                        </control>
+                    </control>
+                    <control type="group" id="239">
+                        <control type="panel" id="231">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>1500</width>
+                            <height>720</height>
+                            <onleft>9000</onleft>
+                            <onright>531</onright>
+                            <onup>101</onup>
+                            <ondown>101</ondown>
+                            <viewtype label="31102">icon</viewtype>
+                            <preloaditems>4</preloaditems>
+                            <pagecontrol>531</pagecontrol>
+                            <scrolltime tween="cubic" easing="out">500</scrolltime>
+                            <animation effect="fade" time="200">VisibleChange</animation>
+                            <visible>Container(9000).HasFocus(10)</visible>
+                            <itemlayout height="360" width="285">
+                                <control type="image">
+                                    <left>0</left>
+                                    <top>-1</top>
+                                    <width>256</width>
+                                    <height>362</height>
+                                    <texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Icon]</texture>
+                                    <bordertexture border="20">globalsearch-shadow.png</bordertexture>
+                                    <bordersize>20</bordersize>
+                                    <animation effect="slide" end="-15,0" time="0" condition="true">Conditional</animation>
+                                </control>
+                                <control type="image">
+                                    <left>5</left>
+                                    <top>275</top>
+                                    <width>216</width>
+                                    <height>66</height>
+                                    <texture colordiffuse="B0FFFFFF">globalsearch-black.png</texture>
+                                </control>
+                                <control type="textbox">
+                                    <left>15</left>
+                                    <top>270</top>
+                                    <width>192</width>
+                                    <height>70</height>
+                                    <font>font10</font>
+                                    <align>center</align>
+                                    <aligny>center</aligny>
+                                    <label>$INFO[ListItem.Label]</label>
+                                </control>
+                                <control type="group">
+                                    <left>170</left>
+                                    <top>20</top>
+                                    <visible>!IsEmpty(ListItem.Property(UserRating))</visible>
+                                    <control type="image">
+                                        <left>8</left>
+                                        <top>2</top>
+                                        <width>36</width>
+                                        <height>36</height>
+                                        <aspectratio>keep</aspectratio>
+                                        <texture colordiffuse="FF12B2E7">globalsearch-list-circle.png</texture>
+                                    </control>
+                                    <control type="label">
+                                        <top>6</top>
+                                        <align>center</align>
+                                        <width>50</width>
+                                        <height>32</height>
+                                        <textcolor>FFF0F0F0</textcolor>
+                                        <font>font10_title</font>
+                                        <label>$INFO[ListItem.Property(UserRating)]</label>
+                                    </control>
+                                </control>
+                            </itemlayout>
+                            <focusedlayout height="360" width="285">
+                                <control type="group">
+                                    <animation effect="slide" start="0,0" end="-40,0" time="300">Focus</animation>
+                                    <animation effect="slide" start="-40,0" end="0,0" time="125">UnFocus</animation>
+                                    <control type="image">
+                                        <left>1</left>
+                                        <top>15</top>
+                                        <width>220</width>
+                                        <height>330</height>
+                                        <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Icon]</texture>
+                                        <bordertexture colordiffuse="60FFFFFF">globalsearch-black.png</bordertexture>
+                                        <bordersize>4</bordersize>
+                                    </control>
+                                    <control type="image">
+                                        <left>5</left>
+                                        <top>275</top>
+                                        <width>212</width>
+                                        <height>66</height>
+                                        <texture colordiffuse="B0FFFFFF">globalsearch-black.png</texture>
+                                    </control>
+                                    <control type="textbox">
+                                        <left>15</left>
+                                        <top>270</top>
+                                        <width>192</width>
+                                        <height>70</height>
+                                        <font>font10</font>
+                                        <align>center</align>
+                                        <aligny>center</aligny>
+                                        <label>$INFO[ListItem.Label]</label>
+                                    </control>
+                                    <control type="group">
+                                        <left>170</left>
+                                        <top>20</top>
+                                        <visible>!IsEmpty(ListItem.Property(UserRating))</visible>
+                                        <control type="image">
+                                            <left>8</left>
+                                            <top>2</top>
+                                            <width>36</width>
+                                            <height>36</height>
+                                            <aspectratio>keep</aspectratio>
+                                            <texture colordiffuse="FF12B2E7">globalsearch-list-circle.png</texture>
+                                        </control>
+                                        <control type="label">
+                                            <top>6</top>
+                                            <align>center</align>
+                                            <width>50</width>
+                                            <height>32</height>
+                                            <textcolor>FFF0F0F0</textcolor>
+                                            <font>font10_title</font>
+                                            <label>$INFO[ListItem.Property(UserRating)]</label>
+                                        </control>
+                                    </control>
+                                </control>
+                                <control type="group">
+                                    <top>15</top>
+                                    <animation type="Focus">
+                                        <effect type="slide" start="0,0" end="-40,0" time="300" />
+                                        <effect type="fade" start="0" end="100" time="300" />
+                                    </animation>
+                                    <animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
+                                    <control type="image">
+                                        <left>1</left>
+                                        <width>220</width>
+                                        <height>330</height>
+                                        <texture border="8" colordiffuse="FF12B2E7">globalsearch-thumbnail-focus.png</texture>
+                                    </control>
+                                </control>
+                                <control type="image">
+                                    <top>15</top>
+                                    <left>190</left>
+                                    <width>70</width>
+                                    <height>330</height>
+                                    <fadetime>300</fadetime>
+                                    <texture colordiffuse="FF12B2E7">globalsearch-white.png</texture>
+                                    <animation effect="zoom" start="0,100" end="100,100" time="250" center="auto">Focus</animation>
+                                    <animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50">UnFocus</animation>
+                                </control>
+                                <control type="group">
+                                    <top>15</top>
+                                    <left>190</left>
+                                    <animation effect="fade" start="0" end="100" time="200" delay="250">Focus</animation>
+                                    <animation effect="fade" start="100" end="0" time="50">UnFocus</animation>
+                                    <control type="group">
+                                        <top>20</top>
+                                        <control type="image">
+                                            <top>0</top>
+                                            <left>0</left>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <fadetime>300</fadetime>
+                                            <aspectratio align="center">keep</aspectratio>
+                                            <texture>globalsearch-list-rating.png</texture>
+                                        </control>
+                                        <control type="label">
+                                            <left>0</left>
+                                            <top>35</top>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <align>center</align>
+                                            <font>font_textbox</font>
+                                            <selectedcolor>FFF0F0F0</selectedcolor>
+                                            <label fallback="-">$INFO[ListItem.Property(Rating)]</label>
+                                        </control>
+                                    </control>
+                                    <control type="group">
+                                        <top>140</top>
+                                        <control type="image">
+                                            <top>0</top>
+                                            <left>0</left>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <fadetime>300</fadetime>
+                                            <aspectratio align="center">keep</aspectratio>
+                                            <texture>globalsearch-list-year.png</texture>
+                                        </control>
+                                        <control type="label">
+                                            <left>0</left>
+                                            <top>35</top>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <align>center</align>
+                                            <font>font_textbox</font>
+                                            <selectedcolor>FFF0F0F0</selectedcolor>
+                                            <label fallback="-">$INFO[ListItem.Property(Year)]</label>
+                                        </control>
+                                    </control>
+                                    <control type="group">
+                                        <top>260</top>
+                                        <control type="image">
+                                            <left>11</left>
+                                            <top>0</top>
+                                            <width>48</width>
+                                            <height>48</height>
+                                            <texture>globalsearch-list-watched.png</texture>
+                                            <visible>IntegerGreaterThan(ListItem.Property(Playcount),0)</visible>
+                                        </control>
+                                        <control type="image">
+                                            <left>11</left>
+                                            <top>0</top>
+                                            <width>48</width>
+                                            <height>48</height>
+                                            <texture>globalsearch-list-unwatched.png</texture>
+                                            <visible>!IntegerGreaterThan(ListItem.Property(Playcount),0)</visible>
+                                        </control>
+                                    </control>
+                                </control>
+                            </focusedlayout>
+                        </control>
+                    </control>
+                    <control type="group" id="229">
+                        <control type="panel" id="221">
+                            <left>0</left>
+                            <top>22</top>
+                            <width>1500</width>
+                            <height>720</height>
+                            <onleft>9000</onleft>
+                            <onright>531</onright>
+                            <onup>101</onup>
+                            <ondown>101</ondown>
+                            <viewtype label="31102">icon</viewtype>
+                            <preloaditems>4</preloaditems>
+                            <pagecontrol>531</pagecontrol>
+                            <scrolltime tween="cubic" easing="out">500</scrolltime>
+                            <animation effect="fade" time="200">VisibleChange</animation>
+                            <visible>Container(9000).HasFocus(11)</visible>
+                            <itemlayout height="360" width="350">
+                                <control type="image">
+                                    <left>1</left>
+                                    <top>10</top>
+                                    <width>300</width>
+                                    <height>300</height>
+                                    <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Icon]</texture>
+                                    <aspectratio>scale</aspectratio>
+                                    <bordertexture colordiffuse="60FFFFFF">globalsearch-black.png</bordertexture>
+                                    <bordersize>4</bordersize>
+                                </control>
+                                <control type="image">
+                                    <left>1</left>
+                                    <top>235</top>
+                                    <width>300</width>
+                                    <height>75</height>
+                                    <texture colordiffuse="B0FFFFFF">globalsearch-black.png</texture>
+                                </control>
+                                <control type="label">
+                                    <left>15</left>
+                                    <top>250</top>
+                                    <width>270</width>
+                                    <height>29</height>
+                                    <font>font10</font>
+                                    <align>center</align>
+                                    <aligny>center</aligny>
+                                    <selectedcolor>FFF0F0F0</selectedcolor>
+                                    <label>[B]$INFO[ListItem.Property(ChannelName)][/B]</label>
+                                </control>
+                                <control type="label">
+                                    <left>15</left>
+                                    <top>276</top>
+                                    <width>280</width>
+                                    <height>29</height>
+                                    <font>font10</font>
+                                    <align>center</align>
+                                    <aligny>center</aligny>
+                                    <selectedcolor>FFF0F0F0</selectedcolor>
+                                    <label>$INFO[ListItem.Label]</label>
+                                </control>
+                            </itemlayout>
+                            <focusedlayout height="360" width="350">
+                                <control type="group">
+                                    <animation effect="slide" start="0,0" end="-40,0" time="300">Focus</animation>
+                                    <animation effect="slide" start="-40,0" end="0,0" time="125">UnFocus</animation>
+                                    <control type="image">
+                                        <left>1</left>
+                                        <top>10</top>
+                                        <width>300</width>
+                                        <height>300</height>
+                                        <texture border="2" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Icon]</texture>
+                                        <aspectratio>scale</aspectratio>
+                                        <bordertexture colordiffuse="60FFFFFF">globalsearch-black.png</bordertexture>
+                                        <bordersize>4</bordersize>
+                                    </control>
+                                    <control type="image">
+                                        <left>1</left>
+                                        <top>235</top>
+                                        <width>300</width>
+                                        <height>75</height>
+                                        <texture colordiffuse="B0FFFFFF">globalsearch-black.png</texture>
+                                    </control>
+                                    <control type="label">
+                                        <left>15</left>
+                                        <top>250</top>
+                                        <width>270</width>
+                                        <height>29</height>
+                                        <font>font10</font>
+                                        <align>center</align>
+                                        <aligny>center</aligny>
+                                        <selectedcolor>FFF0F0F0</selectedcolor>
+                                        <label>[B]$INFO[ListItem.Property(ChannelName)][/B]</label>
+                                    </control>
+                                    <control type="label">
+                                        <left>15</left>
+                                        <top>276</top>
+                                        <width>280</width>
+                                        <height>29</height>
+                                        <font>font10</font>
+                                        <align>center</align>
+                                        <aligny>center</aligny>
+                                        <selectedcolor>FFF0F0F0</selectedcolor>
+                                        <label>$INFO[ListItem.Label]</label>
+                                    </control>
+                                    <control type="image">
+                                        <left>1</left>
+                                        <top>11</top>
+                                        <width>300</width>
+                                        <height>300</height>
+                                        <texture border="8" colordiffuse="FF12B2E7">globalsearch-thumbnail-focus.png</texture>
+                                    </control>
+                                </control>
+                                <control type="image">
+                                    <left>268</left>
+                                    <top>12</top>
+                                    <width>70</width>
+                                    <height>300</height>
+                                    <fadetime>300</fadetime>
+                                    <texture colordiffuse="FF12B2E7">globalsearch-white.png</texture>
+                                    <animation effect="zoom" start="0,100" end="100,100" time="250" center="auto">Focus</animation>
+                                    <animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50">UnFocus</animation>
+                                </control>
+                                <control type="group">
+                                    <top>12</top>
+                                    <left>268</left>
+                                    <animation effect="fade" start="0" end="100" time="200" delay="250">Focus</animation>
+                                    <animation effect="fade" start="100" end="0" time="50">UnFocus</animation>
+                                    <control type="group">
+                                        <top>20</top>
+                                        <control type="image">
+                                            <top>0</top>
+                                            <left>0</left>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <fadetime>300</fadetime>
+                                            <aspectratio align="center">keep</aspectratio>
+                                            <texture>globalsearch-list-clock.png</texture>
+                                        </control>
+                                        <control type="textbox">
+                                            <left>0</left>
+                                            <top>35</top>
+                                            <width>70</width>
+                                            <height>32</height>
+                                            <align>center</align>
+                                            <font>font_textbox</font>
+                                            <selectedcolor>FFF0F0F0</selectedcolor>
+                                            <label fallback="-">$INFO[ListItem.Property(Duration)]</label>
+                                        </control>
+                                    </control>
+                                </control>
+                            </focusedlayout>
+                        </control>
+                    </control>
+                </control>
+                <control type="label" id="199">
+                    <left>436</left>
+                    <width>1484</width>
+                    <height>1080</height>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>$LOCALIZE[284]</label>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>
