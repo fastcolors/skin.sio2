@@ -202,6 +202,7 @@
             <include>Addons</include>
             <include>Episodes</include>
             <include>appstore_shelf</include>
+            <include>general</include>
             <include>weather_shelf</include>
         </control>
         <control type="group" description="RSS">

@@ -19,10 +19,27 @@
         <item control="307">$ADDON[script.skinshortcuts 32027]</item>
         <!--<item control="301">$ADDON[script.skinshortcuts 32000]</item>-->
         <item control="302">$ADDON[script.skinshortcuts 32001]</item>
-
     </contextmenu>
 
     <onclick id="211">SetFocus(300)</onclick>
     <!--<onclick id="211">Action(ContextMenu)</onclick>-->
+
+    <widget name="movies" label="In progress Movies" path="$VAR[movieshelf]" target="video">shelfmovies</widget>
+    <widgetdefault defaultID="movies">shelfmovies</widgetdefault>
+
+    <widget name="episodes" label="episodes" path="$VAR[epshelf]" target="video">shelfepisodes</widget>
+    <widgetdefault defaultID="episodes">shelfepisodes</widgetdefault>
+
+    <widget name="tvshows" label="tvshows" path="videodb://" target="video">shelftvshows</widget>
+    <widgetdefault defaultID="tvshows">shelftvshows</widgetdefault>
+
+    <widget name="music" label="music" path="$VAR[musicshelf]" target="audio">shelfmusic</widget>
+    <widgetdefault defaultID="music">shelfmusic</widgetdefault>
+
+    <widget name="pvr" label="pvr" path="pvr://channels/tv/*" target="video">shelfPVR</widget>
+    <widgetdefault defaultID="livetv">shelfPVR</widgetdefault>
+
+    <widget name="favs" label="favs" path="favourites://" target="video">shelffavs</widget>
+    <widgetdefault defaultID="favourites">shelffavs</widgetdefault>
 
 </overrides>
