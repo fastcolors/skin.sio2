@@ -442,6 +442,14 @@
                     <onclick>SendClick(16)</onclick>
                     <label>Party Mode</label>
                 </control>
+                <control type="togglebutton" id="20">
+                    <description>Update library</description>
+                    <height>60</height>
+                    <include>musictopbutton</include>
+                    <label>653</label>
+                    <altlabel>13353</altlabel>
+                    <usealttexture>library.isscanningvideo</usealttexture>
+                </control>
                 <control type="button" id="3" description="Other">
                     <height>60</height>
                     <include>musictopbutton</include>
