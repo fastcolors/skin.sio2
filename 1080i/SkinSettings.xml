@@ -25,14 +25,13 @@
                     <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
                     <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
                 </control>
-                <!--<control type="radiobutton" id="2">-->
-                    <!--<width>840</width>-->
-                    <!--<align>left</align>-->
-                    <!--<label>$LOCALIZE[31051]</label>-->
-                    <!--<texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>-->
-                    <!--<selected>Skin.HasSetting(AddonsShelf_Custom)</selected>-->
-                    <!--<onclick>ActivateWindow(1617)</onclick>-->
-                <!--</control>-->
+                <control type="radiobutton" id="2">
+                    <width>840</width>
+                    <label>show fanart</label>
+                    <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
+                    <selected>!Skin.HasSetting(fanartback)</selected>
+                    <onclick>Skin.ToggleSetting(fanartback)</onclick>
+                </control>
                 <control type="button" id="3">
                     <width>840</width>
                     <align>left</align>
