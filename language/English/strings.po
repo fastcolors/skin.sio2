@@ -182,6 +182,10 @@ msgctxt "#31053"
 msgid "Link For Music Icon"
 msgstr "Link For Music Icon"
 
+msgctxt "#31054"
+msgid "Scroll down for more Infos"
+msgstr "Scroll down for more Infos"
+
 msgctxt "#31055"
 msgid "Fullscreen player"
 msgstr "Fullscreen player"
