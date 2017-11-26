@@ -197,14 +197,14 @@
         </control>
         <control type="group" id="700" description="Shelf items">
             <include>homeanimation</include>
-            <include>Movies</include>
-            <include>Music</include>
-            <include>Addons</include>
+            <include>Posters</include>
+            <include>Squares</include>
+            <!--<include>Addons</include>-->
             <include>Episodes</include>
             <include>Favourites</include>
             <include>Livetv</include>
             <include>appstore_shelf</include>
-            <include>general</include>
+            <!--<include>general</include>-->
             <include>weather_shelf</include>
         </control>
         <control type="group" description="RSS">
