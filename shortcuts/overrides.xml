@@ -1,28 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <overrides>
+
     <requiredshortcut label="5" thumbnail="icons/settings.png" icon="icons/settings.png">ActivateWindow(1120)</requiredshortcut>
+
     <warn heading="$LOCALIZE[14117]" message="$LOCALIZE[31019]">ActivateWindow(1120)</warn>
+
     <thumbnailBrowseDefault>resource://resource.images.sio2.icons/</thumbnailBrowseDefault>
 
-    <contextmenu>
-        <!-- Enable context menu on control 211 -->
-        <enableon>211</enableon>
+    <icon labelID="movies">icons/movies.png</icon>
+    <icon labelID="tvshows">icons/tvshows.png</icon>
+    <icon labelID="settings">icons/settings.png</icon>
+    <icon labelID="quit">icons/quits.png</icon>
+    <icon labelID="livetv">icons/LiveTV.png</icon>
 
-        <!-- Add enable/disable controls -->
-        <!--<item control="313" condition="String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),False)">$LOCALIZE[24021]</item>-->
-        <!--<item control="313" condition="String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)">$LOCALIZE[24022]</item>-->
+    <contextmenu>
+        <enableon>211</enableon>
         <item control="401">$ADDON[script.skinshortcuts 32048]</item>
-        <!--<item control="303">$ADDON[script.skinshortcuts 32002]</item>-->
-        <!--<item control="304">$ADDON[script.skinshortcuts 32003]</item>-->
         <item control="305">$ADDON[script.skinshortcuts 32025]</item>
         <item control="306">$ADDON[script.skinshortcuts 32026]</item>
         <item control="307">$ADDON[script.skinshortcuts 32027]</item>
-        <!--<item control="301">$ADDON[script.skinshortcuts 32000]</item>-->
         <item control="302">$ADDON[script.skinshortcuts 32001]</item>
-
     </contextmenu>
 
     <onclick id="211">SetFocus(300)</onclick>
-    <!--<onclick id="211">Action(ContextMenu)</onclick>-->
+
+    <widget name="movies" label="In progress Movies" path="$VAR[movieshelf]" target="video">shelfmovies</widget>
+    <widgetdefault defaultID="movies">shelfmovies</widgetdefault>
+
+    <widget name="episodes" label="episodes" path="$VAR[epshelf]" target="video">shelfepisodes</widget>
+    <widgetdefault defaultID="episodes">shelfepisodes</widgetdefault>
+
+    <widget name="tvshows" label="tvshows" path="videodb://tvshows/titles" target="video">shelftvshows</widget>
+    <widgetdefault defaultID="tvshows">shelftvshows</widgetdefault>
+
+    <widget name="favs" label="favs" path="favourites://" target="video">shelffavs</widget>
+    <widgetdefault defaultID="favourites">shelffavs</widgetdefault>
 
 </overrides>

@@ -122,6 +122,10 @@ msgctxt "#31038"
 msgid "min"
 msgstr "min"
 
+msgctxt "#31039"
+msgid "Premiered: "
+msgstr "Premiered: "
+
 msgctxt "#31040"
 msgid "Shelf items"
 msgstr "Shelf items"
@@ -177,6 +181,10 @@ msgstr "Home Page Customizer"
 msgctxt "#31053"
 msgid "Link For Music Icon"
 msgstr "Link For Music Icon"
+
+msgctxt "#31054"
+msgid "Scroll down for more Infos"
+msgstr "Scroll down for more Infos"
 
 msgctxt "#31055"
 msgid "Fullscreen player"

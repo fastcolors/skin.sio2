@@ -442,6 +442,14 @@
                     <onclick>SendClick(16)</onclick>
                     <label>Party Mode</label>
                 </control>
+                <control type="togglebutton" id="20">
+                    <description>Update library</description>
+                    <height>60</height>
+                    <include>musictopbutton</include>
+                    <label>653</label>
+                    <altlabel>13353</altlabel>
+                    <usealttexture>library.isscanningvideo</usealttexture>
+                </control>
                 <control type="button" id="3" description="Other">
                     <height>60</height>
                     <include>musictopbutton</include>
@@ -472,7 +480,7 @@
             <itemgap>0</itemgap>
             <onleft>noop</onleft>
             <onright>noop</onright>
-            <onup>noop</onup>
+            <onup>100</onup>
             <ondown condition="Control.HasFocus(704)">9000</ondown>
             <ondown condition="Control.HasFocus(703)">10000</ondown>
             <ondown condition="Control.HasFocus(706)">8000</ondown>

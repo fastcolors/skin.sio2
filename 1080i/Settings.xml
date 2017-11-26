@@ -21,6 +21,13 @@
                 <onup>50</onup>
                 <ondown>50</ondown>
                 <itemgap>14</itemgap>
+                <control type="button" id="6">
+                    <width>840</width>
+                    <align>left</align>
+                    <label>$LOCALIZE[14207]</label>
+                    <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
+                    <onclick>ActivateWindow(InterfaceSettings)</onclick>
+                </control>
                 <control type="button" id="1">
                     <width>840</width>
                     <align>left</align>
@@ -56,13 +63,6 @@
                     <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
                     <visible>System.GetBool(gamesgeneral.enable)</visible>
                     <onclick>ActivateWindow(GameSettings)</onclick>
-                </control>
-                <control type="button" id="6">
-                    <width>840</width>
-                    <align>left</align>
-                    <label>$LOCALIZE[14207]</label>
-                    <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
-                    <onclick>ActivateWindow(InterfaceSettings)</onclick>
                 </control>
                 <control type="button" id="7">
                     <width>840</width>

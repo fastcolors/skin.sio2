@@ -2,7 +2,7 @@
 <includes>
     <include name="ShelfFade">
         <animation effect="fade" start="0" end="100" delay="200" time="300">Visible</animation>
-        <animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+        <animation effect="fade" start="100" end="0" time="150">Hidden</animation>
     </include>
     <include name="PosterShortcutsCommons">
         <include>ShelfFade</include>
@@ -24,13 +24,21 @@
                 <width>335</width>
                 <height>500</height>
                 <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image" description="WatchStatus">
+                <left>373</left>
+                <bottom>65</bottom>
+                <height>52</height>
+                <width>52</width>
                 <aspectratio>keep</aspectratio>
+                <texture>$VAR[WatchStatus]</texture>
             </control>
         </itemlayout>
         <focusedlayout height="600" width="392">
             <control type="group">
-                <animation effect="zoom" start="100" end="112" time="120" center="265,300" tween="Back" easing="Out">Focus</animation>
-                <animation effect="zoom" start="112" end="100" time="120" center="265,300">unFocus</animation>
+                <animation effect="zoom" start="100" end="112" time="120" center="257,300" tween="Back" easing="Out">Focus</animation>
+                <animation effect="zoom" start="112" end="100" time="120" center="257,300">unFocus</animation>
                 <control type="image">
                     <animation effect="fade" start="0" end="100" time="150">Focus</animation>
                     <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
@@ -46,7 +54,15 @@
                     <width>335</width>
                     <height>500</height>
                     <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
+                    <aspectratio>scale</aspectratio>
+                </control>
+                <control type="image" description="WatchStatus">
+                    <left>373</left>
+                    <bottom>65</bottom>
+                    <height>52</height>
+                    <width>52</width>
                     <aspectratio>keep</aspectratio>
+                    <texture>$VAR[WatchStatus]</texture>
                 </control>
             </control>
             <control type="group" description="labels">
@@ -54,12 +70,12 @@
                 <animation effect="fade" start="100" end="0" time="200">unFocus</animation>
                 <control type="label">
                     <visible>ControlGroup(700).HasFocus()</visible>
-                    <centerleft>270</centerleft>
+                    <centerleft>257</centerleft>
                     <top>570</top>
                     <width>700</width>
                     <height>40</height>
                     <font>size30B</font>
-                    <autoscroll>false</autoscroll>
+                    <!--<autoscroll>false</autoscroll>-->
                     <label>$INFO[ListItem.Title]</label>
                     <align>center</align>
                 </control>
@@ -255,7 +271,7 @@
                 <width>500</width>
                 <height>500</height>
                 <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                <aspectratio>keep</aspectratio>
+                <aspectratio>scale</aspectratio>
             </control>
         </itemlayout>
         <focusedlayout height="600" width="500">
@@ -277,7 +293,7 @@
                     <width>500</width>
                     <height>500</height>
                     <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                    <aspectratio>keep</aspectratio>
+                    <aspectratio>scale</aspectratio>
                 </control>
             </control>
             <control type="textbox">
@@ -296,54 +312,68 @@
     </include>
     <include name="Movies">
         <control type="panel" id="311" description="Movies Shelf Shortcuts">
-            <visible>$EXP[311visibility]</visible>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),movies)</visible>
             <include>PosterShortcutsCommons</include>
-            <content target="videos">$VAR[shelf]</content>
+            <content target="video">$VAR[movieshelf]</content>
         </control>
     </include>
     <include name="Music">
-        <control type="panel" id="312" description="TOP Shortcuts">
+        <control type="panel" id="312" description="Music Shelf Shortcuts">
             <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),music)</visible>
             <include>SquareShortcutsCommons</include>
             <onclick>PlayMedia($ESCINFO[ListItem.DBID,musicdb://albums/,/])</onclick>
-            <content target="music">$VAR[musicshelf]</content>
+            <content target="audio">$VAR[musicshelf]</content>
         </control>
     </include>
     <include name="Episodes">
         <control type="panel" id="313" description="Episodes Shelf Shortcuts">
-            <visible>$EXP[313visibility]</visible>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),episodes)</visible>
             <include>EpisodeShortcutsCommons</include>
-            <content target="videos">$VAR[epshelf]</content>
+            <content target="video">$VAR[epshelf]</content>
+        </control>
+    </include>
+    <include name="Livetv">
+        <control type="panel" id="314" description="LiveTV">
+            <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),livetv)</visible>
+            <include>PosterShortcutsCommons</include>
+            <!--<content target="video">$VAR[livetv]</content>-->
+            <content target="video">pvr://channels/tv/*</content>
         </control>
     </include>
     <include name="Addons">
-        <control type="panel" id="317" description="TOP Shortcuts">
-            <visible>$EXP[317visibility]</visible>
+        <control type="panel" id="317" description="Addons Shelf Shortcuts">
+            <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) | String.IsEqual(Container(9000).ListItem.Property(defaultID),programs)</visible>
             <include>SquareShortcutsCommons</include>
             <content target="programs">$VAR[squareshelf]</content>
         </control>
     </include>
-    <!--<include name="Addons_Shortcuts">-->
-    <!--<control type="panel" id="315" description="TOP Shortcuts">-->
-    <!--<visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)</visible>-->
-    <!--<visible>Skin.HasSetting(AddonsShelf_Custom)</visible>-->
-    <!--<onup>noop</onup>-->
-    <!--<ondown>9000</ondown>-->
-    <!--<onleft>315</onleft>-->
-    <!--<onright>315</onright>-->
-    <!--<include>SquareShortcutsCommons</include>-->
-    <!--<content><include>skinshortcuts-submenu</include></content>-->
-    <!--</control>-->
-    <!--</include>-->
+    <include name="Favourites">
+        <control type="panel" id="318" description="Favourites">
+            <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),favourites)</visible>
+            <include>PosterShortcutsCommons</include>
+            <content>favourites://</content>
+        </control>
+    </include>
+    <include name="general">
+        <control type="panel" id="320" description="TOP Shortcuts">
+            <visible>$EXP[320visibility]</visible>
+            <onup>noop</onup>
+            <ondown>9000</ondown>
+            <onleft>315</onleft>
+            <onright>315</onright>
+            <include>SquareShortcutsCommons</include>
+            <content>$INFO[Container(9000).ListItem.Property(list)]</content>
+        </control>
+    </include>
     <!--todo appstore shelf-->
     <include name="appstore_shelf">
         <control type="group">
             <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),programs)</visible>
             <!--<control type="image">-->
-                <!--<width>1920</width>-->
-                <!--<height>720</height>-->
-                <!--<aspectratio align="top">scale</aspectratio>-->
-                <!--<texture background="true">images/black.png</texture>-->
+            <!--<width>1920</width>-->
+            <!--<height>720</height>-->
+            <!--<aspectratio align="top">scale</aspectratio>-->
+            <!--<texture background="true">images/black.png</texture>-->
             <!--</control>-->
             <control type="panel" id="314" description="TOP Shortcuts">
                 <onup>noop</onup>
@@ -351,7 +381,7 @@
                 <onleft>314</onleft>
                 <onright>314</onright>
                 <include>SquareShortcutsCommons</include>
-                <content>-</content>
+                <content></content>
             </control>
         </control>
     </include>

@@ -22,20 +22,9 @@
                 <animation effect="fade" end="100" time="400">Visible</animation>
                 <animation effect="fade" end="0" time="100">Hidden</animation>
                 <control type="group">
-                    <control type="group" description="Dialog Background">
-                        <visible>Window.IsVisible(videoosd.xml) + Window.IsActive(dialogseekbar.xml)</visible>
-                        <control type="image">
-                            <left>35</left>
-                            <top>888</top>
-                            <width>1850</width>
-                            <height>150</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture border="8" colordiffuse="osdoverlay">images/White.png</texture>
-                        </control>
-                    </control>
                     <control type="label" description="Title">
                         <left>120</left>
-                        <bottom>120</bottom>
+                        <bottom>110</bottom>
                         <height>60</height>
                         <width>940</width>
                         <scroll>true</scroll>
@@ -161,19 +150,31 @@
                 </control>
             </control>
         </control>
-        <control type="button">
+        <control type="group">
             <visible>!ControlGroup(111).HasFocus()</visible>
             <visible>!Window.IsVisible(10123) + !Window.IsVisible(10124) + !Window.IsVisible(10125) + !Window.IsVisible(Dialogselect.xml)</visible>
             <animation type="Visible">
                 <effect type="fade" tween="circle" easing="in" start="0" end="100" time="800" />
             </animation>
-            <centerleft>960</centerleft>
-            <top>20</top>
-            <width>60</width>
-            <height>40</height>
-            <texturenofocus>images/Dialogpull.png</texturenofocus>
-            <texturefocus>images/Dialogpull.png</texturefocus>
-            <onclick>SetFocus(101)</onclick>
+            <control type="button">
+                <centerleft>960</centerleft>
+                <top>60</top>
+                <width>50</width>
+                <height>20</height>
+                <texturenofocus>images/Dialogpull.png</texturenofocus>
+                <texturefocus>images/Dialogpull.png</texturefocus>
+                <onclick>SetFocus(101)</onclick>
+            </control>
+            <control type="label">
+                <centerleft>960</centerleft>
+                <top>30</top>
+                <width>500</width>
+                <height>30</height>
+                <align>center</align>
+                <font>XS</font>
+                <textcolor>white</textcolor>
+                <label>$LOCALIZE[31054]</label>
+            </control>
         </control>
         <control type="group">
             <visible>VideoPlayer.IsStereoscopic + ![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(Dialogselect.xml)]</visible>
@@ -250,14 +251,6 @@
                 <aspectratio>keep</aspectratio>
                 <texture background="true">$INFO[Player.Art(clearlogo)]</texture>
             </control>
-            <!--todo mpaa-->
-            <!--<control type="image">-->
-            <!--<width>375</width>-->
-            <!--<height>100</height>-->
-            <!--<texture>$INFO[VideoPlayer.mpaa,Mpaa/,.png]</texture>-->
-            <!--<aspectratio align="right">keep</aspectratio>-->
-            <!--<colordiffuse>77FFFFFF</colordiffuse>-->
-            <!--</control>-->
         </control>
     </controls>
 </window>

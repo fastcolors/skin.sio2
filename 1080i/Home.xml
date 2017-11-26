@@ -3,7 +3,7 @@
     <backgroundcolor>background</backgroundcolor>
     <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;level=1)</onload>
+    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;level=0)</onload>
     <include>HomeOpenClose</include>
     <controls>
         <include>BlackBackground</include>
@@ -47,9 +47,9 @@
             <onclick  condition="$EXP[ismovies] + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
             <onclick  condition="$EXP[ismovies] + StringCompare(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
             <!--TVSHOWS-->
-            <onclick  condition="$EXP[istvshows] + StringCompare(Skin.String(TVshelf),)">Skin.SetString(TVshelf,1)</onclick>
-            <onclick  condition="$EXP[istvshows] + StringCompare(Skin.String(TVshelf),1)">Skin.SetString(TVshelf,2)</onclick>
-            <onclick  condition="$EXP[istvshows] + StringCompare(Skin.String(TVshelf),2)">Skin.SetString(TVshelf,)</onclick>
+            <onclick  condition="$EXP[isepisodes] + StringCompare(Skin.String(TVshelf),)">Skin.SetString(TVshelf,1)</onclick>
+            <onclick  condition="$EXP[isepisodes] + StringCompare(Skin.String(TVshelf),1)">Skin.SetString(TVshelf,2)</onclick>
+            <onclick  condition="$EXP[isepisodes] + StringCompare(Skin.String(TVshelf),2)">Skin.SetString(TVshelf,)</onclick>
             <!--MUSIC-->
             <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + StringCompare(Skin.String(musicshelf),)">Skin.SetString(musicshelf,albums)</onclick>
             <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + StringCompare(Skin.String(musicshelf),albums)">Skin.SetString(musicshelf,artists)</onclick>
@@ -201,7 +201,10 @@
             <include>Music</include>
             <include>Addons</include>
             <include>Episodes</include>
+            <include>Favourites</include>
+            <include>Livetv</include>
             <include>appstore_shelf</include>
+            <include>general</include>
             <include>weather_shelf</include>
         </control>
         <control type="group" description="RSS">

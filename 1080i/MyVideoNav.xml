@@ -9,6 +9,7 @@
         <include>BlackBackground</include>
         <control type="image">
             <visible>!Control.IsVisible(53)</visible>
+            <visible>!Skin.HasSetting(fanartback)</visible>
             <include>Dimensions_Fullscreen</include>
             <include>Fanart_Fade</include>
             <texture background="true">$INFO[ListItem.Property(fanart_image)]</texture>
@@ -21,11 +22,14 @@
             <label>$VAR[RootLabel][COLOR=dimgray]$INFO[Container.NumItems,  (,)][/COLOR]</label>
         </control>
         <!--VIEWS-->
-        <include>biglist</include>
-        <include>icons</include>
-        <include>banners</include>
-        <include>moviebanners</include>
-        <include>widelist</include>
+        <control type="group">
+            <animation effect="fade" time="0">WindowClose</animation>
+            <include>biglist</include>
+            <include>icons</include>
+            <include>banners</include>
+            <include>moviebanners</include>
+            <include>widelist</include>
+        </control>
         <!--VIEWS-->
         <control type="group" description="Side menu 9000 group">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>

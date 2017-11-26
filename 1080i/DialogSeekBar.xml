@@ -14,16 +14,32 @@
             <animation effect="fade" start="0" end="70" time="400">Visible</animation>
             <animation effect="fade" start="70" end="0" time="100">Hidden</animation>
         </control>
-        <control type="label" description="Seek time label">
-            <visible>!Skin.HasSetting(hidejump)</visible>
-            <height>1080</height>
-            <width>1920</width>
-            <align>center</align>
-            <aligny>center</aligny>
-            <font>sizescroll</font>
-            <textcolor>33ffffff</textcolor>
+        <control type="image" description="Seek time label">
+            <left>120</left>
+            <bottom>120</bottom>
+            <visible>!String.StartsWith(Player.SeekStepSize,-) + Player.Seeking</visible>
+            <height>60</height>
+            <width>60</width>
+            <texture>images/FWD.png</texture>
             <animation effect="fade" time="200">VisibleChange</animation>
-            <label>$INFO[Player.SeekOffset]</label>
+        </control>
+        <control type="image" description="Seek time label">
+            <left>120</left>
+            <bottom>120</bottom>
+            <visible>String.StartsWith(Player.SeekStepSize,-) + Player.Seeking</visible>
+            <height>60</height>
+            <width>60</width>
+            <texture>images/BWD.png</texture>
+            <animation effect="fade" time="200">VisibleChange</animation>
+        </control>
+         <control type="label" description="Seek time label">
+            <left>190</left>
+            <bottom>120</bottom>
+            <visible>Player.Seeking</visible>
+            <height>60</height>
+            <width>600</width>
+            <label>$INFO[Player.SeekStepSize]</label>
+            <animation effect="fade" time="200">VisibleChange</animation>
         </control>
         <control type="group">
             <top>980</top>
@@ -49,7 +65,6 @@
                 <midtexture>Seekbar/ProgressM.png</midtexture>
                 <righttexture border="4">Seekbar/ProgressR.png</righttexture>
                 <info>Player.Progress</info>
-                <visible>true</visible>
             </control>
             <control type="label">
                 <top>15</top>

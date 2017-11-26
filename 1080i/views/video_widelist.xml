@@ -109,12 +109,12 @@
                 </control>
             </control>
             <control type="image">
-                <visible>!ListItem.IsFolder</visible>
+                <visible>!ListItem.IsFolder | !Container.Content(movies)</visible>
                 <centertop>920</centertop>
                 <centerleft>160</centerleft>
                 <width>260</width>
                 <height>260</height>
-                <texture>$INFO[ListItem.Art(thumb)]</texture>
+                <texture>$VAR[locandine]</texture>
                 <aspectratio>keep</aspectratio>
             </control>
             <control type="textbox" description="plots">
@@ -139,7 +139,7 @@
                 <label>$INFO[Container(5000).ListItem.Title][CR][CR]$INFO[Container(5000).ListItem.Plot]</label>
             </control>
             <control type="grouplist" description="detailedinfos">
-                <visible>!ListItem.IsFolder</visible>
+                <visible>!ListItem.IsFolder | !Container.Content(movies)</visible>
                 <left>300</left>
                 <top>770</top>
                 <height>260</height>
@@ -199,7 +199,7 @@
                 </control>
             </control>
             <control type="list" id="5000">
-                <visible>ListItem.IsFolder</visible>
+                <visible>ListItem.IsFolder + Container.Content(movies)</visible>
                 <top>790</top>
                 <height>310</height>
                 <width>910</width>

@@ -127,10 +127,10 @@
                     <control type="image" description="WatchStatus">
                         <visible>![container.content(TVshows) | container.content(seasons)]</visible>
                         <visible>!ListItem.IsCollection</visible>
-                        <centerleft>192</centerleft>
-                        <top>457</top>
-                        <height>32</height>
-                        <width>300</width>
+                        <right>23</right>
+                        <bottom>15</bottom>
+                        <height>52</height>
+                        <width>52</width>
                         <aspectratio align="left">keep</aspectratio>
                         <texture>$VAR[WatchStatus]</texture>
                     </control>
@@ -212,10 +212,10 @@
                         <control type="image" description="WatchStatus">
                             <visible>![container.content(TVshows) | container.content(seasons)]</visible>
                             <visible>!ListItem.IsCollection</visible>
-                            <centerleft>192</centerleft>
-                            <top>457</top>
-                            <height>32</height>
-                            <width>300</width>
+                            <right>23</right>
+                            <bottom>15</bottom>
+                            <height>52</height>
+                            <width>52</width>
                             <aspectratio align="left">keep</aspectratio>
                             <texture>$VAR[WatchStatus]</texture>
                         </control>
@@ -232,11 +232,11 @@
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image" description="WatchStatus">
-                        <left>18</left>
-                        <top>296</top>
-                        <height>32</height>
+                        <right>22</right>
+                        <top>264</top>
+                        <height>60</height>
                         <width>60</width>
-                        <aspectratio align="left">keep</aspectratio>
+                        <aspectratio>keep</aspectratio>
                         <texture>$VAR[WatchStatus]</texture>
                     </control>
                     <control type="label">
@@ -245,7 +245,6 @@
                         <width>410</width>
                         <height>45</height>
                         <font>size24</font>
-                        <textcolor>White2</textcolor>
                         <align>center</align>
                         <label>[B]$INFO[ListItem.Label][/B]</label>
                     </control>
@@ -278,16 +277,15 @@
                             <width>410</width>
                             <height>45</height>
                             <font>size24</font>
-                            <textcolor>White2</textcolor>
                             <align>center</align>
                             <label>[B]$INFO[ListItem.Label][/B]</label>
                         </control>
                         <control type="image" description="WatchStatus">
-                            <left>18</left>
-                            <top>296</top>
-                            <height>32</height>
+                            <right>22</right>
+                            <top>264</top>
+                            <height>60</height>
                             <width>60</width>
-                            <aspectratio align="left">keep</aspectratio>
+                            <aspectratio>keep</aspectratio>
                             <texture>$VAR[WatchStatus]</texture>
                         </control>
                     </control>
