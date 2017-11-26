@@ -181,7 +181,7 @@
                 <include>osdtopbutton</include>
                 <onclick>SetProperty(chooseProperty,viewtype)</onclick>
                 <onclick>SendClick(404)</onclick>
-                <label>$ADDON[script.skinshortcuts 32001]</label>
+                <label>Set Viewtype</label>
             </control>
         </control>
         <control type="image">
