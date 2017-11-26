@@ -176,6 +176,13 @@
                 <onclick>noop</onclick>
                 <label>$ADDON[script.skinshortcuts 32028]</label>
             </control>
+            <control type="button" id="404">
+                <description>Viewtype</description>
+                <include>osdtopbutton</include>
+                <onclick>SetProperty(chooseProperty,viewtype)</onclick>
+                <onclick>SendClick(404)</onclick>
+                <label>Set Viewtype</label>
+            </control>
         </control>
         <control type="image">
             <width>480</width>

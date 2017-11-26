@@ -22,6 +22,17 @@
         <item control="302">$ADDON[script.skinshortcuts 32001]</item>
     </contextmenu>
 
+    <propertydefault labelID="tvshows" property="viewtype">Episodes</propertydefault>
+    <propertydefault labelID="movies" property="P">Posters</propertydefault>
+    <propertydefault labelID="addons" property="viewtype">Squares</propertydefault>
+    <propertydefault labelID="2" property="viewtype">Squares</propertydefault>
+
+    <property property="viewtype">Posters</property>
+    <property property="viewtype">Squares</property>
+    <property property="viewtype">Episodes</property>
+
+    <propertyfallback property="viewtype">Posters</propertyfallback>
+
     <onclick id="211">SetFocus(300)</onclick>
 
     <widget name="movies" label="In progress Movies" path="$VAR[movieshelf]" target="video">shelfmovies</widget>

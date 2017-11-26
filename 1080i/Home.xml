@@ -43,17 +43,17 @@
             <label>$VAR[shelflabel]</label>
             <texturefocus>-</texturefocus>
             <!--MOVIES-->
-            <onclick  condition="$EXP[ismovies] + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
-            <onclick  condition="$EXP[ismovies] + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
-            <onclick  condition="$EXP[ismovies] + StringCompare(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
+            <onclick  condition="$EXP[ismovies] + String.IsEqual(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
+            <onclick  condition="$EXP[ismovies] + String.IsEqual(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
+            <onclick  condition="$EXP[ismovies] + String.IsEqual(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
             <!--TVSHOWS-->
-            <onclick  condition="$EXP[isepisodes] + StringCompare(Skin.String(TVshelf),)">Skin.SetString(TVshelf,1)</onclick>
-            <onclick  condition="$EXP[isepisodes] + StringCompare(Skin.String(TVshelf),1)">Skin.SetString(TVshelf,2)</onclick>
-            <onclick  condition="$EXP[isepisodes] + StringCompare(Skin.String(TVshelf),2)">Skin.SetString(TVshelf,)</onclick>
+            <onclick  condition="$EXP[isepisodes] + String.IsEqual(Skin.String(TVshelf),)">Skin.SetString(TVshelf,1)</onclick>
+            <onclick  condition="$EXP[isepisodes] + String.IsEqual(Skin.String(TVshelf),1)">Skin.SetString(TVshelf,2)</onclick>
+            <onclick  condition="$EXP[isepisodes] + String.IsEqual(Skin.String(TVshelf),2)">Skin.SetString(TVshelf,)</onclick>
             <!--MUSIC-->
-            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + StringCompare(Skin.String(musicshelf),)">Skin.SetString(musicshelf,albums)</onclick>
-            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + StringCompare(Skin.String(musicshelf),albums)">Skin.SetString(musicshelf,artists)</onclick>
-            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + StringCompare(Skin.String(musicshelf),artists)">Skin.SetString(musicshelf,)</onclick>
+            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + String.IsEqual(Skin.String(musicshelf),)">Skin.SetString(musicshelf,albums)</onclick>
+            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + String.IsEqual(Skin.String(musicshelf),albums)">Skin.SetString(musicshelf,artists)</onclick>
+            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + String.IsEqual(Skin.String(musicshelf),artists)">Skin.SetString(musicshelf,)</onclick>
 
             <!--ADDONS-->
             <!--<onclick  condition="Control.IsVisible(315) | Control.IsVisible(317)">Skin.ToggleSetting(AddonsShelf_Custom)</onclick>-->
@@ -62,9 +62,9 @@
             <!--<onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),)">Skin.SetString(addonsshelf,1)</onclick>-->
 
             <!--UPCOMINGMOVIES-->
-            <onclick  condition="$EXP[isupcomingmovies] + StringCompare(Skin.String(theatersshelf),)">Skin.SetString(theatersshelf,1)</onclick>
-            <onclick  condition="$EXP[isupcomingmovies] + StringCompare(Skin.String(theatersshelf),1)">Skin.SetString(theatersshelf,2)</onclick>
-            <onclick  condition="$EXP[isupcomingmovies] + StringCompare(Skin.String(theatersshelf),2)">Skin.SetString(theatersshelf,)</onclick>
+            <onclick  condition="$EXP[isupcomingmovies] + String.IsEqual(Skin.String(theatersshelf),)">Skin.SetString(theatersshelf,1)</onclick>
+            <onclick  condition="$EXP[isupcomingmovies] + String.IsEqual(Skin.String(theatersshelf),1)">Skin.SetString(theatersshelf,2)</onclick>
+            <onclick  condition="$EXP[isupcomingmovies] + String.IsEqual(Skin.String(theatersshelf),2)">Skin.SetString(theatersshelf,)</onclick>
 
             <onup>noop</onup>
             <ondown condition="Control.IsVisible(312)">312</ondown>
@@ -197,14 +197,14 @@
         </control>
         <control type="group" id="700" description="Shelf items">
             <include>homeanimation</include>
-            <include>Movies</include>
-            <include>Music</include>
-            <include>Addons</include>
+            <include>Posters</include>
+            <include>Squares</include>
+            <!--<include>Addons</include>-->
             <include>Episodes</include>
             <include>Favourites</include>
             <include>Livetv</include>
             <include>appstore_shelf</include>
-            <include>general</include>
+            <!--<include>general</include>-->
             <include>weather_shelf</include>
         </control>
         <control type="group" description="RSS">

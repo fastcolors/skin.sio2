@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="ShelfFade">
-        <animation effect="fade" start="0" end="100" delay="200" time="300">Visible</animation>
-        <animation effect="fade" start="100" end="0" time="150">Hidden</animation>
+        <animation effect="fade" start="0" end="100" delay="500" time="400" reversible="false">Visible</animation>
+        <!--<animation effect="fade" start="100" end="0" time="0">Hidden</animation>-->
     </include>
     <include name="PosterShortcutsCommons">
         <include>ShelfFade</include>
-        <animation effect="slide" end="-100,0" time="250" condition="Container(311).Column(4)">Conditional</animation>
+        <visible>!Control.IsVisible(312) + !Control.IsVisible(313)</visible>
+        <animation effect="slide" end="-100,0" time="250" condition="Container.Column(4)">Conditional</animation>
         <top>90</top>
         <width>2030</width>
         <height>630</height>
@@ -84,6 +85,7 @@
     </include>
     <include name="EpisodeShortcutsCommons">
         <include>ShelfFade</include>
+        <visible>!Control.IsVisible(311) + !Control.IsVisible(312)</visible>
         <top>110</top>
         <width>1920</width>
         <height>610</height>
@@ -255,6 +257,7 @@
     </include>
     <include name="SquareShortcutsCommons">
         <include>ShelfFade</include>
+        <visible>!Control.IsVisible(311) + !Control.IsVisible(313)</visible>
         <top>90</top>
         <width>1920</width>
         <height>630</height>
@@ -310,26 +313,26 @@
             </control>
         </focusedlayout>
     </include>
-    <include name="Movies">
+    <include name="Posters">
         <control type="panel" id="311" description="Movies Shelf Shortcuts">
-            <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),movies)</visible>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(viewtype),Posters)</visible>
             <include>PosterShortcutsCommons</include>
-            <content target="video">$VAR[movieshelf]</content>
+            <content target="video">$VAR[shelfcontent]</content>
         </control>
     </include>
-    <include name="Music">
+    <include name="Squares">
         <control type="panel" id="312" description="Music Shelf Shortcuts">
-            <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),music)</visible>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(viewtype),Squares)</visible>
             <include>SquareShortcutsCommons</include>
             <onclick>PlayMedia($ESCINFO[ListItem.DBID,musicdb://albums/,/])</onclick>
-            <content target="audio">$VAR[musicshelf]</content>
+            <content target="audio">$VAR[shelfcontent]</content>
         </control>
     </include>
     <include name="Episodes">
         <control type="panel" id="313" description="Episodes Shelf Shortcuts">
-            <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),episodes)</visible>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(viewtype),Episodes)</visible>
             <include>EpisodeShortcutsCommons</include>
-            <content target="video">$VAR[epshelf]</content>
+            <content target="video">$VAR[shelfcontent]</content>
         </control>
     </include>
     <include name="Livetv">
@@ -340,13 +343,13 @@
             <content target="video">pvr://channels/tv/*</content>
         </control>
     </include>
-    <include name="Addons">
-        <control type="panel" id="317" description="Addons Shelf Shortcuts">
-            <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) | String.IsEqual(Container(9000).ListItem.Property(defaultID),programs)</visible>
-            <include>SquareShortcutsCommons</include>
-            <content target="programs">$VAR[squareshelf]</content>
-        </control>
-    </include>
+    <!--<include name="Addons">-->
+    <!--<control type="panel" id="317" description="Addons Shelf Shortcuts">-->
+    <!--<visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) | String.IsEqual(Container(9000).ListItem.Property(defaultID),programs)</visible>-->
+    <!--<include>SquareShortcutsCommons</include>-->
+    <!--<content target="programs">$VAR[squareshelf]</content>-->
+    <!--</control>-->
+    <!--</include>-->
     <include name="Favourites">
         <control type="panel" id="318" description="Favourites">
             <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),favourites)</visible>
@@ -354,17 +357,41 @@
             <content>favourites://</content>
         </control>
     </include>
-    <include name="general">
-        <control type="panel" id="320" description="TOP Shortcuts">
-            <visible>$EXP[320visibility]</visible>
-            <onup>noop</onup>
-            <ondown>9000</ondown>
-            <onleft>315</onleft>
-            <onright>315</onright>
-            <include>SquareShortcutsCommons</include>
-            <content>$INFO[Container(9000).ListItem.Property(list)]</content>
-        </control>
-    </include>
+    <!--<include name="general">-->
+    <!--&lt;!&ndash;POSTER&ndash;&gt;-->
+    <!--<control type="panel" id="320" description="TOP Shortcuts">-->
+    <!--<visible>$EXP[320visibility]</visible>-->
+    <!--<visible>String.IsEqual(Container(9000).ListItem.Property(viewtype),poster)</visible>-->
+    <!--<onup>noop</onup>-->
+    <!--<ondown>9000</ondown>-->
+    <!--<onleft>315</onleft>-->
+    <!--<onright>315</onright>-->
+    <!--<include>PosterShortcutsCommons</include>-->
+    <!--<content>$INFO[Container(9000).ListItem.Property(list)]</content>-->
+    <!--</control>-->
+    <!--&lt;!&ndash;SQUARE&ndash;&gt;-->
+    <!--<control type="panel" id="320" description="TOP Shortcuts">-->
+    <!--<visible>$EXP[320visibility]</visible>-->
+    <!--<visible>![String.Contains(Container(9000).ListItem.Property(path),movies) | String.Contains(Container(9000).ListItem.Property(path),tvshows)]</visible>-->
+    <!--<onup>noop</onup>-->
+    <!--<ondown>9000</ondown>-->
+    <!--<onleft>315</onleft>-->
+    <!--<onright>315</onright>-->
+    <!--<include>SquareShortcutsCommons</include>-->
+    <!--<content>$INFO[Container(9000).ListItem.Property(list)]</content>-->
+    <!--</control>-->
+    <!--&lt;!&ndash;EPISODES&ndash;&gt;-->
+    <!--<control type="panel" id="320" description="TOP Shortcuts">-->
+    <!--<visible>$EXP[320visibility]</visible>-->
+    <!--<visible>![String.Contains(Container(9000).ListItem.Property(path),movies) | String.Contains(Container(9000).ListItem.Property(path),tvshows)]</visible>-->
+    <!--<onup>noop</onup>-->
+    <!--<ondown>9000</ondown>-->
+    <!--<onleft>315</onleft>-->
+    <!--<onright>315</onright>-->
+    <!--<include>SquareShortcutsCommons</include>-->
+    <!--<content>$INFO[Container(9000).ListItem.Property(list)]</content>-->
+    <!--</control>-->
+    <!--</include>-->
     <!--todo appstore shelf-->
     <include name="appstore_shelf">
         <control type="group">
