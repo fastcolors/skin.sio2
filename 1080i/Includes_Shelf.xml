@@ -358,7 +358,7 @@
         <!--MOVIES-->
         <control type="panel" id="320" description="TOP Shortcuts">
             <visible>$EXP[320visibility]</visible>
-            <visible>String.Contains(Container(9000).ListItem.Property(path),movies)</visible>
+            <visible>String.Contains(Container(9000).ListItem.Property(path),movies) | String.Contains(Container(9000).ListItem.Property(path),tvshows)</visible>
             <onup>noop</onup>
             <ondown>9000</ondown>
             <onleft>315</onleft>
@@ -369,12 +369,12 @@
         <!--MUSIC-->
         <control type="panel" id="320" description="TOP Shortcuts">
             <visible>$EXP[320visibility]</visible>
-            <visible>!String.Contains(Container(9000).ListItem.Property(path),movies)</visible>
+            <visible>![String.Contains(Container(9000).ListItem.Property(path),movies) | String.Contains(Container(9000).ListItem.Property(path),tvshows)]</visible>
             <onup>noop</onup>
             <ondown>9000</ondown>
             <onleft>315</onleft>
             <onright>315</onright>
-            <include>PosterShortcutsCommons</include>
+            <include>SquareShortcutsCommons</include>
             <content>$INFO[Container(9000).ListItem.Property(list)]</content>
         </control>
     </include>
