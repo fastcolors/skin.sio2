@@ -27,7 +27,6 @@
             <include>biglist</include>
             <include>icons</include>
             <include>banners</include>
-            <include>moviebanners</include>
             <include>widelist</include>
         </control>
         <!--VIEWS-->

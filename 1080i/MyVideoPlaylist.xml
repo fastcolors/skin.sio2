@@ -117,7 +117,6 @@
               </control>
             </focusedlayout>
           </control>
-          <include>LargeListSlider</include>
         </control>
       </control>
       <control type="group" description="Side menu 9000 group">

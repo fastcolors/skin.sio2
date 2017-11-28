@@ -80,7 +80,7 @@
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),RND)">special://skin/playlists/random_movies.xsp</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies)">videodb://recentlyaddedmovies/</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),episodes) + String.IsEqual(Skin.String(TVshelf),1)">special://skin/playlists/random_episodes.xsp</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),episodes) + String.IsEqual(Skin.String(TVshelf),2)">plugin://service.library.data.provider?type=recommendedepisodes&limit=18&reload=$INFO[Window.Property(recommendedepisodes)]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),episodes) + String.IsEqual(Skin.String(TVshelf),2)">plugin://service.library.data.provider?type=recommendedepisodes&amp;limit=18&amp;reload=$INFO[Window.Property(recommendedepisodes)]</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),episodes)">videodb://recentlyaddedepisodes</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)">addons://recently_updated/</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + String.IsEqual(Skin.String(musicshelf),artists) + Library.HasContent(Music)">special://skin/playlists/random_albums.xsp</value>
