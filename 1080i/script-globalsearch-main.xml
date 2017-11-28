@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <include>WindowOpenClose</include>
+    <include>OpenClose</include>
     <defaultcontrol always="true">9000</defaultcontrol>
     <controls>
         <control type="group" id="100">
