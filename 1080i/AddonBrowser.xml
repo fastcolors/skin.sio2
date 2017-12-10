@@ -3,6 +3,7 @@
     <backgroundcolor>lightgray</backgroundcolor>
     <defaultcontrol always="true">602</defaultcontrol>
     <allowoverlay>no</allowoverlay>
+    <views>50</views>
     <controls>
         <include>BlackBackground</include>
         <control type="group" id="5000">
