@@ -5,37 +5,37 @@
     <controls>
         <control type="group" id="100">
             <control type="label" id="110">
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="120">
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="130">
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="140">
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="150">
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="160">
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="170">
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="180">
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="210">
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="220">
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="230">
-                <font>-</font>
+                <font></font>
             </control>
             <include>BlackBackground</include>
             <control type="group">

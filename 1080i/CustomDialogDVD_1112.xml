@@ -37,7 +37,7 @@
         </animation>
         <width>126</width>
         <height>126</height>
-        <font>-</font>
+        <font></font>
         <texturenofocus>images/DVDPlayNF.png</texturenofocus>
         <texturefocus>images/DVDPlay.png</texturefocus>
         <onclick>PlayDVD</onclick>
@@ -50,7 +50,7 @@
         </animation>
         <width>126</width>
         <height>126</height>
-        <font>-</font>
+        <font></font>
         <texturenofocus>images/DVDEjectNF.png</texturenofocus>
         <texturefocus>images/DVDEject.png</texturefocus>
         <onclick>EjectTray()</onclick>

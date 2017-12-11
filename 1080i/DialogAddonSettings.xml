@@ -14,7 +14,7 @@
     </control>
     <control type="label" id="20" description="Heading">
       <include>Heading</include>
-      <label>-</label>
+      <label></label>
     </control>
     <control type="grouplist" id="9" description="TopHat">
       <top>90</top>
@@ -82,7 +82,7 @@
       <texture>images/Line.png</texture>
     </control>
     <control type="label" id="7">
-      <label>-</label>
+      <label></label>
       <font>size36</font>
       <textcolor>Blue</textcolor>
     </control>

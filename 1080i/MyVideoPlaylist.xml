@@ -153,7 +153,7 @@
           </control>
           <control type="button" id="26" description="Repeat">
             <include>DialogButt</include>
-            <label>-</label>
+            <label></label>
           </control>
         </control>
       </control>

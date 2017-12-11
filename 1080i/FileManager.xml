@@ -26,7 +26,7 @@
         <left>45</left>
         <width>900</width>
         <align>left</align>
-        <label>-</label>
+        <label></label>
         <font>size30B</font>
         <haspath>true</haspath>
         <textcolor>orange</textcolor>
@@ -120,7 +120,7 @@
         <align>left</align>
         <font>size26</font>
         <textcolor>gray</textcolor>
-        <label>-</label>
+        <label></label>
       </control>
     </control>
     <control type="group" description="Right panel">
@@ -131,7 +131,7 @@
         <right>45</right>
         <width>900</width>
         <align>right</align>
-        <label>-</label>
+        <label></label>
         <font>size30B</font>
         <haspath>true</haspath>
         <textcolor>orange</textcolor>
@@ -223,7 +223,7 @@
         <align>right</align>
         <font>size26</font>
         <textcolor>gray</textcolor>
-        <label>-</label>
+        <label></label>
       </control>
     </control>
   </controls>

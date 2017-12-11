@@ -18,20 +18,20 @@
                 <enable>MusicPlayer.HasPrevious</enable>
                 <width>540</width>
                 <height>540</height>
-                <texturefocus>-</texturefocus>
+                <texturefocus></texturefocus>
                 <onclick>Playlist.PlayOffset(-1)</onclick>
                 <onclick>right</onclick>
             </control>
             <control type="button" id="200">
                 <width>600</width>
                 <height>600</height>
-                <texturefocus>-</texturefocus>
+                <texturefocus></texturefocus>
             </control>
             <control type="button" id="300">
                 <enable>MusicPlayer.HasNext</enable>
                 <width>540</width>
                 <height>540</height>
-                <texturefocus>-</texturefocus>
+                <texturefocus></texturefocus>
                 <onclick>Playlist.PlayOffset(1)</onclick>
                 <onclick>left</onclick>
             </control>

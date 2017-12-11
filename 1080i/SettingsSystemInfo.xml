@@ -62,7 +62,7 @@
           <midtexture border="0,5,0,5">MusicOSD/ProgressM.png</midtexture>
           <righttexture border="0,5,6,5">MusicOSD/ProgressR.png</righttexture>
           <lefttexture border="6,5,0,5">MusicOSD/ProgressL.png</lefttexture>
-          <overlaytexture>-</overlaytexture>
+          <overlaytexture></overlaytexture>
           <info>System.CPUUsage</info>
         </control>
         <control type="label" id="23">
@@ -79,7 +79,7 @@
           <midtexture border="0,5,0,5">MusicOSD/ProgressM.png</midtexture>
           <righttexture border="0,5,6,5">MusicOSD/ProgressR.png</righttexture>
           <lefttexture border="6,5,0,5">MusicOSD/ProgressL.png</lefttexture>
-          <overlaytexture>-</overlaytexture>
+          <overlaytexture></overlaytexture>
           <info>system.memory(used)</info>
         </control>
         <control type="label" id="2">

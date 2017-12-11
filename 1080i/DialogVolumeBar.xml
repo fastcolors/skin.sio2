@@ -34,7 +34,7 @@
           <midtexture border="0,1,0,1">progress/ProgressM.png</midtexture>
           <righttexture border="1,1,6,1">progress/ProgressR.png</righttexture>
           <lefttexture border="6,1,1,1">progress/ProgressL.png</lefttexture>
-          <overlaytexture>-</overlaytexture>
+          <overlaytexture></overlaytexture>
           <info>Player.Volume</info>
         </control>
       </control>

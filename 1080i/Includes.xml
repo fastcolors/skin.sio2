@@ -82,9 +82,9 @@
         <top>-30</top>
         <width>1</width>
         <height>1</height>
-        <label>-</label>
-        <texturenofocus>-</texturenofocus>
-        <texturefocus>-</texturefocus>
+        <label></label>
+        <texturenofocus></texturenofocus>
+        <texturefocus></texturefocus>
     </include>
     <include name="Heading">
         <centerleft>960</centerleft>
@@ -270,7 +270,7 @@
                 <control type="button" id="3">
                     <description>Sort by button</description>
                     <include>DialogButt</include>
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <control type="togglebutton" id="4">
                     <description>Sort asc</description>
@@ -326,7 +326,7 @@
                 <control type="button" id="28">
                     <description>Channel Groups</description>
                     <include>DialogButt</include>
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <control type="radiobutton" id="600" description="EPG">
                     <visible>Window.IsActive(TVGuide)</visible>
@@ -383,8 +383,8 @@
         <width>auto</width>
         <textcolor>dimgray</textcolor>
         <focusedcolor>white</focusedcolor>
-        <texturenofocus>-</texturenofocus>
-        <texturefocus>-</texturefocus>
+        <texturenofocus></texturenofocus>
+        <texturefocus></texturefocus>
     </include>
     <include name="musictopbutton">
         <animation>Focus</animation>
@@ -393,8 +393,8 @@
         <width>auto</width>
         <textcolor>dimgray</textcolor>
         <focusedcolor>white</focusedcolor>
-        <texturenofocus>-</texturenofocus>
-        <texturefocus>-</texturefocus>
+        <texturenofocus></texturenofocus>
+        <texturefocus></texturefocus>
     </include>
     <include name="homeanimation">
         <animation condition="Container(9000).Row(1) + !ControlGroup(700).HasFocus + !Control.HasFocus(9009)" effect="slide" end="0,-240" time="220">Conditonal</animation>
@@ -454,7 +454,7 @@
                     <height>60</height>
                     <include>musictopbutton</include>
                     <onclick></onclick>
-                    <label>-</label>
+                    <label></label>
                 </control>
             </control>
         </control>
@@ -701,7 +701,7 @@
                         <height>50</height>
                         <width>480</width>
                         <textureradiofocus>images/osdRadioON.png</textureradiofocus>
-                        <textureradionofocus>-</textureradionofocus>
+                        <textureradionofocus></textureradionofocus>
                         <radioposx>5</radioposx>
                         <include>osdtopbutton</include>
                         <label>Stereo Upmix</label>
@@ -715,7 +715,7 @@
                         <height>50</height>
                         <width>480</width>
                         <textureradiofocus>images/osdRadioON.png</textureradiofocus>
-                        <textureradionofocus>-</textureradionofocus>
+                        <textureradionofocus></textureradionofocus>
                         <radioposx>5</radioposx>
                         <include>osdtopbutton</include>
                         <label>Passthrough</label>

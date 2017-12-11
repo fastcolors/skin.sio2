@@ -88,7 +88,7 @@
                     <onleft>noop</onleft>
                     <onright>60</onright>
                     <focusposition>2</focusposition>
-                    <pagecontrol>-</pagecontrol>
+                    <pagecontrol></pagecontrol>
                     <scrolltime>200</scrolltime>
                     <itemlayout height="40">
                         <control type="label">

@@ -44,7 +44,7 @@
                         <scroll>false</scroll>
                         <font>size39B</font>
                         <textcolor>dimgray</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
@@ -71,7 +71,7 @@
                             <scroll>false</scroll>
                             <font>size39B</font>
                             <textcolor>darktext</textcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </control>

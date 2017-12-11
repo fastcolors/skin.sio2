@@ -41,7 +41,7 @@
             <font>shelf</font>
             <textcolor>ff555555</textcolor>
             <label>$VAR[shelflabel]</label>
-            <texturefocus>-</texturefocus>
+            <texturefocus></texturefocus>
             <!--MOVIES-->
             <onclick  condition="$EXP[ismovies] + String.IsEqual(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
             <onclick  condition="$EXP[ismovies] + String.IsEqual(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
@@ -218,7 +218,7 @@
                 <height>33</height>
                 <font>size22</font>
                 <urlset>1</urlset>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
                 <titlecolor>white</titlecolor>
                 <headlinecolor>white</headlinecolor>
                 <textcolor>gray</textcolor>
@@ -266,7 +266,7 @@
                     <align>left</align>
                     <aligny>center</aligny>
                     <textcolor>black</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label>$INFO[MusicPlayer.Artist]</label>
                 </control>
                 <control type="label" id="402" description="Message">
@@ -276,7 +276,7 @@
                     <align>left</align>
                     <aligny>center</aligny>
                     <textcolor>black</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label>$INFO[MusicPlayer.Album]</label>
                 </control>
             </control>
@@ -289,7 +289,7 @@
             <height>25</height>
             <align>right</align>
             <font>size27</font>
-            <shadowcolor>-</shadowcolor>
+            <shadowcolor></shadowcolor>
             <textcolor>white</textcolor>
             <label>$INFO[System.Date(ddd d mmm)] • $INFO[System.Time]</label>
         </control>

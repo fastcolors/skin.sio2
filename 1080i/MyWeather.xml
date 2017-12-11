@@ -27,7 +27,7 @@
                 <top>990</top>
                 <width>400</width>
                 <height>45</height>
-                <label>-</label>
+                <label></label>
                 <font>size26</font>
                 <textcolor>dimgray</textcolor>
             </control>
@@ -41,7 +41,7 @@
                 <visible>true</visible>
                 <texturefocus></texturefocus>
                 <texturenofocus></texturenofocus>
-                <label>-</label>
+                <label></label>
                 <textcolor>white</textcolor>
                 <font>size42B</font>
                 <ondown>150</ondown>
@@ -56,7 +56,7 @@
             <onup>150</onup>
             <width>300</width>
             <font>size39B</font>
-            <label>-</label>
+            <label></label>
             <align>center</align>
         </control>
         <control type="group" id="51">

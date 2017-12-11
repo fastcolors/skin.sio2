@@ -45,7 +45,7 @@
 			<width>1040</width>
 			<height>305</height>
 			<align>justify</align>
-			<pagecontrol>-</pagecontrol>
+			<pagecontrol></pagecontrol>
 			<label fallback="161">$INFO[ListItem.Plot]</label>
 		</control>
 		<control type="textbox">
@@ -93,7 +93,7 @@
 				<description>Record</description>
 				<width>auto</width>
 				<include>SmallButt</include>
-				<label>-</label>
+				<label></label>
 			</control>
 			<control type="button" id="7">
 				<description>OK</description>

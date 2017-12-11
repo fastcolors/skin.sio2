@@ -120,12 +120,12 @@
                 </control>
                 <control type="radiobutton" id="13" description="autoupdate">
                     <animation effect="zoom" time="120" start="100" end="110" center="auto" tween="Back" easing="Out">Focus</animation>
-                    <label>-</label>
+                    <label></label>
                     <width>800</width>
                 </control>
                 <control type="button" id="12" description="start">
                     <animation effect="zoom" time="120" start="100" end="110" center="auto" tween="Back" easing="Out">Focus</animation>
-                    <label>-</label>
+                    <label></label>
                     <align>left</align>
                     <width>800</width>
                 </control>

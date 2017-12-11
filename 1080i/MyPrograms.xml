@@ -29,7 +29,7 @@
           <include>DialogButt</include>
         </control>
         <control type="togglebutton" id="4" description="SortMode">
-          <alttexturenofocus>-</alttexturenofocus>
+          <alttexturenofocus></alttexturenofocus>
           <include>DialogButt</include>
           <label>$LOCALIZE[21430]</label>
           <altlabel>$LOCALIZE[21431]</altlabel>

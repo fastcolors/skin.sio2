@@ -16,7 +16,7 @@
         <onright>noop</onright>
         <onup>noop</onup>
         <ondown>11</ondown>
-        <pagecontrol>-</pagecontrol>
+        <pagecontrol></pagecontrol>
         <scrolltime>250</scrolltime>
         <focusposition>1</focusposition>
         <movement>1</movement>
@@ -99,7 +99,7 @@
         <texturefocus>images/QuitFO.png</texturefocus>
         <texturenofocus>images/QuitNF.png</texturenofocus>
         <onclick>XBMC.Quit</onclick>
-        <font>-</font>
+        <font></font>
         <label>$LOCALIZE[13009]</label>
       </control>
     </control>

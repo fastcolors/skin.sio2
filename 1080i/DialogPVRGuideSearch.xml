@@ -65,8 +65,8 @@
 			<font>size33</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
+			<texturefocus></texturefocus>
+			<texturenofocus></texturenofocus>
 			<align>left</align>
 			<onleft>9</onleft>
 			<onright>9</onright>

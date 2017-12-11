@@ -211,7 +211,7 @@
                 <onright>noop</onright>
                 <onup>195</onup>
                 <ondown>50</ondown>
-                <movement>-</movement>
+                <movement></movement>
                 <orientation>horizontal</orientation>
                 <scrolltime easing="inout">280</scrolltime>
                 <itemlayout width="250" height="400">
@@ -256,7 +256,7 @@
                 <onup>999</onup>
                 <ondown>noop</ondown>
                 <viewtype>ActorsandRoles</viewtype>
-                <movement>-</movement>
+                <movement></movement>
                 <orientation>horizontal</orientation>
                 <scrolltime easing="inout">280</scrolltime>
                 <itemlayout width="250" height="400">

@@ -9,7 +9,7 @@
         <include>BlackBackground</include>
         <control type="label" id="29">
             <include>Heading</include>
-            <label>-</label>
+            <label></label>
         </control>
         <control type="group">
             <description>Small Media Window</description>
@@ -110,7 +110,7 @@
                                 <left>40</left>
                                 <width>700</width>
                                 <include>BigListTitle</include>
-                                <label>$INFO[ListItem.ChannelNumber]$INFO[ListItem.Label, • ]</label>
+                                <label>$INFO[ListItem.ChannelNumberLabel]$INFO[ListItem.Label, • ]</label>
                             </control>
                             <control type="label">
                                 <left>45</left>
@@ -164,7 +164,7 @@
                                     <left>40</left>
                                     <width>700</width>
                                     <include>BigListTitleFO</include>
-                                    <label>$INFO[ListItem.ChannelNumber]$INFO[ListItem.Label, • ]</label>
+                                    <label>$INFO[ListItem.ChannelNumberLabel]$INFO[ListItem.Label, • ]</label>
                                 </control>
                                 <control type="label">
                                     <left>45</left>

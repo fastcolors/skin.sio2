@@ -80,19 +80,19 @@
         <control type="button" id="6" description="Album Info">
           <height>60</height>
           <width>270</width>
-          <label>-</label>
+          <label></label>
           <font>size27</font>
         </control>
         <control type="button" id="7" description="User Rating">
           <height>60</height>
           <width>270</width>
-          <label>-</label>
+          <label></label>
           <font>size27</font>
         </control>
         <control type="button" id="10" description="Get artist thumbnail / Get album thumbnail">
           <height>60</height>
           <width>270</width>
-          <label>-</label>
+          <label></label>
           <font>size27</font>
         </control>
         <control type="button" id="12" description="Get artist fanart image">

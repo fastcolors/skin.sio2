@@ -297,7 +297,7 @@
         <scroll>false</scroll>
         <font>size36</font>
         <textcolor>darktext</textcolor>
-        <shadowcolor>-</shadowcolor>
+        <shadowcolor></shadowcolor>
     </include>
     <include name="50LabelFO">
         <left>45</left>
@@ -306,7 +306,7 @@
         <aligny>center</aligny>
         <font>size36</font>
         <textcolor>black</textcolor>
-        <shadowcolor>-</shadowcolor>
+        <shadowcolor></shadowcolor>
     </include>
     <include name="50Label2">
         <right>42</right>
@@ -373,7 +373,7 @@
         <haspath>true</haspath>
         <align>right</align>
         <textcolor>black</textcolor>
-        <shadowcolor>-</shadowcolor>
+        <shadowcolor></shadowcolor>
     </include>
     <include name="Watched_Marks">
         <control type="image">
@@ -436,7 +436,7 @@
         <font>size22</font>
         <align>center</align>
         <focusedcolor>white</focusedcolor>
-        <texturefocus>-</texturefocus>
+        <texturefocus></texturefocus>
     </include>
     <include name="DialogGLs">
         <centerleft>960</centerleft>

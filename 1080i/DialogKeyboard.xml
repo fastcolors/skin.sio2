@@ -41,8 +41,8 @@
                 <top>199</top>
                 <width>1540</width>
                 <height>60</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <texturefocus></texturefocus>
+                <texturenofocus></texturenofocus>
                 <align>center</align>
             </control>
             <control type="group">

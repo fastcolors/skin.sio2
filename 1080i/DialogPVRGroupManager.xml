@@ -98,7 +98,7 @@
             <ondown>13</ondown>
             <onleft>29</onleft>
             <onright>11</onright>
-            <pagecontrol>-</pagecontrol>
+            <pagecontrol></pagecontrol>
             <scrolltime>200</scrolltime>
             <itemlayout height="60">
               <control type="label">
@@ -168,7 +168,7 @@
             <ondown>11</ondown>
             <onleft>13</onleft>
             <onright>12</onright>
-            <pagecontrol>-</pagecontrol>
+            <pagecontrol></pagecontrol>
             <scrolltime>200</scrolltime>
             <itemlayout height="60">
               <control type="label">
@@ -178,7 +178,7 @@
                 <font>size26</font>
                 <align>left</align>
                 <aligny>center</aligny>
-                <label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
+                <label>$INFO[ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
               </control>
               <control type="image">
                 <width>40</width>
@@ -203,7 +203,7 @@
                 <align>left</align>
                 <aligny>center</aligny>
                 <textcolor>orange</textcolor>
-                <label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
+                <label>$INFO[ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
               </control>
               <control type="image">
                 <width>40</width>
@@ -251,7 +251,7 @@
             <ondown>12</ondown>
             <onleft>11</onleft>
             <onright>29</onright>
-            <pagecontrol>-</pagecontrol>
+            <pagecontrol></pagecontrol>
             <scrolltime>200</scrolltime>
             <itemlayout height="60">
               <control type="label">
@@ -263,7 +263,7 @@
                 <aligny>center</aligny>
                 <textcolor>Grey2</textcolor>
                 <selectedcolor>selected</selectedcolor>
-                <label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
+                <label>$INFO[ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
               </control>
               <control type="image">
                 <width>40</width>
@@ -288,7 +288,7 @@
                 <align>left</align>
                 <aligny>center</aligny>
                 <textcolor>orange</textcolor>
-                <label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
+                <label>$INFO[ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
               </control>
               <control type="image">
                 <width>40</width>

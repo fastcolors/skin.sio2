@@ -4,8 +4,8 @@
     <left>0</left>
     <width>300</width>
     <height>81</height>
-    <texturefocus>-</texturefocus>
-    <label>-</label>
+    <texturefocus></texturefocus>
+    <label></label>
   </include>
   <include name="Sublist">
     <top>592</top>

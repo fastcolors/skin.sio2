@@ -17,7 +17,7 @@
       <top>360</top>
       <control type="label" id="1" description="Heading">
         <width>960</width>
-        <label>-</label>
+        <label></label>
         <font>size28</font>
         <textcolor>darktext</textcolor>
         <align>center</align>
@@ -28,7 +28,7 @@
         <height>145</height>
         <align>center</align>
         <textcolor>darktext</textcolor>
-        <label>-</label>
+        <label></label>
       </control>
       <control type="progress" id="20" description="Progressbar">
         <left>0</left>

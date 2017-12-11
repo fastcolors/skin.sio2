@@ -28,8 +28,8 @@
                 <height>20</height>
                 <font>size27B</font>
                 <align>left</align>
-                <shadowcolor>-</shadowcolor>
-                <label>-</label>
+                <shadowcolor></shadowcolor>
+                <label></label>
             </control>
             <control type="label" id="402" description="Message">
                 <left>120</left>
@@ -38,8 +38,8 @@
                 <height>44</height>
                 <font>size22</font>
                 <align>left</align>
-                <shadowcolor>-</shadowcolor>
-                <label>-</label>
+                <shadowcolor></shadowcolor>
+                <label></label>
             </control>
         </control>
     </controls>

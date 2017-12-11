@@ -69,7 +69,7 @@
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
                             <selectedcolor>red</selectedcolor>
-                            <info>ListItem.ChannelNumber</info>
+                            <info>ListItem.ChannelNumberLabel</info>
                         </control>
                         <control type="label" id="1">
                             <left>60</left>
@@ -100,7 +100,7 @@
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
                             <selectedcolor>red</selectedcolor>
-                            <info>ListItem.ChannelNumber</info>
+                            <info>ListItem.ChannelNumberLabel</info>
                         </control>
                         <control type="label" id="1">
                             <left>60</left>
@@ -129,7 +129,7 @@
                             <font>font12</font>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <align>left</align>
                             <scroll>false</scroll>
                             <label>$INFO[ListItem.Label]</label>
@@ -142,7 +142,7 @@
                             <font>font12</font>
                             <aligny>center</aligny>
                             <textcolor>red</textcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <align>left</align>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
@@ -165,7 +165,7 @@
                     </itemlayout>
                     <focusedlayout height="50">
                         <control type="image" id="2">
-                            <width>-</width>
+                            <width></width>
                             <height>50</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="8" fallback="pvr/pvrbutton.png">$INFO[ListItem.Property(GenreType),pvr/,.png]</texture>
@@ -178,7 +178,7 @@
                             <font>font12</font>
                             <aligny>center</aligny>
                             <textcolor>black</textcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <align>left</align>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
@@ -190,7 +190,7 @@
                             <font>font12</font>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <align>left</align>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
@@ -297,7 +297,7 @@
                                 <left>40</left>
                                 <width>700</width>
                                 <include>BigListTitle</include>
-                                <label>$INFO[ListItem.ChannelNumber]$INFO[ListItem.Label, • ]</label>
+                                <label>$INFO[ListItem.ChannelNumberLabel]$INFO[ListItem.Label, • ]</label>
                             </control>
                             <control type="label">
                                 <left>45</left>
@@ -351,7 +351,7 @@
                                     <left>40</left>
                                     <width>700</width>
                                     <include>BigListTitle</include>
-                                    <label>$INFO[ListItem.ChannelNumber]$INFO[ListItem.Label, • ]</label>
+                                    <label>$INFO[ListItem.ChannelNumberLabel]$INFO[ListItem.Label, • ]</label>
                                 </control>
                                 <control type="label">
                                     <left>45</left>
@@ -416,7 +416,7 @@
                                 <left>40</left>
                                 <width>700</width>
                                 <include>BigListTitle</include>
-                                <label>$INFO[ListItem.ChannelNumber]$INFO[ListItem.Label, • ]</label>
+                                <label>$INFO[ListItem.ChannelNumberLabel]$INFO[ListItem.Label, • ]</label>
                             </control>
                             <control type="label">
                                 <left>45</left>
@@ -470,7 +470,7 @@
                                     <left>40</left>
                                     <width>700</width>
                                     <include>BigListTitle</include>
-                                    <label>$INFO[ListItem.ChannelNumber]$INFO[ListItem.Label, • ]</label>
+                                    <label>$INFO[ListItem.ChannelNumberLabel]$INFO[ListItem.Label, • ]</label>
                                 </control>
                                 <control type="label">
                                     <left>45</left>
