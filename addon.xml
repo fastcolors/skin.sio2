@@ -6,22 +6,10 @@
         <import addon="script.skinshortcuts" version="1.0.13"/>
         <import addon="script.artwork.downloader" version="13.1.0"/>
         <import addon="service.library.data.provider" version="0.0.4"/>
-        <!--<import addon="resource.uisounds.sio2" version="1.0.0"/>-->
+        <import addon="resource.uisounds.appletv" version="1.0.0"/>
     </requires>
     <extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="1" debugging="false">
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
-            <screenshot>resources/screenshot01.jpg</screenshot>
-            <screenshot>resources/screenshot02.jpg</screenshot>
-            <screenshot>resources/screenshot03.jpg</screenshot>
-            <screenshot>resources/screenshot04.jpg</screenshot>
-            <screenshot>resources/screenshot05.jpg</screenshot>
-            <screenshot>resources/screenshot06.jpg</screenshot>
-            <screenshot>resources/screenshot07.jpg</screenshot>
-            <screenshot>resources/screenshot08.jpg</screenshot>
-        </assets>
     </extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
@@ -68,5 +56,17 @@
         <description lang="en">If you like Apple "everything at hand" policy for interfaces, You might want to give this Skin a try. I designed it trying to put as few clicks as possible between You and what You're trying to do (or watch ;) ).[CR]Thanks to Pecinko for Quartz as a solid base to build on.[CR] Thanks to testers and Inspirers: Steverae, Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
 
         <disclaimer>SiO2 - Enjoy</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+            <screenshot>resources/screenshot01.jpg</screenshot>
+            <screenshot>resources/screenshot02.jpg</screenshot>
+            <screenshot>resources/screenshot03.jpg</screenshot>
+            <screenshot>resources/screenshot04.jpg</screenshot>
+            <screenshot>resources/screenshot05.jpg</screenshot>
+            <screenshot>resources/screenshot06.jpg</screenshot>
+            <screenshot>resources/screenshot07.jpg</screenshot>
+            <screenshot>resources/screenshot08.jpg</screenshot>
+        </assets>
     </extension>
 </addon>
