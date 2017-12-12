@@ -43,7 +43,7 @@
                                 <width>1750</width>
                                 <align>left</align>
                                 <include>BigListDetails</include>
-                                <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]$INFO[ListItem.Mpaa, • $LOCALIZE[20074]: ]$INFO[ListItem.VideoResolution, • $LOCALIZE[21443]: ]</label>
+                                <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • ]$INFO[ListItem.label2, • ]$INFO[ListItem.Mpaa, • $LOCALIZE[20074]: ]$INFO[ListItem.VideoResolution, • $LOCALIZE[21443]: ]</label>
                             </control>
                         </control>
                         <control type="image">
@@ -94,7 +94,7 @@
                                 <width>1750</width>
                                 <align>left</align>
                                 <include>BigListDetailsFO</include>
-                                <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]$INFO[ListItem.Mpaa, • $LOCALIZE[20074]: ]$INFO[ListItem.VideoResolution, • $LOCALIZE[21443]: ]</label>
+                                <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • ]$INFO[ListItem.label2, • ]$INFO[ListItem.Mpaa, • $LOCALIZE[20074]: ]$INFO[ListItem.VideoResolution, • $LOCALIZE[21443]: ]</label>
                             </control>
                         </control>
                         <control type="image">

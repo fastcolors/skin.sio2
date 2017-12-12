@@ -54,7 +54,7 @@
                             <width>630</width>
                             <left>45</left>
                             <include>BigListDetails</include>
-                            <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]$INFO[ListItem.Mpaa, • $LOCALIZE[20074]: ]</label>
+                            <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • ]$INFO[ListItem.label2, • ]$INFO[ListItem.Mpaa, • $LOCALIZE[20074]: ]</label>
                         </control>
                         <control type="label" description="Label2">
                             <visible>container.content(episodes) + !ListItem.IsFolder</visible>
@@ -62,7 +62,7 @@
                             <align>left</align>
                             <width>630</width>
                             <include>BigListDetails</include>
-                            <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]$INFO[ListItem.Premiered, • $LOCALIZE[31039]]</label>
+                            <label>$INFO[ListItem.Duration]$INFO[ListItem.Premiered, • $LOCALIZE[31039]]</label>
                         </control>
                     </itemlayout>
                     <focusedlayout width="802" height="111">
@@ -110,7 +110,7 @@
                                 <width>630</width>
                                 <left>45</left>
                                 <include>BigListDetails</include>
-                                <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]$INFO[ListItem.Mpaa, • $LOCALIZE[20074]: ]</label>
+                                <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • ]$INFO[ListItem.label2, • ]$INFO[ListItem.Mpaa, • $LOCALIZE[20074]: ]</label>
                             </control>
                             <control type="label" description="Label2">
                                 <visible>container.content(episodes) + !ListItem.IsFolder</visible>
@@ -118,7 +118,7 @@
                                 <align>left</align>
                                 <width>630</width>
                                 <include>BigListDetails</include>
-                                <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]$INFO[ListItem.Premiered, • $LOCALIZE[31039]]</label>
+                                <label>$INFO[ListItem.Duration]$INFO[ListItem.Premiered, • $LOCALIZE[31039]]</label>
                             </control>
                         </control>
                     </focusedlayout>

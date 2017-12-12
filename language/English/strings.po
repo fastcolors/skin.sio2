@@ -119,8 +119,8 @@ msgid "App Store"
 msgstr "App Store"
 
 msgctxt "#31038"
-msgid "min"
-msgstr "min"
+msgid ""
+msgstr ""
 
 msgctxt "#31039"
 msgid "Premiered: "
