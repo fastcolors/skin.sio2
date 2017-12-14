@@ -8,6 +8,16 @@
     <animation effect="fade" time="250">WindowClose</animation>
     <controls>
         <include>BlackBackground</include>
+        <control type="label">
+            <centerleft>960</centerleft>
+            <centertop>450</centertop>
+            <width>1080</width>
+            <height>60</height>
+            <align>center</align>
+            <textcolor>darkgray</textcolor>
+            <font>shelf</font>
+            <label>$INFO[ListItem.Label,Loading ]</label>
+        </control>
         <control type="multiimage" description="Busy animation">
             <centerleft>960</centerleft>
             <centertop>540</centertop>
