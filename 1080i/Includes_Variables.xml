@@ -147,5 +147,9 @@
         <value>$INFO[ListItem.Icon]</value>
     </variable>
 
+    <variable name="loadname">
+        <value condition="Window.IsActive(Home.xml)">Loading $INFO[Skin.String(load)]</value>
+        <value>Loading $INFO[ListItem.Label]</value>
+    </variable>
 
 </includes>

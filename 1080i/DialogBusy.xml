@@ -11,12 +11,12 @@
         <control type="label">
             <centerleft>960</centerleft>
             <centertop>450</centertop>
-            <width>1080</width>
+            <width>1920</width>
             <height>60</height>
             <align>center</align>
             <textcolor>darkgray</textcolor>
             <font>shelf</font>
-            <label>$INFO[ListItem.Label,Loading ]</label>
+            <label>$VAR[loadname]</label>
         </control>
         <control type="multiimage" description="Busy animation">
             <centerleft>960</centerleft>

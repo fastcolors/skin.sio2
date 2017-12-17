@@ -291,6 +291,7 @@
             <font>size27</font>
             <shadowcolor></shadowcolor>
             <textcolor>white</textcolor>
+            <!--<label>$VAR[loadname]</label>-->
             <label>$INFO[System.Date(ddd d mmm)] • $INFO[System.Time]</label>
         </control>
         <control type="image">

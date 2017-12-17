@@ -18,6 +18,8 @@
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
         <onclick condition="$EXP[isupcomingmovies]">Contextmenu</onclick>
+        <onclick>Skin.SetString(load,$INFO[ListItem.Label])</onclick>
+        <onclick>PlayMedia($INFO[ListItem.FileNameAndPath])</onclick>
         <itemlayout height="600" width="382">
             <control type="image">
                 <left>90</left>
