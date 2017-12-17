@@ -25,7 +25,6 @@
                 <scrolltime tween="sine" easing="inout">280</scrolltime>
                 <itemlayout  width="802" height="111">
                     <include>Watched_Marks</include>
-                    <include>Sets</include>
                     <include>Arrow</include>
                     <control type="label" description="Main Label">
                         <top>25</top>

@@ -62,7 +62,7 @@
                             <font>size27B</font>
                             <scroll>false</scroll>
                             <textcolor>red</textcolor>
-                            <label>NEW ALBUM</label>
+                            <label>31033</label>
                         </control>
                         <control type="label">
                             <top>95</top>
@@ -121,7 +121,7 @@
                                 <font>size27B</font>
                                 <scroll>false</scroll>
                                 <textcolor>red</textcolor>
-                                <label>NEW ALBUM</label>
+                                <label>31033</label>
                             </control>
                             <control type="label">
                                 <top>95</top>
@@ -153,7 +153,7 @@
                     <height>30</height>
                     <font>size42B</font>
                     <textcolor>darktext</textcolor>
-                    <label>Hot Tracks</label>
+                    <label>31034</label>
                 </control>
             </control>
             <control type="panel" id="667">

@@ -110,6 +110,18 @@ msgctxt "#31032"
 msgid "Log Off"
 msgstr "Log Off"
 
+msgctxt "#31033"
+msgid "NEW ALBUM"
+msgstr "NEW ALBUM"
+
+msgctxt "#31034"
+msgid "Hot Tracks"
+msgstr "Hot Tracks"
+
+msgctxt "#31035"
+msgid "Rate Movie"
+msgstr "Rate Movie"
+
 msgctxt "#31036"
 msgid "Reset ALL skin settings to default"
 msgstr "Reset ALL skin settings to default"
@@ -119,8 +131,8 @@ msgid "App Store"
 msgstr "App Store"
 
 msgctxt "#31038"
-msgid ""
-msgstr ""
+msgid "Customize"
+msgstr "Customize"
 
 msgctxt "#31039"
 msgid "Premiered: "
@@ -198,6 +210,10 @@ msgctxt "#31057"
 msgid "Replace Item"
 msgstr "Replace Item"
 
+msgctxt "#31058"
+msgid "EPG"
+msgstr "EPG"
+
 msgctxt "#31059"
 msgid "LiveTV"
 msgstr "LiveTv"
@@ -213,6 +229,10 @@ msgstr "Cinema Experience"
 msgctxt "#31062"
 msgid "Select Lyrics Add-on"
 msgstr "Select Lyrics Add-on"
+
+msgctxt "#31063"
+msgid "New Music"
+msgstr "New Music"
 
 msgctxt "#31064"
 msgid "Fullscreen"
@@ -233,6 +253,34 @@ msgstr "Top Albums"
 msgctxt "#31068"
 msgid "Toggle Debug"
 msgstr "Toggle Debug"
+
+msgctxt "#31069"
+msgid "Find More"
+msgstr "Find More"
+
+msgctxt "#31070"
+msgid "New Episode"
+msgstr "New Episode"
+
+msgctxt "#31071"
+msgid "Artwork"
+msgstr "Artwork"
+
+msgctxt "#31072"
+msgid "Set Viewtype"
+msgstr "Set Viewtype"
+
+msgctxt "#31073"
+msgid "Long Press to Edit Item"
+msgstr "Long Press to Edit Item"
+
+msgctxt "#31074"
+msgid "Max Item Number"
+msgstr "Max Item Number"
+
+msgctxt "#31075"
+msgid "show fanart"
+msgstr "show fanart"
 
 msgctxt "#31422"
 msgid "Movie Releases"

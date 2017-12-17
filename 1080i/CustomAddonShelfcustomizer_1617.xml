@@ -44,7 +44,7 @@
             <control type="button" id="504" description="customize">
                 <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
                 <include>SettingsSubmenuButtons</include>
-                <label>Customize</label>
+                <label>31038</label>
                 <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=24001)</onclick>
             </control>
         </control>

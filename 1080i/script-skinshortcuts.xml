@@ -181,7 +181,7 @@
                 <include>osdtopbutton</include>
                 <onclick>SetProperty(chooseProperty,viewtype)</onclick>
                 <onclick>SendClick(404)</onclick>
-                <label>Set Viewtype</label>
+                <label>31072</label>
             </control>
         </control>
         <control type="image">
@@ -194,7 +194,7 @@
             <left>60</left>
             <bottom>12</bottom>
             <width>470</width>
-            <label>Long Press to Edit Item</label>
+            <label>31073</label>
         </control>
         <control type="group">
             <visible>!Integer.IsLessOrEqual(Container(211).NumItems,29)</visible>
@@ -210,7 +210,7 @@
                 <width>410</width>
                 <bottom>12</bottom>
                 <align>right</align>
-                <label>Max Item Number</label>
+                <label>31074</label>
             </control>
         </control>
     </controls>

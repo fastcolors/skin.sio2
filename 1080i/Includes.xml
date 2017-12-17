@@ -132,7 +132,7 @@
         </control>
         <!--todo Playing infos-->
         <control type="group" description="Player Info">
-            <visible>!Control.HasFocus(340) + Player.HasMedia + ![Window.IsActive(DialogBusy.xml) | Window.IsActive(VideoFullscreen.xml) | Window.IsActive(myPVR.xml)]</visible>
+            <visible>Player.HasMedia + ![Window.IsActive(DialogBusy.xml) | Window.IsActive(VideoFullscreen.xml) | Window.IsActive(myPVR.xml)]</visible>
             <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
             <include>VisibleFade</include>
             <left>15</left>
@@ -333,7 +333,7 @@
                     <include>DialogButt</include>
                     <onclick>Container.SetViewMode(10)</onclick>
                     <selected>Control.IsVisible(10)</selected>
-                    <label>EPG</label>
+                    <label>31058</label>
                 </control>
                 <control type="radiobutton" id="602" description="Now">
                     <visible>Window.IsActive(TVGuide)</visible>
@@ -434,13 +434,13 @@
                     <height>60</height>
                     <include>musictopbutton</include>
                     <onclick>ReplaceWindow(1123)</onclick>
-                    <label>New Music</label>
+                    <label>31063</label>
                 </control>
                 <control type="button" id="603">
                     <height>60</height>
                     <include>musictopbutton</include>
                     <onclick>SendClick(16)</onclick>
-                    <label>Party Mode</label>
+                    <label>589</label>
                 </control>
                 <control type="togglebutton" id="20">
                     <description>Update library</description>
@@ -656,7 +656,7 @@
                         <height>50</height>
                         <textoffsetx>50</textoffsetx>
                         <include>osdtopbutton</include>
-                        <label>Find More</label>
+                        <label>31069</label>
                         <onclick>ActivateWindow(subtitlesearch)</onclick>
                     </control>
                     <control type="label" id="9020">
@@ -704,7 +704,7 @@
                         <textureradionofocus></textureradionofocus>
                         <radioposx>5</radioposx>
                         <include>osdtopbutton</include>
-                        <label>Stereo Upmix</label>
+                        <label>252</label>
                         <textoffsetx>50</textoffsetx>
                         <textcolor>lightgray</textcolor>
                         <onclick>RunScript(script.skin.helper.service,action=togglekodisetting,setting=audiooutput.stereoupmix)</onclick>
@@ -718,7 +718,7 @@
                         <textureradionofocus></textureradionofocus>
                         <radioposx>5</radioposx>
                         <include>osdtopbutton</include>
-                        <label>Passthrough</label>
+                        <label>14252</label>
                         <textoffsetx>50</textoffsetx>
                         <textcolor>lightgray</textcolor>
                         <onclick>RunScript(script.skin.helper.service,action=togglekodisetting,setting=audiooutput.passthrough)</onclick>

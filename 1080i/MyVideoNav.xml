@@ -27,7 +27,6 @@
             <include>biglist</include>
             <include>icons</include>
             <include>banners</include>
-            <include>moviebanners</include>
             <include>widelist</include>
         </control>
         <!--VIEWS-->
@@ -97,7 +96,7 @@
                 </control>
                 <control type="button" id="598">
                     <include>DialogButt</include>
-                    <label>Artwork</label>
+                    <label>31071</label>
                     <onclick condition="!system.hasaddon(script.artwork.downloader)">InstallAddon(script.artwork.downloader)</onclick>
                     <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, clearlogo)</onclick>
                     <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, clearlogo)</onclick>

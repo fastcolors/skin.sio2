@@ -120,7 +120,7 @@
                         <visible>String.IsEmpty(ListItem.UserRating)</visible>
                         <height>50</height>
                         <include>diavidinfobuttons</include>
-                        <label>Rate Movie</label>
+                        <label>31035</label>
                         <onclick>SendClick(2003,7)</onclick>
                     </control>
                 </control>

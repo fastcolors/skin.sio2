@@ -44,12 +44,12 @@
         <enable>System.HasLoginScreen</enable>
         <include>DialogButt</include>
         <onclick>Activatewindow(29)</onclick>
-        <label>logoff</label>
+        <label>20126</label>
       </control>
       <control type="button" id="6" description="TimerOff">
         <include>DialogButt</include>
         <onclick>AlarmClock(Timer,Quit())</onclick>
-        <label>timer</label>
+        <label>20144</label>
       </control>
       <control type="button" id="7" description="TimerOff">
         <include>DialogButt</include>

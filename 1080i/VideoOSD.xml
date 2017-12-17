@@ -5,7 +5,7 @@
     <zorder>2</zorder>
     <controls>
         <control type="group">
-            <visible>!Window.IsVisible(subtitlesearch) + !Window.IsVisible(10123) + !Window.IsVisible(10124) + !Window.IsVisible(10125)</visible>
+            <visible>!Window.IsVisible(subtitlesearch) + !Window.IsVisible(osdvideosettings) + !Window.IsVisible(osdaudiosettings) + !Window.IsVisible(videobookmarks)</visible>
             <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
             <control type="group" id="111" description="Options content">
                 <top>-400</top>
@@ -152,7 +152,7 @@
         </control>
         <control type="group">
             <visible>!ControlGroup(111).HasFocus()</visible>
-            <visible>!Window.IsVisible(10123) + !Window.IsVisible(10124) + !Window.IsVisible(10125) + !Window.IsVisible(Dialogselect.xml)</visible>
+            <visible>!Window.IsVisible(10123) + !Window.IsVisible(osdvideosettings) + !Window.IsVisible(osdaudiosettings) + !Window.IsVisible(Dialogselect.xml)</visible>
             <animation type="Visible">
                 <effect type="fade" tween="circle" easing="in" start="0" end="100" time="800" />
             </animation>

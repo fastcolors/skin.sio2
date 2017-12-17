@@ -69,8 +69,7 @@
             <onup>noop</onup>
             <ondown condition="Control.IsVisible(312)">312</ondown>
             <ondown condition="Control.IsVisible(313)">313</ondown>
-            <ondown condition="Control.IsVisible(315)">315</ondown>
-            <ondown condition="Control.IsVisible(317)">317</ondown>
+            <ondown condition="Control.IsVisible(318)">318</ondown>
             <ondown condition="Control.IsVisible(311)">311</ondown>
             <onleft>noop</onleft>
             <onright>noop</onright>

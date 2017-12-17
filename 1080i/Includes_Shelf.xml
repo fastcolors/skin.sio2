@@ -148,7 +148,7 @@
                 <font>size30B</font>
                 <textcolor>white</textcolor>
                 <!--<label>$LOCALIZE[]</label>-->
-                <label>New Episode</label>
+                <label>31070</label>
                 <align>left</align>
             </control>
             <control type="label">
@@ -231,9 +231,7 @@
                     <width>335</width>
                     <height>30</height>
                     <font>size30B</font>
-                    <!--<label>$LOCALIZE[]</label>-->
-                    <!--todo localize-->
-                    <label>New Episode</label>
+                    <label>31070</label>
                     <align>left</align>
                 </control>
                 <control type="label">

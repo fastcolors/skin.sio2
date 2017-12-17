@@ -27,7 +27,7 @@
                 </control>
                 <control type="radiobutton" id="2">
                     <width>840</width>
-                    <label>show fanart</label>
+                    <label>31075</label>
                     <texturenofocus border="8" colordiffuse="bandabianca">images/White.png</texturenofocus>
                     <selected>!Skin.HasSetting(fanartback)</selected>
                     <onclick>Skin.ToggleSetting(fanartback)</onclick>
