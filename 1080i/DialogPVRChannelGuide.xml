@@ -40,7 +40,7 @@
           <height>480</height>
           <onup>11</onup>
           <ondown>11</ondown>
-          <onleft>noop=</onleft>
+          <onleft>noop</onleft>
           <onright>60</onright>
           <focusposition>2</focusposition>
           <pagecontrol>70</pagecontrol>

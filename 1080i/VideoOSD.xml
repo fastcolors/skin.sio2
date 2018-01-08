@@ -128,14 +128,14 @@
                     </control>
                     <control type="button" id="13">
                         <include>osdbutton</include>
-                        <visible>Player.CanRecord + !Pvr.IsRecording</visible>
+                        <visible>PVR.CanRecordPlayingChannel + !Pvr.IsRecording</visible>
                         <texturenofocus colordiffuse="dimgray">Seekbar/OSDrec.png</texturenofocus>
                         <texturefocus>Seekbar/OSDrec.png</texturefocus>
                         <onclick>PVR.ToggleRecordPlayingChannel</onclick>
                     </control>
                     <control type="button" id="14">
                         <include>osdbutton</include>
-                        <visible>Player.CanRecord + Pvr.IsRecording</visible>
+                        <visible>PVR.CanRecordPlayingChannel + Pvr.IsRecording</visible>
                         <texturenofocus colordiffuse="dimgray">Seekbar/OSDrecon.png</texturenofocus>
                         <texturefocus>Seekbar/OSDrecon.png</texturefocus>
                         <onclick>PVR.ToggleRecordPlayingChannel</onclick>

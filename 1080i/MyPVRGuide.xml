@@ -124,7 +124,6 @@
                         <control type="label" id="1">
                             <visible>!ListItem.IsRecording</visible>
                             <left>10</left>
-                            <width>-20</width>
                             <height>52</height>
                             <font>font12</font>
                             <aligny>center</aligny>
@@ -132,19 +131,18 @@
                             <shadowcolor></shadowcolor>
                             <align>left</align>
                             <scroll>false</scroll>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Title]</label>
                         </control>
                         <control type="label" id="1">
                             <visible>ListItem.IsRecording</visible>
                             <left>25</left>
-                            <width>-35</width>
                             <height>50</height>
                             <font>font12</font>
                             <aligny>center</aligny>
                             <textcolor>red</textcolor>
                             <shadowcolor></shadowcolor>
                             <align>left</align>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Title]</label>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -173,26 +171,24 @@
                         <control type="label" id="1">
                             <visible>!ListItem.IsRecording</visible>
                             <left>10</left>
-                            <width>-20</width>
                             <height>50</height>
                             <font>font12</font>
                             <aligny>center</aligny>
                             <textcolor>black</textcolor>
                             <shadowcolor></shadowcolor>
                             <align>left</align>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Title]</label>
                         </control>
                         <control type="label" id="1">
                             <visible>ListItem.IsRecording</visible>
                             <left>25</left>
-                            <width>-35</width>
                             <height>50</height>
                             <font>font12</font>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
                             <shadowcolor></shadowcolor>
                             <align>left</align>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Title]</label>
                         </control>
                         <control type="image">
                             <left>0</left>
