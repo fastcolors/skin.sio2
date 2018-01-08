@@ -103,7 +103,7 @@
                         <visible>Pvr.IsPlayingTv</visible>
                         <texturenofocus colordiffuse="dimgray">Seekbar/OSDpvr.png</texturenofocus>
                         <texturefocus>Seekbar/OSDpvr.png</texturefocus>
-                        <onclick>PlayerControl(PVROSDGuide)</onclick>
+                        <onclick>PlayerControl(pvrchannelguide)</onclick>
                     </control>
                     <control type="button" id="10">
                         <include>osdbutton</include>
@@ -131,14 +131,14 @@
                         <visible>Player.CanRecord + !Pvr.IsRecording</visible>
                         <texturenofocus colordiffuse="dimgray">Seekbar/OSDrec.png</texturenofocus>
                         <texturefocus>Seekbar/OSDrec.png</texturefocus>
-                        <onclick>PlayerControl(Record)</onclick>
+                        <onclick>PVR.ToggleRecordPlayingChannel</onclick>
                     </control>
                     <control type="button" id="14">
                         <include>osdbutton</include>
                         <visible>Player.CanRecord + Pvr.IsRecording</visible>
                         <texturenofocus colordiffuse="dimgray">Seekbar/OSDrecon.png</texturenofocus>
                         <texturefocus>Seekbar/OSDrecon.png</texturefocus>
-                        <onclick>PlayerControl(Record)</onclick>
+                        <onclick>PVR.ToggleRecordPlayingChannel</onclick>
                     </control>
                     <control type="button" id="255">
                         <include>osdbutton</include>
