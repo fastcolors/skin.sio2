@@ -3,13 +3,7 @@
 	<defaultcontrol always="true">9</defaultcontrol>
   <include>DialogOpenClose</include>
 	<controls>
-		<control type="image">
-			<description>background image</description>
-			<width>1920</width>
-			<height>1080</height>
-			<texture border="8">images/White.png</texture>
-			<colordiffuse>dialog</colordiffuse>
-		</control>
+		<include>BlackBackground</include>
 		<control type="label">
 			<description>header label</description>
 			<top>150</top>

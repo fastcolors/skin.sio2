@@ -18,7 +18,6 @@
     </shortcut>
     <shortcut>
         <defaultID>music</defaultID>
-        <viewtype>square</viewtype>
         <label>2</label>
         <icon></icon>
         <label2></label2>
@@ -27,7 +26,6 @@
     </shortcut>
     <shortcut>
         <defaultID>addons</defaultID>
-        <viewtype>square</viewtype>
         <label>24001</label>
         <icon></icon>
         <label2></label2>
@@ -44,7 +42,6 @@
     </shortcut>
     <shortcut>
         <defaultID>pictures</defaultID>
-        <viewtype>square</viewtype>
         <label>1</label>
         <icon></icon>
         <label2></label2>
@@ -53,7 +50,6 @@
     </shortcut>
     <shortcut>
         <defaultID>livetv</defaultID>
-        <viewtype>poster</viewtype>
         <label>31059</label>
         <icon></icon>
         <label2></label2>
@@ -64,7 +60,6 @@
     </shortcut>
     <shortcut>
         <defaultID>livetv</defaultID>
-        <viewtype>episodes</viewtype>
         <label>$INFO[Pvr.NowRecordingTitle]</label>
         <icon></icon>
         <label2></label2>
@@ -75,7 +70,6 @@
     </shortcut>
     <shortcut>
         <defaultID>favourites</defaultID>
-        <viewtype>poster</viewtype>
         <label>1036</label>
         <icon></icon>
         <label2></label2>
@@ -84,7 +78,6 @@
     </shortcut>
     <shortcut>
         <defaultID>upcomingmovies</defaultID>
-        <viewtype>poster</viewtype>
         <label>31422</label>
         <icon></icon>
         <label2></label2>
@@ -94,7 +87,6 @@
     </shortcut>
     <shortcut>
         <defaultID>programs</defaultID>
-        <viewtype>square</viewtype>
         <label>31037</label>
         <icon></icon>
         <label2></label2>
@@ -103,7 +95,6 @@
     </shortcut>
     <shortcut>
         <defaultID>sources</defaultID>
-        <viewtype>square</viewtype>
         <label>20094</label>
         <icon></icon>
         <label2></label2>

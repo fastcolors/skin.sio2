@@ -4,22 +4,7 @@
   <include>DialogOpenClose</include>
   <controls>
   <visible>!Window.IsVisible(FileBrowser)</visible>
-    <control type="image" description="Dialog">
-        <width>1920</width>
-        <height>1080</height>
-        <aspectratio>stretch</aspectratio>
-        <texture>images/Black.png</texture>
-		<colordiffuse>AAFFFFFF</colordiffuse>
-      </control>
-	  <control type="image" description="Dialog">
-	  <left>-60</left>
-	  <top>-60</top>
-        <width>2040</width>
-        <height>1150</height>
-        <aspectratio>stretch</aspectratio>
-        <texture border="150">images/White.png</texture>
-        <colordiffuse>dialog</colordiffuse>
-      </control>
+   <include>BlackBackground</include>
   <control type="image">
         <left>595</left>
         <top>100</top>

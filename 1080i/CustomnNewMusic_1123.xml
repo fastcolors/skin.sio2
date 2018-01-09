@@ -16,7 +16,7 @@
                 <height>30</height>
                 <font>music</font>
                 <textcolor>ff555555</textcolor>
-                <label>Browse</label>
+                <label>1024</label>
             </control>
             <control type="group" description="NEWMUSIC" id="777">
                 <control type="panel" id="500">

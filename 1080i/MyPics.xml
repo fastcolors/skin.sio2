@@ -3,6 +3,7 @@
     <backgroundcolor>background</backgroundcolor>
     <defaultcontrol always="true">53</defaultcontrol>
     <allowoverlay>no</allowoverlay>
+     <views>53,50</views>
     <controls>
         <include>BlackBackground</include>
         <control type="image">

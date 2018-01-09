@@ -26,19 +26,22 @@
     <propertydefault labelID="movies" property="viewtype">Posters</propertydefault>
     <propertydefault labelID="addons" property="viewtype">Squares</propertydefault>
     <propertydefault labelID="2" property="viewtype">Squares</propertydefault>
+    <propertydefault labelID="31037" property="viewtype">None</propertydefault>
+    <propertydefault labelID="script.globalsearch" property="viewtype">None</propertydefault>
 
     <property property="viewtype">Posters</property>
     <property property="viewtype">Squares</property>
     <property property="viewtype">Episodes</property>
+    <property property="viewtype">None</property>
 
     <propertyfallback property="viewtype">Posters</propertyfallback>
 
     <onclick id="211">SetFocus(300)</onclick>
 
-    <widget name="movies" label="In progress Movies" path="$VAR[movieshelf]" target="video">shelfmovies</widget>
+    <widget name="movies" label="In progress Movies" path="$VAR[shelfcontent]" target="video">shelfmovies</widget>
     <widgetdefault defaultID="movies">shelfmovies</widgetdefault>
 
-    <widget name="episodes" label="episodes" path="$VAR[epshelf]" target="video">shelfepisodes</widget>
+    <widget name="episodes" label="episodes" path="$VAR[shelfcontent]" target="video">shelfepisodes</widget>
     <widgetdefault defaultID="episodes">shelfepisodes</widgetdefault>
 
     <widget name="tvshows" label="tvshows" path="videodb://tvshows/titles" target="video">shelftvshows</widget>

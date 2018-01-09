@@ -98,7 +98,7 @@
                     <label>$INFO[ListItem.FileExtension, • ]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(ListItem.MPAA) + !String.IsEqual($VAR[MPAAS],NA)</visible>
+                    <visible>!String.IsEmpty(ListItem.MPAA)</visible>
                     <height>35</height>
                     <width>auto</width>
                     <textcolor>infos</textcolor>

@@ -681,7 +681,7 @@
                     <control type="label" id="9011">
                         <font>size21B</font>
                         <height>30</height>
-                        <label>[UPPERCASE]suono[/UPPERCASE]</label>
+                        <label>[UPPERCASE]$LOCALIZE[292][/UPPERCASE]</label>
                         <textoffsetx>50</textoffsetx>
                         <textcolor>lightgray</textcolor>
                     </control>
