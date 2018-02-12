@@ -124,7 +124,7 @@
         </control>
         <control type="group" description="Thumbs">
             <control type="image" description="Item Thumb">
-                <visible>!SubString(Control.GetLabel(416),*)</visible>
+                <visible>!String.Contains(Control.GetLabel(416),*)</visible>
                 <centerleft>520</centerleft>
                 <centertop>430</centertop>
                 <width>600</width>
@@ -134,7 +134,7 @@
                 <aspectratio align="center">keep</aspectratio>
             </control>
             <control type="image" description="Item Thumb">
-                <visible>SubString(Control.GetLabel(416),*)</visible>
+                <visible>String.Contains(Control.GetLabel(416),*)</visible>
                 <centerleft>520</centerleft>
                 <centertop>430</centertop>
                 <width>600</width>

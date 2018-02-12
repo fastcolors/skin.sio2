@@ -684,12 +684,12 @@
             <include>Watched_Marks</include>
             <include>Arrow</include>
             <control type="label" description="Main Label">
-                <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
+                <visible>Integer.IsGreater(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
                 <include>50Label</include>
                 <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label" description="Main Label">
-                <visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
+                <visible>![Integer.IsGreater(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
                 <width>711</width>
                 <include>50Label</include>
                 <label>$INFO[ListItem.Label]</label>
@@ -718,12 +718,12 @@
                 <include>Watched_Marks</include>
                 <include>Arrow</include>
                 <control type="label" description="Main Label">
-                    <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
+                    <visible>Integer.IsGreater(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
                     <include>50LabelFO</include>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
                 <control type="label" description="Main Label">
-                    <visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
+                    <visible>![Integer.IsGreater(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
                     <width>711</width>
                     <include>50LabelFO</include>
                     <label>$INFO[ListItem.Label]</label>

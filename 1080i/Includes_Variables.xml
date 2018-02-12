@@ -40,18 +40,18 @@
     </variable>
 
     <variable name="MPAAS">
-        <value condition="substring(ListItem.MPAA,TV)">$INFO[ListItem.MPAA]</value>
-        <value condition="substring(ListItem.MPAA,PG-13)">PG-13</value>
-        <value condition="substring(ListItem.MPAA,Rated R)">R</value>
-        <value condition="substring(ListItem.MPAA,PG)">PG</value>
-        <value condition="substring(ListItem.MPAA,NC-17)">NC-17</value>
-        <value condition="substring(ListItem.MPAA,G)">G</value>
+        <value condition="String.Contains(ListItem.MPAA,TV)">$INFO[ListItem.MPAA]</value>
+        <value condition="String.Contains(ListItem.MPAA,PG-13)">PG-13</value>
+        <value condition="String.Contains(ListItem.MPAA,Rated R)">R</value>
+        <value condition="String.Contains(ListItem.MPAA,PG)">PG</value>
+        <value condition="String.Contains(ListItem.MPAA,NC-17)">NC-17</value>
+        <value condition="String.Contains(ListItem.MPAA,G)">G</value>
         <value>NA</value>
     </variable>
 
     <variable name="Plots">
         <value condition="Container.Content(Addons) + !String.IsEmpty(ListItem.AddonDescription)">$INFO[ListItem.AddonDescription]</value>
-        <value condition="SubString(ListItem.IsCollection)">$LOCALIZE[20457]</value>
+        <value condition="String.Contains(ListItem.IsCollection)">$LOCALIZE[20457]</value>
         <value condition="[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes)] + !String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
         <value condition="Container.Content(Seasons) + !String.IsEmpty(Container.ShowPlot)">$INFO[Container.ShowPlot]</value>
         <value condition="Container.Content(albums) + !String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>

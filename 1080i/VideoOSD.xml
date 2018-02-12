@@ -221,7 +221,7 @@
                     <font>Size33</font>
                     <label>24022</label>
                     <onclick>ToggleStereoMode</onclick>
-                    <selected>IntegerGreaterThan(System.StereoscopicMode,0)</selected>
+                    <selected>Integer.IsGreater(System.StereoscopicMode,0)</selected>
                     <pulseonselect>false</pulseonselect>
                 </control>
                 <control type="button" id="502">

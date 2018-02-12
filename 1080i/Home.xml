@@ -227,7 +227,7 @@
         </control>
         <control type="group">
             <visible>Player.HasAudio</visible>
-            <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
+            <visible>!Integer.IsGreater(Player.Time,8) | !Integer.IsGreater(Player.TimeRemaining,8)</visible>
             <animation effect="slide" end="0,-128" condition="Window.IsActive(DialogExtendedProgressBar.xml)">Conditional</animation>
             <left>1190</left>
             <top>944</top>
