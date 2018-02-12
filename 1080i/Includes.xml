@@ -6,17 +6,15 @@
     <include file="Defaults.xml" />
     <include file="CommonViews.xml" />
 
-    <include file="views/video_biglist.xml" />
-    <include file="views/video_icons.xml" />
-    <include file="views/video_banners.xml" />
-    <include file="views/video_widelist.xml" />
+    <include file="views/view_biglist.xml" />
+    <include file="views/view_icons.xml" />
+    <include file="views/view_banners.xml" />
+    <include file="views/view_widelist.xml" />
 
     <include file="views/music_library.xml" />
     <include file="views/music_albums.xml" />
     <include file="views/music_artists.xml" />
     <include file="views/music_songs.xml" />
-
-    <include file="views/Programviews.xml" />
 
     <include file="Includes_Home.xml" />
     <include file="Includes_Shelf.xml" />
