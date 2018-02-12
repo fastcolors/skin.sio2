@@ -103,7 +103,7 @@
                     <control type="group">
                         <visible>container.content(TVshows) | container.content(seasons)</visible>
                         <control type="image">
-                            <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                            <visible>Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)</visible>
                             <left>32</left>
                             <top>427</top>
                             <height>70</height>
@@ -112,7 +112,7 @@
                             <texture>badges/BadgeCount.png</texture>
                         </control>
                         <control type="label" description="Label2">
-                            <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                            <visible>Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)</visible>
                             <left>32</left>
                             <top>427</top>
                             <height>70</height>
@@ -188,7 +188,7 @@
                         <control type="group">
                             <visible>container.content(TVshows) | container.content(seasons)</visible>
                             <control type="image">
-                                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                                <visible>Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)</visible>
                                 <left>32</left>
                                 <top>427</top>
                                 <height>70</height>
@@ -197,7 +197,7 @@
                                 <texture>badges/BadgeCount.png</texture>
                             </control>
                             <control type="label" description="Label2">
-                                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                                <visible>Integer.IsGreater(ListItem.Property(UnwatchedEpisodes),0)</visible>
                                 <left>32</left>
                                 <top>427</top>
                                 <height>70</height>

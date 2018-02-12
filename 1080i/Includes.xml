@@ -133,7 +133,7 @@
         <!--todo Playing infos-->
         <control type="group" description="Player Info">
             <visible>Player.HasMedia + ![Window.IsActive(DialogBusy.xml) | Window.IsActive(VideoFullscreen.xml) | Window.IsActive(myPVR.xml)]</visible>
-            <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
+            <visible>!Integer.IsGreater(Player.Time,8) | !Integer.IsGreater(Player.TimeRemaining,8)</visible>
             <include>VisibleFade</include>
             <left>15</left>
             <top>960</top>
