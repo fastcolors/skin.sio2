@@ -26,8 +26,6 @@
             <animation effect="fade" time="0">WindowClose</animation>
             <include>biglist</include>
             <include>icons</include>
-            <include>banners</include>
-            <include>widelist</include>
         </control>
         <!--VIEWS-->
         <control type="group" description="Side menu 9000 group">
