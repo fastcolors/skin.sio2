@@ -98,7 +98,7 @@
                         <label>$INFO[ListItem.label]</label>
                     </control>
                 </focusedlayout>
-                <content><include>skinshortcuts-mainmenu</include></content>
+                <content></content>
             </control>
         </control>
         <control type="grouplist" id="300">
