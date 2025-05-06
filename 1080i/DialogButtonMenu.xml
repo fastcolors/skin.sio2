@@ -46,6 +46,11 @@
         <onclick>Activatewindow(29)</onclick>
         <label>logoff</label>
       </control>
+      <control type="button" id="5" description="reload">
+        <include>DialogButt</include>
+        <onclick>ReloadSkin()</onclick>
+        <label>Reload Skin</label>
+      </control>
     </control>
   </controls>
 </window>

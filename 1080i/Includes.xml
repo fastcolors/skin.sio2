@@ -234,18 +234,10 @@
     </include>
     <include name="BlackBackground">
         <control type="image" description="Background_dark">
-            <visible>Skin.HasTheme(Dark)</visible>
             <width>1920</width>
             <height>1080</height>
             <aspectratio>stretch</aspectratio>
             <texture>special://skin/backdrops/dark_default_background.png</texture>
-        </control>
-        <control type="image" description="Background_def">
-            <visible>!Skin.HasTheme(Dark)</visible>
-            <width>1920</width>
-            <height>1080</height>
-            <aspectratio>stretch</aspectratio>
-            <texture>special://skin/backdrops/light_default_background.png</texture>
         </control>
     </include>
     <include name="PVRsidemenu">
