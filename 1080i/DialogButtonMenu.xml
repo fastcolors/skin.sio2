@@ -7,7 +7,7 @@
       <centerleft>960</centerleft>
       <centertop>540</centertop>
       <width>802</width>
-      <height>700</height>
+      <height>500</height>
       <aspectratio>stretch</aspectratio>
       <texture border="50">images/ContextMenu.png</texture>
       <colordiffuse>dialog</colordiffuse>
@@ -19,42 +19,32 @@
       <include>DialogGLs</include>
       <control type="button" id="1" description="Exit button">
         <include>DialogButt</include>
-        <onclick>XBMC.Quit()</onclick>
+        <onclick>Quit()</onclick>
         <label>13009</label>
       </control>
       <control type="button" id="2" description="Shutdown button">
-        <enable>System.CanPowerDown</enable>
+        <visible>System.CanPowerDown</visible>
         <include>DialogButt</include>
-        <onclick>XBMC.Powerdown()</onclick>
+        <onclick>Powerdown()</onclick>
         <label>13005</label>
       </control>
       <control type="button" id="3" description="Suspend button">
-        <enable>System.CanSuspend</enable>
+        <visible>System.CanSuspend</visible>
         <include>DialogButt</include>
-        <onclick>XBMC.Suspend()</onclick>
+        <onclick>Suspend()</onclick>
         <label>13011</label>
       </control>
       <control type="button" id="4" description="Reboot button">
-        <enable>System.CanReboot</enable>
+        <visible>System.CanReboot</visible>
         <include>DialogButt</include>
-        <onclick>XBMC.Reset()</onclick>
+        <onclick>Reset()</onclick>
         <label>13013</label>
       </control>
       <control type="button" id="5" description="LogOff">
-        <enable>System.HasLoginScreen</enable>
+        <visible>System.HasLoginScreen</visible>
         <include>DialogButt</include>
         <onclick>Activatewindow(29)</onclick>
         <label>logoff</label>
-      </control>
-      <control type="button" id="6" description="TimerOff">
-        <include>DialogButt</include>
-        <onclick>AlarmClock(Timer,Quit())</onclick>
-        <label>timer</label>
-      </control>
-      <control type="button" id="7" description="TimerOff">
-        <include>DialogButt</include>
-        <onclick>ActivateWindow(Settings)</onclick>
-        <label>5</label>
       </control>
     </control>
   </controls>

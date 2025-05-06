@@ -1,12 +1,12 @@
 <colors>
-    <color name="background">fff0f8ff</color>
-    <color name="bandabianca">66FFFFFF</color>
-    <color name="bandamusica">f0aaaaaa</color>
-    <color name="maindim">e0ffffff</color>
-    <color name="darktext">ff000000</color>
-    <color name="infos">ff000000</color>
-    <color name="dialog">ffffffff</color>
-    <color name="notification">cd555555</color>
-    <color name="osdoverlay">ee999999</color>
+    <color name="background">ff000000</color>
+    <color name="bandabianca">66555555</color>
+    <color name="bandamusica">bb555555</color>
+    <color name="maindim">f0444444</color>
+    <color name="darktext">ffbbbbbb</color>
+    <color name="infos">white</color>
+    <color name="dialog">ff444444</color>
+    <color name="notification">cd444444</color>
+    <color name="osdoverlay">ee333333</color>
     <color name="kodi">ff12b2e7</color>
 </colors>
