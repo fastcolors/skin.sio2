@@ -154,4 +154,13 @@
         <visible>System.HasAddon(slyguy.disney.plus)</visible>
          <action>ActivateWindow(Videos,"plugin://slyguy.disney.plus",return)</action>
     </shortcut>
+    <shortcut>
+        <defaultID>s4me</defaultID>
+        <label>Stream4Me</label>
+        <icon>-</icon>
+        <label2>Posters</label2>
+        <thumb>icons/s4me.png</thumb>
+        <visible>System.HasAddon(plugin.video.s4me)</visible>
+        <action>ActivateWindow(Videos,"plugin://plugin.video.s4me",return)</action>
+    </shortcut>
 </shortcuts>
