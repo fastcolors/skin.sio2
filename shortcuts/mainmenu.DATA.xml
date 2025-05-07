@@ -155,4 +155,13 @@
         <visible>System.HasAddon(script.plexmod)</visible>
         <action>RunAddon("script.plexmod")</action>
     </shortcut>
+    <shortcut>
+        <defaultID>netflix</defaultID>
+        <label>Netflix</label>
+        <icon>-</icon>
+        <label2>Posters</label2>
+        <thumb>icons/netflix.png</thumb>
+        <visible>System.HasAddon(plugin.video.netflix)</visible>
+        <action>ActivateWindow(Videos,"plugin://plugin.video.netflix",return)</action>
+    </shortcut>
 </shortcuts>
