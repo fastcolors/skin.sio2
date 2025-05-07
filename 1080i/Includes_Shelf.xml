@@ -2,7 +2,7 @@
 <includes>
     <include name="ShelfFade">
         <animation effect="fade" start="0" end="100" delay="500" time="400" reversible="false">Visible</animation>
-        <!--<animation effect="fade" start="100" end="0" time="0">Hidden</animation>-->
+        <visible>Integer.IsEqual(Container(9000).ListItem.Property(id),1) | Integer.IsEqual(Container(9000).ListItem.Property(id),2) | Integer.IsEqual(Container(9000).ListItem.Property(id),3) | Integer.IsEqual(Container(9000).ListItem.Property(id),4) | Integer.IsEqual(Container(9000).ListItem.Property(id),5)</visible>
     </include>
     <include name="PosterShortcutsCommons">
         <include>ShelfFade</include>
@@ -76,7 +76,6 @@
                     <width>700</width>
                     <height>40</height>
                     <font>size30B</font>
-                    <!--<autoscroll>false</autoscroll>-->
                     <label>$INFO[ListItem.Title]</label>
                     <align>center</align>
                 </control>
@@ -343,50 +342,8 @@
           <!-- <content target="video">pvr://channels/tv/*</content> -->
         </control>
     </include>
-    <!--<include name="general">-->
-    <!--&lt;!&ndash;POSTER&ndash;&gt;-->
-    <!--<control type="panel" id="320" description="TOP Shortcuts">-->
-    <!--<visible>$EXP[320visibility]</visible>-->
-    <!--<visible>String.IsEqual(Container(9000).ListItem.Property(viewtype),poster)</visible>-->
-    <!--<onup>noop</onup>-->
-    <!--<ondown>9000</ondown>-->
-    <!--<onleft>315</onleft>-->
-    <!--<onright>315</onright>-->
-    <!--<include>PosterShortcutsCommons</include>-->
-    <!--<content>$INFO[Container(9000).ListItem.Property(list)]</content>-->
-    <!--</control>-->
-    <!--&lt;!&ndash;SQUARE&ndash;&gt;-->
-    <!--<control type="panel" id="320" description="TOP Shortcuts">-->
-    <!--<visible>$EXP[320visibility]</visible>-->
-    <!--<visible>![String.Contains(Container(9000).ListItem.Property(path),movies) | String.Contains(Container(9000).ListItem.Property(path),tvshows)]</visible>-->
-    <!--<onup>noop</onup>-->
-    <!--<ondown>9000</ondown>-->
-    <!--<onleft>315</onleft>-->
-    <!--<onright>315</onright>-->
-    <!--<include>SquareShortcutsCommons</include>-->
-    <!--<content>$INFO[Container(9000).ListItem.Property(list)]</content>-->
-    <!--</control>-->
-    <!--&lt;!&ndash;EPISODES&ndash;&gt;-->
-    <!--<control type="panel" id="320" description="TOP Shortcuts">-->
-    <!--<visible>$EXP[320visibility]</visible>-->
-    <!--<visible>![String.Contains(Container(9000).ListItem.Property(path),movies) | String.Contains(Container(9000).ListItem.Property(path),tvshows)]</visible>-->
-    <!--<onup>noop</onup>-->
-    <!--<ondown>9000</ondown>-->
-    <!--<onleft>315</onleft>-->
-    <!--<onright>315</onright>-->
-    <!--<include>SquareShortcutsCommons</include>-->
-    <!--<content>$INFO[Container(9000).ListItem.Property(list)]</content>-->
-    <!--</control>-->
-    <!--</include>-->
-    <!--todo appstore shelf-->
         <control type="group">
             <visible>String.IsEqual(Container(9000).ListItem.Property(label2),programs)</visible>
-            <!--<control type="image">-->
-            <!--<width>1920</width>-->
-            <!--<height>720</height>-->
-            <!--<aspectratio align="top">scale</aspectratio>-->
-            <!--<texture background="true">images/black.png</texture>-->
-            <!--</control>-->
             <control type="panel" id="314" description="TOP Shortcuts">
                 <onup>noop</onup>
                 <ondown>9000</ondown>
