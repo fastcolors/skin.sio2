@@ -4,7 +4,7 @@
         <animation effect="fade" start="0" end="100" delay="500" time="400" reversible="false">Visible</animation>
         <visible>Integer.IsEqual(Container(9000).ListItem.Property(id),1) | Integer.IsEqual(Container(9000).ListItem.Property(id),2) | Integer.IsEqual(Container(9000).ListItem.Property(id),3) | Integer.IsEqual(Container(9000).ListItem.Property(id),4) | Integer.IsEqual(Container(9000).ListItem.Property(id),5)</visible>
     </include>
-    <include name="PosterShortcutsCommons">
+    <include name="GeneralShortcutsCommons">
         <include>ShelfFade</include>
         <visible>!Control.IsVisible(312) + !Control.IsVisible(313)</visible>
         <animation effect="slide" end="-100,0" time="250" condition="Container.Column(4)">Conditional</animation>
@@ -55,7 +55,7 @@
                     <width>335</width>
                     <height>500</height>
                     <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
-                    <aspectratio>scale</aspectratio>
+                    <aspectratio>keep</aspectratio>
                 </control>
                 <control type="image" description="WatchStatus">
                     <left>373</left>
@@ -254,76 +254,10 @@
             </control>
         </focusedlayout>
     </include>
-    <include name="SquareShortcutsCommons">
-        <include>ShelfFade</include>
-        <visible>!Control.IsVisible(311) + !Control.IsVisible(313)</visible>
-        <top>90</top>
-        <width>1920</width>
-        <height>630</height>
-        <onup>noop</onup>
-        <ondown>9000</ondown>
-        <onleft>noop</onleft>
-        <onright>noop</onright>
-        <orientation>horizontal</orientation>
-        <scrolltime>400</scrolltime>
-        <itemlayout height="600" width="550">
-            <control type="image">
-                <left>90</left>
-                <top>35</top>
-                <width>500</width>
-                <height>500</height>
-                <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                <aspectratio>scale</aspectratio>
-            </control>
-        </itemlayout>
-        <focusedlayout height="600" width="500">
-            <control type="group">
-                <animation effect="zoom" start="100" end="110" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
-                <animation effect="zoom" start="110" end="100" time="120" center="auto" easing="">unFocus</animation>
-                <control type="image">
-                    <animation effect="fade" start="0" end="100" time="150">Focus</animation>
-                    <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
-                    <left>40</left>
-                    <top>66</top>
-                    <width>630</width>
-                    <height>540</height>
-                    <texture>shadow.png</texture>
-                </control>
-                <control type="image">
-                    <left>90</left>
-                    <top>35</top>
-                    <width>500</width>
-                    <height>500</height>
-                    <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-                    <aspectratio>scale</aspectratio>
-                </control>
-            </control>
-            <control type="textbox">
-                <visible>ControlGroup(700).HasFocus()</visible>
-                <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-                <animation effect="fade" start="100" end="0" time="80">unFocus</animation>
-                <centerleft>345</centerleft>
-                <top>560</top>
-                <width>540</width>
-                <height>150</height>
-                <font>size26</font>
-                <align>center</align>
-                <label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR]]</label>
-            </control>
-        </focusedlayout>
-    </include>
-    <include name="Posters">
-        <control type="panel" id="311" description="Poster Shelf Shortcuts">
+    <include name="shelfitems">
+        <control type="panel" id="311" description="General Shelf Shortcuts">
             <visible>String.IsEqual(Container(9000).ListItem.label2,Posters)</visible>
-            <include>PosterShortcutsCommons</include>
-            <content target="$INFO[Container(9000).ListItem.Property(widgetTarget)]">$INFO[Container(9000).ListItem.Property(widgetPath)]</content>
-        </control>
-    </include>
-    <include name="Squares">
-        <control type="panel" id="312" description="Square Shelf Shortcuts">
-            <visible>String.IsEqual(Container(9000).ListItem.label2,Squares)</visible>
-            <include>SquareShortcutsCommons</include>
-            <onclick>PlayMedia($ESCINFO[ListItem.DBID,musicdb://albums/,/])</onclick>
+            <include>GeneralShortcutsCommons</include>
             <content target="$INFO[Container(9000).ListItem.Property(widgetTarget)]">$INFO[Container(9000).ListItem.Property(widgetPath)]</content>
         </control>
     </include>
