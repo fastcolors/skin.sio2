@@ -61,7 +61,6 @@
     </shortcut>
     <shortcut>
         <defaultID>pictures</defaultID>
-        <viewtype>Squares</viewtype>
         <label>1</label>
         <icon>-</icon>
         <label2>Squares</label2>
@@ -70,7 +69,6 @@
     </shortcut>
     <shortcut>
         <defaultID>livetv</defaultID>
-        <viewtype>Posters</viewtype>
         <label>31059</label>
         <icon>-</icon>
         <label2>Posters</label2>
