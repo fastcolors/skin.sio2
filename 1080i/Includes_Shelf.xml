@@ -17,11 +17,10 @@
         <onright>noop</onright>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
-        <onclick condition="$EXP[isupcomingmovies]">Contextmenu</onclick>
         <itemlayout height="600" width="382">
             <control type="image">
                 <left>90</left>
-                <top>35</top>
+                <bottom>65</bottom>
                 <width>335</width>
                 <height>500</height>
                 <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
@@ -29,7 +28,7 @@
             </control>
             <control type="image" description="WatchStatus">
                 <left>373</left>
-                <bottom>65</bottom>
+                <bottom>85</bottom>
                 <height>52</height>
                 <width>52</width>
                 <aspectratio>keep</aspectratio>
@@ -42,7 +41,7 @@
                 <animation effect="zoom" start="112" end="100" time="120" center="257,300">unFocus</animation>
                 <control type="image">
                     <left>90</left>
-                    <top>35</top>
+                    <bottom>65</bottom>
                     <width>335</width>
                     <height>500</height>
                     <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
@@ -50,7 +49,7 @@
                 </control>
                 <control type="image" description="WatchStatus">
                     <left>373</left>
-                    <bottom>65</bottom>
+                    <bottom>85</bottom>
                     <height>52</height>
                     <width>52</width>
                     <aspectratio>keep</aspectratio>
@@ -63,8 +62,8 @@
                 <control type="label">
                     <visible>ControlGroup(700).HasFocus()</visible>
                     <centerleft>257</centerleft>
-                    <top>570</top>
-                    <width>700</width>
+                    <top>560</top>
+                    <width>350</width>
                     <height>40</height>
                     <font>size30B</font>
                     <label fallback="$INFO[ListItem.Label]">$INFO[ListItem.Title]</label>
@@ -247,7 +246,7 @@
     </include>
     <include name="shelfitems">
         <control type="panel" id="311" description="General Shelf Shortcuts">
-            <visible>String.IsEqual(Container(9000).ListItem.label2,Posters)</visible>
+            <!-- <visible>String.IsEqual(Container(9000).ListItem.label2,Posters)</visible> -->
             <include>GeneralShortcutsCommons</include>
             <content target="$INFO[Container(9000).ListItem.Property(widgetTarget)]">$INFO[Container(9000).ListItem.Property(widgetPath)]</content>
         </control>

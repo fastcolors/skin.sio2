@@ -40,7 +40,7 @@
     <widget label="Recently Played Albums" path="musicdb://recentlyplayedalbums" target="music">shelfmusic</widget>
     <widgetdefault defaultID="music">shelfmusic</widgetdefault>
 
-    <widget label="Recently Updated Apps" path="addons://recently_updated/" target="addons">shelfaddons</widget>
+    <widget label="Recently Updated Apps" path="addons://" target="addons">shelfaddons</widget>
     <widgetdefault defaultID="addons">shelfaddons</widgetdefault>
 
     <widget label="Hubs" path="plugin://slyguy.disney.plus/?_=brands" target="video">shelfdisney</widget>
