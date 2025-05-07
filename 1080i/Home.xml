@@ -3,7 +3,7 @@
     <backgroundcolor>background</backgroundcolor>
     <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;level=0&amp;options=cloneproperties)</onload>
+    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;level=0)</onload>
     <include>HomeOpenClose</include>
     <controls>
         <include>BlackBackground</include>
