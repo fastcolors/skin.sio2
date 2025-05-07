@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <shortcuts>
-    <shortcut>
+<!--    <shortcut>
         <defaultID>disney</defaultID>
         <label>Disney+</label>
         <icon>-</icon>
@@ -26,7 +26,7 @@
         <thumb>icons/netflix.png</thumb>
         <visible>System.HasAddon(plugin.video.netflix)</visible>
         <action>ActivateWindow(Videos,"plugin://plugin.video.netflix",return)</action>
-    </shortcut>
+    </shortcut> -->
     <shortcut>
         <defaultID>movies</defaultID>
         <viewtype>Posters</viewtype>
