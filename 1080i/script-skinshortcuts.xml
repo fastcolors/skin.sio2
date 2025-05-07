@@ -176,12 +176,12 @@
                 <onclick>noop</onclick>
                 <label>$ADDON[script.skinshortcuts 32028]</label>
             </control>
-            <control type="button" id="404">
-                <description>Viewtype</description>
+            <control type="button" id="312">
+                <description>Widget</description>
                 <include>osdtopbutton</include>
                 <onclick>SetProperty(chooseProperty,viewtype)</onclick>
                 <onclick>SendClick(404)</onclick>
-                <label>Set Viewtype</label>
+                <label>$LOCALIZE[32044]</label>
             </control>
         </control>
         <control type="image">

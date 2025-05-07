@@ -92,7 +92,7 @@
 
     <variable name="shelflabel">
         <!--MOVIES-->
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),WL)">$LOCALIZE[31046]</value>
+        <!-- <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),WL)">$LOCALIZE[31046]</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),RND)">$LOCALIZE[590]</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),)">$LOCALIZE[20386]</value>
         <!--TV-->
@@ -113,9 +113,9 @@
         <!--PICTURES-->
         <value condition="Container(9000).HasFocus(344)"> </value>
         <!--LIVETV(RECORDINGS)-->
-        <value condition="Container(9000).HasFocus(355)"> </value>
+        <value condition="Container(9000).HasFocus(355)"> </value> -->
         <!--GENERAL-->
-        <value>$INFO[Control.GetLabel(9000)]</value>
+        <value>$INFO[Container(9000).ListItem.Property(widgetName)]</value>
     </variable>
 
     <variable name="audiochannels">
