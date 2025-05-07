@@ -25,7 +25,7 @@
                 <width>335</width>
                 <height>500</height>
                 <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
-                <aspectratio>scale</aspectratio>
+                <aspectratio>keep</aspectratio>
             </control>
             <control type="image" description="WatchStatus">
                 <left>373</left>
