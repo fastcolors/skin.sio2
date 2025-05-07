@@ -67,7 +67,7 @@
                     <width>700</width>
                     <height>40</height>
                     <font>size30B</font>
-                    <label>$INFO[ListItem.Label]</label>
+                    <label fallback="$INFO[ListItem.Label]">$INFO[ListItem.Title]</label>
                     <align>center</align>
                 </control>
             </control>
