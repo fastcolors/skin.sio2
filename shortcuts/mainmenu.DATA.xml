@@ -146,4 +146,13 @@
         <visible>System.HasAddon(plugin.video.s4me)</visible>
         <action>ActivateWindow(Videos,"plugin://plugin.video.s4me",return)</action>
     </shortcut>
+    <shortcut>
+        <defaultID>plex</defaultID>
+        <label>Plex</label>
+        <icon>-</icon>
+        <label2>Posters</label2>
+        <thumb>icons/plex.png</thumb>
+        <visible>System.HasAddon(script.plexmod)</visible>
+        <action>RunAddon("script.plexmod")</action>
+    </shortcut>
 </shortcuts>
