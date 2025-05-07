@@ -24,7 +24,7 @@
                 <texture border="18" colordiffuse="bandabianca">images/White.png</texture>
             </control>
         </control>
-        <control type="button" id="9009">
+        <control type="label" id="9009">
             <include>homeanimation</include>
             <focusedcolor>white</focusedcolor>
             <include>ShelfFade</include>
@@ -40,32 +40,8 @@
             <aligny>center</aligny>
             <font>shelf</font>
             <textcolor>ff555555</textcolor>
-            <label>$VAR[shelflabel]</label>
+            <label>$INFO[Container(9000).ListItem.Property(widgetName)]</label>
             <texturefocus>-</texturefocus>
-            <!--MOVIES-->
-            <onclick  condition="$EXP[ismovies] + String.IsEqual(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
-            <onclick  condition="$EXP[ismovies] + String.IsEqual(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
-            <onclick  condition="$EXP[ismovies] + String.IsEqual(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
-            <!--TVSHOWS-->
-            <onclick  condition="$EXP[isepisodes] + String.IsEqual(Skin.String(TVshelf),)">Skin.SetString(TVshelf,1)</onclick>
-            <onclick  condition="$EXP[isepisodes] + String.IsEqual(Skin.String(TVshelf),1)">Skin.SetString(TVshelf,2)</onclick>
-            <onclick  condition="$EXP[isepisodes] + String.IsEqual(Skin.String(TVshelf),2)">Skin.SetString(TVshelf,)</onclick>
-            <!--MUSIC-->
-            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + String.IsEqual(Skin.String(musicshelf),)">Skin.SetString(musicshelf,albums)</onclick>
-            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + String.IsEqual(Skin.String(musicshelf),albums)">Skin.SetString(musicshelf,artists)</onclick>
-            <onclick  condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + String.IsEqual(Skin.String(musicshelf),artists)">Skin.SetString(musicshelf,)</onclick>
-
-            <!--ADDONS-->
-            <!--<onclick  condition="Control.IsVisible(315) | Control.IsVisible(317)">Skin.ToggleSetting(AddonsShelf_Custom)</onclick>-->
-            <!--<onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),2)">Skin.SetString(addonsshelf,3)</onclick>-->
-            <!--<onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),3)">Skin.SetString(addonsshelf,)</onclick>-->
-            <!--<onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),)">Skin.SetString(addonsshelf,1)</onclick>-->
-
-            <!--UPCOMINGMOVIES-->
-            <onclick  condition="$EXP[isupcomingmovies] + String.IsEqual(Skin.String(theatersshelf),)">Skin.SetString(theatersshelf,1)</onclick>
-            <onclick  condition="$EXP[isupcomingmovies] + String.IsEqual(Skin.String(theatersshelf),1)">Skin.SetString(theatersshelf,2)</onclick>
-            <onclick  condition="$EXP[isupcomingmovies] + String.IsEqual(Skin.String(theatersshelf),2)">Skin.SetString(theatersshelf,)</onclick>
-
             <onup>noop</onup>
             <ondown condition="Control.IsVisible(312)">312</ondown>
             <ondown condition="Control.IsVisible(313)">313</ondown>
@@ -84,7 +60,6 @@
             <height>1620</height>
             <onleft>9000</onleft>
             <onright>9000</onright>
-            <onup condition="[String.IsEqual(Container(311).NumItems,0) + String.IsEqual(Container(9000).ListItem.Property(defaultID),movies)] | [String.IsEqual(Container(313).NumItems,0) + String.IsEqual(Container(9000).ListItem.Property(defaultID),tvshows)]">9009</onup>
             <onup>700</onup>
             <ondown>noop</ondown>
             <orientation>vertical</orientation>
@@ -205,7 +180,7 @@
             <include>Livetv</include>
             <include>appstore_shelf</include>
             <!--<include>general</include>-->
-            <include>weather_shelf</include>
+            <!--<include>weather_shelf</include>-->
         </control>
         <control type="group">
             <visible>Player.HasAudio</visible>
