@@ -149,7 +149,7 @@
         <defaultID>disney</defaultID>
         <label>Disney +</label>
         <icon>-</icon>
-        <label2>-</label2>
+        <label2>Posters</label2>
         <thumb>icons/disney.png</thumb>
         <visible>System.HasAddon(slyguy.disney.plus)</visible>
          <action>ActivateWindow(Videos,"plugin://slyguy.disney.plus",return)</action>
