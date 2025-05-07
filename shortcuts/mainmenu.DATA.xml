@@ -2,7 +2,7 @@
 <shortcuts>
     <shortcut>
         <defaultID>disney+</defaultID>
-        <label>Disney +</label>
+        <label>Disney+</label>
         <icon>-</icon>
         <label2>Posters</label2>
         <thumb>icons/disney.png</thumb>
@@ -11,7 +11,7 @@
     </shortcut>
     <shortcut>
         <defaultID>s4me</defaultID>
-        <label>Stream 4 Me</label>
+        <label>Stream4Me</label>
         <icon>-</icon>
         <label2>Posters</label2>
         <thumb>icons/s4me.png</thumb>
