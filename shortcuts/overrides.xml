@@ -44,10 +44,10 @@
     <widgetdefault defaultID="addons">shelfaddons</widgetdefault>
 
     <widget label="Disney" path="-" target="video">disney</widget>
-    <widgetdefault defaultID="slyguy.disney.plus">disney</widgetdefault>
+    <widgetdefault defaultID="disney">disney</widgetdefault>
 
     <widget label="Continue watching" path="plugin://plugin.video.netflix/directory/video_list/continueWatching/continueWatching/" target="video">shelfnetflix</widget>
-    <widgetdefault defaultID="plugin.video.netflix">shelfnetflix</widgetdefault>
+    <widgetdefault defaultID="netflix">shelfnetflix</widgetdefault>
 
 
     <propertyfallback property="widgetPath">-</propertyfallback>
