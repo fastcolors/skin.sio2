@@ -21,7 +21,7 @@
     </contextmenu>
 
     <onclick id="211">SetFocus(300)</onclick>
-
+<!--
     <widget label="Novelties" path="plugin://plugin.video.s4me/News/?ewogICAgImFjdGlvbiI6ICJub3ZlZGFkZXMiLAogICAgImNhdGVnb3J5IjogIk5vdmVsdGllcyBpbiBNb3ZpZXMiLAogICAgImNoYW5uZWwiOiAibmV3cyIsCiAgICAiY29udGV4dCI6IFsKICAgICAgICB7CiAgICAgICAgICAgICJhY3Rpb24iOiAic2V0dGluZ19jaGFubmVsIiwKICAgICAgICAgICAgImNoYW5uZWwiOiAibmV3cyIsCiAgICAgICAgICAgICJleHRyYSI6ICJwZWxpY3VsYXMiLAogICAgICAgICAgICAidGl0bGUiOiAiQ2hhbm5lbHMgaW5jbHVkZWQgaW46IE1vdmllcyIKICAgICAgICB9CiAgICBdLAogICAgImV4dHJhIjogInBlbGljdWxhcyIsCiAgICAiaW5mb0xhYmVscyI6IHsKICAgICAgICAibWVkaWF0eXBlIjogIm1vdmllIgogICAgfSwKICAgICJpdGVtbGlzdFBvc2l0aW9uIjogMCwKICAgICJ0aHVtYm5haWwiOiAiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1N0cmVhbTRtZS9tZWRpYS9tYXN0ZXIvdGhlbWVzL2RlZmF1bHQvdGh1bWJfbW92aWUucG5nIiwKICAgICJ0aXRsZSI6ICJNb3ZpZXMiCn0%3d" target="video">s4me</widget>
     <widgetdefault defaultID="s4me">s4me</widgetdefault>
 
@@ -48,5 +48,5 @@
 
     <propertyfallback property="widgetPath">-</propertyfallback>
     <propertyfallback property="widgetName">FAST KODI</propertyfallback>
-
+-->
 </overrides>
