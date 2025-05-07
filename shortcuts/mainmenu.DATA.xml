@@ -18,11 +18,12 @@
     </shortcut>
     <shortcut>
         <defaultID>music</defaultID>
-        <label>2</label>
+        <label>10005</label>
         <icon>-</icon>
         <label2>-</label2>
         <thumb>icons/music.png</thumb>
-        <action>ActivateWindow(Music,Musicdb://,return)</action>
+        <visible>Library.HasContent(Music)</visible>
+        <action>ActivateWindow(Music)</action>
     </shortcut>
     <shortcut>
         <defaultID>addons</defaultID>
@@ -102,33 +103,6 @@
         <action>RunScript(script.globalsearch)</action>
     </shortcut>
     <shortcut>
-        <defaultID>settings</defaultID>
-        <label>5</label>
-        <label2>-</label2>
-        <icon>-</icon>
-        <thumb>icons/settings.png</thumb>
-        <action>ActivateWindow(1120)</action>
-        <!--<action>SetFocus(10020)</action>-->
-    </shortcut>
-    <shortcut>
-        <defaultID>shutdownmenu</defaultID>
-        <label>33060</label>
-        <icon>-</icon>
-        <label2>-</label2>
-        <thumb>icons/quits.png</thumb>
-        <visible>!Player.HasMedia</visible>
-        <action>ActivateWindow(ShutdownMenu)</action>
-    </shortcut>
-    <shortcut>
-        <defaultID>shutdownmenu</defaultID>
-        <label>33060</label>
-        <icon>-</icon>
-        <label2>-</label2>
-        <thumb>icons/full.png</thumb>
-        <visible>Player.HasMedia</visible>
-        <action>Action(fullscreen)</action>
-    </shortcut>
-    <shortcut>
         <defaultID>disney</defaultID>
         <label>Disney +</label>
         <icon>-</icon>
@@ -163,5 +137,32 @@
         <thumb>icons/netflix.png</thumb>
         <visible>System.HasAddon(plugin.video.netflix)</visible>
         <action>ActivateWindow(Videos,"plugin://plugin.video.netflix",return)</action>
+    </shortcut>
+    <shortcut>
+        <defaultID>settings</defaultID>
+        <label>5</label>
+        <label2>-</label2>
+        <icon>-</icon>
+        <thumb>icons/settings.png</thumb>
+        <action>ActivateWindow(1120)</action>
+        <!--<action>SetFocus(10020)</action>-->
+    </shortcut>
+    <shortcut>
+        <defaultID>shutdownmenu</defaultID>
+        <label>33060</label>
+        <icon>-</icon>
+        <label2>-</label2>
+        <thumb>icons/quits.png</thumb>
+        <visible>!Player.HasMedia</visible>
+        <action>ActivateWindow(ShutdownMenu)</action>
+    </shortcut>
+    <shortcut>
+        <defaultID>shutdownmenu</defaultID>
+        <label>33060</label>
+        <icon>-</icon>
+        <label2>-</label2>
+        <thumb>icons/full.png</thumb>
+        <visible>Player.HasMedia</visible>
+        <action>Action(fullscreen)</action>
     </shortcut>
 </shortcuts>
