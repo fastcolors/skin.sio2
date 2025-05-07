@@ -1,37 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <shortcuts>
     <shortcut>
-        <defaultID>disney</defaultID>
-        <label>Disney+</label>
-        <icon>-</icon>
-        <label2>Posters</label2>
-        <thumb>icons/disney.png</thumb>
-        <visible>System.HasAddon(slyguy.disney.plus)</visible>
-        <action>ActivateWindow(Videos,"plugin://slyguy.disney.plus",return)</action>
-    </shortcut>
-    <shortcut>
-        <defaultID>s4me</defaultID>
-        <label>Stream4Me</label>
-        <icon>-</icon>
-        <label2>Posters</label2>
-        <thumb>icons/s4me.png</thumb>
-        <visible>System.HasAddon(plugin.video.s4me)</visible>
-        <action>ActivateWindow(Videos,"plugin://plugin.video.s4me",return)</action>
-    </shortcut>
-    <shortcut>
-        <defaultID>netflix</defaultID>
-        <label>Netflix</label>
-        <icon>-</icon>
-        <label2>Posters</label2>
-        <thumb>icons/netflix.png</thumb>
-        <visible>System.HasAddon(plugin.video.netflix)</visible>
-        <action>ActivateWindow(Videos,"plugin://plugin.video.netflix",return)</action>
-    </shortcut> 
-    <shortcut>
         <defaultID>movies</defaultID>
         <label>342</label>
         <icon>-</icon>
-        <label2>Posters</label2>
+        <label2>-</label2>
         <thumb>icons/movies.png</thumb>
         <action>ActivateWindow(Videos,videodb://movies/titles/,return)</action>
     </shortcut>
@@ -39,38 +12,51 @@
         <defaultID>episodes</defaultID>
         <label>20343</label>
         <icon>-</icon>
-        <label2>Episodes</label2>
+        <label2>-</label2>
         <thumb>icons/tvshows.png</thumb>
         <action>ActivateWindow(Videos,videodb://tvshows/titles/,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>music</defaultID>
+        <viewtype>square</viewtype>
+        <label>2</label>
         <icon>-</icon>
-        <label2>Squares</label2>
+        <label2>-</label2>
         <thumb>icons/music.png</thumb>
-        <action>ActivateWindow(Music,library://music/,return)</action>
+        <action>ActivateWindow(Music,Musicdb://,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>addons</defaultID>
+        <viewtype>square</viewtype>
         <label>24001</label>
         <icon>-</icon>
-        <label2>Squares</label2>
+        <label2>-</label2>
         <thumb>icons/addons.png</thumb>
         <action>ActivateWindow(1118)</action>
     </shortcut>
     <shortcut>
+        <defaultID>weather</defaultID>
+        <label>$INFO[Weather.Temperature]</label>
+        <icon>$INFO[Weather.Conditions]</icon>
+        <label2>icons/white.png</label2>
+        <thumb>-</thumb>
+        <action>SetFocus(700)</action>
+    </shortcut>
+    <shortcut>
         <defaultID>pictures</defaultID>
+        <viewtype>square</viewtype>
         <label>1</label>
         <icon>-</icon>
-        <label2>Squares</label2>
+        <label2>-</label2>
         <thumb>icons/photos.png</thumb>
         <action>ActivateWindow(2)</action>
     </shortcut>
     <shortcut>
         <defaultID>livetv</defaultID>
+        <viewtype>poster</viewtype>
         <label>31059</label>
         <icon>-</icon>
-        <label2>Posters</label2>
+        <label2>-</label2>
         <thumb>icons/LiveTV.png</thumb>
         <!--<action>SetFocus(10040)</action>-->
         <action>ActivateWindow(TVChannels)</action>
@@ -78,37 +64,59 @@
     </shortcut>
     <shortcut>
         <defaultID>livetv</defaultID>
+        <viewtype>episodes</viewtype>
         <label>$INFO[Pvr.NowRecordingTitle]</label>
         <icon>-</icon>
-        <label2>Episodes</label2>
+        <label2>-</label2>
         <thumb>icons/LiveTVrec.png</thumb>
         <action>SetFocus(10040)</action>
         <visible>Pvr.IsRecording</visible>
     </shortcut>
     <shortcut>
         <defaultID>favourites</defaultID>
+        <viewtype>poster</viewtype>
         <label>1036</label>
         <icon>-</icon>
-        <label2>Squares</label2>
+        <label2>-</label2>
         <thumb>icons/favs.png</thumb>
-        <action>ActivateWindow(favouritesbrowser)</action>
+        <action>ActivateWindow(134)</action>
+    </shortcut>
+    <shortcut>
+        <defaultID>upcomingmovies</defaultID>
+        <viewtype>poster</viewtype>
+        <label>31422</label>
+        <icon>-</icon>
+        <label2>-</label2>
+        <thumb>icons/extendedinfotheater.png</thumb>
+        <action>SetFocus(700)</action>
+        <visible>System.HasAddon(script.extendedinfo) + Skin.HasSetting(upcomingmovies)</visible>
     </shortcut>
     <shortcut>
         <defaultID>programs</defaultID>
+        <viewtype>square</viewtype>
         <label>31037</label>
         <icon>-</icon>
-        <label2>Squares</label2>
+        <label2>-</label2>
         <thumb>icons/program.png</thumb>
         <action>ActivateWindow(AddonBrowser,root)</action>
     </shortcut>
     <shortcut>
         <defaultID>sources</defaultID>
+        <viewtype>square</viewtype>
         <label>20094</label>
         <icon>-</icon>
-        <label2>Squares</label2>
+        <label2>-</label2>
         <thumb>icons/sources.png</thumb>
         <!--<action>SetFocus(10010)</action>-->
         <action>ActivateWindow(1115)</action>
+    </shortcut>
+    <shortcut>
+        <defaultID>search</defaultID>
+        <label>search</label>
+        <icon>-</icon>
+        <label2>-</label2>
+        <thumb>icons/search.png</thumb>
+        <action>RunScript(script.globalsearch)</action>
     </shortcut>
     <shortcut>
         <defaultID>settings</defaultID>
