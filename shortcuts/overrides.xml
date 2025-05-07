@@ -43,7 +43,7 @@
     <widget label="Recently Updated Apps" path="addons://recently_updated/" target="addons">shelfaddons</widget>
     <widgetdefault defaultID="addons">shelfaddons</widgetdefault>
 
-    <widget label="Disney +" path="-" target="video">disney</widget>
+    <widget label="Disney" path="-" target="video">disney</widget>
     <widgetdefault defaultID="slyguy.disney.plus">disney</widgetdefault>
 
     <propertyfallback property="widgetPath">-</propertyfallback>
