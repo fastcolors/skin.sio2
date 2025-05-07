@@ -28,7 +28,7 @@
     <widget label="Recently Added Movies" path="videodb://recentlyaddedmovies/" target="video">shelfmovies</widget>
     <widgetdefault defaultID="movies">shelfmovies</widgetdefault>
 
-    <widget label="Episodes" path="$VAR[epshelf]" target="video">shelfepisodes</widget>
+    <widget label="Episodes" path="videodb://" target="video">shelfepisodes</widget>
     <widgetdefault defaultID="episodes">shelfepisodes</widgetdefault>
 
     <widget label="Tv Shows" path="videodb://tvshows/titles" target="video">shelftvshows</widget>

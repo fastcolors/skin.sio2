@@ -91,29 +91,26 @@
 
 
     <variable name="shelflabel">
-        <!--MOVIES-->
-        <!-- <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),WL)">$LOCALIZE[31046]</value>
+
+       <!--
+         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),WL)">$LOCALIZE[31046]</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),RND)">$LOCALIZE[590]</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),)">$LOCALIZE[20386]</value>
-        <!--TV-->
+
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),episodes) + String.IsEqual(Skin.String(TVshelf),2)">$LOCALIZE[31048]</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),episodes) + String.IsEqual(Skin.String(TVshelf),1)">$LOCALIZE[590]</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),episodes)">$LOCALIZE[20387]</value>
-        <!--MUSIC-->
+
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + Library.HasContent(Music) + String.IsEqual(Skin.String(musicshelf),albums)">$LOCALIZE[517]</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + Library.HasContent(Music) + String.IsEqual(Skin.String(musicshelf),artists)">$LOCALIZE[590]</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),music) + Library.HasContent(Music)">$LOCALIZE[359]</value>
-        <!--ADDONS-->
-        <!--todo label-->
-        <!--<value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) + Skin.HasSetting(AddonsShelf_Custom)">$LOCALIZE[31051]</value>-->
-        <!--<value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) + StringCompare(Skin.String(addonsshelf),1)">$LOCALIZE[1038] </value>-->
-        <!--<value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) + StringCompare(Skin.String(addonsshelf),2)">$LOCALIZE[1043] </value>-->
-        <!--<value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) + StringCompare(Skin.String(addonsshelf),3)">$LOCALIZE[1039] </value>-->
+
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)">Recently Updated Addons</value>
-        <!--PICTURES-->
+
         <value condition="Container(9000).HasFocus(344)"> </value>
-        <!--LIVETV(RECORDINGS)-->
+        
         <value condition="Container(9000).HasFocus(355)"> </value> -->
+
         <!--GENERAL-->
         <value>$INFO[Container(9000).ListItem.Property(widgetName)]</value>
     </variable>
