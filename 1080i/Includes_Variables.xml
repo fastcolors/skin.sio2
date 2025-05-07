@@ -91,10 +91,6 @@
 
 
     <variable name="shelflabel">
-        <!--UPCOMINGMOVIES-->
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies) + String.IsEqual(Skin.String(theatersshelf),1)">Popular Movies</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies) + String.IsEqual(Skin.String(theatersshelf),2)">Upcoming Movies</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),upcomingmovies)">Movies in Theaters</value>
         <!--MOVIES-->
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),WL)">$LOCALIZE[31046]</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),movies) + String.IsEqual(Skin.String(moviesshelf),RND)">$LOCALIZE[590]</value>

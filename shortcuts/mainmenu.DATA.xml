@@ -1,7 +1,26 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <shortcuts>
     <shortcut>
+        <defaultID>disney+</defaultID>
+        <label>Disney +</label>
+        <icon>-</icon>
+        <label2>-</label2>
+        <thumb>icons/disney.png</thumb>
+        <visible>System.HasAddon(slyguy.disney.plus)</visible>
+        <action>ActivateWindow(Videos,"plugin://slyguy.disney.plus",return)</action>
+    </shortcut>
+    <shortcut>
+        <defaultID>disney+</defaultID>
+        <label>Disney +</label>
+        <icon>-</icon>
+        <label2>-</label2>
+        <thumb>icons/s4me.png</thumb>
+        <visible>System.HasAddon(plugin.video.s4me)</visible>
+        <action>ActivateWindow(Videos,"plugin://plugin.video.s4me",return)</action>
+    </shortcut>
+    <shortcut>
         <defaultID>movies</defaultID>
+        <viewtype>Posters</viewtype>
         <label>342</label>
         <icon>-</icon>
         <label2>-</label2>
@@ -10,6 +29,7 @@
     </shortcut>
     <shortcut>
         <defaultID>episodes</defaultID>
+        <viewtype>Episodes</viewtype>
         <label>20343</label>
         <icon>-</icon>
         <label2>-</label2>
@@ -18,16 +38,16 @@
     </shortcut>
     <shortcut>
         <defaultID>music</defaultID>
-        <viewtype>square</viewtype>
+        <viewtype>Squares</viewtype>
         <label>2</label>
         <icon>-</icon>
         <label2>-</label2>
         <thumb>icons/music.png</thumb>
-        <action>ActivateWindow(Music,Musicdb://,return)</action>
+        <action>ActivateWindow(Music,library://music/,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>addons</defaultID>
-        <viewtype>square</viewtype>
+        <viewtype>Squares</viewtype>
         <label>24001</label>
         <icon>-</icon>
         <label2>-</label2>
@@ -35,16 +55,8 @@
         <action>ActivateWindow(1118)</action>
     </shortcut>
     <shortcut>
-        <defaultID>weather</defaultID>
-        <label>$INFO[Weather.Temperature]</label>
-        <icon>$INFO[Weather.Conditions]</icon>
-        <label2>icons/white.png</label2>
-        <thumb>-</thumb>
-        <action>SetFocus(700)</action>
-    </shortcut>
-    <shortcut>
         <defaultID>pictures</defaultID>
-        <viewtype>square</viewtype>
+        <viewtype>Squares</viewtype>
         <label>1</label>
         <icon>-</icon>
         <label2>-</label2>
@@ -53,7 +65,7 @@
     </shortcut>
     <shortcut>
         <defaultID>livetv</defaultID>
-        <viewtype>poster</viewtype>
+        <viewtype>Posters</viewtype>
         <label>31059</label>
         <icon>-</icon>
         <label2>-</label2>
@@ -64,7 +76,7 @@
     </shortcut>
     <shortcut>
         <defaultID>livetv</defaultID>
-        <viewtype>episodes</viewtype>
+        <viewtype>Episodes</viewtype>
         <label>$INFO[Pvr.NowRecordingTitle]</label>
         <icon>-</icon>
         <label2>-</label2>
@@ -74,7 +86,7 @@
     </shortcut>
     <shortcut>
         <defaultID>favourites</defaultID>
-        <viewtype>poster</viewtype>
+        <viewtype>Posters</viewtype>
         <label>1036</label>
         <icon>-</icon>
         <label2>-</label2>
@@ -82,18 +94,8 @@
         <action>ActivateWindow(134)</action>
     </shortcut>
     <shortcut>
-        <defaultID>upcomingmovies</defaultID>
-        <viewtype>poster</viewtype>
-        <label>31422</label>
-        <icon>-</icon>
-        <label2>-</label2>
-        <thumb>icons/extendedinfotheater.png</thumb>
-        <action>SetFocus(700)</action>
-        <visible>System.HasAddon(script.extendedinfo) + Skin.HasSetting(upcomingmovies)</visible>
-    </shortcut>
-    <shortcut>
         <defaultID>programs</defaultID>
-        <viewtype>square</viewtype>
+        <viewtype>Squares</viewtype>
         <label>31037</label>
         <icon>-</icon>
         <label2>-</label2>
@@ -102,7 +104,7 @@
     </shortcut>
     <shortcut>
         <defaultID>sources</defaultID>
-        <viewtype>square</viewtype>
+        <viewtype>Squares</viewtype>
         <label>20094</label>
         <icon>-</icon>
         <label2>-</label2>
@@ -146,4 +148,3 @@
         <action>Action(fullscreen)</action>
     </shortcut>
 </shortcuts>
-

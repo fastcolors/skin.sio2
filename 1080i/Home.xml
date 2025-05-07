@@ -3,7 +3,7 @@
     <backgroundcolor>background</backgroundcolor>
     <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;level=0)</onload>
+    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;level=0&amp;options=cloneproperties)</onload>
     <include>HomeOpenClose</include>
     <controls>
         <include>BlackBackground</include>
@@ -206,23 +206,6 @@
             <include>appstore_shelf</include>
             <!--<include>general</include>-->
             <include>weather_shelf</include>
-        </control>
-        <control type="group" description="RSS">
-            <control type="rss" description="RSS Feed">
-                <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-                <visible>!Skin.HasSetting(NORSS)</visible>
-                <include>VisibleFade</include>
-                <left>0</left>
-                <top>1046</top>
-                <width>1920</width>
-                <height>33</height>
-                <font>size22</font>
-                <urlset>1</urlset>
-                <shadowcolor>-</shadowcolor>
-                <titlecolor>white</titlecolor>
-                <headlinecolor>white</headlinecolor>
-                <textcolor>gray</textcolor>
-            </control>
         </control>
         <control type="group">
             <visible>Player.HasAudio</visible>

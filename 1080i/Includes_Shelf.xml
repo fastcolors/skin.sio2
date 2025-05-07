@@ -314,47 +314,33 @@
         </focusedlayout>
     </include>
     <include name="Posters">
-        <control type="panel" id="311" description="Movies Shelf Shortcuts">
+        <control type="panel" id="311" description="Poster Shelf Shortcuts">
             <visible>String.IsEqual(Container(9000).ListItem.Property(viewtype),Posters)</visible>
             <include>PosterShortcutsCommons</include>
-            <content target="video">$VAR[shelfcontent]</content>
+            <content target="movies">$VAR[shelfcontent]</content>
         </control>
     </include>
     <include name="Squares">
-        <control type="panel" id="312" description="Music Shelf Shortcuts">
+        <control type="panel" id="312" description="Square Shelf Shortcuts">
             <visible>String.IsEqual(Container(9000).ListItem.Property(viewtype),Squares)</visible>
             <include>SquareShortcutsCommons</include>
             <onclick>PlayMedia($ESCINFO[ListItem.DBID,musicdb://albums/,/])</onclick>
-            <content target="audio">$VAR[shelfcontent]</content>
+            <content target="$INFO[Container(9000).ListItem.Property(widgetTarget)]">$INFO[Container(9000).ListItem.Property(list)]</content>
         </control>
     </include>
     <include name="Episodes">
         <control type="panel" id="313" description="Episodes Shelf Shortcuts">
             <visible>String.IsEqual(Container(9000).ListItem.Property(viewtype),Episodes)</visible>
             <include>EpisodeShortcutsCommons</include>
-            <content target="video">$VAR[shelfcontent]</content>
+            <content target="$INFO[Container(9000).ListItem.Property(widgetTarget)]">$INFO[Container(9000).ListItem.Property(widgetPath)]</content>
         </control>
     </include>
     <include name="Livetv">
         <control type="panel" id="314" description="LiveTV">
             <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),livetv)</visible>
             <include>PosterShortcutsCommons</include>
-            <!--<content target="video">$VAR[livetv]</content>-->
-            <content target="video">pvr://channels/tv/*</content>
-        </control>
-    </include>
-    <!--<include name="Addons">-->
-    <!--<control type="panel" id="317" description="Addons Shelf Shortcuts">-->
-    <!--<visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) | String.IsEqual(Container(9000).ListItem.Property(defaultID),programs)</visible>-->
-    <!--<include>SquareShortcutsCommons</include>-->
-    <!--<content target="programs">$VAR[squareshelf]</content>-->
-    <!--</control>-->
-    <!--</include>-->
-    <include name="Favourites">
-        <control type="panel" id="318" description="Favourites">
-            <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),favourites)</visible>
-            <include>PosterShortcutsCommons</include>
-            <content>favourites://</content>
+            <content target="$INFO[Container(9000).ListItem.Property(widgetTarget)]">$INFO[Container(9000).ListItem.Property(widgetPath)]</content>
+          <!-- <content target="video">pvr://channels/tv/*</content> -->
         </control>
     </include>
     <!--<include name="general">-->
@@ -393,7 +379,6 @@
     <!--</control>-->
     <!--</include>-->
     <!--todo appstore shelf-->
-    <include name="appstore_shelf">
         <control type="group">
             <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),programs)</visible>
             <!--<control type="image">-->
@@ -411,7 +396,6 @@
                 <content></content>
             </control>
         </control>
-    </include>
     <include name="weather_shelf">
         <control type="group">
             <visible>String.IsEqual(Container(9000).ListItem.Property(defaultID),weather)</visible>
