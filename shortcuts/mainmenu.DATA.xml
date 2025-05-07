@@ -32,7 +32,7 @@
         <viewtype>Posters</viewtype>
         <label>342</label>
         <icon>-</icon>
-        <label2>Posters</label2>
+        <label2>"Posters"</label2>
         <thumb>icons/movies.png</thumb>
         <action>ActivateWindow(Videos,videodb://movies/titles/,return)</action>
     </shortcut>
@@ -40,14 +40,14 @@
         <defaultID>episodes</defaultID>
         <label>20343</label>
         <icon>-</icon>
-        <label2>Episodes</label2>
+        <label2>"Episodes"</label2>
         <thumb>icons/tvshows.png</thumb>
         <action>ActivateWindow(Videos,videodb://tvshows/titles/,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>music</defaultID>
         <icon>-</icon>
-        <label2>Squares</label2>
+        <label2>"Squares"</label2>
         <thumb>icons/music.png</thumb>
         <action>ActivateWindow(Music,library://music/,return)</action>
     </shortcut>
@@ -55,7 +55,7 @@
         <defaultID>addons</defaultID>
         <label>24001</label>
         <icon>-</icon>
-        <label2>Squares</label2>
+        <label2>"Squares"</label2>
         <thumb>icons/addons.png</thumb>
         <action>ActivateWindow(1118)</action>
     </shortcut>
@@ -63,7 +63,7 @@
         <defaultID>pictures</defaultID>
         <label>1</label>
         <icon>-</icon>
-        <label2>Squares</label2>
+        <label2>"Squares"</label2>
         <thumb>icons/photos.png</thumb>
         <action>ActivateWindow(2)</action>
     </shortcut>
@@ -71,7 +71,7 @@
         <defaultID>livetv</defaultID>
         <label>31059</label>
         <icon>-</icon>
-        <label2>Posters</label2>
+        <label2>"Posters"</label2>
         <thumb>icons/LiveTV.png</thumb>
         <!--<action>SetFocus(10040)</action>-->
         <action>ActivateWindow(TVChannels)</action>
@@ -81,7 +81,7 @@
         <defaultID>livetv</defaultID>
         <label>$INFO[Pvr.NowRecordingTitle]</label>
         <icon>-</icon>
-        <label2>Episodes</label2>
+        <label2>"Episodes"</label2>
         <thumb>icons/LiveTVrec.png</thumb>
         <action>SetFocus(10040)</action>
         <visible>Pvr.IsRecording</visible>
@@ -90,7 +90,7 @@
         <defaultID>favourites</defaultID>
         <label>1036</label>
         <icon>-</icon>
-        <label2>Squares</label2>
+        <label2>"Squares"</label2>
         <thumb>icons/favs.png</thumb>
         <action>ActivateWindow(favouritesbrowser)</action>
     </shortcut>
@@ -98,7 +98,7 @@
         <defaultID>programs</defaultID>
         <label>31037</label>
         <icon>-</icon>
-        <label2>Squares</label2>
+        <label2>"Squares"</label2>
         <thumb>icons/program.png</thumb>
         <action>ActivateWindow(AddonBrowser,root)</action>
     </shortcut>
@@ -106,7 +106,7 @@
         <defaultID>sources</defaultID>
         <label>20094</label>
         <icon>-</icon>
-        <label2>Squares</label2>
+        <label2>"Squares"</label2>
         <thumb>icons/sources.png</thumb>
         <!--<action>SetFocus(10010)</action>-->
         <action>ActivateWindow(1115)</action>
