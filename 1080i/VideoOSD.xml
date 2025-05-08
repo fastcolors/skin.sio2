@@ -9,10 +9,9 @@
             <animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
             <control type="group" id="111" description="Options content">
                 <top>1080</top>
-                <animation type="Focus">
-                    <effect type="slide" start="0,0" end="0,-400" time="600" />
-                </animation>
-                <animation effect="slide" start="0,-400" end="0,0" time="600">unFocus</animation>
+                <!-- todo here -->
+                <animation condition="Focus" effect="slide" start="0,0" end="0,-400" time="600">Conditional</animation>
+                <animation condition="!ControlGroup(111).HasFocus()" effect="slide" start="0,-400" end="0,0" time="600">Conditional</animation>
                 <include>OSDfullinfos</include>
             </control>
         </control>
