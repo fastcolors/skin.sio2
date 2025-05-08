@@ -28,7 +28,7 @@
             </control>
             <control type="image" description="WatchStatus">
                 <left>373</left>
-                <bottom>75</bottom>
+                <bottom>70</bottom>
                 <height>52</height>
                 <width>52</width>
                 <aspectratio>keep</aspectratio>
@@ -49,7 +49,7 @@
                 </control>
                 <control type="image" description="WatchStatus">
                     <left>373</left>
-                    <bottom>72</bottom>
+                    <bottom>70</bottom>
                     <height>52</height>
                     <width>52</width>
                     <aspectratio>keep</aspectratio>
