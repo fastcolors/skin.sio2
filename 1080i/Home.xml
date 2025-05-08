@@ -17,11 +17,11 @@
             <include>homeanimation</include>
             <control type="image" description="banda bianca">
                 <top>695</top>
-                <left>-35</left>
-                <width>1990</width>
+                <centerleft>960</centerleft>
+                <width>1850</width>
                 <height>274</height>
                 <aspectratio>stretch</aspectratio>
-                <texture border="18" colordiffuse="bandabianca">images/White.png</texture>
+                <texture colordiffuse="bandabianca">images/diffusebanner.png</texture>
             </control>
         </control>
         <control type="label" id="9009">

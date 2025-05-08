@@ -62,7 +62,7 @@
                 <control type="label">
                     <visible>ControlGroup(700).HasFocus()</visible>
                     <centerleft>257</centerleft>
-                    <top>560</top>
+                    <top>540</top>
                     <width>350</width>
                     <height>40</height>
                     <font>size30B</font>
