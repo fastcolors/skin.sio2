@@ -54,8 +54,8 @@
                     <animation effect="zoom" condition="Control.HasFocus(191)" start="100" end="103" time="120" center="auto" tween="Back" easing="Out">Conditional</animation>
                     <animation effect="zoom" condition="!Control.HasFocus(191)" start="103" end="100" time="120" center="auto">Conditional</animation>
                     <top>160</top>
-                    <width>700</width>
-                    <height>200</height>
+                    <width>850</width>
+                    <height>180</height>
                     <autoscroll>false</autoscroll>
                     <align>justify</align>
                 </control>

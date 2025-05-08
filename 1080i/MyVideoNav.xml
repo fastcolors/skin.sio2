@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <backgroundcolor>background</backgroundcolor>
-    <defaultcontrol always="true">53</defaultcontrol>
+    <defaultcontrol always="true">501</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <views>53,50,55,501</views>
+    <views>501,53,50,55</views>
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
@@ -13,12 +13,22 @@
             <include>Dimensions_Fullscreen</include>
             <include>Fanart_Fade</include>
             <texture background="true">$INFO[ListItem.Property(fanart_image)]</texture>
-            <colordiffuse>10ffffff</colordiffuse>
+            <colordiffuse>80ffffff</colordiffuse>
+            <aspectratio>stretch</aspectratio>
+        </control>
+        <control type="image">
+            <visible>!Control.IsVisible(53)</visible>
+            <visible>!Skin.HasSetting(fanartback)</visible>
+            <height>1280</height>
+            <width>2200</width>
+            <include>Fanart_Fade</include>
+            <texture flipy="true" diffuse="images/DefaultGradient.png">images/DefaultGradientH.png</texture>
             <aspectratio>stretch</aspectratio>
         </control>
         <control type="label" description="Heading">
             <visible>!Control.IsVisible(53)</visible>
-            <include>Heading</include>
+            <left>100</left>
+            <bottom>550</bottom>
             <label>$VAR[RootLabel][COLOR=dimgray]$INFO[Container.NumItems,  (,)][/COLOR]</label>
         </control>
         <!--VIEWS-->
