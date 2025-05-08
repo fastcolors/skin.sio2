@@ -2,6 +2,7 @@
 <window id="2">
     <backgroundcolor>background</backgroundcolor>
     <defaultcontrol always="true">53</defaultcontrol>
+    <views>50,53</views>
     <allowoverlay>no</allowoverlay>
     <controls>
         <include>BlackBackground</include>
@@ -45,13 +46,9 @@
                     <preloaditems>2</preloaditems>
                     <scrolltime tween="sine" easing="inout">280</scrolltime>
                     <itemlayout width="802" height="111">
-                        <!--<control type="image">-->
-                        <!--<height>70</height>-->
-                        <!--<width>805</width>-->
-                        <!--<texture border="8" colordiffuse="77FFFFFF">images/White.png</texture>-->
-                        <!--</control>-->
                         <include>Arrow</include>
                         <control type="label" description="Main Label">
+                            <animation condition="String.IsEmpty(ListItem.PictureDatetime)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
                             <left>45</left>
                             <width>717</width>
                             <include>BigListTitle</include>
@@ -60,7 +57,7 @@
                         <control type="label" description="Label2">
                             <left>45</left>
                             <width>630</width>
-                            <include>BigListDetailsFO</include>
+                            <include>BigListDetails</include>
                             <label>$INFO[ListItem.PictureDatetime]$INFO[ListItem.PictureCountry, • ]$INFO[ListItem.PictureCamMake, • ,]$INFO[ListItem.PictureCamModel, ]</label>
                         </control>
                     </itemlayout>
@@ -81,9 +78,10 @@
                             </control>
                             <include>Arrow</include>
                             <control type="label" description="Main Label">
+                                <animation condition="String.IsEmpty(ListItem.PictureDatetime)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
                                 <left>45</left>
                                 <width>717</width>
-                                <include>BigListTitle</include>
+                                <include>BigListTitleFO</include>
                                 <label>$INFO[ListItem.label]</label>
                             </control>
                             <control type="label" description="Label2">

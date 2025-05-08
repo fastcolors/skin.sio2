@@ -26,9 +26,14 @@
             <aspectratio>stretch</aspectratio>
         </control>
         <control type="label" description="Heading">
-            <visible>!Control.IsVisible(53)</visible>
+            <visible>Control.IsVisible(501) </visible>
             <left>100</left>
             <bottom>550</bottom>
+            <label>$VAR[RootLabel][COLOR=dimgray]$INFO[Container.NumItems,  (,)][/COLOR]</label>
+        </control>
+        <control type="label" description="Heading">
+            <visible>Control.IsVisible(50)</visible>
+            <include>Heading</include>
             <label>$VAR[RootLabel][COLOR=dimgray]$INFO[Container.NumItems,  (,)][/COLOR]</label>
         </control>
         <!--VIEWS-->

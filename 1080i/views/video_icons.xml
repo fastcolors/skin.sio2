@@ -5,6 +5,7 @@
         <control type="group" description="Icons view">
             <visible>Control.IsVisible(53)</visible>
             <control type="panel" id="53">
+                <visible>!Container.HasFolders</visible>
                 <left>50</left>
                 <width>1820</width>
                 <height>1080</height>

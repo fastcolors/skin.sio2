@@ -31,7 +31,7 @@
         <icon>-</icon>
         <label2>-</label2>
         <thumb>icons/addons.png</thumb>
-        <action>ActivateWindow(1118)</action>
+        <action>ActivateWindow(Addonbrowser)</action>
     </shortcut>
     <shortcut>
         <defaultID>pictures</defaultID>
@@ -39,7 +39,7 @@
         <icon>-</icon>
         <label2>-</label2>
         <thumb>icons/photos.png</thumb>
-        <action>ActivateWindow(2)</action>
+        <action>ActivateWindow(10002)</action>
     </shortcut>
     <shortcut>
         <defaultID>livetv</defaultID>

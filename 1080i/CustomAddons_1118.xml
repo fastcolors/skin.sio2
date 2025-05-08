@@ -23,13 +23,13 @@
                     <include>DialogButt</include>
                     <label>1037</label>
                     <onclick>Close</onclick>
-                    <onclick>ActivateWindow(Videos,Addons)</onclick>
+                    <onclick>ActivateWindow(Addonbrowser)</onclick>
                 </control>
                 <control type="button" id="700">
                     <include>DialogButt</include>
                     <label>1038</label>
                     <onclick>Close</onclick>
-                    <onclick>ActivateWindow(Music,Addons)</onclick>
+                    <onclick>ActivateWindow(Music,Addons,return)</onclick>
                 </control>
                 <control type="button" id="701">
                     <include>DialogButt</include>
