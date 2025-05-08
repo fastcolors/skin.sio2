@@ -12,7 +12,7 @@
             <control type="image" description="Dialog BG">
                 <width>520</width>
                 <height>130</height>
-                <texture border="8" colordiffuse="notification">images/White.png</texture>
+                <texture>images/diffusehome.png</texture>
             </control>
             <control type="image" id="400" description="File Icon">
                 <left>20</left>

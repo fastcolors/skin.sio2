@@ -450,8 +450,6 @@
     <include name="osdbutton">
         <width>90</width>
         <height>98</height>
-        <animation>Focus</animation>
-        <animation>unFocus</animation>
     </include>
     <include name="OSDfullinfos">
         <control type="image">
@@ -472,7 +470,7 @@
             <ondown condition="Control.HasFocus(704)">9000</ondown>
             <ondown condition="Control.HasFocus(703)">10000</ondown>
             <ondown condition="Control.HasFocus(706)">8000</ondown>
-            <ondown>100</ondown>
+            <ondown>noop</ondown>
             <orientation>horizontal</orientation>
             <align>center</align>
             <scrolltime>240</scrolltime>
@@ -520,16 +518,16 @@
                 <onclick>PlayerControl(ShowVideoMenu)</onclick>
             </control>
         </control>
+        <control type="image">
+            <top>140</top>
+            <centerleft>960</centerleft>
+            <width>2020</width>
+            <height>300</height>
+            <colordiffuse>osdoverlay</colordiffuse>
+            <texture border="8">images/White.png</texture>
+        </control>
         <control type="group" description="Video Info">
             <visible>Control.HasFocus(706)</visible>
-            <control type="image">
-                <top>140</top>
-                <centerleft>960</centerleft>
-                <width>2020</width>
-                <height>300</height>
-                <colordiffuse>osdoverlay</colordiffuse>
-                <texture border="8">images/White.png</texture>
-            </control>
             <control type="image">
                 <centertop>255</centertop>
                 <centerleft>295</centerleft>
@@ -566,14 +564,6 @@
 
         <control type="group" description="Audio and Subtitles">
             <visible>Control.HasFocus(704) | ControlGroup(9000).HasFocus</visible>
-            <control type="image">
-                <top>140</top>
-                <centerleft>960</centerleft>
-                <width>2020</width>
-                <height>250</height>
-                <colordiffuse>osdoverlay</colordiffuse>
-                <texture border="8">images/White.png</texture>
-            </control>
             <control type="group" id="9000">
                 <top>170</top>
                 <control type="grouplist" description="Language" id="9001">
@@ -717,20 +707,12 @@
         </control>
         <control type="group" description="Video Stream Infos">
             <visible>Control.HasFocus(707)</visible>
-            <control type="image">
-                <top>140</top>
-                <centerleft>960</centerleft>
-                <width>2020</width>
-                <height>300</height>
-                <colordiffuse>osdoverlay</colordiffuse>
-                <texture border="8">images/White.png</texture>
-            </control>
             <control type="grouplist">
                 <left>110</left>
                 <top>160</top>
                 <control type="label">
                     <width>1600</width>
-                    <height>50</height>
+                    <height>30</height>
                     <aligny>bottom</aligny>
                     <label>$INFO[Player.Process(videodecoder),Video Decoder: ] $INFO[Player.Process(pixformat),Pixel Format: ]</label>
                     <font>font13</font>
@@ -738,7 +720,7 @@
                 </control>
                 <control type="label">
                     <width>1600</width>
-                    <height>50</height>
+                    <height>30</height>
                     <aligny>bottom</aligny>
                     <label>$INFO[Player.Process(deintmethod),Deinterlace Method: ]</label>
                     <font>font13</font>
@@ -746,7 +728,7 @@
                 </control>
                 <control type="label">
                     <width>1600</width>
-                    <height>50</height>
+                    <height>30</height>
                     <aligny>bottom</aligny>
                     <label>$INFO[Player.Process(videowidth),Video : ,x]$INFO[Player.Process(videoheight),, px]$INFO[Player.Process(videodar),$COMMA , AR]$INFO[Player.Process(videofps),$COMMA , FPS]</label>
                     <font>font13</font>
@@ -754,7 +736,7 @@
                 </control>
                 <control type="label">
                     <width>1600</width>
-                    <height>50</height>
+                    <height>30</height>
                     <aligny>bottom</aligny>
                     <label>Audio Channels: $INFO[Player.Process(audiochannels),,$COMMA ]$INFO[Player.Process(audiodecoder)]$INFO[Player.Process(audiobitspersample),$COMMA , bits]$INFO[Player.Process(audiosamplerate),$COMMA , Hz]</label>
                     <font>font13</font>
@@ -762,7 +744,7 @@
                 </control>
                 <control type="label">
                     <width>1600</width>
-                    <height>50</height>
+                    <height>30</height>
                     <aligny>bottom</aligny>
                     <label>$INFO[System.Memory(used.percent),Memory in Use: ,       ]$INFO[System.CpuUsage,$LOCALIZE[13271]]</label>
                     <font>font13</font>

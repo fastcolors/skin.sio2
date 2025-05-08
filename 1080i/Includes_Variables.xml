@@ -108,7 +108,7 @@
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons)">Recently Updated Addons</value>
 
         <value condition="Container(9000).HasFocus(344)"> </value>
-        
+
         <value condition="Container(9000).HasFocus(355)"> </value> -->
 
         <!--GENERAL-->
