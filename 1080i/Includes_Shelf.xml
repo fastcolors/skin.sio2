@@ -2,7 +2,7 @@
 <includes>
     <include name="ShelfFade">
         <animation effect="fade" start="0" end="100" delay="500" time="400" reversible="false">Visible</animation>
-        <visible>Integer.IsEqual(Container(9000).ListItem.Property(id),1) | Integer.IsEqual(Container(9000).ListItem.Property(id),2) | Integer.IsEqual(Container(9000).ListItem.Property(id),3) | Integer.IsEqual(Container(9000).ListItem.Property(id),4) | Integer.IsEqual(Container(9000).ListItem.Property(id),5)</visible>
+        <visible>Container(9000).Row(0)</visible>
     </include>
     <include name="GeneralShortcutsCommons">
         <include>ShelfFade</include>
