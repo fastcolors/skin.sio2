@@ -62,9 +62,9 @@
                 <control type="label">
                     <visible>ControlGroup(700).HasFocus()</visible>
                     <centerleft>257</centerleft>
-                    <top>540</top>
+                    <bottom>0</bottom>
                     <width>350</width>
-                    <height>40</height>
+                    <height>30</height>
                     <font>size30B</font>
                     <label fallback="$INFO[ListItem.Label]">$INFO[ListItem.Title]</label>
                     <align>center</align>
