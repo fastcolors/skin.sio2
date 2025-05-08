@@ -20,15 +20,15 @@
         <itemlayout height="600" width="382">
             <control type="image">
                 <left>90</left>
-                <bottom>65</bottom>
+                <bottom>75</bottom>
                 <width>335</width>
-                <height>500</height>
+                <height>490</height>
                 <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
                 <aspectratio>keep</aspectratio>
             </control>
             <control type="image" description="WatchStatus">
                 <left>373</left>
-                <bottom>65</bottom>
+                <bottom>75</bottom>
                 <height>52</height>
                 <width>52</width>
                 <aspectratio>keep</aspectratio>
@@ -41,15 +41,15 @@
                 <animation effect="zoom" start="112" end="100" time="120" center="257,300">unFocus</animation>
                 <control type="image">
                     <left>90</left>
-                    <bottom>65</bottom>
+                    <bottom>75</bottom>
                     <width>335</width>
-                    <height>500</height>
+                    <height>490</height>
                     <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
                     <aspectratio>keep</aspectratio>
                 </control>
                 <control type="image" description="WatchStatus">
                     <left>373</left>
-                    <bottom>65</bottom>
+                    <bottom>75</bottom>
                     <height>52</height>
                     <width>52</width>
                     <aspectratio>keep</aspectratio>
