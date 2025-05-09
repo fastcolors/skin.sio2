@@ -9,37 +9,30 @@
     <animation effect="fade" start="0" end="100" time="400">Visible</animation>
     <animation effect="fade" start="100" end="0" time="100">Hidden</animation>
     <controls>
-        <control type="group" description="Time">
-            <visible>!Window.IsActive(142)</visible>
-            <animation effect="fade" start="0" end="70" time="400">Visible</animation>
-            <animation effect="fade" start="70" end="0" time="100">Hidden</animation>
-        </control>
-        <control type="image" description="Seek time label">
-            <left>120</left>
+        <control type="grouplist">
+            <centerleft>860</centerleft>
             <bottom>120</bottom>
-            <visible>!String.StartsWith(Player.SeekStepSize,-) + Player.Seeking</visible>
-            <height>60</height>
-            <width>60</width>
-            <texture>images/FWD.png</texture>
-            <animation effect="fade" time="200">VisibleChange</animation>
-        </control>
-        <control type="image" description="Seek time label">
-            <left>120</left>
-            <bottom>120</bottom>
-            <visible>String.StartsWith(Player.SeekStepSize,-) + Player.Seeking</visible>
-            <height>60</height>
-            <width>60</width>
-            <texture>images/BWD.png</texture>
-            <animation effect="fade" time="200">VisibleChange</animation>
-        </control>
-         <control type="label" description="Seek time label">
-            <left>190</left>
-            <bottom>120</bottom>
-            <visible>Player.Seeking</visible>
-            <height>60</height>
-            <width>600</width>
-            <label>$INFO[Player.SeekStepSize]</label>
-            <animation effect="fade" time="200">VisibleChange</animation>
+            <orientation>horizontal</orientation>
+            <control type="image" description="Seek time label">
+                <visible>!String.StartsWith(Player.SeekStepSize,-) + Player.Seeking</visible>
+                <height>60</height>
+                <width>60</width>
+                <texture>images/FWD.png</texture>
+                <animation effect="fade" time="200">VisibleChange</animation>
+            </control>
+            <control type="image" description="Seek time label">
+                <visible>String.StartsWith(Player.SeekStepSize,-) + Player.Seeking</visible>
+                <height>60</height>
+                <width>60</width>
+                <texture>images/BWD.png</texture>
+                <animation effect="fade" time="200">VisibleChange</animation>
+            </control>
+             <control type="label" description="Seek time label">
+                <height>60</height>
+                <width>600</width>
+                <label>$INFO[Player.SeekStepSize]</label>
+                <animation effect="fade" time="200">VisibleChange</animation>
+            </control>
         </control>
         <control type="group">
             <top>970</top>
@@ -51,7 +44,7 @@
       					<texturesliderbar border="4">Seekbar/ProgressBG.png</texturesliderbar>
       					<textureslidernib>Seekbar/ProgressM.png</textureslidernib>
       					<textureslidernibfocus colordiffuse="99000000">Seekbar/ProgressR.png</textureslidernibfocus>
-      					<visible>Player.Seeking</visible>
+                <visible>Player.Seeking</visible>
     				</control>
         </control>
         <control type="image" description="Buffer icon">

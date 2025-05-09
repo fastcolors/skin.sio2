@@ -10,16 +10,236 @@
             <control type="group" id="111" description="Options content">
                 <top>1080</top>
                 <!-- todo here -->
-                <animation condition="Focus" effect="slide" start="0,0" end="0,-400" time="600">Conditional</animation>
-                <animation condition="!ControlGroup(111).HasFocus()" effect="slide" start="0,-400" end="0,0" time="600">Conditional</animation>
-                <include>OSDfullinfos</include>
+                <animation condition="Focus" effect="slide" start="0,0" end="0,-300" time="600">Conditional</animation>
+                <animation condition="!ControlGroup(111).HasFocus()" effect="slide" start="0,-300" end="0,0" time="600">Conditional</animation>
+                <control type="image">
+                    <centerleft>960</centerleft>
+                    <width>1880</width>
+                    <height>470</height>
+                    <colordiffuse>osdoverlay</colordiffuse>
+                    <texture border="20">images/diffusebanner.png</texture>
+                </control>
+                <control type="grouplist" id="101" description="OSD more infos">
+                    <left>200</left>
+                    <width>1520</width>
+                    <height>80</height>
+                    <align>left</align>
+                    <itemgap>0</itemgap>
+                    <onleft>noop</onleft>
+                    <onright>noop</onright>
+                    <onup>100</onup>
+                    <ondown condition="Control.HasFocus(704)">9000</ondown>
+                    <ondown condition="Control.HasFocus(706)">8000</ondown>
+                    <ondown>noop</ondown>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <scrolltime>240</scrolltime>
+                    <control type="button" id="706" description="Info">
+                        <font>size36B</font>
+                        <include>osdtopbutton</include>
+                        <label>29915</label>
+                        <!--<onclick>SetFocus(100,2)</onclick>-->
+                    </control>
+                    <control type="button" id="704" description="audio and subtitles">
+                        <font>size36B</font>
+                        <include>osdtopbutton</include>
+                        <label>$LOCALIZE[292] &amp; $LOCALIZE[287]</label>
+                        <onclick>SetFocus(100,2)</onclick>
+                        <onclick>Close</onclick>
+                        <onclick>ActivateWindow(OSDAudioSettings)</onclick>
+                    </control>
+                </control>
+                <control type="group" description="Video Info">
+                    <visible>Control.HasFocus(706)</visible>
+                    <control type="image">
+                        <centertop>185</centertop>
+                        <centerleft>255</centerleft>
+                        <height>200</height>
+                        <width>300</width>
+                        <texture background="true">$INFO[Player.Art(fanart)]</texture>
+                        <aspectratio>scale</aspectratio>
+                        <onclick></onclick>
+                    </control>
+                    <control type="grouplist" description="Video INFOSPLOT">
+                        <left>470</left>
+                        <top>80</top>
+                        <onup>706</onup>
+                        <height>300</height>
+                        <align>left</align>
+                        <control type="label">
+                            <height>40</height>
+                            <label>$LOCALIZE[180]: $INFO[Player.Duration(hh:mm)]</label>
+                            <textcolor>lightgray</textcolor>
+                        </control>
+                        <control type="textbox">
+                            <height>150</height>
+                            <width>1300</width>
+                            <label>$INFO[VideoPlayer.Plot]</label>
+                            <textcolor>lightgray</textcolor>
+                        </control>
+                    </control>
+                </control>
+
+                <control type="group" description="Audio and Subtitles">
+                    <visible>Control.HasFocus(704) | ControlGroup(9000).HasFocus</visible>
+                    <control type="group" id="9000">
+                        <top>80</top>
+                        <control type="grouplist" description="Language" id="9001">
+                            <left>335</left>
+                            <height>340</height>
+                            <width>480</width>
+                            <align>left</align>
+                            <onup>704</onup>
+                            <onright>9002</onright>
+                            <onleft>noop</onleft>
+                            <ondown>noop</ondown>
+                            <itemgap>0</itemgap>
+                            <control type="label" id="9010">
+                                <font>size21B</font>
+                                <height>30</height>
+                                <label>[UPPERCASE]$LOCALIZE[304][/UPPERCASE]</label>
+                                <textoffsetx>50</textoffsetx>
+                                <textcolor>lightgray</textcolor>
+                            </control>
+                            <control type="button" id="9013">
+                                <font>size33</font>
+                                <height>50</height>
+                                <include>osdtopbutton</include>
+                                <!--todo localize NEXT Audio-->
+                                <label>$LOCALIZE[209] $LOCALIZE[304]</label>
+                                <textoffsetx>50</textoffsetx>
+                                <textcolor>lightgray</textcolor>
+                                <onclick>Action(AudioNextLanguage)</onclick>
+                            </control>
+                            <control type="label" id="9014">
+                                <font>size33</font>
+                                <height>50</height>
+                                <include>osdtopbutton</include>
+                                <label>$LOCALIZE[304]: $INFO[VideoPlayer.AudioLanguage]</label>
+                                <textoffsetx>50</textoffsetx>
+                                <textcolor>lightgray</textcolor>
+                            </control>
+                        </control>
+                        <control type="grouplist" description="Subtitles" id="9002">
+                            <left>815</left>
+                            <height>340</height>
+                            <width>480</width>
+                            <align>left</align>
+                            <onup>704</onup>
+                            <onright>9003</onright>
+                            <onleft>9001</onleft>
+                            <ondown>noop</ondown>
+                            <itemgap>0</itemgap>
+                            <control type="label" id="9012">
+                                <font>size21B</font>
+                                <height>30</height>
+                                <label>[UPPERCASE]$LOCALIZE[287][/UPPERCASE]</label>
+                                <textoffsetx>50</textoffsetx>
+                                <textcolor>lightgray</textcolor>
+                            </control>
+                            <control type="button" id="9018">
+                                <font>size33</font>
+                                <height>50</height>
+                                <textoffsetx>50</textoffsetx>
+                                <include>osdtopbutton</include>
+                                <!--todo localize NEXT SUBTITLE-->
+                                <label>$LOCALIZE[209] $LOCALIZE[287]</label>
+                                <textcolor>lightgray</textcolor>
+                                <onclick>Action(NextSubtitle)</onclick>
+                            </control>
+                            <control type="button" id="9019">
+                                <font>size33</font>
+                                <height>50</height>
+                                <textoffsetx>50</textoffsetx>
+                                <include>osdtopbutton</include>
+                                <label>Find More</label>
+                                <onclick>ActivateWindow(subtitlesearch)</onclick>
+                            </control>
+                            <control type="label" id="9020">
+                                <font>size33</font>
+                                <height>50</height>
+                                <include>osdtopbutton</include>
+                                <label>$LOCALIZE[304]: $INFO[VideoPlayer.SubtitlesLanguage]</label>
+                                <textoffsetx>50</textoffsetx>
+                                <textcolor>lightgray</textcolor>
+                            </control>
+                        </control>
+                        <control type="grouplist" description="audioprefs" id="9003">
+                            <left>1295</left>
+                            <height>340</height>
+                            <width>410</width>
+                            <align>left</align>
+                            <onup>704</onup>
+                            <onright>noop</onright>
+                            <onleft>9002</onleft>
+                            <ondown>noop</ondown>
+                            <itemgap>0</itemgap>
+                            <control type="label" id="9011">
+                                <font>size21B</font>
+                                <height>30</height>
+                                <label>[UPPERCASE]suono[/UPPERCASE]</label>
+                                <textoffsetx>50</textoffsetx>
+                                <textcolor>lightgray</textcolor>
+                            </control>
+                            <control type="button" id="9015" description="audio offset">
+                                <font>size33</font>
+                                <height>50</height>
+                                <include>osdtopbutton</include>
+                                <label>297</label>
+                                <textoffsetx>50</textoffsetx>
+                                <textcolor>lightgray</textcolor>
+                                <onclick>SetFocus(100,2)</onclick>
+                                <onclick>Action(audiodelay)</onclick>
+                            </control>
+                            <control type="radiobutton" id="9016" description="stereo upmix">
+                                <!--<enable>!String.IsEqual(system.getbool(audiooutput.channels),1)</enable>-->
+                                <font>size33</font>
+                                <height>50</height>
+                                <width>480</width>
+                                <textureradiofocus>images/osdRadioON.png</textureradiofocus>
+                                <textureradionofocus>-</textureradionofocus>
+                                <radioposx>5</radioposx>
+                                <include>osdtopbutton</include>
+                                <label>Stereo Upmix</label>
+                                <textoffsetx>50</textoffsetx>
+                                <textcolor>lightgray</textcolor>
+                                <onclick>RunScript(script.skin.helper.service,action=togglekodisetting,setting=audiooutput.stereoupmix)</onclick>
+                                <selected>system.getbool(audiooutput.stereoupmix)</selected>
+                            </control>
+                            <control type="radiobutton" id="9017">
+                                <font>size33</font>
+                                <height>50</height>
+                                <width>480</width>
+                                <textureradiofocus>images/osdRadioON.png</textureradiofocus>
+                                <textureradionofocus>-</textureradionofocus>
+                                <radioposx>5</radioposx>
+                                <include>osdtopbutton</include>
+                                <label>Passthrough</label>
+                                <textoffsetx>50</textoffsetx>
+                                <textcolor>lightgray</textcolor>
+                                <onclick>RunScript(script.skin.helper.service,action=togglekodisetting,setting=audiooutput.passthrough)</onclick>
+                                <selected>system.getbool(audiooutput.passthrough)</selected>
+                            </control>
+                        </control>
+                    </control>
+                </control>
+
+                <control type="image">
+                    <centerleft>960</centerleft>
+                    <top>70</top>
+                    <width>2220</width>
+                    <height>1</height>
+                    <texture>images/Line.png</texture>
+                    <colordiffuse>dimgray</colordiffuse>
+                </control>
             </control>
         </control>
+        <!-- PROGRESSBAR E COMANDI -->
         <control type="group">
             <visible>![Window.IsActive(DialogSelect.xml) | Window.IsActive(SliderDialog) | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
             <animation effect="fade" end="100" time="400">Visible</animation>
             <animation effect="fade" end="0" time="100">Hidden</animation>
-            <animation condition="!ControlGroup(100).HasFocus()" effect="slide" start="0,0" end="0,-400" time="600">Conditional</animation>
+            <animation condition="!ControlGroup(100).HasFocus()" effect="slide" start="0,0" end="0,-300" time="600">Conditional</animation>
             <control type="progress" description="Cache Progress">
                 <top>970</top>
                 <left>110</left>
@@ -76,14 +296,7 @@
                 <font>size33B</font>
                 <label>[B]$INFO[VideoPlayer.Title][/B]</label>
             </control>
-            <control type="image">
-              <left>120</left>
-              <bottom>130</bottom>
-                <width>375</width>
-                <height>150</height>
-                <aspectratio>keep</aspectratio>
-                <texture background="true">$INFO[Player.Art(clearlogo)]</texture>
-            </control>
+            <!-- COMANDI PLAYER -->
             <control type="grouplist" id="100">
                 <right>100</right>
                 <bottom>100</bottom>
@@ -213,6 +426,16 @@
                 </control>
             </control>
         </control>
+        <!-- CLEARLOGO -->
+        <control type="image">
+            <right>50</right>
+            <top>50</top>
+            <width>375</width>
+            <height>150</height>
+            <aspectratio>keep</aspectratio>
+            <texture background="true">$INFO[Player.Art(logo)]</texture>
+        </control>
+        <!-- BUTTON MORE INFOS -->
         <control type="group">
             <visible>!ControlGroup(111).HasFocus()</visible>
             <visible>!Window.IsVisible(10123) + !Window.IsVisible(10124) + !Window.IsVisible(10125) + !Window.IsVisible(Dialogselect.xml)</visible>
@@ -239,6 +462,7 @@
                 <label>$LOCALIZE[31054]</label>
             </control>
         </control>
+        <!-- 3D stuff -->
         <control type="group">
             <visible>VideoPlayer.IsStereoscopic + ![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(Dialogselect.xml)]</visible>
             <visible allowhiddenfocus="true">ControlGroup(500).HasFocus</visible>

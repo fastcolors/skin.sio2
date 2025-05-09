@@ -19,15 +19,5 @@
             <loop>yes</loop>
             <aspectratio>keep</aspectratio>
         </control>
-        <control type="progress" id="10">
-            <left>735</left>
-            <top>650</top>
-            <width>450</width>
-            <height>8</height>
-            <texturebg>MusicOSD/ProgressBG.png</texturebg>
-            <midtexture>MusicOSD/ProgressM.png</midtexture>
-            <righttexture>MusicOSD/ProgressR.png</righttexture>
-            <lefttexture>MusicOSD/ProgressL.png</lefttexture>
-        </control>
     </controls>
 </window>
