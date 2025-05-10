@@ -5,7 +5,6 @@
             <visible>Control.IsVisible(501)</visible>
             <control type="group">
                 <control type="fixedlist" id="501">
-                    <visible>!Container.HasFolders</visible>
                     <orientation>horizontal</orientation>
                     <bottom>50</bottom>
                     <width>1920</width>
