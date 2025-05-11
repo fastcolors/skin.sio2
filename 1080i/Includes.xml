@@ -362,7 +362,7 @@
     </include>
     <include name="diavidinfolabels">
         <width>320</width>
-        <height>24</height>
+        <height>20</height>
         <font>size21</font>
         <textoffsetx>10</textoffsetx>
         <align>right</align>

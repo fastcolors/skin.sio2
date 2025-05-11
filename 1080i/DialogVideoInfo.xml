@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2003">
     <defaultcontrol always="true">195</defaultcontrol>
-    <backgroundcolor>ffffffff</backgroundcolor>
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
@@ -24,38 +23,38 @@
                 <texture background="true" diffuse="images/diffuse.png">$VAR[locandine]</texture>
                 <aspectratio>keep</aspectratio>
             </control>
-            <control type="group">
-                <top>100</top>
+            <control type="grouplist">
+                <top>10</top>
                 <left>410</left>
+                <itemgap>0</itemgap>
+                <control type="image">
+                    <visible>!String.IsEmpty(ListItem.Art(logo))</visible>
+                    <width>500</width>
+                    <height>200</height>
+                    <texture>$INFO[ListItem.Art(logo)]</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>
                 <control type="label" description="title">
+                    <visible>String.IsEmpty(ListItem.Art(logo))</visible>
                     <width>auto</width>
-                    <height>50</height>
+                    <height>200</height>
                     <font>size39</font>
                     <align>Left</align>
                     <label>$INFO[ListItem.Title] $INFO[ListItem.Year, (,)]</label>
                 </control>
                 <control type="label">
-                    <top>46</top>
                     <width>880</width>
-                    <height>45</height>
+                    <height>40</height>
                     <font>size24</font>
                     <textcolor>darktext</textcolor>
-                    <label>$INFO[ListItem.Studio]</label>
-                </control>
-                <control type="label">
-                    <top>95</top>
-                    <width>880</width>
-                    <height>45</height>
-                    <font>size24</font>
-                    <textcolor>darktext</textcolor>
-                    <label>$INFO[ListItem.Duration,, min]$INFO[ListItem.MPAA, • ]</label>
+                    <label>$INFO[ListItem.Studio] $INFO[ListItem.Duration(hh:mm), • ] $INFO[ListItem.MPAA, • ]</label>
                 </control>
                 <control type="textbox" id="4" description="plot">
                     <animation effect="zoom" condition="Control.HasFocus(191)" start="100" end="103" time="120" center="auto" tween="Back" easing="Out">Conditional</animation>
                     <animation effect="zoom" condition="!Control.HasFocus(191)" start="103" end="100" time="120" center="auto">Conditional</animation>
-                    <top>160</top>
-                    <width>850</width>
-                    <height>180</height>
+                    <left>10</left>
+                    <width>900</width>
+                    <height>200</height>
                     <autoscroll>false</autoscroll>
                     <align>justify</align>
                 </control>
@@ -76,7 +75,7 @@
                         <include>diavidinfolabels</include>
                         <label>[UPPERCASE][B]$LOCALIZE[515][/B][/UPPERCASE]</label>
                     </control>
-                    <control type="button" id="789">
+                    <control type="label" id="789">
                         <include>diavidinfobuttons</include>
                         <label>$INFO[ListItem.Genre]</label>
                     </control>
@@ -84,7 +83,7 @@
                         <include>diavidinfolabels</include>
                         <label>[UPPERCASE][B]$LOCALIZE[20339][/B][/UPPERCASE]</label>
                     </control>
-                    <control type="button" id="791">
+                    <control type="label" id="791">
                         <onclick>SendClick(2003,13)</onclick>
                         <include>diavidinfobuttons</include>
                         <label>$INFO[ListItem.Director]</label>
@@ -93,7 +92,7 @@
                         <include>diavidinfolabels</include>
                         <label>[UPPERCASE][B]$LOCALIZE[20417][/B][/UPPERCASE]</label>
                     </control>
-                    <control type="button" id="795">
+                    <control type="label" id="795">
                         <include>diavidinfobuttons</include>
                         <label>$INFO[ListItem.Writer]</label>
                     </control>
@@ -101,33 +100,16 @@
                         <include>diavidinfolabels</include>
                         <label>[UPPERCASE][B]$LOCALIZE[563][/B][/UPPERCASE]</label>
                     </control>
-                    <control type="button" id="797">
+                    <control type="label" id="797">
                         <height>50</height>
                         <include>diavidinfobuttons</include>
                         <label>$INFO[ListItem.RatingAndVotes]</label>
-                    </control>
-                    <control type="label" id="798">
-                        <include>diavidinfolabels</include>
-                        <label>[UPPERCASE][B]$LOCALIZE[563][/B][/UPPERCASE]</label>
-                    </control>
-                    <control type="button" id="799">
-                        <visible>!String.IsEmpty(ListItem.UserRating)</visible>
-                        <height>50</height>
-                        <include>diavidinfobuttons</include>
-                        <label>$INFO[ListItem.UserRating]</label>
-                    </control>
-                    <control type="button" id="807">
-                        <visible>String.IsEmpty(ListItem.UserRating)</visible>
-                        <height>50</height>
-                        <include>diavidinfobuttons</include>
-                        <label>Rate Movie</label>
-                        <onclick>SendClick(2003,7)</onclick>
                     </control>
                 </control>
             </control>
             <control type="grouplist" id="195">
                 <top>520</top>
-                <left>400</left>
+                <centerleft>970</centerleft>
                 <width>1100</width>
                 <onup>191</onup>
                 <onleft>190</onleft>
@@ -195,6 +177,32 @@
                     <font>XS</font>
                     <textoffsetx>0</textoffsetx>
                     <label>13511</label>
+                </control>
+                <control type="button" id="799">
+                    <visible>!String.IsEmpty(ListItem.UserRating)</visible>
+                    <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+                    <animation effect="zoom" start="120" end="100" time="120" center="auto">unFocus</animation>
+                    <height>100</height>
+                    <width>150</width>
+                    <texturefocus>images/diffuserounded.png</texturefocus>
+                    <texturenofocus>images/diffuserounded.png</texturenofocus>
+                    <font>XS</font>
+                    <textoffsetx>0</textoffsetx>
+                    <label>USER RATING:[CR]$INFO[ListItem.UserRating]</label>
+                    <onclick>SendClick(2003,7)</onclick>
+                </control>
+                <control type="button" id="807">
+                    <visible>String.IsEmpty(ListItem.UserRating)</visible>
+                    <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+                    <animation effect="zoom" start="120" end="100" time="120" center="auto">unFocus</animation>
+                    <height>100</height>
+                    <width>150</width>
+                    <texturefocus>images/diffuserounded.png</texturefocus>
+                    <texturenofocus>images/diffuserounded.png</texturenofocus>
+                    <font>XS</font>
+                    <textoffsetx>0</textoffsetx>
+                    <label>Rate Movie</label>
+                    <onclick>SendClick(2003,7)</onclick>
                 </control>
             </control>
             <control type="image" description="whiteoverlay">
