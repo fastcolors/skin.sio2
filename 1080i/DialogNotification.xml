@@ -31,11 +31,11 @@
                 <shadowcolor>-</shadowcolor>
                 <label>-</label>
             </control>
-            <control type="label" id="402" description="Message">
+            <control type="textbox" id="402" description="Message">
                 <left>120</left>
                 <top>62</top>
                 <width>390</width>
-                <height>44</height>
+                <height>84</height>
                 <font>size22</font>
                 <align>left</align>
                 <shadowcolor>-</shadowcolor>
