@@ -22,7 +22,7 @@
                 <aspectratio>keep</aspectratio>
             </control>
             <control type="label" id="401" description="Heading">
-                <top>40</top>
+                <top>30</top>
                 <left>120</left>
                 <width>390</width>
                 <height>20</height>
@@ -33,9 +33,9 @@
             </control>
             <control type="textbox" id="402" description="Message">
                 <left>120</left>
-                <top>62</top>
+                <top>52</top>
                 <width>390</width>
-                <height>84</height>
+                <height>64</height>
                 <font>size22</font>
                 <align>left</align>
                 <shadowcolor>-</shadowcolor>
