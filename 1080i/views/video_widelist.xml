@@ -3,6 +3,32 @@
     <include name="widelist">
         <control type="group" description="StreamingList">
             <visible>Control.IsVisible(501)</visible>
+            <!-- more infos -->
+            <control type="group">
+                <visible>!ControlGroup(9000).HasFocus()</visible>
+                <animation type="Visible">
+                    <effect type="fade" tween="circle" easing="in" start="0" end="100" time="800" />
+                </animation>
+                <control type="button">
+                    <centerleft>960</centerleft>
+                    <top>1050</top>
+                    <width>50</width>
+                    <height>20</height>
+                    <texturenofocus>images/Dialogpull.png</texturenofocus>
+                    <texturefocus>images/Dialogpull.png</texturefocus>
+                    <onclick>SetFocus(101)</onclick>
+                </control>
+                <control type="label">
+                    <centerleft>960</centerleft>
+                    <top>1020</top>
+                    <width>500</width>
+                    <height>30</height>
+                    <align>center</align>
+                    <font>XS</font>
+                    <textcolor>white</textcolor>
+                    <label>$LOCALIZE[31054]</label>
+                </control>
+            </control>
             <control type="group">
                 <control type="fixedlist" id="501">
                     <orientation>horizontal</orientation>
@@ -19,7 +45,6 @@
                     <scrolltime>250</scrolltime>
                     <itemlayout width="360" height="560">
                       <control type="image">
-                          <visible>!ListItem.IsParentFolder</visible>
                           <bottom>0</bottom>
                           <centerleft>198</centerleft>
                           <width>290</width>
@@ -41,7 +66,6 @@
                         <animation effect="zoom" start="100" end="110" time="250" center="180,450" easing="Out">Focus</animation>
                         <animation effect="zoom" start="110" end="100" time="250" center="180,450">unFocus</animation>
                         <control type="image">
-                            <visible>!ListItem.IsParentFolder</visible>
                             <bottom>0</bottom>
                             <centerleft>198</centerleft>
                             <width>290</width>
@@ -76,9 +100,22 @@
                 <left>180</left>
                 <width>500</width>
                 <height>250</height>
-                <label>$INFO[ListItem.Title]</label>
+                <label fallback="$INFO[ListItem.Label]">$INFO[ListItem.Title]</label>
+            </control>
+            <control type="label" description="detailedinfos">
+                <visible>!ListItem.IsFolder | !Container.Content(movies)</visible>
+                <visible>!String.IsEmpty(ListItem.Year)</visible>
+                <top>280</top>
+                <left>200</left>
+                <width>1600</width>
+                <height>20</height>
+                <font>size20</font>
+                <textcolor>infos</textcolor>
+                <label>[COLOR darktext][B]$INFO[ListItem.Year] - $INFO[ListItem.Duration] $LOCALIZE[12391] - $INFO[ListItem.Genre] - $INFO[ListItem.VideoResolution]p - $VAR[audiochannels][/B][/COLOR]</label>
             </control>
             <control type="textbox" description="plots">
+                <visible>!ListItem.IsFolder | !Container.Content(movies)</visible>
+                <visible>!String.IsEmpty(ListItem.Plot)</visible>
                 <left>200</left>
                 <top>320</top>
                 <width>1000</width>
@@ -88,16 +125,6 @@
                 <textcolor>infos</textcolor>
                 <autoscroll>false</autoscroll>
                 <info>ListItem.Plot</info>
-            </control>
-            <control type="label" description="detailedinfos">
-                <visible>!ListItem.IsFolder | !Container.Content(movies)</visible>
-                <top>280</top>
-                <left>200</left>
-                <width>1600</width>
-                <height>20</height>
-                <font>size20</font>
-                <textcolor>infos</textcolor>
-                <label>[COLOR darktext][B]$INFO[ListItem.Year] - $INFO[ListItem.Duration] $LOCALIZE[12391] - $INFO[ListItem.Genre] - $INFO[ListItem.VideoResolution]p - $VAR[audiochannels][/B][/COLOR]</label>
             </control>
         </control>
     </include>
