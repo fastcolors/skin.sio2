@@ -24,11 +24,11 @@
                 <width>335</width>
                 <height>490</height>
                 <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
-                <aspectratio>keep</aspectratio>
+                <aspectratio>scale</aspectratio>
             </control>
             <control type="image" description="WatchStatus">
                 <left>373</left>
-                <bottom>70</bottom>
+                <bottom>75</bottom>
                 <height>52</height>
                 <width>52</width>
                 <aspectratio>keep</aspectratio>
@@ -45,11 +45,11 @@
                     <width>335</width>
                     <height>490</height>
                     <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
-                    <aspectratio>keep</aspectratio>
+                    <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image" description="WatchStatus">
                     <left>373</left>
-                    <bottom>70</bottom>
+                    <bottom>75</bottom>
                     <height>52</height>
                     <width>52</width>
                     <aspectratio>keep</aspectratio>

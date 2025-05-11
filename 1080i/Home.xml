@@ -16,10 +16,12 @@
         <control type="group" description="Furniture">
             <include>homeanimation</include>
             <control type="image" description="banda bianca">
-                <top>695</top>
+                <visible>Container(9000).Row(0)</visible>
+                <animation effect="fade" time="500">VisibleChange</animation>
+                <top>705</top>
                 <centerleft>960</centerleft>
                 <width>1850</width>
-                <height>274</height>
+                <height>254</height>
                 <aspectratio>stretch</aspectratio>
                 <texture colordiffuse="bandabianca">images/diffusebanner.png</texture>
             </control>
@@ -64,53 +66,46 @@
             <ondown>noop</ondown>
             <orientation>vertical</orientation>
             <scrolltime tween="sine" easing="inout">280</scrolltime>
-            <itemlayout height="265" width="360">
-                <control type="image" description="shade_base">
-                    <centerleft>180</centerleft>
-                    <width>350</width>
-                    <height>250</height>
-                    <texture>icons/iconbase.png</texture>
-                </control>
+            <itemlayout height="255" width="360">
                 <control type="image" description="color base">
                     <centerleft>180</centerleft>
                     <centertop>132</centertop>
                     <width>300</width>
-                    <height>180</height>
+                    <height>170</height>
                     <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
                 </control>
                 <control type="image" description="THMBSICONS">
                     <centerleft>180</centerleft>
                     <centertop>132</centertop>
                     <width>300</width>
-                    <height>180</height>
+                    <height>170</height>
                     <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Icon]</texture>
                     <aspectratio scalediffuse="false">scale</aspectratio>
                 </control>
             </itemlayout>
-            <focusedlayout height="265" width="360">
+            <focusedlayout height="255" width="360">
                 <control type="group">
                     <animation effect="zoom" start="100" end="125" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
                     <animation effect="zoom" start="125" end="100" time="120" center="auto">unFocus</animation>
                     <control type="image" description="shade_base">
                         <centerleft>180</centerleft>
                         <animation effect="slide" start="0,0" end="0,34" time="240" reversible="true" tween="Back" easing="Out">Focus</animation>
-                        <top>10</top>
-                        <width>350</width>
+                        <width>360</width>
                         <height>250</height>
                         <texture>icons/iconbase.png</texture>
                     </control>
                     <control type="image" description="color base">
                         <centerleft>180</centerleft>
                         <centertop>132</centertop>
-                        <width>287</width>
-                        <height>179</height>
+                        <width>300</width>
+                        <height>170</height>
                         <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
                     </control>
                     <control type="image" description="THMBSICONS">
                         <centerleft>180</centerleft>
                         <centertop>132</centertop>
-                        <width>287</width>
-                        <height>179</height>
+                        <width>300</width>
+                        <height>170</height>
                         <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Icon]</texture>
                         <aspectratio scalediffuse="false">scale</aspectratio>
                     </control>

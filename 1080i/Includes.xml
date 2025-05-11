@@ -389,7 +389,7 @@
         <texturefocus>-</texturefocus>
     </include>
     <include name="homeanimation">
-        <animation condition="!Container(9000).Row(0) + !ControlGroup(700).HasFocus + !Control.HasFocus(9009)" effect="slide" end="0,-970" time="500">Conditonal</animation>
+        <animation condition="!Container(9000).Row(0) + !ControlGroup(700).HasFocus + !Control.HasFocus(9009)" effect="slide" end="0,-950" time="500">Conditonal</animation>
     </include>
     <include name="9000music">
         <control type="group" id="9000">
