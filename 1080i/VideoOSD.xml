@@ -54,7 +54,7 @@
                     <control type="image">
                         <centertop>185</centertop>
                         <centerleft>255</centerleft>
-                        <height>200</height>
+                        <height>195</height>
                         <width>300</width>
                         <texture background="true">$INFO[Player.Art(fanart)]</texture>
                         <aspectratio>scale</aspectratio>
@@ -101,9 +101,9 @@
                                 <textoffsetx>50</textoffsetx>
                                 <textcolor>lightgray</textcolor>
                             </control>
-                            <control type="button" id="9013">
+                            <control type="button" id="9011">
                                 <font>size33</font>
-                                <height>50</height>
+                                <height>40</height>
                                 <include>osdtopbutton</include>
                                 <!--todo localize NEXT Audio-->
                                 <label>$LOCALIZE[209] $LOCALIZE[304]</label>
@@ -111,9 +111,9 @@
                                 <textcolor>lightgray</textcolor>
                                 <onclick>Action(AudioNextLanguage)</onclick>
                             </control>
-                            <control type="label" id="9014">
+                            <control type="label" id="9012">
                                 <font>size33</font>
-                                <height>50</height>
+                                <height>40</height>
                                 <include>osdtopbutton</include>
                                 <label>$LOCALIZE[304]: $INFO[VideoPlayer.AudioLanguage]</label>
                                 <textoffsetx>50</textoffsetx>
@@ -130,16 +130,30 @@
                             <onleft>9001</onleft>
                             <ondown>noop</ondown>
                             <itemgap>0</itemgap>
-                            <control type="label" id="9012">
+                            <control type="label" id="9013">
                                 <font>size21B</font>
                                 <height>30</height>
                                 <label>[UPPERCASE]$LOCALIZE[287][/UPPERCASE]</label>
                                 <textoffsetx>50</textoffsetx>
                                 <textcolor>lightgray</textcolor>
                             </control>
-                            <control type="button" id="9018">
+                            <control type="togglebutton" id="9014">
                                 <font>size33</font>
-                                <height>50</height>
+                                <height>40</height>
+                                <textoffsetx>50</textoffsetx>
+                                <include>osdtopbutton</include>
+                                <alttexturenofocus>-</alttexturenofocus>
+                                <alttexturefocus>-</alttexturefocus>
+                                <!--todo localize NEXT SUBTITLE-->
+                                <label>$LOCALIZE[287] Off</label>
+                                <altlabel>$LOCALIZE[287] On </altlabel>
+                                <textcolor>lightgray</textcolor>
+                                <onclick>Action(ShowSubtitles)</onclick>
+                                <usealttexture>VideoPlayer.SubtitlesEnabled</usealttexture>
+                            </control>
+                            <control type="button" id="9015">
+                                <font>size33</font>
+                                <height>40</height>
                                 <textoffsetx>50</textoffsetx>
                                 <include>osdtopbutton</include>
                                 <!--todo localize NEXT SUBTITLE-->
@@ -147,17 +161,17 @@
                                 <textcolor>lightgray</textcolor>
                                 <onclick>Action(NextSubtitle)</onclick>
                             </control>
-                            <control type="button" id="9019">
+                            <control type="button" id="9016">
                                 <font>size33</font>
-                                <height>50</height>
+                                <height>40</height>
                                 <textoffsetx>50</textoffsetx>
                                 <include>osdtopbutton</include>
                                 <label>Find More</label>
                                 <onclick>ActivateWindow(subtitlesearch)</onclick>
                             </control>
-                            <control type="label" id="9020">
+                            <control type="label" id="9017">
                                 <font>size33</font>
-                                <height>50</height>
+                                <height>40</height>
                                 <include>osdtopbutton</include>
                                 <label>$LOCALIZE[304]: $INFO[VideoPlayer.SubtitlesLanguage]</label>
                                 <textoffsetx>50</textoffsetx>
@@ -174,51 +188,22 @@
                             <onleft>9002</onleft>
                             <ondown>noop</ondown>
                             <itemgap>0</itemgap>
-                            <control type="label" id="9011">
+                            <control type="label" id="9018">
                                 <font>size21B</font>
                                 <height>30</height>
                                 <label>[UPPERCASE]suono[/UPPERCASE]</label>
                                 <textoffsetx>50</textoffsetx>
                                 <textcolor>lightgray</textcolor>
                             </control>
-                            <control type="button" id="9015" description="audio offset">
+                            <control type="button" id="9019" description="audio offset">
                                 <font>size33</font>
-                                <height>50</height>
+                                <height>40</height>
                                 <include>osdtopbutton</include>
                                 <label>297</label>
                                 <textoffsetx>50</textoffsetx>
                                 <textcolor>lightgray</textcolor>
                                 <onclick>SetFocus(100,2)</onclick>
                                 <onclick>Action(audiodelay)</onclick>
-                            </control>
-                            <control type="radiobutton" id="9016" description="stereo upmix">
-                                <!--<enable>!String.IsEqual(system.getbool(audiooutput.channels),1)</enable>-->
-                                <font>size33</font>
-                                <height>50</height>
-                                <width>480</width>
-                                <textureradiofocus>images/osdRadioON.png</textureradiofocus>
-                                <textureradionofocus>-</textureradionofocus>
-                                <radioposx>5</radioposx>
-                                <include>osdtopbutton</include>
-                                <label>Stereo Upmix</label>
-                                <textoffsetx>50</textoffsetx>
-                                <textcolor>lightgray</textcolor>
-                                <onclick>RunScript(script.skin.helper.service,action=togglekodisetting,setting=audiooutput.stereoupmix)</onclick>
-                                <selected>system.getbool(audiooutput.stereoupmix)</selected>
-                            </control>
-                            <control type="radiobutton" id="9017">
-                                <font>size33</font>
-                                <height>50</height>
-                                <width>480</width>
-                                <textureradiofocus>images/osdRadioON.png</textureradiofocus>
-                                <textureradionofocus>-</textureradionofocus>
-                                <radioposx>5</radioposx>
-                                <include>osdtopbutton</include>
-                                <label>Passthrough</label>
-                                <textoffsetx>50</textoffsetx>
-                                <textcolor>lightgray</textcolor>
-                                <onclick>RunScript(script.skin.helper.service,action=togglekodisetting,setting=audiooutput.passthrough)</onclick>
-                                <selected>system.getbool(audiooutput.passthrough)</selected>
                             </control>
                         </control>
                     </control>
