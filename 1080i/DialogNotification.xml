@@ -3,7 +3,7 @@
     <type>dialog</type>
     <controls>
         <control type="group">
-            <!-- <visible>!Window.IsActive(videoosd)</visible> -->
+            <visible>!Window.IsActive(videoosd)</visible>
             <animation effect="slide" end="0,140" condition="Window.IsActive(DialogExtendedProgressBar.xml)">Conditional</animation>
             <left>1325</left>
             <top>55</top>
