@@ -121,6 +121,15 @@
         <action>ActivateWindow(Videos,"plugin://plugin.video.s4me",return)</action>
     </shortcut>
     <shortcut>
+        <defaultID>PrimeVideo</defaultID>
+        <label>Prime Video</label>
+        <icon>-</icon>
+        <label2>Posters</label2>
+        <thumb>icons/primevideo.png</thumb>
+        <visible>System.HasAddon(plugin.video.amazon-test)</visible>
+        <action>ActivateWindow(Videos,"plugin://plugin.video.amazon-test",return)</action>
+    </shortcut>
+    <shortcut>
         <defaultID>plex</defaultID>
         <label>Plex</label>
         <icon>-</icon>
