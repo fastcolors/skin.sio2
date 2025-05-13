@@ -216,6 +216,7 @@
     <selectedcolor>orange</selectedcolor>
     <disabledcolor>dimgray</disabledcolor>
     <aligny>center</aligny>
+    <textwidth>50</textwidth>
     <textoffsetx>20</textoffsetx>
   </default>
   <default type="scrollbar">
