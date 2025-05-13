@@ -49,7 +49,6 @@
     <widget label="Continue watching" path="plugin://plugin.video.netflix/directory/video_list/continueWatching/continueWatching/" target="video">shelfnetflix</widget>
     <widgetdefault defaultID="netflix">shelfnetflix</widgetdefault>
 
-
     <propertyfallback property="widgetPath">-</propertyfallback>
     <propertyfallback property="widgetName">FAST KODI</propertyfallback>
 

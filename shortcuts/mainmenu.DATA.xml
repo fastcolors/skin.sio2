@@ -148,6 +148,24 @@
         <action>ActivateWindow(Videos,"plugin://plugin.video.netflix",return)</action>
     </shortcut>
     <shortcut>
+        <defaultID>raiplay</defaultID>
+        <label>Rai Play</label>
+        <icon>-</icon>
+        <label2>Posters</label2>
+        <thumb>icons/raiplay.png</thumb>
+        <visible>System.HasAddon(plugin.video.raitv)</visible>
+        <action>ActivateWindow(Videos,"plugin://plugin.video.raitv",return)</action>
+    </shortcut>
+    <shortcut>
+        <defaultID>spotify</defaultID>
+        <label>Spotify</label>
+        <icon>-</icon>
+        <label2>Posters</label2>
+        <thumb>icons/spotify.png</thumb>
+        <visible>System.HasAddon(plugin.audio.spotify)</visible>
+        <action>ActivateWindow(Music,"plugin://plugin.audio.spotify",return)</action>
+    </shortcut>
+    <shortcut>
         <defaultID>settings</defaultID>
         <label>5</label>
         <label2>-</label2>

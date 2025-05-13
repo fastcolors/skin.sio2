@@ -9,7 +9,7 @@
                 <centerleft>960</centerleft>
                 <centertop>540</centertop>
                 <width>802</width>
-                <height>340</height>
+                <height>420</height>
                 <aspectratio>stretch</aspectratio>
                 <texture border="50">images/ContextMenu.png</texture>
                 <colordiffuse>dialog</colordiffuse>
@@ -34,6 +34,11 @@
                     <include>DialogButt</include>
                     <label>222</label>
                     <onclick>Close</onclick>
+                </control>
+                <control type="button" id="703" description="reload">
+                  <include>DialogButt</include>
+                  <onclick>ReloadSkin()</onclick>
+                  <label>Reload Skin</label>
                 </control>
             </control>
         </control>
