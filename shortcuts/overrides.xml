@@ -22,13 +22,13 @@
 
     <onclick id="211">SetFocus(300)</onclick>
 
-    <widget label="Novelties" path="plugin://plugin.video.s4me/" target="video">s4me</widget>
+    <widget label="Stream 4 Me" path="plugin://plugin.video.s4me/" target="video">s4me</widget>
     <widgetdefault defaultID="s4me">s4me</widgetdefault>
 
     <widget label="Recently Added Movies" path="videodb://recentlyaddedmovies/" target="video">shelfmovies</widget>
     <widgetdefault defaultID="movies">shelfmovies</widgetdefault>
 
-    <widget label="Episodes" path="videodb://" target="video">shelfepisodes</widget>
+    <widget label="Episodes" path="videodb://inprogresstvshows" target="video">shelfepisodes</widget>
     <widgetdefault defaultID="episodes">shelfepisodes</widgetdefault>
 
     <widget label="Tv Shows" path="videodb://tvshows/titles" target="video">shelftvshows</widget>
