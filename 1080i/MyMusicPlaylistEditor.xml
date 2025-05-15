@@ -31,7 +31,7 @@
         <font>size22</font>
         <textcolor>Grey2</textcolor>
         <align>center</align>
-        <label>-</label>
+        <label></label>>
       </control>
       <control type="image" description="Slider 50">
         <visible>Control.IsVisible(50)</visible>
@@ -231,7 +231,7 @@
         <font>size22</font>
         <textcolor>Grey2</textcolor>
         <align>center</align>
-        <label>-</label>
+        <label></label>>
       </control>
       <control type="image" description="Slider 100">
         <visible>!String.IsEmpty(Container(100).ListItem.Label) + Control.IsVisible(100)</visible>

@@ -93,7 +93,7 @@
 				<description>Record</description>
 				<width>auto</width>
 				<include>SmallButt</include>
-				<label>-</label>
+				<label></label>>
 			</control>
 			<control type="button" id="7">
 				<description>OK</description>

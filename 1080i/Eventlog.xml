@@ -123,11 +123,11 @@
                 </control>
                 <control type="button" id="21" description="level">
                     <include>DialogButt</include>
-                    <label>-</label>
+                    <label></label>>
                 </control>
                 <control type="radiobutton" id="22" description="only current">
                     <include>DialogButt</include>
-                    <label>-</label>
+                    <label></label>>
                 </control>
             </control>
         </control>

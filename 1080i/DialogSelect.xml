@@ -60,13 +60,13 @@
         <height>80</height>
         <width>400</width>
         <font>size36</font>
-        <label>-</label>
+        <label></label>>
       </control>
       <control type="button" id="7" description="Manual Get more button">
         <height>80</height>
         <width>400</width>
         <font>size36</font>
-        <label>-</label>
+        <label></label>>
       </control>
     </control>
   </controls>

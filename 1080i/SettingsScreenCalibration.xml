@@ -43,14 +43,14 @@
       <top>60</top>
       <width>1860</width>
       <align>center</align>
-      <label>-</label>
+      <label></label>>
     </control>
     <control type="label" id="3" description="help information">
       <left>30</left>
       <top>105</top>
       <width>1860</width>
       <align>center</align>
-      <label>-</label>
+      <label></label>>
     </control>
   </controls>
 </window>

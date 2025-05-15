@@ -82,7 +82,7 @@
         <top>-30</top>
         <width>1</width>
         <height>1</height>
-        <label>-</label>
+        <label></label>>
         <texturenofocus>-</texturenofocus>
         <texturefocus>-</texturefocus>
     </include>
@@ -262,7 +262,7 @@
                 <control type="button" id="3">
                     <description>Sort by button</description>
                     <include>DialogButt</include>
-                    <label>-</label>
+                    <label></label>>
                 </control>
                 <control type="togglebutton" id="4">
                     <description>Sort asc</description>
@@ -318,7 +318,7 @@
                 <control type="button" id="28">
                     <description>Channel Groups</description>
                     <include>DialogButt</include>
-                    <label>-</label>
+                    <label></label>>
                 </control>
                 <control type="radiobutton" id="600" description="EPG">
                     <visible>Window.IsActive(TVGuide)</visible>
@@ -442,7 +442,7 @@
                     <height>60</height>
                     <include>musictopbutton</include>
                     <onclick></onclick>
-                    <label>-</label>
+                    <label></label>>
                 </control>
             </control>
         </control>

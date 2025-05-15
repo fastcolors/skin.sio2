@@ -8,7 +8,7 @@
             <include>BlackBackground</include>
             <control type="label" id="411" description="Heading">
                 <include>Heading</include>
-                <label>-</label>
+                <label></label>>
             </control>
             <control type="group" description="Group 450">
                 <control type="group">

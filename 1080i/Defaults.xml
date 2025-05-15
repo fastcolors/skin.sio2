@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <default type="label">
-    <label>-</label>
+    <label></label>>
     <height>75</height>
     <align>left</align>
     <aligny>center</aligny>
@@ -17,7 +17,7 @@
   </default>
   <default type="fadelabel">
     <height>75</height>
-    <label>-</label>
+    <label></label>>
     <align>left</align>
     <aligny>center</aligny>
     <font>size33</font>
@@ -32,7 +32,7 @@
     <scrollsuffix> •  • </scrollsuffix>
   </default>
   <default type="textbox">
-    <label>-</label>
+    <label></label>>
     <font>size28</font>
     <textcolor>white</textcolor>
     <shadowcolor>-</shadowcolor>
@@ -59,7 +59,7 @@
     <align>center</align>
     <aligny>center</aligny>
     <font>size33</font>
-    <label>-</label>
+    <label></label>>
     <textoffsetx>20</textoffsetx>
     <textcolor>darktext</textcolor>
     <shadowcolor>-</shadowcolor>
@@ -76,7 +76,7 @@
     <align>center</align>
     <aligny>center</aligny>
     <font>size33</font>
-    <label>-</label>
+    <label></label>>
     <textoffsetx>20</textoffsetx>
     <textcolor>darktext</textcolor>
     <shadowcolor>-</shadowcolor>
@@ -95,7 +95,7 @@
     <align>center</align>
     <aligny>center</aligny>
     <font>size33</font>
-    <label>-</label>
+    <label></label>>
     <textoffsetx>20</textoffsetx>
     <textcolor>darktext</textcolor>
     <shadowcolor>-</shadowcolor>
@@ -118,7 +118,7 @@
     <align>left</align>
     <aligny>center</aligny>
     <font>size33</font>
-    <label>-</label>
+    <label></label>>
     <textcolor>darktext</textcolor>
     <shadowcolor>-</shadowcolor>
     <focusedcolor>black</focusedcolor>
@@ -161,7 +161,7 @@
     <animation effect="zoom" start="105" end="100" time="120" center="auto">unFocus</animation>
     <width>450</width>
     <height>70</height>
-    <label>-</label>
+    <label></label>>
     <font>size33</font>
     <textureup>images/ArrowUpNF.png</textureup>
     <textureupfocus>images/ArrowUpFO.png</textureupfocus>

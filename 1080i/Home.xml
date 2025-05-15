@@ -119,9 +119,7 @@
             <include>shelfitems</include>
             <!--<include>Addons</include>-->
             <include>Episodes</include>
-            <include>Favourites</include>
             <include>Livetv</include>
-            <include>appstore_shelf</include>
             <!--<include>general</include>-->
             <!--<include>weather_shelf</include>-->
         </control>

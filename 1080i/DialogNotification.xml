@@ -29,7 +29,7 @@
                 <font>size27B</font>
                 <align>left</align>
                 <shadowcolor>-</shadowcolor>
-                <label>-</label>
+                <label></label>>
             </control>
             <control type="textbox" id="402" description="Message">
                 <left>120</left>
@@ -39,7 +39,7 @@
                 <font>size22</font>
                 <align>left</align>
                 <shadowcolor>-</shadowcolor>
-                <label>-</label>
+                <label></label>>
             </control>
         </control>
     </controls>

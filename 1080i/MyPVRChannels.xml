@@ -9,7 +9,7 @@
         <include>BlackBackground</include>
         <control type="label" id="29">
             <include>Heading</include>
-            <label>-</label>
+            <label></label>>
         </control>
         <control type="group">
             <description>Small Media Window</description>

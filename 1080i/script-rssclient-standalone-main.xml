@@ -261,7 +261,7 @@
 				<width>384</width>
 			</control>
 			<control type="togglebutton" id="39004" description="Sort order">
-				<label>-</label>
+				<label></label>>
 				<width>50</width>
 				<height>50</height>
 				<texturefocus>images/ArrowUpFO.png</texturefocus>

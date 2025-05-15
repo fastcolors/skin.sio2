@@ -24,7 +24,7 @@
           <align>left</align>
           <font>Size22</font>
           <aligny>center</aligny>
-          <label>-</label>
+          <label></label>>
         </control>
         <control type="label" id="11" description="row 2 sys label">
           <width>1800</width>
@@ -32,7 +32,7 @@
           <align>left</align>
           <aligny>center</aligny>
           <font>Size22</font>
-          <label>-</label>
+          <label></label>>
         </control>
         <control type="label" id="12" description="row 3 sys label">
           <width>1800</width>
@@ -40,7 +40,7 @@
           <align>left</align>
           <aligny>center</aligny>
           <font>Size22</font>
-          <label>-</label>
+          <label></label>>
         </control>
       </control>
     </control>

@@ -5,7 +5,7 @@
     <width>300</width>
     <height>81</height>
     <texturefocus>-</texturefocus>
-    <label>-</label>
+    <label></label>>
   </include>
   <include name="Sublist">
     <top>592</top>

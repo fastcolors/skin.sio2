@@ -261,7 +261,7 @@
     <include name="Livetv">
         <control type="panel" id="314" description="LiveTV">
             <visible>String.IsEqual(Container(9000).ListItem.label2,livetv)</visible>
-            <include>PosterShortcutsCommons</include>
+            <include>GeneralShortcutsCommons</include>
             <content target="$INFO[Container(9000).ListItem.Property(widgetTarget)]">$INFO[Container(9000).ListItem.Property(widgetPath)]</content>
           <!-- <content target="video">pvr://channels/tv/*</content> -->
         </control>

@@ -160,7 +160,7 @@
         <width>855</width>
         <texturefocus border="32">images/slider.png</texturefocus>
         <font>size36</font>
-        <label>-</label>
+        <label></label>>
         <onleft>3</onleft>
         <onright>3</onright>
         <onup>3</onup>

@@ -10,7 +10,7 @@
         <top>30</top>
         <width>1920</width>
         <font>size39B</font>
-        <label>-</label>
+        <label></label>>
         <align>center</align>
       </control>
       <control type="image" description="line">
@@ -92,7 +92,7 @@
       <control type="edit" id="12" description="Source Name Button Field">
         <left>450</left>
         <top>765</top>
-        <label>-</label>
+        <label></label>>
         <width>1020</width>
         <align>left</align>
         <textoffsetx>20</textoffsetx>
