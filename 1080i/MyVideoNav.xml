@@ -109,16 +109,6 @@
                     <altlabel>13353</altlabel>
                     <usealttexture>library.isscanningvideo</usealttexture>
                 </control>
-                <control type="button" id="598">
-                    <include>DialogButt</include>
-                    <label>Artwork</label>
-                    <onclick condition="!system.hasaddon(script.artwork.downloader)">InstallAddon(script.artwork.downloader)</onclick>
-                    <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, clearlogo)</onclick>
-                    <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, clearlogo)</onclick>
-                    <onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=musicvideos, clearlogo)</onclick>
-                    <visible>[Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)]</visible>
-                    <onclick>right</onclick>
-                </control>
             </control>
         </control>
         <include>WindowsTopInfos</include>
