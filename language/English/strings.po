@@ -154,10 +154,6 @@ msgctxt "#31046"
 msgid "In Progress"
 msgstr "In Progress"
 
-msgctxt "#31047"
-msgid "Show Upcoming Movies Icon on Homepage"
-msgstr "Show Upcoming Movies Icon on Homepage"
-
 msgctxt "#31048"
 msgid "Up Next"
 msgstr "Up Next"

@@ -69,15 +69,6 @@
         <action>ActivateWindow(favouritesbrowser)</action>
     </shortcut>
     <shortcut>
-        <defaultID>upcomingmovies</defaultID>
-        <label>31422</label>
-        <icon>-</icon>
-        <label2>-</label2>
-        <thumb>icons/extendedinfotheater.png</thumb>
-        <action>SetFocus(700)</action>
-        <visible>System.HasAddon(script.extendedinfo) + Skin.HasSetting(upcomingmovies)</visible>
-    </shortcut>
-    <shortcut>
         <defaultID>programs</defaultID>
         <label>31037</label>
         <icon>-</icon>
