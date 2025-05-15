@@ -107,7 +107,7 @@
         </control>
         <control type="label">
             <include>Heading</include>
-            <label>$LOCALIZE[20077]</label>
+            <label>$LOCALIZE[20077] -- SiO2 ver.$INFO[System.AddonVersion(skin.sio2)]</label>
         </control>
     </controls>
 </window>
